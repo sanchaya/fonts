@@ -1,0 +1,30 @@
+{
+    "BalooTammaRegular":{
+        "font":"Baloo Tamma Regular",
+        "name":"BalooTammaRegular"
+    },
+    "BalooTammaMedium":{
+        "font":"Baloo Tamma Medium",
+        "name":"BalooTammaMedium"
+    },
+    "BalooTammaSemiBold":{
+        "font":"Baloo Tamma SemiBold",
+        "name":"BalooTammaSemiBold"
+    },
+    "BalooTammaExtraBold":{
+        "font":"Baloo Tamma ExtraBold",
+        "name":"BalooTammaExtraBold"
+    },
+    "BalooTammaBold":{
+        "font":"Baloo Tamma Bold",
+        "name":"BalooTammaBold"
+    },
+    "AkayaKannadaka":{
+        "font":"Akaya Kannadaka",
+        "name":"AkayaKannadaka"
+    },
+    "Benne":{
+        "font":"Benne",
+        "name":"Benne"
+    }
+}

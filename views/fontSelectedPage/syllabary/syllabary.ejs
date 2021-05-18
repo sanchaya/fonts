@@ -1,0 +1,29 @@
+<h2>Vowels</h2>
+<div class="overview-char-cnt container">
+<% for(let i=0; i<syllabary.vowels.length; i++){ %> 
+      <div class="overview-char">
+          <strong><%= syllabary.vowels[i] %> </strong>
+      </div>
+<% } %> 
+</div>
+
+<h2>Consonants</h2>
+<div class="overview-char-cnt container">
+<% for(let i=0; i<syllabary.consonants.length; i++){ %> 
+      <div class="overview-char">
+          <strong><%= syllabary.consonants[i] %> </strong>
+      </div>
+<% } %>
+</div>
+
+<h2>Compounds</h2>
+<% for(let i=0; i<syllabary.compounds.length; i++){ %>
+    <h3>Compound of <%= syllabary.consonants[i] %>: </h3>
+    <div class="overview-char-cnt container">
+    <% for(let j=0; j<syllabary.compounds[i].length; j++){ %>
+            <div class="overview-char">
+                <strong><%= syllabary.compounds[i][j] %> </strong>
+            </div>
+    <% } %>  
+    </div>
+<% } %> 

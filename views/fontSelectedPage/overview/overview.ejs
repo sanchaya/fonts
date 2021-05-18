@@ -1,0 +1,10 @@
+<% for(const key in overview){ %>
+    <h2><%= key %></h2>
+    <div class="overview-char-cnt container">
+    <% for(let i=0; i<overview[key].length; i++){ %>
+        <div class="overview-char">
+            <strong><%= overview[key][i] %> </strong>
+        </div>
+    <% } %>  
+    </div>
+<% } %>

@@ -1,0 +1,37 @@
+<div class="data-container container">
+    <div class="nav-container container">
+        <ul class="nav nav-pills nav-justified secondary">
+          <li class="active">
+              <a data-toggle="pill" href="#overview">
+                <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span><br>
+                OVERVIEW
+              </a>
+          </li>
+          <li>
+              <a data-toggle="pill" href="#syllabary">
+                  <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span><br>
+                  SYLLABARY
+              </a>
+          </li>
+          <li>
+              <a data-toggle="pill" href="#conjuncts">
+                  <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span><br>
+                  CONJUNCTS
+              </a>
+          </li>
+        </ul>
+    </div>
+    <div class="data container">
+        <div class="tab-content">
+          <div id="overview" class="tab-pane fade in active">
+              <%- include('overview/overview',{overview:overview}) %> 
+          </div>
+          <div id="syllabary" class="tab-pane fade">
+              <%- include('syllabary/syllabary',{syllabary:syllabary}) %> 
+          </div>
+          <div id="conjuncts" class="tab-pane fade">
+              <%- include('conjuncts/conjuncts',{conjuncts:conjuncts}) %> 
+          </div>
+        </div>
+    </div>
+</div>

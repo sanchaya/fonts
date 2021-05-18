@@ -1,0 +1,78 @@
+<% var should_be_active = (page) =>{
+  if(page.fontShowPage){
+    return "active"
+  }
+  else ''
+} 
+%> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Font app</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
+  <% if(page.fontShowPage){ %>
+    <script src="/js/fontShowPage.js"></script>
+  <% } %>
+  <% if(page.fontPage){ %> 
+    <style>
+      .overview-char-cnt{
+        font-family: "<%= font%>", cursive;
+      }
+    </style> 
+  <% } %> 
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Font</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="<%= should_be_active(page) %>"><a href="/">Home</a></li>
+        </ul>
+        <% if(page.fontShowPage){ %> 
+            <form class="navbar-form navbar-right">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+            </form> 
+        <% } %> 
+    </div>
+
+    </nav>
+    <% if(page.fontPage){ %>
+        <h2 class="text-primary" style="text-align: center;"><%= font %></h2> 
+        <%- include('fontSelectedPage/fontSelectedPage',{
+            syllabary:syllabary, 
+            conjuncts:conjuncts,
+            overview:overview
+        }) %> 
+    <% }else if(page.fontShowPage){%>
+        <%- include('fontShowPage/fontShowPage') %> 
+    <% }else if(page.errorPage){ %>
+        <h2 class="text-danger" style="text-align: center;"><%= msg %></h2> 
+    <% } %>    
+
+    
+</body>
+</html>

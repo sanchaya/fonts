@@ -1,0 +1,32 @@
+<% var getJK = (i) => {
+    return conjuncts.conjuncts_in_json[i]
+} %> 
+
+<div class="dropdown">
+    <button class="btn btn-lg btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><%= conjuncts.all_conjuncts[0]%>  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <% for(let i=0; i<conjuncts.all_conjuncts.length; i++){ %> 
+        <li><a data-toggle="dropdown-item" for="toggleFor<%= i %>"><%= conjuncts.all_conjuncts[i] %> </a></li>
+      <% } %> 
+    </ul>
+</div> 
+
+
+<div class="conjuncts container">
+<% for(let i=0; i<conjuncts.all_conjuncts.length; i++){ %>
+    
+    <div class="conjuncts-cnt" id="toggleFor<%= i %>">
+        <% for(let j=0; j<conjuncts.conjuncts_in_json.length; j++){ %> 
+            <h2><%= conjuncts.conjuncts_in_page[j] %> </h2>
+            <div class="overview-char-cnt container">
+                <% for(let k=0; k<conjuncts.all_json_conjuncts[i][getJK(j)].length;k++){ %> 
+                    <div class="overview-char">
+                        <strong><%= conjuncts.all_json_conjuncts[i][getJK(j)][k] %></strong>
+                    </div>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+
+<% } %> 
+</div>
