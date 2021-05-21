@@ -2,7 +2,7 @@
 <div class="overview-char-cnt container">
 <% for(let i=0; i<syllabary.vowels.length; i++){ %> 
       <div class="overview-char">
-          <strong><%= syllabary.vowels[i] %> </strong>
+          <span><%= syllabary.vowels[i] %> </span>
       </div>
 <% } %> 
 </div>
@@ -11,7 +11,7 @@
 <div class="overview-char-cnt container">
 <% for(let i=0; i<syllabary.consonants.length; i++){ %> 
       <div class="overview-char">
-          <strong><%= syllabary.consonants[i] %> </strong>
+          <span><%= syllabary.consonants[i] %> </span>
       </div>
 <% } %>
 </div>
@@ -22,7 +22,7 @@
     <div class="overview-char-cnt container">
     <% for(let j=0; j<syllabary.compounds[i].length; j++){ %>
             <div class="overview-char">
-                <strong><%= syllabary.compounds[i][j] %> </strong>
+                <span><%= syllabary.compounds[i][j] %> </span>
             </div>
     <% } %>  
     </div>

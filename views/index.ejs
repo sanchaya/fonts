@@ -24,17 +24,22 @@
   <% } %>
   <% if(page.fontPage){ %> 
     <style>
-      .overview-char-cnt{
+      .overview-char-cnt, #in-para-txt{
         font-family: "<%= font%>", cursive;
       }
-    </style> 
+    </style>
+    
+    <link rel="stylesheet" href="/css/inputStyle.css"/>
+    <script src="/js/inputStyle.js"></script>
+    <script src="/js/language.js"></script>
+    
   <% } %> 
 </head>
 <body>
 
     <nav class="navbar navbar-inverse">
         <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle" id="collapse-button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        

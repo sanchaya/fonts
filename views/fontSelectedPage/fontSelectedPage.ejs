@@ -1,7 +1,13 @@
 <div class="data-container container">
     <div class="nav-container container">
         <ul class="nav nav-pills nav-justified secondary">
-          <li class="active">
+            <li class="active">
+                <a data-toggle="pill" href="#paragraph">
+                  <span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><br>
+                  PARAGRAPH
+                </a>
+            </li>
+            <li>
               <a data-toggle="pill" href="#overview">
                 <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span><br>
                 OVERVIEW
@@ -23,7 +29,10 @@
     </div>
     <div class="data container">
         <div class="tab-content">
-          <div id="overview" class="tab-pane fade in active">
+          <div id="paragraph" class="tab-pane fade in active">
+              <%- include('paragraph/paragraph') %> 
+          </div>
+          <div id="overview" class="tab-pane fade">
               <%- include('overview/overview',{overview:overview}) %> 
           </div>
           <div id="syllabary" class="tab-pane fade">

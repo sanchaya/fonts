@@ -2,6 +2,10 @@ $(document).ready(function(){
     hideAllConjuncts()
     showInitialConjuncts()
     clickActionOnDropdown()
+
+    $('#collapse-button').click(function(){
+        $('#myNavbar').collapse('toggle')
+   })
 })
 
 var hideAllConjuncts = () =>{
