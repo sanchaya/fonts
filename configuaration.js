@@ -12,6 +12,7 @@ const conjuncts_in_json = ['conjuncts1S1','conjuncts2S1','conjuncts3S1','conjunc
 
 const conjuncts_in_page = ['Final Consonants','2 Consonants', '3 Consonants', '4 Consonants', '5 Consonants']
 
+const font_extentions = ['.ttf','.TTF','.pfm','.pfb','.PFM','.PFB','.VFB','.VTB','.vfb','.vtb']
 
 const pages = {
     fontPage:false,
@@ -27,5 +28,6 @@ module.exports = {
     all_conjuncts:all_conjuncts,
     conjuncts_in_json:conjuncts_in_json,
     conjuncts_in_page:conjuncts_in_page,
-    numerals:numerals
+    numerals:numerals,
+    font_extentions:font_extentions
 }

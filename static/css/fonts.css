@@ -1,53 +1,43 @@
 /*-----------------------akaya kannadaka ------------------------------*/
 @font-face {
     font-family: "Akaya Kannadaka";
-    src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
+    
 }
 
 /*----------------------- Baloo tamma ------------------------------*/
 
 @font-face {
     font-family: "Baloo Tamma Bold";
-    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
+    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Bold.ttf");
+    
 }
 
 @font-face {
     font-family: "Baloo Tamma ExtraBold";
-    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-ExtraBold.ttf") format("truetype");
-    font-weight: bolder;
-    font-style: normal;
+    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-ExtraBold.ttf");
+    
 }
 
 @font-face {
     font-family: "Baloo Tamma Medium";
-    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Medium.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Medium.ttf");
+   
 }
 
 @font-face {
     font-family: "Baloo Tamma Regular";
-    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Regular.ttf");
 }
 
 @font-face {
     font-family: "Baloo Tamma SemiBold";
-    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-SemiBold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
+    src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-SemiBold.ttf");
 }
 
 /*------------------------------Benne-------------------------------*/
 
 @font-face {
     font-family: "Benne";
-    src: url("../Fonts/Benne/Benne-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../Fonts/Benne/Benne-Regular.ttf");
 }
