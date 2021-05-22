@@ -43,14 +43,33 @@ $(document).ready(function(){
     
     modifyInputs();
 
-   $('#collapse-button').click(function(){
-        $('#myNavbar').collapse('toggle')
-   })
 
+    set_initial_text()
+
+   
    $('#type-text').keyup(function(){
-       $('#in-para-txt p').text($(this).val())
+       input_to_para(this)
    })
 })
+
+var set_initial_text = () =>{
+    $('#type-text').val("ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ")
+    input_to_para($('#type-text'))
+    addClassInput($(".field-wrapper input"))
+}
+
+var input_to_para = (ele) =>{
+    $('#in-para-txt p').text($(ele).val())
+}
+
+var addClassInput = (ele) =>{
+    var value = $.trim($(ele).val());
+    if (value) {
+        $(ele).closest(".field-wrapper").addClass("hasValue");
+    } else {
+        $(ele).closest(".field-wrapper").removeClass("hasValue");
+    }
+}
 
 $(function () {
 
@@ -58,12 +77,7 @@ $(function () {
         $(this).closest(".field-wrapper").find("input").focus();
     });
     $(".field-wrapper input").on("keyup", function () {
-        var value = $.trim($(this).val());
-        if (value) {
-            $(this).closest(".field-wrapper").addClass("hasValue");
-        } else {
-            $(this).closest(".field-wrapper").removeClass("hasValue");
-        }
+        addClassInput(this)
     });
 
 });

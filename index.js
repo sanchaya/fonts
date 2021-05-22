@@ -23,10 +23,10 @@ const {get_all_data, get_all_conjuncts,getFonts,getFontFromParam} = require('./M
 
 const fs = require('fs')
 
+
 /*----------app usage and set-------------- */
 
 app.use(router)
-
 
 app.use(express.static(path.join(__dirname,'static')))
 
@@ -44,6 +44,7 @@ app.use(bodyParser.json());
 app.use(function(req,res,next){
     res.send('page does not exist')
 })
+
 
 /*--------------error page thrower */
 
