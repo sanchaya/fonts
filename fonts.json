@@ -1,30 +1,4398 @@
 {
-    "BalooTammaRegular":{
-        "font":"Baloo Tamma Regular",
-        "name":"BalooTammaRegular"
-    },
-    "BalooTammaMedium":{
-        "font":"Baloo Tamma Medium",
-        "name":"BalooTammaMedium"
-    },
-    "BalooTammaSemiBold":{
-        "font":"Baloo Tamma SemiBold",
-        "name":"BalooTammaSemiBold"
-    },
-    "BalooTammaExtraBold":{
-        "font":"Baloo Tamma ExtraBold",
-        "name":"BalooTammaExtraBold"
-    },
-    "BalooTammaBold":{
-        "font":"Baloo Tamma Bold",
-        "name":"BalooTammaBold"
-    },
-    "AkayaKannadaka":{
-        "font":"Akaya Kannadaka",
-        "name":"AkayaKannadaka"
-    },
-    "Benne":{
-        "font":"Benne",
-        "name":"Benne"
-    }
+	"AkayaKanadakaAkayaKanadaka-Regular": {
+		"font": "Akaya Kanadaka AkayaKanadaka Regular",
+		"name": "AkayaKanadakaAkayaKanadaka-Regular"
+	},
+	"BalooTamma2BalooTamma2-Bold": {
+		"font": "Baloo Tamma 2 BalooTamma2 Bold",
+		"name": "BalooTamma2BalooTamma2-Bold"
+	},
+	"BalooTamma2BalooTamma2-ExtraBold": {
+		"font": "Baloo Tamma 2 BalooTamma2 ExtraBold",
+		"name": "BalooTamma2BalooTamma2-ExtraBold"
+	},
+	"BalooTamma2BalooTamma2-Medium": {
+		"font": "Baloo Tamma 2 BalooTamma2 Medium",
+		"name": "BalooTamma2BalooTamma2-Medium"
+	},
+	"BalooTamma2BalooTamma2-Regular": {
+		"font": "Baloo Tamma 2 BalooTamma2 Regular",
+		"name": "BalooTamma2BalooTamma2-Regular"
+	},
+	"BalooTamma2BalooTamma2-SemiBold": {
+		"font": "Baloo Tamma 2 BalooTamma2 SemiBold",
+		"name": "BalooTamma2BalooTamma2-SemiBold"
+	},
+	"BenneBenne-Regular": {
+		"font": "Benne Benne Regular",
+		"name": "BenneBenne-Regular"
+	},
+	"Incharainchara": {
+		"font": "Inchara inchara",
+		"name": "Incharainchara"
+	},
+	"KedageKedage-b": {
+		"font": "Kedage Kedage b",
+		"name": "KedageKedage-b"
+	},
+	"KedageKedage-i": {
+		"font": "Kedage Kedage i",
+		"name": "KedageKedage-i"
+	},
+	"KedageKedage-n": {
+		"font": "Kedage Kedage n",
+		"name": "KedageKedage-n"
+	},
+	"KedageKedage-t": {
+		"font": "Kedage Kedage t",
+		"name": "KedageKedage-t"
+	},
+	"Lohit-KannadaLohit-Kannada": {
+		"font": "Lohit Kannada Lohit Kannada",
+		"name": "Lohit-KannadaLohit-Kannada"
+	},
+	"MaligeMalige-b": {
+		"font": "Malige Malige b",
+		"name": "MaligeMalige-b"
+	},
+	"MaligeMalige-i": {
+		"font": "Malige Malige i",
+		"name": "MaligeMalige-i"
+	},
+	"MaligeMalige-n": {
+		"font": "Malige Malige n",
+		"name": "MaligeMalige-n"
+	},
+	"MaligeMalige-t": {
+		"font": "Malige Malige t",
+		"name": "MaligeMalige-t"
+	},
+	"Murty-KannadaMurty-Kannada": {
+		"font": "Murty Kannada Murty Kannada",
+		"name": "Murty-KannadaMurty-Kannada"
+	},
+	"NotoSansKannada-unhintedNotoSansKannada-Bold": {
+		"font": "NotoSansKannada unhinted NotoSansKannada Bold",
+		"name": "NotoSansKannada-unhintedNotoSansKannada-Bold"
+	},
+	"NotoSansKannada-unhintedNotoSansKannada-Regular": {
+		"font": "NotoSansKannada unhinted NotoSansKannada Regular",
+		"name": "NotoSansKannada-unhintedNotoSansKannada-Regular"
+	},
+	"NotoSansKannada-unhintedNotoSansKannadaUI-Bold": {
+		"font": "NotoSansKannada unhinted NotoSansKannadaUI Bold",
+		"name": "NotoSansKannada-unhintedNotoSansKannadaUI-Bold"
+	},
+	"NotoSansKannada-unhintedNotoSansKannadaUI-Regular": {
+		"font": "NotoSansKannada unhinted NotoSansKannadaUI Regular",
+		"name": "NotoSansKannada-unhintedNotoSansKannadaUI-Regular"
+	},
+	"NotoSerifKannada-unhintedNotoSerifKannada-Bold": {
+		"font": "NotoSerifKannada unhinted NotoSerifKannada Bold",
+		"name": "NotoSerifKannada-unhintedNotoSerifKannada-Bold"
+	},
+	"NotoSerifKannada-unhintedNotoSerifKannada-Regular": {
+		"font": "NotoSerifKannada unhinted NotoSerifKannada Regular",
+		"name": "NotoSerifKannada-unhintedNotoSerifKannada-Regular"
+	},
+	"NudifontsNUDI19E": {
+		"font": "Nudi fonts NUDI 19 E",
+		"name": "NudifontsNUDI19E"
+	},
+	"NudifontsNUDI19K": {
+		"font": "Nudi fonts NUDI 19 K",
+		"name": "NudifontsNUDI19K"
+	},
+	"NudifontsNUDI20E": {
+		"font": "Nudi fonts NUDI 20 E",
+		"name": "NudifontsNUDI20E"
+	},
+	"NudifontsNUDI20K": {
+		"font": "Nudi fonts NUDI 20 K",
+		"name": "NudifontsNUDI20K"
+	},
+	"NudifontsNUDI21E": {
+		"font": "Nudi fonts NUDI 21 E",
+		"name": "NudifontsNUDI21E"
+	},
+	"NudifontsNUDI21K": {
+		"font": "Nudi fonts NUDI 21 K",
+		"name": "NudifontsNUDI21K"
+	},
+	"NudifontsNUDI22E": {
+		"font": "Nudi fonts NUDI 22 E",
+		"name": "NudifontsNUDI22E"
+	},
+	"NudifontsNUDI22K": {
+		"font": "Nudi fonts NUDI 22 K",
+		"name": "NudifontsNUDI22K"
+	},
+	"NudifontsNUDI23E": {
+		"font": "Nudi fonts NUDI 23 E",
+		"name": "NudifontsNUDI23E"
+	},
+	"NudifontsNUDI23K": {
+		"font": "Nudi fonts NUDI 23 K",
+		"name": "NudifontsNUDI23K"
+	},
+	"NudifontsNUDI24E": {
+		"font": "Nudi fonts NUDI 24 E",
+		"name": "NudifontsNUDI24E"
+	},
+	"NudifontsNUDI24K": {
+		"font": "Nudi fonts NUDI 24 K",
+		"name": "NudifontsNUDI24K"
+	},
+	"NudifontsNUDI25E": {
+		"font": "Nudi fonts NUDI 25 E",
+		"name": "NudifontsNUDI25E"
+	},
+	"NudifontsNUDI25K": {
+		"font": "Nudi fonts NUDI 25 K",
+		"name": "NudifontsNUDI25K"
+	},
+	"NudifontsNUDI26E": {
+		"font": "Nudi fonts NUDI 26 E",
+		"name": "NudifontsNUDI26E"
+	},
+	"NudifontsNUDI26K": {
+		"font": "Nudi fonts NUDI 26 K",
+		"name": "NudifontsNUDI26K"
+	},
+	"NudifontsNUDI27E": {
+		"font": "Nudi fonts NUDI 27 E",
+		"name": "NudifontsNUDI27E"
+	},
+	"NudifontsNUDI27K": {
+		"font": "Nudi fonts NUDI 27 K",
+		"name": "NudifontsNUDI27K"
+	},
+	"NudifontsNUDI28E": {
+		"font": "Nudi fonts NUDI 28 E",
+		"name": "NudifontsNUDI28E"
+	},
+	"NudifontsNUDI28K": {
+		"font": "Nudi fonts NUDI 28 K",
+		"name": "NudifontsNUDI28K"
+	},
+	"NudifontsNUDIKVKEB": {
+		"font": "Nudi fonts NUDI KVK E B",
+		"name": "NudifontsNUDIKVKEB"
+	},
+	"NudifontsNUDIKVKE": {
+		"font": "Nudi fonts NUDI KVK E",
+		"name": "NudifontsNUDIKVKE"
+	},
+	"NudifontsNUDIKVKKB": {
+		"font": "Nudi fonts NUDI KVK K B",
+		"name": "NudifontsNUDIKVKKB"
+	},
+	"NudifontsNUDIKVKK": {
+		"font": "Nudi fonts NUDI KVK K",
+		"name": "NudifontsNUDIKVKK"
+	},
+	"NudifontsNUDIUNI01EBOLD": {
+		"font": "Nudi fonts NUDI UNI 01E BOLD",
+		"name": "NudifontsNUDIUNI01EBOLD"
+	},
+	"NudifontsNUDIUNI01E": {
+		"font": "Nudi fonts NUDI UNI 01E",
+		"name": "NudifontsNUDIUNI01E"
+	},
+	"NudifontsNUDIUNI01K": {
+		"font": "Nudi fonts NUDI UNI 01K",
+		"name": "NudifontsNUDIUNI01K"
+	},
+	"NudifontsNUDIUNI02E": {
+		"font": "Nudi fonts NUDI UNI 02E",
+		"name": "NudifontsNUDIUNI02E"
+	},
+	"NudifontsNUDIUNI02K": {
+		"font": "Nudi fonts NUDI UNI 02K",
+		"name": "NudifontsNUDIUNI02K"
+	},
+	"NudifontsNUDIUNI03E": {
+		"font": "Nudi fonts NUDI UNI 03E",
+		"name": "NudifontsNUDIUNI03E"
+	},
+	"NudifontsNUDIUNI03K": {
+		"font": "Nudi fonts NUDI UNI 03K",
+		"name": "NudifontsNUDIUNI03K"
+	},
+	"NudifontsNUDIUNI04E": {
+		"font": "Nudi fonts NUDI UNI 04E",
+		"name": "NudifontsNUDIUNI04E"
+	},
+	"NudifontsNUDIUNI04K": {
+		"font": "Nudi fonts NUDI UNI 04K",
+		"name": "NudifontsNUDIUNI04K"
+	},
+	"NudifontsNUDIUNI06E": {
+		"font": "Nudi fonts NUDI UNI 06E",
+		"name": "NudifontsNUDIUNI06E"
+	},
+	"NudifontsNUDIUNI06K": {
+		"font": "Nudi fonts NUDI UNI 06K",
+		"name": "NudifontsNUDIUNI06K"
+	},
+	"NudifontsNUDIUNI07E": {
+		"font": "Nudi fonts NUDI UNI 07E",
+		"name": "NudifontsNUDIUNI07E"
+	},
+	"NudifontsNUDIUNI07K": {
+		"font": "Nudi fonts NUDI UNI 07K",
+		"name": "NudifontsNUDIUNI07K"
+	},
+	"NudifontsNUDIUNI08E": {
+		"font": "Nudi fonts NUDI UNI 08E",
+		"name": "NudifontsNUDIUNI08E"
+	},
+	"NudifontsNUDIUNI08K": {
+		"font": "Nudi fonts NUDI UNI 08K",
+		"name": "NudifontsNUDIUNI08K"
+	},
+	"NudifontsNUDIUNI09E": {
+		"font": "Nudi fonts NUDI UNI 09E",
+		"name": "NudifontsNUDIUNI09E"
+	},
+	"NudifontsNUDIUNI09K": {
+		"font": "Nudi fonts NUDI UNI 09K",
+		"name": "NudifontsNUDIUNI09K"
+	},
+	"NudifontsNUDIUNI10E": {
+		"font": "Nudi fonts NUDI UNI 10E",
+		"name": "NudifontsNUDIUNI10E"
+	},
+	"NudifontsNUDIUNI10K": {
+		"font": "Nudi fonts NUDI UNI 10K",
+		"name": "NudifontsNUDIUNI10K"
+	},
+	"NudifontsNUDIUNIananth05E": {
+		"font": "Nudi fonts NUDI UNI ananth 05E",
+		"name": "NudifontsNUDIUNIananth05E"
+	},
+	"NudifontsNUDIUNIananth05K": {
+		"font": "Nudi fonts NUDI UNI ananth 05K",
+		"name": "NudifontsNUDIUNIananth05K"
+	},
+	"NudifontsNUDI-00": {
+		"font": "Nudi fonts NUDI 00",
+		"name": "NudifontsNUDI-00"
+	},
+	"NudifontsNUDI-01": {
+		"font": "Nudi fonts NUDI 01",
+		"name": "NudifontsNUDI-01"
+	},
+	"NudifontsNUDI-02": {
+		"font": "Nudi fonts NUDI 02",
+		"name": "NudifontsNUDI-02"
+	},
+	"NudifontsNUDI-03": {
+		"font": "Nudi fonts NUDI 03",
+		"name": "NudifontsNUDI-03"
+	},
+	"NudifontsNUDI-04": {
+		"font": "Nudi fonts NUDI 04",
+		"name": "NudifontsNUDI-04"
+	},
+	"NudifontsNUDI-05": {
+		"font": "Nudi fonts NUDI 05",
+		"name": "NudifontsNUDI-05"
+	},
+	"NudifontsNUDI-06": {
+		"font": "Nudi fonts NUDI 06",
+		"name": "NudifontsNUDI-06"
+	},
+	"NudifontsNUDI-07": {
+		"font": "Nudi fonts NUDI 07",
+		"name": "NudifontsNUDI-07"
+	},
+	"NudifontsNUDI-08": {
+		"font": "Nudi fonts NUDI 08",
+		"name": "NudifontsNUDI-08"
+	},
+	"NudifontsNUDI-09": {
+		"font": "Nudi fonts NUDI 09",
+		"name": "NudifontsNUDI-09"
+	},
+	"NudifontsNUDI-10": {
+		"font": "Nudi fonts NUDI 10",
+		"name": "NudifontsNUDI-10"
+	},
+	"NudifontsNUDI-11": {
+		"font": "Nudi fonts NUDI 11",
+		"name": "NudifontsNUDI-11"
+	},
+	"NudifontsNUDI-12": {
+		"font": "Nudi fonts NUDI 12",
+		"name": "NudifontsNUDI-12"
+	},
+	"NudifontsNUDI00": {
+		"font": "Nudi fonts NUDI00",
+		"name": "NudifontsNUDI00"
+	},
+	"NudifontsNUDI01": {
+		"font": "Nudi fonts NUDI01",
+		"name": "NudifontsNUDI01"
+	},
+	"NudifontsNUDI02": {
+		"font": "Nudi fonts NUDI02",
+		"name": "NudifontsNUDI02"
+	},
+	"NudifontsNUDI03": {
+		"font": "Nudi fonts NUDI03",
+		"name": "NudifontsNUDI03"
+	},
+	"NudifontsNUDI04": {
+		"font": "Nudi fonts NUDI04",
+		"name": "NudifontsNUDI04"
+	},
+	"NudifontsNUDI05": {
+		"font": "Nudi fonts NUDI05",
+		"name": "NudifontsNUDI05"
+	},
+	"NudifontsNUDI06": {
+		"font": "Nudi fonts NUDI06",
+		"name": "NudifontsNUDI06"
+	},
+	"NudifontsNUDI07": {
+		"font": "Nudi fonts NUDI07",
+		"name": "NudifontsNUDI07"
+	},
+	"NudifontsNUDI08": {
+		"font": "Nudi fonts NUDI08",
+		"name": "NudifontsNUDI08"
+	},
+	"NudifontsNUDI10": {
+		"font": "Nudi fonts NUDI10",
+		"name": "NudifontsNUDI10"
+	},
+	"NudifontsNUDI11": {
+		"font": "Nudi fonts NUDI11",
+		"name": "NudifontsNUDI11"
+	},
+	"NudifontsNUDI12": {
+		"font": "Nudi fonts NUDI12",
+		"name": "NudifontsNUDI12"
+	},
+	"NudifontsNUDI14": {
+		"font": "Nudi fonts NUDI14",
+		"name": "NudifontsNUDI14"
+	},
+	"NudifontsNUDIB-00": {
+		"font": "Nudi fonts NUDIB 00",
+		"name": "NudifontsNUDIB-00"
+	},
+	"NudifontsNUDIB00": {
+		"font": "Nudi fonts NUDIB00",
+		"name": "NudifontsNUDIB00"
+	},
+	"NudifontsNudi01eb": {
+		"font": "Nudi fonts Nudi 01 e b",
+		"name": "NudifontsNudi01eb"
+	},
+	"NudifontsNudi01e": {
+		"font": "Nudi fonts Nudi 01 e",
+		"name": "NudifontsNudi01e"
+	},
+	"NudifontsNudi01kb": {
+		"font": "Nudi fonts Nudi 01 k b",
+		"name": "NudifontsNudi01kb"
+	},
+	"NudifontsNudi01k": {
+		"font": "Nudi fonts Nudi 01 k",
+		"name": "NudifontsNudi01k"
+	},
+	"NudifontsNudi02eb": {
+		"font": "Nudi fonts Nudi 02 e b",
+		"name": "NudifontsNudi02eb"
+	},
+	"NudifontsNudi02e": {
+		"font": "Nudi fonts Nudi 02 e",
+		"name": "NudifontsNudi02e"
+	},
+	"NudifontsNudi02kb": {
+		"font": "Nudi fonts Nudi 02 k b",
+		"name": "NudifontsNudi02kb"
+	},
+	"NudifontsNudi02k": {
+		"font": "Nudi fonts Nudi 02 k",
+		"name": "NudifontsNudi02k"
+	},
+	"NudifontsNudi03eb": {
+		"font": "Nudi fonts Nudi 03 e b",
+		"name": "NudifontsNudi03eb"
+	},
+	"NudifontsNudi03e": {
+		"font": "Nudi fonts Nudi 03 e",
+		"name": "NudifontsNudi03e"
+	},
+	"NudifontsNudi03kb": {
+		"font": "Nudi fonts Nudi 03 k b",
+		"name": "NudifontsNudi03kb"
+	},
+	"NudifontsNudi03k": {
+		"font": "Nudi fonts Nudi 03 k",
+		"name": "NudifontsNudi03k"
+	},
+	"NudifontsNudi04eb": {
+		"font": "Nudi fonts Nudi 04 e b",
+		"name": "NudifontsNudi04eb"
+	},
+	"NudifontsNudi04e": {
+		"font": "Nudi fonts Nudi 04 e",
+		"name": "NudifontsNudi04e"
+	},
+	"NudifontsNudi04kb": {
+		"font": "Nudi fonts Nudi 04 k b",
+		"name": "NudifontsNudi04kb"
+	},
+	"NudifontsNudi04k": {
+		"font": "Nudi fonts Nudi 04 k",
+		"name": "NudifontsNudi04k"
+	},
+	"NudifontsNudi05eb": {
+		"font": "Nudi fonts Nudi 05 e b",
+		"name": "NudifontsNudi05eb"
+	},
+	"NudifontsNudi05e": {
+		"font": "Nudi fonts Nudi 05 e",
+		"name": "NudifontsNudi05e"
+	},
+	"NudifontsNudi05kb": {
+		"font": "Nudi fonts Nudi 05 k b",
+		"name": "NudifontsNudi05kb"
+	},
+	"NudifontsNudi05k": {
+		"font": "Nudi fonts Nudi 05 k",
+		"name": "NudifontsNudi05k"
+	},
+	"NudifontsNudi06eb": {
+		"font": "Nudi fonts Nudi 06 e b",
+		"name": "NudifontsNudi06eb"
+	},
+	"NudifontsNudi06e": {
+		"font": "Nudi fonts Nudi 06 e",
+		"name": "NudifontsNudi06e"
+	},
+	"NudifontsNudi06kb": {
+		"font": "Nudi fonts Nudi 06 k b",
+		"name": "NudifontsNudi06kb"
+	},
+	"NudifontsNudi06k": {
+		"font": "Nudi fonts Nudi 06 k",
+		"name": "NudifontsNudi06k"
+	},
+	"NudifontsNudi07eb": {
+		"font": "Nudi fonts Nudi 07 e b",
+		"name": "NudifontsNudi07eb"
+	},
+	"NudifontsNudi07e": {
+		"font": "Nudi fonts Nudi 07 e",
+		"name": "NudifontsNudi07e"
+	},
+	"NudifontsNudi07kb": {
+		"font": "Nudi fonts Nudi 07 k b",
+		"name": "NudifontsNudi07kb"
+	},
+	"NudifontsNudi07k": {
+		"font": "Nudi fonts Nudi 07 k",
+		"name": "NudifontsNudi07k"
+	},
+	"NudifontsNudi08eb": {
+		"font": "Nudi fonts Nudi 08 e b",
+		"name": "NudifontsNudi08eb"
+	},
+	"NudifontsNudi08e": {
+		"font": "Nudi fonts Nudi 08 e",
+		"name": "NudifontsNudi08e"
+	},
+	"NudifontsNudi08kb": {
+		"font": "Nudi fonts Nudi 08 k b",
+		"name": "NudifontsNudi08kb"
+	},
+	"NudifontsNudi08k": {
+		"font": "Nudi fonts Nudi 08 k",
+		"name": "NudifontsNudi08k"
+	},
+	"NudifontsNudi09e": {
+		"font": "Nudi fonts Nudi 09 e",
+		"name": "NudifontsNudi09e"
+	},
+	"NudifontsNudi09k": {
+		"font": "Nudi fonts Nudi 09 k",
+		"name": "NudifontsNudi09k"
+	},
+	"NudifontsNudi10e": {
+		"font": "Nudi fonts Nudi 10 e",
+		"name": "NudifontsNudi10e"
+	},
+	"NudifontsNudi10k": {
+		"font": "Nudi fonts Nudi 10 k",
+		"name": "NudifontsNudi10k"
+	},
+	"NudifontsNudi11e": {
+		"font": "Nudi fonts Nudi 11 e",
+		"name": "NudifontsNudi11e"
+	},
+	"NudifontsNudi11k": {
+		"font": "Nudi fonts Nudi 11 k",
+		"name": "NudifontsNudi11k"
+	},
+	"NudifontsNudi12e": {
+		"font": "Nudi fonts Nudi 12 e",
+		"name": "NudifontsNudi12e"
+	},
+	"NudifontsNudi12k": {
+		"font": "Nudi fonts Nudi 12 k",
+		"name": "NudifontsNudi12k"
+	},
+	"NudifontsNudi13e": {
+		"font": "Nudi fonts Nudi 13 e",
+		"name": "NudifontsNudi13e"
+	},
+	"NudifontsNudi13k": {
+		"font": "Nudi fonts Nudi 13 k",
+		"name": "NudifontsNudi13k"
+	},
+	"NudifontsNudi14e": {
+		"font": "Nudi fonts Nudi 14 e",
+		"name": "NudifontsNudi14e"
+	},
+	"NudifontsNudi14k": {
+		"font": "Nudi fonts Nudi 14 k",
+		"name": "NudifontsNudi14k"
+	},
+	"NudifontsNudi15e": {
+		"font": "Nudi fonts Nudi 15 e",
+		"name": "NudifontsNudi15e"
+	},
+	"NudifontsNudi15k": {
+		"font": "Nudi fonts Nudi 15 k",
+		"name": "NudifontsNudi15k"
+	},
+	"NudifontsNudi16e": {
+		"font": "Nudi fonts Nudi 16 e",
+		"name": "NudifontsNudi16e"
+	},
+	"NudifontsNudi16k": {
+		"font": "Nudi fonts Nudi 16 k",
+		"name": "NudifontsNudi16k"
+	},
+	"NudifontsNudi17e": {
+		"font": "Nudi fonts Nudi 17 e",
+		"name": "NudifontsNudi17e"
+	},
+	"NudifontsNudi17k": {
+		"font": "Nudi fonts Nudi 17 k",
+		"name": "NudifontsNudi17k"
+	},
+	"NudifontsNudi18e": {
+		"font": "Nudi fonts Nudi 18 e",
+		"name": "NudifontsNudi18e"
+	},
+	"NudifontsNudi18k": {
+		"font": "Nudi fonts Nudi 18 k",
+		"name": "NudifontsNudi18k"
+	},
+	"NudifontsNudiBAkshar-1": {
+		"font": "Nudi fonts Nudi B Akshar 1",
+		"name": "NudifontsNudiBAkshar-1"
+	},
+	"NudifontsNudiBAkshar-2": {
+		"font": "Nudi fonts Nudi B Akshar 2",
+		"name": "NudifontsNudiBAkshar-2"
+	},
+	"NudifontsNudiBAkshara-1": {
+		"font": "Nudi fonts Nudi B Akshara 1",
+		"name": "NudifontsNudiBAkshara-1"
+	},
+	"NudifontsNudiBAkshara-2": {
+		"font": "Nudi fonts Nudi B Akshara 2",
+		"name": "NudifontsNudiBAkshara-2"
+	},
+	"NudifontsNudivediceb": {
+		"font": "Nudi fonts Nudi vedic e b",
+		"name": "NudifontsNudivediceb"
+	},
+	"NudifontsNudivedice": {
+		"font": "Nudi fonts Nudi vedic e",
+		"name": "NudifontsNudivedice"
+	},
+	"NudifontsNudivedickb": {
+		"font": "Nudi fonts Nudi vedic k b",
+		"name": "NudifontsNudivedickb"
+	},
+	"NudifontsNudivedick": {
+		"font": "Nudi fonts Nudi vedic k",
+		"name": "NudifontsNudivedick"
+	},
+	"NudifontsNudiISCII": {
+		"font": "Nudi fonts Nudi ISCII",
+		"name": "NudifontsNudiISCII"
+	},
+	"NudifontsNudiKSCLP": {
+		"font": "Nudi fonts Nudi KSCLP",
+		"name": "NudifontsNudiKSCLP"
+	},
+	"NudifontsNudiweb01e": {
+		"font": "Nudi fonts Nudiweb01e",
+		"name": "NudifontsNudiweb01e"
+	},
+	"NudifontsNudiweb01eb": {
+		"font": "Nudi fonts Nudiweb01eb",
+		"name": "NudifontsNudiweb01eb"
+	},
+	"NudifontsNudiweb01k": {
+		"font": "Nudi fonts Nudiweb01k",
+		"name": "NudifontsNudiweb01k"
+	},
+	"NudifontsNudiweb01kb": {
+		"font": "Nudi fonts Nudiweb01kb",
+		"name": "NudifontsNudiweb01kb"
+	},
+	"Nudifontsnudiaksharb": {
+		"font": "Nudi fonts nudi akshar b",
+		"name": "Nudifontsnudiaksharb"
+	},
+	"Nudifontsnudiaksharab": {
+		"font": "Nudi fonts nudi akshara b",
+		"name": "Nudifontsnudiaksharab"
+	},
+	"PRAKASHAKCHABI": {
+		"font": "PRAKASHAK CHABI",
+		"name": "PRAKASHAKCHABI"
+	},
+	"PRAKASHAKCHABN": {
+		"font": "PRAKASHAK CHABN",
+		"name": "PRAKASHAKCHABN"
+	},
+	"PRAKASHAKHOYBI": {
+		"font": "PRAKASHAK HOYBI",
+		"name": "PRAKASHAKHOYBI"
+	},
+	"PRAKASHAKHOYBN": {
+		"font": "PRAKASHAK HOYBN",
+		"name": "PRAKASHAKHOYBN"
+	},
+	"PRAKASHAKHOYLI": {
+		"font": "PRAKASHAK HOYLI",
+		"name": "PRAKASHAKHOYLI"
+	},
+	"PRAKASHAKHOYLN": {
+		"font": "PRAKASHAK HOYLN",
+		"name": "PRAKASHAKHOYLN"
+	},
+	"PRAKASHAKHOYMI": {
+		"font": "PRAKASHAK HOYMI",
+		"name": "PRAKASHAKHOYMI"
+	},
+	"PRAKASHAKHOYMN": {
+		"font": "PRAKASHAK HOYMN",
+		"name": "PRAKASHAKHOYMN"
+	},
+	"PRAKASHAKKAPMI": {
+		"font": "PRAKASHAK KAPMI",
+		"name": "PRAKASHAKKAPMI"
+	},
+	"PRAKASHAKKAPMN": {
+		"font": "PRAKASHAK KAPMN",
+		"name": "PRAKASHAKKAPMN"
+	},
+	"PRAKASHAKKAVMI": {
+		"font": "PRAKASHAK KAVMI",
+		"name": "PRAKASHAKKAVMI"
+	},
+	"PRAKASHAKKAVMN": {
+		"font": "PRAKASHAK KAVMN",
+		"name": "PRAKASHAKKAVMN"
+	},
+	"PRAKASHAKKVPBI": {
+		"font": "PRAKASHAK KVPBI",
+		"name": "PRAKASHAKKVPBI"
+	},
+	"PRAKASHAKKVPBN": {
+		"font": "PRAKASHAK KVPBN",
+		"name": "PRAKASHAKKVPBN"
+	},
+	"PRAKASHAKKVPMI": {
+		"font": "PRAKASHAK KVPMI",
+		"name": "PRAKASHAKKVPMI"
+	},
+	"PRAKASHAKKVPMN": {
+		"font": "PRAKASHAK KVPMN",
+		"name": "PRAKASHAKKVPMN"
+	},
+	"PRAKASHAKNETMI": {
+		"font": "PRAKASHAK NETMI",
+		"name": "PRAKASHAKNETMI"
+	},
+	"PRAKASHAKNETMN": {
+		"font": "PRAKASHAK NETMN",
+		"name": "PRAKASHAKNETMN"
+	},
+	"PRAKASHAKPAMBI": {
+		"font": "PRAKASHAK PAMBI",
+		"name": "PRAKASHAKPAMBI"
+	},
+	"PRAKASHAKPAMBN": {
+		"font": "PRAKASHAK PAMBN",
+		"name": "PRAKASHAKPAMBN"
+	},
+	"PRAKASHAKPAMMI": {
+		"font": "PRAKASHAK PAMMI",
+		"name": "PRAKASHAKPAMMI"
+	},
+	"PRAKASHAKPAMMN": {
+		"font": "PRAKASHAK PAMMN",
+		"name": "PRAKASHAKPAMMN"
+	},
+	"PRAKASHAKPRABI": {
+		"font": "PRAKASHAK PRABI",
+		"name": "PRAKASHAKPRABI"
+	},
+	"PRAKASHAKPRABN": {
+		"font": "PRAKASHAK PRABN",
+		"name": "PRAKASHAKPRABN"
+	},
+	"PRAKASHAKPRADI": {
+		"font": "PRAKASHAK PRADI",
+		"name": "PRAKASHAKPRADI"
+	},
+	"PRAKASHAKPRADN": {
+		"font": "PRAKASHAK PRADN",
+		"name": "PRAKASHAKPRADN"
+	},
+	"PRAKASHAKPRALI": {
+		"font": "PRAKASHAK PRALI",
+		"name": "PRAKASHAKPRALI"
+	},
+	"PRAKASHAKPRALN": {
+		"font": "PRAKASHAK PRALN",
+		"name": "PRAKASHAKPRALN"
+	},
+	"PRAKASHAKPRAMI": {
+		"font": "PRAKASHAK PRAMI",
+		"name": "PRAKASHAKPRAMI"
+	},
+	"PRAKASHAKPRAMN": {
+		"font": "PRAKASHAK PRAMN",
+		"name": "PRAKASHAKPRAMN"
+	},
+	"PRAKASHAKPULMI": {
+		"font": "PRAKASHAK PULMI",
+		"name": "PRAKASHAKPULMI"
+	},
+	"PRAKASHAKPULMN": {
+		"font": "PRAKASHAK PULMN",
+		"name": "PRAKASHAKPULMN"
+	},
+	"PRAKASHAKRANBI": {
+		"font": "PRAKASHAK RANBI",
+		"name": "PRAKASHAKRANBI"
+	},
+	"PRAKASHAKRANBN": {
+		"font": "PRAKASHAK RANBN",
+		"name": "PRAKASHAKRANBN"
+	},
+	"PRAKASHAKRANLI": {
+		"font": "PRAKASHAK RANLI",
+		"name": "PRAKASHAKRANLI"
+	},
+	"PRAKASHAKRANLN": {
+		"font": "PRAKASHAK RANLN",
+		"name": "PRAKASHAKRANLN"
+	},
+	"PRAKASHAKRANMI": {
+		"font": "PRAKASHAK RANMI",
+		"name": "PRAKASHAKRANMI"
+	},
+	"PRAKASHAKRANMN": {
+		"font": "PRAKASHAK RANMN",
+		"name": "PRAKASHAKRANMN"
+	},
+	"PRAKASHAKSAGBI": {
+		"font": "PRAKASHAK SAGBI",
+		"name": "PRAKASHAKSAGBI"
+	},
+	"PRAKASHAKSAGBN": {
+		"font": "PRAKASHAK SAGBN",
+		"name": "PRAKASHAKSAGBN"
+	},
+	"PRAKASHAKSAGLI": {
+		"font": "PRAKASHAK SAGLI",
+		"name": "PRAKASHAKSAGLI"
+	},
+	"PRAKASHAKSAGLN": {
+		"font": "PRAKASHAK SAGLN",
+		"name": "PRAKASHAKSAGLN"
+	},
+	"PRAKASHAKSAGMI": {
+		"font": "PRAKASHAK SAGMI",
+		"name": "PRAKASHAKSAGMI"
+	},
+	"PRAKASHAKSAGMN": {
+		"font": "PRAKASHAK SAGMN",
+		"name": "PRAKASHAKSAGMN"
+	},
+	"PRAKASHAKSHLBI": {
+		"font": "PRAKASHAK SHLBI",
+		"name": "PRAKASHAKSHLBI"
+	},
+	"PRAKASHAKSHLBN": {
+		"font": "PRAKASHAK SHLBN",
+		"name": "PRAKASHAKSHLBN"
+	},
+	"PRAKASHAKSRRMI": {
+		"font": "PRAKASHAK SRRMI",
+		"name": "PRAKASHAKSRRMI"
+	},
+	"PRAKASHAKSRRMN": {
+		"font": "PRAKASHAK SRRMN",
+		"name": "PRAKASHAKSRRMN"
+	},
+	"PRAKASHAKTUNBI": {
+		"font": "PRAKASHAK TUNBI",
+		"name": "PRAKASHAKTUNBI"
+	},
+	"PRAKASHAKTUNBN": {
+		"font": "PRAKASHAK TUNBN",
+		"name": "PRAKASHAKTUNBN"
+	},
+	"PRAKASHAKTUNMI": {
+		"font": "PRAKASHAK TUNMI",
+		"name": "PRAKASHAKTUNMI"
+	},
+	"PRAKASHAKTUNMN": {
+		"font": "PRAKASHAK TUNMN",
+		"name": "PRAKASHAKTUNMN"
+	},
+	"PRAKASHAKVANBI": {
+		"font": "PRAKASHAK VANBI",
+		"name": "PRAKASHAKVANBI"
+	},
+	"PRAKASHAKVANBN": {
+		"font": "PRAKASHAK VANBN",
+		"name": "PRAKASHAKVANBN"
+	},
+	"PRAKASHAKVANLI": {
+		"font": "PRAKASHAK VANLI",
+		"name": "PRAKASHAKVANLI"
+	},
+	"PRAKASHAKVANLN": {
+		"font": "PRAKASHAK VANLN",
+		"name": "PRAKASHAKVANLN"
+	},
+	"PRAKASHAKVANMI": {
+		"font": "PRAKASHAK VANMI",
+		"name": "PRAKASHAKVANMI"
+	},
+	"PRAKASHAKVANMN": {
+		"font": "PRAKASHAK VANMN",
+		"name": "PRAKASHAKVANMN"
+	},
+	"PRAKASHAKVIDBI": {
+		"font": "PRAKASHAK VIDBI",
+		"name": "PRAKASHAKVIDBI"
+	},
+	"PRAKASHAKVIDBN": {
+		"font": "PRAKASHAK VIDBN",
+		"name": "PRAKASHAKVIDBN"
+	},
+	"PRAKASHAKVIDMI": {
+		"font": "PRAKASHAK VIDMI",
+		"name": "PRAKASHAKVIDMI"
+	},
+	"PRAKASHAKVIDMN": {
+		"font": "PRAKASHAK VIDMN",
+		"name": "PRAKASHAKVIDMN"
+	},
+	"PrajaPRABI": {
+		"font": "Praja PRABI",
+		"name": "PrajaPRABI"
+	},
+	"PrajaPRABN": {
+		"font": "Praja PRABN",
+		"name": "PrajaPRABN"
+	},
+	"PrajaPRADI": {
+		"font": "Praja PRADI",
+		"name": "PrajaPRADI"
+	},
+	"PrajaPRADN": {
+		"font": "Praja PRADN",
+		"name": "PrajaPRADN"
+	},
+	"PrajaPRALI": {
+		"font": "Praja PRALI",
+		"name": "PrajaPRALI"
+	},
+	"PrajaPRALN": {
+		"font": "Praja PRALN",
+		"name": "PrajaPRALN"
+	},
+	"PrajaPRAMI": {
+		"font": "Praja PRAMI",
+		"name": "PrajaPRAMI"
+	},
+	"PrajaPRAMN": {
+		"font": "Praja PRAMN",
+		"name": "PrajaPRAMN"
+	},
+	"PrajaoldNATMNH": {
+		"font": "Praja old NATMN H",
+		"name": "PrajaoldNATMNH"
+	},
+	"PrajaoldPRABI": {
+		"font": "Praja old PRABI",
+		"name": "PrajaoldPRABI"
+	},
+	"PrajaoldPRABN": {
+		"font": "Praja old PRABN",
+		"name": "PrajaoldPRABN"
+	},
+	"PrajaoldPRADI": {
+		"font": "Praja old PRADI",
+		"name": "PrajaoldPRADI"
+	},
+	"PrajaoldPRADN": {
+		"font": "Praja old PRADN",
+		"name": "PrajaoldPRADN"
+	},
+	"PrajaoldPRALI": {
+		"font": "Praja old PRALI",
+		"name": "PrajaoldPRALI"
+	},
+	"PrajaoldPRALN": {
+		"font": "Praja old PRALN",
+		"name": "PrajaoldPRALN"
+	},
+	"PrajaoldPRAMI": {
+		"font": "Praja old PRAMI",
+		"name": "PrajaoldPRAMI"
+	},
+	"PrajaoldPRAMN": {
+		"font": "Praja old PRAMN",
+		"name": "PrajaoldPRAMN"
+	},
+	"Prajaufonts.compraja": {
+		"font": "Praja ufonts.com praja",
+		"name": "Prajaufonts.compraja"
+	},
+	"SakalBharatiSakalBharati": {
+		"font": "SakalBharati SakalBharati",
+		"name": "SakalBharatiSakalBharati"
+	},
+	"SakalBharatiSourcefileSakalBharatiNormal": {
+		"font": "SakalBharati Source file SakalBharati Normal",
+		"name": "SakalBharatiSourcefileSakalBharatiNormal"
+	},
+	"SampigeSampige": {
+		"font": "Sampige Sampige",
+		"name": "SampigeSampige"
+	},
+	"ShreelipiS0010890": {
+		"font": "Shreelipi S0010890",
+		"name": "ShreelipiS0010890"
+	},
+	"ShreelipiS0011890": {
+		"font": "Shreelipi S0011890",
+		"name": "ShreelipiS0011890"
+	},
+	"ShreelipiS0012890": {
+		"font": "Shreelipi S0012890",
+		"name": "ShreelipiS0012890"
+	},
+	"ShreelipiS0013890": {
+		"font": "Shreelipi S0013890",
+		"name": "ShreelipiS0013890"
+	},
+	"ShreelipiS0014890": {
+		"font": "Shreelipi S0014890",
+		"name": "ShreelipiS0014890"
+	},
+	"ShreelipiS0015890": {
+		"font": "Shreelipi S0015890",
+		"name": "ShreelipiS0015890"
+	},
+	"ShreelipiS0016890": {
+		"font": "Shreelipi S0016890",
+		"name": "ShreelipiS0016890"
+	},
+	"ShreelipiS0017890": {
+		"font": "Shreelipi S0017890",
+		"name": "ShreelipiS0017890"
+	},
+	"ShreelipiS0018890": {
+		"font": "Shreelipi S0018890",
+		"name": "ShreelipiS0018890"
+	},
+	"ShreelipiS0019890": {
+		"font": "Shreelipi S0019890",
+		"name": "ShreelipiS0019890"
+	},
+	"ShreelipiS0020890": {
+		"font": "Shreelipi S0020890",
+		"name": "ShreelipiS0020890"
+	},
+	"ShreelipiS0021890": {
+		"font": "Shreelipi S0021890",
+		"name": "ShreelipiS0021890"
+	},
+	"ShreelipiS0022890": {
+		"font": "Shreelipi S0022890",
+		"name": "ShreelipiS0022890"
+	},
+	"ShreelipiS0023890": {
+		"font": "Shreelipi S0023890",
+		"name": "ShreelipiS0023890"
+	},
+	"ShreelipiS0024890": {
+		"font": "Shreelipi S0024890",
+		"name": "ShreelipiS0024890"
+	},
+	"ShreelipiS0025890": {
+		"font": "Shreelipi S0025890",
+		"name": "ShreelipiS0025890"
+	},
+	"ShreelipiS0026890": {
+		"font": "Shreelipi S0026890",
+		"name": "ShreelipiS0026890"
+	},
+	"ShreelipiS0027890": {
+		"font": "Shreelipi S0027890",
+		"name": "ShreelipiS0027890"
+	},
+	"ShreelipiS0028890": {
+		"font": "Shreelipi S0028890",
+		"name": "ShreelipiS0028890"
+	},
+	"ShreelipiS0029890": {
+		"font": "Shreelipi S0029890",
+		"name": "ShreelipiS0029890"
+	},
+	"ShreelipiS0030890": {
+		"font": "Shreelipi S0030890",
+		"name": "ShreelipiS0030890"
+	},
+	"ShreelipiS0031890": {
+		"font": "Shreelipi S0031890",
+		"name": "ShreelipiS0031890"
+	},
+	"ShreelipiS0032890": {
+		"font": "Shreelipi S0032890",
+		"name": "ShreelipiS0032890"
+	},
+	"ShreelipiS0033890": {
+		"font": "Shreelipi S0033890",
+		"name": "ShreelipiS0033890"
+	},
+	"ShreelipiS0034890": {
+		"font": "Shreelipi S0034890",
+		"name": "ShreelipiS0034890"
+	},
+	"ShreelipiS0035890": {
+		"font": "Shreelipi S0035890",
+		"name": "ShreelipiS0035890"
+	},
+	"ShreelipiS0036890": {
+		"font": "Shreelipi S0036890",
+		"name": "ShreelipiS0036890"
+	},
+	"ShreelipiS0037890": {
+		"font": "Shreelipi S0037890",
+		"name": "ShreelipiS0037890"
+	},
+	"ShreelipiS0038890": {
+		"font": "Shreelipi S0038890",
+		"name": "ShreelipiS0038890"
+	},
+	"ShreelipiS0039890": {
+		"font": "Shreelipi S0039890",
+		"name": "ShreelipiS0039890"
+	},
+	"ShreelipiS0040890": {
+		"font": "Shreelipi S0040890",
+		"name": "ShreelipiS0040890"
+	},
+	"ShreelipiS0041890": {
+		"font": "Shreelipi S0041890",
+		"name": "ShreelipiS0041890"
+	},
+	"ShreelipiS0042890": {
+		"font": "Shreelipi S0042890",
+		"name": "ShreelipiS0042890"
+	},
+	"ShreelipiS0043890": {
+		"font": "Shreelipi S0043890",
+		"name": "ShreelipiS0043890"
+	},
+	"ShreelipiS0044890": {
+		"font": "Shreelipi S0044890",
+		"name": "ShreelipiS0044890"
+	},
+	"ShreelipiS0045890": {
+		"font": "Shreelipi S0045890",
+		"name": "ShreelipiS0045890"
+	},
+	"ShreelipiS0046890": {
+		"font": "Shreelipi S0046890",
+		"name": "ShreelipiS0046890"
+	},
+	"ShreelipiS0047890": {
+		"font": "Shreelipi S0047890",
+		"name": "ShreelipiS0047890"
+	},
+	"ShreelipiS0048890": {
+		"font": "Shreelipi S0048890",
+		"name": "ShreelipiS0048890"
+	},
+	"ShreelipiS0049890": {
+		"font": "Shreelipi S0049890",
+		"name": "ShreelipiS0049890"
+	},
+	"ShreelipiS0050890": {
+		"font": "Shreelipi S0050890",
+		"name": "ShreelipiS0050890"
+	},
+	"ShreelipiS0051890": {
+		"font": "Shreelipi S0051890",
+		"name": "ShreelipiS0051890"
+	},
+	"ShreelipiS0052890": {
+		"font": "Shreelipi S0052890",
+		"name": "ShreelipiS0052890"
+	},
+	"ShreelipiS0053890": {
+		"font": "Shreelipi S0053890",
+		"name": "ShreelipiS0053890"
+	},
+	"ShreelipiS0054890": {
+		"font": "Shreelipi S0054890",
+		"name": "ShreelipiS0054890"
+	},
+	"ShreelipiS0055890": {
+		"font": "Shreelipi S0055890",
+		"name": "ShreelipiS0055890"
+	},
+	"ShreelipiS0056890": {
+		"font": "Shreelipi S0056890",
+		"name": "ShreelipiS0056890"
+	},
+	"ShreelipiS0057890": {
+		"font": "Shreelipi S0057890",
+		"name": "ShreelipiS0057890"
+	},
+	"ShreelipiS0058890": {
+		"font": "Shreelipi S0058890",
+		"name": "ShreelipiS0058890"
+	},
+	"ShreelipiS0059890": {
+		"font": "Shreelipi S0059890",
+		"name": "ShreelipiS0059890"
+	},
+	"ShreelipiS0060890": {
+		"font": "Shreelipi S0060890",
+		"name": "ShreelipiS0060890"
+	},
+	"ShreelipiS0061890": {
+		"font": "Shreelipi S0061890",
+		"name": "ShreelipiS0061890"
+	},
+	"ShreelipiS0062890": {
+		"font": "Shreelipi S0062890",
+		"name": "ShreelipiS0062890"
+	},
+	"ShreelipiS0063890": {
+		"font": "Shreelipi S0063890",
+		"name": "ShreelipiS0063890"
+	},
+	"ShreelipiS0064890": {
+		"font": "Shreelipi S0064890",
+		"name": "ShreelipiS0064890"
+	},
+	"ShreelipiS0065890": {
+		"font": "Shreelipi S0065890",
+		"name": "ShreelipiS0065890"
+	},
+	"ShreelipiS0066890": {
+		"font": "Shreelipi S0066890",
+		"name": "ShreelipiS0066890"
+	},
+	"ShreelipiS0067890": {
+		"font": "Shreelipi S0067890",
+		"name": "ShreelipiS0067890"
+	},
+	"ShreelipiS0068890": {
+		"font": "Shreelipi S0068890",
+		"name": "ShreelipiS0068890"
+	},
+	"ShreelipiS0069890": {
+		"font": "Shreelipi S0069890",
+		"name": "ShreelipiS0069890"
+	},
+	"ShreelipiS0070890": {
+		"font": "Shreelipi S0070890",
+		"name": "ShreelipiS0070890"
+	},
+	"ShreelipiS0071890": {
+		"font": "Shreelipi S0071890",
+		"name": "ShreelipiS0071890"
+	},
+	"ShreelipiS0072890": {
+		"font": "Shreelipi S0072890",
+		"name": "ShreelipiS0072890"
+	},
+	"ShreelipiS0075890": {
+		"font": "Shreelipi S0075890",
+		"name": "ShreelipiS0075890"
+	},
+	"ShreelipiS0076890": {
+		"font": "Shreelipi S0076890",
+		"name": "ShreelipiS0076890"
+	},
+	"ShreelipiS0077890": {
+		"font": "Shreelipi S0077890",
+		"name": "ShreelipiS0077890"
+	},
+	"ShreelipiS0078890": {
+		"font": "Shreelipi S0078890",
+		"name": "ShreelipiS0078890"
+	},
+	"ShreelipiS0079890": {
+		"font": "Shreelipi S0079890",
+		"name": "ShreelipiS0079890"
+	},
+	"ShreelipiS0080890": {
+		"font": "Shreelipi S0080890",
+		"name": "ShreelipiS0080890"
+	},
+	"ShreelipiS0081890": {
+		"font": "Shreelipi S0081890",
+		"name": "ShreelipiS0081890"
+	},
+	"ShreelipiS0082890": {
+		"font": "Shreelipi S0082890",
+		"name": "ShreelipiS0082890"
+	},
+	"ShreelipiS0083890": {
+		"font": "Shreelipi S0083890",
+		"name": "ShreelipiS0083890"
+	},
+	"ShreelipiS0084890": {
+		"font": "Shreelipi S0084890",
+		"name": "ShreelipiS0084890"
+	},
+	"ShreelipiS0085890": {
+		"font": "Shreelipi S0085890",
+		"name": "ShreelipiS0085890"
+	},
+	"ShreelipiS0086890": {
+		"font": "Shreelipi S0086890",
+		"name": "ShreelipiS0086890"
+	},
+	"ShreelipiS0087890": {
+		"font": "Shreelipi S0087890",
+		"name": "ShreelipiS0087890"
+	},
+	"ShreelipiS0088890": {
+		"font": "Shreelipi S0088890",
+		"name": "ShreelipiS0088890"
+	},
+	"ShreelipiS0089890": {
+		"font": "Shreelipi S0089890",
+		"name": "ShreelipiS0089890"
+	},
+	"ShreelipiS0090890": {
+		"font": "Shreelipi S0090890",
+		"name": "ShreelipiS0090890"
+	},
+	"ShreelipiS0091890": {
+		"font": "Shreelipi S0091890",
+		"name": "ShreelipiS0091890"
+	},
+	"ShreelipiS0092890": {
+		"font": "Shreelipi S0092890",
+		"name": "ShreelipiS0092890"
+	},
+	"ShreelipiS0093890": {
+		"font": "Shreelipi S0093890",
+		"name": "ShreelipiS0093890"
+	},
+	"ShreelipiS0094890": {
+		"font": "Shreelipi S0094890",
+		"name": "ShreelipiS0094890"
+	},
+	"ShreelipiS0095890": {
+		"font": "Shreelipi S0095890",
+		"name": "ShreelipiS0095890"
+	},
+	"ShreelipiS0096890": {
+		"font": "Shreelipi S0096890",
+		"name": "ShreelipiS0096890"
+	},
+	"ShreelipiS0097890": {
+		"font": "Shreelipi S0097890",
+		"name": "ShreelipiS0097890"
+	},
+	"ShreelipiS0098890": {
+		"font": "Shreelipi S0098890",
+		"name": "ShreelipiS0098890"
+	},
+	"ShreelipiS0099890": {
+		"font": "Shreelipi S0099890",
+		"name": "ShreelipiS0099890"
+	},
+	"ShreelipiS0100890": {
+		"font": "Shreelipi S0100890",
+		"name": "ShreelipiS0100890"
+	},
+	"ShreelipiS0101890": {
+		"font": "Shreelipi S0101890",
+		"name": "ShreelipiS0101890"
+	},
+	"ShreelipiS0102890": {
+		"font": "Shreelipi S0102890",
+		"name": "ShreelipiS0102890"
+	},
+	"ShreelipiS0103890": {
+		"font": "Shreelipi S0103890",
+		"name": "ShreelipiS0103890"
+	},
+	"ShreelipiS0104890": {
+		"font": "Shreelipi S0104890",
+		"name": "ShreelipiS0104890"
+	},
+	"ShreelipiS0105890": {
+		"font": "Shreelipi S0105890",
+		"name": "ShreelipiS0105890"
+	},
+	"ShreelipiS0106890": {
+		"font": "Shreelipi S0106890",
+		"name": "ShreelipiS0106890"
+	},
+	"ShreelipiS0107890": {
+		"font": "Shreelipi S0107890",
+		"name": "ShreelipiS0107890"
+	},
+	"ShreelipiS0108890": {
+		"font": "Shreelipi S0108890",
+		"name": "ShreelipiS0108890"
+	},
+	"ShreelipiS0109890": {
+		"font": "Shreelipi S0109890",
+		"name": "ShreelipiS0109890"
+	},
+	"ShreelipiS0110890": {
+		"font": "Shreelipi S0110890",
+		"name": "ShreelipiS0110890"
+	},
+	"ShreelipiS0111890": {
+		"font": "Shreelipi S0111890",
+		"name": "ShreelipiS0111890"
+	},
+	"ShreelipiS0112890": {
+		"font": "Shreelipi S0112890",
+		"name": "ShreelipiS0112890"
+	},
+	"ShreelipiS0113890": {
+		"font": "Shreelipi S0113890",
+		"name": "ShreelipiS0113890"
+	},
+	"ShreelipiS0114890": {
+		"font": "Shreelipi S0114890",
+		"name": "ShreelipiS0114890"
+	},
+	"ShreelipiS0115890": {
+		"font": "Shreelipi S0115890",
+		"name": "ShreelipiS0115890"
+	},
+	"ShreelipiS0116890": {
+		"font": "Shreelipi S0116890",
+		"name": "ShreelipiS0116890"
+	},
+	"ShreelipiS0117890": {
+		"font": "Shreelipi S0117890",
+		"name": "ShreelipiS0117890"
+	},
+	"ShreelipiS0118890": {
+		"font": "Shreelipi S0118890",
+		"name": "ShreelipiS0118890"
+	},
+	"ShreelipiS0119890": {
+		"font": "Shreelipi S0119890",
+		"name": "ShreelipiS0119890"
+	},
+	"ShreelipiS0120890": {
+		"font": "Shreelipi S0120890",
+		"name": "ShreelipiS0120890"
+	},
+	"ShreelipiS0121890": {
+		"font": "Shreelipi S0121890",
+		"name": "ShreelipiS0121890"
+	},
+	"ShreelipiS0122890": {
+		"font": "Shreelipi S0122890",
+		"name": "ShreelipiS0122890"
+	},
+	"ShreelipiS0123890": {
+		"font": "Shreelipi S0123890",
+		"name": "ShreelipiS0123890"
+	},
+	"ShreelipiS0124890": {
+		"font": "Shreelipi S0124890",
+		"name": "ShreelipiS0124890"
+	},
+	"ShreelipiS0125890": {
+		"font": "Shreelipi S0125890",
+		"name": "ShreelipiS0125890"
+	},
+	"ShreelipiS0126890": {
+		"font": "Shreelipi S0126890",
+		"name": "ShreelipiS0126890"
+	},
+	"ShreelipiS0127890": {
+		"font": "Shreelipi S0127890",
+		"name": "ShreelipiS0127890"
+	},
+	"ShreelipiS0128890": {
+		"font": "Shreelipi S0128890",
+		"name": "ShreelipiS0128890"
+	},
+	"ShreelipiS0129890": {
+		"font": "Shreelipi S0129890",
+		"name": "ShreelipiS0129890"
+	},
+	"ShreelipiS0130890": {
+		"font": "Shreelipi S0130890",
+		"name": "ShreelipiS0130890"
+	},
+	"ShreelipiS0131890": {
+		"font": "Shreelipi S0131890",
+		"name": "ShreelipiS0131890"
+	},
+	"ShreelipiS0132890": {
+		"font": "Shreelipi S0132890",
+		"name": "ShreelipiS0132890"
+	},
+	"ShreelipiS0133890": {
+		"font": "Shreelipi S0133890",
+		"name": "ShreelipiS0133890"
+	},
+	"ShreelipiS0134890": {
+		"font": "Shreelipi S0134890",
+		"name": "ShreelipiS0134890"
+	},
+	"ShreelipiS0135890": {
+		"font": "Shreelipi S0135890",
+		"name": "ShreelipiS0135890"
+	},
+	"ShreelipiS0136890": {
+		"font": "Shreelipi S0136890",
+		"name": "ShreelipiS0136890"
+	},
+	"ShreelipiS0137890": {
+		"font": "Shreelipi S0137890",
+		"name": "ShreelipiS0137890"
+	},
+	"ShreelipiS0138890": {
+		"font": "Shreelipi S0138890",
+		"name": "ShreelipiS0138890"
+	},
+	"ShreelipiS0139890": {
+		"font": "Shreelipi S0139890",
+		"name": "ShreelipiS0139890"
+	},
+	"ShreelipiS0140890": {
+		"font": "Shreelipi S0140890",
+		"name": "ShreelipiS0140890"
+	},
+	"ShreelipiS0141890": {
+		"font": "Shreelipi S0141890",
+		"name": "ShreelipiS0141890"
+	},
+	"ShreelipiS0142890": {
+		"font": "Shreelipi S0142890",
+		"name": "ShreelipiS0142890"
+	},
+	"ShreelipiS0143890": {
+		"font": "Shreelipi S0143890",
+		"name": "ShreelipiS0143890"
+	},
+	"ShreelipiS0144890": {
+		"font": "Shreelipi S0144890",
+		"name": "ShreelipiS0144890"
+	},
+	"ShreelipiS0145890": {
+		"font": "Shreelipi S0145890",
+		"name": "ShreelipiS0145890"
+	},
+	"ShreelipiS0146890": {
+		"font": "Shreelipi S0146890",
+		"name": "ShreelipiS0146890"
+	},
+	"ShreelipiS0147890": {
+		"font": "Shreelipi S0147890",
+		"name": "ShreelipiS0147890"
+	},
+	"ShreelipiS0148890": {
+		"font": "Shreelipi S0148890",
+		"name": "ShreelipiS0148890"
+	},
+	"ShreelipiS0149890": {
+		"font": "Shreelipi S0149890",
+		"name": "ShreelipiS0149890"
+	},
+	"ShreelipiS0150890": {
+		"font": "Shreelipi S0150890",
+		"name": "ShreelipiS0150890"
+	},
+	"ShreelipiS0151890": {
+		"font": "Shreelipi S0151890",
+		"name": "ShreelipiS0151890"
+	},
+	"ShreelipiS0152890": {
+		"font": "Shreelipi S0152890",
+		"name": "ShreelipiS0152890"
+	},
+	"ShreelipiS0153890": {
+		"font": "Shreelipi S0153890",
+		"name": "ShreelipiS0153890"
+	},
+	"ShreelipiS0154890": {
+		"font": "Shreelipi S0154890",
+		"name": "ShreelipiS0154890"
+	},
+	"ShreelipiS0155890": {
+		"font": "Shreelipi S0155890",
+		"name": "ShreelipiS0155890"
+	},
+	"ShreelipiS0156890": {
+		"font": "Shreelipi S0156890",
+		"name": "ShreelipiS0156890"
+	},
+	"ShreelipiS0157890": {
+		"font": "Shreelipi S0157890",
+		"name": "ShreelipiS0157890"
+	},
+	"ShreelipiS0158890": {
+		"font": "Shreelipi S0158890",
+		"name": "ShreelipiS0158890"
+	},
+	"ShreelipiS0159890": {
+		"font": "Shreelipi S0159890",
+		"name": "ShreelipiS0159890"
+	},
+	"ShreelipiS0160890": {
+		"font": "Shreelipi S0160890",
+		"name": "ShreelipiS0160890"
+	},
+	"ShreelipiS0161890": {
+		"font": "Shreelipi S0161890",
+		"name": "ShreelipiS0161890"
+	},
+	"ShreelipiS0162890": {
+		"font": "Shreelipi S0162890",
+		"name": "ShreelipiS0162890"
+	},
+	"ShreelipiS0163890": {
+		"font": "Shreelipi S0163890",
+		"name": "ShreelipiS0163890"
+	},
+	"ShreelipiS0164890": {
+		"font": "Shreelipi S0164890",
+		"name": "ShreelipiS0164890"
+	},
+	"ShreelipiS0165890": {
+		"font": "Shreelipi S0165890",
+		"name": "ShreelipiS0165890"
+	},
+	"ShreelipiS0166890": {
+		"font": "Shreelipi S0166890",
+		"name": "ShreelipiS0166890"
+	},
+	"ShreelipiS0167890": {
+		"font": "Shreelipi S0167890",
+		"name": "ShreelipiS0167890"
+	},
+	"ShreelipiS0168890": {
+		"font": "Shreelipi S0168890",
+		"name": "ShreelipiS0168890"
+	},
+	"ShreelipiS0169890": {
+		"font": "Shreelipi S0169890",
+		"name": "ShreelipiS0169890"
+	},
+	"ShreelipiS0170890": {
+		"font": "Shreelipi S0170890",
+		"name": "ShreelipiS0170890"
+	},
+	"ShreelipiS0171890": {
+		"font": "Shreelipi S0171890",
+		"name": "ShreelipiS0171890"
+	},
+	"ShreelipiS0172890": {
+		"font": "Shreelipi S0172890",
+		"name": "ShreelipiS0172890"
+	},
+	"ShreelipiS0175890": {
+		"font": "Shreelipi S0175890",
+		"name": "ShreelipiS0175890"
+	},
+	"ShreelipiS0176890": {
+		"font": "Shreelipi S0176890",
+		"name": "ShreelipiS0176890"
+	},
+	"ShreelipiS0177890": {
+		"font": "Shreelipi S0177890",
+		"name": "ShreelipiS0177890"
+	},
+	"ShreelipiS0178890": {
+		"font": "Shreelipi S0178890",
+		"name": "ShreelipiS0178890"
+	},
+	"ShreelipiS0179890": {
+		"font": "Shreelipi S0179890",
+		"name": "ShreelipiS0179890"
+	},
+	"ShreelipiS0180890": {
+		"font": "Shreelipi S0180890",
+		"name": "ShreelipiS0180890"
+	},
+	"ShreelipiS0181890": {
+		"font": "Shreelipi S0181890",
+		"name": "ShreelipiS0181890"
+	},
+	"ShreelipiS0182890": {
+		"font": "Shreelipi S0182890",
+		"name": "ShreelipiS0182890"
+	},
+	"ShreelipiS0183890": {
+		"font": "Shreelipi S0183890",
+		"name": "ShreelipiS0183890"
+	},
+	"ShreelipiS0184890": {
+		"font": "Shreelipi S0184890",
+		"name": "ShreelipiS0184890"
+	},
+	"ShreelipiS0185890": {
+		"font": "Shreelipi S0185890",
+		"name": "ShreelipiS0185890"
+	},
+	"ShreelipiS0186890": {
+		"font": "Shreelipi S0186890",
+		"name": "ShreelipiS0186890"
+	},
+	"ShreelipiS0187890": {
+		"font": "Shreelipi S0187890",
+		"name": "ShreelipiS0187890"
+	},
+	"ShreelipiS0188890": {
+		"font": "Shreelipi S0188890",
+		"name": "ShreelipiS0188890"
+	},
+	"ShreelipiS0189890": {
+		"font": "Shreelipi S0189890",
+		"name": "ShreelipiS0189890"
+	},
+	"ShreelipiS0190890": {
+		"font": "Shreelipi S0190890",
+		"name": "ShreelipiS0190890"
+	},
+	"ShreelipiS0191890": {
+		"font": "Shreelipi S0191890",
+		"name": "ShreelipiS0191890"
+	},
+	"ShreelipiS0192890": {
+		"font": "Shreelipi S0192890",
+		"name": "ShreelipiS0192890"
+	},
+	"ShreelipiS0193890": {
+		"font": "Shreelipi S0193890",
+		"name": "ShreelipiS0193890"
+	},
+	"ShreelipiS0194890": {
+		"font": "Shreelipi S0194890",
+		"name": "ShreelipiS0194890"
+	},
+	"ShreelipiS0195890": {
+		"font": "Shreelipi S0195890",
+		"name": "ShreelipiS0195890"
+	},
+	"ShreelipiS0196890": {
+		"font": "Shreelipi S0196890",
+		"name": "ShreelipiS0196890"
+	},
+	"ShreelipiS0197890": {
+		"font": "Shreelipi S0197890",
+		"name": "ShreelipiS0197890"
+	},
+	"ShreelipiS0198890": {
+		"font": "Shreelipi S0198890",
+		"name": "ShreelipiS0198890"
+	},
+	"ShreelipiS0199890": {
+		"font": "Shreelipi S0199890",
+		"name": "ShreelipiS0199890"
+	},
+	"ShreelipiS0250890": {
+		"font": "Shreelipi S0250890",
+		"name": "ShreelipiS0250890"
+	},
+	"ShreelipiS0251890": {
+		"font": "Shreelipi S0251890",
+		"name": "ShreelipiS0251890"
+	},
+	"ShreelipiS0252890": {
+		"font": "Shreelipi S0252890",
+		"name": "ShreelipiS0252890"
+	},
+	"ShreelipiS0253890": {
+		"font": "Shreelipi S0253890",
+		"name": "ShreelipiS0253890"
+	},
+	"ShreelipiS0254890": {
+		"font": "Shreelipi S0254890",
+		"name": "ShreelipiS0254890"
+	},
+	"ShreelipiS0255890": {
+		"font": "Shreelipi S0255890",
+		"name": "ShreelipiS0255890"
+	},
+	"ShreelipiS0256890": {
+		"font": "Shreelipi S0256890",
+		"name": "ShreelipiS0256890"
+	},
+	"ShreelipiS0257890": {
+		"font": "Shreelipi S0257890",
+		"name": "ShreelipiS0257890"
+	},
+	"ShreelipiS0258890": {
+		"font": "Shreelipi S0258890",
+		"name": "ShreelipiS0258890"
+	},
+	"ShreelipiS0259890": {
+		"font": "Shreelipi S0259890",
+		"name": "ShreelipiS0259890"
+	},
+	"ShreelipiS0260890": {
+		"font": "Shreelipi S0260890",
+		"name": "ShreelipiS0260890"
+	},
+	"ShreelipiS0261890": {
+		"font": "Shreelipi S0261890",
+		"name": "ShreelipiS0261890"
+	},
+	"ShreelipiS0262890": {
+		"font": "Shreelipi S0262890",
+		"name": "ShreelipiS0262890"
+	},
+	"ShreelipiS0263890": {
+		"font": "Shreelipi S0263890",
+		"name": "ShreelipiS0263890"
+	},
+	"ShreelipiS0264890": {
+		"font": "Shreelipi S0264890",
+		"name": "ShreelipiS0264890"
+	},
+	"ShreelipiS0265890": {
+		"font": "Shreelipi S0265890",
+		"name": "ShreelipiS0265890"
+	},
+	"ShreelipiS0266890": {
+		"font": "Shreelipi S0266890",
+		"name": "ShreelipiS0266890"
+	},
+	"ShreelipiS0267890": {
+		"font": "Shreelipi S0267890",
+		"name": "ShreelipiS0267890"
+	},
+	"ShreelipiS0268890": {
+		"font": "Shreelipi S0268890",
+		"name": "ShreelipiS0268890"
+	},
+	"ShreelipiS0269890": {
+		"font": "Shreelipi S0269890",
+		"name": "ShreelipiS0269890"
+	},
+	"ShreelipiS0270890": {
+		"font": "Shreelipi S0270890",
+		"name": "ShreelipiS0270890"
+	},
+	"ShreelipiS0271890": {
+		"font": "Shreelipi S0271890",
+		"name": "ShreelipiS0271890"
+	},
+	"ShreelipiS0272890": {
+		"font": "Shreelipi S0272890",
+		"name": "ShreelipiS0272890"
+	},
+	"ShreelipiS0273890": {
+		"font": "Shreelipi S0273890",
+		"name": "ShreelipiS0273890"
+	},
+	"ShreelipiS0274890": {
+		"font": "Shreelipi S0274890",
+		"name": "ShreelipiS0274890"
+	},
+	"ShreelipiS0275890": {
+		"font": "Shreelipi S0275890",
+		"name": "ShreelipiS0275890"
+	},
+	"ShreelipiS0276890": {
+		"font": "Shreelipi S0276890",
+		"name": "ShreelipiS0276890"
+	},
+	"ShreelipiS0277890": {
+		"font": "Shreelipi S0277890",
+		"name": "ShreelipiS0277890"
+	},
+	"ShreelipiS0278890": {
+		"font": "Shreelipi S0278890",
+		"name": "ShreelipiS0278890"
+	},
+	"ShreelipiS0279890": {
+		"font": "Shreelipi S0279890",
+		"name": "ShreelipiS0279890"
+	},
+	"ShreelipiS0280890": {
+		"font": "Shreelipi S0280890",
+		"name": "ShreelipiS0280890"
+	},
+	"ShreelipiS0281890": {
+		"font": "Shreelipi S0281890",
+		"name": "ShreelipiS0281890"
+	},
+	"ShreelipiS0282890": {
+		"font": "Shreelipi S0282890",
+		"name": "ShreelipiS0282890"
+	},
+	"ShreelipiS0283890": {
+		"font": "Shreelipi S0283890",
+		"name": "ShreelipiS0283890"
+	},
+	"ShreelipiS0284890": {
+		"font": "Shreelipi S0284890",
+		"name": "ShreelipiS0284890"
+	},
+	"ShreelipiS0285890": {
+		"font": "Shreelipi S0285890",
+		"name": "ShreelipiS0285890"
+	},
+	"ShreelipiS0286890": {
+		"font": "Shreelipi S0286890",
+		"name": "ShreelipiS0286890"
+	},
+	"ShreelipiS0287890": {
+		"font": "Shreelipi S0287890",
+		"name": "ShreelipiS0287890"
+	},
+	"ShreelipiS0288890": {
+		"font": "Shreelipi S0288890",
+		"name": "ShreelipiS0288890"
+	},
+	"ShreelipiS0289890": {
+		"font": "Shreelipi S0289890",
+		"name": "ShreelipiS0289890"
+	},
+	"ShreelipiS0290890": {
+		"font": "Shreelipi S0290890",
+		"name": "ShreelipiS0290890"
+	},
+	"ShreelipiS0291890": {
+		"font": "Shreelipi S0291890",
+		"name": "ShreelipiS0291890"
+	},
+	"ShreelipiS0292890": {
+		"font": "Shreelipi S0292890",
+		"name": "ShreelipiS0292890"
+	},
+	"ShreelipiS0293890": {
+		"font": "Shreelipi S0293890",
+		"name": "ShreelipiS0293890"
+	},
+	"ShreelipiS0294890": {
+		"font": "Shreelipi S0294890",
+		"name": "ShreelipiS0294890"
+	},
+	"ShreelipiS0295890": {
+		"font": "Shreelipi S0295890",
+		"name": "ShreelipiS0295890"
+	},
+	"ShreelipiS0296890": {
+		"font": "Shreelipi S0296890",
+		"name": "ShreelipiS0296890"
+	},
+	"ShreelipiS0297890": {
+		"font": "Shreelipi S0297890",
+		"name": "ShreelipiS0297890"
+	},
+	"ShreelipiS0298890": {
+		"font": "Shreelipi S0298890",
+		"name": "ShreelipiS0298890"
+	},
+	"ShreelipiS0299890": {
+		"font": "Shreelipi S0299890",
+		"name": "ShreelipiS0299890"
+	},
+	"ShreelipiS0310890": {
+		"font": "Shreelipi S0310890",
+		"name": "ShreelipiS0310890"
+	},
+	"ShreelipiS0311890": {
+		"font": "Shreelipi S0311890",
+		"name": "ShreelipiS0311890"
+	},
+	"ShreelipiS0312890": {
+		"font": "Shreelipi S0312890",
+		"name": "ShreelipiS0312890"
+	},
+	"ShreelipiS0313890": {
+		"font": "Shreelipi S0313890",
+		"name": "ShreelipiS0313890"
+	},
+	"ShreelipiS0314890": {
+		"font": "Shreelipi S0314890",
+		"name": "ShreelipiS0314890"
+	},
+	"ShreelipiS0315890": {
+		"font": "Shreelipi S0315890",
+		"name": "ShreelipiS0315890"
+	},
+	"ShreelipiS0316890": {
+		"font": "Shreelipi S0316890",
+		"name": "ShreelipiS0316890"
+	},
+	"ShreelipiS0317890": {
+		"font": "Shreelipi S0317890",
+		"name": "ShreelipiS0317890"
+	},
+	"ShreelipiS0318890": {
+		"font": "Shreelipi S0318890",
+		"name": "ShreelipiS0318890"
+	},
+	"ShreelipiS0319890": {
+		"font": "Shreelipi S0319890",
+		"name": "ShreelipiS0319890"
+	},
+	"ShreelipiS0320890": {
+		"font": "Shreelipi S0320890",
+		"name": "ShreelipiS0320890"
+	},
+	"ShreelipiS0321890": {
+		"font": "Shreelipi S0321890",
+		"name": "ShreelipiS0321890"
+	},
+	"ShreelipiS0322890": {
+		"font": "Shreelipi S0322890",
+		"name": "ShreelipiS0322890"
+	},
+	"ShreelipiS0323890": {
+		"font": "Shreelipi S0323890",
+		"name": "ShreelipiS0323890"
+	},
+	"ShreelipiS0324890": {
+		"font": "Shreelipi S0324890",
+		"name": "ShreelipiS0324890"
+	},
+	"ShreelipiS0325890": {
+		"font": "Shreelipi S0325890",
+		"name": "ShreelipiS0325890"
+	},
+	"ShreelipiS0326890": {
+		"font": "Shreelipi S0326890",
+		"name": "ShreelipiS0326890"
+	},
+	"ShreelipiS0327890": {
+		"font": "Shreelipi S0327890",
+		"name": "ShreelipiS0327890"
+	},
+	"ShreelipiS0328890": {
+		"font": "Shreelipi S0328890",
+		"name": "ShreelipiS0328890"
+	},
+	"ShreelipiS0329890": {
+		"font": "Shreelipi S0329890",
+		"name": "ShreelipiS0329890"
+	},
+	"ShreelipiS0330890": {
+		"font": "Shreelipi S0330890",
+		"name": "ShreelipiS0330890"
+	},
+	"ShreelipiS0331890": {
+		"font": "Shreelipi S0331890",
+		"name": "ShreelipiS0331890"
+	},
+	"ShreelipiS0332890": {
+		"font": "Shreelipi S0332890",
+		"name": "ShreelipiS0332890"
+	},
+	"ShreelipiS0333890": {
+		"font": "Shreelipi S0333890",
+		"name": "ShreelipiS0333890"
+	},
+	"ShreelipiS0334890": {
+		"font": "Shreelipi S0334890",
+		"name": "ShreelipiS0334890"
+	},
+	"ShreelipiS0335890": {
+		"font": "Shreelipi S0335890",
+		"name": "ShreelipiS0335890"
+	},
+	"ShreelipiS0336890": {
+		"font": "Shreelipi S0336890",
+		"name": "ShreelipiS0336890"
+	},
+	"ShreelipiS0337890": {
+		"font": "Shreelipi S0337890",
+		"name": "ShreelipiS0337890"
+	},
+	"ShreelipiS0338890": {
+		"font": "Shreelipi S0338890",
+		"name": "ShreelipiS0338890"
+	},
+	"ShreelipiS0339890": {
+		"font": "Shreelipi S0339890",
+		"name": "ShreelipiS0339890"
+	},
+	"ShreelipiS0340890": {
+		"font": "Shreelipi S0340890",
+		"name": "ShreelipiS0340890"
+	},
+	"ShreelipiS0341890": {
+		"font": "Shreelipi S0341890",
+		"name": "ShreelipiS0341890"
+	},
+	"ShreelipiS0342890": {
+		"font": "Shreelipi S0342890",
+		"name": "ShreelipiS0342890"
+	},
+	"ShreelipiS0343890": {
+		"font": "Shreelipi S0343890",
+		"name": "ShreelipiS0343890"
+	},
+	"ShreelipiS0344890": {
+		"font": "Shreelipi S0344890",
+		"name": "ShreelipiS0344890"
+	},
+	"ShreelipiS0345890": {
+		"font": "Shreelipi S0345890",
+		"name": "ShreelipiS0345890"
+	},
+	"ShreelipiS0346890": {
+		"font": "Shreelipi S0346890",
+		"name": "ShreelipiS0346890"
+	},
+	"ShreelipiS0347890": {
+		"font": "Shreelipi S0347890",
+		"name": "ShreelipiS0347890"
+	},
+	"ShreelipiS0348890": {
+		"font": "Shreelipi S0348890",
+		"name": "ShreelipiS0348890"
+	},
+	"ShreelipiS0349890": {
+		"font": "Shreelipi S0349890",
+		"name": "ShreelipiS0349890"
+	},
+	"ShreelipiS0350890": {
+		"font": "Shreelipi S0350890",
+		"name": "ShreelipiS0350890"
+	},
+	"ShreelipiS0351890": {
+		"font": "Shreelipi S0351890",
+		"name": "ShreelipiS0351890"
+	},
+	"ShreelipiS0352890": {
+		"font": "Shreelipi S0352890",
+		"name": "ShreelipiS0352890"
+	},
+	"ShreelipiS0353890": {
+		"font": "Shreelipi S0353890",
+		"name": "ShreelipiS0353890"
+	},
+	"ShreelipiS0354890": {
+		"font": "Shreelipi S0354890",
+		"name": "ShreelipiS0354890"
+	},
+	"ShreelipiS0355890": {
+		"font": "Shreelipi S0355890",
+		"name": "ShreelipiS0355890"
+	},
+	"ShreelipiS0356890": {
+		"font": "Shreelipi S0356890",
+		"name": "ShreelipiS0356890"
+	},
+	"ShreelipiS0357890": {
+		"font": "Shreelipi S0357890",
+		"name": "ShreelipiS0357890"
+	},
+	"ShreelipiS0358890": {
+		"font": "Shreelipi S0358890",
+		"name": "ShreelipiS0358890"
+	},
+	"ShreelipiS0359890": {
+		"font": "Shreelipi S0359890",
+		"name": "ShreelipiS0359890"
+	},
+	"ShreelipiS0360890": {
+		"font": "Shreelipi S0360890",
+		"name": "ShreelipiS0360890"
+	},
+	"ShreelipiS0361890": {
+		"font": "Shreelipi S0361890",
+		"name": "ShreelipiS0361890"
+	},
+	"ShreelipiS0362890": {
+		"font": "Shreelipi S0362890",
+		"name": "ShreelipiS0362890"
+	},
+	"ShreelipiS0363890": {
+		"font": "Shreelipi S0363890",
+		"name": "ShreelipiS0363890"
+	},
+	"ShreelipiS0364890": {
+		"font": "Shreelipi S0364890",
+		"name": "ShreelipiS0364890"
+	},
+	"ShreelipiS0365890": {
+		"font": "Shreelipi S0365890",
+		"name": "ShreelipiS0365890"
+	},
+	"ShreelipiS0366890": {
+		"font": "Shreelipi S0366890",
+		"name": "ShreelipiS0366890"
+	},
+	"ShreelipiS0367890": {
+		"font": "Shreelipi S0367890",
+		"name": "ShreelipiS0367890"
+	},
+	"ShreelipiS0368890": {
+		"font": "Shreelipi S0368890",
+		"name": "ShreelipiS0368890"
+	},
+	"ShreelipiS0369890": {
+		"font": "Shreelipi S0369890",
+		"name": "ShreelipiS0369890"
+	},
+	"ShreelipiS0370890": {
+		"font": "Shreelipi S0370890",
+		"name": "ShreelipiS0370890"
+	},
+	"ShreelipiS0371890": {
+		"font": "Shreelipi S0371890",
+		"name": "ShreelipiS0371890"
+	},
+	"ShreelipiS0372890": {
+		"font": "Shreelipi S0372890",
+		"name": "ShreelipiS0372890"
+	},
+	"ShreelipiS0373890": {
+		"font": "Shreelipi S0373890",
+		"name": "ShreelipiS0373890"
+	},
+	"ShreelipiS0374890": {
+		"font": "Shreelipi S0374890",
+		"name": "ShreelipiS0374890"
+	},
+	"ShreelipiS0375890": {
+		"font": "Shreelipi S0375890",
+		"name": "ShreelipiS0375890"
+	},
+	"ShreelipiS0376890": {
+		"font": "Shreelipi S0376890",
+		"name": "ShreelipiS0376890"
+	},
+	"ShreelipiS0377890": {
+		"font": "Shreelipi S0377890",
+		"name": "ShreelipiS0377890"
+	},
+	"ShreelipiS0378890": {
+		"font": "Shreelipi S0378890",
+		"name": "ShreelipiS0378890"
+	},
+	"ShreelipiS0379890": {
+		"font": "Shreelipi S0379890",
+		"name": "ShreelipiS0379890"
+	},
+	"ShreelipiS0380890": {
+		"font": "Shreelipi S0380890",
+		"name": "ShreelipiS0380890"
+	},
+	"ShreelipiS0381890": {
+		"font": "Shreelipi S0381890",
+		"name": "ShreelipiS0381890"
+	},
+	"ShreelipiS0382890": {
+		"font": "Shreelipi S0382890",
+		"name": "ShreelipiS0382890"
+	},
+	"ShreelipiS0383890": {
+		"font": "Shreelipi S0383890",
+		"name": "ShreelipiS0383890"
+	},
+	"ShreelipiS0384890": {
+		"font": "Shreelipi S0384890",
+		"name": "ShreelipiS0384890"
+	},
+	"ShreelipiS0385890": {
+		"font": "Shreelipi S0385890",
+		"name": "ShreelipiS0385890"
+	},
+	"ShreelipiS0386890": {
+		"font": "Shreelipi S0386890",
+		"name": "ShreelipiS0386890"
+	},
+	"ShreelipiS0387890": {
+		"font": "Shreelipi S0387890",
+		"name": "ShreelipiS0387890"
+	},
+	"ShreelipiS0388890": {
+		"font": "Shreelipi S0388890",
+		"name": "ShreelipiS0388890"
+	},
+	"ShreelipiS0389890": {
+		"font": "Shreelipi S0389890",
+		"name": "ShreelipiS0389890"
+	},
+	"ShreelipiS0390890": {
+		"font": "Shreelipi S0390890",
+		"name": "ShreelipiS0390890"
+	},
+	"ShreelipiS0391890": {
+		"font": "Shreelipi S0391890",
+		"name": "ShreelipiS0391890"
+	},
+	"ShreelipiS0392890": {
+		"font": "Shreelipi S0392890",
+		"name": "ShreelipiS0392890"
+	},
+	"ShreelipiS0393890": {
+		"font": "Shreelipi S0393890",
+		"name": "ShreelipiS0393890"
+	},
+	"ShreelipiS0394890": {
+		"font": "Shreelipi S0394890",
+		"name": "ShreelipiS0394890"
+	},
+	"ShreelipiS0395890": {
+		"font": "Shreelipi S0395890",
+		"name": "ShreelipiS0395890"
+	},
+	"ShreelipiS0396890": {
+		"font": "Shreelipi S0396890",
+		"name": "ShreelipiS0396890"
+	},
+	"ShreelipiS0397890": {
+		"font": "Shreelipi S0397890",
+		"name": "ShreelipiS0397890"
+	},
+	"ShreelipiS0398890": {
+		"font": "Shreelipi S0398890",
+		"name": "ShreelipiS0398890"
+	},
+	"ShreelipiS0399890": {
+		"font": "Shreelipi S0399890",
+		"name": "ShreelipiS0399890"
+	},
+	"ShreelipiS0440890": {
+		"font": "Shreelipi S0440890",
+		"name": "ShreelipiS0440890"
+	},
+	"ShreelipiS0441890": {
+		"font": "Shreelipi S0441890",
+		"name": "ShreelipiS0441890"
+	},
+	"ShreelipiS0442890": {
+		"font": "Shreelipi S0442890",
+		"name": "ShreelipiS0442890"
+	},
+	"ShreelipiS0443890": {
+		"font": "Shreelipi S0443890",
+		"name": "ShreelipiS0443890"
+	},
+	"ShreelipiS0444890": {
+		"font": "Shreelipi S0444890",
+		"name": "ShreelipiS0444890"
+	},
+	"ShreelipiS0445890": {
+		"font": "Shreelipi S0445890",
+		"name": "ShreelipiS0445890"
+	},
+	"ShreelipiS0446890": {
+		"font": "Shreelipi S0446890",
+		"name": "ShreelipiS0446890"
+	},
+	"ShreelipiS0447890": {
+		"font": "Shreelipi S0447890",
+		"name": "ShreelipiS0447890"
+	},
+	"ShreelipiS0448890": {
+		"font": "Shreelipi S0448890",
+		"name": "ShreelipiS0448890"
+	},
+	"ShreelipiS0449890": {
+		"font": "Shreelipi S0449890",
+		"name": "ShreelipiS0449890"
+	},
+	"ShreelipiS0451890": {
+		"font": "Shreelipi S0451890",
+		"name": "ShreelipiS0451890"
+	},
+	"ShreelipiS0452890": {
+		"font": "Shreelipi S0452890",
+		"name": "ShreelipiS0452890"
+	},
+	"ShreelipiS0453890": {
+		"font": "Shreelipi S0453890",
+		"name": "ShreelipiS0453890"
+	},
+	"ShreelipiS0454890": {
+		"font": "Shreelipi S0454890",
+		"name": "ShreelipiS0454890"
+	},
+	"ShreelipiS0455890": {
+		"font": "Shreelipi S0455890",
+		"name": "ShreelipiS0455890"
+	},
+	"ShreelipiS0456890": {
+		"font": "Shreelipi S0456890",
+		"name": "ShreelipiS0456890"
+	},
+	"ShreelipiS0457890": {
+		"font": "Shreelipi S0457890",
+		"name": "ShreelipiS0457890"
+	},
+	"ShreelipiS0458890": {
+		"font": "Shreelipi S0458890",
+		"name": "ShreelipiS0458890"
+	},
+	"ShreelipiS0459890": {
+		"font": "Shreelipi S0459890",
+		"name": "ShreelipiS0459890"
+	},
+	"ShreelipiS0460890": {
+		"font": "Shreelipi S0460890",
+		"name": "ShreelipiS0460890"
+	},
+	"ShreelipiS0461890": {
+		"font": "Shreelipi S0461890",
+		"name": "ShreelipiS0461890"
+	},
+	"ShreelipiS0462890": {
+		"font": "Shreelipi S0462890",
+		"name": "ShreelipiS0462890"
+	},
+	"ShreelipiS0463890": {
+		"font": "Shreelipi S0463890",
+		"name": "ShreelipiS0463890"
+	},
+	"ShreelipiS0464890": {
+		"font": "Shreelipi S0464890",
+		"name": "ShreelipiS0464890"
+	},
+	"ShreelipiS0465890": {
+		"font": "Shreelipi S0465890",
+		"name": "ShreelipiS0465890"
+	},
+	"ShreelipiS0466890": {
+		"font": "Shreelipi S0466890",
+		"name": "ShreelipiS0466890"
+	},
+	"ShreelipiS0467890": {
+		"font": "Shreelipi S0467890",
+		"name": "ShreelipiS0467890"
+	},
+	"ShreelipiS0468890": {
+		"font": "Shreelipi S0468890",
+		"name": "ShreelipiS0468890"
+	},
+	"ShreelipiS0469890": {
+		"font": "Shreelipi S0469890",
+		"name": "ShreelipiS0469890"
+	},
+	"ShreelipiS0470890": {
+		"font": "Shreelipi S0470890",
+		"name": "ShreelipiS0470890"
+	},
+	"ShreelipiS0471890": {
+		"font": "Shreelipi S0471890",
+		"name": "ShreelipiS0471890"
+	},
+	"ShreelipiS0472890": {
+		"font": "Shreelipi S0472890",
+		"name": "ShreelipiS0472890"
+	},
+	"ShreelipiS0473890": {
+		"font": "Shreelipi S0473890",
+		"name": "ShreelipiS0473890"
+	},
+	"ShreelipiS0474890": {
+		"font": "Shreelipi S0474890",
+		"name": "ShreelipiS0474890"
+	},
+	"ShreelipiS0475890": {
+		"font": "Shreelipi S0475890",
+		"name": "ShreelipiS0475890"
+	},
+	"ShreelipiS0476890": {
+		"font": "Shreelipi S0476890",
+		"name": "ShreelipiS0476890"
+	},
+	"ShreelipiS0477890": {
+		"font": "Shreelipi S0477890",
+		"name": "ShreelipiS0477890"
+	},
+	"ShreelipiS0478890": {
+		"font": "Shreelipi S0478890",
+		"name": "ShreelipiS0478890"
+	},
+	"ShreelipiS0479890": {
+		"font": "Shreelipi S0479890",
+		"name": "ShreelipiS0479890"
+	},
+	"ShreelipiS0480890": {
+		"font": "Shreelipi S0480890",
+		"name": "ShreelipiS0480890"
+	},
+	"ShreelipiS0481890": {
+		"font": "Shreelipi S0481890",
+		"name": "ShreelipiS0481890"
+	},
+	"ShreelipiS0482890": {
+		"font": "Shreelipi S0482890",
+		"name": "ShreelipiS0482890"
+	},
+	"ShreelipiS0483890": {
+		"font": "Shreelipi S0483890",
+		"name": "ShreelipiS0483890"
+	},
+	"ShreelipiS0484890": {
+		"font": "Shreelipi S0484890",
+		"name": "ShreelipiS0484890"
+	},
+	"ShreelipiS0485890": {
+		"font": "Shreelipi S0485890",
+		"name": "ShreelipiS0485890"
+	},
+	"ShreelipiS0486890": {
+		"font": "Shreelipi S0486890",
+		"name": "ShreelipiS0486890"
+	},
+	"ShreelipiS0487890": {
+		"font": "Shreelipi S0487890",
+		"name": "ShreelipiS0487890"
+	},
+	"ShreelipiS0488890": {
+		"font": "Shreelipi S0488890",
+		"name": "ShreelipiS0488890"
+	},
+	"ShreelipiS0489890": {
+		"font": "Shreelipi S0489890",
+		"name": "ShreelipiS0489890"
+	},
+	"ShreelipiS0490890": {
+		"font": "Shreelipi S0490890",
+		"name": "ShreelipiS0490890"
+	},
+	"ShreelipiS0491890": {
+		"font": "Shreelipi S0491890",
+		"name": "ShreelipiS0491890"
+	},
+	"ShreelipiS0492890": {
+		"font": "Shreelipi S0492890",
+		"name": "ShreelipiS0492890"
+	},
+	"ShreelipiS0493890": {
+		"font": "Shreelipi S0493890",
+		"name": "ShreelipiS0493890"
+	},
+	"ShreelipiS0494890": {
+		"font": "Shreelipi S0494890",
+		"name": "ShreelipiS0494890"
+	},
+	"ShreelipiS0495890": {
+		"font": "Shreelipi S0495890",
+		"name": "ShreelipiS0495890"
+	},
+	"ShreelipiS0496890": {
+		"font": "Shreelipi S0496890",
+		"name": "ShreelipiS0496890"
+	},
+	"ShreelipiS0497890": {
+		"font": "Shreelipi S0497890",
+		"name": "ShreelipiS0497890"
+	},
+	"ShreelipiS0498890": {
+		"font": "Shreelipi S0498890",
+		"name": "ShreelipiS0498890"
+	},
+	"ShreelipiS0850890": {
+		"font": "Shreelipi S0850890",
+		"name": "ShreelipiS0850890"
+	},
+	"ShreelipiS0851890": {
+		"font": "Shreelipi S0851890",
+		"name": "ShreelipiS0851890"
+	},
+	"ShreelipiS0852890": {
+		"font": "Shreelipi S0852890",
+		"name": "ShreelipiS0852890"
+	},
+	"ShreelipiS0853890": {
+		"font": "Shreelipi S0853890",
+		"name": "ShreelipiS0853890"
+	},
+	"ShreelipiS0854890": {
+		"font": "Shreelipi S0854890",
+		"name": "ShreelipiS0854890"
+	},
+	"ShreelipiS0855890": {
+		"font": "Shreelipi S0855890",
+		"name": "ShreelipiS0855890"
+	},
+	"ShreelipiS0856890": {
+		"font": "Shreelipi S0856890",
+		"name": "ShreelipiS0856890"
+	},
+	"ShreelipiS0857890": {
+		"font": "Shreelipi S0857890",
+		"name": "ShreelipiS0857890"
+	},
+	"ShreelipiS0858890": {
+		"font": "Shreelipi S0858890",
+		"name": "ShreelipiS0858890"
+	},
+	"ShreelipiS0859890": {
+		"font": "Shreelipi S0859890",
+		"name": "ShreelipiS0859890"
+	},
+	"ShreelipiS0860890": {
+		"font": "Shreelipi S0860890",
+		"name": "ShreelipiS0860890"
+	},
+	"ShreelipiS0861890": {
+		"font": "Shreelipi S0861890",
+		"name": "ShreelipiS0861890"
+	},
+	"ShreelipiS0862890": {
+		"font": "Shreelipi S0862890",
+		"name": "ShreelipiS0862890"
+	},
+	"ShreelipiS0863890": {
+		"font": "Shreelipi S0863890",
+		"name": "ShreelipiS0863890"
+	},
+	"ShreelipiS0864890": {
+		"font": "Shreelipi S0864890",
+		"name": "ShreelipiS0864890"
+	},
+	"ShreelipiS0865890": {
+		"font": "Shreelipi S0865890",
+		"name": "ShreelipiS0865890"
+	},
+	"ShreelipiS0866890": {
+		"font": "Shreelipi S0866890",
+		"name": "ShreelipiS0866890"
+	},
+	"ShreelipiS0867890": {
+		"font": "Shreelipi S0867890",
+		"name": "ShreelipiS0867890"
+	},
+	"ShreelipiS0868890": {
+		"font": "Shreelipi S0868890",
+		"name": "ShreelipiS0868890"
+	},
+	"ShreelipiS0869890": {
+		"font": "Shreelipi S0869890",
+		"name": "ShreelipiS0869890"
+	},
+	"ShreelipiS0870890": {
+		"font": "Shreelipi S0870890",
+		"name": "ShreelipiS0870890"
+	},
+	"ShreelipiS0871890": {
+		"font": "Shreelipi S0871890",
+		"name": "ShreelipiS0871890"
+	},
+	"ShreelipiS0872890": {
+		"font": "Shreelipi S0872890",
+		"name": "ShreelipiS0872890"
+	},
+	"ShreelipiS0873890": {
+		"font": "Shreelipi S0873890",
+		"name": "ShreelipiS0873890"
+	},
+	"ShreelipiS0874890": {
+		"font": "Shreelipi S0874890",
+		"name": "ShreelipiS0874890"
+	},
+	"ShreelipiS0875890": {
+		"font": "Shreelipi S0875890",
+		"name": "ShreelipiS0875890"
+	},
+	"ShreelipiS0876890": {
+		"font": "Shreelipi S0876890",
+		"name": "ShreelipiS0876890"
+	},
+	"ShreelipiS0877890": {
+		"font": "Shreelipi S0877890",
+		"name": "ShreelipiS0877890"
+	},
+	"ShreelipiS0878890": {
+		"font": "Shreelipi S0878890",
+		"name": "ShreelipiS0878890"
+	},
+	"ShreelipiS0879890": {
+		"font": "Shreelipi S0879890",
+		"name": "ShreelipiS0879890"
+	},
+	"ShreelipiS0880890": {
+		"font": "Shreelipi S0880890",
+		"name": "ShreelipiS0880890"
+	},
+	"ShreelipiS0881890": {
+		"font": "Shreelipi S0881890",
+		"name": "ShreelipiS0881890"
+	},
+	"ShreelipiS0882890": {
+		"font": "Shreelipi S0882890",
+		"name": "ShreelipiS0882890"
+	},
+	"ShreelipiS0883890": {
+		"font": "Shreelipi S0883890",
+		"name": "ShreelipiS0883890"
+	},
+	"ShreelipiS0884890": {
+		"font": "Shreelipi S0884890",
+		"name": "ShreelipiS0884890"
+	},
+	"ShreelipiS0885890": {
+		"font": "Shreelipi S0885890",
+		"name": "ShreelipiS0885890"
+	},
+	"ShreelipiS0886890": {
+		"font": "Shreelipi S0886890",
+		"name": "ShreelipiS0886890"
+	},
+	"ShreelipiS0887890": {
+		"font": "Shreelipi S0887890",
+		"name": "ShreelipiS0887890"
+	},
+	"ShreelipiS0888890": {
+		"font": "Shreelipi S0888890",
+		"name": "ShreelipiS0888890"
+	},
+	"ShreelipiS0889890": {
+		"font": "Shreelipi S0889890",
+		"name": "ShreelipiS0889890"
+	},
+	"ShreelipiS0890890": {
+		"font": "Shreelipi S0890890",
+		"name": "ShreelipiS0890890"
+	},
+	"ShreelipiS0891890": {
+		"font": "Shreelipi S0891890",
+		"name": "ShreelipiS0891890"
+	},
+	"ShreelipiS0892890": {
+		"font": "Shreelipi S0892890",
+		"name": "ShreelipiS0892890"
+	},
+	"ShreelipiS0893890": {
+		"font": "Shreelipi S0893890",
+		"name": "ShreelipiS0893890"
+	},
+	"ShreelipiS0894890": {
+		"font": "Shreelipi S0894890",
+		"name": "ShreelipiS0894890"
+	},
+	"ShreelipiS0895890": {
+		"font": "Shreelipi S0895890",
+		"name": "ShreelipiS0895890"
+	},
+	"ShreelipiS0896890": {
+		"font": "Shreelipi S0896890",
+		"name": "ShreelipiS0896890"
+	},
+	"ShreelipiS0897890": {
+		"font": "Shreelipi S0897890",
+		"name": "ShreelipiS0897890"
+	},
+	"ShreelipiS0898890": {
+		"font": "Shreelipi S0898890",
+		"name": "ShreelipiS0898890"
+	},
+	"ShreelipiS0899890": {
+		"font": "Shreelipi S0899890",
+		"name": "ShreelipiS0899890"
+	},
+	"ShreelipiS1400890": {
+		"font": "Shreelipi S1400890",
+		"name": "ShreelipiS1400890"
+	},
+	"ShreelipiS1401890": {
+		"font": "Shreelipi S1401890",
+		"name": "ShreelipiS1401890"
+	},
+	"ShreelipiS1402890": {
+		"font": "Shreelipi S1402890",
+		"name": "ShreelipiS1402890"
+	},
+	"ShreelipiS1403890": {
+		"font": "Shreelipi S1403890",
+		"name": "ShreelipiS1403890"
+	},
+	"ShreelipiS1404890": {
+		"font": "Shreelipi S1404890",
+		"name": "ShreelipiS1404890"
+	},
+	"ShreelipiS1405890": {
+		"font": "Shreelipi S1405890",
+		"name": "ShreelipiS1405890"
+	},
+	"ShreelipiS1406890": {
+		"font": "Shreelipi S1406890",
+		"name": "ShreelipiS1406890"
+	},
+	"ShreelipiS1407890": {
+		"font": "Shreelipi S1407890",
+		"name": "ShreelipiS1407890"
+	},
+	"ShreelipiS1408890": {
+		"font": "Shreelipi S1408890",
+		"name": "ShreelipiS1408890"
+	},
+	"ShreelipiS1409890": {
+		"font": "Shreelipi S1409890",
+		"name": "ShreelipiS1409890"
+	},
+	"ShreelipiS1410890": {
+		"font": "Shreelipi S1410890",
+		"name": "ShreelipiS1410890"
+	},
+	"ShreelipiS1411890": {
+		"font": "Shreelipi S1411890",
+		"name": "ShreelipiS1411890"
+	},
+	"ShreelipiS1412890": {
+		"font": "Shreelipi S1412890",
+		"name": "ShreelipiS1412890"
+	},
+	"ShreelipiS1413890": {
+		"font": "Shreelipi S1413890",
+		"name": "ShreelipiS1413890"
+	},
+	"ShreelipiS1414890": {
+		"font": "Shreelipi S1414890",
+		"name": "ShreelipiS1414890"
+	},
+	"ShreelipiS1415890": {
+		"font": "Shreelipi S1415890",
+		"name": "ShreelipiS1415890"
+	},
+	"ShreelipiS1416890": {
+		"font": "Shreelipi S1416890",
+		"name": "ShreelipiS1416890"
+	},
+	"ShreelipiS1417890": {
+		"font": "Shreelipi S1417890",
+		"name": "ShreelipiS1417890"
+	},
+	"ShreelipiS1418890": {
+		"font": "Shreelipi S1418890",
+		"name": "ShreelipiS1418890"
+	},
+	"ShreelipiS1419890": {
+		"font": "Shreelipi S1419890",
+		"name": "ShreelipiS1419890"
+	},
+	"ShreelipiS1420890": {
+		"font": "Shreelipi S1420890",
+		"name": "ShreelipiS1420890"
+	},
+	"ShreelipiS1421890": {
+		"font": "Shreelipi S1421890",
+		"name": "ShreelipiS1421890"
+	},
+	"ShreelipiS1422890": {
+		"font": "Shreelipi S1422890",
+		"name": "ShreelipiS1422890"
+	},
+	"ShreelipiS1423890": {
+		"font": "Shreelipi S1423890",
+		"name": "ShreelipiS1423890"
+	},
+	"ShreelipiS1424890": {
+		"font": "Shreelipi S1424890",
+		"name": "ShreelipiS1424890"
+	},
+	"ShreelipiS1425890": {
+		"font": "Shreelipi S1425890",
+		"name": "ShreelipiS1425890"
+	},
+	"ShreelipiS1426890": {
+		"font": "Shreelipi S1426890",
+		"name": "ShreelipiS1426890"
+	},
+	"ShreelipiS1427890": {
+		"font": "Shreelipi S1427890",
+		"name": "ShreelipiS1427890"
+	},
+	"ShreelipiS1428890": {
+		"font": "Shreelipi S1428890",
+		"name": "ShreelipiS1428890"
+	},
+	"ShreelipiS1429890": {
+		"font": "Shreelipi S1429890",
+		"name": "ShreelipiS1429890"
+	},
+	"ShreelipiS1430890": {
+		"font": "Shreelipi S1430890",
+		"name": "ShreelipiS1430890"
+	},
+	"ShreelipiS1431890": {
+		"font": "Shreelipi S1431890",
+		"name": "ShreelipiS1431890"
+	},
+	"ShreelipiS1432890": {
+		"font": "Shreelipi S1432890",
+		"name": "ShreelipiS1432890"
+	},
+	"ShreelipiS1433890": {
+		"font": "Shreelipi S1433890",
+		"name": "ShreelipiS1433890"
+	},
+	"ShreelipiS1434890": {
+		"font": "Shreelipi S1434890",
+		"name": "ShreelipiS1434890"
+	},
+	"ShreelipiS1435890": {
+		"font": "Shreelipi S1435890",
+		"name": "ShreelipiS1435890"
+	},
+	"ShreelipiS1436890": {
+		"font": "Shreelipi S1436890",
+		"name": "ShreelipiS1436890"
+	},
+	"ShreelipiS1437890": {
+		"font": "Shreelipi S1437890",
+		"name": "ShreelipiS1437890"
+	},
+	"ShreelipiS1438890": {
+		"font": "Shreelipi S1438890",
+		"name": "ShreelipiS1438890"
+	},
+	"ShreelipiS1439890": {
+		"font": "Shreelipi S1439890",
+		"name": "ShreelipiS1439890"
+	},
+	"ShreelipiS1440890": {
+		"font": "Shreelipi S1440890",
+		"name": "ShreelipiS1440890"
+	},
+	"ShreelipiS1441890": {
+		"font": "Shreelipi S1441890",
+		"name": "ShreelipiS1441890"
+	},
+	"ShreelipiS1442890": {
+		"font": "Shreelipi S1442890",
+		"name": "ShreelipiS1442890"
+	},
+	"ShreelipiS1443890": {
+		"font": "Shreelipi S1443890",
+		"name": "ShreelipiS1443890"
+	},
+	"ShreelipiS1444890": {
+		"font": "Shreelipi S1444890",
+		"name": "ShreelipiS1444890"
+	},
+	"ShreelipiS1445890": {
+		"font": "Shreelipi S1445890",
+		"name": "ShreelipiS1445890"
+	},
+	"ShreelipiS1446890": {
+		"font": "Shreelipi S1446890",
+		"name": "ShreelipiS1446890"
+	},
+	"ShreelipiS1447890": {
+		"font": "Shreelipi S1447890",
+		"name": "ShreelipiS1447890"
+	},
+	"ShreelipiS1448890": {
+		"font": "Shreelipi S1448890",
+		"name": "ShreelipiS1448890"
+	},
+	"ShreelipiS1449890": {
+		"font": "Shreelipi S1449890",
+		"name": "ShreelipiS1449890"
+	},
+	"ShreelipiS1450890": {
+		"font": "Shreelipi S1450890",
+		"name": "ShreelipiS1450890"
+	},
+	"ShreelipiS1451890": {
+		"font": "Shreelipi S1451890",
+		"name": "ShreelipiS1451890"
+	},
+	"ShreelipiS1452890": {
+		"font": "Shreelipi S1452890",
+		"name": "ShreelipiS1452890"
+	},
+	"ShreelipiS1453890": {
+		"font": "Shreelipi S1453890",
+		"name": "ShreelipiS1453890"
+	},
+	"ShreelipiS1454890": {
+		"font": "Shreelipi S1454890",
+		"name": "ShreelipiS1454890"
+	},
+	"ShreelipiS1455890": {
+		"font": "Shreelipi S1455890",
+		"name": "ShreelipiS1455890"
+	},
+	"ShreelipiS1456890": {
+		"font": "Shreelipi S1456890",
+		"name": "ShreelipiS1456890"
+	},
+	"ShreelipiS1457890": {
+		"font": "Shreelipi S1457890",
+		"name": "ShreelipiS1457890"
+	},
+	"ShreelipiS1458890": {
+		"font": "Shreelipi S1458890",
+		"name": "ShreelipiS1458890"
+	},
+	"ShreelipiS1459890": {
+		"font": "Shreelipi S1459890",
+		"name": "ShreelipiS1459890"
+	},
+	"ShreelipiS1460890": {
+		"font": "Shreelipi S1460890",
+		"name": "ShreelipiS1460890"
+	},
+	"ShreelipiS1461890": {
+		"font": "Shreelipi S1461890",
+		"name": "ShreelipiS1461890"
+	},
+	"ShreelipiS1462890": {
+		"font": "Shreelipi S1462890",
+		"name": "ShreelipiS1462890"
+	},
+	"ShreelipiS1463890": {
+		"font": "Shreelipi S1463890",
+		"name": "ShreelipiS1463890"
+	},
+	"ShreelipiS1464890": {
+		"font": "Shreelipi S1464890",
+		"name": "ShreelipiS1464890"
+	},
+	"ShreelipiS1465890": {
+		"font": "Shreelipi S1465890",
+		"name": "ShreelipiS1465890"
+	},
+	"ShreelipiS1466890": {
+		"font": "Shreelipi S1466890",
+		"name": "ShreelipiS1466890"
+	},
+	"ShreelipiS1467890": {
+		"font": "Shreelipi S1467890",
+		"name": "ShreelipiS1467890"
+	},
+	"ShreelipiS1468890": {
+		"font": "Shreelipi S1468890",
+		"name": "ShreelipiS1468890"
+	},
+	"ShreelipiS1469890": {
+		"font": "Shreelipi S1469890",
+		"name": "ShreelipiS1469890"
+	},
+	"ShreelipiS1470890": {
+		"font": "Shreelipi S1470890",
+		"name": "ShreelipiS1470890"
+	},
+	"ShreelipiS1471890": {
+		"font": "Shreelipi S1471890",
+		"name": "ShreelipiS1471890"
+	},
+	"ShreelipiS1472890": {
+		"font": "Shreelipi S1472890",
+		"name": "ShreelipiS1472890"
+	},
+	"ShreelipiS1473890": {
+		"font": "Shreelipi S1473890",
+		"name": "ShreelipiS1473890"
+	},
+	"ShreelipiS1474890": {
+		"font": "Shreelipi S1474890",
+		"name": "ShreelipiS1474890"
+	},
+	"ShreelipiS1475890": {
+		"font": "Shreelipi S1475890",
+		"name": "ShreelipiS1475890"
+	},
+	"ShreelipiS1476890": {
+		"font": "Shreelipi S1476890",
+		"name": "ShreelipiS1476890"
+	},
+	"ShreelipiS1477890": {
+		"font": "Shreelipi S1477890",
+		"name": "ShreelipiS1477890"
+	},
+	"ShreelipiS1478890": {
+		"font": "Shreelipi S1478890",
+		"name": "ShreelipiS1478890"
+	},
+	"ShreelipiS1479890": {
+		"font": "Shreelipi S1479890",
+		"name": "ShreelipiS1479890"
+	},
+	"ShreelipiS1480890": {
+		"font": "Shreelipi S1480890",
+		"name": "ShreelipiS1480890"
+	},
+	"ShreelipiS1481890": {
+		"font": "Shreelipi S1481890",
+		"name": "ShreelipiS1481890"
+	},
+	"ShreelipiS1482890": {
+		"font": "Shreelipi S1482890",
+		"name": "ShreelipiS1482890"
+	},
+	"ShreelipiS1483890": {
+		"font": "Shreelipi S1483890",
+		"name": "ShreelipiS1483890"
+	},
+	"ShreelipiS1484890": {
+		"font": "Shreelipi S1484890",
+		"name": "ShreelipiS1484890"
+	},
+	"ShreelipiS1485890": {
+		"font": "Shreelipi S1485890",
+		"name": "ShreelipiS1485890"
+	},
+	"ShreelipiS1486890": {
+		"font": "Shreelipi S1486890",
+		"name": "ShreelipiS1486890"
+	},
+	"ShreelipiS1487890": {
+		"font": "Shreelipi S1487890",
+		"name": "ShreelipiS1487890"
+	},
+	"ShreelipiS1488890": {
+		"font": "Shreelipi S1488890",
+		"name": "ShreelipiS1488890"
+	},
+	"ShreelipiS1489890": {
+		"font": "Shreelipi S1489890",
+		"name": "ShreelipiS1489890"
+	},
+	"ShreelipiS1490890": {
+		"font": "Shreelipi S1490890",
+		"name": "ShreelipiS1490890"
+	},
+	"ShreelipiS1491890": {
+		"font": "Shreelipi S1491890",
+		"name": "ShreelipiS1491890"
+	},
+	"ShreelipiS1492890": {
+		"font": "Shreelipi S1492890",
+		"name": "ShreelipiS1492890"
+	},
+	"ShreelipiS1493890": {
+		"font": "Shreelipi S1493890",
+		"name": "ShreelipiS1493890"
+	},
+	"ShreelipiS1494890": {
+		"font": "Shreelipi S1494890",
+		"name": "ShreelipiS1494890"
+	},
+	"ShreelipiS1495890": {
+		"font": "Shreelipi S1495890",
+		"name": "ShreelipiS1495890"
+	},
+	"ShreelipiS1496890": {
+		"font": "Shreelipi S1496890",
+		"name": "ShreelipiS1496890"
+	},
+	"ShreelipiS1497890": {
+		"font": "Shreelipi S1497890",
+		"name": "ShreelipiS1497890"
+	},
+	"ShreelipiS1498890": {
+		"font": "Shreelipi S1498890",
+		"name": "ShreelipiS1498890"
+	},
+	"ShreelipiS1499890": {
+		"font": "Shreelipi S1499890",
+		"name": "ShreelipiS1499890"
+	},
+	"ShreelipiS2000890": {
+		"font": "Shreelipi S2000890",
+		"name": "ShreelipiS2000890"
+	},
+	"ShreelipiS2001890": {
+		"font": "Shreelipi S2001890",
+		"name": "ShreelipiS2001890"
+	},
+	"ShreelipiS2002890": {
+		"font": "Shreelipi S2002890",
+		"name": "ShreelipiS2002890"
+	},
+	"ShreelipiS2003890": {
+		"font": "Shreelipi S2003890",
+		"name": "ShreelipiS2003890"
+	},
+	"ShreelipiS2004890": {
+		"font": "Shreelipi S2004890",
+		"name": "ShreelipiS2004890"
+	},
+	"ShreelipiS2005890": {
+		"font": "Shreelipi S2005890",
+		"name": "ShreelipiS2005890"
+	},
+	"ShreelipiS2006890": {
+		"font": "Shreelipi S2006890",
+		"name": "ShreelipiS2006890"
+	},
+	"ShreelipiS2007890": {
+		"font": "Shreelipi S2007890",
+		"name": "ShreelipiS2007890"
+	},
+	"ShreelipiS2008890": {
+		"font": "Shreelipi S2008890",
+		"name": "ShreelipiS2008890"
+	},
+	"ShreelipiS2009890": {
+		"font": "Shreelipi S2009890",
+		"name": "ShreelipiS2009890"
+	},
+	"ShreelipiS2010890": {
+		"font": "Shreelipi S2010890",
+		"name": "ShreelipiS2010890"
+	},
+	"ShreelipiS2011890": {
+		"font": "Shreelipi S2011890",
+		"name": "ShreelipiS2011890"
+	},
+	"ShreelipiS2020890": {
+		"font": "Shreelipi S2020890",
+		"name": "ShreelipiS2020890"
+	},
+	"ShreelipiS2101890": {
+		"font": "Shreelipi S2101890",
+		"name": "ShreelipiS2101890"
+	},
+	"ShreelipiS2102890": {
+		"font": "Shreelipi S2102890",
+		"name": "ShreelipiS2102890"
+	},
+	"ShreelipiS2103890": {
+		"font": "Shreelipi S2103890",
+		"name": "ShreelipiS2103890"
+	},
+	"ShreelipiS3400890": {
+		"font": "Shreelipi S3400890",
+		"name": "ShreelipiS3400890"
+	},
+	"ShreelipiS3401890": {
+		"font": "Shreelipi S3401890",
+		"name": "ShreelipiS3401890"
+	},
+	"ShreelipiS3402890": {
+		"font": "Shreelipi S3402890",
+		"name": "ShreelipiS3402890"
+	},
+	"ShreelipiS3403890": {
+		"font": "Shreelipi S3403890",
+		"name": "ShreelipiS3403890"
+	},
+	"ShreelipiS3404890": {
+		"font": "Shreelipi S3404890",
+		"name": "ShreelipiS3404890"
+	},
+	"ShreelipiS3405890": {
+		"font": "Shreelipi S3405890",
+		"name": "ShreelipiS3405890"
+	},
+	"ShreelipiS3406890": {
+		"font": "Shreelipi S3406890",
+		"name": "ShreelipiS3406890"
+	},
+	"ShreelipiS3407890": {
+		"font": "Shreelipi S3407890",
+		"name": "ShreelipiS3407890"
+	},
+	"ShreelipiS3408890": {
+		"font": "Shreelipi S3408890",
+		"name": "ShreelipiS3408890"
+	},
+	"ShreelipiS3409890": {
+		"font": "Shreelipi S3409890",
+		"name": "ShreelipiS3409890"
+	},
+	"ShreelipiS3410890": {
+		"font": "Shreelipi S3410890",
+		"name": "ShreelipiS3410890"
+	},
+	"ShreelipiS3411890": {
+		"font": "Shreelipi S3411890",
+		"name": "ShreelipiS3411890"
+	},
+	"ShreelipiS3412890": {
+		"font": "Shreelipi S3412890",
+		"name": "ShreelipiS3412890"
+	},
+	"ShreelipiS3413890": {
+		"font": "Shreelipi S3413890",
+		"name": "ShreelipiS3413890"
+	},
+	"ShreelipiS3414890": {
+		"font": "Shreelipi S3414890",
+		"name": "ShreelipiS3414890"
+	},
+	"ShreelipiS3415890": {
+		"font": "Shreelipi S3415890",
+		"name": "ShreelipiS3415890"
+	},
+	"ShreelipiS3416890": {
+		"font": "Shreelipi S3416890",
+		"name": "ShreelipiS3416890"
+	},
+	"ShreelipiS3417890": {
+		"font": "Shreelipi S3417890",
+		"name": "ShreelipiS3417890"
+	},
+	"ShreelipiS3418890": {
+		"font": "Shreelipi S3418890",
+		"name": "ShreelipiS3418890"
+	},
+	"ShreelipiS3419890": {
+		"font": "Shreelipi S3419890",
+		"name": "ShreelipiS3419890"
+	},
+	"ShreelipiS3420890": {
+		"font": "Shreelipi S3420890",
+		"name": "ShreelipiS3420890"
+	},
+	"ShreelipiS3421890": {
+		"font": "Shreelipi S3421890",
+		"name": "ShreelipiS3421890"
+	},
+	"ShreelipiS3422890": {
+		"font": "Shreelipi S3422890",
+		"name": "ShreelipiS3422890"
+	},
+	"ShreelipiS3423890": {
+		"font": "Shreelipi S3423890",
+		"name": "ShreelipiS3423890"
+	},
+	"ShreelipiS3424890": {
+		"font": "Shreelipi S3424890",
+		"name": "ShreelipiS3424890"
+	},
+	"ShreelipiS3425890": {
+		"font": "Shreelipi S3425890",
+		"name": "ShreelipiS3425890"
+	},
+	"ShreelipiS3426890": {
+		"font": "Shreelipi S3426890",
+		"name": "ShreelipiS3426890"
+	},
+	"ShreelipiS3427890": {
+		"font": "Shreelipi S3427890",
+		"name": "ShreelipiS3427890"
+	},
+	"ShreelipiS3428890": {
+		"font": "Shreelipi S3428890",
+		"name": "ShreelipiS3428890"
+	},
+	"ShreelipiS3429890": {
+		"font": "Shreelipi S3429890",
+		"name": "ShreelipiS3429890"
+	},
+	"ShreelipiS3430890": {
+		"font": "Shreelipi S3430890",
+		"name": "ShreelipiS3430890"
+	},
+	"ShreelipiS3431890": {
+		"font": "Shreelipi S3431890",
+		"name": "ShreelipiS3431890"
+	},
+	"ShreelipiS3432890": {
+		"font": "Shreelipi S3432890",
+		"name": "ShreelipiS3432890"
+	},
+	"ShreelipiS3433890": {
+		"font": "Shreelipi S3433890",
+		"name": "ShreelipiS3433890"
+	},
+	"ShreelipiS3434890": {
+		"font": "Shreelipi S3434890",
+		"name": "ShreelipiS3434890"
+	},
+	"ShreelipiS3435890": {
+		"font": "Shreelipi S3435890",
+		"name": "ShreelipiS3435890"
+	},
+	"ShreelipiS3436890": {
+		"font": "Shreelipi S3436890",
+		"name": "ShreelipiS3436890"
+	},
+	"ShreelipiS3437890": {
+		"font": "Shreelipi S3437890",
+		"name": "ShreelipiS3437890"
+	},
+	"ShreelipiS3438890": {
+		"font": "Shreelipi S3438890",
+		"name": "ShreelipiS3438890"
+	},
+	"ShreelipiS3439890": {
+		"font": "Shreelipi S3439890",
+		"name": "ShreelipiS3439890"
+	},
+	"ShreelipiS3440890": {
+		"font": "Shreelipi S3440890",
+		"name": "ShreelipiS3440890"
+	},
+	"ShreelipiS3441890": {
+		"font": "Shreelipi S3441890",
+		"name": "ShreelipiS3441890"
+	},
+	"ShreelipiS3442890": {
+		"font": "Shreelipi S3442890",
+		"name": "ShreelipiS3442890"
+	},
+	"ShreelipiS3443890": {
+		"font": "Shreelipi S3443890",
+		"name": "ShreelipiS3443890"
+	},
+	"ShreelipiS3444890": {
+		"font": "Shreelipi S3444890",
+		"name": "ShreelipiS3444890"
+	},
+	"ShreelipiS3445890": {
+		"font": "Shreelipi S3445890",
+		"name": "ShreelipiS3445890"
+	},
+	"ShreelipiS3446890": {
+		"font": "Shreelipi S3446890",
+		"name": "ShreelipiS3446890"
+	},
+	"ShreelipiS3447890": {
+		"font": "Shreelipi S3447890",
+		"name": "ShreelipiS3447890"
+	},
+	"ShreelipiS3448890": {
+		"font": "Shreelipi S3448890",
+		"name": "ShreelipiS3448890"
+	},
+	"ShreelipiS3449890": {
+		"font": "Shreelipi S3449890",
+		"name": "ShreelipiS3449890"
+	},
+	"ShreelipiS3450890": {
+		"font": "Shreelipi S3450890",
+		"name": "ShreelipiS3450890"
+	},
+	"ShreelipiS3451890": {
+		"font": "Shreelipi S3451890",
+		"name": "ShreelipiS3451890"
+	},
+	"ShreelipiS3452890": {
+		"font": "Shreelipi S3452890",
+		"name": "ShreelipiS3452890"
+	},
+	"ShreelipiS3453890": {
+		"font": "Shreelipi S3453890",
+		"name": "ShreelipiS3453890"
+	},
+	"ShreelipiS3454890": {
+		"font": "Shreelipi S3454890",
+		"name": "ShreelipiS3454890"
+	},
+	"ShreelipiS3455890": {
+		"font": "Shreelipi S3455890",
+		"name": "ShreelipiS3455890"
+	},
+	"ShreelipiS3456890": {
+		"font": "Shreelipi S3456890",
+		"name": "ShreelipiS3456890"
+	},
+	"ShreelipiS3457890": {
+		"font": "Shreelipi S3457890",
+		"name": "ShreelipiS3457890"
+	},
+	"ShreelipiS3458890": {
+		"font": "Shreelipi S3458890",
+		"name": "ShreelipiS3458890"
+	},
+	"ShreelipiS3459890": {
+		"font": "Shreelipi S3459890",
+		"name": "ShreelipiS3459890"
+	},
+	"ShreelipiS3460890": {
+		"font": "Shreelipi S3460890",
+		"name": "ShreelipiS3460890"
+	},
+	"ShreelipiS3461890": {
+		"font": "Shreelipi S3461890",
+		"name": "ShreelipiS3461890"
+	},
+	"ShreelipiS3462890": {
+		"font": "Shreelipi S3462890",
+		"name": "ShreelipiS3462890"
+	},
+	"ShreelipiS3463890": {
+		"font": "Shreelipi S3463890",
+		"name": "ShreelipiS3463890"
+	},
+	"ShreelipiS3464890": {
+		"font": "Shreelipi S3464890",
+		"name": "ShreelipiS3464890"
+	},
+	"ShreelipiS3465890": {
+		"font": "Shreelipi S3465890",
+		"name": "ShreelipiS3465890"
+	},
+	"ShreelipiS3466890": {
+		"font": "Shreelipi S3466890",
+		"name": "ShreelipiS3466890"
+	},
+	"ShreelipiS3467890": {
+		"font": "Shreelipi S3467890",
+		"name": "ShreelipiS3467890"
+	},
+	"ShreelipiS3468890": {
+		"font": "Shreelipi S3468890",
+		"name": "ShreelipiS3468890"
+	},
+	"ShreelipiS3469890": {
+		"font": "Shreelipi S3469890",
+		"name": "ShreelipiS3469890"
+	},
+	"ShreelipiS3470890": {
+		"font": "Shreelipi S3470890",
+		"name": "ShreelipiS3470890"
+	},
+	"ShreelipiS3471890": {
+		"font": "Shreelipi S3471890",
+		"name": "ShreelipiS3471890"
+	},
+	"ShreelipiS3472890": {
+		"font": "Shreelipi S3472890",
+		"name": "ShreelipiS3472890"
+	},
+	"ShreelipiS3473890": {
+		"font": "Shreelipi S3473890",
+		"name": "ShreelipiS3473890"
+	},
+	"ShreelipiS3474890": {
+		"font": "Shreelipi S3474890",
+		"name": "ShreelipiS3474890"
+	},
+	"ShreelipiS3475890": {
+		"font": "Shreelipi S3475890",
+		"name": "ShreelipiS3475890"
+	},
+	"ShreelipiS3476890": {
+		"font": "Shreelipi S3476890",
+		"name": "ShreelipiS3476890"
+	},
+	"ShreelipiS3477890": {
+		"font": "Shreelipi S3477890",
+		"name": "ShreelipiS3477890"
+	},
+	"ShreelipiS3478890": {
+		"font": "Shreelipi S3478890",
+		"name": "ShreelipiS3478890"
+	},
+	"ShreelipiS3479890": {
+		"font": "Shreelipi S3479890",
+		"name": "ShreelipiS3479890"
+	},
+	"ShreelipiS3480890": {
+		"font": "Shreelipi S3480890",
+		"name": "ShreelipiS3480890"
+	},
+	"ShreelipiS3481890": {
+		"font": "Shreelipi S3481890",
+		"name": "ShreelipiS3481890"
+	},
+	"ShreelipiS3482890": {
+		"font": "Shreelipi S3482890",
+		"name": "ShreelipiS3482890"
+	},
+	"ShreelipiS3483890": {
+		"font": "Shreelipi S3483890",
+		"name": "ShreelipiS3483890"
+	},
+	"ShreelipiS3484890": {
+		"font": "Shreelipi S3484890",
+		"name": "ShreelipiS3484890"
+	},
+	"ShreelipiS3485890": {
+		"font": "Shreelipi S3485890",
+		"name": "ShreelipiS3485890"
+	},
+	"ShreelipiS3486890": {
+		"font": "Shreelipi S3486890",
+		"name": "ShreelipiS3486890"
+	},
+	"ShreelipiS3487890": {
+		"font": "Shreelipi S3487890",
+		"name": "ShreelipiS3487890"
+	},
+	"ShreelipiS3488890": {
+		"font": "Shreelipi S3488890",
+		"name": "ShreelipiS3488890"
+	},
+	"ShreelipiS3489890": {
+		"font": "Shreelipi S3489890",
+		"name": "ShreelipiS3489890"
+	},
+	"ShreelipiS3490890": {
+		"font": "Shreelipi S3490890",
+		"name": "ShreelipiS3490890"
+	},
+	"ShreelipiS3491890": {
+		"font": "Shreelipi S3491890",
+		"name": "ShreelipiS3491890"
+	},
+	"ShreelipiS3492890": {
+		"font": "Shreelipi S3492890",
+		"name": "ShreelipiS3492890"
+	},
+	"ShreelipiS3493890": {
+		"font": "Shreelipi S3493890",
+		"name": "ShreelipiS3493890"
+	},
+	"ShreelipiS3494890": {
+		"font": "Shreelipi S3494890",
+		"name": "ShreelipiS3494890"
+	},
+	"ShreelipiS3495890": {
+		"font": "Shreelipi S3495890",
+		"name": "ShreelipiS3495890"
+	},
+	"ShreelipiS3496890": {
+		"font": "Shreelipi S3496890",
+		"name": "ShreelipiS3496890"
+	},
+	"ShreelipiS3497890": {
+		"font": "Shreelipi S3497890",
+		"name": "ShreelipiS3497890"
+	},
+	"ShreelipiS3498890": {
+		"font": "Shreelipi S3498890",
+		"name": "ShreelipiS3498890"
+	},
+	"ShreelipiS3499890": {
+		"font": "Shreelipi S3499890",
+		"name": "ShreelipiS3499890"
+	},
+	"ShreelipiS4200890": {
+		"font": "Shreelipi S4200890",
+		"name": "ShreelipiS4200890"
+	},
+	"ShreelipiS4201890": {
+		"font": "Shreelipi S4201890",
+		"name": "ShreelipiS4201890"
+	},
+	"ShreelipiS4202890": {
+		"font": "Shreelipi S4202890",
+		"name": "ShreelipiS4202890"
+	},
+	"ShreelipiS4203890": {
+		"font": "Shreelipi S4203890",
+		"name": "ShreelipiS4203890"
+	},
+	"ShreelipiS4204890": {
+		"font": "Shreelipi S4204890",
+		"name": "ShreelipiS4204890"
+	},
+	"ShreelipiS4205890": {
+		"font": "Shreelipi S4205890",
+		"name": "ShreelipiS4205890"
+	},
+	"ShreelipiS4206890": {
+		"font": "Shreelipi S4206890",
+		"name": "ShreelipiS4206890"
+	},
+	"ShreelipiS4207890": {
+		"font": "Shreelipi S4207890",
+		"name": "ShreelipiS4207890"
+	},
+	"ShreelipiS4208890": {
+		"font": "Shreelipi S4208890",
+		"name": "ShreelipiS4208890"
+	},
+	"ShreelipiS4209890": {
+		"font": "Shreelipi S4209890",
+		"name": "ShreelipiS4209890"
+	},
+	"ShreelipiS4210890": {
+		"font": "Shreelipi S4210890",
+		"name": "ShreelipiS4210890"
+	},
+	"ShreelipiS4211890": {
+		"font": "Shreelipi S4211890",
+		"name": "ShreelipiS4211890"
+	},
+	"ShreelipiS4212890": {
+		"font": "Shreelipi S4212890",
+		"name": "ShreelipiS4212890"
+	},
+	"ShreelipiS4213890": {
+		"font": "Shreelipi S4213890",
+		"name": "ShreelipiS4213890"
+	},
+	"ShreelipiS4214890": {
+		"font": "Shreelipi S4214890",
+		"name": "ShreelipiS4214890"
+	},
+	"ShreelipiS4215890": {
+		"font": "Shreelipi S4215890",
+		"name": "ShreelipiS4215890"
+	},
+	"ShreelipiS4216890": {
+		"font": "Shreelipi S4216890",
+		"name": "ShreelipiS4216890"
+	},
+	"ShreelipiS4217890": {
+		"font": "Shreelipi S4217890",
+		"name": "ShreelipiS4217890"
+	},
+	"ShreelipiS4218890": {
+		"font": "Shreelipi S4218890",
+		"name": "ShreelipiS4218890"
+	},
+	"ShreelipiS4219890": {
+		"font": "Shreelipi S4219890",
+		"name": "ShreelipiS4219890"
+	},
+	"ShreelipiS4220890": {
+		"font": "Shreelipi S4220890",
+		"name": "ShreelipiS4220890"
+	},
+	"ShreelipiS4221890": {
+		"font": "Shreelipi S4221890",
+		"name": "ShreelipiS4221890"
+	},
+	"ShreelipiS4222890": {
+		"font": "Shreelipi S4222890",
+		"name": "ShreelipiS4222890"
+	},
+	"ShreelipiS4223890": {
+		"font": "Shreelipi S4223890",
+		"name": "ShreelipiS4223890"
+	},
+	"ShreelipiS4224890": {
+		"font": "Shreelipi S4224890",
+		"name": "ShreelipiS4224890"
+	},
+	"ShreelipiS4225890": {
+		"font": "Shreelipi S4225890",
+		"name": "ShreelipiS4225890"
+	},
+	"ShreelipiS4226890": {
+		"font": "Shreelipi S4226890",
+		"name": "ShreelipiS4226890"
+	},
+	"ShreelipiS4227890": {
+		"font": "Shreelipi S4227890",
+		"name": "ShreelipiS4227890"
+	},
+	"ShreelipiS4228890": {
+		"font": "Shreelipi S4228890",
+		"name": "ShreelipiS4228890"
+	},
+	"ShreelipiS4229890": {
+		"font": "Shreelipi S4229890",
+		"name": "ShreelipiS4229890"
+	},
+	"ShreelipiS4230890": {
+		"font": "Shreelipi S4230890",
+		"name": "ShreelipiS4230890"
+	},
+	"ShreelipiS4231890": {
+		"font": "Shreelipi S4231890",
+		"name": "ShreelipiS4231890"
+	},
+	"ShreelipiS4232890": {
+		"font": "Shreelipi S4232890",
+		"name": "ShreelipiS4232890"
+	},
+	"ShreelipiS4233890": {
+		"font": "Shreelipi S4233890",
+		"name": "ShreelipiS4233890"
+	},
+	"ShreelipiS4234890": {
+		"font": "Shreelipi S4234890",
+		"name": "ShreelipiS4234890"
+	},
+	"ShreelipiS4235890": {
+		"font": "Shreelipi S4235890",
+		"name": "ShreelipiS4235890"
+	},
+	"ShreelipiS4236890": {
+		"font": "Shreelipi S4236890",
+		"name": "ShreelipiS4236890"
+	},
+	"ShreelipiS4237890": {
+		"font": "Shreelipi S4237890",
+		"name": "ShreelipiS4237890"
+	},
+	"ShreelipiS4238890": {
+		"font": "Shreelipi S4238890",
+		"name": "ShreelipiS4238890"
+	},
+	"ShreelipiS4239890": {
+		"font": "Shreelipi S4239890",
+		"name": "ShreelipiS4239890"
+	},
+	"ShreelipiS4240890": {
+		"font": "Shreelipi S4240890",
+		"name": "ShreelipiS4240890"
+	},
+	"ShreelipiS4241890": {
+		"font": "Shreelipi S4241890",
+		"name": "ShreelipiS4241890"
+	},
+	"ShreelipiS4242890": {
+		"font": "Shreelipi S4242890",
+		"name": "ShreelipiS4242890"
+	},
+	"ShreelipiS4243890": {
+		"font": "Shreelipi S4243890",
+		"name": "ShreelipiS4243890"
+	},
+	"ShreelipiS4244890": {
+		"font": "Shreelipi S4244890",
+		"name": "ShreelipiS4244890"
+	},
+	"ShreelipiS4245890": {
+		"font": "Shreelipi S4245890",
+		"name": "ShreelipiS4245890"
+	},
+	"ShreelipiS4246890": {
+		"font": "Shreelipi S4246890",
+		"name": "ShreelipiS4246890"
+	},
+	"ShreelipiS4247890": {
+		"font": "Shreelipi S4247890",
+		"name": "ShreelipiS4247890"
+	},
+	"ShreelipiS4248890": {
+		"font": "Shreelipi S4248890",
+		"name": "ShreelipiS4248890"
+	},
+	"ShreelipiS4249890": {
+		"font": "Shreelipi S4249890",
+		"name": "ShreelipiS4249890"
+	},
+	"ShreelipiS4250890": {
+		"font": "Shreelipi S4250890",
+		"name": "ShreelipiS4250890"
+	},
+	"ShreelipiS4251890": {
+		"font": "Shreelipi S4251890",
+		"name": "ShreelipiS4251890"
+	},
+	"ShreelipiS4252890": {
+		"font": "Shreelipi S4252890",
+		"name": "ShreelipiS4252890"
+	},
+	"ShreelipiS4253890": {
+		"font": "Shreelipi S4253890",
+		"name": "ShreelipiS4253890"
+	},
+	"ShreelipiS4254890": {
+		"font": "Shreelipi S4254890",
+		"name": "ShreelipiS4254890"
+	},
+	"ShreelipiS4255890": {
+		"font": "Shreelipi S4255890",
+		"name": "ShreelipiS4255890"
+	},
+	"ShreelipiS4256890": {
+		"font": "Shreelipi S4256890",
+		"name": "ShreelipiS4256890"
+	},
+	"ShreelipiS4257890": {
+		"font": "Shreelipi S4257890",
+		"name": "ShreelipiS4257890"
+	},
+	"ShreelipiS4258890": {
+		"font": "Shreelipi S4258890",
+		"name": "ShreelipiS4258890"
+	},
+	"ShreelipiS4259890": {
+		"font": "Shreelipi S4259890",
+		"name": "ShreelipiS4259890"
+	},
+	"ShreelipiS4260890": {
+		"font": "Shreelipi S4260890",
+		"name": "ShreelipiS4260890"
+	},
+	"ShreelipiS4261890": {
+		"font": "Shreelipi S4261890",
+		"name": "ShreelipiS4261890"
+	},
+	"ShreelipiS4262890": {
+		"font": "Shreelipi S4262890",
+		"name": "ShreelipiS4262890"
+	},
+	"ShreelipiS4263890": {
+		"font": "Shreelipi S4263890",
+		"name": "ShreelipiS4263890"
+	},
+	"ShreelipiS4264890": {
+		"font": "Shreelipi S4264890",
+		"name": "ShreelipiS4264890"
+	},
+	"ShreelipiS4265890": {
+		"font": "Shreelipi S4265890",
+		"name": "ShreelipiS4265890"
+	},
+	"ShreelipiS4266890": {
+		"font": "Shreelipi S4266890",
+		"name": "ShreelipiS4266890"
+	},
+	"ShreelipiS4267890": {
+		"font": "Shreelipi S4267890",
+		"name": "ShreelipiS4267890"
+	},
+	"ShreelipiS4268890": {
+		"font": "Shreelipi S4268890",
+		"name": "ShreelipiS4268890"
+	},
+	"ShreelipiS4269890": {
+		"font": "Shreelipi S4269890",
+		"name": "ShreelipiS4269890"
+	},
+	"ShreelipiS4270890": {
+		"font": "Shreelipi S4270890",
+		"name": "ShreelipiS4270890"
+	},
+	"ShreelipiS4271890": {
+		"font": "Shreelipi S4271890",
+		"name": "ShreelipiS4271890"
+	},
+	"ShreelipiS4272890": {
+		"font": "Shreelipi S4272890",
+		"name": "ShreelipiS4272890"
+	},
+	"ShreelipiS4273890": {
+		"font": "Shreelipi S4273890",
+		"name": "ShreelipiS4273890"
+	},
+	"ShreelipiS4274890": {
+		"font": "Shreelipi S4274890",
+		"name": "ShreelipiS4274890"
+	},
+	"ShreelipiS4275890": {
+		"font": "Shreelipi S4275890",
+		"name": "ShreelipiS4275890"
+	},
+	"ShreelipiS4276890": {
+		"font": "Shreelipi S4276890",
+		"name": "ShreelipiS4276890"
+	},
+	"ShreelipiS4277890": {
+		"font": "Shreelipi S4277890",
+		"name": "ShreelipiS4277890"
+	},
+	"ShreelipiS4278890": {
+		"font": "Shreelipi S4278890",
+		"name": "ShreelipiS4278890"
+	},
+	"ShreelipiS4279890": {
+		"font": "Shreelipi S4279890",
+		"name": "ShreelipiS4279890"
+	},
+	"ShreelipiS4280890": {
+		"font": "Shreelipi S4280890",
+		"name": "ShreelipiS4280890"
+	},
+	"ShreelipiS4281890": {
+		"font": "Shreelipi S4281890",
+		"name": "ShreelipiS4281890"
+	},
+	"ShreelipiS4282890": {
+		"font": "Shreelipi S4282890",
+		"name": "ShreelipiS4282890"
+	},
+	"ShreelipiS4283890": {
+		"font": "Shreelipi S4283890",
+		"name": "ShreelipiS4283890"
+	},
+	"ShreelipiS4284890": {
+		"font": "Shreelipi S4284890",
+		"name": "ShreelipiS4284890"
+	},
+	"ShreelipiS4285890": {
+		"font": "Shreelipi S4285890",
+		"name": "ShreelipiS4285890"
+	},
+	"ShreelipiS4286890": {
+		"font": "Shreelipi S4286890",
+		"name": "ShreelipiS4286890"
+	},
+	"ShreelipiS4287890": {
+		"font": "Shreelipi S4287890",
+		"name": "ShreelipiS4287890"
+	},
+	"ShreelipiS4288890": {
+		"font": "Shreelipi S4288890",
+		"name": "ShreelipiS4288890"
+	},
+	"ShreelipiS4289890": {
+		"font": "Shreelipi S4289890",
+		"name": "ShreelipiS4289890"
+	},
+	"ShreelipiS4290890": {
+		"font": "Shreelipi S4290890",
+		"name": "ShreelipiS4290890"
+	},
+	"ShreelipiS4291890": {
+		"font": "Shreelipi S4291890",
+		"name": "ShreelipiS4291890"
+	},
+	"ShreelipiS4292890": {
+		"font": "Shreelipi S4292890",
+		"name": "ShreelipiS4292890"
+	},
+	"ShreelipiS4293890": {
+		"font": "Shreelipi S4293890",
+		"name": "ShreelipiS4293890"
+	},
+	"ShreelipiS4294890": {
+		"font": "Shreelipi S4294890",
+		"name": "ShreelipiS4294890"
+	},
+	"ShreelipiS4295890": {
+		"font": "Shreelipi S4295890",
+		"name": "ShreelipiS4295890"
+	},
+	"ShreelipiS4296890": {
+		"font": "Shreelipi S4296890",
+		"name": "ShreelipiS4296890"
+	},
+	"ShreelipiS4297890": {
+		"font": "Shreelipi S4297890",
+		"name": "ShreelipiS4297890"
+	},
+	"ShreelipiS4298890": {
+		"font": "Shreelipi S4298890",
+		"name": "ShreelipiS4298890"
+	},
+	"ShreelipiS4299890": {
+		"font": "Shreelipi S4299890",
+		"name": "ShreelipiS4299890"
+	},
+	"ShreelipiS5300890": {
+		"font": "Shreelipi S5300890",
+		"name": "ShreelipiS5300890"
+	},
+	"ShreelipiS5301890": {
+		"font": "Shreelipi S5301890",
+		"name": "ShreelipiS5301890"
+	},
+	"ShreelipiS5302890": {
+		"font": "Shreelipi S5302890",
+		"name": "ShreelipiS5302890"
+	},
+	"ShreelipiS5303890": {
+		"font": "Shreelipi S5303890",
+		"name": "ShreelipiS5303890"
+	},
+	"ShreelipiS5304890": {
+		"font": "Shreelipi S5304890",
+		"name": "ShreelipiS5304890"
+	},
+	"ShreelipiS5305890": {
+		"font": "Shreelipi S5305890",
+		"name": "ShreelipiS5305890"
+	},
+	"ShreelipiS5306890": {
+		"font": "Shreelipi S5306890",
+		"name": "ShreelipiS5306890"
+	},
+	"ShreelipiS5307890": {
+		"font": "Shreelipi S5307890",
+		"name": "ShreelipiS5307890"
+	},
+	"ShreelipiS5308890": {
+		"font": "Shreelipi S5308890",
+		"name": "ShreelipiS5308890"
+	},
+	"ShreelipiS5309890": {
+		"font": "Shreelipi S5309890",
+		"name": "ShreelipiS5309890"
+	},
+	"ShreelipiS5310890": {
+		"font": "Shreelipi S5310890",
+		"name": "ShreelipiS5310890"
+	},
+	"ShreelipiS5311890": {
+		"font": "Shreelipi S5311890",
+		"name": "ShreelipiS5311890"
+	},
+	"ShreelipiS5312890": {
+		"font": "Shreelipi S5312890",
+		"name": "ShreelipiS5312890"
+	},
+	"ShreelipiS5313890": {
+		"font": "Shreelipi S5313890",
+		"name": "ShreelipiS5313890"
+	},
+	"ShreelipiSHREE-ASS7-001W": {
+		"font": "Shreelipi SHREE ASS7 001W",
+		"name": "ShreelipiSHREE-ASS7-001W"
+	},
+	"ShreelipiSHREE-ASS7-002W": {
+		"font": "Shreelipi SHREE ASS7 002W",
+		"name": "ShreelipiSHREE-ASS7-002W"
+	},
+	"ShreelipiSHREE-BAN7-001W": {
+		"font": "Shreelipi SHREE BAN7 001W",
+		"name": "ShreelipiSHREE-BAN7-001W"
+	},
+	"ShreelipiSHREE-BAN7-002W": {
+		"font": "Shreelipi SHREE BAN7 002W",
+		"name": "ShreelipiSHREE-BAN7-002W"
+	},
+	"ShreelipiSHREE-DEV7-001W": {
+		"font": "Shreelipi SHREE DEV7 001W",
+		"name": "ShreelipiSHREE-DEV7-001W"
+	},
+	"ShreelipiSHREE-DEV7-002W": {
+		"font": "Shreelipi SHREE DEV7 002W",
+		"name": "ShreelipiSHREE-DEV7-002W"
+	},
+	"ShreelipiSHREE-DIA-1900W": {
+		"font": "Shreelipi SHREE DIA 1900W",
+		"name": "ShreelipiSHREE-DIA-1900W"
+	},
+	"ShreelipiSHREE-DIAI-1900W": {
+		"font": "Shreelipi SHREE DIAI 1900W",
+		"name": "ShreelipiSHREE-DIAI-1900W"
+	},
+	"ShreelipiSHREE-GUJ7-001W": {
+		"font": "Shreelipi SHREE GUJ7 001W",
+		"name": "ShreelipiSHREE-GUJ7-001W"
+	},
+	"ShreelipiSHREE-GUJ7-002W": {
+		"font": "Shreelipi SHREE GUJ7 002W",
+		"name": "ShreelipiSHREE-GUJ7-002W"
+	},
+	"ShreelipiSHREE-KAN7-001W": {
+		"font": "Shreelipi SHREE KAN7 001W",
+		"name": "ShreelipiSHREE-KAN7-001W"
+	},
+	"ShreelipiSHREE-KAN7-002W": {
+		"font": "Shreelipi SHREE KAN7 002W",
+		"name": "ShreelipiSHREE-KAN7-002W"
+	},
+	"ShreelipiSHREE-MAL7-001W": {
+		"font": "Shreelipi SHREE MAL7 001W",
+		"name": "ShreelipiSHREE-MAL7-001W"
+	},
+	"ShreelipiSHREE-MAL7-002W": {
+		"font": "Shreelipi SHREE MAL7 002W",
+		"name": "ShreelipiSHREE-MAL7-002W"
+	},
+	"ShreelipiSHREE-ORI7-001W": {
+		"font": "Shreelipi SHREE ORI7 001W",
+		"name": "ShreelipiSHREE-ORI7-001W"
+	},
+	"ShreelipiSHREE-ORI7-002W": {
+		"font": "Shreelipi SHREE ORI7 002W",
+		"name": "ShreelipiSHREE-ORI7-002W"
+	},
+	"ShreelipiSHREE-PUN7-001W": {
+		"font": "Shreelipi SHREE PUN7 001W",
+		"name": "ShreelipiSHREE-PUN7-001W"
+	},
+	"ShreelipiSHREE-PUN7-002W": {
+		"font": "Shreelipi SHREE PUN7 002W",
+		"name": "ShreelipiSHREE-PUN7-002W"
+	},
+	"ShreelipiSHREE-SAN7-001W": {
+		"font": "Shreelipi SHREE SAN7 001W",
+		"name": "ShreelipiSHREE-SAN7-001W"
+	},
+	"ShreelipiSHREE-SAN7-002W": {
+		"font": "Shreelipi SHREE SAN7 002W",
+		"name": "ShreelipiSHREE-SAN7-002W"
+	},
+	"ShreelipiSHREE-TAM7-001W": {
+		"font": "Shreelipi SHREE TAM7 001W",
+		"name": "ShreelipiSHREE-TAM7-001W"
+	},
+	"ShreelipiSHREE-TAM7-002W": {
+		"font": "Shreelipi SHREE TAM7 002W",
+		"name": "ShreelipiSHREE-TAM7-002W"
+	},
+	"ShreelipiSHREE-TEL7-001W": {
+		"font": "Shreelipi SHREE TEL7 001W",
+		"name": "ShreelipiSHREE-TEL7-001W"
+	},
+	"ShreelipiSHREE-TEL7-002W": {
+		"font": "Shreelipi SHREE TEL7 002W",
+		"name": "ShreelipiSHREE-TEL7-002W"
+	},
+	"ShreelipiSHREE664S": {
+		"font": "Shreelipi SHREE664S",
+		"name": "ShreelipiSHREE664S"
+	},
+	"ShreelipiSHREE680S": {
+		"font": "Shreelipi SHREE680S",
+		"name": "ShreelipiSHREE680S"
+	},
+	"ShreelipiSHREM560": {
+		"font": "Shreelipi SHREM560",
+		"name": "ShreelipiSHREM560"
+	},
+	"ShreelipiSHREM601": {
+		"font": "Shreelipi SHREM601",
+		"name": "ShreelipiSHREM601"
+	},
+	"ShreelipiSHREM726": {
+		"font": "Shreelipi SHREM726",
+		"name": "ShreelipiSHREM726"
+	},
+	"ShreelipiSHREM854": {
+		"font": "Shreelipi SHREM854",
+		"name": "ShreelipiSHREM854"
+	},
+	"ShreelipiSHREM951": {
+		"font": "Shreelipi SHREM951",
+		"name": "ShreelipiSHREM951"
+	},
+	"ShreelipiSHREMB43": {
+		"font": "Shreelipi SHREMB43",
+		"name": "ShreelipiSHREMB43"
+	},
+	"ShreelipiSHREMG42": {
+		"font": "Shreelipi SHREMG42",
+		"name": "ShreelipiSHREMG42"
+	},
+	"ShreelipiWASS001": {
+		"font": "Shreelipi WASS001",
+		"name": "ShreelipiWASS001"
+	},
+	"ShreelipiWASS002": {
+		"font": "Shreelipi WASS002",
+		"name": "ShreelipiWASS002"
+	},
+	"ShreelipiWASS7001": {
+		"font": "Shreelipi WASS7001",
+		"name": "ShreelipiWASS7001"
+	},
+	"ShreelipiWASS7002": {
+		"font": "Shreelipi WASS7002",
+		"name": "ShreelipiWASS7002"
+	},
+	"ShreelipiWBAN001": {
+		"font": "Shreelipi WBAN001",
+		"name": "ShreelipiWBAN001"
+	},
+	"ShreelipiWBAN002": {
+		"font": "Shreelipi WBAN002",
+		"name": "ShreelipiWBAN002"
+	},
+	"ShreelipiWBAN7001": {
+		"font": "Shreelipi WBAN7001",
+		"name": "ShreelipiWBAN7001"
+	},
+	"ShreelipiWBAN7002": {
+		"font": "Shreelipi WBAN7002",
+		"name": "ShreelipiWBAN7002"
+	},
+	"ShreelipiWBAN701T": {
+		"font": "Shreelipi WBAN701T",
+		"name": "ShreelipiWBAN701T"
+	},
+	"ShreelipiWBAN702T": {
+		"font": "Shreelipi WBAN702T",
+		"name": "ShreelipiWBAN702T"
+	},
+	"ShreelipiWDEV001": {
+		"font": "Shreelipi WDEV001",
+		"name": "ShreelipiWDEV001"
+	},
+	"ShreelipiWDEV001E": {
+		"font": "Shreelipi WDEV001E",
+		"name": "ShreelipiWDEV001E"
+	},
+	"ShreelipiWDEV002": {
+		"font": "Shreelipi WDEV002",
+		"name": "ShreelipiWDEV002"
+	},
+	"ShreelipiWDEV002E": {
+		"font": "Shreelipi WDEV002E",
+		"name": "ShreelipiWDEV002E"
+	},
+	"ShreelipiWDEV7001": {
+		"font": "Shreelipi WDEV7001",
+		"name": "ShreelipiWDEV7001"
+	},
+	"ShreelipiWDEV7001E": {
+		"font": "Shreelipi WDEV7001E",
+		"name": "ShreelipiWDEV7001E"
+	},
+	"ShreelipiWDEV7002": {
+		"font": "Shreelipi WDEV7002",
+		"name": "ShreelipiWDEV7002"
+	},
+	"ShreelipiWDEV7002E": {
+		"font": "Shreelipi WDEV7002E",
+		"name": "ShreelipiWDEV7002E"
+	},
+	"ShreelipiWGUJ001": {
+		"font": "Shreelipi WGUJ001",
+		"name": "ShreelipiWGUJ001"
+	},
+	"ShreelipiWGUJ002": {
+		"font": "Shreelipi WGUJ002",
+		"name": "ShreelipiWGUJ002"
+	},
+	"ShreelipiWGUJ7001": {
+		"font": "Shreelipi WGUJ7001",
+		"name": "ShreelipiWGUJ7001"
+	},
+	"ShreelipiWGUJ7002": {
+		"font": "Shreelipi WGUJ7002",
+		"name": "ShreelipiWGUJ7002"
+	},
+	"ShreelipiWKAN001": {
+		"font": "Shreelipi WKAN001",
+		"name": "ShreelipiWKAN001"
+	},
+	"ShreelipiWKAN002": {
+		"font": "Shreelipi WKAN002",
+		"name": "ShreelipiWKAN002"
+	},
+	"ShreelipiWKAN7001": {
+		"font": "Shreelipi WKAN7001",
+		"name": "ShreelipiWKAN7001"
+	},
+	"ShreelipiWKAN7002": {
+		"font": "Shreelipi WKAN7002",
+		"name": "ShreelipiWKAN7002"
+	},
+	"ShreelipiWMAL001": {
+		"font": "Shreelipi WMAL001",
+		"name": "ShreelipiWMAL001"
+	},
+	"ShreelipiWMAL002": {
+		"font": "Shreelipi WMAL002",
+		"name": "ShreelipiWMAL002"
+	},
+	"ShreelipiWMAL7001": {
+		"font": "Shreelipi WMAL7001",
+		"name": "ShreelipiWMAL7001"
+	},
+	"ShreelipiWMAL7002": {
+		"font": "Shreelipi WMAL7002",
+		"name": "ShreelipiWMAL7002"
+	},
+	"ShreelipiWORI001": {
+		"font": "Shreelipi WORI001",
+		"name": "ShreelipiWORI001"
+	},
+	"ShreelipiWORI002": {
+		"font": "Shreelipi WORI002",
+		"name": "ShreelipiWORI002"
+	},
+	"ShreelipiWORI01T": {
+		"font": "Shreelipi WORI01T",
+		"name": "ShreelipiWORI01T"
+	},
+	"ShreelipiWORI02T": {
+		"font": "Shreelipi WORI02T",
+		"name": "ShreelipiWORI02T"
+	},
+	"ShreelipiWPUN001": {
+		"font": "Shreelipi WPUN001",
+		"name": "ShreelipiWPUN001"
+	},
+	"ShreelipiWPUN002": {
+		"font": "Shreelipi WPUN002",
+		"name": "ShreelipiWPUN002"
+	},
+	"ShreelipiWTAM001": {
+		"font": "Shreelipi WTAM001",
+		"name": "ShreelipiWTAM001"
+	},
+	"ShreelipiWTAM002": {
+		"font": "Shreelipi WTAM002",
+		"name": "ShreelipiWTAM002"
+	},
+	"ShreelipiWTAM7001": {
+		"font": "Shreelipi WTAM7001",
+		"name": "ShreelipiWTAM7001"
+	},
+	"ShreelipiWTAM7002": {
+		"font": "Shreelipi WTAM7002",
+		"name": "ShreelipiWTAM7002"
+	},
+	"ShreelipiWTEL001": {
+		"font": "Shreelipi WTEL001",
+		"name": "ShreelipiWTEL001"
+	},
+	"ShreelipiWTEL002": {
+		"font": "Shreelipi WTEL002",
+		"name": "ShreelipiWTEL002"
+	},
+	"ShreelipiWTEL7001": {
+		"font": "Shreelipi WTEL7001",
+		"name": "ShreelipiWTEL7001"
+	},
+	"ShreelipiWTEL7002": {
+		"font": "Shreelipi WTEL7002",
+		"name": "ShreelipiWTEL7002"
+	},
+	"ShreelipiWTEL701T": {
+		"font": "Shreelipi WTEL701T",
+		"name": "ShreelipiWTEL701T"
+	},
+	"ShreelipiWTEL702T": {
+		"font": "Shreelipi WTEL702T",
+		"name": "ShreelipiWTEL702T"
+	},
+	"SrirajuSRIRAJBI": {
+		"font": "Sriraju SRIRAJBI",
+		"name": "SrirajuSRIRAJBI"
+	},
+	"SrirajuSRIRAJUB": {
+		"font": "Sriraju SRIRAJUB",
+		"name": "SrirajuSRIRAJUB"
+	},
+	"SrirajuSRIRAJUI": {
+		"font": "Sriraju SRIRAJUI",
+		"name": "SrirajuSRIRAJUI"
+	},
+	"SrirajuSRIRAJUO": {
+		"font": "Sriraju SRIRAJUO",
+		"name": "SrirajuSRIRAJUO"
+	},
+	"SrirajuSRIRAJUR": {
+		"font": "Sriraju SRIRAJUR",
+		"name": "SrirajuSRIRAJUR"
+	},
+	"SrirajuSRIRAUOI": {
+		"font": "Sriraju SRIRAUOI",
+		"name": "SrirajuSRIRAUOI"
+	},
+	"TungaTungaRegular": {
+		"font": "Tunga Tunga Regular",
+		"name": "TungaTungaRegular"
+	},
+	"Tungatungab": {
+		"font": "Tunga tungab",
+		"name": "Tungatungab"
+	}
 }
