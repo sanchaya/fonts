@@ -3,6 +3,10 @@ const fs = require('fs')
 
 const pre_path = '../Fonts/'
 
+const css_path = "./static/css/fonts.css"
+
+const fonts_json = "fonts.json"
+
 const {font_extentions} = require('./configuaration')
 
 const getFiles = path => {
@@ -18,9 +22,28 @@ const getFiles = path => {
 
 var fontInitialize = () =>{
     const all_files = getFiles('./static/Fonts/')
+    css = ''
+    obj = {}
     all_files.forEach( file =>{
-        console.log(file)
+        extention = font_extentions.find( a => {
+            if(file.includes(a)){
+                return a
+            }
+            return false
+        })
+        if(extention){
+            font_link = file.replaceAll('/','').replaceAll(' ','').replaceAll(extention,'').replaceAll('_','')
+            font_family = file.replaceAll('/',' ').replaceAll(extention,'').replaceAll('-',' ').replaceAll('_',' ')
+            font_address = pre_path + file
+            css += '@font-face {\n\tfont-family: "'+font_family+'";\n\tsrc: url("'+font_address+'");\n\n}'
+            obj[font_link] = {
+                font: font_family,
+                name: font_link
+            }
+        }
     })
+    fs.writeFileSync(css_path,css)
+    fs.writeFileSync(fonts_json,JSON.stringify(obj,null,'\t'),'utf8')
 }
 
 
