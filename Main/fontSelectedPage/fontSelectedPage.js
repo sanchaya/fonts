@@ -1,6 +1,6 @@
 const { json } = require('express')
 const fs = require('fs')
-const { prefix_name, all_conjuncts } = require('../../configuaration')
+const { prefix_name, all_conjuncts, maxDataPerPage} = require('../../configuaration')
 
 var vowels_length
 
@@ -63,7 +63,13 @@ var get_all_data = (path_to_json) =>{
 }
 
 
-var getFonts = (val) =>{
+var getMinimum = (val1, val2) =>{
+    if(val1<val2)
+        return val1
+    return val2
+}
+
+var getFonts = (val, page) =>{
     let bytes = fs.readFileSync(fonts_json)
     let json = JSON.parse(bytes)
     let ar = Object.keys(json).map((key)=>{
@@ -74,7 +80,18 @@ var getFonts = (val) =>{
             return true
         }
     })
-    return filter
+    const min = getMinimum(filter.length, page*maxDataPerPage)
+    const min_for_starting = getMinimum(filter.length, (page-1)*maxDataPerPage)
+    const sendingData = filter.slice(min_for_starting, min)
+    let isLastPage = false
+    if(min==filter.length)
+        isLastPage = true
+    
+    const parsingData = {
+        data:sendingData,
+        isLastPage: isLastPage
+    }
+    return parsingData
 }
 
 var getFontFromParam = (param) =>{

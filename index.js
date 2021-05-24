@@ -111,7 +111,8 @@ router.get('/', (req,res) => {
 
 router.get('/getFonts',(req,res) =>{
     const val = req.query.val
-    let fonts = getFonts(val)
+    const page = req.query.page
+    let fonts = getFonts(val, page)
     res.send(fonts)
 })
 
