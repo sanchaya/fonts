@@ -32,8 +32,8 @@ var fontInitialize = () =>{
             return false
         })
         if(extention){
-            font_link = file.replaceAll('/','').replaceAll(' ','').replaceAll(extention,'').replaceAll('_','')
-            font_family = file.replaceAll('/',' ').replaceAll(extention,'').replaceAll('-',' ').replaceAll('_',' ')
+            font_link = file.replace(/\//g,'').replace(/ /g,'').replace(extention,'').replace(/_/g,'')
+            font_family = file.replace(/\//g,' ').replace(extention,'').replace(/-/g,' ').replace(/_/g,' ')
             font_address = pre_path + file
             css += '@font-face {\n\tfont-family: "'+font_family+'";\n\tsrc: url("'+font_address+'");\n\n}'
             obj[font_link] = {
