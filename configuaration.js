@@ -14,6 +14,8 @@ const conjuncts_in_page = ['Final Consonants','2 Consonants', '3 Consonants', '4
 
 const font_extentions = ['.ttf','.TTF','.pfm','.pfb','.PFM','.PFB','.VFB','.VTB','.vfb','.vtb']
 
+const maxDataPerPage = 60
+
 const pages = {
     fontPage:false,
     fontShowPage:false,
@@ -29,5 +31,6 @@ module.exports = {
     conjuncts_in_json:conjuncts_in_json,
     conjuncts_in_page:conjuncts_in_page,
     numerals:numerals,
-    font_extentions:font_extentions
+    font_extentions:font_extentions,
+    maxDataPerPage:maxDataPerPage
 }

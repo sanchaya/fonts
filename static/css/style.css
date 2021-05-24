@@ -81,9 +81,67 @@ h2{
   box-sizing: border-box;
   width: 23%;
   float:left;
+  position: relative;
   margin: 6px;
   border:1px solid rgba(0,0,0,0.2);
 }
+
+.custom-card .hover-show a{
+    color: white;
+}
+
+.custom-card .hover-show{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 6px;
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,#e879ad,#6800ff);   
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    -o-animation: fadeIn 0.5s;
+    -ms-animation: fadeIn 0.5s;
+}
+
+.custom-card:hover .hover-show{
+    display: flex;
+}
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 .custom-card h4, .custom-card p{
     white-space: nowrap;
@@ -93,6 +151,11 @@ h2{
 
 .custom-card p{
     white-space: normal !important;
+}
+
+.custom-card-cnt a{
+    position: relative;
+    z-index: 20;
 }
 
 .custom-card h4{
@@ -115,4 +178,15 @@ h2{
     font-size: medium;
 }
 
+
+#loading-gif{
+    clear: both;
+}
+
+#loading-gif img{
+    display: block;
+    margin: 0px auto;
+    height: 40px;
+    width: 40px;
+}
 

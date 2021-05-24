@@ -1,18 +1,34 @@
+var page = 1
+
+var timer
+
 $(document).ready(function(){
-    console.log("document ready")
+
     ajaxToJson('')
+
     $('input.form-control').keyup(function(){
+        page = 1
+        $('div.container.showPage').html('').fadeIn()
         let val = $(this).val()
         ajaxToJson(val)
     })
+    
 })
+
+
+$(window).scroll(function() {
+    if($(window).scrollTop() == $(document).height() - $(window).height()) {
+           const search = $('input.form-control').val()
+           ajaxToJson(search)
+    }
+});
 
 var ajaxToJson = (val) =>{
     $.ajax({  
         url:'/getFonts',  
         method:'get',  
         dataType:'json',  
-        data:{'val':val},  
+        data:{'val':val, 'page': page},  
         success:function(response){  
             appendCard(response)
         },  
@@ -28,8 +44,12 @@ var displayError = () =>{
 
 var appendCard = (res) => {
     let appender = ''
-    for(let i=0;i<res.length;i++){
-        appender += "<div class='custom-card'><div class='custom-card-cnt'><h4><b>"+res[i].font+"</b></h4><hr><p style='font-family:"+res[i].font+",recursive;'>ಕನ್ನಡ ಒಂದು ಸುಂದರ ಭಾಷೆ. ನೀವು ಭಾಷೆಯ ಫಾಂಟ್ ಅನ್ನು ಬದಲಾಯಿಸಬಹುದು</p><hr><a role='button' class='btn btn-primary' href='/fonts/"+res[i].name+"'>Go</a></div></div>"
+    $('#loading-gif').remove()
+    for(let i=0;i<res.data.length;i++){
+        appender += "<div class='custom-card'><div class='hover-show'><a href='/fonts/"+res.data[i].name+"'>"+res.data[i].font+"</a></div><div class='custom-card-cnt'><h4><b>"+res.data[i].font+"</b></h4><hr><p style='font-family:"+res.data[i].font+",recursive;'>ಕನ್ನಡ ಒಂದು ಸುಂದರ ಭಾಷೆ. ನೀವು ಭಾಷೆಯ ಫಾಂಟ್ ಅನ್ನು ಬದಲಾಯಿಸಬಹುದು</p><hr><a role='button' class='btn btn-primary' href='/fonts/"+res.data[i].name+"'>Go</a></div></div>"
     }
-    $('div.container.showPage').html(appender)
+    if(!res.isLastPage)
+        appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
+    $('div.container.showPage').append(appender)
+    page += 1
 }
