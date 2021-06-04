@@ -76,7 +76,7 @@ var getFonts = (val, page) =>{
         return json[key]
     })
     let filter = ar.filter( data =>{
-        if(data.name.toLowerCase().includes(val.toLowerCase())){
+        if(data.font.toLowerCase().includes(val.toLowerCase())){
             return true
         }
     })
