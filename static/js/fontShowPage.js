@@ -40,6 +40,7 @@ var ajaxToJson = (val) =>{
 
 var displayError = () =>{
     $('div.container.showPage').html("<h2 style='text-align:center;'> An error occured</h2>")
+    $('input.form-control').val("")
 }
 
 var appendCard = (res) => {
