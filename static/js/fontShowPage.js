@@ -43,6 +43,13 @@ var displayError = () =>{
     $('input.form-control').val("")
 }
 
+var changeTextNFont = () => {
+    const text = $('#type-text').val()
+    const fontSize = $('#myRange').val()
+    $('.custom-card-cnt p').text(text)
+    $('.custom-card-cnt p').css({fontSize: fontSize + "px"})
+}
+
 var appendCard = (res) => {
     let appender = ''
     $('#loading-gif').remove()
@@ -52,5 +59,6 @@ var appendCard = (res) => {
     if(!res.isLastPage)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
     $('div.container.showPage').append(appender)
+    changeTextNFont()
     page += 1
 }
