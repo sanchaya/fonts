@@ -20,7 +20,8 @@ $(document).ready(function(){
         outputTag.style.marginLeft = offset + "%";
         outputTag.innerHTML        = this.value+'px';
     
-        $('#in-para-txt p').css({fontSize:this.value+'px'});
+        //$('#in-para-txt p').css({fontSize:this.value+'px'});
+        $('.custom-card-cnt p').css({fontSize:this.value+'px'});
     }
     
     function modifyInputs() {
@@ -59,7 +60,7 @@ var set_initial_text = () =>{
 }
 
 var input_to_para = (ele) =>{
-    $('#in-para-txt p').text($(ele).val())
+    $('.custom-card-cnt p').text($(ele).val())
 }
 
 var addClassInput = (ele) =>{
