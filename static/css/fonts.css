@@ -1,4433 +1,4433 @@
 @font-face {
-	font-family: "Akaya Kanadaka AkayaKanadaka Regular";
+	font-family: "AkayaKanadaka Regular";
 	src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
 
 }@font-face {
-	font-family: "Baloo Tamma 2 BalooTamma2 Bold";
+	font-family: "BalooTamma2 Bold";
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Bold.ttf");
 
 }@font-face {
-	font-family: "Baloo Tamma 2 BalooTamma2 ExtraBold";
+	font-family: "BalooTamma2 ExtraBold";
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-ExtraBold.ttf");
 
 }@font-face {
-	font-family: "Baloo Tamma 2 BalooTamma2 Medium";
+	font-family: "BalooTamma2 Medium";
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Medium.ttf");
 
 }@font-face {
-	font-family: "Baloo Tamma 2 BalooTamma2 Regular";
+	font-family: "BalooTamma2 Regular";
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-Regular.ttf");
 
 }@font-face {
-	font-family: "Baloo Tamma 2 BalooTamma2 SemiBold";
+	font-family: "BalooTamma2 SemiBold";
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-SemiBold.ttf");
 
 }@font-face {
-	font-family: "Benne Benne Regular";
+	font-family: "Benne Regular";
 	src: url("../Fonts/Benne/Benne-Regular.ttf");
 
 }@font-face {
-	font-family: "Inchara inchara";
+	font-family: "inchara";
 	src: url("../Fonts/Inchara/inchara.ttf");
 
 }@font-face {
-	font-family: "Kedage Kedage b";
+	font-family: "Kedage b";
 	src: url("../Fonts/Kedage/Kedage-b.ttf");
 
 }@font-face {
-	font-family: "Kedage Kedage i";
+	font-family: "Kedage i";
 	src: url("../Fonts/Kedage/Kedage-i.ttf");
 
 }@font-face {
-	font-family: "Kedage Kedage n";
+	font-family: "Kedage n";
 	src: url("../Fonts/Kedage/Kedage-n.ttf");
 
 }@font-face {
-	font-family: "Kedage Kedage t";
+	font-family: "Kedage t";
 	src: url("../Fonts/Kedage/Kedage-t.ttf");
 
 }@font-face {
-	font-family: "Lohit Kannada Lohit Kannada";
+	font-family: "Lohit Kannada";
 	src: url("../Fonts/Lohit-Kannada/Lohit-Kannada.ttf");
 
 }@font-face {
-	font-family: "Malige Malige b";
+	font-family: "Malige b";
 	src: url("../Fonts/Malige/Malige-b.ttf");
 
 }@font-face {
-	font-family: "Malige Malige i";
+	font-family: "Malige i";
 	src: url("../Fonts/Malige/Malige-i.ttf");
 
 }@font-face {
-	font-family: "Malige Malige n";
+	font-family: "Malige n";
 	src: url("../Fonts/Malige/Malige-n.ttf");
 
 }@font-face {
-	font-family: "Malige Malige t";
+	font-family: "Malige t";
 	src: url("../Fonts/Malige/Malige-t.ttf");
 
 }@font-face {
-	font-family: "Murty Kannada Murty Kannada";
+	font-family: "Murty Kannada";
 	src: url("../Fonts/Murty-Kannada/Murty-Kannada.ttf");
 
 }@font-face {
-	font-family: "NotoSansKannada unhinted NotoSansKannada Bold";
+	font-family: "NotoSansKannada Bold";
 	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannada-Bold.ttf");
 
 }@font-face {
-	font-family: "NotoSansKannada unhinted NotoSansKannada Regular";
+	font-family: "NotoSansKannada Regular";
 	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannada-Regular.ttf");
 
 }@font-face {
-	font-family: "NotoSansKannada unhinted NotoSansKannadaUI Bold";
+	font-family: "NotoSansKannadaUI Bold";
 	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannadaUI-Bold.ttf");
 
 }@font-face {
-	font-family: "NotoSansKannada unhinted NotoSansKannadaUI Regular";
+	font-family: "NotoSansKannadaUI Regular";
 	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannadaUI-Regular.ttf");
 
 }@font-face {
-	font-family: "NotoSerifKannada unhinted NotoSerifKannada Bold";
+	font-family: "NotoSerifKannada Bold";
 	src: url("../Fonts/NotoSerifKannada-unhinted/NotoSerifKannada-Bold.ttf");
 
 }@font-face {
-	font-family: "NotoSerifKannada unhinted NotoSerifKannada Regular";
+	font-family: "NotoSerifKannada Regular";
 	src: url("../Fonts/NotoSerifKannada-unhinted/NotoSerifKannada-Regular.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 19 E";
+	font-family: "NUDI 19 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 19 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 19 K";
+	font-family: "NUDI 19 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 19 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 20 E";
+	font-family: "NUDI 20 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 20 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 20 K";
+	font-family: "NUDI 20 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 20 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 21 E";
+	font-family: "NUDI 21 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 21 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 21 K";
+	font-family: "NUDI 21 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 21 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 22 E";
+	font-family: "NUDI 22 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 22 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 22 K";
+	font-family: "NUDI 22 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 22 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 23 E";
+	font-family: "NUDI 23 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 23 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 23 K";
+	font-family: "NUDI 23 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 23 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 24 E";
+	font-family: "NUDI 24 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 24 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 24 K";
+	font-family: "NUDI 24 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 24 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 25 E";
+	font-family: "NUDI 25 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 25 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 25 K";
+	font-family: "NUDI 25 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 25 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 26 E";
+	font-family: "NUDI 26 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 26 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 26 K";
+	font-family: "NUDI 26 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 26 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 27 E";
+	font-family: "NUDI 27 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 27 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 27 K";
+	font-family: "NUDI 27 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 27 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 28 E";
+	font-family: "NUDI 28 E";
 	src: url("../Fonts/Nudi_fonts/NUDI 28 E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 28 K";
+	font-family: "NUDI 28 K";
 	src: url("../Fonts/Nudi_fonts/NUDI 28 K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI KVK E B";
+	font-family: "NUDI KVK E B";
 	src: url("../Fonts/Nudi_fonts/NUDI KVK E B.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI KVK E";
+	font-family: "NUDI KVK E";
 	src: url("../Fonts/Nudi_fonts/NUDI KVK E.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI KVK K B";
+	font-family: "NUDI KVK K B";
 	src: url("../Fonts/Nudi_fonts/NUDI KVK K B.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI KVK K";
+	font-family: "NUDI KVK K";
 	src: url("../Fonts/Nudi_fonts/NUDI KVK K.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 01E BOLD";
+	font-family: "NUDI UNI 01E BOLD";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 01E BOLD.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 01E";
+	font-family: "NUDI UNI 01E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 01E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 01K";
+	font-family: "NUDI UNI 01K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 01K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 02E";
+	font-family: "NUDI UNI 02E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 02E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 02K";
+	font-family: "NUDI UNI 02K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 02K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 03E";
+	font-family: "NUDI UNI 03E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 03E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 03K";
+	font-family: "NUDI UNI 03K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 03K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 04E";
+	font-family: "NUDI UNI 04E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 04E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 04K";
+	font-family: "NUDI UNI 04K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 04K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 06E";
+	font-family: "NUDI UNI 06E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 06E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 06K";
+	font-family: "NUDI UNI 06K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 06K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 07E";
+	font-family: "NUDI UNI 07E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 07E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 07K";
+	font-family: "NUDI UNI 07K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 07K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 08E";
+	font-family: "NUDI UNI 08E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 08E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 08K";
+	font-family: "NUDI UNI 08K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 08K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 09E";
+	font-family: "NUDI UNI 09E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 09E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 09K";
+	font-family: "NUDI UNI 09K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 09K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 10E";
+	font-family: "NUDI UNI 10E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 10E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI 10K";
+	font-family: "NUDI UNI 10K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI 10K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI ananth 05E";
+	font-family: "NUDI UNI ananth 05E";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI ananth 05E.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI UNI ananth 05K";
+	font-family: "NUDI UNI ananth 05K";
 	src: url("../Fonts/Nudi_fonts/NUDI UNI ananth 05K.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 00";
+	font-family: "NUDI 00";
 	src: url("../Fonts/Nudi_fonts/NUDI-00.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 01";
+	font-family: "NUDI 01";
 	src: url("../Fonts/Nudi_fonts/NUDI-01.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 02";
+	font-family: "NUDI 02";
 	src: url("../Fonts/Nudi_fonts/NUDI-02.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 03";
+	font-family: "NUDI 03";
 	src: url("../Fonts/Nudi_fonts/NUDI-03.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 04";
+	font-family: "NUDI 04";
 	src: url("../Fonts/Nudi_fonts/NUDI-04.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 05";
+	font-family: "NUDI 05";
 	src: url("../Fonts/Nudi_fonts/NUDI-05.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 06";
+	font-family: "NUDI 06";
 	src: url("../Fonts/Nudi_fonts/NUDI-06.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 07";
+	font-family: "NUDI 07";
 	src: url("../Fonts/Nudi_fonts/NUDI-07.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 08";
+	font-family: "NUDI 08";
 	src: url("../Fonts/Nudi_fonts/NUDI-08.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 09";
+	font-family: "NUDI 09";
 	src: url("../Fonts/Nudi_fonts/NUDI-09.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 10";
+	font-family: "NUDI 10";
 	src: url("../Fonts/Nudi_fonts/NUDI-10.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 11";
+	font-family: "NUDI 11";
 	src: url("../Fonts/Nudi_fonts/NUDI-11.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI 12";
+	font-family: "NUDI 12";
 	src: url("../Fonts/Nudi_fonts/NUDI-12.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI00";
+	font-family: "NUDI00";
 	src: url("../Fonts/Nudi_fonts/NUDI00.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI01";
+	font-family: "NUDI01";
 	src: url("../Fonts/Nudi_fonts/NUDI01.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI02";
+	font-family: "NUDI02";
 	src: url("../Fonts/Nudi_fonts/NUDI02.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI03";
+	font-family: "NUDI03";
 	src: url("../Fonts/Nudi_fonts/NUDI03.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI04";
+	font-family: "NUDI04";
 	src: url("../Fonts/Nudi_fonts/NUDI04.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI05";
+	font-family: "NUDI05";
 	src: url("../Fonts/Nudi_fonts/NUDI05.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI06";
+	font-family: "NUDI06";
 	src: url("../Fonts/Nudi_fonts/NUDI06.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI07";
+	font-family: "NUDI07";
 	src: url("../Fonts/Nudi_fonts/NUDI07.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI08";
+	font-family: "NUDI08";
 	src: url("../Fonts/Nudi_fonts/NUDI08.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI10";
+	font-family: "NUDI10";
 	src: url("../Fonts/Nudi_fonts/NUDI10.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI11";
+	font-family: "NUDI11";
 	src: url("../Fonts/Nudi_fonts/NUDI11.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI12";
+	font-family: "NUDI12";
 	src: url("../Fonts/Nudi_fonts/NUDI12.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDI14";
+	font-family: "NUDI14";
 	src: url("../Fonts/Nudi_fonts/NUDI14.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDIB 00";
+	font-family: "NUDIB 00";
 	src: url("../Fonts/Nudi_fonts/NUDIB-00.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts NUDIB00";
+	font-family: "NUDIB00";
 	src: url("../Fonts/Nudi_fonts/NUDIB00.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 01 e b";
+	font-family: "Nudi 01 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 01 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 01 e";
+	font-family: "Nudi 01 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 01 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 01 k b";
+	font-family: "Nudi 01 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 01 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 01 k";
+	font-family: "Nudi 01 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 01 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 02 e b";
+	font-family: "Nudi 02 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 02 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 02 e";
+	font-family: "Nudi 02 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 02 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 02 k b";
+	font-family: "Nudi 02 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 02 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 02 k";
+	font-family: "Nudi 02 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 02 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 03 e b";
+	font-family: "Nudi 03 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 03 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 03 e";
+	font-family: "Nudi 03 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 03 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 03 k b";
+	font-family: "Nudi 03 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 03 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 03 k";
+	font-family: "Nudi 03 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 03 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 04 e b";
+	font-family: "Nudi 04 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 04 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 04 e";
+	font-family: "Nudi 04 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 04 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 04 k b";
+	font-family: "Nudi 04 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 04 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 04 k";
+	font-family: "Nudi 04 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 04 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 05 e b";
+	font-family: "Nudi 05 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 05 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 05 e";
+	font-family: "Nudi 05 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 05 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 05 k b";
+	font-family: "Nudi 05 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 05 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 05 k";
+	font-family: "Nudi 05 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 05 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 06 e b";
+	font-family: "Nudi 06 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 06 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 06 e";
+	font-family: "Nudi 06 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 06 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 06 k b";
+	font-family: "Nudi 06 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 06 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 06 k";
+	font-family: "Nudi 06 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 06 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 07 e b";
+	font-family: "Nudi 07 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 07 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 07 e";
+	font-family: "Nudi 07 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 07 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 07 k b";
+	font-family: "Nudi 07 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 07 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 07 k";
+	font-family: "Nudi 07 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 07 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 08 e b";
+	font-family: "Nudi 08 e b";
 	src: url("../Fonts/Nudi_fonts/Nudi 08 e b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 08 e";
+	font-family: "Nudi 08 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 08 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 08 k b";
+	font-family: "Nudi 08 k b";
 	src: url("../Fonts/Nudi_fonts/Nudi 08 k b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 08 k";
+	font-family: "Nudi 08 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 08 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 09 e";
+	font-family: "Nudi 09 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 09 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 09 k";
+	font-family: "Nudi 09 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 09 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 10 e";
+	font-family: "Nudi 10 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 10 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 10 k";
+	font-family: "Nudi 10 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 10 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 11 e";
+	font-family: "Nudi 11 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 11 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 11 k";
+	font-family: "Nudi 11 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 11 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 12 e";
+	font-family: "Nudi 12 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 12 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 12 k";
+	font-family: "Nudi 12 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 12 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 13 e";
+	font-family: "Nudi 13 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 13 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 13 k";
+	font-family: "Nudi 13 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 13 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 14 e";
+	font-family: "Nudi 14 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 14 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 14 k";
+	font-family: "Nudi 14 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 14 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 15 e";
+	font-family: "Nudi 15 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 15 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 15 k";
+	font-family: "Nudi 15 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 15 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 16 e";
+	font-family: "Nudi 16 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 16 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 16 k";
+	font-family: "Nudi 16 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 16 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 17 e";
+	font-family: "Nudi 17 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 17 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 17 k";
+	font-family: "Nudi 17 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 17 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 18 e";
+	font-family: "Nudi 18 e";
 	src: url("../Fonts/Nudi_fonts/Nudi 18 e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi 18 k";
+	font-family: "Nudi 18 k";
 	src: url("../Fonts/Nudi_fonts/Nudi 18 k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi B Akshar 1";
+	font-family: "Nudi B Akshar 1";
 	src: url("../Fonts/Nudi_fonts/Nudi B Akshar-1.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi B Akshar 2";
+	font-family: "Nudi B Akshar 2";
 	src: url("../Fonts/Nudi_fonts/Nudi B Akshar-2.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi B Akshara 1";
+	font-family: "Nudi B Akshara 1";
 	src: url("../Fonts/Nudi_fonts/Nudi B Akshara-1.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi B Akshara 2";
+	font-family: "Nudi B Akshara 2";
 	src: url("../Fonts/Nudi_fonts/Nudi B Akshara-2.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi vedic e b";
+	font-family: "Nudi vedic e b";
 	src: url("../Fonts/Nudi_fonts/Nudi vedic e b.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi vedic e";
+	font-family: "Nudi vedic e";
 	src: url("../Fonts/Nudi_fonts/Nudi vedic e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi vedic k b";
+	font-family: "Nudi vedic k b";
 	src: url("../Fonts/Nudi_fonts/Nudi vedic k b.TTF");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi vedic k";
+	font-family: "Nudi vedic k";
 	src: url("../Fonts/Nudi_fonts/Nudi vedic k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi ISCII";
+	font-family: "Nudi ISCII";
 	src: url("../Fonts/Nudi_fonts/Nudi_ISCII.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudi KSCLP";
+	font-family: "Nudi KSCLP";
 	src: url("../Fonts/Nudi_fonts/Nudi_KSCLP.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudiweb01e";
+	font-family: "Nudiweb01e";
 	src: url("../Fonts/Nudi_fonts/Nudiweb01e.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudiweb01eb";
+	font-family: "Nudiweb01eb";
 	src: url("../Fonts/Nudi_fonts/Nudiweb01eb.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudiweb01k";
+	font-family: "Nudiweb01k";
 	src: url("../Fonts/Nudi_fonts/Nudiweb01k.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts Nudiweb01kb";
+	font-family: "Nudiweb01kb";
 	src: url("../Fonts/Nudi_fonts/Nudiweb01kb.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts nudi akshar b";
+	font-family: "nudi akshar b";
 	src: url("../Fonts/Nudi_fonts/nudi akshar b.ttf");
 
 }@font-face {
-	font-family: "Nudi fonts nudi akshara b";
+	font-family: "nudi akshara b";
 	src: url("../Fonts/Nudi_fonts/nudi akshara b.ttf");
 
 }@font-face {
-	font-family: "PRAKASHAK CHABI";
+	font-family: "CHABI";
 	src: url("../Fonts/PRAKASHAK/CHABI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK CHABN";
+	font-family: "CHABN";
 	src: url("../Fonts/PRAKASHAK/CHABN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYBI";
+	font-family: "HOYBI";
 	src: url("../Fonts/PRAKASHAK/HOYBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYBN";
+	font-family: "HOYBN";
 	src: url("../Fonts/PRAKASHAK/HOYBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYLI";
+	font-family: "HOYLI";
 	src: url("../Fonts/PRAKASHAK/HOYLI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYLN";
+	font-family: "HOYLN";
 	src: url("../Fonts/PRAKASHAK/HOYLN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYMI";
+	font-family: "HOYMI";
 	src: url("../Fonts/PRAKASHAK/HOYMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK HOYMN";
+	font-family: "HOYMN";
 	src: url("../Fonts/PRAKASHAK/HOYMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KAPMI";
+	font-family: "KAPMI";
 	src: url("../Fonts/PRAKASHAK/KAPMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KAPMN";
+	font-family: "KAPMN";
 	src: url("../Fonts/PRAKASHAK/KAPMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KAVMI";
+	font-family: "KAVMI";
 	src: url("../Fonts/PRAKASHAK/KAVMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KAVMN";
+	font-family: "KAVMN";
 	src: url("../Fonts/PRAKASHAK/KAVMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KVPBI";
+	font-family: "KVPBI";
 	src: url("../Fonts/PRAKASHAK/KVPBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KVPBN";
+	font-family: "KVPBN";
 	src: url("../Fonts/PRAKASHAK/KVPBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KVPMI";
+	font-family: "KVPMI";
 	src: url("../Fonts/PRAKASHAK/KVPMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK KVPMN";
+	font-family: "KVPMN";
 	src: url("../Fonts/PRAKASHAK/KVPMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK NETMI";
+	font-family: "NETMI";
 	src: url("../Fonts/PRAKASHAK/NETMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK NETMN";
+	font-family: "NETMN";
 	src: url("../Fonts/PRAKASHAK/NETMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PAMBI";
+	font-family: "PAMBI";
 	src: url("../Fonts/PRAKASHAK/PAMBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PAMBN";
+	font-family: "PAMBN";
 	src: url("../Fonts/PRAKASHAK/PAMBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PAMMI";
+	font-family: "PAMMI";
 	src: url("../Fonts/PRAKASHAK/PAMMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PAMMN";
+	font-family: "PAMMN";
 	src: url("../Fonts/PRAKASHAK/PAMMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRABI";
+	font-family: "PRABI";
 	src: url("../Fonts/PRAKASHAK/PRABI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRABN";
+	font-family: "PRABN";
 	src: url("../Fonts/PRAKASHAK/PRABN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRADI";
+	font-family: "PRADI";
 	src: url("../Fonts/PRAKASHAK/PRADI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRADN";
+	font-family: "PRADN";
 	src: url("../Fonts/PRAKASHAK/PRADN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRALI";
+	font-family: "PRALI";
 	src: url("../Fonts/PRAKASHAK/PRALI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRALN";
+	font-family: "PRALN";
 	src: url("../Fonts/PRAKASHAK/PRALN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRAMI";
+	font-family: "PRAMI";
 	src: url("../Fonts/PRAKASHAK/PRAMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PRAMN";
+	font-family: "PRAMN";
 	src: url("../Fonts/PRAKASHAK/PRAMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PULMI";
+	font-family: "PULMI";
 	src: url("../Fonts/PRAKASHAK/PULMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK PULMN";
+	font-family: "PULMN";
 	src: url("../Fonts/PRAKASHAK/PULMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANBI";
+	font-family: "RANBI";
 	src: url("../Fonts/PRAKASHAK/RANBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANBN";
+	font-family: "RANBN";
 	src: url("../Fonts/PRAKASHAK/RANBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANLI";
+	font-family: "RANLI";
 	src: url("../Fonts/PRAKASHAK/RANLI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANLN";
+	font-family: "RANLN";
 	src: url("../Fonts/PRAKASHAK/RANLN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANMI";
+	font-family: "RANMI";
 	src: url("../Fonts/PRAKASHAK/RANMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK RANMN";
+	font-family: "RANMN";
 	src: url("../Fonts/PRAKASHAK/RANMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGBI";
+	font-family: "SAGBI";
 	src: url("../Fonts/PRAKASHAK/SAGBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGBN";
+	font-family: "SAGBN";
 	src: url("../Fonts/PRAKASHAK/SAGBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGLI";
+	font-family: "SAGLI";
 	src: url("../Fonts/PRAKASHAK/SAGLI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGLN";
+	font-family: "SAGLN";
 	src: url("../Fonts/PRAKASHAK/SAGLN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGMI";
+	font-family: "SAGMI";
 	src: url("../Fonts/PRAKASHAK/SAGMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SAGMN";
+	font-family: "SAGMN";
 	src: url("../Fonts/PRAKASHAK/SAGMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SHLBI";
+	font-family: "SHLBI";
 	src: url("../Fonts/PRAKASHAK/SHLBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SHLBN";
+	font-family: "SHLBN";
 	src: url("../Fonts/PRAKASHAK/SHLBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SRRMI";
+	font-family: "SRRMI";
 	src: url("../Fonts/PRAKASHAK/SRRMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK SRRMN";
+	font-family: "SRRMN";
 	src: url("../Fonts/PRAKASHAK/SRRMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK TUNBI";
+	font-family: "TUNBI";
 	src: url("../Fonts/PRAKASHAK/TUNBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK TUNBN";
+	font-family: "TUNBN";
 	src: url("../Fonts/PRAKASHAK/TUNBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK TUNMI";
+	font-family: "TUNMI";
 	src: url("../Fonts/PRAKASHAK/TUNMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK TUNMN";
+	font-family: "TUNMN";
 	src: url("../Fonts/PRAKASHAK/TUNMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANBI";
+	font-family: "VANBI";
 	src: url("../Fonts/PRAKASHAK/VANBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANBN";
+	font-family: "VANBN";
 	src: url("../Fonts/PRAKASHAK/VANBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANLI";
+	font-family: "VANLI";
 	src: url("../Fonts/PRAKASHAK/VANLI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANLN";
+	font-family: "VANLN";
 	src: url("../Fonts/PRAKASHAK/VANLN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANMI";
+	font-family: "VANMI";
 	src: url("../Fonts/PRAKASHAK/VANMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VANMN";
+	font-family: "VANMN";
 	src: url("../Fonts/PRAKASHAK/VANMN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VIDBI";
+	font-family: "VIDBI";
 	src: url("../Fonts/PRAKASHAK/VIDBI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VIDBN";
+	font-family: "VIDBN";
 	src: url("../Fonts/PRAKASHAK/VIDBN.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VIDMI";
+	font-family: "VIDMI";
 	src: url("../Fonts/PRAKASHAK/VIDMI.TTF");
 
 }@font-face {
-	font-family: "PRAKASHAK VIDMN";
+	font-family: "VIDMN";
 	src: url("../Fonts/PRAKASHAK/VIDMN.TTF");
 
 }@font-face {
-	font-family: "Praja PRABI";
+	font-family: "PRABI";
 	src: url("../Fonts/Praja/PRABI.TTF");
 
 }@font-face {
-	font-family: "Praja PRABN";
+	font-family: "PRABN";
 	src: url("../Fonts/Praja/PRABN.TTF");
 
 }@font-face {
-	font-family: "Praja PRADI";
+	font-family: "PRADI";
 	src: url("../Fonts/Praja/PRADI.TTF");
 
 }@font-face {
-	font-family: "Praja PRADN";
+	font-family: "PRADN";
 	src: url("../Fonts/Praja/PRADN.TTF");
 
 }@font-face {
-	font-family: "Praja PRALI";
+	font-family: "PRALI";
 	src: url("../Fonts/Praja/PRALI.TTF");
 
 }@font-face {
-	font-family: "Praja PRALN";
+	font-family: "PRALN";
 	src: url("../Fonts/Praja/PRALN.TTF");
 
 }@font-face {
-	font-family: "Praja PRAMI";
+	font-family: "PRAMI";
 	src: url("../Fonts/Praja/PRAMI.TTF");
 
 }@font-face {
-	font-family: "Praja PRAMN";
+	font-family: "PRAMN";
 	src: url("../Fonts/Praja/PRAMN.TTF");
 
 }@font-face {
-	font-family: "Praja old NATMN H";
+	font-family: "old .PFB NATMN H";
 	src: url("../Fonts/Praja/old/NATMN_H.PFB");
 
 }@font-face {
-	font-family: "Praja old NATMN H";
+	font-family: "old .PFM NATMN H";
 	src: url("../Fonts/Praja/old/NATMN_H.PFM");
 
 }@font-face {
-	font-family: "Praja old PRABI";
+	font-family: "old .PFB PRABI";
 	src: url("../Fonts/Praja/old/PRABI.PFB");
 
 }@font-face {
-	font-family: "Praja old PRABI";
+	font-family: "old .PFM PRABI";
 	src: url("../Fonts/Praja/old/PRABI.PFM");
 
 }@font-face {
-	font-family: "Praja old PRABN";
+	font-family: "old .PFB PRABN";
 	src: url("../Fonts/Praja/old/PRABN.PFB");
 
 }@font-face {
-	font-family: "Praja old PRABN";
+	font-family: "old .PFM PRABN";
 	src: url("../Fonts/Praja/old/PRABN.PFM");
 
 }@font-face {
-	font-family: "Praja old PRADI";
+	font-family: "old .PFB PRADI";
 	src: url("../Fonts/Praja/old/PRADI.PFB");
 
 }@font-face {
-	font-family: "Praja old PRADI";
+	font-family: "old .PFM PRADI";
 	src: url("../Fonts/Praja/old/PRADI.PFM");
 
 }@font-face {
-	font-family: "Praja old PRADN";
+	font-family: "old .PFB PRADN";
 	src: url("../Fonts/Praja/old/PRADN.PFB");
 
 }@font-face {
-	font-family: "Praja old PRADN";
+	font-family: "old .PFM PRADN";
 	src: url("../Fonts/Praja/old/PRADN.PFM");
 
 }@font-face {
-	font-family: "Praja old PRALI";
+	font-family: "old .PFB PRALI";
 	src: url("../Fonts/Praja/old/PRALI.PFB");
 
 }@font-face {
-	font-family: "Praja old PRALI";
+	font-family: "old .PFM PRALI";
 	src: url("../Fonts/Praja/old/PRALI.PFM");
 
 }@font-face {
-	font-family: "Praja old PRALN";
+	font-family: "old .PFB PRALN";
 	src: url("../Fonts/Praja/old/PRALN.PFB");
 
 }@font-face {
-	font-family: "Praja old PRALN";
+	font-family: "old .PFM PRALN";
 	src: url("../Fonts/Praja/old/PRALN.PFM");
 
 }@font-face {
-	font-family: "Praja old PRAMI";
+	font-family: "old .PFB PRAMI";
 	src: url("../Fonts/Praja/old/PRAMI.PFB");
 
 }@font-face {
-	font-family: "Praja old PRAMI";
+	font-family: "old .PFM PRAMI";
 	src: url("../Fonts/Praja/old/PRAMI.PFM");
 
 }@font-face {
-	font-family: "Praja old PRAMN";
+	font-family: "old .PFB PRAMN";
 	src: url("../Fonts/Praja/old/PRAMN.PFB");
 
 }@font-face {
-	font-family: "Praja old PRAMN";
+	font-family: "old .PFM PRAMN";
 	src: url("../Fonts/Praja/old/PRAMN.PFM");
 
 }@font-face {
-	font-family: "Praja ufonts.com praja";
+	font-family: "ufonts.com praja";
 	src: url("../Fonts/Praja/ufonts.com_praja.ttf");
 
 }@font-face {
-	font-family: "SakalBharati SakalBharati";
+	font-family: "SakalBharati";
 	src: url("../Fonts/SakalBharati/SakalBharati.ttf");
 
 }@font-face {
-	font-family: "SakalBharati Source file SakalBharati Normal";
+	font-family: "old .vfb SakalBharati Normal";
 	src: url("../Fonts/SakalBharati/Source file/SakalBharati_Normal.vfb");
 
 }@font-face {
-	font-family: "Sampige Sampige";
+	font-family: "Sampige";
 	src: url("../Fonts/Sampige/Sampige.ttf");
 
 }@font-face {
-	font-family: "Shreelipi S0010890";
+	font-family: "S0010890";
 	src: url("../Fonts/Shreelipi/S0010890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0011890";
+	font-family: "S0011890";
 	src: url("../Fonts/Shreelipi/S0011890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0012890";
+	font-family: "S0012890";
 	src: url("../Fonts/Shreelipi/S0012890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0013890";
+	font-family: "S0013890";
 	src: url("../Fonts/Shreelipi/S0013890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0014890";
+	font-family: "S0014890";
 	src: url("../Fonts/Shreelipi/S0014890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0015890";
+	font-family: "S0015890";
 	src: url("../Fonts/Shreelipi/S0015890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0016890";
+	font-family: "S0016890";
 	src: url("../Fonts/Shreelipi/S0016890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0017890";
+	font-family: "S0017890";
 	src: url("../Fonts/Shreelipi/S0017890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0018890";
+	font-family: "S0018890";
 	src: url("../Fonts/Shreelipi/S0018890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0019890";
+	font-family: "S0019890";
 	src: url("../Fonts/Shreelipi/S0019890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0020890";
+	font-family: "S0020890";
 	src: url("../Fonts/Shreelipi/S0020890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0021890";
+	font-family: "S0021890";
 	src: url("../Fonts/Shreelipi/S0021890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0022890";
+	font-family: "S0022890";
 	src: url("../Fonts/Shreelipi/S0022890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0023890";
+	font-family: "S0023890";
 	src: url("../Fonts/Shreelipi/S0023890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0024890";
+	font-family: "S0024890";
 	src: url("../Fonts/Shreelipi/S0024890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0025890";
+	font-family: "S0025890";
 	src: url("../Fonts/Shreelipi/S0025890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0026890";
+	font-family: "S0026890";
 	src: url("../Fonts/Shreelipi/S0026890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0027890";
+	font-family: "S0027890";
 	src: url("../Fonts/Shreelipi/S0027890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0028890";
+	font-family: "S0028890";
 	src: url("../Fonts/Shreelipi/S0028890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0029890";
+	font-family: "S0029890";
 	src: url("../Fonts/Shreelipi/S0029890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0030890";
+	font-family: "S0030890";
 	src: url("../Fonts/Shreelipi/S0030890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0031890";
+	font-family: "S0031890";
 	src: url("../Fonts/Shreelipi/S0031890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0032890";
+	font-family: "S0032890";
 	src: url("../Fonts/Shreelipi/S0032890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0033890";
+	font-family: "S0033890";
 	src: url("../Fonts/Shreelipi/S0033890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0034890";
+	font-family: "S0034890";
 	src: url("../Fonts/Shreelipi/S0034890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0035890";
+	font-family: "S0035890";
 	src: url("../Fonts/Shreelipi/S0035890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0036890";
+	font-family: "S0036890";
 	src: url("../Fonts/Shreelipi/S0036890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0037890";
+	font-family: "S0037890";
 	src: url("../Fonts/Shreelipi/S0037890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0038890";
+	font-family: "S0038890";
 	src: url("../Fonts/Shreelipi/S0038890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0039890";
+	font-family: "S0039890";
 	src: url("../Fonts/Shreelipi/S0039890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0040890";
+	font-family: "S0040890";
 	src: url("../Fonts/Shreelipi/S0040890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0041890";
+	font-family: "S0041890";
 	src: url("../Fonts/Shreelipi/S0041890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0042890";
+	font-family: "S0042890";
 	src: url("../Fonts/Shreelipi/S0042890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0043890";
+	font-family: "S0043890";
 	src: url("../Fonts/Shreelipi/S0043890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0044890";
+	font-family: "S0044890";
 	src: url("../Fonts/Shreelipi/S0044890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0045890";
+	font-family: "S0045890";
 	src: url("../Fonts/Shreelipi/S0045890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0046890";
+	font-family: "S0046890";
 	src: url("../Fonts/Shreelipi/S0046890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0047890";
+	font-family: "S0047890";
 	src: url("../Fonts/Shreelipi/S0047890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0048890";
+	font-family: "S0048890";
 	src: url("../Fonts/Shreelipi/S0048890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0049890";
+	font-family: "S0049890";
 	src: url("../Fonts/Shreelipi/S0049890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0050890";
+	font-family: "S0050890";
 	src: url("../Fonts/Shreelipi/S0050890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0051890";
+	font-family: "S0051890";
 	src: url("../Fonts/Shreelipi/S0051890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0052890";
+	font-family: "S0052890";
 	src: url("../Fonts/Shreelipi/S0052890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0053890";
+	font-family: "S0053890";
 	src: url("../Fonts/Shreelipi/S0053890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0054890";
+	font-family: "S0054890";
 	src: url("../Fonts/Shreelipi/S0054890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0055890";
+	font-family: "S0055890";
 	src: url("../Fonts/Shreelipi/S0055890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0056890";
+	font-family: "S0056890";
 	src: url("../Fonts/Shreelipi/S0056890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0057890";
+	font-family: "S0057890";
 	src: url("../Fonts/Shreelipi/S0057890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0058890";
+	font-family: "S0058890";
 	src: url("../Fonts/Shreelipi/S0058890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0059890";
+	font-family: "S0059890";
 	src: url("../Fonts/Shreelipi/S0059890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0060890";
+	font-family: "S0060890";
 	src: url("../Fonts/Shreelipi/S0060890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0061890";
+	font-family: "S0061890";
 	src: url("../Fonts/Shreelipi/S0061890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0062890";
+	font-family: "S0062890";
 	src: url("../Fonts/Shreelipi/S0062890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0063890";
+	font-family: "S0063890";
 	src: url("../Fonts/Shreelipi/S0063890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0064890";
+	font-family: "S0064890";
 	src: url("../Fonts/Shreelipi/S0064890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0065890";
+	font-family: "S0065890";
 	src: url("../Fonts/Shreelipi/S0065890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0066890";
+	font-family: "S0066890";
 	src: url("../Fonts/Shreelipi/S0066890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0067890";
+	font-family: "S0067890";
 	src: url("../Fonts/Shreelipi/S0067890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0068890";
+	font-family: "S0068890";
 	src: url("../Fonts/Shreelipi/S0068890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0069890";
+	font-family: "S0069890";
 	src: url("../Fonts/Shreelipi/S0069890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0070890";
+	font-family: "S0070890";
 	src: url("../Fonts/Shreelipi/S0070890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0071890";
+	font-family: "S0071890";
 	src: url("../Fonts/Shreelipi/S0071890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0072890";
+	font-family: "S0072890";
 	src: url("../Fonts/Shreelipi/S0072890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0075890";
+	font-family: "S0075890";
 	src: url("../Fonts/Shreelipi/S0075890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0076890";
+	font-family: "S0076890";
 	src: url("../Fonts/Shreelipi/S0076890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0077890";
+	font-family: "S0077890";
 	src: url("../Fonts/Shreelipi/S0077890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0078890";
+	font-family: "S0078890";
 	src: url("../Fonts/Shreelipi/S0078890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0079890";
+	font-family: "S0079890";
 	src: url("../Fonts/Shreelipi/S0079890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0080890";
+	font-family: "S0080890";
 	src: url("../Fonts/Shreelipi/S0080890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0081890";
+	font-family: "S0081890";
 	src: url("../Fonts/Shreelipi/S0081890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0082890";
+	font-family: "S0082890";
 	src: url("../Fonts/Shreelipi/S0082890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0083890";
+	font-family: "S0083890";
 	src: url("../Fonts/Shreelipi/S0083890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0084890";
+	font-family: "S0084890";
 	src: url("../Fonts/Shreelipi/S0084890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0085890";
+	font-family: "S0085890";
 	src: url("../Fonts/Shreelipi/S0085890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0086890";
+	font-family: "S0086890";
 	src: url("../Fonts/Shreelipi/S0086890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0087890";
+	font-family: "S0087890";
 	src: url("../Fonts/Shreelipi/S0087890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0088890";
+	font-family: "S0088890";
 	src: url("../Fonts/Shreelipi/S0088890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0089890";
+	font-family: "S0089890";
 	src: url("../Fonts/Shreelipi/S0089890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0090890";
+	font-family: "S0090890";
 	src: url("../Fonts/Shreelipi/S0090890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0091890";
+	font-family: "S0091890";
 	src: url("../Fonts/Shreelipi/S0091890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0092890";
+	font-family: "S0092890";
 	src: url("../Fonts/Shreelipi/S0092890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0093890";
+	font-family: "S0093890";
 	src: url("../Fonts/Shreelipi/S0093890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0094890";
+	font-family: "S0094890";
 	src: url("../Fonts/Shreelipi/S0094890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0095890";
+	font-family: "S0095890";
 	src: url("../Fonts/Shreelipi/S0095890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0096890";
+	font-family: "S0096890";
 	src: url("../Fonts/Shreelipi/S0096890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0097890";
+	font-family: "S0097890";
 	src: url("../Fonts/Shreelipi/S0097890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0098890";
+	font-family: "S0098890";
 	src: url("../Fonts/Shreelipi/S0098890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0099890";
+	font-family: "S0099890";
 	src: url("../Fonts/Shreelipi/S0099890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0100890";
+	font-family: "S0100890";
 	src: url("../Fonts/Shreelipi/S0100890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0101890";
+	font-family: "S0101890";
 	src: url("../Fonts/Shreelipi/S0101890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0102890";
+	font-family: "S0102890";
 	src: url("../Fonts/Shreelipi/S0102890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0103890";
+	font-family: "S0103890";
 	src: url("../Fonts/Shreelipi/S0103890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0104890";
+	font-family: "S0104890";
 	src: url("../Fonts/Shreelipi/S0104890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0105890";
+	font-family: "S0105890";
 	src: url("../Fonts/Shreelipi/S0105890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0106890";
+	font-family: "S0106890";
 	src: url("../Fonts/Shreelipi/S0106890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0107890";
+	font-family: "S0107890";
 	src: url("../Fonts/Shreelipi/S0107890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0108890";
+	font-family: "S0108890";
 	src: url("../Fonts/Shreelipi/S0108890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0109890";
+	font-family: "S0109890";
 	src: url("../Fonts/Shreelipi/S0109890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0110890";
+	font-family: "S0110890";
 	src: url("../Fonts/Shreelipi/S0110890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0111890";
+	font-family: "S0111890";
 	src: url("../Fonts/Shreelipi/S0111890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0112890";
+	font-family: "S0112890";
 	src: url("../Fonts/Shreelipi/S0112890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0113890";
+	font-family: "S0113890";
 	src: url("../Fonts/Shreelipi/S0113890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0114890";
+	font-family: "S0114890";
 	src: url("../Fonts/Shreelipi/S0114890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0115890";
+	font-family: "S0115890";
 	src: url("../Fonts/Shreelipi/S0115890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0116890";
+	font-family: "S0116890";
 	src: url("../Fonts/Shreelipi/S0116890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0117890";
+	font-family: "S0117890";
 	src: url("../Fonts/Shreelipi/S0117890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0118890";
+	font-family: "S0118890";
 	src: url("../Fonts/Shreelipi/S0118890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0119890";
+	font-family: "S0119890";
 	src: url("../Fonts/Shreelipi/S0119890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0120890";
+	font-family: "S0120890";
 	src: url("../Fonts/Shreelipi/S0120890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0121890";
+	font-family: "S0121890";
 	src: url("../Fonts/Shreelipi/S0121890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0122890";
+	font-family: "S0122890";
 	src: url("../Fonts/Shreelipi/S0122890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0123890";
+	font-family: "S0123890";
 	src: url("../Fonts/Shreelipi/S0123890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0124890";
+	font-family: "S0124890";
 	src: url("../Fonts/Shreelipi/S0124890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0125890";
+	font-family: "S0125890";
 	src: url("../Fonts/Shreelipi/S0125890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0126890";
+	font-family: "S0126890";
 	src: url("../Fonts/Shreelipi/S0126890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0127890";
+	font-family: "S0127890";
 	src: url("../Fonts/Shreelipi/S0127890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0128890";
+	font-family: "S0128890";
 	src: url("../Fonts/Shreelipi/S0128890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0129890";
+	font-family: "S0129890";
 	src: url("../Fonts/Shreelipi/S0129890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0130890";
+	font-family: "S0130890";
 	src: url("../Fonts/Shreelipi/S0130890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0131890";
+	font-family: "S0131890";
 	src: url("../Fonts/Shreelipi/S0131890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0132890";
+	font-family: "S0132890";
 	src: url("../Fonts/Shreelipi/S0132890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0133890";
+	font-family: "S0133890";
 	src: url("../Fonts/Shreelipi/S0133890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0134890";
+	font-family: "S0134890";
 	src: url("../Fonts/Shreelipi/S0134890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0135890";
+	font-family: "S0135890";
 	src: url("../Fonts/Shreelipi/S0135890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0136890";
+	font-family: "S0136890";
 	src: url("../Fonts/Shreelipi/S0136890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0137890";
+	font-family: "S0137890";
 	src: url("../Fonts/Shreelipi/S0137890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0138890";
+	font-family: "S0138890";
 	src: url("../Fonts/Shreelipi/S0138890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0139890";
+	font-family: "S0139890";
 	src: url("../Fonts/Shreelipi/S0139890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0140890";
+	font-family: "S0140890";
 	src: url("../Fonts/Shreelipi/S0140890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0141890";
+	font-family: "S0141890";
 	src: url("../Fonts/Shreelipi/S0141890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0142890";
+	font-family: "S0142890";
 	src: url("../Fonts/Shreelipi/S0142890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0143890";
+	font-family: "S0143890";
 	src: url("../Fonts/Shreelipi/S0143890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0144890";
+	font-family: "S0144890";
 	src: url("../Fonts/Shreelipi/S0144890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0145890";
+	font-family: "S0145890";
 	src: url("../Fonts/Shreelipi/S0145890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0146890";
+	font-family: "S0146890";
 	src: url("../Fonts/Shreelipi/S0146890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0147890";
+	font-family: "S0147890";
 	src: url("../Fonts/Shreelipi/S0147890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0148890";
+	font-family: "S0148890";
 	src: url("../Fonts/Shreelipi/S0148890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0149890";
+	font-family: "S0149890";
 	src: url("../Fonts/Shreelipi/S0149890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0150890";
+	font-family: "S0150890";
 	src: url("../Fonts/Shreelipi/S0150890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0151890";
+	font-family: "S0151890";
 	src: url("../Fonts/Shreelipi/S0151890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0152890";
+	font-family: "S0152890";
 	src: url("../Fonts/Shreelipi/S0152890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0153890";
+	font-family: "S0153890";
 	src: url("../Fonts/Shreelipi/S0153890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0154890";
+	font-family: "S0154890";
 	src: url("../Fonts/Shreelipi/S0154890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0155890";
+	font-family: "S0155890";
 	src: url("../Fonts/Shreelipi/S0155890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0156890";
+	font-family: "S0156890";
 	src: url("../Fonts/Shreelipi/S0156890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0157890";
+	font-family: "S0157890";
 	src: url("../Fonts/Shreelipi/S0157890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0158890";
+	font-family: "S0158890";
 	src: url("../Fonts/Shreelipi/S0158890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0159890";
+	font-family: "S0159890";
 	src: url("../Fonts/Shreelipi/S0159890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0160890";
+	font-family: "S0160890";
 	src: url("../Fonts/Shreelipi/S0160890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0161890";
+	font-family: "S0161890";
 	src: url("../Fonts/Shreelipi/S0161890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0162890";
+	font-family: "S0162890";
 	src: url("../Fonts/Shreelipi/S0162890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0163890";
+	font-family: "S0163890";
 	src: url("../Fonts/Shreelipi/S0163890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0164890";
+	font-family: "S0164890";
 	src: url("../Fonts/Shreelipi/S0164890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0165890";
+	font-family: "S0165890";
 	src: url("../Fonts/Shreelipi/S0165890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0166890";
+	font-family: "S0166890";
 	src: url("../Fonts/Shreelipi/S0166890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0167890";
+	font-family: "S0167890";
 	src: url("../Fonts/Shreelipi/S0167890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0168890";
+	font-family: "S0168890";
 	src: url("../Fonts/Shreelipi/S0168890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0169890";
+	font-family: "S0169890";
 	src: url("../Fonts/Shreelipi/S0169890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0170890";
+	font-family: "S0170890";
 	src: url("../Fonts/Shreelipi/S0170890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0171890";
+	font-family: "S0171890";
 	src: url("../Fonts/Shreelipi/S0171890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0172890";
+	font-family: "S0172890";
 	src: url("../Fonts/Shreelipi/S0172890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0175890";
+	font-family: "S0175890";
 	src: url("../Fonts/Shreelipi/S0175890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0176890";
+	font-family: "S0176890";
 	src: url("../Fonts/Shreelipi/S0176890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0177890";
+	font-family: "S0177890";
 	src: url("../Fonts/Shreelipi/S0177890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0178890";
+	font-family: "S0178890";
 	src: url("../Fonts/Shreelipi/S0178890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0179890";
+	font-family: "S0179890";
 	src: url("../Fonts/Shreelipi/S0179890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0180890";
+	font-family: "S0180890";
 	src: url("../Fonts/Shreelipi/S0180890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0181890";
+	font-family: "S0181890";
 	src: url("../Fonts/Shreelipi/S0181890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0182890";
+	font-family: "S0182890";
 	src: url("../Fonts/Shreelipi/S0182890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0183890";
+	font-family: "S0183890";
 	src: url("../Fonts/Shreelipi/S0183890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0184890";
+	font-family: "S0184890";
 	src: url("../Fonts/Shreelipi/S0184890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0185890";
+	font-family: "S0185890";
 	src: url("../Fonts/Shreelipi/S0185890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0186890";
+	font-family: "S0186890";
 	src: url("../Fonts/Shreelipi/S0186890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0187890";
+	font-family: "S0187890";
 	src: url("../Fonts/Shreelipi/S0187890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0188890";
+	font-family: "S0188890";
 	src: url("../Fonts/Shreelipi/S0188890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0189890";
+	font-family: "S0189890";
 	src: url("../Fonts/Shreelipi/S0189890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0190890";
+	font-family: "S0190890";
 	src: url("../Fonts/Shreelipi/S0190890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0191890";
+	font-family: "S0191890";
 	src: url("../Fonts/Shreelipi/S0191890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0192890";
+	font-family: "S0192890";
 	src: url("../Fonts/Shreelipi/S0192890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0193890";
+	font-family: "S0193890";
 	src: url("../Fonts/Shreelipi/S0193890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0194890";
+	font-family: "S0194890";
 	src: url("../Fonts/Shreelipi/S0194890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0195890";
+	font-family: "S0195890";
 	src: url("../Fonts/Shreelipi/S0195890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0196890";
+	font-family: "S0196890";
 	src: url("../Fonts/Shreelipi/S0196890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0197890";
+	font-family: "S0197890";
 	src: url("../Fonts/Shreelipi/S0197890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0198890";
+	font-family: "S0198890";
 	src: url("../Fonts/Shreelipi/S0198890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0199890";
+	font-family: "S0199890";
 	src: url("../Fonts/Shreelipi/S0199890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0250890";
+	font-family: "S0250890";
 	src: url("../Fonts/Shreelipi/S0250890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0251890";
+	font-family: "S0251890";
 	src: url("../Fonts/Shreelipi/S0251890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0252890";
+	font-family: "S0252890";
 	src: url("../Fonts/Shreelipi/S0252890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0253890";
+	font-family: "S0253890";
 	src: url("../Fonts/Shreelipi/S0253890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0254890";
+	font-family: "S0254890";
 	src: url("../Fonts/Shreelipi/S0254890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0255890";
+	font-family: "S0255890";
 	src: url("../Fonts/Shreelipi/S0255890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0256890";
+	font-family: "S0256890";
 	src: url("../Fonts/Shreelipi/S0256890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0257890";
+	font-family: "S0257890";
 	src: url("../Fonts/Shreelipi/S0257890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0258890";
+	font-family: "S0258890";
 	src: url("../Fonts/Shreelipi/S0258890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0259890";
+	font-family: "S0259890";
 	src: url("../Fonts/Shreelipi/S0259890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0260890";
+	font-family: "S0260890";
 	src: url("../Fonts/Shreelipi/S0260890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0261890";
+	font-family: "S0261890";
 	src: url("../Fonts/Shreelipi/S0261890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0262890";
+	font-family: "S0262890";
 	src: url("../Fonts/Shreelipi/S0262890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0263890";
+	font-family: "S0263890";
 	src: url("../Fonts/Shreelipi/S0263890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0264890";
+	font-family: "S0264890";
 	src: url("../Fonts/Shreelipi/S0264890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0265890";
+	font-family: "S0265890";
 	src: url("../Fonts/Shreelipi/S0265890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0266890";
+	font-family: "S0266890";
 	src: url("../Fonts/Shreelipi/S0266890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0267890";
+	font-family: "S0267890";
 	src: url("../Fonts/Shreelipi/S0267890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0268890";
+	font-family: "S0268890";
 	src: url("../Fonts/Shreelipi/S0268890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0269890";
+	font-family: "S0269890";
 	src: url("../Fonts/Shreelipi/S0269890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0270890";
+	font-family: "S0270890";
 	src: url("../Fonts/Shreelipi/S0270890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0271890";
+	font-family: "S0271890";
 	src: url("../Fonts/Shreelipi/S0271890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0272890";
+	font-family: "S0272890";
 	src: url("../Fonts/Shreelipi/S0272890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0273890";
+	font-family: "S0273890";
 	src: url("../Fonts/Shreelipi/S0273890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0274890";
+	font-family: "S0274890";
 	src: url("../Fonts/Shreelipi/S0274890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0275890";
+	font-family: "S0275890";
 	src: url("../Fonts/Shreelipi/S0275890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0276890";
+	font-family: "S0276890";
 	src: url("../Fonts/Shreelipi/S0276890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0277890";
+	font-family: "S0277890";
 	src: url("../Fonts/Shreelipi/S0277890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0278890";
+	font-family: "S0278890";
 	src: url("../Fonts/Shreelipi/S0278890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0279890";
+	font-family: "S0279890";
 	src: url("../Fonts/Shreelipi/S0279890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0280890";
+	font-family: "S0280890";
 	src: url("../Fonts/Shreelipi/S0280890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0281890";
+	font-family: "S0281890";
 	src: url("../Fonts/Shreelipi/S0281890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0282890";
+	font-family: "S0282890";
 	src: url("../Fonts/Shreelipi/S0282890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0283890";
+	font-family: "S0283890";
 	src: url("../Fonts/Shreelipi/S0283890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0284890";
+	font-family: "S0284890";
 	src: url("../Fonts/Shreelipi/S0284890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0285890";
+	font-family: "S0285890";
 	src: url("../Fonts/Shreelipi/S0285890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0286890";
+	font-family: "S0286890";
 	src: url("../Fonts/Shreelipi/S0286890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0287890";
+	font-family: "S0287890";
 	src: url("../Fonts/Shreelipi/S0287890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0288890";
+	font-family: "S0288890";
 	src: url("../Fonts/Shreelipi/S0288890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0289890";
+	font-family: "S0289890";
 	src: url("../Fonts/Shreelipi/S0289890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0290890";
+	font-family: "S0290890";
 	src: url("../Fonts/Shreelipi/S0290890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0291890";
+	font-family: "S0291890";
 	src: url("../Fonts/Shreelipi/S0291890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0292890";
+	font-family: "S0292890";
 	src: url("../Fonts/Shreelipi/S0292890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0293890";
+	font-family: "S0293890";
 	src: url("../Fonts/Shreelipi/S0293890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0294890";
+	font-family: "S0294890";
 	src: url("../Fonts/Shreelipi/S0294890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0295890";
+	font-family: "S0295890";
 	src: url("../Fonts/Shreelipi/S0295890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0296890";
+	font-family: "S0296890";
 	src: url("../Fonts/Shreelipi/S0296890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0297890";
+	font-family: "S0297890";
 	src: url("../Fonts/Shreelipi/S0297890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0298890";
+	font-family: "S0298890";
 	src: url("../Fonts/Shreelipi/S0298890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0299890";
+	font-family: "S0299890";
 	src: url("../Fonts/Shreelipi/S0299890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0310890";
+	font-family: "S0310890";
 	src: url("../Fonts/Shreelipi/S0310890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0311890";
+	font-family: "S0311890";
 	src: url("../Fonts/Shreelipi/S0311890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0312890";
+	font-family: "S0312890";
 	src: url("../Fonts/Shreelipi/S0312890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0313890";
+	font-family: "S0313890";
 	src: url("../Fonts/Shreelipi/S0313890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0314890";
+	font-family: "S0314890";
 	src: url("../Fonts/Shreelipi/S0314890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0315890";
+	font-family: "S0315890";
 	src: url("../Fonts/Shreelipi/S0315890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0316890";
+	font-family: "S0316890";
 	src: url("../Fonts/Shreelipi/S0316890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0317890";
+	font-family: "S0317890";
 	src: url("../Fonts/Shreelipi/S0317890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0318890";
+	font-family: "S0318890";
 	src: url("../Fonts/Shreelipi/S0318890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0319890";
+	font-family: "S0319890";
 	src: url("../Fonts/Shreelipi/S0319890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0320890";
+	font-family: "S0320890";
 	src: url("../Fonts/Shreelipi/S0320890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0321890";
+	font-family: "S0321890";
 	src: url("../Fonts/Shreelipi/S0321890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0322890";
+	font-family: "S0322890";
 	src: url("../Fonts/Shreelipi/S0322890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0323890";
+	font-family: "S0323890";
 	src: url("../Fonts/Shreelipi/S0323890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0324890";
+	font-family: "S0324890";
 	src: url("../Fonts/Shreelipi/S0324890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0325890";
+	font-family: "S0325890";
 	src: url("../Fonts/Shreelipi/S0325890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0326890";
+	font-family: "S0326890";
 	src: url("../Fonts/Shreelipi/S0326890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0327890";
+	font-family: "S0327890";
 	src: url("../Fonts/Shreelipi/S0327890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0328890";
+	font-family: "S0328890";
 	src: url("../Fonts/Shreelipi/S0328890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0329890";
+	font-family: "S0329890";
 	src: url("../Fonts/Shreelipi/S0329890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0330890";
+	font-family: "S0330890";
 	src: url("../Fonts/Shreelipi/S0330890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0331890";
+	font-family: "S0331890";
 	src: url("../Fonts/Shreelipi/S0331890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0332890";
+	font-family: "S0332890";
 	src: url("../Fonts/Shreelipi/S0332890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0333890";
+	font-family: "S0333890";
 	src: url("../Fonts/Shreelipi/S0333890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0334890";
+	font-family: "S0334890";
 	src: url("../Fonts/Shreelipi/S0334890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0335890";
+	font-family: "S0335890";
 	src: url("../Fonts/Shreelipi/S0335890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0336890";
+	font-family: "S0336890";
 	src: url("../Fonts/Shreelipi/S0336890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0337890";
+	font-family: "S0337890";
 	src: url("../Fonts/Shreelipi/S0337890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0338890";
+	font-family: "S0338890";
 	src: url("../Fonts/Shreelipi/S0338890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0339890";
+	font-family: "S0339890";
 	src: url("../Fonts/Shreelipi/S0339890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0340890";
+	font-family: "S0340890";
 	src: url("../Fonts/Shreelipi/S0340890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0341890";
+	font-family: "S0341890";
 	src: url("../Fonts/Shreelipi/S0341890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0342890";
+	font-family: "S0342890";
 	src: url("../Fonts/Shreelipi/S0342890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0343890";
+	font-family: "S0343890";
 	src: url("../Fonts/Shreelipi/S0343890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0344890";
+	font-family: "S0344890";
 	src: url("../Fonts/Shreelipi/S0344890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0345890";
+	font-family: "S0345890";
 	src: url("../Fonts/Shreelipi/S0345890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0346890";
+	font-family: "S0346890";
 	src: url("../Fonts/Shreelipi/S0346890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0347890";
+	font-family: "S0347890";
 	src: url("../Fonts/Shreelipi/S0347890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0348890";
+	font-family: "S0348890";
 	src: url("../Fonts/Shreelipi/S0348890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0349890";
+	font-family: "S0349890";
 	src: url("../Fonts/Shreelipi/S0349890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0350890";
+	font-family: "S0350890";
 	src: url("../Fonts/Shreelipi/S0350890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0351890";
+	font-family: "S0351890";
 	src: url("../Fonts/Shreelipi/S0351890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0352890";
+	font-family: "S0352890";
 	src: url("../Fonts/Shreelipi/S0352890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0353890";
+	font-family: "S0353890";
 	src: url("../Fonts/Shreelipi/S0353890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0354890";
+	font-family: "S0354890";
 	src: url("../Fonts/Shreelipi/S0354890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0355890";
+	font-family: "S0355890";
 	src: url("../Fonts/Shreelipi/S0355890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0356890";
+	font-family: "S0356890";
 	src: url("../Fonts/Shreelipi/S0356890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0357890";
+	font-family: "S0357890";
 	src: url("../Fonts/Shreelipi/S0357890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0358890";
+	font-family: "S0358890";
 	src: url("../Fonts/Shreelipi/S0358890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0359890";
+	font-family: "S0359890";
 	src: url("../Fonts/Shreelipi/S0359890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0360890";
+	font-family: "S0360890";
 	src: url("../Fonts/Shreelipi/S0360890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0361890";
+	font-family: "S0361890";
 	src: url("../Fonts/Shreelipi/S0361890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0362890";
+	font-family: "S0362890";
 	src: url("../Fonts/Shreelipi/S0362890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0363890";
+	font-family: "S0363890";
 	src: url("../Fonts/Shreelipi/S0363890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0364890";
+	font-family: "S0364890";
 	src: url("../Fonts/Shreelipi/S0364890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0365890";
+	font-family: "S0365890";
 	src: url("../Fonts/Shreelipi/S0365890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0366890";
+	font-family: "S0366890";
 	src: url("../Fonts/Shreelipi/S0366890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0367890";
+	font-family: "S0367890";
 	src: url("../Fonts/Shreelipi/S0367890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0368890";
+	font-family: "S0368890";
 	src: url("../Fonts/Shreelipi/S0368890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0369890";
+	font-family: "S0369890";
 	src: url("../Fonts/Shreelipi/S0369890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0370890";
+	font-family: "S0370890";
 	src: url("../Fonts/Shreelipi/S0370890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0371890";
+	font-family: "S0371890";
 	src: url("../Fonts/Shreelipi/S0371890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0372890";
+	font-family: "S0372890";
 	src: url("../Fonts/Shreelipi/S0372890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0373890";
+	font-family: "S0373890";
 	src: url("../Fonts/Shreelipi/S0373890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0374890";
+	font-family: "S0374890";
 	src: url("../Fonts/Shreelipi/S0374890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0375890";
+	font-family: "S0375890";
 	src: url("../Fonts/Shreelipi/S0375890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0376890";
+	font-family: "S0376890";
 	src: url("../Fonts/Shreelipi/S0376890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0377890";
+	font-family: "S0377890";
 	src: url("../Fonts/Shreelipi/S0377890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0378890";
+	font-family: "S0378890";
 	src: url("../Fonts/Shreelipi/S0378890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0379890";
+	font-family: "S0379890";
 	src: url("../Fonts/Shreelipi/S0379890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0380890";
+	font-family: "S0380890";
 	src: url("../Fonts/Shreelipi/S0380890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0381890";
+	font-family: "S0381890";
 	src: url("../Fonts/Shreelipi/S0381890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0382890";
+	font-family: "S0382890";
 	src: url("../Fonts/Shreelipi/S0382890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0383890";
+	font-family: "S0383890";
 	src: url("../Fonts/Shreelipi/S0383890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0384890";
+	font-family: "S0384890";
 	src: url("../Fonts/Shreelipi/S0384890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0385890";
+	font-family: "S0385890";
 	src: url("../Fonts/Shreelipi/S0385890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0386890";
+	font-family: "S0386890";
 	src: url("../Fonts/Shreelipi/S0386890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0387890";
+	font-family: "S0387890";
 	src: url("../Fonts/Shreelipi/S0387890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0388890";
+	font-family: "S0388890";
 	src: url("../Fonts/Shreelipi/S0388890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0389890";
+	font-family: "S0389890";
 	src: url("../Fonts/Shreelipi/S0389890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0390890";
+	font-family: "S0390890";
 	src: url("../Fonts/Shreelipi/S0390890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0391890";
+	font-family: "S0391890";
 	src: url("../Fonts/Shreelipi/S0391890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0392890";
+	font-family: "S0392890";
 	src: url("../Fonts/Shreelipi/S0392890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0393890";
+	font-family: "S0393890";
 	src: url("../Fonts/Shreelipi/S0393890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0394890";
+	font-family: "S0394890";
 	src: url("../Fonts/Shreelipi/S0394890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0395890";
+	font-family: "S0395890";
 	src: url("../Fonts/Shreelipi/S0395890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0396890";
+	font-family: "S0396890";
 	src: url("../Fonts/Shreelipi/S0396890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0397890";
+	font-family: "S0397890";
 	src: url("../Fonts/Shreelipi/S0397890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0398890";
+	font-family: "S0398890";
 	src: url("../Fonts/Shreelipi/S0398890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0399890";
+	font-family: "S0399890";
 	src: url("../Fonts/Shreelipi/S0399890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0440890";
+	font-family: "S0440890";
 	src: url("../Fonts/Shreelipi/S0440890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0441890";
+	font-family: "S0441890";
 	src: url("../Fonts/Shreelipi/S0441890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0442890";
+	font-family: "S0442890";
 	src: url("../Fonts/Shreelipi/S0442890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0443890";
+	font-family: "S0443890";
 	src: url("../Fonts/Shreelipi/S0443890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0444890";
+	font-family: "S0444890";
 	src: url("../Fonts/Shreelipi/S0444890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0445890";
+	font-family: "S0445890";
 	src: url("../Fonts/Shreelipi/S0445890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0446890";
+	font-family: "S0446890";
 	src: url("../Fonts/Shreelipi/S0446890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0447890";
+	font-family: "S0447890";
 	src: url("../Fonts/Shreelipi/S0447890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0448890";
+	font-family: "S0448890";
 	src: url("../Fonts/Shreelipi/S0448890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0449890";
+	font-family: "S0449890";
 	src: url("../Fonts/Shreelipi/S0449890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0451890";
+	font-family: "S0451890";
 	src: url("../Fonts/Shreelipi/S0451890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0452890";
+	font-family: "S0452890";
 	src: url("../Fonts/Shreelipi/S0452890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0453890";
+	font-family: "S0453890";
 	src: url("../Fonts/Shreelipi/S0453890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0454890";
+	font-family: "S0454890";
 	src: url("../Fonts/Shreelipi/S0454890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0455890";
+	font-family: "S0455890";
 	src: url("../Fonts/Shreelipi/S0455890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0456890";
+	font-family: "S0456890";
 	src: url("../Fonts/Shreelipi/S0456890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0457890";
+	font-family: "S0457890";
 	src: url("../Fonts/Shreelipi/S0457890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0458890";
+	font-family: "S0458890";
 	src: url("../Fonts/Shreelipi/S0458890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0459890";
+	font-family: "S0459890";
 	src: url("../Fonts/Shreelipi/S0459890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0460890";
+	font-family: "S0460890";
 	src: url("../Fonts/Shreelipi/S0460890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0461890";
+	font-family: "S0461890";
 	src: url("../Fonts/Shreelipi/S0461890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0462890";
+	font-family: "S0462890";
 	src: url("../Fonts/Shreelipi/S0462890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0463890";
+	font-family: "S0463890";
 	src: url("../Fonts/Shreelipi/S0463890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0464890";
+	font-family: "S0464890";
 	src: url("../Fonts/Shreelipi/S0464890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0465890";
+	font-family: "S0465890";
 	src: url("../Fonts/Shreelipi/S0465890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0466890";
+	font-family: "S0466890";
 	src: url("../Fonts/Shreelipi/S0466890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0467890";
+	font-family: "S0467890";
 	src: url("../Fonts/Shreelipi/S0467890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0468890";
+	font-family: "S0468890";
 	src: url("../Fonts/Shreelipi/S0468890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0469890";
+	font-family: "S0469890";
 	src: url("../Fonts/Shreelipi/S0469890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0470890";
+	font-family: "S0470890";
 	src: url("../Fonts/Shreelipi/S0470890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0471890";
+	font-family: "S0471890";
 	src: url("../Fonts/Shreelipi/S0471890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0472890";
+	font-family: "S0472890";
 	src: url("../Fonts/Shreelipi/S0472890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0473890";
+	font-family: "S0473890";
 	src: url("../Fonts/Shreelipi/S0473890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0474890";
+	font-family: "S0474890";
 	src: url("../Fonts/Shreelipi/S0474890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0475890";
+	font-family: "S0475890";
 	src: url("../Fonts/Shreelipi/S0475890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0476890";
+	font-family: "S0476890";
 	src: url("../Fonts/Shreelipi/S0476890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0477890";
+	font-family: "S0477890";
 	src: url("../Fonts/Shreelipi/S0477890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0478890";
+	font-family: "S0478890";
 	src: url("../Fonts/Shreelipi/S0478890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0479890";
+	font-family: "S0479890";
 	src: url("../Fonts/Shreelipi/S0479890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0480890";
+	font-family: "S0480890";
 	src: url("../Fonts/Shreelipi/S0480890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0481890";
+	font-family: "S0481890";
 	src: url("../Fonts/Shreelipi/S0481890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0482890";
+	font-family: "S0482890";
 	src: url("../Fonts/Shreelipi/S0482890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0483890";
+	font-family: "S0483890";
 	src: url("../Fonts/Shreelipi/S0483890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0484890";
+	font-family: "S0484890";
 	src: url("../Fonts/Shreelipi/S0484890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0485890";
+	font-family: "S0485890";
 	src: url("../Fonts/Shreelipi/S0485890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0486890";
+	font-family: "S0486890";
 	src: url("../Fonts/Shreelipi/S0486890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0487890";
+	font-family: "S0487890";
 	src: url("../Fonts/Shreelipi/S0487890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0488890";
+	font-family: "S0488890";
 	src: url("../Fonts/Shreelipi/S0488890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0489890";
+	font-family: "S0489890";
 	src: url("../Fonts/Shreelipi/S0489890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0490890";
+	font-family: "S0490890";
 	src: url("../Fonts/Shreelipi/S0490890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0491890";
+	font-family: "S0491890";
 	src: url("../Fonts/Shreelipi/S0491890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0492890";
+	font-family: "S0492890";
 	src: url("../Fonts/Shreelipi/S0492890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0493890";
+	font-family: "S0493890";
 	src: url("../Fonts/Shreelipi/S0493890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0494890";
+	font-family: "S0494890";
 	src: url("../Fonts/Shreelipi/S0494890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0495890";
+	font-family: "S0495890";
 	src: url("../Fonts/Shreelipi/S0495890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0496890";
+	font-family: "S0496890";
 	src: url("../Fonts/Shreelipi/S0496890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0497890";
+	font-family: "S0497890";
 	src: url("../Fonts/Shreelipi/S0497890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0498890";
+	font-family: "S0498890";
 	src: url("../Fonts/Shreelipi/S0498890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0850890";
+	font-family: "S0850890";
 	src: url("../Fonts/Shreelipi/S0850890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0851890";
+	font-family: "S0851890";
 	src: url("../Fonts/Shreelipi/S0851890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0852890";
+	font-family: "S0852890";
 	src: url("../Fonts/Shreelipi/S0852890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0853890";
+	font-family: "S0853890";
 	src: url("../Fonts/Shreelipi/S0853890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0854890";
+	font-family: "S0854890";
 	src: url("../Fonts/Shreelipi/S0854890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0855890";
+	font-family: "S0855890";
 	src: url("../Fonts/Shreelipi/S0855890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0856890";
+	font-family: "S0856890";
 	src: url("../Fonts/Shreelipi/S0856890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0857890";
+	font-family: "S0857890";
 	src: url("../Fonts/Shreelipi/S0857890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0858890";
+	font-family: "S0858890";
 	src: url("../Fonts/Shreelipi/S0858890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0859890";
+	font-family: "S0859890";
 	src: url("../Fonts/Shreelipi/S0859890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0860890";
+	font-family: "S0860890";
 	src: url("../Fonts/Shreelipi/S0860890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0861890";
+	font-family: "S0861890";
 	src: url("../Fonts/Shreelipi/S0861890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0862890";
+	font-family: "S0862890";
 	src: url("../Fonts/Shreelipi/S0862890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0863890";
+	font-family: "S0863890";
 	src: url("../Fonts/Shreelipi/S0863890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0864890";
+	font-family: "S0864890";
 	src: url("../Fonts/Shreelipi/S0864890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0865890";
+	font-family: "S0865890";
 	src: url("../Fonts/Shreelipi/S0865890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0866890";
+	font-family: "S0866890";
 	src: url("../Fonts/Shreelipi/S0866890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0867890";
+	font-family: "S0867890";
 	src: url("../Fonts/Shreelipi/S0867890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0868890";
+	font-family: "S0868890";
 	src: url("../Fonts/Shreelipi/S0868890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0869890";
+	font-family: "S0869890";
 	src: url("../Fonts/Shreelipi/S0869890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0870890";
+	font-family: "S0870890";
 	src: url("../Fonts/Shreelipi/S0870890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0871890";
+	font-family: "S0871890";
 	src: url("../Fonts/Shreelipi/S0871890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0872890";
+	font-family: "S0872890";
 	src: url("../Fonts/Shreelipi/S0872890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0873890";
+	font-family: "S0873890";
 	src: url("../Fonts/Shreelipi/S0873890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0874890";
+	font-family: "S0874890";
 	src: url("../Fonts/Shreelipi/S0874890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0875890";
+	font-family: "S0875890";
 	src: url("../Fonts/Shreelipi/S0875890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0876890";
+	font-family: "S0876890";
 	src: url("../Fonts/Shreelipi/S0876890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0877890";
+	font-family: "S0877890";
 	src: url("../Fonts/Shreelipi/S0877890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0878890";
+	font-family: "S0878890";
 	src: url("../Fonts/Shreelipi/S0878890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0879890";
+	font-family: "S0879890";
 	src: url("../Fonts/Shreelipi/S0879890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0880890";
+	font-family: "S0880890";
 	src: url("../Fonts/Shreelipi/S0880890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0881890";
+	font-family: "S0881890";
 	src: url("../Fonts/Shreelipi/S0881890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0882890";
+	font-family: "S0882890";
 	src: url("../Fonts/Shreelipi/S0882890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0883890";
+	font-family: "S0883890";
 	src: url("../Fonts/Shreelipi/S0883890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0884890";
+	font-family: "S0884890";
 	src: url("../Fonts/Shreelipi/S0884890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0885890";
+	font-family: "S0885890";
 	src: url("../Fonts/Shreelipi/S0885890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0886890";
+	font-family: "S0886890";
 	src: url("../Fonts/Shreelipi/S0886890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0887890";
+	font-family: "S0887890";
 	src: url("../Fonts/Shreelipi/S0887890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0888890";
+	font-family: "S0888890";
 	src: url("../Fonts/Shreelipi/S0888890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0889890";
+	font-family: "S0889890";
 	src: url("../Fonts/Shreelipi/S0889890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0890890";
+	font-family: "S0890890";
 	src: url("../Fonts/Shreelipi/S0890890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0891890";
+	font-family: "S0891890";
 	src: url("../Fonts/Shreelipi/S0891890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0892890";
+	font-family: "S0892890";
 	src: url("../Fonts/Shreelipi/S0892890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0893890";
+	font-family: "S0893890";
 	src: url("../Fonts/Shreelipi/S0893890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0894890";
+	font-family: "S0894890";
 	src: url("../Fonts/Shreelipi/S0894890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0895890";
+	font-family: "S0895890";
 	src: url("../Fonts/Shreelipi/S0895890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0896890";
+	font-family: "S0896890";
 	src: url("../Fonts/Shreelipi/S0896890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0897890";
+	font-family: "S0897890";
 	src: url("../Fonts/Shreelipi/S0897890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0898890";
+	font-family: "S0898890";
 	src: url("../Fonts/Shreelipi/S0898890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S0899890";
+	font-family: "S0899890";
 	src: url("../Fonts/Shreelipi/S0899890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1400890";
+	font-family: "S1400890";
 	src: url("../Fonts/Shreelipi/S1400890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1401890";
+	font-family: "S1401890";
 	src: url("../Fonts/Shreelipi/S1401890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1402890";
+	font-family: "S1402890";
 	src: url("../Fonts/Shreelipi/S1402890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1403890";
+	font-family: "S1403890";
 	src: url("../Fonts/Shreelipi/S1403890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1404890";
+	font-family: "S1404890";
 	src: url("../Fonts/Shreelipi/S1404890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1405890";
+	font-family: "S1405890";
 	src: url("../Fonts/Shreelipi/S1405890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1406890";
+	font-family: "S1406890";
 	src: url("../Fonts/Shreelipi/S1406890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1407890";
+	font-family: "S1407890";
 	src: url("../Fonts/Shreelipi/S1407890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1408890";
+	font-family: "S1408890";
 	src: url("../Fonts/Shreelipi/S1408890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1409890";
+	font-family: "S1409890";
 	src: url("../Fonts/Shreelipi/S1409890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1410890";
+	font-family: "S1410890";
 	src: url("../Fonts/Shreelipi/S1410890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1411890";
+	font-family: "S1411890";
 	src: url("../Fonts/Shreelipi/S1411890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1412890";
+	font-family: "S1412890";
 	src: url("../Fonts/Shreelipi/S1412890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1413890";
+	font-family: "S1413890";
 	src: url("../Fonts/Shreelipi/S1413890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1414890";
+	font-family: "S1414890";
 	src: url("../Fonts/Shreelipi/S1414890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1415890";
+	font-family: "S1415890";
 	src: url("../Fonts/Shreelipi/S1415890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1416890";
+	font-family: "S1416890";
 	src: url("../Fonts/Shreelipi/S1416890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1417890";
+	font-family: "S1417890";
 	src: url("../Fonts/Shreelipi/S1417890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1418890";
+	font-family: "S1418890";
 	src: url("../Fonts/Shreelipi/S1418890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1419890";
+	font-family: "S1419890";
 	src: url("../Fonts/Shreelipi/S1419890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1420890";
+	font-family: "S1420890";
 	src: url("../Fonts/Shreelipi/S1420890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1421890";
+	font-family: "S1421890";
 	src: url("../Fonts/Shreelipi/S1421890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1422890";
+	font-family: "S1422890";
 	src: url("../Fonts/Shreelipi/S1422890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1423890";
+	font-family: "S1423890";
 	src: url("../Fonts/Shreelipi/S1423890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1424890";
+	font-family: "S1424890";
 	src: url("../Fonts/Shreelipi/S1424890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1425890";
+	font-family: "S1425890";
 	src: url("../Fonts/Shreelipi/S1425890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1426890";
+	font-family: "S1426890";
 	src: url("../Fonts/Shreelipi/S1426890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1427890";
+	font-family: "S1427890";
 	src: url("../Fonts/Shreelipi/S1427890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1428890";
+	font-family: "S1428890";
 	src: url("../Fonts/Shreelipi/S1428890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1429890";
+	font-family: "S1429890";
 	src: url("../Fonts/Shreelipi/S1429890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1430890";
+	font-family: "S1430890";
 	src: url("../Fonts/Shreelipi/S1430890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1431890";
+	font-family: "S1431890";
 	src: url("../Fonts/Shreelipi/S1431890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1432890";
+	font-family: "S1432890";
 	src: url("../Fonts/Shreelipi/S1432890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1433890";
+	font-family: "S1433890";
 	src: url("../Fonts/Shreelipi/S1433890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1434890";
+	font-family: "S1434890";
 	src: url("../Fonts/Shreelipi/S1434890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1435890";
+	font-family: "S1435890";
 	src: url("../Fonts/Shreelipi/S1435890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1436890";
+	font-family: "S1436890";
 	src: url("../Fonts/Shreelipi/S1436890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1437890";
+	font-family: "S1437890";
 	src: url("../Fonts/Shreelipi/S1437890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1438890";
+	font-family: "S1438890";
 	src: url("../Fonts/Shreelipi/S1438890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1439890";
+	font-family: "S1439890";
 	src: url("../Fonts/Shreelipi/S1439890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1440890";
+	font-family: "S1440890";
 	src: url("../Fonts/Shreelipi/S1440890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1441890";
+	font-family: "S1441890";
 	src: url("../Fonts/Shreelipi/S1441890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1442890";
+	font-family: "S1442890";
 	src: url("../Fonts/Shreelipi/S1442890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1443890";
+	font-family: "S1443890";
 	src: url("../Fonts/Shreelipi/S1443890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1444890";
+	font-family: "S1444890";
 	src: url("../Fonts/Shreelipi/S1444890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1445890";
+	font-family: "S1445890";
 	src: url("../Fonts/Shreelipi/S1445890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1446890";
+	font-family: "S1446890";
 	src: url("../Fonts/Shreelipi/S1446890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1447890";
+	font-family: "S1447890";
 	src: url("../Fonts/Shreelipi/S1447890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1448890";
+	font-family: "S1448890";
 	src: url("../Fonts/Shreelipi/S1448890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1449890";
+	font-family: "S1449890";
 	src: url("../Fonts/Shreelipi/S1449890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1450890";
+	font-family: "S1450890";
 	src: url("../Fonts/Shreelipi/S1450890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1451890";
+	font-family: "S1451890";
 	src: url("../Fonts/Shreelipi/S1451890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1452890";
+	font-family: "S1452890";
 	src: url("../Fonts/Shreelipi/S1452890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1453890";
+	font-family: "S1453890";
 	src: url("../Fonts/Shreelipi/S1453890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1454890";
+	font-family: "S1454890";
 	src: url("../Fonts/Shreelipi/S1454890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1455890";
+	font-family: "S1455890";
 	src: url("../Fonts/Shreelipi/S1455890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1456890";
+	font-family: "S1456890";
 	src: url("../Fonts/Shreelipi/S1456890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1457890";
+	font-family: "S1457890";
 	src: url("../Fonts/Shreelipi/S1457890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1458890";
+	font-family: "S1458890";
 	src: url("../Fonts/Shreelipi/S1458890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1459890";
+	font-family: "S1459890";
 	src: url("../Fonts/Shreelipi/S1459890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1460890";
+	font-family: "S1460890";
 	src: url("../Fonts/Shreelipi/S1460890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1461890";
+	font-family: "S1461890";
 	src: url("../Fonts/Shreelipi/S1461890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1462890";
+	font-family: "S1462890";
 	src: url("../Fonts/Shreelipi/S1462890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1463890";
+	font-family: "S1463890";
 	src: url("../Fonts/Shreelipi/S1463890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1464890";
+	font-family: "S1464890";
 	src: url("../Fonts/Shreelipi/S1464890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1465890";
+	font-family: "S1465890";
 	src: url("../Fonts/Shreelipi/S1465890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1466890";
+	font-family: "S1466890";
 	src: url("../Fonts/Shreelipi/S1466890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1467890";
+	font-family: "S1467890";
 	src: url("../Fonts/Shreelipi/S1467890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1468890";
+	font-family: "S1468890";
 	src: url("../Fonts/Shreelipi/S1468890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1469890";
+	font-family: "S1469890";
 	src: url("../Fonts/Shreelipi/S1469890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1470890";
+	font-family: "S1470890";
 	src: url("../Fonts/Shreelipi/S1470890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1471890";
+	font-family: "S1471890";
 	src: url("../Fonts/Shreelipi/S1471890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1472890";
+	font-family: "S1472890";
 	src: url("../Fonts/Shreelipi/S1472890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1473890";
+	font-family: "S1473890";
 	src: url("../Fonts/Shreelipi/S1473890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1474890";
+	font-family: "S1474890";
 	src: url("../Fonts/Shreelipi/S1474890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1475890";
+	font-family: "S1475890";
 	src: url("../Fonts/Shreelipi/S1475890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1476890";
+	font-family: "S1476890";
 	src: url("../Fonts/Shreelipi/S1476890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1477890";
+	font-family: "S1477890";
 	src: url("../Fonts/Shreelipi/S1477890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1478890";
+	font-family: "S1478890";
 	src: url("../Fonts/Shreelipi/S1478890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1479890";
+	font-family: "S1479890";
 	src: url("../Fonts/Shreelipi/S1479890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1480890";
+	font-family: "S1480890";
 	src: url("../Fonts/Shreelipi/S1480890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1481890";
+	font-family: "S1481890";
 	src: url("../Fonts/Shreelipi/S1481890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1482890";
+	font-family: "S1482890";
 	src: url("../Fonts/Shreelipi/S1482890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1483890";
+	font-family: "S1483890";
 	src: url("../Fonts/Shreelipi/S1483890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1484890";
+	font-family: "S1484890";
 	src: url("../Fonts/Shreelipi/S1484890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1485890";
+	font-family: "S1485890";
 	src: url("../Fonts/Shreelipi/S1485890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1486890";
+	font-family: "S1486890";
 	src: url("../Fonts/Shreelipi/S1486890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1487890";
+	font-family: "S1487890";
 	src: url("../Fonts/Shreelipi/S1487890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1488890";
+	font-family: "S1488890";
 	src: url("../Fonts/Shreelipi/S1488890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1489890";
+	font-family: "S1489890";
 	src: url("../Fonts/Shreelipi/S1489890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1490890";
+	font-family: "S1490890";
 	src: url("../Fonts/Shreelipi/S1490890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1491890";
+	font-family: "S1491890";
 	src: url("../Fonts/Shreelipi/S1491890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1492890";
+	font-family: "S1492890";
 	src: url("../Fonts/Shreelipi/S1492890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1493890";
+	font-family: "S1493890";
 	src: url("../Fonts/Shreelipi/S1493890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1494890";
+	font-family: "S1494890";
 	src: url("../Fonts/Shreelipi/S1494890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1495890";
+	font-family: "S1495890";
 	src: url("../Fonts/Shreelipi/S1495890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1496890";
+	font-family: "S1496890";
 	src: url("../Fonts/Shreelipi/S1496890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1497890";
+	font-family: "S1497890";
 	src: url("../Fonts/Shreelipi/S1497890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1498890";
+	font-family: "S1498890";
 	src: url("../Fonts/Shreelipi/S1498890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S1499890";
+	font-family: "S1499890";
 	src: url("../Fonts/Shreelipi/S1499890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2000890";
+	font-family: "S2000890";
 	src: url("../Fonts/Shreelipi/S2000890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2001890";
+	font-family: "S2001890";
 	src: url("../Fonts/Shreelipi/S2001890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2002890";
+	font-family: "S2002890";
 	src: url("../Fonts/Shreelipi/S2002890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2003890";
+	font-family: "S2003890";
 	src: url("../Fonts/Shreelipi/S2003890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2004890";
+	font-family: "S2004890";
 	src: url("../Fonts/Shreelipi/S2004890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2005890";
+	font-family: "S2005890";
 	src: url("../Fonts/Shreelipi/S2005890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2006890";
+	font-family: "S2006890";
 	src: url("../Fonts/Shreelipi/S2006890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2007890";
+	font-family: "S2007890";
 	src: url("../Fonts/Shreelipi/S2007890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2008890";
+	font-family: "S2008890";
 	src: url("../Fonts/Shreelipi/S2008890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2009890";
+	font-family: "S2009890";
 	src: url("../Fonts/Shreelipi/S2009890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2010890";
+	font-family: "S2010890";
 	src: url("../Fonts/Shreelipi/S2010890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2011890";
+	font-family: "S2011890";
 	src: url("../Fonts/Shreelipi/S2011890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2020890";
+	font-family: "S2020890";
 	src: url("../Fonts/Shreelipi/S2020890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2101890";
+	font-family: "S2101890";
 	src: url("../Fonts/Shreelipi/S2101890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2102890";
+	font-family: "S2102890";
 	src: url("../Fonts/Shreelipi/S2102890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S2103890";
+	font-family: "S2103890";
 	src: url("../Fonts/Shreelipi/S2103890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3400890";
+	font-family: "S3400890";
 	src: url("../Fonts/Shreelipi/S3400890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3401890";
+	font-family: "S3401890";
 	src: url("../Fonts/Shreelipi/S3401890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3402890";
+	font-family: "S3402890";
 	src: url("../Fonts/Shreelipi/S3402890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3403890";
+	font-family: "S3403890";
 	src: url("../Fonts/Shreelipi/S3403890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3404890";
+	font-family: "S3404890";
 	src: url("../Fonts/Shreelipi/S3404890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3405890";
+	font-family: "S3405890";
 	src: url("../Fonts/Shreelipi/S3405890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3406890";
+	font-family: "S3406890";
 	src: url("../Fonts/Shreelipi/S3406890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3407890";
+	font-family: "S3407890";
 	src: url("../Fonts/Shreelipi/S3407890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3408890";
+	font-family: "S3408890";
 	src: url("../Fonts/Shreelipi/S3408890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3409890";
+	font-family: "S3409890";
 	src: url("../Fonts/Shreelipi/S3409890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3410890";
+	font-family: "S3410890";
 	src: url("../Fonts/Shreelipi/S3410890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3411890";
+	font-family: "S3411890";
 	src: url("../Fonts/Shreelipi/S3411890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3412890";
+	font-family: "S3412890";
 	src: url("../Fonts/Shreelipi/S3412890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3413890";
+	font-family: "S3413890";
 	src: url("../Fonts/Shreelipi/S3413890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3414890";
+	font-family: "S3414890";
 	src: url("../Fonts/Shreelipi/S3414890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3415890";
+	font-family: "S3415890";
 	src: url("../Fonts/Shreelipi/S3415890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3416890";
+	font-family: "S3416890";
 	src: url("../Fonts/Shreelipi/S3416890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3417890";
+	font-family: "S3417890";
 	src: url("../Fonts/Shreelipi/S3417890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3418890";
+	font-family: "S3418890";
 	src: url("../Fonts/Shreelipi/S3418890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3419890";
+	font-family: "S3419890";
 	src: url("../Fonts/Shreelipi/S3419890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3420890";
+	font-family: "S3420890";
 	src: url("../Fonts/Shreelipi/S3420890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3421890";
+	font-family: "S3421890";
 	src: url("../Fonts/Shreelipi/S3421890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3422890";
+	font-family: "S3422890";
 	src: url("../Fonts/Shreelipi/S3422890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3423890";
+	font-family: "S3423890";
 	src: url("../Fonts/Shreelipi/S3423890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3424890";
+	font-family: "S3424890";
 	src: url("../Fonts/Shreelipi/S3424890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3425890";
+	font-family: "S3425890";
 	src: url("../Fonts/Shreelipi/S3425890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3426890";
+	font-family: "S3426890";
 	src: url("../Fonts/Shreelipi/S3426890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3427890";
+	font-family: "S3427890";
 	src: url("../Fonts/Shreelipi/S3427890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3428890";
+	font-family: "S3428890";
 	src: url("../Fonts/Shreelipi/S3428890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3429890";
+	font-family: "S3429890";
 	src: url("../Fonts/Shreelipi/S3429890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3430890";
+	font-family: "S3430890";
 	src: url("../Fonts/Shreelipi/S3430890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3431890";
+	font-family: "S3431890";
 	src: url("../Fonts/Shreelipi/S3431890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3432890";
+	font-family: "S3432890";
 	src: url("../Fonts/Shreelipi/S3432890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3433890";
+	font-family: "S3433890";
 	src: url("../Fonts/Shreelipi/S3433890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3434890";
+	font-family: "S3434890";
 	src: url("../Fonts/Shreelipi/S3434890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3435890";
+	font-family: "S3435890";
 	src: url("../Fonts/Shreelipi/S3435890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3436890";
+	font-family: "S3436890";
 	src: url("../Fonts/Shreelipi/S3436890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3437890";
+	font-family: "S3437890";
 	src: url("../Fonts/Shreelipi/S3437890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3438890";
+	font-family: "S3438890";
 	src: url("../Fonts/Shreelipi/S3438890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3439890";
+	font-family: "S3439890";
 	src: url("../Fonts/Shreelipi/S3439890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3440890";
+	font-family: "S3440890";
 	src: url("../Fonts/Shreelipi/S3440890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3441890";
+	font-family: "S3441890";
 	src: url("../Fonts/Shreelipi/S3441890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3442890";
+	font-family: "S3442890";
 	src: url("../Fonts/Shreelipi/S3442890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3443890";
+	font-family: "S3443890";
 	src: url("../Fonts/Shreelipi/S3443890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3444890";
+	font-family: "S3444890";
 	src: url("../Fonts/Shreelipi/S3444890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3445890";
+	font-family: "S3445890";
 	src: url("../Fonts/Shreelipi/S3445890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3446890";
+	font-family: "S3446890";
 	src: url("../Fonts/Shreelipi/S3446890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3447890";
+	font-family: "S3447890";
 	src: url("../Fonts/Shreelipi/S3447890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3448890";
+	font-family: "S3448890";
 	src: url("../Fonts/Shreelipi/S3448890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3449890";
+	font-family: "S3449890";
 	src: url("../Fonts/Shreelipi/S3449890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3450890";
+	font-family: "S3450890";
 	src: url("../Fonts/Shreelipi/S3450890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3451890";
+	font-family: "S3451890";
 	src: url("../Fonts/Shreelipi/S3451890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3452890";
+	font-family: "S3452890";
 	src: url("../Fonts/Shreelipi/S3452890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3453890";
+	font-family: "S3453890";
 	src: url("../Fonts/Shreelipi/S3453890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3454890";
+	font-family: "S3454890";
 	src: url("../Fonts/Shreelipi/S3454890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3455890";
+	font-family: "S3455890";
 	src: url("../Fonts/Shreelipi/S3455890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3456890";
+	font-family: "S3456890";
 	src: url("../Fonts/Shreelipi/S3456890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3457890";
+	font-family: "S3457890";
 	src: url("../Fonts/Shreelipi/S3457890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3458890";
+	font-family: "S3458890";
 	src: url("../Fonts/Shreelipi/S3458890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3459890";
+	font-family: "S3459890";
 	src: url("../Fonts/Shreelipi/S3459890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3460890";
+	font-family: "S3460890";
 	src: url("../Fonts/Shreelipi/S3460890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3461890";
+	font-family: "S3461890";
 	src: url("../Fonts/Shreelipi/S3461890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3462890";
+	font-family: "S3462890";
 	src: url("../Fonts/Shreelipi/S3462890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3463890";
+	font-family: "S3463890";
 	src: url("../Fonts/Shreelipi/S3463890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3464890";
+	font-family: "S3464890";
 	src: url("../Fonts/Shreelipi/S3464890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3465890";
+	font-family: "S3465890";
 	src: url("../Fonts/Shreelipi/S3465890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3466890";
+	font-family: "S3466890";
 	src: url("../Fonts/Shreelipi/S3466890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3467890";
+	font-family: "S3467890";
 	src: url("../Fonts/Shreelipi/S3467890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3468890";
+	font-family: "S3468890";
 	src: url("../Fonts/Shreelipi/S3468890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3469890";
+	font-family: "S3469890";
 	src: url("../Fonts/Shreelipi/S3469890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3470890";
+	font-family: "S3470890";
 	src: url("../Fonts/Shreelipi/S3470890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3471890";
+	font-family: "S3471890";
 	src: url("../Fonts/Shreelipi/S3471890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3472890";
+	font-family: "S3472890";
 	src: url("../Fonts/Shreelipi/S3472890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3473890";
+	font-family: "S3473890";
 	src: url("../Fonts/Shreelipi/S3473890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3474890";
+	font-family: "S3474890";
 	src: url("../Fonts/Shreelipi/S3474890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3475890";
+	font-family: "S3475890";
 	src: url("../Fonts/Shreelipi/S3475890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3476890";
+	font-family: "S3476890";
 	src: url("../Fonts/Shreelipi/S3476890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3477890";
+	font-family: "S3477890";
 	src: url("../Fonts/Shreelipi/S3477890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3478890";
+	font-family: "S3478890";
 	src: url("../Fonts/Shreelipi/S3478890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3479890";
+	font-family: "S3479890";
 	src: url("../Fonts/Shreelipi/S3479890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3480890";
+	font-family: "S3480890";
 	src: url("../Fonts/Shreelipi/S3480890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3481890";
+	font-family: "S3481890";
 	src: url("../Fonts/Shreelipi/S3481890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3482890";
+	font-family: "S3482890";
 	src: url("../Fonts/Shreelipi/S3482890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3483890";
+	font-family: "S3483890";
 	src: url("../Fonts/Shreelipi/S3483890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3484890";
+	font-family: "S3484890";
 	src: url("../Fonts/Shreelipi/S3484890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3485890";
+	font-family: "S3485890";
 	src: url("../Fonts/Shreelipi/S3485890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3486890";
+	font-family: "S3486890";
 	src: url("../Fonts/Shreelipi/S3486890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3487890";
+	font-family: "S3487890";
 	src: url("../Fonts/Shreelipi/S3487890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3488890";
+	font-family: "S3488890";
 	src: url("../Fonts/Shreelipi/S3488890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3489890";
+	font-family: "S3489890";
 	src: url("../Fonts/Shreelipi/S3489890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3490890";
+	font-family: "S3490890";
 	src: url("../Fonts/Shreelipi/S3490890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3491890";
+	font-family: "S3491890";
 	src: url("../Fonts/Shreelipi/S3491890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3492890";
+	font-family: "S3492890";
 	src: url("../Fonts/Shreelipi/S3492890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3493890";
+	font-family: "S3493890";
 	src: url("../Fonts/Shreelipi/S3493890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3494890";
+	font-family: "S3494890";
 	src: url("../Fonts/Shreelipi/S3494890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3495890";
+	font-family: "S3495890";
 	src: url("../Fonts/Shreelipi/S3495890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3496890";
+	font-family: "S3496890";
 	src: url("../Fonts/Shreelipi/S3496890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3497890";
+	font-family: "S3497890";
 	src: url("../Fonts/Shreelipi/S3497890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3498890";
+	font-family: "S3498890";
 	src: url("../Fonts/Shreelipi/S3498890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S3499890";
+	font-family: "S3499890";
 	src: url("../Fonts/Shreelipi/S3499890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4200890";
+	font-family: "S4200890";
 	src: url("../Fonts/Shreelipi/S4200890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4201890";
+	font-family: "S4201890";
 	src: url("../Fonts/Shreelipi/S4201890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4202890";
+	font-family: "S4202890";
 	src: url("../Fonts/Shreelipi/S4202890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4203890";
+	font-family: "S4203890";
 	src: url("../Fonts/Shreelipi/S4203890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4204890";
+	font-family: "S4204890";
 	src: url("../Fonts/Shreelipi/S4204890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4205890";
+	font-family: "S4205890";
 	src: url("../Fonts/Shreelipi/S4205890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4206890";
+	font-family: "S4206890";
 	src: url("../Fonts/Shreelipi/S4206890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4207890";
+	font-family: "S4207890";
 	src: url("../Fonts/Shreelipi/S4207890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4208890";
+	font-family: "S4208890";
 	src: url("../Fonts/Shreelipi/S4208890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4209890";
+	font-family: "S4209890";
 	src: url("../Fonts/Shreelipi/S4209890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4210890";
+	font-family: "S4210890";
 	src: url("../Fonts/Shreelipi/S4210890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4211890";
+	font-family: "S4211890";
 	src: url("../Fonts/Shreelipi/S4211890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4212890";
+	font-family: "S4212890";
 	src: url("../Fonts/Shreelipi/S4212890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4213890";
+	font-family: "S4213890";
 	src: url("../Fonts/Shreelipi/S4213890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4214890";
+	font-family: "S4214890";
 	src: url("../Fonts/Shreelipi/S4214890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4215890";
+	font-family: "S4215890";
 	src: url("../Fonts/Shreelipi/S4215890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4216890";
+	font-family: "S4216890";
 	src: url("../Fonts/Shreelipi/S4216890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4217890";
+	font-family: "S4217890";
 	src: url("../Fonts/Shreelipi/S4217890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4218890";
+	font-family: "S4218890";
 	src: url("../Fonts/Shreelipi/S4218890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4219890";
+	font-family: "S4219890";
 	src: url("../Fonts/Shreelipi/S4219890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4220890";
+	font-family: "S4220890";
 	src: url("../Fonts/Shreelipi/S4220890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4221890";
+	font-family: "S4221890";
 	src: url("../Fonts/Shreelipi/S4221890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4222890";
+	font-family: "S4222890";
 	src: url("../Fonts/Shreelipi/S4222890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4223890";
+	font-family: "S4223890";
 	src: url("../Fonts/Shreelipi/S4223890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4224890";
+	font-family: "S4224890";
 	src: url("../Fonts/Shreelipi/S4224890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4225890";
+	font-family: "S4225890";
 	src: url("../Fonts/Shreelipi/S4225890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4226890";
+	font-family: "S4226890";
 	src: url("../Fonts/Shreelipi/S4226890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4227890";
+	font-family: "S4227890";
 	src: url("../Fonts/Shreelipi/S4227890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4228890";
+	font-family: "S4228890";
 	src: url("../Fonts/Shreelipi/S4228890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4229890";
+	font-family: "S4229890";
 	src: url("../Fonts/Shreelipi/S4229890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4230890";
+	font-family: "S4230890";
 	src: url("../Fonts/Shreelipi/S4230890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4231890";
+	font-family: "S4231890";
 	src: url("../Fonts/Shreelipi/S4231890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4232890";
+	font-family: "S4232890";
 	src: url("../Fonts/Shreelipi/S4232890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4233890";
+	font-family: "S4233890";
 	src: url("../Fonts/Shreelipi/S4233890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4234890";
+	font-family: "S4234890";
 	src: url("../Fonts/Shreelipi/S4234890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4235890";
+	font-family: "S4235890";
 	src: url("../Fonts/Shreelipi/S4235890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4236890";
+	font-family: "S4236890";
 	src: url("../Fonts/Shreelipi/S4236890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4237890";
+	font-family: "S4237890";
 	src: url("../Fonts/Shreelipi/S4237890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4238890";
+	font-family: "S4238890";
 	src: url("../Fonts/Shreelipi/S4238890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4239890";
+	font-family: "S4239890";
 	src: url("../Fonts/Shreelipi/S4239890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4240890";
+	font-family: "S4240890";
 	src: url("../Fonts/Shreelipi/S4240890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4241890";
+	font-family: "S4241890";
 	src: url("../Fonts/Shreelipi/S4241890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4242890";
+	font-family: "S4242890";
 	src: url("../Fonts/Shreelipi/S4242890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4243890";
+	font-family: "S4243890";
 	src: url("../Fonts/Shreelipi/S4243890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4244890";
+	font-family: "S4244890";
 	src: url("../Fonts/Shreelipi/S4244890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4245890";
+	font-family: "S4245890";
 	src: url("../Fonts/Shreelipi/S4245890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4246890";
+	font-family: "S4246890";
 	src: url("../Fonts/Shreelipi/S4246890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4247890";
+	font-family: "S4247890";
 	src: url("../Fonts/Shreelipi/S4247890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4248890";
+	font-family: "S4248890";
 	src: url("../Fonts/Shreelipi/S4248890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4249890";
+	font-family: "S4249890";
 	src: url("../Fonts/Shreelipi/S4249890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4250890";
+	font-family: "S4250890";
 	src: url("../Fonts/Shreelipi/S4250890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4251890";
+	font-family: "S4251890";
 	src: url("../Fonts/Shreelipi/S4251890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4252890";
+	font-family: "S4252890";
 	src: url("../Fonts/Shreelipi/S4252890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4253890";
+	font-family: "S4253890";
 	src: url("../Fonts/Shreelipi/S4253890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4254890";
+	font-family: "S4254890";
 	src: url("../Fonts/Shreelipi/S4254890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4255890";
+	font-family: "S4255890";
 	src: url("../Fonts/Shreelipi/S4255890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4256890";
+	font-family: "S4256890";
 	src: url("../Fonts/Shreelipi/S4256890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4257890";
+	font-family: "S4257890";
 	src: url("../Fonts/Shreelipi/S4257890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4258890";
+	font-family: "S4258890";
 	src: url("../Fonts/Shreelipi/S4258890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4259890";
+	font-family: "S4259890";
 	src: url("../Fonts/Shreelipi/S4259890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4260890";
+	font-family: "S4260890";
 	src: url("../Fonts/Shreelipi/S4260890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4261890";
+	font-family: "S4261890";
 	src: url("../Fonts/Shreelipi/S4261890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4262890";
+	font-family: "S4262890";
 	src: url("../Fonts/Shreelipi/S4262890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4263890";
+	font-family: "S4263890";
 	src: url("../Fonts/Shreelipi/S4263890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4264890";
+	font-family: "S4264890";
 	src: url("../Fonts/Shreelipi/S4264890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4265890";
+	font-family: "S4265890";
 	src: url("../Fonts/Shreelipi/S4265890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4266890";
+	font-family: "S4266890";
 	src: url("../Fonts/Shreelipi/S4266890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4267890";
+	font-family: "S4267890";
 	src: url("../Fonts/Shreelipi/S4267890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4268890";
+	font-family: "S4268890";
 	src: url("../Fonts/Shreelipi/S4268890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4269890";
+	font-family: "S4269890";
 	src: url("../Fonts/Shreelipi/S4269890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4270890";
+	font-family: "S4270890";
 	src: url("../Fonts/Shreelipi/S4270890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4271890";
+	font-family: "S4271890";
 	src: url("../Fonts/Shreelipi/S4271890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4272890";
+	font-family: "S4272890";
 	src: url("../Fonts/Shreelipi/S4272890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4273890";
+	font-family: "S4273890";
 	src: url("../Fonts/Shreelipi/S4273890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4274890";
+	font-family: "S4274890";
 	src: url("../Fonts/Shreelipi/S4274890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4275890";
+	font-family: "S4275890";
 	src: url("../Fonts/Shreelipi/S4275890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4276890";
+	font-family: "S4276890";
 	src: url("../Fonts/Shreelipi/S4276890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4277890";
+	font-family: "S4277890";
 	src: url("../Fonts/Shreelipi/S4277890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4278890";
+	font-family: "S4278890";
 	src: url("../Fonts/Shreelipi/S4278890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4279890";
+	font-family: "S4279890";
 	src: url("../Fonts/Shreelipi/S4279890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4280890";
+	font-family: "S4280890";
 	src: url("../Fonts/Shreelipi/S4280890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4281890";
+	font-family: "S4281890";
 	src: url("../Fonts/Shreelipi/S4281890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4282890";
+	font-family: "S4282890";
 	src: url("../Fonts/Shreelipi/S4282890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4283890";
+	font-family: "S4283890";
 	src: url("../Fonts/Shreelipi/S4283890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4284890";
+	font-family: "S4284890";
 	src: url("../Fonts/Shreelipi/S4284890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4285890";
+	font-family: "S4285890";
 	src: url("../Fonts/Shreelipi/S4285890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4286890";
+	font-family: "S4286890";
 	src: url("../Fonts/Shreelipi/S4286890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4287890";
+	font-family: "S4287890";
 	src: url("../Fonts/Shreelipi/S4287890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4288890";
+	font-family: "S4288890";
 	src: url("../Fonts/Shreelipi/S4288890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4289890";
+	font-family: "S4289890";
 	src: url("../Fonts/Shreelipi/S4289890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4290890";
+	font-family: "S4290890";
 	src: url("../Fonts/Shreelipi/S4290890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4291890";
+	font-family: "S4291890";
 	src: url("../Fonts/Shreelipi/S4291890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4292890";
+	font-family: "S4292890";
 	src: url("../Fonts/Shreelipi/S4292890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4293890";
+	font-family: "S4293890";
 	src: url("../Fonts/Shreelipi/S4293890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4294890";
+	font-family: "S4294890";
 	src: url("../Fonts/Shreelipi/S4294890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4295890";
+	font-family: "S4295890";
 	src: url("../Fonts/Shreelipi/S4295890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4296890";
+	font-family: "S4296890";
 	src: url("../Fonts/Shreelipi/S4296890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4297890";
+	font-family: "S4297890";
 	src: url("../Fonts/Shreelipi/S4297890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4298890";
+	font-family: "S4298890";
 	src: url("../Fonts/Shreelipi/S4298890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S4299890";
+	font-family: "S4299890";
 	src: url("../Fonts/Shreelipi/S4299890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5300890";
+	font-family: "S5300890";
 	src: url("../Fonts/Shreelipi/S5300890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5301890";
+	font-family: "S5301890";
 	src: url("../Fonts/Shreelipi/S5301890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5302890";
+	font-family: "S5302890";
 	src: url("../Fonts/Shreelipi/S5302890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5303890";
+	font-family: "S5303890";
 	src: url("../Fonts/Shreelipi/S5303890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5304890";
+	font-family: "S5304890";
 	src: url("../Fonts/Shreelipi/S5304890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5305890";
+	font-family: "S5305890";
 	src: url("../Fonts/Shreelipi/S5305890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5306890";
+	font-family: "S5306890";
 	src: url("../Fonts/Shreelipi/S5306890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5307890";
+	font-family: "S5307890";
 	src: url("../Fonts/Shreelipi/S5307890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5308890";
+	font-family: "S5308890";
 	src: url("../Fonts/Shreelipi/S5308890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5309890";
+	font-family: "S5309890";
 	src: url("../Fonts/Shreelipi/S5309890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5310890";
+	font-family: "S5310890";
 	src: url("../Fonts/Shreelipi/S5310890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5311890";
+	font-family: "S5311890";
 	src: url("../Fonts/Shreelipi/S5311890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5312890";
+	font-family: "S5312890";
 	src: url("../Fonts/Shreelipi/S5312890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi S5313890";
+	font-family: "S5313890";
 	src: url("../Fonts/Shreelipi/S5313890.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE ASS7 001W";
+	font-family: "SHREE ASS7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-ASS7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE ASS7 002W";
+	font-family: "SHREE ASS7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-ASS7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE BAN7 001W";
+	font-family: "SHREE BAN7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-BAN7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE BAN7 002W";
+	font-family: "SHREE BAN7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-BAN7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE DEV7 001W";
+	font-family: "SHREE DEV7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-DEV7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE DEV7 002W";
+	font-family: "SHREE DEV7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-DEV7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE DIA 1900W";
+	font-family: "SHREE DIA 1900W";
 	src: url("../Fonts/Shreelipi/SHREE-DIA-1900W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE DIAI 1900W";
+	font-family: "SHREE DIAI 1900W";
 	src: url("../Fonts/Shreelipi/SHREE-DIAI-1900W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE GUJ7 001W";
+	font-family: "SHREE GUJ7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-GUJ7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE GUJ7 002W";
+	font-family: "SHREE GUJ7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-GUJ7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE KAN7 001W";
+	font-family: "SHREE KAN7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-KAN7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE KAN7 002W";
+	font-family: "SHREE KAN7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-KAN7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE MAL7 001W";
+	font-family: "SHREE MAL7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-MAL7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE MAL7 002W";
+	font-family: "SHREE MAL7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-MAL7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE ORI7 001W";
+	font-family: "SHREE ORI7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-ORI7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE ORI7 002W";
+	font-family: "SHREE ORI7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-ORI7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE PUN7 001W";
+	font-family: "SHREE PUN7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-PUN7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE PUN7 002W";
+	font-family: "SHREE PUN7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-PUN7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE SAN7 001W";
+	font-family: "SHREE SAN7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-SAN7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE SAN7 002W";
+	font-family: "SHREE SAN7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-SAN7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE TAM7 001W";
+	font-family: "SHREE TAM7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-TAM7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE TAM7 002W";
+	font-family: "SHREE TAM7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-TAM7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE TEL7 001W";
+	font-family: "SHREE TEL7 001W";
 	src: url("../Fonts/Shreelipi/SHREE-TEL7-001W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE TEL7 002W";
+	font-family: "SHREE TEL7 002W";
 	src: url("../Fonts/Shreelipi/SHREE-TEL7-002W.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE664S";
+	font-family: "SHREE664S";
 	src: url("../Fonts/Shreelipi/SHREE664S.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREE680S";
+	font-family: "SHREE680S";
 	src: url("../Fonts/Shreelipi/SHREE680S.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREM560";
+	font-family: "SHREM560";
 	src: url("../Fonts/Shreelipi/SHREM560.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREM601";
+	font-family: "SHREM601";
 	src: url("../Fonts/Shreelipi/SHREM601.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREM726";
+	font-family: "SHREM726";
 	src: url("../Fonts/Shreelipi/SHREM726.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREM854";
+	font-family: "SHREM854";
 	src: url("../Fonts/Shreelipi/SHREM854.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREM951";
+	font-family: "SHREM951";
 	src: url("../Fonts/Shreelipi/SHREM951.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREMB43";
+	font-family: "SHREMB43";
 	src: url("../Fonts/Shreelipi/SHREMB43.TTF");
 
 }@font-face {
-	font-family: "Shreelipi SHREMG42";
+	font-family: "SHREMG42";
 	src: url("../Fonts/Shreelipi/SHREMG42.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WASS001";
+	font-family: "WASS001";
 	src: url("../Fonts/Shreelipi/WASS001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WASS002";
+	font-family: "WASS002";
 	src: url("../Fonts/Shreelipi/WASS002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WASS7001";
+	font-family: "WASS7001";
 	src: url("../Fonts/Shreelipi/WASS7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WASS7002";
+	font-family: "WASS7002";
 	src: url("../Fonts/Shreelipi/WASS7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN001";
+	font-family: "WBAN001";
 	src: url("../Fonts/Shreelipi/WBAN001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN002";
+	font-family: "WBAN002";
 	src: url("../Fonts/Shreelipi/WBAN002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN7001";
+	font-family: "WBAN7001";
 	src: url("../Fonts/Shreelipi/WBAN7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN7002";
+	font-family: "WBAN7002";
 	src: url("../Fonts/Shreelipi/WBAN7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN701T";
+	font-family: "WBAN701T";
 	src: url("../Fonts/Shreelipi/WBAN701T.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WBAN702T";
+	font-family: "WBAN702T";
 	src: url("../Fonts/Shreelipi/WBAN702T.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV001";
+	font-family: "WDEV001";
 	src: url("../Fonts/Shreelipi/WDEV001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV001E";
+	font-family: "WDEV001E";
 	src: url("../Fonts/Shreelipi/WDEV001E.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV002";
+	font-family: "WDEV002";
 	src: url("../Fonts/Shreelipi/WDEV002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV002E";
+	font-family: "WDEV002E";
 	src: url("../Fonts/Shreelipi/WDEV002E.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV7001";
+	font-family: "WDEV7001";
 	src: url("../Fonts/Shreelipi/WDEV7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV7001E";
+	font-family: "WDEV7001E";
 	src: url("../Fonts/Shreelipi/WDEV7001E.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV7002";
+	font-family: "WDEV7002";
 	src: url("../Fonts/Shreelipi/WDEV7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WDEV7002E";
+	font-family: "WDEV7002E";
 	src: url("../Fonts/Shreelipi/WDEV7002E.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WGUJ001";
+	font-family: "WGUJ001";
 	src: url("../Fonts/Shreelipi/WGUJ001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WGUJ002";
+	font-family: "WGUJ002";
 	src: url("../Fonts/Shreelipi/WGUJ002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WGUJ7001";
+	font-family: "WGUJ7001";
 	src: url("../Fonts/Shreelipi/WGUJ7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WGUJ7002";
+	font-family: "WGUJ7002";
 	src: url("../Fonts/Shreelipi/WGUJ7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WKAN001";
+	font-family: "WKAN001";
 	src: url("../Fonts/Shreelipi/WKAN001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WKAN002";
+	font-family: "WKAN002";
 	src: url("../Fonts/Shreelipi/WKAN002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WKAN7001";
+	font-family: "WKAN7001";
 	src: url("../Fonts/Shreelipi/WKAN7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WKAN7002";
+	font-family: "WKAN7002";
 	src: url("../Fonts/Shreelipi/WKAN7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WMAL001";
+	font-family: "WMAL001";
 	src: url("../Fonts/Shreelipi/WMAL001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WMAL002";
+	font-family: "WMAL002";
 	src: url("../Fonts/Shreelipi/WMAL002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WMAL7001";
+	font-family: "WMAL7001";
 	src: url("../Fonts/Shreelipi/WMAL7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WMAL7002";
+	font-family: "WMAL7002";
 	src: url("../Fonts/Shreelipi/WMAL7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WORI001";
+	font-family: "WORI001";
 	src: url("../Fonts/Shreelipi/WORI001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WORI002";
+	font-family: "WORI002";
 	src: url("../Fonts/Shreelipi/WORI002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WORI01T";
+	font-family: "WORI01T";
 	src: url("../Fonts/Shreelipi/WORI01T.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WORI02T";
+	font-family: "WORI02T";
 	src: url("../Fonts/Shreelipi/WORI02T.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WPUN001";
+	font-family: "WPUN001";
 	src: url("../Fonts/Shreelipi/WPUN001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WPUN002";
+	font-family: "WPUN002";
 	src: url("../Fonts/Shreelipi/WPUN002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTAM001";
+	font-family: "WTAM001";
 	src: url("../Fonts/Shreelipi/WTAM001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTAM002";
+	font-family: "WTAM002";
 	src: url("../Fonts/Shreelipi/WTAM002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTAM7001";
+	font-family: "WTAM7001";
 	src: url("../Fonts/Shreelipi/WTAM7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTAM7002";
+	font-family: "WTAM7002";
 	src: url("../Fonts/Shreelipi/WTAM7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL001";
+	font-family: "WTEL001";
 	src: url("../Fonts/Shreelipi/WTEL001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL002";
+	font-family: "WTEL002";
 	src: url("../Fonts/Shreelipi/WTEL002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL7001";
+	font-family: "WTEL7001";
 	src: url("../Fonts/Shreelipi/WTEL7001.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL7002";
+	font-family: "WTEL7002";
 	src: url("../Fonts/Shreelipi/WTEL7002.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL701T";
+	font-family: "WTEL701T";
 	src: url("../Fonts/Shreelipi/WTEL701T.TTF");
 
 }@font-face {
-	font-family: "Shreelipi WTEL702T";
+	font-family: "WTEL702T";
 	src: url("../Fonts/Shreelipi/WTEL702T.TTF");
 
 }@font-face {
-	font-family: "Sriraju SRIRAJBI";
+	font-family: "SRIRAJBI";
 	src: url("../Fonts/Sriraju/SRIRAJBI.ttf");
 
 }@font-face {
-	font-family: "Sriraju SRIRAJUB";
+	font-family: "SRIRAJUB";
 	src: url("../Fonts/Sriraju/SRIRAJUB.ttf");
 
 }@font-face {
-	font-family: "Sriraju SRIRAJUI";
+	font-family: "SRIRAJUI";
 	src: url("../Fonts/Sriraju/SRIRAJUI.ttf");
 
 }@font-face {
-	font-family: "Sriraju SRIRAJUO";
+	font-family: "SRIRAJUO";
 	src: url("../Fonts/Sriraju/SRIRAJUO.ttf");
 
 }@font-face {
-	font-family: "Sriraju SRIRAJUR";
+	font-family: "SRIRAJUR";
 	src: url("../Fonts/Sriraju/SRIRAJUR.ttf");
 
 }@font-face {
-	font-family: "Sriraju SRIRAUOI";
+	font-family: "SRIRAUOI";
 	src: url("../Fonts/Sriraju/SRIRAUOI.ttf");
 
 }@font-face {
-	font-family: "Tunga Tunga Regular";
+	font-family: "Tunga Regular";
 	src: url("../Fonts/Tunga/Tunga Regular.ttf");
 
 }@font-face {
-	font-family: "Tunga tungab";
+	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
 
 }

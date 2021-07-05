@@ -8,6 +8,8 @@ var consonent_length
 
 var fonts_json = "fonts.json"
 
+var new_fonts_json = "newFonts.json"
+
 var extention = '.json'
 
 
@@ -68,7 +70,7 @@ var getMinimum = (val1, val2) =>{
         return val1
     return val2
 }
-
+/*
 var getFonts = (val, page) =>{
     let bytes = fs.readFileSync(fonts_json)
     let json = JSON.parse(bytes)
@@ -91,6 +93,44 @@ var getFonts = (val, page) =>{
         data:sendingData,
         isLastPage: isLastPage
     }
+    return parsingData
+}
+*/
+
+var getFonts = (val, page) =>{
+    let bytes = fs.readFileSync(new_fonts_json)
+    let json = JSON.parse(bytes)
+    let ar = Object.keys(json).map((key)=>{
+        return json[key]
+    })
+
+    let filter = ar.filter( data =>{
+        if(data.family.toLowerCase().includes(val.toLowerCase())){
+            return true
+        }
+    })
+    
+    let result = filter.map( data => {
+        const first_font = data['fonts'][0]['font']
+        const obj = {
+            font: first_font,
+            family: data.family,
+            link: data.link
+        }
+        return obj
+    })
+    const min = getMinimum(result.length, page*maxDataPerPage)
+    const min_for_starting = getMinimum(result.length, (page-1)*maxDataPerPage)
+    const sendingData = result.slice(min_for_starting, min)
+    let isLastPage = false
+    if(min==result.length)
+        isLastPage = true
+    
+    const parsingData = {
+        data:sendingData,
+        isLastPage: isLastPage
+    }
+    console.log(parsingData)
     return parsingData
 }
 
