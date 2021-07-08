@@ -1,0 +1,49 @@
+.font-cnt {
+  padding: 10px 5px;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.font-cnt:first-child {
+  border-top: 1px solid gray;
+}
+
+.font-name {
+  box-sizing: border-box;
+}
+
+.font-name span {
+  font-size: medium;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.font-para {
+  padding-top: 10px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.font-para p {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: nowrap;
+  word-spacing: initial;
+  position: relative;
+}
+
+.extra-btn {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  right: 0px;
+  top: 0px;
+  box-shadow: -15px 0px 10px 0px white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}

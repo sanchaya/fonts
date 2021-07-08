@@ -36,7 +36,12 @@
     <script src="/js/inputStyle.js"></script>
     <script src="/js/language.js"></script>
     
-  <% } %> 
+  <% }if(page.fontFamilyPage){ %>
+    <link rel="stylesheet" href="/css/inputStyle.css"/>
+    <link rel="stylesheet" href="/css/fontFamily.css">
+    <script src="/js/inputStyle.js"></script>
+    <script src="/js/language.js"></script>
+  <% } %>    
 </head>
 <body>
 
@@ -79,7 +84,9 @@
         <%- include('fontShowPage/fontShowPage') %> 
     <% }else if(page.errorPage){ %>
         <h2 class="text-danger" style="text-align: center;"><%= msg %></h2> 
-    <% } %>    
+    <% }else if(page.fontFamilyPage){ %>
+        <%- include('fontFamilyPage/fontFamilyPage', {data: data}) %> 
+    <% } %> 
 
     
 </body>

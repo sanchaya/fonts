@@ -21,7 +21,8 @@ const maxDataPerPage = 60
 const pages = {
     fontPage:false,
     fontShowPage:false,
-    errorPage:false
+    errorPage:false,
+    fontFamilyPage: false
 }
 
 module.exports = {

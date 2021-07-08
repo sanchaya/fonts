@@ -19,7 +19,7 @@ const path = require('path')
 
 const bodyParser = require('body-parser')
 
-const {get_all_data, get_all_conjuncts,getFonts,getFontFromParam} = require('./Main/fontSelectedPage/fontSelectedPage')
+const {get_all_data, get_all_conjuncts,getFonts,getFontFromParam, getFontsForFamilyPage} = require('./Main/fontSelectedPage/fontSelectedPage')
 
 const fs = require('fs')
 
@@ -61,10 +61,11 @@ var throwErrorPage = (res,msg) =>{
 
 
 /*------------------app routing-------------- */
-router.get('/fonts/:font',(req,res) => {
+router.get('/fonts/:family/:font',(req,res) => {
     let page = {...pages}
-    let param = req.params.font
+    let param = req.params
     let fontData = getFontFromParam(param)
+    
     if(fontData){
         font = fontData.font
     }
@@ -94,6 +95,26 @@ router.get('/fonts/:font',(req,res) => {
             consonants:syllabary.consonants,
             numerals:numerals
         }
+    }
+    res.render('index', parsingData)
+})
+
+
+router.get('/family/:family',(req,res) => {
+    let page = {...pages}
+
+    page.fontFamilyPage = true
+
+    let param = req.params.family
+    let fontData = getFontsForFamilyPage(param)
+    if(!fontData){
+        throwErrorPage(res,"There is no Font matching your search")
+        return 
+    }    
+
+    let parsingData = {
+        page:page,
+        data:fontData
     }
     res.render('index', parsingData)
 })

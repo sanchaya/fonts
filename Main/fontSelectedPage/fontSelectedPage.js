@@ -97,6 +97,12 @@ var getFonts = (val, page) =>{
 }
 */
 
+var getFontsForFamilyPage = (family) => {
+    let bytes = fs.readFileSync(new_fonts_json)
+    let json = JSON.parse(bytes)
+    return json[family]
+}
+
 var getFonts = (val, page) =>{
     let bytes = fs.readFileSync(new_fonts_json)
     let json = JSON.parse(bytes)
@@ -130,15 +136,22 @@ var getFonts = (val, page) =>{
         data:sendingData,
         isLastPage: isLastPage
     }
-    console.log(parsingData)
+    
     return parsingData
 }
 
 var getFontFromParam = (param) =>{
-    let bytes = fs.readFileSync(fonts_json)
+    let bytes = fs.readFileSync(new_fonts_json)
     let json = JSON.parse(bytes)
-    let result = json[param]
-    return result
+    const family = param.family
+    const font = param.font
+    try{
+        let result = json[family]['fonts']
+        return result.find( ele => ele.link === font)
+    }catch(e){
+        return false
+    }
+    return false
 }
 
 
@@ -146,5 +159,6 @@ module.exports = {
     get_all_data,
     get_all_conjuncts,
     getFonts,
-    getFontFromParam
+    getFontFromParam,
+    getFontsForFamilyPage
 }
