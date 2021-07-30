@@ -57,7 +57,8 @@ $(document).ready(function(){
 var set_initial_text = () =>{
     $('#type-text').val("ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ")
     input_to_para($('#type-text'))
-    addClassInput($(".field-wrapper input"))
+    //addClassInput($(".field-wrapper input"))
+    addClassInput($('#type-text'))
 }
 
 var input_to_para = (ele) =>{

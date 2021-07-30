@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     ajaxToJson('')
 
-    $('input.form-control').keyup(function(){
+    $('#type-search').keyup(function(){
         page = 1
         $('div.container.showPage').html('').fadeIn()
         let val = $(this).val()
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
     if($(window).scrollTop() == $(document).height() - $(window).height()) {
-           const search = $('input.form-control').val()
+           const search = $('#type-search').val()
            ajaxToJson(search)
     }
 });
@@ -40,7 +40,7 @@ var ajaxToJson = (val) =>{
 
 var displayError = () =>{
     $('div.container.showPage').html("<h2 style='text-align:center;'> An error occured</h2>")
-    $('input.form-control').val("")
+    $('#type-search').val("")
 }
 
 var changeTextNFont = () => {

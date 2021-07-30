@@ -1,14 +1,11 @@
-const { json } = require('express')
 const fs = require('fs')
-const { prefix_name, all_conjuncts, maxDataPerPage} = require('../../configuaration')
+const {maxDataPerPage} = require('../../configuaration')
 
 var vowels_length
 
 var consonent_length
 
 var fonts_json = "fonts.json"
-
-var new_fonts_json = "newFonts.json"
 
 var extention = '.json'
 
@@ -70,41 +67,15 @@ var getMinimum = (val1, val2) =>{
         return val1
     return val2
 }
-/*
-var getFonts = (val, page) =>{
-    let bytes = fs.readFileSync(fonts_json)
-    let json = JSON.parse(bytes)
-    let ar = Object.keys(json).map((key)=>{
-        return json[key]
-    })
-    let filter = ar.filter( data =>{
-        if(data.font.toLowerCase().includes(val.toLowerCase())){
-            return true
-        }
-    })
-    const min = getMinimum(filter.length, page*maxDataPerPage)
-    const min_for_starting = getMinimum(filter.length, (page-1)*maxDataPerPage)
-    const sendingData = filter.slice(min_for_starting, min)
-    let isLastPage = false
-    if(min==filter.length)
-        isLastPage = true
-    
-    const parsingData = {
-        data:sendingData,
-        isLastPage: isLastPage
-    }
-    return parsingData
-}
-*/
 
 var getFontsForFamilyPage = (family) => {
-    let bytes = fs.readFileSync(new_fonts_json)
+    let bytes = fs.readFileSync(fonts_json)
     let json = JSON.parse(bytes)
     return json[family]
 }
 
 var getFonts = (val, page) =>{
-    let bytes = fs.readFileSync(new_fonts_json)
+    let bytes = fs.readFileSync(fonts_json)
     let json = JSON.parse(bytes)
     let ar = Object.keys(json).map((key)=>{
         return json[key]
@@ -141,7 +112,7 @@ var getFonts = (val, page) =>{
 }
 
 var getFontFromParam = (param) =>{
-    let bytes = fs.readFileSync(new_fonts_json)
+    let bytes = fs.readFileSync(fonts_json)
     let json = JSON.parse(bytes)
     const family = param.family
     const font = param.font
