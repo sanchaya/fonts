@@ -126,7 +126,7 @@ router.get('/', (req,res) => {
     let parsingData = {
         page:pag
     }
-    res.render('index',parsingData)
+    res.render('home',parsingData)
 })
 
 

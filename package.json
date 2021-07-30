@@ -4,7 +4,9 @@
   "description": "font project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "ui": "browser-sync start --proxy localhost:3001 --files=**/*  --ignore=node_modules --reload-delay 1 --no-ui --no-inject-changes"
   },
   "author": "thirumurugan",
   "license": "ISC",

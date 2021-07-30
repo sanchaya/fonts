@@ -1,12 +1,33 @@
 $(document).ready(function(){
+
+    dropdownHelper()
     hideAllConjuncts()
     showInitialConjuncts()
     clickActionOnDropdown()
+    //dropdownOverHidden()
 
     $('#collapse-button').click(function(){
         $('#myNavbar').collapse('toggle')
    })
+
+
+   // hover on font
+   $('.rd-familypage').hover(onHover, onLeave)
 })
+
+function dropdownOverHidden(){
+    $('.dropdown').on('show.bs.dropdown', function() {
+        $('body').append($('.dropdown').css({
+          position: 'absolute',
+          left: $('.dropdown').offset().left,
+          top: $('.dropdown').offset().top
+        }).detach());
+      });      
+}
+
+var dropdownHelper = () => {
+    $('.dropdown-toggle').dropdown();
+}
 
 var hideAllConjuncts = () =>{
     $('.conjuncts-cnt').each(function(){
@@ -25,4 +46,16 @@ var clickActionOnDropdown = () =>{
         hideAllConjuncts()
         $('#'+id).prop('hidden',false)
     })
+}
+
+
+
+/*----------------- hover of each font ---------------------- */
+
+function onHover(){
+    $(this).parent().css('box-shadow', '0px 4px 8px 0px rgba(0, 0, 0, 0.2)')
+}
+
+function onLeave(){
+    $(this).parent().css('box-shadow', 'none')
 }

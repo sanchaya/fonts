@@ -1,12 +1,18 @@
-<div class="container" style="margin: 32px;">
+<div class="container" style="margin: auto; margin-top:32px; padding: 0px;">
   <div class="container row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
+        <div class="field-wrapper">
+            <input type="text" maxlength="100" autocomplete="off" id="type-search">
+            <div class="field-placeholder"><span>Type search</span></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
           <div class="field-wrapper">
               <input type="text" maxlength="100" autocomplete="off" class="kan-ime" id="type-text">
               <div class="field-placeholder"><span>Type Text</span></div>
           </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
           <div id="slider-align">
               <div class="slidecontainer">
                   <input type="range" min="8" max="100" value="50" name="range" class="slider" id="myRange">
@@ -16,6 +22,297 @@
       </div>
   </div>
 </div>
+<div class="container">
+
+    <div id="tool-bar">
+        <div id="search">
+            <div class="search-icon">
+                <span class="glyphicon glyphicon-search"></span>    
+            </div>
+            <div class="search-input">
+                <input type="text" value="" maxlength="100" placeholder="search fonts..." autocomplete="off" class="search-inputbox">
+            </div>
+        </div>
+        <div id="type-box">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Custom
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="#">Custom</a></li>
+                <li><a href="#">Sentence</a></li>
+                <li><a href="#">Alphabet</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Numerals</a></li>
+                </ul>
+            </div> 
+            <div class="type-input">
+                <input type="text" valu="" maxlength="100" autocomplete="off" placeholder="type something..." class="type-inputbox">
+            </div>
+        </div>
+        <div id="font-size-changer">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">8
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu scrollable-menu">
+                <li><a href="#">8</a></li>
+                <li><a href="#">12</a></li>
+                <li><a href="#">14</a></li>
+                <li><a href="#">20</a></li>
+                <li><a href="#">24</a></li>
+                <li><a href="#">32</a></li>
+                <li><a href="#">40</a></li>
+                <li><a href="#">64</a></li>
+                <li><a href="#">96</a></li>
+                <li><a href="#">120</a></li>
+                <li><a href="#">184</a></li>
+                <li><a href="#">280</a></li>
+                </ul>
+            </div>
+            <div class="font-size-slider">
+                <input type="range" max="100" min="8" id="slider" class="font-size-inc">
+            </div>
+        </div>
+        <div id="refresh">
+            <div class="refresh-cnt">
+                <span class="glyphicon glyphicon-refresh"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+    <div id="tool-bar" style="border: 1px solid gray;padding: 3px;border-radius: 30px;justify-content: space-between;display: flex;">
+        <div id="search" style="display: inline;">
+            <div class="search-icon" style="display: inline-block;padding-left: 5px;">
+                <span class="glyphicon glyphicon-search" style="font-size: large;"></span>    
+            </div>
+            <div class="search-input" style="display: inline-block;">
+                <input type="text" value="" maxlength="100" placeholder="search fonts..." autocomplete="off" class="search-inputbox" style="border: none; padding: 5px;border-radius: 30px;">
+            </div>
+        </div>
+        <div id="type-box" style="display: inline-table;border-left: 1px solid gray;padding-left: 10px;">
+            <div class="dropdown" style="display: inline;">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Custom
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="#">Custom</a></li>
+                <li><a href="#">Sentence</a></li>
+                <li><a href="#">Alphabet</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Numerals</a></li>
+                </ul>
+            </div> 
+            <div class="type-input" style="display: inline;">
+                <input type="text" valu="" maxlength="100" autocomplete="off" placeholder="type something..." class="type-inputbox" style="padding: 5px;font-size: larger;border: none;">
+            </div>
+        </div>
+        <div id="font-size-changer" style="display: inline;padding-left: 10px;border-left: 1px solid gray;">
+            <div class="dropdown" style="display: inline;">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">8
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu scrollable-menu">
+                <li><a href="#">8</a></li>
+                <li><a href="#">12</a></li>
+                <li><a href="#">14</a></li>
+                <li><a href="#">20</a></li>
+                <li><a href="#">24</a></li>
+                <li><a href="#">32</a></li>
+                <li><a href="#">40</a></li>
+                <li><a href="#">64</a></li>
+                <li><a href="#">96</a></li>
+                <li><a href="#">120</a></li>
+                <li><a href="#">184</a></li>
+                <li><a href="#">280</a></li>
+                </ul>
+            </div>
+            <div class="font-size-slider" style="display: inline-block;max-width: 170px;min-width: 100px;">
+                <input type="range" max="100" min="8" id="slider" class="font-size-inc">
+            </div>
+        </div>
+        <div id="refresh" style="font-size: large;display: flex;align-items: center;padding: 0px 10px;border-left: 1px solid gray;">
+            <div class="refresh-cnt">
+                <span class="glyphicon glyphicon-refresh"                                                                                                                                           ></span>
+            </div>
+        </div>
+    </div>-->
+    
+</div>
+<div class="container">
+    <div class="additional-toolbar">
+        <div class="main-tools">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Custom
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="#">Custom</a></li>
+                <li><a href="#">Sentence</a></li>
+                <li><a href="#">Alphabet</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Numerals</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Custom
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="#">Custom</a></li>
+                <li><a href="#">Sentence</a></li>
+                <li><a href="#">Alphabet</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Numerals</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Custom
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="#">Custom</a></li>
+                <li><a href="#">Sentence</a></li>
+                <li><a href="#">Alphabet</a></li>
+                <li><a href="#">Paragraph</a></li>
+                <li><a href="#">Numerals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="add-tb-gap"></div>
+        <div class="var-fonts">
+            <input type="checkbox" name="var-fonts-checkbox" id="var-fonts-checkbox">
+            <label for="var-fonts-checkbox"> show only variable fonts</label>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="total-family" style="display: flex;margin-top: 20px;flex-direction: row;flex-wrap: wrap;">
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="each-font" style="word-break: break-word; padding: 10px;min-height: 200px;border: 1px solid gray;border-radius: 5px;">
+            <a href="#" class="rd-familypage" style="color: black;">
+                <div class="family-cnt">
+                    <div class="font-header" style="position: relative;">
+                        <div class="family-name">
+                            <h4 style="margin: 0px;text-transform: capitalize;font-weight: bold;">family</h4>
+                            <h5 style="text-transform: capitalize;color: gray;">developer</h5>
+                        </div>
+                        <div class="n-styles" style="position: absolute;top: 0px;right: 0px;">
+                            <span style="color: gray;">n styles</span>
+                        </div>
+                    </div>
+                    <div class="font-text" style="margin-top: 20px;">
+                        <p>
+                            ಇದು ಮಾದರಿ ಪಠ್ಯವಾಗಿದೆ. ನಿಮಗೆ ಬೇಕಾದಾಗ ನೀವು ಬದಲಾಯಿಸಬಹುದು.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- maxi element - 1 to avoid collapse -->
+        <div class="each-font" style="padding: 0px 10px;min-height: 0px;border: 1px"></div>
+        <div class="each-font" style="padding: 0px 10px;min-height: 0px;border: 1px"></div>
+        <div class="each-font" style="padding: 0px 10px;min-height: 0px;border: 1px"></div>
+        <div class="each-font" style="padding: 0px 10px;min-height: 0px;border: 1px"></div>
+        <div class="each-font" style="padding: 0px 10px;min-height: 0px;border: 1px"></div>
+    </div>
+</div>
+
 <div class="container showPage">
     <!--<div class="custom-card">
         <div class="custom-card-cnt">
