@@ -106,6 +106,15 @@ nav {
   color: var(--span-color);
 }
 
+.left-nav img {
+  height: 80%;
+}
+
+/* in dark mode image */
+body.dark .left-nav img {
+  height: 100%;
+}
+
 .left-nav span {
   margin-left: 25px;
   visibility: hidden;
@@ -166,7 +175,7 @@ nav {
 .right-nav {
   display: flex;
   flex-direction: row;
-  width: 50ch;
+  width: 36ch;
   /* before width: 36ch */
 }
 
@@ -176,7 +185,7 @@ nav {
   align-items: center;
   overflow: hidden;
   padding: 0px 5px;
-  flex-basis: 33.33%;
+  flex-basis: 50%;
   justify-content: center;
   color: var(--text-color3);
   /* font-size: 1.25rem; */
