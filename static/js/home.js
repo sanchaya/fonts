@@ -490,9 +490,15 @@ function toggleDarkLight(){
     if(has){
         $(this).parent().removeClass('dark')
         $('body').removeClass('dark')
+
+        // changing logo for light
+        $('.app-icon').attr('src', 'img/app-icon-light.png')
     }else{
         $(this).parent().addClass('dark')
         $('body').addClass('dark')
+
+        // changing logo for dark
+        $('.app-icon').attr('src', 'img/app-icon-dark.png')
     }
 }
 
