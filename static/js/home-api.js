@@ -61,6 +61,10 @@ var appendCard = (res) => {
     if(!res.isLastPage)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
     $('.fonts-cnt').append(appender)
+    
+    // font container ripple effect
+    $('.fonts-cnt .font').click(clickedForRipple)
+
     changeTextNFont()
     page += 1
 }

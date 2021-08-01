@@ -110,11 +110,6 @@ nav {
   height: 80%;
 }
 
-/* in dark mode image */
-body.dark .left-nav img {
-  height: 100%;
-}
-
 .left-nav span {
   margin-left: 25px;
   visibility: hidden;
@@ -896,9 +891,9 @@ body.dark .left-nav img {
 
 /* -------- fonts-cnt start ---------- */
 .fonts-cnt {
-  margin-top: 20px;
+  margin: 20px 0px;
   display: grid;
-  gap: 10px;
+  gap: 15px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -913,7 +908,12 @@ body.dark .left-nav img {
 }
 
 .fonts-cnt > a {
+  border-radius: 8px;
   overflow: hidden;
+}
+
+.fonts-cnt > a:hover {
+  box-shadow: 2px 4px 8px 2px var(--box-shadow);
 }
 
 .font {
@@ -930,9 +930,9 @@ body.dark .left-nav img {
   background-color: var(--ripple-font);
 }
 
-.font:hover {
+/* .font:hover {
   box-shadow: 2px 4px 8px 2px var(--box-shadow);
-}
+} */
 
 .font .header {
   position: relative;
