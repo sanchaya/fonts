@@ -231,6 +231,7 @@ function refresh_btn(){
     // search box
     $('.toolbar-search-box .search').val('')
     $('.toolbar-search-box > :last-child').css('visibility', 'hidden')
+    $('.search').keyup()
 
     // typebox
     $('.toolbar-type-box .dropdown-content > :nth-child(2)').click()
@@ -266,7 +267,7 @@ function refreshSize(size){
         $('.toolbar-slider-box input').val(sizeInt)
 
         // font-text size changing
-        $('.font-text').css('font-size', sizeInt)
+        $('.font-text').css('font-size', sizeInt + "px") /* before pixel doesn't exist */
     }
 }
 
@@ -350,6 +351,9 @@ function search_box_functionality() {
 
         // focus on the search box
         $('.toolbar-search-box input').focus()
+    
+        // activate keyup action on search box for get the data from ajax
+        $('.search').keyup()
     })
     
     // hide wrong button on no data

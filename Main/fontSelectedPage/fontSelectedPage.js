@@ -90,9 +90,11 @@ var getFonts = (val, page) =>{
     let result = filter.map( data => {
         const first_font = data['fonts'][0]['font']
         const obj = {
+            // data that to be send
             font: first_font,
             family: data.family,
-            link: data.link
+            link: data.link,
+            styles: data['fonts'].length
         }
         return obj
     })
@@ -105,6 +107,8 @@ var getFonts = (val, page) =>{
     
     const parsingData = {
         data:sendingData,
+        totalFamily: Object.keys(json).length,
+        showingFamily: filter.length,
         isLastPage: isLastPage
     }
     
