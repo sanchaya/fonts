@@ -1,3 +1,16 @@
+<% var whichPage = (cPage) => {
+    let pg = Object.keys(page)
+    let currPage = pg.find( ele => {
+        return page[ele]
+    })
+
+    if(currPage == cPage){
+        return "active"
+    }
+
+    return ""
+} %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,30 +20,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font app</title>
     <base href="./">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/css/all.min.css">
 
-    <!-- font css adding -->
-    <link rel="stylesheet" href="/css/fonts.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <% if (page.fontShowPage) { %>
+    
+        <link rel="stylesheet" href="/css/fonts.css">
+     
+        <link rel="stylesheet" href="/css/home.css">
+    
+        <script src="/js/home.js"></script>
+    
+        <script src="/js/home-api.js"></script>
+    
+    <% }else if(page.aboutPage){ %>
+        <link rel="stylesheet" href="/css/about.css">
+    
+        <script src="/js/about.js"></script>
+    <% } %>
 
-    <script src="/js/home.js"></script>
-
-    <script src="/js/home-api.js"></script>
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
-
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  -->
-
-    <link rel="stylesheet" href="/css/home.css">
-
-    <!-- <link rel="stylesheet" href="font_awesome/css/all.css"> -->
-    <link rel="stylesheet" href="/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
@@ -41,9 +54,8 @@
                 <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </div>
             <ul class="slide-menu-item">
-                <li class='active'>Browse Fonts</li>
-                <!-- <li>Icons</li> -->
-                <li>More</li>
+                <li class='<%= whichPage('fontShowPage')%>'><a href="/">Browse Fonts</a></li>
+                <li class='<%= whichPage('aboutPage')%>'><a href="/about">About Us</a></li>
             </ul>
         </div>
         <div class="gap-filler">
@@ -57,14 +69,11 @@
         </div>
         <div class="tot-right-nav">
             <div class="right-nav">
-                <div class="browse-font-tab active">
-                    <span>Browse Font</span>
+                <div class="browse-font-tab <%= whichPage('fontShowPage')%>">
+                    <span><a href="/">Browse Font</a></span>
                 </div>
-                <!-- <div class="icons-tab">
-                    <span>Icons </span>
-                </div> -->
-                <div class="more-tab">
-                    <span>More</span>
+                <div class="about-us-tab <%= whichPage('aboutPage')%>">
+                    <span><a href="/about">About Us</a></span>
                 </div>
             </div>
             <div class="static-right-nav">
@@ -81,166 +90,11 @@
             </div>
         </div>
     </nav>
-    <div class="container" id="sticky-toolbar">
-
-        <div class="toolbar">
-            <div class="toolbar-search-box">
-                <i class="fa fa-search"></i>
-                <input type="search" placeholder="Search here..." class="search">
-                <i class="fa fa-times fa-lg"></i>
-            </div>
-            <div class="toolbar-type-box">
-                <div class="dropdown">
-                    <button class="dropbtn"><span class="dropbtn-span">Sentence</span> <i class="fas fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                    <a>Custom</a>
-                    <a>Sentence</a>
-                    <a>Alphabet</a>
-                    <a>Paragraph</a>
-                    <a>Numerals</a>
-                    </div>
-                </div>
-                <input type="text" class="type" id='type' placeholder="Type something...">
-            </div>
-            <div class="toolbar-slider-box">
-                <div class="dropdown">
-                    <button class="dropbtn"><span class='dropbtn-span'>40px</span> <i class="fas fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a>8</a>
-                        <a>12</a>
-                        <a>14</a>
-                        <a>20</a>
-                        <a>24</a>
-                        <a>32</a>
-                        <a>40</a>
-                        <a>64</a>
-                        <a>96</a>
-                        <a>120</a>
-                        <a>184</a>
-                        <a>280</a>
-                    </div>
-                </div>
-                <input type="range" min="8" max="300" name="range" class="font-increaser">
-            </div>
-            <div class="toolbar-refresh-box">
-                <!-- <i class="fa fa-refresh fa-lg"></i> -->
-                <i class="fas fa-sync-alt fa-lg"></i>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="additional-toolbar">
-            <div id="category-dropdown" class="dropdown">
-                <button class="dropbtn"><span class="dropbtn-span">Categories</span> <i class="fas fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                <!-- <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a> -->
-                  <label class="categories active">Serif
-                    <input type="checkbox" checked="checked" class="categories-checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="categories active">Sans Serif
-                    <input type="checkbox" checked="checked" class="categories-checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="categories active">Display
-                    <input type="checkbox" checked="checked" class="categories-checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="categories active">Handwriting
-                    <input type="checkbox" checked="checked" class="categories-checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="categories active">Monospace
-                    <input type="checkbox" checked="checked" class="categories-checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="reset-btn"><a class="reset-btn-a">Reset</a></label>
-                </div>
-            </div>
-            <div id="language" class="dropdown">
-                <button class="dropbtn"><span class="dropbtn-span">Language</span> <i class="fas fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                <a class="selected">All Languages</a>
-                <a>Kannada</a>
-                </div>
-            </div>
-            <div id="font-properties" class="dropdown">
-                <button class="dropbtn"><span class="dropbtn-span">Font properties</span> <i class="fas fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <label class="font-property">Number of styles
-                        <!-- <span class="font-prop-head">Number of styles</span> -->
-                        <input type="checkbox" class="font-prop-checkbox">
-                        <span class="checkmark"></span>
-                        <input disabled class="font-prop-range" type="range" max='15' min='2'>
-                        <span class="number-of-styles"></span>
-                    </label>
-                    <label class="font-property">Thickness
-                        <!-- <span class="font-prop-head">Number of styles</span> -->
-                        <input type="checkbox" class="font-prop-checkbox">
-                        <span class="checkmark"></span>
-                        <input disabled class="font-prop-range" type="range" max='15' min='2'>
-                    </label>
-                    <label class="font-property">Slant
-                        <!-- <span class="font-prop-head">Number of styles</span> -->
-                        <input type="checkbox" class="font-prop-checkbox">
-                        <span class="checkmark"></span>
-                        <input disabled class="font-prop-range" type="range" max='15' min='2'>
-                    </label>
-                    <label class="font-property">Width
-                        <!-- <span class="font-prop-head">Number of styles</span> -->
-                        <input type="checkbox" class="font-prop-checkbox">
-                        <span class="checkmark"></span>
-                        <input disabled class="font-prop-range" type="range" max='15' min='2'>
-                    </label>
-                    <label class="reset-btn"><a class="reset-btn-a">Reset</a></label>
-                </div>
-            </div>
-            <div class="variable-fonts">
-                <input type="checkbox" name="variable-fonts-shower" id="variable-fonts-shower">
-                <i class="fas fa-check"></i>
-                <label for="variable-fonts-shower"> show only variable fonts</label>
-            </div>
-        </div>        
-    </div>
-    <div class="container">
-        <div class="customizer">
-            <span>x of n family</span>
-            <div>
-                <div class="dropdown">
-                    <button class="dropbtn">Sort by <i class="fas fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                    <a class="selected">Trending</a>
-                    <a>Most popular</a>
-                    <a>Newest</a>
-                    <a>Name</a>
-                    </div>
-                </div>
-                <div class="customizing">
-                    <input type="checkbox" name="grid-or-cart" id="grid-or-cart">
-                    <div>
-                        <i class="fas fa-th"></i>
-                        <i class="fas fa-list"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fonts-cnt">
-            <!-- <a href="https://facebook.com">
-                <div class="font">
-                    <div class="header">
-                        <h4 class="family-name">Roboto</h4>
-                        <span class="developer-name">Christian Robertson</span>
-                        <span class="n-styles">12 styles</span>
-                    </div>
-                    <div class="font-text">
-                        Almost before we know it, we had left the ground
-                    </div>
-                </div>
-            </a> -->
-        </div>
-    </div>
+    <% if (page.fontShowPage) { %>
+        <%- include('home/home') %> 
+    <% }else if(page.aboutPage){ %>
+        <%- include('aboutUs/aboutUs') %>   
+    <% } %>
 </body>
 
 </html>

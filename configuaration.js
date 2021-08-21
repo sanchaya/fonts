@@ -22,7 +22,8 @@ const pages = {
     fontPage:false,
     fontShowPage:false,
     errorPage:false,
-    fontFamilyPage: false
+    fontFamilyPage: false,
+    aboutPage: false
 }
 
 module.exports = {
