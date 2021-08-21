@@ -119,6 +119,14 @@ router.get('/family/:family',(req,res) => {
     res.render('index', parsingData)
 })
 
+router.get('/about', (req, res) => {
+    let pag = {...pages}
+    pag.aboutPage = true
+    let parsingData = {
+        page: pag
+    }
+    res.render('home', parsingData)
+})
 
 router.get('/', (req,res) => {
     let pag = {...pages}

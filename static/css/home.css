@@ -197,6 +197,23 @@ nav {
   border-bottom: 3px solid var(--text-color3);
 }
 
+.right-nav > * > span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.right-nav > * > span > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .selected-family {
   margin-right: 30px;
   margin-left: 10px;
@@ -1043,12 +1060,21 @@ nav {
     position: relative;
     font-size: larger;
     overflow: hidden;
-    padding: 5px;
+    /* padding: 5px; */
     width: 95%;
     margin-bottom: 5px;
     border-end-end-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+  }
+
+  .slide-menu .slide-menu-item li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
   }
 
   .slide-menu .slide-menu-item li:hover:not(.active) {
