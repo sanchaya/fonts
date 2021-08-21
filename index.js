@@ -61,7 +61,7 @@ var throwErrorPage = (res,msg) =>{
 
 
 /*------------------app routing-------------- */
-router.get('/fonts/:family/:font',(req,res) => {
+router.get('/font/:family/:font',(req,res) => {
     let page = {...pages}
     let param = req.params
     let fontData = getFontFromParam(param)

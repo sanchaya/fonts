@@ -924,6 +924,7 @@ nav {
   border-radius: 8px;
   min-height: 225px;
   color: var(--text-color1);
+  height: 100%;
 }
 
 .font .ripple {
