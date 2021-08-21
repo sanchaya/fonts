@@ -3,13 +3,13 @@
     return "active"
   }
   else ''
-} 
-%> 
+}
+%>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Font app</title>
+  <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡ ಫಾಂಟುಗಳಿಗೊಂದು ಸಂಚಯ</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,16 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>‍
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M373VNJ49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2M373VNJ49');
+</script>
   <script src="/js/script.js"></script>
   <% if(page.fontShowPage){ %>
     <script src="/js/fontShowPage.js"></script>
@@ -27,23 +36,23 @@
 
     <link rel="stylesheet" href="/css/home-page.css">
   <% } %>
-  <% if(page.fontPage){ %> 
+  <% if(page.fontPage){ %>
     <style>
       .overview-char-cnt, #in-para-txt{
         font-family: "<%= font%>", cursive;
       }
     </style>
-    
+
     <link rel="stylesheet" href="/css/inputStyle.css"/>
     <script src="/js/inputStyle.js"></script>
     <script src="/js/language.js"></script>
-    
+
   <% }if(page.fontFamilyPage){ %>
     <link rel="stylesheet" href="/css/inputStyle.css"/>
     <link rel="stylesheet" href="/css/fontFamily.css">
     <script src="/js/inputStyle.js"></script>
     <script src="/js/language.js"></script>
-  <% } %>    
+  <% } %>
 </head>
 <body>
 
@@ -52,32 +61,32 @@
         <button type="button" class="navbar-toggle" id="collapse-button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
+            <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Font</a>
+        <a class="navbar-brand" href="/">ಫಾಂಟ್ಸ್ ಸಂಚಯ<‍/a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li class="<%= should_be_active(page) %>"><a href="/">Home</a></li>
-        </ul> 
+            <li class="<%= should_be_active(page) %>"><a href="/">ಮುಖಪುಟ</a></li>
+        </ul>
     </div>
 
     </nav>
     <% if(page.fontPage){ %>
-        <h2 class="text-primary" style="text-align: center;"><%= font %></h2> 
+        <h2 class="text-primary" style="text-align: center;"><%= font %></h2>
         <%- include('fontSelectedPage/fontSelectedPage',{
-            syllabary:syllabary, 
+            syllabary:syllabary,
             conjuncts:conjuncts,
             overview:overview
-        }) %> 
+        }) %>
     <% }else if(page.fontShowPage){%>
-        <%- include('fontShowPage/fontShowPage') %> 
+        <%- include('fontShowPage/fontShowPage') %>
     <% }else if(page.errorPage){ %>
-        <h2 class="text-danger" style="text-align: center;"><%= msg %></h2> 
+        <h2 class="text-danger" style="text-align: center;"><%= msg %></h2>
     <% }else if(page.fontFamilyPage){ %>
-        <%- include('fontFamilyPage/fontFamilyPage', {data: data}) %> 
-    <% } %> 
+        <%- include('fontFamilyPage/fontFamilyPage', {data: data}) %>
+    <% } %>
 
-    
+
 </body>
 </html>
