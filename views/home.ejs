@@ -18,29 +18,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font app</title>
+    <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡದ ಫಾಂಟುಗಳಿಗೊಂದು ಸಂಚಯ</title>
     <base href="./">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="/css/all.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
     <% if (page.fontShowPage) { %>
-    
+
         <link rel="stylesheet" href="/css/fonts.css">
-     
+
         <link rel="stylesheet" href="/css/home.css">
-    
+
         <script src="/js/home.js"></script>
-    
+
         <script src="/js/home-api.js"></script>
-    
+
     <% }else if(page.aboutPage){ %>
         <link rel="stylesheet" href="/css/about.css">
-    
+
         <script src="/js/about.js"></script>
     <% } %>
 
@@ -54,12 +54,12 @@
                 <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </div>
             <ul class="slide-menu-item">
-                <li class='<%= whichPage('fontShowPage')%>'><a href="/">Browse Fonts</a></li>
-                <li class='<%= whichPage('aboutPage')%>'><a href="/about">About Us</a></li>
+                <li class='<%= whichPage('fontShowPage')%>'><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li class='<%= whichPage('aboutPage')%>'><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
             </ul>
         </div>
         <div class="gap-filler">
-            
+
         </div>
     </div>
     <nav>
@@ -70,10 +70,10 @@
         <div class="tot-right-nav">
             <div class="right-nav">
                 <div class="browse-font-tab <%= whichPage('fontShowPage')%>">
-                    <span><a href="/">Browse Font</a></span>
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
                 </div>
                 <div class="about-us-tab <%= whichPage('aboutPage')%>">
-                    <span><a href="/about">About Us</a></span>
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
                 </div>
             </div>
             <div class="static-right-nav">
@@ -91,9 +91,9 @@
         </div>
     </nav>
     <% if (page.fontShowPage) { %>
-        <%- include('home/home') %> 
+        <%- include('home/home') %>
     <% }else if(page.aboutPage){ %>
-        <%- include('aboutUs/aboutUs') %>   
+        <%- include('aboutUs/aboutUs') %>
     <% } %>
 </body>
 
