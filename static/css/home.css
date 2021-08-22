@@ -99,6 +99,12 @@ nav {
   justify-content: center;
 }
 
+.left-nav > a:nth-child(2) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .left-nav span,
 .left-nav img {
   font-size: large;
@@ -212,6 +218,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .selected-family {

@@ -30,6 +30,11 @@
   }
 }
 
+.navbar {
+  border-radius: 0px !important;
+  margin-top: -20px;
+}
+
 .nav-container {
   padding: 0px 150px;
 }
