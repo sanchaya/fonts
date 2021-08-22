@@ -100,6 +100,12 @@ nav {
   justify-content: center;
 }
 
+.left-nav > a:nth-child(2) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .left-nav span,
 .left-nav img {
   font-size: large;
@@ -206,6 +212,7 @@ nav {
 
 .right-nav > * > span > a {
   display: inline-block;
+  text-align: center;
   width: 100%;
   height: 100%;
   text-decoration: none;

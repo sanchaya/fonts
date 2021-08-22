@@ -27,6 +27,10 @@
 	src: url("../Fonts/Benne/Benne-Regular.ttf");
 
 }@font-face {
+	font-family: "Gubbi";
+	src: url("../Fonts/Gubbi/Gubbi.ttf");
+
+}@font-face {
 	font-family: "inchara";
 	src: url("../Fonts/Inchara/inchara.ttf");
 
@@ -69,6 +73,10 @@
 }@font-face {
 	font-family: "Murty Kannada";
 	src: url("../Fonts/Murty-Kannada/Murty-Kannada.ttf");
+
+}@font-face {
+	font-family: "Navilu";
+	src: url("../Fonts/Navilu/Navilu.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannada Bold";
