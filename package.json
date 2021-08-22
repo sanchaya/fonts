@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "ui": "browser-sync start --proxy localhost:3001 --files=**/*  --ignore=node_modules --reload-delay 1 --no-ui --no-inject-changes"
+    "ui": "browser-sync start --proxy localhost:4040 --files=**/*  --ignore=node_modules --reload-delay 1 --no-ui --no-inject-changes"
   },
   "author": "thirumurugan",
   "license": "ISC",
