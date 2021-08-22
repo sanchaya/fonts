@@ -45,6 +45,16 @@
 			}
 		]
 	},
+	"Gubbi": {
+		"family": "Gubbi",
+		"link": "Gubbi",
+		"fonts": [
+			{
+				"font": "Gubbi",
+				"link": "Gubbi"
+			}
+		]
+	},
 	"Inchara": {
 		"family": "Inchara",
 		"link": "Inchara",
@@ -116,6 +126,16 @@
 			{
 				"font": "Murty Kannada",
 				"link": "Murty-Kannada"
+			}
+		]
+	},
+	"Navilu": {
+		"family": "Navilu",
+		"link": "Navilu",
+		"fonts": [
+			{
+				"font": "Navilu",
+				"link": "Navilu"
 			}
 		]
 	},
