@@ -1,4 +1,60 @@
 {
+	"ATS-Bandipura": {
+		"family": "ATS Bandipura",
+		"link": "ATS-Bandipura",
+		"fonts": [
+			{
+				"font": "ATS Bandipura Bold",
+				"link": "ATS-Bandipura-Bold"
+			}
+		]
+	},
+	"ATS-Bengaluru": {
+		"family": "ATS Bengaluru",
+		"link": "ATS-Bengaluru",
+		"fonts": [
+			{
+				"font": "ATSBengaluru DotBold",
+				"link": "ATSBengaluru-DotBold"
+			},
+			{
+				"font": "ATSBengaluru DotRegular",
+				"link": "ATSBengaluru-DotRegular"
+			},
+			{
+				"font": "ATSBengaluru LEDBold",
+				"link": "ATSBengaluru-LEDBold"
+			},
+			{
+				"font": "ATSBengaluru LEDRegular",
+				"link": "ATSBengaluru-LEDRegular"
+			},
+			{
+				"font": "ATSBengaluru PixelBold",
+				"link": "ATSBengaluru-PixelBold"
+			},
+			{
+				"font": "ATSBengaluru PixelRegular",
+				"link": "ATSBengaluru-PixelRegular"
+			},
+			{
+				"font": "ATSBengaluru SmoothBold",
+				"link": "ATSBengaluru-SmoothBold"
+			},
+			{
+				"font": "ATSBengaluru SmoothRegular",
+				"link": "ATSBengaluru-SmoothRegular"
+			},
+			{
+				"font": "ATSBengaluru SquareBold",
+				"link": "ATSBengaluru-SquareBold"
+			},
+			{
+				"font": "ATSBengaluru SquareRegular",
+				"link": "ATSBengaluru-SquareRegular"
+			}
+		]
+	},
 	"Akaya-Kanadaka": {
 		"family": "Akaya Kanadaka",
 		"link": "Akaya-Kanadaka",
@@ -6,6 +62,176 @@
 			{
 				"font": "AkayaKanadaka Regular",
 				"link": "AkayaKanadaka-Regular"
+			}
+		]
+	},
+	"Anek-Kannada": {
+		"family": "Anek Kannada",
+		"link": "Anek-Kannada",
+		"fonts": [
+			{
+				"font": "AnekKannada VariableFont wdth,wght",
+				"link": "AnekKannada-VariableFont-wdth,wght"
+			},
+			{
+				"font": "AnekKannada Bold",
+				"link": "AnekKannada-Bold"
+			},
+			{
+				"font": "AnekKannada ExtraBold",
+				"link": "AnekKannada-ExtraBold"
+			},
+			{
+				"font": "AnekKannada ExtraLight",
+				"link": "AnekKannada-ExtraLight"
+			},
+			{
+				"font": "AnekKannada Light",
+				"link": "AnekKannada-Light"
+			},
+			{
+				"font": "AnekKannada Medium",
+				"link": "AnekKannada-Medium"
+			},
+			{
+				"font": "AnekKannada Regular",
+				"link": "AnekKannada-Regular"
+			},
+			{
+				"font": "AnekKannada SemiBold",
+				"link": "AnekKannada-SemiBold"
+			},
+			{
+				"font": "AnekKannada Thin",
+				"link": "AnekKannada-Thin"
+			},
+			{
+				"font": "AnekKannada Condensed Bold",
+				"link": "AnekKannada-Condensed-Bold"
+			},
+			{
+				"font": "AnekKannada Condensed ExtraBold",
+				"link": "AnekKannada-Condensed-ExtraBold"
+			},
+			{
+				"font": "AnekKannada Condensed ExtraLight",
+				"link": "AnekKannada-Condensed-ExtraLight"
+			},
+			{
+				"font": "AnekKannada Condensed Light",
+				"link": "AnekKannada-Condensed-Light"
+			},
+			{
+				"font": "AnekKannada Condensed Medium",
+				"link": "AnekKannada-Condensed-Medium"
+			},
+			{
+				"font": "AnekKannada Condensed Regular",
+				"link": "AnekKannada-Condensed-Regular"
+			},
+			{
+				"font": "AnekKannada Condensed SemiBold",
+				"link": "AnekKannada-Condensed-SemiBold"
+			},
+			{
+				"font": "AnekKannada Condensed Thin",
+				"link": "AnekKannada-Condensed-Thin"
+			},
+			{
+				"font": "AnekKannada Expanded Bold",
+				"link": "AnekKannada-Expanded-Bold"
+			},
+			{
+				"font": "AnekKannada Expanded ExtraBold",
+				"link": "AnekKannada-Expanded-ExtraBold"
+			},
+			{
+				"font": "AnekKannada Expanded ExtraLight",
+				"link": "AnekKannada-Expanded-ExtraLight"
+			},
+			{
+				"font": "AnekKannada Expanded Light",
+				"link": "AnekKannada-Expanded-Light"
+			},
+			{
+				"font": "AnekKannada Expanded Medium",
+				"link": "AnekKannada-Expanded-Medium"
+			},
+			{
+				"font": "AnekKannada Expanded Regular",
+				"link": "AnekKannada-Expanded-Regular"
+			},
+			{
+				"font": "AnekKannada Expanded SemiBold",
+				"link": "AnekKannada-Expanded-SemiBold"
+			},
+			{
+				"font": "AnekKannada Expanded Thin",
+				"link": "AnekKannada-Expanded-Thin"
+			},
+			{
+				"font": "AnekKannada SemiCondensed Bold",
+				"link": "AnekKannada-SemiCondensed-Bold"
+			},
+			{
+				"font": "AnekKannada SemiCondensed ExtraBold",
+				"link": "AnekKannada-SemiCondensed-ExtraBold"
+			},
+			{
+				"font": "AnekKannada SemiCondensed ExtraLight",
+				"link": "AnekKannada-SemiCondensed-ExtraLight"
+			},
+			{
+				"font": "AnekKannada SemiCondensed Light",
+				"link": "AnekKannada-SemiCondensed-Light"
+			},
+			{
+				"font": "AnekKannada SemiCondensed Medium",
+				"link": "AnekKannada-SemiCondensed-Medium"
+			},
+			{
+				"font": "AnekKannada SemiCondensed Regular",
+				"link": "AnekKannada-SemiCondensed-Regular"
+			},
+			{
+				"font": "AnekKannada SemiCondensed SemiBold",
+				"link": "AnekKannada-SemiCondensed-SemiBold"
+			},
+			{
+				"font": "AnekKannada SemiCondensed Thin",
+				"link": "AnekKannada-SemiCondensed-Thin"
+			},
+			{
+				"font": "AnekKannada SemiExpanded Bold",
+				"link": "AnekKannada-SemiExpanded-Bold"
+			},
+			{
+				"font": "AnekKannada SemiExpanded ExtraBold",
+				"link": "AnekKannada-SemiExpanded-ExtraBold"
+			},
+			{
+				"font": "AnekKannada SemiExpanded ExtraLight",
+				"link": "AnekKannada-SemiExpanded-ExtraLight"
+			},
+			{
+				"font": "AnekKannada SemiExpanded Light",
+				"link": "AnekKannada-SemiExpanded-Light"
+			},
+			{
+				"font": "AnekKannada SemiExpanded Medium",
+				"link": "AnekKannada-SemiExpanded-Medium"
+			},
+			{
+				"font": "AnekKannada SemiExpanded Regular",
+				"link": "AnekKannada-SemiExpanded-Regular"
+			},
+			{
+				"font": "AnekKannada SemiExpanded SemiBold",
+				"link": "AnekKannada-SemiExpanded-SemiBold"
+			},
+			{
+				"font": "AnekKannada SemiExpanded Thin",
+				"link": "AnekKannada-SemiExpanded-Thin"
 			}
 		]
 	},
@@ -84,6 +310,28 @@
 			{
 				"font": "Kedage t",
 				"link": "Kedage-t"
+			}
+		]
+	},
+	"Kuvempu-Praja": {
+		"family": "Kuvempu Praja",
+		"link": "Kuvempu-Praja",
+		"fonts": [
+			{
+				"font": "Kuvempu Praja1",
+				"link": "Kuvempu-Praja1"
+			},
+			{
+				"font": "Kuvempu Praja2",
+				"link": "Kuvempu-Praja2"
+			},
+			{
+				"font": "Kuvempu Praja3",
+				"link": "Kuvempu-Praja3"
+			},
+			{
+				"font": "Kuvempu Praja4",
+				"link": "Kuvempu-Praja4"
 			}
 		]
 	},
@@ -1110,6 +1358,16 @@
 			{
 				"font": "ufonts.com praja",
 				"link": "ufonts.com-praja"
+			}
+		]
+	},
+	"Raavi": {
+		"family": "Raavi",
+		"link": "Raavi",
+		"fonts": [
+			{
+				"font": "raavi bold unicode kannada font",
+				"link": "raavi-bold-unicode-kannada-font"
 			}
 		]
 	},
@@ -4545,6 +4803,20 @@
 			}
 		]
 	},
+	"Tiro-Kannada": {
+		"family": "Tiro Kannada",
+		"link": "Tiro-Kannada",
+		"fonts": [
+			{
+				"font": "TiroKannada Italic",
+				"link": "TiroKannada-Italic"
+			},
+			{
+				"font": "TiroKannada Regular",
+				"link": "TiroKannada-Regular"
+			}
+		]
+	},
 	"Tunga": {
 		"family": "Tunga",
 		"link": "Tunga",
@@ -4556,6 +4828,60 @@
 			{
 				"font": "tungab",
 				"link": "tungab"
+			}
+		]
+	},
+	"gok-kannada-fonts": {
+		"family": "gok kannada fonts",
+		"link": "gok-kannada-fonts",
+		"fonts": [
+			{
+				"font": "Kar Chandrashekhara Kambara",
+				"link": "Kar-Chandrashekhara-Kambara"
+			},
+			{
+				"font": "Kar Da Raa Bendre",
+				"link": "Kar-Da-Raa-Bendre"
+			},
+			{
+				"font": "Kar Girish Karnad",
+				"link": "Kar-Girish-Karnad"
+			},
+			{
+				"font": "Kar Gopalakrishna Adiga",
+				"link": "Kar-Gopalakrishna-Adiga"
+			},
+			{
+				"font": "Kar K S Narasimhaswamy",
+				"link": "Kar-K-S-Narasimhaswamy"
+			},
+			{
+				"font": "Kar Kuvempu",
+				"link": "Kar-Kuvempu"
+			},
+			{
+				"font": "Kar Maasthi",
+				"link": "Kar-Maasthi"
+			},
+			{
+				"font": "Kar Puchamthe",
+				"link": "Kar-Puchamthe"
+			},
+			{
+				"font": "Kar Puthina",
+				"link": "Kar-Puthina"
+			},
+			{
+				"font": "Kar Shivarama Karantha",
+				"link": "Kar-Shivarama-Karantha"
+			},
+			{
+				"font": "Kar U R Ananthamurthy",
+				"link": "Kar-U-R-Ananthamurthy"
+			},
+			{
+				"font": "Kar Vi Kru Gokak",
+				"link": "Kar-Vi-Kru-Gokak"
 			}
 		]
 	}
