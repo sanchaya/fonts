@@ -271,6 +271,60 @@
 			}
 		]
 	},
+	"Gok-Kannada-Fonts": {
+		"family": "Gok Kannada Fonts",
+		"link": "Gok-Kannada-Fonts",
+		"fonts": [
+			{
+				"font": "Kar Chandrashekhara Kambara",
+				"link": "Kar-Chandrashekhara-Kambara"
+			},
+			{
+				"font": "Kar Da Raa Bendre",
+				"link": "Kar-Da-Raa-Bendre"
+			},
+			{
+				"font": "Kar Girish Karnad",
+				"link": "Kar-Girish-Karnad"
+			},
+			{
+				"font": "Kar Gopalakrishna Adiga",
+				"link": "Kar-Gopalakrishna-Adiga"
+			},
+			{
+				"font": "Kar K S Narasimhaswamy",
+				"link": "Kar-K-S-Narasimhaswamy"
+			},
+			{
+				"font": "Kar Kuvempu",
+				"link": "Kar-Kuvempu"
+			},
+			{
+				"font": "Kar Maasthi",
+				"link": "Kar-Maasthi"
+			},
+			{
+				"font": "Kar Puchamthe",
+				"link": "Kar-Puchamthe"
+			},
+			{
+				"font": "Kar Puthina",
+				"link": "Kar-Puthina"
+			},
+			{
+				"font": "Kar Shivarama Karantha",
+				"link": "Kar-Shivarama-Karantha"
+			},
+			{
+				"font": "Kar U R Ananthamurthy",
+				"link": "Kar-U-R-Ananthamurthy"
+			},
+			{
+				"font": "Kar Vi Kru Gokak",
+				"link": "Kar-Vi-Kru-Gokak"
+			}
+		]
+	},
 	"Gubbi": {
 		"family": "Gubbi",
 		"link": "Gubbi",
@@ -288,6 +342,16 @@
 			{
 				"font": "inchara",
 				"link": "inchara"
+			}
+		]
+	},
+	"Karnata-F-Kittel-Font": {
+		"family": "Karnata F Kittel Font",
+		"link": "Karnata-F-Kittel-Font",
+		"fonts": [
+			{
+				"font": "Karnata F Kittel",
+				"link": "Karnata-F-Kittel"
 			}
 		]
 	},
@@ -387,9 +451,9 @@
 			}
 		]
 	},
-	"NotoSansKannada-unhinted": {
-		"family": "NotoSansKannada unhinted",
-		"link": "NotoSansKannada-unhinted",
+	"NotoSansKannada-Unhinted": {
+		"family": "NotoSansKannada Unhinted",
+		"link": "NotoSansKannada-Unhinted",
 		"fonts": [
 			{
 				"font": "NotoSansKannada Bold",
@@ -409,9 +473,9 @@
 			}
 		]
 	},
-	"NotoSerifKannada-unhinted": {
-		"family": "NotoSerifKannada unhinted",
-		"link": "NotoSerifKannada-unhinted",
+	"NotoSerifKannada-Unhinted": {
+		"family": "NotoSerifKannada Unhinted",
+		"link": "NotoSerifKannada-Unhinted",
 		"fonts": [
 			{
 				"font": "NotoSerifKannada Bold",
@@ -423,9 +487,9 @@
 			}
 		]
 	},
-	"Nudi-fonts": {
-		"family": "Nudi fonts",
-		"link": "Nudi-fonts",
+	"Nudi-Fonts": {
+		"family": "Nudi Fonts",
+		"link": "Nudi-Fonts",
 		"fonts": [
 			{
 				"font": "NUDI 19 E",
@@ -4828,60 +4892,6 @@
 			{
 				"font": "tungab",
 				"link": "tungab"
-			}
-		]
-	},
-	"gok-kannada-fonts": {
-		"family": "gok kannada fonts",
-		"link": "gok-kannada-fonts",
-		"fonts": [
-			{
-				"font": "Kar Chandrashekhara Kambara",
-				"link": "Kar-Chandrashekhara-Kambara"
-			},
-			{
-				"font": "Kar Da Raa Bendre",
-				"link": "Kar-Da-Raa-Bendre"
-			},
-			{
-				"font": "Kar Girish Karnad",
-				"link": "Kar-Girish-Karnad"
-			},
-			{
-				"font": "Kar Gopalakrishna Adiga",
-				"link": "Kar-Gopalakrishna-Adiga"
-			},
-			{
-				"font": "Kar K S Narasimhaswamy",
-				"link": "Kar-K-S-Narasimhaswamy"
-			},
-			{
-				"font": "Kar Kuvempu",
-				"link": "Kar-Kuvempu"
-			},
-			{
-				"font": "Kar Maasthi",
-				"link": "Kar-Maasthi"
-			},
-			{
-				"font": "Kar Puchamthe",
-				"link": "Kar-Puchamthe"
-			},
-			{
-				"font": "Kar Puthina",
-				"link": "Kar-Puthina"
-			},
-			{
-				"font": "Kar Shivarama Karantha",
-				"link": "Kar-Shivarama-Karantha"
-			},
-			{
-				"font": "Kar U R Ananthamurthy",
-				"link": "Kar-U-R-Ananthamurthy"
-			},
-			{
-				"font": "Kar Vi Kru Gokak",
-				"link": "Kar-Vi-Kru-Gokak"
 			}
 		]
 	}
