@@ -4894,5 +4894,19 @@
 				"link": "tungab"
 			}
 		]
+	},
+	"karnata-f-kittel-font": {
+		"family": "karnata f kittel font",
+		"link": "karnata-f-kittel-font",
+		"fonts": [
+			{
+				"font": "Karnata F Kittel",
+				"link": "Karnata-F-Kittel"
+			},
+			{
+				"font": "Karnata FKittel",
+				"link": "Karnata-FKittel"
+			}
+		]
 	}
 }

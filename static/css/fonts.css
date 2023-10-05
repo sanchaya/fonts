@@ -4726,4 +4726,12 @@
 	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
 
+}@font-face {
+	font-family: "Karnata F Kittel";
+	src: url("../Fonts/karnata-f-kittel-font/Karnata F Kittel.ttf");
+
+}@font-face {
+	font-family: "Karnata FKittel";
+	src: url("../Fonts/karnata-f-kittel-font/Karnata-FKittel.ttf");
+
 }
