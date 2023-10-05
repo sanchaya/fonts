@@ -235,12 +235,64 @@
 	src: url("../Fonts/Benne/Benne-Regular.ttf");
 
 }@font-face {
+	font-family: "Kar Chandrashekhara Kambara";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Chandrashekhara Kambara.ttf");
+
+}@font-face {
+	font-family: "Kar Da Raa Bendre";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Da Raa Bendre.ttf");
+
+}@font-face {
+	font-family: "Kar Girish Karnad";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Girish Karnad.ttf");
+
+}@font-face {
+	font-family: "Kar Gopalakrishna Adiga";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Gopalakrishna Adiga.ttf");
+
+}@font-face {
+	font-family: "Kar K S Narasimhaswamy";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar K S Narasimhaswamy.ttf");
+
+}@font-face {
+	font-family: "Kar Kuvempu";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Kuvempu.ttf");
+
+}@font-face {
+	font-family: "Kar Maasthi";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Maasthi.ttf");
+
+}@font-face {
+	font-family: "Kar Puchamthe";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Puchamthe.ttf");
+
+}@font-face {
+	font-family: "Kar Puthina";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Puthina.ttf");
+
+}@font-face {
+	font-family: "Kar Shivarama Karantha";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Shivarama Karantha.ttf");
+
+}@font-face {
+	font-family: "Kar U R Ananthamurthy";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar U R Ananthamurthy.ttf");
+
+}@font-face {
+	font-family: "Kar Vi Kru Gokak";
+	src: url("../Fonts/Gok-Kannada-Fonts/Kar Vi Kru Gokak.ttf");
+
+}@font-face {
 	font-family: "Gubbi";
 	src: url("../Fonts/Gubbi/Gubbi.ttf");
 
 }@font-face {
 	font-family: "inchara";
 	src: url("../Fonts/Inchara/inchara.ttf");
+
+}@font-face {
+	font-family: "Karnata F Kittel";
+	src: url("../Fonts/Karnata-F-Kittel-Font/Karnata F Kittel.ttf");
 
 }@font-face {
 	font-family: "Kedage b";
@@ -304,591 +356,591 @@
 
 }@font-face {
 	font-family: "NotoSansKannada Bold";
-	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannada-Bold.ttf");
+	src: url("../Fonts/NotoSansKannada-Unhinted/NotoSansKannada-Bold.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannada Regular";
-	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannada-Regular.ttf");
+	src: url("../Fonts/NotoSansKannada-Unhinted/NotoSansKannada-Regular.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannadaUI Bold";
-	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannadaUI-Bold.ttf");
+	src: url("../Fonts/NotoSansKannada-Unhinted/NotoSansKannadaUI-Bold.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannadaUI Regular";
-	src: url("../Fonts/NotoSansKannada-unhinted/NotoSansKannadaUI-Regular.ttf");
+	src: url("../Fonts/NotoSansKannada-Unhinted/NotoSansKannadaUI-Regular.ttf");
 
 }@font-face {
 	font-family: "NotoSerifKannada Bold";
-	src: url("../Fonts/NotoSerifKannada-unhinted/NotoSerifKannada-Bold.ttf");
+	src: url("../Fonts/NotoSerifKannada-Unhinted/NotoSerifKannada-Bold.ttf");
 
 }@font-face {
 	font-family: "NotoSerifKannada Regular";
-	src: url("../Fonts/NotoSerifKannada-unhinted/NotoSerifKannada-Regular.ttf");
+	src: url("../Fonts/NotoSerifKannada-Unhinted/NotoSerifKannada-Regular.ttf");
 
 }@font-face {
 	font-family: "NUDI 19 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 19 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 19 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 19 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 19 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 19 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 20 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 20 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 20 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 20 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 20 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 20 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 21 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 21 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 21 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 21 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 21 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 21 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 22 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 22 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 22 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 22 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 22 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 22 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 23 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 23 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 23 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 23 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 23 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 23 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 24 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 24 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 24 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 24 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 24 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 24 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 25 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 25 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 25 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 25 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 25 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 25 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 26 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 26 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 26 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 26 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 26 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 26 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 27 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 27 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 27 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 27 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 27 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 27 K.TTF");
 
 }@font-face {
 	font-family: "NUDI 28 E";
-	src: url("../Fonts/Nudi_fonts/NUDI 28 E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 28 E.TTF");
 
 }@font-face {
 	font-family: "NUDI 28 K";
-	src: url("../Fonts/Nudi_fonts/NUDI 28 K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI 28 K.TTF");
 
 }@font-face {
 	font-family: "NUDI KVK E B";
-	src: url("../Fonts/Nudi_fonts/NUDI KVK E B.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI KVK E B.TTF");
 
 }@font-face {
 	font-family: "NUDI KVK E";
-	src: url("../Fonts/Nudi_fonts/NUDI KVK E.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI KVK E.TTF");
 
 }@font-face {
 	font-family: "NUDI KVK K B";
-	src: url("../Fonts/Nudi_fonts/NUDI KVK K B.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI KVK K B.TTF");
 
 }@font-face {
 	font-family: "NUDI KVK K";
-	src: url("../Fonts/Nudi_fonts/NUDI KVK K.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI KVK K.TTF");
 
 }@font-face {
 	font-family: "NUDI UNI 01E BOLD";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 01E BOLD.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 01E BOLD.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 01E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 01E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 01E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 01K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 01K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 01K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 02E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 02E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 02E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 02K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 02K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 02K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 03E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 03E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 03E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 03K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 03K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 03K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 04E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 04E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 04E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 04K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 04K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 04K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 06E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 06E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 06E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 06K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 06K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 06K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 07E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 07E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 07E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 07K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 07K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 07K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 08E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 08E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 08E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 08K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 08K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 08K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 09E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 09E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 09E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 09K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 09K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 09K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 10E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 10E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 10E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI 10K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI 10K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI 10K.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI ananth 05E";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI ananth 05E.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI ananth 05E.ttf");
 
 }@font-face {
 	font-family: "NUDI UNI ananth 05K";
-	src: url("../Fonts/Nudi_fonts/NUDI UNI ananth 05K.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI UNI ananth 05K.ttf");
 
 }@font-face {
 	font-family: "NUDI 00";
-	src: url("../Fonts/Nudi_fonts/NUDI-00.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-00.TTF");
 
 }@font-face {
 	font-family: "NUDI 01";
-	src: url("../Fonts/Nudi_fonts/NUDI-01.ttf");
+	src: url("../Fonts/Nudi_Fonts/NUDI-01.ttf");
 
 }@font-face {
 	font-family: "NUDI 02";
-	src: url("../Fonts/Nudi_fonts/NUDI-02.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-02.TTF");
 
 }@font-face {
 	font-family: "NUDI 03";
-	src: url("../Fonts/Nudi_fonts/NUDI-03.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-03.TTF");
 
 }@font-face {
 	font-family: "NUDI 04";
-	src: url("../Fonts/Nudi_fonts/NUDI-04.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-04.TTF");
 
 }@font-face {
 	font-family: "NUDI 05";
-	src: url("../Fonts/Nudi_fonts/NUDI-05.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-05.TTF");
 
 }@font-face {
 	font-family: "NUDI 06";
-	src: url("../Fonts/Nudi_fonts/NUDI-06.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-06.TTF");
 
 }@font-face {
 	font-family: "NUDI 07";
-	src: url("../Fonts/Nudi_fonts/NUDI-07.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-07.TTF");
 
 }@font-face {
 	font-family: "NUDI 08";
-	src: url("../Fonts/Nudi_fonts/NUDI-08.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-08.TTF");
 
 }@font-face {
 	font-family: "NUDI 09";
-	src: url("../Fonts/Nudi_fonts/NUDI-09.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-09.TTF");
 
 }@font-face {
 	font-family: "NUDI 10";
-	src: url("../Fonts/Nudi_fonts/NUDI-10.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-10.TTF");
 
 }@font-face {
 	font-family: "NUDI 11";
-	src: url("../Fonts/Nudi_fonts/NUDI-11.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-11.TTF");
 
 }@font-face {
 	font-family: "NUDI 12";
-	src: url("../Fonts/Nudi_fonts/NUDI-12.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI-12.TTF");
 
 }@font-face {
 	font-family: "NUDI00";
-	src: url("../Fonts/Nudi_fonts/NUDI00.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI00.TTF");
 
 }@font-face {
 	font-family: "NUDI01";
-	src: url("../Fonts/Nudi_fonts/NUDI01.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI01.TTF");
 
 }@font-face {
 	font-family: "NUDI02";
-	src: url("../Fonts/Nudi_fonts/NUDI02.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI02.TTF");
 
 }@font-face {
 	font-family: "NUDI03";
-	src: url("../Fonts/Nudi_fonts/NUDI03.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI03.TTF");
 
 }@font-face {
 	font-family: "NUDI04";
-	src: url("../Fonts/Nudi_fonts/NUDI04.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI04.TTF");
 
 }@font-face {
 	font-family: "NUDI05";
-	src: url("../Fonts/Nudi_fonts/NUDI05.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI05.TTF");
 
 }@font-face {
 	font-family: "NUDI06";
-	src: url("../Fonts/Nudi_fonts/NUDI06.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI06.TTF");
 
 }@font-face {
 	font-family: "NUDI07";
-	src: url("../Fonts/Nudi_fonts/NUDI07.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI07.TTF");
 
 }@font-face {
 	font-family: "NUDI08";
-	src: url("../Fonts/Nudi_fonts/NUDI08.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI08.TTF");
 
 }@font-face {
 	font-family: "NUDI10";
-	src: url("../Fonts/Nudi_fonts/NUDI10.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI10.TTF");
 
 }@font-face {
 	font-family: "NUDI11";
-	src: url("../Fonts/Nudi_fonts/NUDI11.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI11.TTF");
 
 }@font-face {
 	font-family: "NUDI12";
-	src: url("../Fonts/Nudi_fonts/NUDI12.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI12.TTF");
 
 }@font-face {
 	font-family: "NUDI14";
-	src: url("../Fonts/Nudi_fonts/NUDI14.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDI14.TTF");
 
 }@font-face {
 	font-family: "NUDIB 00";
-	src: url("../Fonts/Nudi_fonts/NUDIB-00.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDIB-00.TTF");
 
 }@font-face {
 	font-family: "NUDIB00";
-	src: url("../Fonts/Nudi_fonts/NUDIB00.TTF");
+	src: url("../Fonts/Nudi_Fonts/NUDIB00.TTF");
 
 }@font-face {
 	font-family: "Nudi 01 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 01 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 01 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 01 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 01 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 01 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 01 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 01 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 01 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 01 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 01 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 01 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 02 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 02 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 02 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 02 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 02 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 02 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 02 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 02 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 02 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 02 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 02 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 02 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 03 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 03 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 03 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 03 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 03 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 03 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 03 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 03 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 03 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 03 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 03 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 03 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 04 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 04 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 04 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 04 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 04 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 04 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 04 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 04 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 04 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 04 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 04 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 04 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 05 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 05 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 05 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 05 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 05 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 05 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 05 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 05 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 05 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 05 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 05 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 05 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 06 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 06 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 06 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 06 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 06 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 06 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 06 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 06 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 06 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 06 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 06 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 06 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 07 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 07 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 07 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 07 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 07 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 07 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 07 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 07 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 07 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 07 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 07 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 07 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 08 e b";
-	src: url("../Fonts/Nudi_fonts/Nudi 08 e b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 08 e b.ttf");
 
 }@font-face {
 	font-family: "Nudi 08 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 08 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 08 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 08 k b";
-	src: url("../Fonts/Nudi_fonts/Nudi 08 k b.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 08 k b.ttf");
 
 }@font-face {
 	font-family: "Nudi 08 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 08 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 08 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 09 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 09 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 09 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 09 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 09 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 09 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 10 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 10 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 10 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 10 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 10 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 10 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 11 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 11 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 11 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 11 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 11 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 11 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 12 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 12 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 12 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 12 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 12 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 12 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 13 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 13 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 13 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 13 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 13 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 13 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 14 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 14 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 14 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 14 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 14 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 14 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 15 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 15 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 15 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 15 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 15 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 15 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 16 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 16 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 16 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 16 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 16 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 16 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 17 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 17 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 17 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 17 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 17 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 17 k.ttf");
 
 }@font-face {
 	font-family: "Nudi 18 e";
-	src: url("../Fonts/Nudi_fonts/Nudi 18 e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 18 e.ttf");
 
 }@font-face {
 	font-family: "Nudi 18 k";
-	src: url("../Fonts/Nudi_fonts/Nudi 18 k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi 18 k.ttf");
 
 }@font-face {
 	font-family: "Nudi B Akshar 1";
-	src: url("../Fonts/Nudi_fonts/Nudi B Akshar-1.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi B Akshar-1.ttf");
 
 }@font-face {
 	font-family: "Nudi B Akshar 2";
-	src: url("../Fonts/Nudi_fonts/Nudi B Akshar-2.TTF");
+	src: url("../Fonts/Nudi_Fonts/Nudi B Akshar-2.TTF");
 
 }@font-face {
 	font-family: "Nudi B Akshara 1";
-	src: url("../Fonts/Nudi_fonts/Nudi B Akshara-1.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi B Akshara-1.ttf");
 
 }@font-face {
 	font-family: "Nudi B Akshara 2";
-	src: url("../Fonts/Nudi_fonts/Nudi B Akshara-2.TTF");
+	src: url("../Fonts/Nudi_Fonts/Nudi B Akshara-2.TTF");
 
 }@font-face {
 	font-family: "Nudi vedic e b";
-	src: url("../Fonts/Nudi_fonts/Nudi vedic e b.TTF");
+	src: url("../Fonts/Nudi_Fonts/Nudi vedic e b.TTF");
 
 }@font-face {
 	font-family: "Nudi vedic e";
-	src: url("../Fonts/Nudi_fonts/Nudi vedic e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi vedic e.ttf");
 
 }@font-face {
 	font-family: "Nudi vedic k b";
-	src: url("../Fonts/Nudi_fonts/Nudi vedic k b.TTF");
+	src: url("../Fonts/Nudi_Fonts/Nudi vedic k b.TTF");
 
 }@font-face {
 	font-family: "Nudi vedic k";
-	src: url("../Fonts/Nudi_fonts/Nudi vedic k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi vedic k.ttf");
 
 }@font-face {
 	font-family: "Nudi ISCII";
-	src: url("../Fonts/Nudi_fonts/Nudi_ISCII.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi_ISCII.ttf");
 
 }@font-face {
 	font-family: "Nudi KSCLP";
-	src: url("../Fonts/Nudi_fonts/Nudi_KSCLP.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudi_KSCLP.ttf");
 
 }@font-face {
 	font-family: "Nudiweb01e";
-	src: url("../Fonts/Nudi_fonts/Nudiweb01e.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudiweb01e.ttf");
 
 }@font-face {
 	font-family: "Nudiweb01eb";
-	src: url("../Fonts/Nudi_fonts/Nudiweb01eb.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudiweb01eb.ttf");
 
 }@font-face {
 	font-family: "Nudiweb01k";
-	src: url("../Fonts/Nudi_fonts/Nudiweb01k.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudiweb01k.ttf");
 
 }@font-face {
 	font-family: "Nudiweb01kb";
-	src: url("../Fonts/Nudi_fonts/Nudiweb01kb.ttf");
+	src: url("../Fonts/Nudi_Fonts/Nudiweb01kb.ttf");
 
 }@font-face {
 	font-family: "nudi akshar b";
-	src: url("../Fonts/Nudi_fonts/nudi akshar b.ttf");
+	src: url("../Fonts/Nudi_Fonts/nudi akshar b.ttf");
 
 }@font-face {
 	font-family: "nudi akshara b";
-	src: url("../Fonts/Nudi_fonts/nudi akshara b.ttf");
+	src: url("../Fonts/Nudi_Fonts/nudi akshara b.ttf");
 
 }@font-face {
 	font-family: "CHABI";
@@ -4673,53 +4725,5 @@
 }@font-face {
 	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
-
-}@font-face {
-	font-family: "Kar Chandrashekhara Kambara";
-	src: url("../Fonts/gok-kannada-fonts/Kar Chandrashekhara Kambara.ttf");
-
-}@font-face {
-	font-family: "Kar Da Raa Bendre";
-	src: url("../Fonts/gok-kannada-fonts/Kar Da Raa Bendre.ttf");
-
-}@font-face {
-	font-family: "Kar Girish Karnad";
-	src: url("../Fonts/gok-kannada-fonts/Kar Girish Karnad.ttf");
-
-}@font-face {
-	font-family: "Kar Gopalakrishna Adiga";
-	src: url("../Fonts/gok-kannada-fonts/Kar Gopalakrishna Adiga.ttf");
-
-}@font-face {
-	font-family: "Kar K S Narasimhaswamy";
-	src: url("../Fonts/gok-kannada-fonts/Kar K S Narasimhaswamy.ttf");
-
-}@font-face {
-	font-family: "Kar Kuvempu";
-	src: url("../Fonts/gok-kannada-fonts/Kar Kuvempu.ttf");
-
-}@font-face {
-	font-family: "Kar Maasthi";
-	src: url("../Fonts/gok-kannada-fonts/Kar Maasthi.ttf");
-
-}@font-face {
-	font-family: "Kar Puchamthe";
-	src: url("../Fonts/gok-kannada-fonts/Kar Puchamthe.ttf");
-
-}@font-face {
-	font-family: "Kar Puthina";
-	src: url("../Fonts/gok-kannada-fonts/Kar Puthina.ttf");
-
-}@font-face {
-	font-family: "Kar Shivarama Karantha";
-	src: url("../Fonts/gok-kannada-fonts/Kar Shivarama Karantha.ttf");
-
-}@font-face {
-	font-family: "Kar U R Ananthamurthy";
-	src: url("../Fonts/gok-kannada-fonts/Kar U R Ananthamurthy.ttf");
-
-}@font-face {
-	font-family: "Kar Vi Kru Gokak";
-	src: url("../Fonts/gok-kannada-fonts/Kar Vi Kru Gokak.ttf");
 
 }
