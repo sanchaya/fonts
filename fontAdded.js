@@ -71,6 +71,7 @@ var fontInitialize = () =>{
                 obj[font_family_link]['fonts'].push({font: font_name, link: font_name_link})
             }
         }
+        console.log("File:", file, "Extension:", extention);
     })
     fs.writeFileSync(css_path,css)
     fs.writeFileSync(fonts_json,JSON.stringify(obj,null,'\t'),'utf8')

@@ -7,3 +7,5 @@ Fonts stored here in this project are exclusively for educational and research p
 
 #Contribute
 Feel free to contribute to the project. 
+
+After adding a new font, run the script fontAdded.js #node fontAdded.js
