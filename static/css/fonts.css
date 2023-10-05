@@ -1,6 +1,214 @@
 @font-face {
+	font-family: "ATS Bandipura Bold";
+	src: url("../Fonts/ATS-Bandipura/TTF/ATS-Bandipura-Bold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru DotBold";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-DotBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru DotRegular";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-DotRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru LEDBold";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-LEDBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru LEDRegular";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-LEDRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru PixelBold";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-PixelBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru PixelRegular";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-PixelRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SmoothBold";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-SmoothBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SmoothRegular";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-SmoothRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SquareBold";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-SquareBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SquareRegular";
+	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-SquareRegular.ttf");
+
+}@font-face {
 	font-family: "AkayaKanadaka Regular";
 	src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada VariableFont wdth,wght";
+	src: url("../Fonts/Anek_Kannada/AnekKannada-VariableFont_wdth,wght.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Bold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada ExtraBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada ExtraLight";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Light";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-Light.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Medium";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Regular";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-SemiBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Thin";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada/AnekKannada-Thin.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed Bold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-Bold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed ExtraBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed ExtraLight";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed Light";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-Light.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed Medium";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-Medium.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed Regular";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed SemiBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-SemiBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Condensed Thin";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Condensed/AnekKannada_Condensed-Thin.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded Bold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-Bold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded ExtraBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded ExtraLight";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded Light";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-Light.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded Medium";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-Medium.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded Regular";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded SemiBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-SemiBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada Expanded Thin";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_Expanded/AnekKannada_Expanded-Thin.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed Bold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-Bold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed ExtraBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed ExtraLight";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed Light";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-Light.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed Medium";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-Medium.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed Regular";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed SemiBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-SemiBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiCondensed Thin";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiCondensed/AnekKannada_SemiCondensed-Thin.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded Bold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-Bold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded ExtraBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded ExtraLight";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded Light";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-Light.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded Medium";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-Medium.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded Regular";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-Regular.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded SemiBold";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-SemiBold.ttf");
+
+}@font-face {
+	font-family: "AnekKannada SemiExpanded Thin";
+	src: url("../Fonts/Anek_Kannada/static/AnekKannada_SemiExpanded/AnekKannada_SemiExpanded-Thin.ttf");
 
 }@font-face {
 	font-family: "BalooTamma2 Bold";
@@ -49,6 +257,22 @@
 }@font-face {
 	font-family: "Kedage t";
 	src: url("../Fonts/Kedage/Kedage-t.ttf");
+
+}@font-face {
+	font-family: "Kuvempu Praja1";
+	src: url("../Fonts/Kuvempu Praja/Kuvempu_Praja1.ttf");
+
+}@font-face {
+	font-family: "Kuvempu Praja2";
+	src: url("../Fonts/Kuvempu Praja/Kuvempu_Praja2.ttf");
+
+}@font-face {
+	font-family: "Kuvempu Praja3";
+	src: url("../Fonts/Kuvempu Praja/Kuvempu_Praja3.ttf");
+
+}@font-face {
+	font-family: "Kuvempu Praja4";
+	src: url("../Fonts/Kuvempu Praja/Kuvempu_Praja4.ttf");
 
 }@font-face {
 	font-family: "Lohit Kannada";
@@ -1021,6 +1245,10 @@
 }@font-face {
 	font-family: "ufonts.com praja";
 	src: url("../Fonts/Praja/ufonts.com_praja.ttf");
+
+}@font-face {
+	font-family: "raavi bold unicode kannada font";
+	src: url("../Fonts/Raavi/raavi-bold-unicode-kannada-font.ttf");
 
 }@font-face {
 	font-family: "SakalBharati";
@@ -4431,11 +4659,67 @@
 	src: url("../Fonts/Sriraju/SRIRAUOI.ttf");
 
 }@font-face {
+	font-family: "TiroKannada Italic";
+	src: url("../Fonts/Tiro_Kannada/TiroKannada-Italic.ttf");
+
+}@font-face {
+	font-family: "TiroKannada Regular";
+	src: url("../Fonts/Tiro_Kannada/TiroKannada-Regular.ttf");
+
+}@font-face {
 	font-family: "Tunga Regular";
 	src: url("../Fonts/Tunga/Tunga Regular.ttf");
 
 }@font-face {
 	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
+
+}@font-face {
+	font-family: "Kar Chandrashekhara Kambara";
+	src: url("../Fonts/gok-kannada-fonts/Kar Chandrashekhara Kambara.ttf");
+
+}@font-face {
+	font-family: "Kar Da Raa Bendre";
+	src: url("../Fonts/gok-kannada-fonts/Kar Da Raa Bendre.ttf");
+
+}@font-face {
+	font-family: "Kar Girish Karnad";
+	src: url("../Fonts/gok-kannada-fonts/Kar Girish Karnad.ttf");
+
+}@font-face {
+	font-family: "Kar Gopalakrishna Adiga";
+	src: url("../Fonts/gok-kannada-fonts/Kar Gopalakrishna Adiga.ttf");
+
+}@font-face {
+	font-family: "Kar K S Narasimhaswamy";
+	src: url("../Fonts/gok-kannada-fonts/Kar K S Narasimhaswamy.ttf");
+
+}@font-face {
+	font-family: "Kar Kuvempu";
+	src: url("../Fonts/gok-kannada-fonts/Kar Kuvempu.ttf");
+
+}@font-face {
+	font-family: "Kar Maasthi";
+	src: url("../Fonts/gok-kannada-fonts/Kar Maasthi.ttf");
+
+}@font-face {
+	font-family: "Kar Puchamthe";
+	src: url("../Fonts/gok-kannada-fonts/Kar Puchamthe.ttf");
+
+}@font-face {
+	font-family: "Kar Puthina";
+	src: url("../Fonts/gok-kannada-fonts/Kar Puthina.ttf");
+
+}@font-face {
+	font-family: "Kar Shivarama Karantha";
+	src: url("../Fonts/gok-kannada-fonts/Kar Shivarama Karantha.ttf");
+
+}@font-face {
+	font-family: "Kar U R Ananthamurthy";
+	src: url("../Fonts/gok-kannada-fonts/Kar U R Ananthamurthy.ttf");
+
+}@font-face {
+	font-family: "Kar Vi Kru Gokak";
+	src: url("../Fonts/gok-kannada-fonts/Kar Vi Kru Gokak.ttf");
 
 }
