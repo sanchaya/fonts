@@ -1,5 +1,6 @@
 const express = require('express')
-
+const multer = require('multer');
+const fileUpload = require('express-fileupload');
 const {
     port, 
     pages, 
@@ -23,7 +24,25 @@ const {get_all_data, get_all_conjuncts,getFonts,getFontFromParam, getFontsForFam
 
 const fs = require('fs')
 
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        const filename = file.originalname;
+        const foldername = filename.split('.')[0];
+        const folderPath = path.join(__dirname, 'static', 'Fonts', foldername);
+        if (!fs.existsSync(folderPath)) {
+            fs.mkdirSync(folderPath);
+        }
 
+        cb(null,folderPath);
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+
+const upload = multer({ 
+    storage: storage,
+});
 /*----------app usage and set-------------- */
 
 app.use(router)
@@ -35,11 +54,11 @@ app.set('view engine', 'ejs')
 
 
 app.use(bodyParser.urlencoded({
-   extended: false
+   extended: true
 }));
 
 app.use(bodyParser.json());
-
+app.use(fileUpload());
 
 app.use(function(req,res,next){
     res.send('page does not exist')
@@ -145,7 +164,15 @@ router.get('/getFonts',(req,res) =>{
     res.send(fonts)
 })
 
+router.get('/getSuggestionForm', (req, res) => {
+    let pag={...pages}
+    pag.fontSuggestionPage=true
+    res.render('fontSuggestionPage');
+});
 
+router.post('/submit-suggestion', upload.single('fontfile'), (req, res) => {
+    res.redirect('/');
+});
 
 /*--------------app running--------------- */
 
