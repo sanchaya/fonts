@@ -30,8 +30,9 @@
 
       gtag('config', 'G-2M373VNJ49');
     </script>
+    
     <link rel="stylesheet" href="/css/all.min.css">
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -46,7 +47,8 @@
 
         <script src="/js/home-api.js"></script>
 
-    <% }else if(page.aboutPage){ %>
+    <% }
+    else if(page.aboutPage){ %>
         <link rel="stylesheet" href="/css/about.css">
 
         <script src="/js/about.js"></script>
@@ -92,15 +94,18 @@
                         <i class="fas fa-moon fa-lg"></i>
                     </label>
                 </div>
-                <div class="selected-family">
-                    <i class="fa fa-plus fa-lg"></i>
+                <div class="selected-family <%= whichPage('fontSuggestionPage')%>">
+                    <span>
+                        <a href="/getSuggestionForm"><i class="fa fa-plus fa-lg"></i></a>
+                    </span>
                 </div>
             </div>
         </div>
     </nav>
     <% if (page.fontShowPage) { %>
         <%- include('home/home') %>
-    <% }else if(page.aboutPage){ %>
+    <% }
+    else if(page.aboutPage){ %>
         <%- include('aboutUs/aboutUs') %>
     <% } %>
 </body>
