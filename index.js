@@ -1,6 +1,10 @@
 const express = require('express')
 const multer = require('multer');
 const fileUpload = require('express-fileupload');
+const contributedFolder = require('./contributedFolder');
+
+
+
 const {
     port, 
     pages, 
@@ -171,7 +175,16 @@ router.get('/getSuggestionForm', (req, res) => {
 });
 
 router.post('/submit-suggestion', upload.single('fontfile'), (req, res) => {
-    res.redirect('/');
+    const fontData = req.body; // Assuming you're using body-parser middleware to parse JSON data
+
+    contributedFolder.insertContributedFont(fontData, (err, lastInsertedId) => {
+        if (err) {
+            return res.status(500).json({ error: 'Failed to submit font suggestion.' });
+        }
+        res.status(200).json({ message: 'Font suggestion submitted successfully!', id: lastInsertedId });
+        res.redirect('/');
+    });
+    
 });
 
 /*--------------app running--------------- */

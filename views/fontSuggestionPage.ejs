@@ -46,6 +46,8 @@
             border-radius: 5px;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/script.js"></script>
     <script>
         function isValidEmail(email) {
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -72,21 +74,21 @@
                 alert('Invalid file format. Please upload a file with valid extensions: ' + validExtensions.join(', '));
                 return false;
             }
-            var fontName = $('#font-name').val();
-            var fontStyle = $('#fontStyle').val();
-            var sampleParagraph = $('#sampleParagraph').val();
-            var designedBy = $('#designedBy').val();
-            var fontLicense = $('#fontLicense').val();
-            var fontURL = $('#fontURL').val();
-            var submitterName = $('#submitterName').val();
+            var font_name = $('#font-name').val();
+            var font_style = $('#fontStyle').val();
+            var sample_paragraph = $('#sampleParagraph').val();
+            var designed_by = $('#designedBy').val();
+            var font_license = $('#fontLicense').val();
+            var font_url = $('#fontURL').val();
+            var submitter_name = $('#submitterName').val();
             var email = $('#email').val();
             var fontFile = $('#fontfile').val();
-    
+           
             // Check if any field is empty
-            if (!fontName || !fontStyle || !sampleParagraph || !designedBy || !fontLicense || !fontURL || !submitterName || !email || !fontFile) {
-                alert('All fields are required. Please fill out all fields.');
-                return;
-            }
+            // if (!font_name || !font_style || !sample_paragraph || !designed_by || !font_license || !font_url || !submitter_name || !email || !fontFile) {
+            //     alert('All fields are required. Please fill out all fields.');
+            //     return;
+            // }
     
                 var formData = new FormData($('form')[0]);
         
@@ -108,7 +110,6 @@
         </script>
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <div class="suggestion-form" >
     <h2 >SUGGEST A FONT</h2>
     <form onsubmit="return validateForm();" action="/submit-suggestion" method="POST" enctype="multipart/form-data" style=" padding: 40px; width:50%; margin: 0 auto;font-size: large; border-radius: 5px;" >
