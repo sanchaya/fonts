@@ -23,7 +23,8 @@ const pages = {
     fontShowPage:false,
     errorPage:false,
     fontFamilyPage: false,
-    aboutPage: false
+    aboutPage: false,
+    fontSuggestionPage: false
 }
 
 module.exports = {
