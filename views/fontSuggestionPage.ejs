@@ -1,160 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    
-    <style>
-        .suggestion-form {
-            text-align: center;
-        }
-
-        .suggestion-form h2 {
-            margin-bottom: 20px;
-            margin-top: 20px;
-            color: #1a73e8;
-            font-size: 60px;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group textarea,
-        .form-group input[type="file"] {
-            width: 100%;
-            padding: 8px;
-            border-radius: 5px;
-        }
-
-        button[type="submit"] {
-            background-color: #1a73e8;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/script.js"></script>
-    <script>
-        function isValidEmail(email) {
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
-        function isValidFileExtension(fileName, validExtensions) {
-            var fileExtension = fileName.split('.').pop().toLowerCase();
-            return validExtensions.includes(fileExtension);
-        }
-
-        // Function to validate the form
-        function validateForm() {
-            var email = document.getElementById('email').value;
-            var fileName = document.getElementById('fontfile').value;
-            var validExtensions = ['ttf', 'otf', 'woff', 'woff2'];
-
-            if (!isValidEmail(email)) {
-                alert('Invalid email address. Please enter a valid email.');
-                return false;
-            }
-
-            if (!isValidFileExtension(fileName, validExtensions)) {
-                alert('Invalid file format. Please upload a file with valid extensions: ' + validExtensions.join(', '));
-                return false;
-            }
-            var font_name = $('#font-name').val();
-            var font_style = $('#fontStyle').val();
-            var sample_paragraph = $('#sampleParagraph').val();
-            var designed_by = $('#designedBy').val();
-            var font_license = $('#fontLicense').val();
-            var font_url = $('#fontURL').val();
-            var submitter_name = $('#submitterName').val();
-            var email = $('#email').val();
-            var fontFile = $('#fontfile').val();
-           
-            // Check if any field is empty
-            // if (!font_name || !font_style || !sample_paragraph || !designed_by || !font_license || !font_url || !submitter_name || !email || !fontFile) {
-            //     alert('All fields are required. Please fill out all fields.');
-            //     return;
-            // }
-    
-                // var formData = new FormData($('form')[0]);
-                var formData = new FormData($('form')[0]);
-        
-                // Make an AJAX request to submit the form
-                $.ajax({
-                    url: '/submit-suggestion',
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function(response) {
-                        alert(response.message);
-                    },
-                    error: function(error) {
-                        console.error('Error:', error);
-                    }
-                });
-            }
-        </script>
-</head>
-<body>
-<div class="suggestion-form" >
-    <h2 >SUGGEST A FONT</h2>
-    <form onsubmit="return validateForm();" action="/submit-suggestion" method="POST" enctype="multipart/form-data" style=" padding: 40px; width:50%; margin: 0 auto;font-size: large; border-radius: 5px;" >
-        <div class="form-group">
-            <label for="fontName">Font Name:</label><br>
-            <input type="text" id="fontName" name="font-name" required ">
-        </div>
-        <div class="form-group" >
-            <label for="fontStyle">Font Style:</label><br>
-            <input type="text" id="fontStyle" name="fontStyle" required ">
-        </div>
-        <div class="form-group" >
-            <label for="sampleParagraph">Sample Paragraph:</label><br>
-            <textarea id="sampleParagraph" name="sampleParagraph" rows="4" cols="50" required ></textarea><br>
-        </div>
-        <div class="form-group" >
-            <label for="designedBy">Designed By:</label><br>
-            <input type="text" id="designedBy" name="designedBy" required>
-        </div>
-        <div class="form-group">
-            <label for="fontLicense">Font License:</label><br>
-            <input type="text" id="fontLicense" name="fontLicense" required >
-        </div>
-        <div class="form-group" >
-            <label for="fontURL">Font URL:</label><br>
-            <input type="text" id="fontURL" name="fontURL" required >
-        </div>
-        <div class="form-group" >
-            <label for="submitterName">Submitter Name:</label><br>
-            <input type="text" id="submitterName" name="submitterName" required >
-        </div>
-        <div class="form-group" >
-            <label for="email">Email ID:</label><br>
-            <input type="email" id="email" name="email" required >
-        </div>
-        <div class="form-group" >
-            <label for="fontfile">Font File (TTF, OTF, WOFF, etc.):</label><br>
-            <input type="file" id="fontfile" name="fontfile" accept=".ttf,.otf,.woff,.woff2" required >
-        </div>
-        <button type="submit" id="submitBtn">Submit</button>
-    </form>
-</div>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,34 +53,34 @@
 <body>
 <div class="suggestion-form" >
     <h2 >SUGGEST A FONT</h2>
-    <form  style=" padding: 40px; width:50%; margin: 0 auto;font-size: large; border-radius: 5px;" >
+    <form id="suggestionForm"  style=" padding: 40px; width:50%; margin: 0 auto;font-size: large; border-radius: 5px;" >
         <div class="form-group">
             <label for="fontName">Font Name:</label><br>
-            <input type="text" id="fontName" name="fontName" required ">
+            <input type="text" id="fontName" name="font_name" required />
         </div>
         <div class="form-group" >
             <label for="fontStyle">Font Style:</label><br>
-            <input type="text" id="fontStyle" name="fontStyle" required ">
+            <input type="text" id="fontStyle" name="font_style" required />
         </div>
         <div class="form-group" >
             <label for="sampleParagraph">Sample Paragraph:</label><br>
-            <textarea id="sampleParagraph" name="sampleParagraph" rows="4" cols="50" required ></textarea><br>
+            <textarea id="sampleParagraph" name="sample_paragraph" rows="4" cols="50" required ></textarea><br>
         </div>
         <div class="form-group" >
             <label for="designedBy">Designed By:</label><br>
-            <input type="text" id="designedBy" name="designedBy" required>
+            <input type="text" id="designedBy" name="designed_by" required>
         </div>
         <div class="form-group">
             <label for="fontLicense">Font License:</label><br>
-            <input type="text" id="fontLicense" name="fontLicense" required >
+            <input type="text" id="fontLicense" name="font_license" required >
         </div>
         <div class="form-group" >
             <label for="fontURL">Font URL:</label><br>
-            <input type="text" id="fontURL" name="fontURL" required >
+            <input type="text" id="fontURL" name="font_url" required >
         </div>
         <div class="form-group" >
             <label for="submitterName">Submitter Name:</label><br>
-            <input type="text" id="submitterName" name="submitterName" required >
+            <input type="text" id="submitterName" name="submitter_name" required >
         </div>
         <div class="form-group" >
             <label for="email">Email ID:</label><br>
@@ -244,12 +88,13 @@
         </div>
         <div class="form-group" >
             <label for="fontfile">Font File (TTF, OTF, WOFF, etc.):</label><br>
-            <input type="file" id="fontfile" name="fontfile" accept=".ttf,.otf,.woff,.woff2" required >
+            <input type="file" id="fontfile" name="font_file" accept=".ttf,.otf,.woff,.woff2" required >
         </div>
-        <button type="submit" id="submitBtn" onclick="validateForm()">Submit</button>
+        <button type="submit" id="submitBtn" >Submit</button>
     </form>
 </div>
 <script>
+    document.getElementById("submitBtn").addEventListener("click", validateForm)
     function isValidEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
@@ -260,9 +105,10 @@
         return validExtensions.includes(fileExtension);
     }
 
+    console.log("form validated and sending request");
     // Function to validate the form
-    function validateForm() {
-        // alert("func")
+    function validateForm(e) {
+        e.preventDefault();
         var email = document.getElementById('email').value;
         var fileName = document.getElementById('fontfile').value;
         var validExtensions = ['ttf', 'otf', 'woff', 'woff2'];
@@ -277,15 +123,7 @@
             alert('Invalid file format. Please upload a file with valid extensions: ' + validExtensions.join(', '));
             return false;
         }
-        // var font_name = $('#fontName').val();
-        // var font_style = $('#fontStyle').val();
-        // var sample_paragraph = $('#sampleParagraph').val();
-        // var designed_by = $('#designedBy').val();
-        // var font_license = $('#fontLicense').val();
-        // var font_url = $('#fontURL').val();
-        // var submitter_name = $('#submitterName').val();
-        // var email = $('#email').val();
-        // var fontFile = $('#fontfile').val();
+       
         var font_name = document.getElementById('fontName').value;
         var font_style = document.getElementById('fontStyle').value;
         var sample_paragraph = document.getElementById('sampleParagraph').value;
@@ -294,8 +132,6 @@
         var font_url = document.getElementById('fontURL').value;
         var submitter_name = document.getElementById('submitterName').value;
         var fontFile = document.getElementById('fontfile').files[0];
-
-        
          // Check if any field is empty
          if (!font_name || !font_style || !sample_paragraph || !designed_by || !font_license || !font_url || !submitter_name || !email || !fontFile) {
             alert('All fields are required. Please fill out all fields.');
@@ -312,7 +148,6 @@
         formData.append('submitter_name', submitter_name);
         formData.append('email', email);
         formData.append('fontfile', fontFile);
-
         // Make an AJAX request to submit the form
         $.ajax({
             url: '/submit-suggestion',
@@ -322,12 +157,13 @@
             contentType: false,
             success: function(response) {
                 alert(response.message);
+                window.location.href="/";
             },
             error: function(error) {
+                alert(error);
                 console.error('Error:', error);
             }
         });
-        return false;
     }
 </script>
 </body>
