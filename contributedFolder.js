@@ -1,27 +1,47 @@
-const path = require('path');
-const sqlite3 = require('sqlite3').verbose();
-// Specify the path to the database file
+const ContributedFolder = require('./models/contributedmodel');
+const catchAsync=require('./catchAsync');
+const AppError = require('./appError');
+const Blob = require('node:buffer').Blob;
 
-const dbPath = path.join(__dirname, '.', 'db', 'mydatabase.db');
-const db = new sqlite3.Database(dbPath);
-
-exports.insertContributedFont = (fontData, callback) =>{
-    const {font_name, font_style, sample_paragraph, designed_by, font_license, font_url, submitter_name, email, fontFile} = fontData;
-    const query = `INSERT INTO contributed_folder (font_name, font_style, sample_paragraph, designed_by, font_license, font_url, submitter_name, email, fontFile) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
-    
-    console.log(font_name);
-    db.run(query, [font_name, font_style, sample_paragraph, designed_by, font_license, font_url, submitter_name, email, fontFile], function(err) {
-        if (err) {
-            console.error('Error inserting data:', err.message);
-            callback(err);
-        } else {
-            console.log(`A new row has been inserted with ID ${this.lastID}`);
-            callback(null, this.lastID);
-        }
-    });
-
-
-
-}
-
-
+exports.addfont = async function(req, res, next) {
+    try{
+        const font_file = new Blob([req.file.buffer], {type: 'application/octet-stream'});
+        // let font_file = req.file;
+        console.log(req.file);
+        console.log(font_file);
+        let{
+            font_name,
+            font_style,
+            sample_paragraph,
+            designed_by,
+            font_license,
+            font_url,
+            submitter_name,
+            email,
+        }=req.body;
+        console.log(req.body);
+        const contributions = new ContributedFolder({
+            font_name,
+            font_style,
+            sample_paragraph,
+            designed_by,
+            font_license,
+            font_url,
+            submitter_name,
+            email,
+            font_file
+        });
+        await contributions.save();
+        res.status(200).json({
+            status:"success",
+            message:"Font Added successfully",
+            data:{
+                contributions,
+            },
+        });
+    }
+    catch(err){
+        const error = new AppError(err.message,500);
+        error.sendResponse(res);
+    }
+};
