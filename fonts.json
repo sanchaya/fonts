@@ -333,6 +333,92 @@
 			}
 		]
 	},
+	"Baraha-Kannada": {
+		"family": "Baraha Kannada",
+		"link": "Baraha-Kannada",
+		"fonts": [
+			{
+				"font": "BRHAKND",
+				"link": "BRHAKND"
+			},
+			{
+				"font": "BRHBGLR",
+				"link": "BRHBGLR"
+			},
+			{
+				"font": "BRHBRL",
+				"link": "BRHBRL"
+			},
+			{
+				"font": "BRHKAI",
+				"link": "BRHKAI"
+			},
+			{
+				"font": "BRHKAN01",
+				"link": "BRHKAN01"
+			},
+			{
+				"font": "BRHKAN02",
+				"link": "BRHKAN02"
+			},
+			{
+				"font": "BRHKAN03",
+				"link": "BRHKAN03"
+			},
+			{
+				"font": "BRHKAN04",
+				"link": "BRHKAN04"
+			},
+			{
+				"font": "BRHKAN05",
+				"link": "BRHKAN05"
+			},
+			{
+				"font": "BRHKAN06",
+				"link": "BRHKAN06"
+			},
+			{
+				"font": "BRHKAN07",
+				"link": "BRHKAN07"
+			},
+			{
+				"font": "BRHKAN07BOLD",
+				"link": "BRHKAN07BOLD"
+			},
+			{
+				"font": "BRHKAN07BOLDITALIC",
+				"link": "BRHKAN07BOLDITALIC"
+			},
+			{
+				"font": "BRHKAN07ITALIC",
+				"link": "BRHKAN07ITALIC"
+			},
+			{
+				"font": "BRHKND",
+				"link": "BRHKND"
+			},
+			{
+				"font": "BRHKNDB",
+				"link": "BRHKNDB"
+			},
+			{
+				"font": "BRHKNDE",
+				"link": "BRHKNDE"
+			},
+			{
+				"font": "BRHKNDRN",
+				"link": "BRHKNDRN"
+			},
+			{
+				"font": "BRHSKND",
+				"link": "BRHSKND"
+			},
+			{
+				"font": "BRHVJY",
+				"link": "BRHVJY"
+			}
+		]
+	},
 	"Benne": {
 		"family": "Benne",
 		"link": "Benne",
