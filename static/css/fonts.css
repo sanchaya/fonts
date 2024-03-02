@@ -4,6 +4,46 @@
 
 }@font-face {
 	font-family: "ATSBengaluru DotBold";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-DotBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru DotRegular";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-DotRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru LEDBold";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-LEDBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru LEDRegular";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-LEDRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru PixelBold";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-PixelBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru PixelRegular";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-PixelRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SmoothBold";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-SmoothBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SmoothRegular";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-SmoothRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SquareBold";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-SquareBold.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru SquareRegular";
+	src: url("../Fonts/ATS-Bengaluru/ATSBengaluru-SquareRegular.ttf");
+
+}@font-face {
+	font-family: "ATSBengaluru DotBold";
 	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-DotBold.ttf");
 
 }@font-face {
@@ -41,6 +81,22 @@
 }@font-face {
 	font-family: "ATSBengaluru SquareRegular";
 	src: url("../Fonts/ATS-Bengaluru/TTF/ATSBengaluru-SquareRegular.ttf");
+
+}@font-face {
+	font-family: "ATSChikkamagaluru ColorRegular";
+	src: url("../Fonts/ATS-Chikkamagaluru/ATSChikkamagaluru-ColorRegular.ttf");
+
+}@font-face {
+	font-family: "ATSChikkamagaluru Regular";
+	src: url("../Fonts/ATS-Chikkamagaluru/ATSChikkamagaluru-Regular.ttf");
+
+}@font-face {
+	font-family: "ATSChikkamagaluru ColorRegular";
+	src: url("../Fonts/ATS-Chikkamagaluru/TTF/ATSChikkamagaluru-ColorRegular.ttf");
+
+}@font-face {
+	font-family: "ATSChikkamagaluru Regular";
+	src: url("../Fonts/ATS-Chikkamagaluru/TTF/ATSChikkamagaluru-Regular.ttf");
 
 }@font-face {
 	font-family: "AkayaKanadaka Regular";
