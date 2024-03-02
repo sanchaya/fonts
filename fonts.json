@@ -65,6 +65,16 @@
 			}
 		]
 	},
+	"Anchu-Kannada": {
+		"family": "Anchu Kannada",
+		"link": "Anchu-Kannada",
+		"fonts": [
+			{
+				"font": "ANCHU",
+				"link": "ANCHU"
+			}
+		]
+	},
 	"Anek-Kannada": {
 		"family": "Anek Kannada",
 		"link": "Anek-Kannada",
@@ -4892,20 +4902,6 @@
 			{
 				"font": "tungab",
 				"link": "tungab"
-			}
-		]
-	},
-	"karnata-f-kittel-font": {
-		"family": "karnata f kittel font",
-		"link": "karnata-f-kittel-font",
-		"fonts": [
-			{
-				"font": "Karnata F Kittel",
-				"link": "Karnata-F-Kittel"
-			},
-			{
-				"font": "Karnata FKittel",
-				"link": "Karnata-FKittel"
 			}
 		]
 	}

@@ -47,6 +47,10 @@
 	src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
 
 }@font-face {
+	font-family: "ANCHU";
+	src: url("../Fonts/Anchu_Kannada/ANCHU.ttf");
+
+}@font-face {
 	font-family: "AnekKannada VariableFont wdth,wght";
 	src: url("../Fonts/Anek_Kannada/AnekKannada-VariableFont_wdth,wght.ttf");
 
@@ -4725,13 +4729,5 @@
 }@font-face {
 	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
-
-}@font-face {
-	font-family: "Karnata F Kittel";
-	src: url("../Fonts/karnata-f-kittel-font/Karnata F Kittel.ttf");
-
-}@font-face {
-	font-family: "Karnata FKittel";
-	src: url("../Fonts/karnata-f-kittel-font/Karnata-FKittel.ttf");
 
 }
