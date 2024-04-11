@@ -427,6 +427,10 @@
 	src: url("../Fonts/Gubbi/Gubbi.ttf");
 
 }@font-face {
+	font-family: "Hoysala Regular";
+	src: url("../Fonts/Hoysala/Hoysala-Regular.ttf");
+
+}@font-face {
 	font-family: "inchara";
 	src: url("../Fonts/Inchara/inchara.ttf");
 

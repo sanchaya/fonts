@@ -52,6 +52,46 @@
 			{
 				"font": "ATSBengaluru SquareRegular",
 				"link": "ATSBengaluru-SquareRegular"
+			},
+			{
+				"font": "ATSBengaluru DotBold",
+				"link": "ATSBengaluru-DotBold"
+			},
+			{
+				"font": "ATSBengaluru DotRegular",
+				"link": "ATSBengaluru-DotRegular"
+			},
+			{
+				"font": "ATSBengaluru LEDBold",
+				"link": "ATSBengaluru-LEDBold"
+			},
+			{
+				"font": "ATSBengaluru LEDRegular",
+				"link": "ATSBengaluru-LEDRegular"
+			},
+			{
+				"font": "ATSBengaluru PixelBold",
+				"link": "ATSBengaluru-PixelBold"
+			},
+			{
+				"font": "ATSBengaluru PixelRegular",
+				"link": "ATSBengaluru-PixelRegular"
+			},
+			{
+				"font": "ATSBengaluru SmoothBold",
+				"link": "ATSBengaluru-SmoothBold"
+			},
+			{
+				"font": "ATSBengaluru SmoothRegular",
+				"link": "ATSBengaluru-SmoothRegular"
+			},
+			{
+				"font": "ATSBengaluru SquareBold",
+				"link": "ATSBengaluru-SquareBold"
+			},
+			{
+				"font": "ATSBengaluru SquareRegular",
+				"link": "ATSBengaluru-SquareRegular"
 			}
 		]
 	},
@@ -59,6 +99,14 @@
 		"family": "ATS Chikkamagaluru",
 		"link": "ATS-Chikkamagaluru",
 		"fonts": [
+			{
+				"font": "ATSChikkamagaluru ColorRegular",
+				"link": "ATSChikkamagaluru-ColorRegular"
+			},
+			{
+				"font": "ATSChikkamagaluru Regular",
+				"link": "ATSChikkamagaluru-Regular"
+			},
 			{
 				"font": "ATSChikkamagaluru ColorRegular",
 				"link": "ATSChikkamagaluru-ColorRegular"
@@ -442,6 +490,16 @@
 			{
 				"font": "Gubbi",
 				"link": "Gubbi"
+			}
+		]
+	},
+	"Hoysala": {
+		"family": "Hoysala",
+		"link": "Hoysala",
+		"fonts": [
+			{
+				"font": "Hoysala Regular",
+				"link": "Hoysala-Regular"
 			}
 		]
 	},
