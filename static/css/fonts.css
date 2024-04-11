@@ -439,6 +439,26 @@
 	src: url("../Fonts/Inchara/inchara.ttf");
 
 }@font-face {
+	font-family: "AK Kannada";
+	src: url("../Fonts/KPRao/AK-Kannada.ttf");
+
+}@font-face {
+	font-family: "Chalukya";
+	src: url("../Fonts/KPRao/Chalukya.ttf");
+
+}@font-face {
+	font-family: "Devam";
+	src: url("../Fonts/KPRao/Devam.ttf");
+
+}@font-face {
+	font-family: "English Devanagari";
+	src: url("../Fonts/KPRao/English-Devanagari.ttf");
+
+}@font-face {
+	font-family: "KadambaKannada";
+	src: url("../Fonts/KPRao/KadambaKannada.ttf");
+
+}@font-face {
 	font-family: "Kadamba Kakusthavarman";
 	src: url("../Fonts/Kadamba/Kadamba-Kakusthavarman.ttf");
 
