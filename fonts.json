@@ -523,6 +523,32 @@
 			}
 		]
 	},
+	"KPRao": {
+		"family": "KPRao",
+		"link": "KPRao",
+		"fonts": [
+			{
+				"font": "AK Kannada",
+				"link": "AK-Kannada"
+			},
+			{
+				"font": "Chalukya",
+				"link": "Chalukya"
+			},
+			{
+				"font": "Devam",
+				"link": "Devam"
+			},
+			{
+				"font": "English Devanagari",
+				"link": "English-Devanagari"
+			},
+			{
+				"font": "KadambaKannada",
+				"link": "KadambaKannada"
+			}
+		]
+	},
 	"Kadamba": {
 		"family": "Kadamba",
 		"link": "Kadamba",
