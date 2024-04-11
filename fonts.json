@@ -429,6 +429,16 @@
 			}
 		]
 	},
+	"Chalukya": {
+		"family": "Chalukya",
+		"link": "Chalukya",
+		"fonts": [
+			{
+				"font": "Chalukya Vijayaditya",
+				"link": "Chalukya-Vijayaditya"
+			}
+		]
+	},
 	"Gok-Kannada-Fonts": {
 		"family": "Gok Kannada Fonts",
 		"link": "Gok-Kannada-Fonts",
@@ -510,6 +520,16 @@
 			{
 				"font": "inchara",
 				"link": "inchara"
+			}
+		]
+	},
+	"Kadamba": {
+		"family": "Kadamba",
+		"link": "Kadamba",
+		"fonts": [
+			{
+				"font": "Kadamba Kakusthavarman",
+				"link": "Kadamba-Kakusthavarman"
 			}
 		]
 	},

@@ -375,6 +375,10 @@
 	src: url("../Fonts/Benne/Benne-Regular.ttf");
 
 }@font-face {
+	font-family: "Chalukya Vijayaditya";
+	src: url("../Fonts/Chalukya/Chalukya Vijayaditya.ttf");
+
+}@font-face {
 	font-family: "Kar Chandrashekhara Kambara";
 	src: url("../Fonts/Gok-Kannada-Fonts/Kar Chandrashekhara Kambara.ttf");
 
@@ -433,6 +437,10 @@
 }@font-face {
 	font-family: "inchara";
 	src: url("../Fonts/Inchara/inchara.ttf");
+
+}@font-face {
+	font-family: "Kadamba Kakusthavarman";
+	src: url("../Fonts/Kadamba/Kadamba Kakusthavarman.ttf");
 
 }@font-face {
 	font-family: "Karnata F Kittel";
