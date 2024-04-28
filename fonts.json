@@ -439,6 +439,16 @@
 			}
 		]
 	},
+	"Ganga": {
+		"family": "Ganga",
+		"link": "Ganga",
+		"fonts": [
+			{
+				"font": "Gangga Marasimha",
+				"link": "Gangga-Marasimha"
+			}
+		]
+	},
 	"Gok-Kannada-Fonts": {
 		"family": "Gok Kannada Fonts",
 		"link": "Gok-Kannada-Fonts",
