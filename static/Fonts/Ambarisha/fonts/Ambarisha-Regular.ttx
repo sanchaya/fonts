@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.0">
+  <GlyphOrder src="Ambarisha-Regular.GlyphOrder.ttx"/>
+  <head src="Ambarisha-Regular._h_e_a_d.ttx"/>
+  <hhea src="Ambarisha-Regular._h_h_e_a.ttx"/>
+  <maxp src="Ambarisha-Regular._m_a_x_p.ttx"/>
+  <OS_2 src="Ambarisha-Regular.O_S_2f_2.ttx"/>
+  <hmtx src="Ambarisha-Regular._h_m_t_x.ttx"/>
+  <cmap src="Ambarisha-Regular._c_m_a_p.ttx"/>
+  <loca src="Ambarisha-Regular._l_o_c_a.ttx"/>
+  <glyf src="Ambarisha-Regular._g_l_y_f.ttx"/>
+  <name src="Ambarisha-Regular._n_a_m_e.ttx"/>
+  <post src="Ambarisha-Regular._p_o_s_t.ttx"/>
+  <gasp src="Ambarisha-Regular._g_a_s_p.ttx"/>
+  <FFTM src="Ambarisha-Regular.F_F_T_M_.ttx"/>
+  <GDEF src="Ambarisha-Regular.G_D_E_F_.ttx"/>
+  <GPOS src="Ambarisha-Regular.G_P_O_S_.ttx"/>
+  <GSUB src="Ambarisha-Regular.G_S_U_B_.ttx"/>
+</ttFont>

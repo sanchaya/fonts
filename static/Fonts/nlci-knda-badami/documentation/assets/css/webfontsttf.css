@@ -1,0 +1,42 @@
+/*
+This file is from the NLCI Tamil project (https://github.com/nlci/taml-font-thiruvalluvar).
+Copyright (c) 2009-2023 NLCI (http://www.nlci.in/fonts/),
+with Reserved Font Names "ThiruValluvar" and "Auvaiyar" and "Vaigai" and "NLCI".
+Latin glyphs in ThiruValluvar and Auvaiyar are Copyright (c) 2003-2019, SIL International (https://www.sil.org/)
+with Reserved Font Names "Gentium" and "SIL".
+Latin glyphs in Vaigai are Copyright (c) 1997-2019, SIL International (https://www.sil.org/)
+with Reserved Font Names "Charis" and "SIL".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+*/
+@font-face {
+    font-family: ThiruValluvar-R;
+    src: url("../../../results/ThiruValluvar-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: ThiruValluvar-B;
+    src: url("../../../results/ThiruValluvar-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: Auvaiyar-R;
+    src: url("../../../results/Auvaiyar-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: Auvaiyar-B;
+    src: url("../../../results/Auvaiyar-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: Vaigai-R;
+    src: url("../../../results/Vaigai-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: Vaigai-B;
+    src: url("../../../results/Vaigai-Bold.ttf") format("truetype");
+}
+
+.thiruvalluvar-R { font-family: ThiruValluvar-R; }
+.thiruvalluvar-B { font-family: ThiruValluvar-B; }
+.auvaiyar-R      { font-family: Auvaiyar-R; }
+.auvaiyar-B      { font-family: Auvaiyar-B; }
+.vaigai-R        { font-family: Vaigai-R; }
+.vaigai-B        { font-family: Vaigai-B; }
