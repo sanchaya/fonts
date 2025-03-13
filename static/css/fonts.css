@@ -103,6 +103,22 @@
 	src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
 
 }@font-face {
+	font-family: "Ambarisha Regular";
+	src: url("../Fonts/Ambarisha/Ambarisha-Regular.ttf");
+
+}@font-face {
+	font-family: "Ambarisha2";
+	src: url("../Fonts/Ambarisha/Ambarisha2.ttf");
+
+}@font-face {
+	font-family: "Ambarisha Regular";
+	src: url("../Fonts/Ambarisha/fonts/Ambarisha-Regular.ttf");
+
+}@font-face {
+	font-family: "Ambarisha2";
+	src: url("../Fonts/Ambarisha/fonts/Ambarisha2.ttf");
+
+}@font-face {
 	font-family: "ANCHU";
 	src: url("../Fonts/Anchu-Kannada/ANCHU.ttf");
 
@@ -291,6 +307,10 @@
 	src: url("../Fonts/Baloo_Tamma_2/BalooTamma2-SemiBold.ttf");
 
 }@font-face {
+	font-family: "BandipurOne";
+	src: url("../Fonts/BandipurOne/BandipurOne.ttf");
+
+}@font-face {
 	font-family: "BRHAKND";
 	src: url("../Fonts/Baraha-Kannada/BRHAKND.TTF");
 
@@ -377,6 +397,10 @@
 }@font-face {
 	font-family: "Chalukya Vijayaditya";
 	src: url("../Fonts/Chalukya/Chalukya-Vijayaditya.ttf");
+
+}@font-face {
+	font-family: "Cheluvi";
+	src: url("../Fonts/Cheluvi/Cheluvi.ttf");
 
 }@font-face {
 	font-family: "Gangga Marasimha";
@@ -4901,5 +4925,21 @@
 }@font-face {
 	font-family: "tungab";
 	src: url("../Fonts/Tunga/tungab.ttf");
+
+}@font-face {
+	font-family: "Badami Bold";
+	src: url("../Fonts/nlci-knda-badami/Badami-Bold.ttf");
+
+}@font-face {
+	font-family: "Badami BoldItalic";
+	src: url("../Fonts/nlci-knda-badami/Badami-BoldItalic.ttf");
+
+}@font-face {
+	font-family: "Badami Italic";
+	src: url("../Fonts/nlci-knda-badami/Badami-Italic.ttf");
+
+}@font-face {
+	font-family: "Badami Regular";
+	src: url("../Fonts/nlci-knda-badami/Badami-Regular.ttf");
 
 }

@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont ttLibVersion="3.0">
+
+  <GSUB>
+    <Version value="1.0"/>
+    <ScriptList>
+      <!-- ScriptCount=3 -->
+      <ScriptRecord index="0">
+        <ScriptTag value="DFLT"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <!-- FeatureCount=4 -->
+            <FeatureIndex index="0" value="0"/>
+            <FeatureIndex index="1" value="2"/>
+            <FeatureIndex index="2" value="3"/>
+            <FeatureIndex index="3" value="4"/>
+          </DefaultLangSys>
+          <!-- LangSysCount=0 -->
+        </Script>
+      </ScriptRecord>
+      <ScriptRecord index="1">
+        <ScriptTag value="knd2"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <!-- FeatureCount=4 -->
+            <FeatureIndex index="0" value="0"/>
+            <FeatureIndex index="1" value="2"/>
+            <FeatureIndex index="2" value="3"/>
+            <FeatureIndex index="3" value="4"/>
+          </DefaultLangSys>
+          <!-- LangSysCount=0 -->
+        </Script>
+      </ScriptRecord>
+      <ScriptRecord index="2">
+        <ScriptTag value="knda"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <!-- FeatureCount=4 -->
+            <FeatureIndex index="0" value="1"/>
+            <FeatureIndex index="1" value="2"/>
+            <FeatureIndex index="2" value="3"/>
+            <FeatureIndex index="3" value="4"/>
+          </DefaultLangSys>
+          <!-- LangSysCount=0 -->
+        </Script>
+      </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+      <!-- FeatureCount=5 -->
+      <FeatureRecord index="0">
+        <FeatureTag value="blwf"/>
+        <Feature>
+          <!-- LookupCount=1 -->
+          <LookupListIndex index="0" value="1"/>
+        </Feature>
+      </FeatureRecord>
+      <FeatureRecord index="1">
+        <FeatureTag value="blwf"/>
+        <Feature>
+          <!-- LookupCount=1 -->
+          <LookupListIndex index="0" value="2"/>
+        </Feature>
+      </FeatureRecord>
+      <FeatureRecord index="2">
+        <FeatureTag value="haln"/>
+        <Feature>
+          <!-- LookupCount=1 -->
+          <LookupListIndex index="0" value="7"/>
+        </Feature>
+      </FeatureRecord>
+      <FeatureRecord index="3">
+        <FeatureTag value="pres"/>
+        <Feature>
+          <!-- LookupCount=4 -->
+          <LookupListIndex index="0" value="3"/>
+          <LookupListIndex index="1" value="4"/>
+          <LookupListIndex index="2" value="5"/>
+          <LookupListIndex index="3" value="6"/>
+        </Feature>
+      </FeatureRecord>
+      <FeatureRecord index="4">
+        <FeatureTag value="rphf"/>
+        <Feature>
+          <!-- LookupCount=1 -->
+          <LookupListIndex index="0" value="0"/>
+        </Feature>
+      </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+      <!-- LookupCount=10 -->
+      <Lookup index="0">
+        <!-- LookupType=4 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knRA">
+            <Ligature components="knVirama" glyph="knReph"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="1">
+        <!-- LookupType=4 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knVirama">
+            <Ligature components="knLLLA" glyph="knLLLAc2"/>
+            <Ligature components="knLLA" glyph="knLLAc2"/>
+            <Ligature components="knRRA" glyph="knRRAc2"/>
+            <Ligature components="knHA" glyph="knHAc2"/>
+            <Ligature components="knSA" glyph="knSAc2"/>
+            <Ligature components="knSSA" glyph="knSSAc2"/>
+            <Ligature components="knSHA" glyph="knSHAc2"/>
+            <Ligature components="knVA" glyph="knVAc2"/>
+            <Ligature components="knLA" glyph="knLAc2"/>
+            <Ligature components="knRA" glyph="knRAc2"/>
+            <Ligature components="knYA" glyph="knYAc2"/>
+            <Ligature components="knMA" glyph="knMAc2"/>
+            <Ligature components="knBHA" glyph="knBHAc2"/>
+            <Ligature components="knBA" glyph="knBAc2"/>
+            <Ligature components="knPHA" glyph="knPHAc2"/>
+            <Ligature components="knPA" glyph="knPAc2"/>
+            <Ligature components="knNA" glyph="knNAc2"/>
+            <Ligature components="knDHA" glyph="knDHAc2"/>
+            <Ligature components="knDA" glyph="knDAc2"/>
+            <Ligature components="knTHA" glyph="knTHAc2"/>
+            <Ligature components="knTA" glyph="knTAc2"/>
+            <Ligature components="knNNA" glyph="knNNAc2"/>
+            <Ligature components="knDDHA" glyph="knDDHAc2"/>
+            <Ligature components="knDDA" glyph="knDDAc2"/>
+            <Ligature components="knTTHA" glyph="knTTHAc2"/>
+            <Ligature components="knTTA" glyph="knTTAc2"/>
+            <Ligature components="knNYA" glyph="knNYAc2"/>
+            <Ligature components="knJHA" glyph="knJHAc2"/>
+            <Ligature components="knJA" glyph="knJAc2"/>
+            <Ligature components="knCHA" glyph="knCHAc2"/>
+            <Ligature components="knCA" glyph="knCAc2"/>
+            <Ligature components="knNGA" glyph="knNGAc2"/>
+            <Ligature components="knGHA" glyph="knGHAc2"/>
+            <Ligature components="knGA" glyph="knGAc2"/>
+            <Ligature components="knKHA" glyph="knKHAc2"/>
+            <Ligature components="knKA" glyph="knKAc2"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="2">
+        <!-- LookupType=4 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knBA">
+            <Ligature components="knVirama" glyph="knBAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knBHA">
+            <Ligature components="knVirama" glyph="knBHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCA">
+            <Ligature components="knVirama" glyph="knCAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCHA">
+            <Ligature components="knVirama" glyph="knCHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDA">
+            <Ligature components="knVirama" glyph="knDAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDA">
+            <Ligature components="knVirama" glyph="knDDAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDHA">
+            <Ligature components="knVirama" glyph="knDDHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDHA">
+            <Ligature components="knVirama" glyph="knDHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGA">
+            <Ligature components="knVirama" glyph="knGAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGHA">
+            <Ligature components="knVirama" glyph="knGHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knHA">
+            <Ligature components="knVirama" glyph="knHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJA">
+            <Ligature components="knVirama" glyph="knJAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJHA">
+            <Ligature components="knVirama" glyph="knJHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKA">
+            <Ligature components="knVirama" glyph="knKAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKHA">
+            <Ligature components="knVirama" glyph="knKHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLA">
+            <Ligature components="knVirama" glyph="knLAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLA">
+            <Ligature components="knVirama" glyph="knLLAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLLA">
+            <Ligature components="knVirama" glyph="knLLLAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knMA">
+            <Ligature components="knVirama" glyph="knMAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNA">
+            <Ligature components="knVirama" glyph="knNAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNGA">
+            <Ligature components="knVirama" glyph="knNGAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNNA">
+            <Ligature components="knVirama" glyph="knNNAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNYA">
+            <Ligature components="knVirama" glyph="knNYAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPA">
+            <Ligature components="knVirama" glyph="knPAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPHA">
+            <Ligature components="knVirama" glyph="knPHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRA">
+            <Ligature components="knVirama" glyph="knRAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRRA">
+            <Ligature components="knVirama" glyph="knRRAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSA">
+            <Ligature components="knVirama" glyph="knSAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSHA">
+            <Ligature components="knVirama" glyph="knSHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSSA">
+            <Ligature components="knVirama" glyph="knSSAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTA">
+            <Ligature components="knVirama" glyph="knTAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTHA">
+            <Ligature components="knVirama" glyph="knTHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTA">
+            <Ligature components="knVirama" glyph="knTTAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTHA">
+            <Ligature components="knVirama" glyph="knTTHAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knVA">
+            <Ligature components="knVirama" glyph="knVAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knYA">
+            <Ligature components="knVirama" glyph="knYAc2"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="3">
+        <!-- LookupType=4 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knBA">
+            <Ligature components="knsignE,knsignUU" glyph="knBO"/>
+            <Ligature components="knsignAU" glyph="knBAU"/>
+            <Ligature components="knsignE" glyph="knBE"/>
+            <Ligature components="knsignUU" glyph="knBUU"/>
+            <Ligature components="knsignU" glyph="knBU"/>
+            <Ligature components="knsignI" glyph="knBI"/>
+            <Ligature components="knsignAA" glyph="knBAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knBHA">
+            <Ligature components="knsignE,knsignUU" glyph="knBHO"/>
+            <Ligature components="knsignAU" glyph="knBHAU"/>
+            <Ligature components="knsignE" glyph="knBHE"/>
+            <Ligature components="knsignUU" glyph="knBHUU"/>
+            <Ligature components="knsignU" glyph="knBHU"/>
+            <Ligature components="knsignI" glyph="knBHI"/>
+            <Ligature components="knsignAA" glyph="knBHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCA">
+            <Ligature components="knsignE,knsignUU" glyph="knCO"/>
+            <Ligature components="knsignAU" glyph="knCAU"/>
+            <Ligature components="knsignE" glyph="knCE"/>
+            <Ligature components="knsignUU" glyph="knCUU"/>
+            <Ligature components="knsignU" glyph="knCU"/>
+            <Ligature components="knsignI" glyph="knCI"/>
+            <Ligature components="knsignAA" glyph="knCAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCHA">
+            <Ligature components="knsignE,knsignUU" glyph="knCHO"/>
+            <Ligature components="knsignAU" glyph="knCHAU"/>
+            <Ligature components="knsignE" glyph="knCHE"/>
+            <Ligature components="knsignUU" glyph="knCHUU"/>
+            <Ligature components="knsignU" glyph="knCHU"/>
+            <Ligature components="knsignI" glyph="knCHI"/>
+            <Ligature components="knsignAA" glyph="knCHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDA">
+            <Ligature components="knsignE,knsignUU" glyph="knDO"/>
+            <Ligature components="knsignAU" glyph="knDAU"/>
+            <Ligature components="knsignE" glyph="knDE"/>
+            <Ligature components="knsignUU" glyph="knDUU"/>
+            <Ligature components="knsignU" glyph="knDU"/>
+            <Ligature components="knsignI" glyph="knDI"/>
+            <Ligature components="knsignAA" glyph="knDAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDA">
+            <Ligature components="knsignE,knsignUU" glyph="knDDO"/>
+            <Ligature components="knsignAU" glyph="knDDAU"/>
+            <Ligature components="knsignE" glyph="knDDE"/>
+            <Ligature components="knsignUU" glyph="knDDUU"/>
+            <Ligature components="knsignU" glyph="knDDU"/>
+            <Ligature components="knsignI" glyph="knDDI"/>
+            <Ligature components="knsignAA" glyph="knDDAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDHA">
+            <Ligature components="knsignE,knsignUU" glyph="knDDHO"/>
+            <Ligature components="knsignAU" glyph="knDDHAU"/>
+            <Ligature components="knsignE" glyph="knDDHE"/>
+            <Ligature components="knsignUU" glyph="knDDHUU"/>
+            <Ligature components="knsignU" glyph="knDDHU"/>
+            <Ligature components="knsignI" glyph="knDDHI"/>
+            <Ligature components="knsignAA" glyph="knDDHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDHA">
+            <Ligature components="knsignE,knsignUU" glyph="knDHO"/>
+            <Ligature components="knsignAU" glyph="knDHAU"/>
+            <Ligature components="knsignE" glyph="knDHE"/>
+            <Ligature components="knsignUU" glyph="knDHUU"/>
+            <Ligature components="knsignU" glyph="knDHU"/>
+            <Ligature components="knsignI" glyph="knDHI"/>
+            <Ligature components="knsignAA" glyph="knDHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGA">
+            <Ligature components="knsignE,knsignUU" glyph="knGO"/>
+            <Ligature components="knsignAU" glyph="knGAU"/>
+            <Ligature components="knsignE" glyph="knGE"/>
+            <Ligature components="knsignUU" glyph="knGUU"/>
+            <Ligature components="knsignU" glyph="knGU"/>
+            <Ligature components="knsignI" glyph="knGI"/>
+            <Ligature components="knsignAA" glyph="knGAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGHA">
+            <Ligature components="knsignE,knsignUU" glyph="knGHO"/>
+            <Ligature components="knsignAU" glyph="knGHAU"/>
+            <Ligature components="knsignE" glyph="knGHE"/>
+            <Ligature components="knsignUU" glyph="knGHUU"/>
+            <Ligature components="knsignU" glyph="knGHU"/>
+            <Ligature components="knsignI" glyph="knGHI"/>
+            <Ligature components="knsignAA" glyph="knGHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knHA">
+            <Ligature components="knsignE,knsignUU" glyph="knHO"/>
+            <Ligature components="knsignAU" glyph="knHAU"/>
+            <Ligature components="knsignE" glyph="knHE"/>
+            <Ligature components="knsignUU" glyph="knHUU"/>
+            <Ligature components="knsignU" glyph="knHU"/>
+            <Ligature components="knsignI" glyph="knHI"/>
+            <Ligature components="knsignAA" glyph="knHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJA">
+            <Ligature components="knsignE,knsignUU" glyph="knJO"/>
+            <Ligature components="knsignAU" glyph="knJAU"/>
+            <Ligature components="knsignE" glyph="knJE"/>
+            <Ligature components="knsignUU" glyph="knJUU"/>
+            <Ligature components="knsignU" glyph="knJU"/>
+            <Ligature components="knsignI" glyph="knJI"/>
+            <Ligature components="knsignAA" glyph="knJAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJHA">
+            <Ligature components="knsignE,knsignUU" glyph="knJHO"/>
+            <Ligature components="knsignAU" glyph="knJHAU"/>
+            <Ligature components="knsignE" glyph="knJHE"/>
+            <Ligature components="knsignUU" glyph="knJHUU"/>
+            <Ligature components="knsignU" glyph="knJHU"/>
+            <Ligature components="knsignI" glyph="knJHI"/>
+            <Ligature components="knsignAA" glyph="knJHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKA">
+            <Ligature components="knsignE,knsignUU" glyph="knKO"/>
+            <Ligature components="knsignAU" glyph="knKAU"/>
+            <Ligature components="knsignE" glyph="knKE"/>
+            <Ligature components="knsignUU" glyph="knKUU"/>
+            <Ligature components="knsignU" glyph="knKU"/>
+            <Ligature components="knsignI" glyph="knKI"/>
+            <Ligature components="knsignAA" glyph="knKAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKHA">
+            <Ligature components="knsignE,knsignUU" glyph="knKHO"/>
+            <Ligature components="knsignAU" glyph="knKHAU"/>
+            <Ligature components="knsignE" glyph="knKHE"/>
+            <Ligature components="knsignUU" glyph="knKHUU"/>
+            <Ligature components="knsignU" glyph="knKHU"/>
+            <Ligature components="knsignI" glyph="knKHI"/>
+            <Ligature components="knsignAA" glyph="knKHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLA">
+            <Ligature components="knsignE,knsignUU" glyph="knLO"/>
+            <Ligature components="knsignAU" glyph="knLAU"/>
+            <Ligature components="knsignE" glyph="knLE"/>
+            <Ligature components="knsignUU" glyph="knLUU"/>
+            <Ligature components="knsignU" glyph="knLU"/>
+            <Ligature components="knsignI" glyph="knLI"/>
+            <Ligature components="knsignAA" glyph="knLAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLA">
+            <Ligature components="knsignE,knsignUU" glyph="knLLO"/>
+            <Ligature components="knsignAU" glyph="knLLAU"/>
+            <Ligature components="knsignE" glyph="knLLE"/>
+            <Ligature components="knsignUU" glyph="knLLUU"/>
+            <Ligature components="knsignU" glyph="knLLU"/>
+            <Ligature components="knsignI" glyph="knLLI"/>
+            <Ligature components="knsignAA" glyph="knLLAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLLA">
+            <Ligature components="knsignE,knsignUU" glyph="knLLLO"/>
+            <Ligature components="knsignAU" glyph="knLLLAU"/>
+            <Ligature components="knsignE" glyph="knLLLE"/>
+            <Ligature components="knsignUU" glyph="knLLLUU"/>
+            <Ligature components="knsignU" glyph="knLLLU"/>
+            <Ligature components="knsignI" glyph="knLLLI"/>
+            <Ligature components="knsignAA" glyph="knLLLAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knMA">
+            <Ligature components="knsignE,knsignUU" glyph="knMO"/>
+            <Ligature components="knsignAU" glyph="knMAU"/>
+            <Ligature components="knsignE" glyph="knME"/>
+            <Ligature components="knsignUU" glyph="knMUU"/>
+            <Ligature components="knsignU" glyph="knMU"/>
+            <Ligature components="knsignI" glyph="knMI"/>
+            <Ligature components="knsignAA" glyph="knMAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNA">
+            <Ligature components="knsignE,knsignUU" glyph="knNO"/>
+            <Ligature components="knsignAU" glyph="knNAU"/>
+            <Ligature components="knsignE" glyph="knNE"/>
+            <Ligature components="knsignUU" glyph="knNUU"/>
+            <Ligature components="knsignU" glyph="knNU"/>
+            <Ligature components="knsignI" glyph="knNI"/>
+            <Ligature components="knsignAA" glyph="knNAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNGA">
+            <Ligature components="knsignE,knsignUU" glyph="knNGO"/>
+            <Ligature components="knsignAU" glyph="knNGAU"/>
+            <Ligature components="knsignE" glyph="knNGE"/>
+            <Ligature components="knsignUU" glyph="knNGUU"/>
+            <Ligature components="knsignU" glyph="knNGU"/>
+            <Ligature components="knsignI" glyph="knNGI"/>
+            <Ligature components="knsignAA" glyph="knNGAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNNA">
+            <Ligature components="knsignE,knsignUU" glyph="knNNO"/>
+            <Ligature components="knsignAU" glyph="knNNAU"/>
+            <Ligature components="knsignE" glyph="knNNE"/>
+            <Ligature components="knsignUU" glyph="knNNUU"/>
+            <Ligature components="knsignU" glyph="knNNU"/>
+            <Ligature components="knsignI" glyph="knNNI"/>
+            <Ligature components="knsignAA" glyph="knNNAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNYA">
+            <Ligature components="knsignE,knsignUU" glyph="knNYO"/>
+            <Ligature components="knsignAU" glyph="knNYAU"/>
+            <Ligature components="knsignE" glyph="knNYE"/>
+            <Ligature components="knsignUU" glyph="knNYUU"/>
+            <Ligature components="knsignU" glyph="knNYU"/>
+            <Ligature components="knsignI" glyph="knNYI"/>
+            <Ligature components="knsignAA" glyph="knNYAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPA">
+            <Ligature components="knsignE,knsignUU" glyph="knPO"/>
+            <Ligature components="knsignAU" glyph="knPAU"/>
+            <Ligature components="knsignE" glyph="knPE"/>
+            <Ligature components="knsignUU" glyph="knPUU"/>
+            <Ligature components="knsignU" glyph="knPU"/>
+            <Ligature components="knsignI" glyph="knPI"/>
+            <Ligature components="knsignAA" glyph="knPAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPHA">
+            <Ligature components="knsignE,knsignUU" glyph="knPHO"/>
+            <Ligature components="knsignAU" glyph="knPHAU"/>
+            <Ligature components="knsignE" glyph="knPHE"/>
+            <Ligature components="knsignUU" glyph="knPHUU"/>
+            <Ligature components="knsignU" glyph="knPHU"/>
+            <Ligature components="knsignI" glyph="knPHI"/>
+            <Ligature components="knsignAA" glyph="knPHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRA">
+            <Ligature components="knsignE,knsignUU" glyph="knRO"/>
+            <Ligature components="knsignAU" glyph="knRAU"/>
+            <Ligature components="knsignE" glyph="knRE"/>
+            <Ligature components="knsignUU" glyph="knRUU"/>
+            <Ligature components="knsignU" glyph="knRU"/>
+            <Ligature components="knsignI" glyph="knRI"/>
+            <Ligature components="knsignAA" glyph="knRAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRRA">
+            <Ligature components="knsignE,knsignUU" glyph="knRRO"/>
+            <Ligature components="knsignAU" glyph="knRRAU"/>
+            <Ligature components="knsignE" glyph="knRRE"/>
+            <Ligature components="knsignUU" glyph="knRRUU"/>
+            <Ligature components="knsignU" glyph="knRRU"/>
+            <Ligature components="knsignI" glyph="knRRI"/>
+            <Ligature components="knsignAA" glyph="knRRAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSA">
+            <Ligature components="knsignE,knsignUU" glyph="knSO"/>
+            <Ligature components="knsignAU" glyph="knSAU"/>
+            <Ligature components="knsignE" glyph="knSE"/>
+            <Ligature components="knsignUU" glyph="knSUU"/>
+            <Ligature components="knsignU" glyph="knSU"/>
+            <Ligature components="knsignI" glyph="knSI"/>
+            <Ligature components="knsignAA" glyph="knSAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSHA">
+            <Ligature components="knsignE,knsignUU" glyph="knSHO"/>
+            <Ligature components="knsignAU" glyph="knSHAU"/>
+            <Ligature components="knsignE" glyph="knSHE"/>
+            <Ligature components="knsignUU" glyph="knSHUU"/>
+            <Ligature components="knsignU" glyph="knSHU"/>
+            <Ligature components="knsignI" glyph="knSHI"/>
+            <Ligature components="knsignAA" glyph="knSHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSSA">
+            <Ligature components="knsignE,knsignUU" glyph="knSSO"/>
+            <Ligature components="knsignAU" glyph="knSSAU"/>
+            <Ligature components="knsignE" glyph="knSSE"/>
+            <Ligature components="knsignUU" glyph="knSSUU"/>
+            <Ligature components="knsignU" glyph="knSSU"/>
+            <Ligature components="knsignI" glyph="knSSI"/>
+            <Ligature components="knsignAA" glyph="knSSAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTA">
+            <Ligature components="knsignE,knsignUU" glyph="knTO"/>
+            <Ligature components="knsignAU" glyph="knTAU"/>
+            <Ligature components="knsignE" glyph="knTE"/>
+            <Ligature components="knsignUU" glyph="knTUU"/>
+            <Ligature components="knsignU" glyph="knTU"/>
+            <Ligature components="knsignI" glyph="knTI"/>
+            <Ligature components="knsignAA" glyph="knTAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTHA">
+            <Ligature components="knsignE,knsignUU" glyph="knTHO"/>
+            <Ligature components="knsignAU" glyph="knTHAU"/>
+            <Ligature components="knsignE" glyph="knTHE"/>
+            <Ligature components="knsignUU" glyph="knTHUU"/>
+            <Ligature components="knsignU" glyph="knTHU"/>
+            <Ligature components="knsignI" glyph="knTHI"/>
+            <Ligature components="knsignAA" glyph="knTHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTA">
+            <Ligature components="knsignE,knsignUU" glyph="knTTO"/>
+            <Ligature components="knsignAU" glyph="knTTAU"/>
+            <Ligature components="knsignE" glyph="knTTE"/>
+            <Ligature components="knsignUU" glyph="knTTUU"/>
+            <Ligature components="knsignU" glyph="knTTU"/>
+            <Ligature components="knsignI" glyph="knTTI"/>
+            <Ligature components="knsignAA" glyph="knTTAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTHA">
+            <Ligature components="knsignE,knsignUU" glyph="knTTHO"/>
+            <Ligature components="knsignAU" glyph="knTTHAU"/>
+            <Ligature components="knsignE" glyph="knTTHE"/>
+            <Ligature components="knsignUU" glyph="knTTHUU"/>
+            <Ligature components="knsignU" glyph="knTTHU"/>
+            <Ligature components="knsignI" glyph="knTTHI"/>
+            <Ligature components="knsignAA" glyph="knTTHAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knVA">
+            <Ligature components="knsignE,knsignUU" glyph="knVO"/>
+            <Ligature components="knsignAU" glyph="knVAU"/>
+            <Ligature components="knsignE" glyph="knVE"/>
+            <Ligature components="knsignUU" glyph="knVUU"/>
+            <Ligature components="knsignU" glyph="knVU"/>
+            <Ligature components="knsignI" glyph="knVI"/>
+            <Ligature components="knsignAA" glyph="knVAA"/>
+          </LigatureSet>
+          <LigatureSet glyph="knYA">
+            <Ligature components="knsignE,knsignUU" glyph="knYO"/>
+            <Ligature components="knsignAU" glyph="knYAU"/>
+            <Ligature components="knsignE" glyph="knYE"/>
+            <Ligature components="knsignUU" glyph="knYUU"/>
+            <Ligature components="knsignU" glyph="knYU"/>
+            <Ligature components="knsignI" glyph="knYI"/>
+            <Ligature components="knsignAA" glyph="knYAA"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="4">
+        <!-- LookupType=6 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <ChainContextSubst index="0" Format="3">
+          <!-- BacktrackGlyphCount=1 -->
+          <BacktrackCoverage index="0">
+            <Glyph value="knKA"/>
+            <Glyph value="knKAA"/>
+            <Glyph value="knKI"/>
+            <Glyph value="knKU"/>
+            <Glyph value="knKUU"/>
+            <Glyph value="knKE"/>
+            <Glyph value="knKO"/>
+            <Glyph value="knKAU"/>
+          </BacktrackCoverage>
+          <!-- InputGlyphCount=1 -->
+          <InputCoverage index="0">
+            <Glyph value="knSSAc2"/>
+          </InputCoverage>
+          <!-- LookAheadGlyphCount=0 -->
+          <!-- SubstCount=1 -->
+          <SubstLookupRecord index="0">
+            <SequenceIndex value="0"/>
+            <LookupListIndex value="8"/>
+          </SubstLookupRecord>
+        </ChainContextSubst>
+      </Lookup>
+      <Lookup index="5">
+        <!-- LookupType=4 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knKAc2">
+            <Ligature components="knSSAc2" glyph="knKSSAc2"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTAc2">
+            <Ligature components="knRAc2" glyph="knTAc2_RAc2"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="6">
+        <!-- LookupType=6 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <ChainContextSubst index="0" Format="3">
+          <!-- BacktrackGlyphCount=1 -->
+          <BacktrackCoverage index="0">
+            <Glyph value="knsignvR"/>
+            <Glyph value="knsignvRR"/>
+            <Glyph value="knAIlengthmark"/>
+            <Glyph value="knKAc2"/>
+            <Glyph value="knKHAc2"/>
+            <Glyph value="knGAc2"/>
+            <Glyph value="knGHAc2"/>
+            <Glyph value="knNGAc2"/>
+            <Glyph value="knCAc2"/>
+            <Glyph value="knCHAc2"/>
+            <Glyph value="knJAc2"/>
+            <Glyph value="knJHAc2"/>
+            <Glyph value="knNYAc2"/>
+            <Glyph value="knTTAc2"/>
+            <Glyph value="knTTHAc2"/>
+            <Glyph value="knDDAc2"/>
+            <Glyph value="knDDHAc2"/>
+            <Glyph value="knNNAc2"/>
+            <Glyph value="knTAc2"/>
+            <Glyph value="knTHAc2"/>
+            <Glyph value="knDAc2"/>
+            <Glyph value="knDHAc2"/>
+            <Glyph value="knNAc2"/>
+            <Glyph value="knPAc2"/>
+            <Glyph value="knPHAc2"/>
+            <Glyph value="knBAc2"/>
+            <Glyph value="knBHAc2"/>
+            <Glyph value="knMAc2"/>
+            <Glyph value="knYAc2"/>
+            <Glyph value="knRAc2"/>
+            <Glyph value="knLAc2"/>
+            <Glyph value="knVAc2"/>
+            <Glyph value="knSHAc2"/>
+            <Glyph value="knSSAc2"/>
+            <Glyph value="knSAc2"/>
+            <Glyph value="knHAc2"/>
+            <Glyph value="knRRAc2"/>
+            <Glyph value="knLLAc2"/>
+            <Glyph value="knLLLAc2"/>
+            <Glyph value="knKSSAc2"/>
+            <Glyph value="knTAc2_RAc2"/>
+            <Glyph value="knsignvR.following"/>
+            <Glyph value="knsignvRR.following"/>
+            <Glyph value="knAIlengthmark.following"/>
+            <Glyph value="knKAc2.following"/>
+            <Glyph value="knKHAc2.following"/>
+            <Glyph value="knGAc2.following"/>
+            <Glyph value="knGHAc2.following"/>
+            <Glyph value="knNGAc2.following"/>
+            <Glyph value="knCAc2.following"/>
+            <Glyph value="knCHAc2.following"/>
+            <Glyph value="knJAc2.following"/>
+            <Glyph value="knJHAc2.following"/>
+            <Glyph value="knNYAc2.following"/>
+            <Glyph value="knTTAc2.following"/>
+            <Glyph value="knTTHAc2.following"/>
+            <Glyph value="knDDAc2.following"/>
+            <Glyph value="knDDHAc2.following"/>
+            <Glyph value="knNNAc2.following"/>
+            <Glyph value="knTAc2.following"/>
+            <Glyph value="knTHAc2.following"/>
+            <Glyph value="knDAc2.following"/>
+            <Glyph value="knDHAc2.following"/>
+            <Glyph value="knNAc2.following"/>
+            <Glyph value="knPAc2.following"/>
+            <Glyph value="knPHAc2.following"/>
+            <Glyph value="knBAc2.following"/>
+            <Glyph value="knBHAc2.following"/>
+            <Glyph value="knMAc2.following"/>
+            <Glyph value="knYAc2.following"/>
+            <Glyph value="knRAc2.following"/>
+            <Glyph value="knLAc2.following"/>
+            <Glyph value="knVAc2.following"/>
+            <Glyph value="knSHAc2.following"/>
+            <Glyph value="knSSAc2.following"/>
+            <Glyph value="knSAc2.following"/>
+            <Glyph value="knHAc2.following"/>
+            <Glyph value="knRRAc2.following"/>
+            <Glyph value="knLLAc2.following"/>
+            <Glyph value="knLLLAc2.following"/>
+            <Glyph value="knKSSAc2.following"/>
+            <Glyph value="knTAc2_RAc2.following"/>
+          </BacktrackCoverage>
+          <!-- InputGlyphCount=1 -->
+          <InputCoverage index="0">
+            <Glyph value="knsignvR"/>
+            <Glyph value="knsignvRR"/>
+            <Glyph value="knAIlengthmark"/>
+            <Glyph value="knKAc2"/>
+            <Glyph value="knKHAc2"/>
+            <Glyph value="knGAc2"/>
+            <Glyph value="knGHAc2"/>
+            <Glyph value="knNGAc2"/>
+            <Glyph value="knCAc2"/>
+            <Glyph value="knCHAc2"/>
+            <Glyph value="knJAc2"/>
+            <Glyph value="knJHAc2"/>
+            <Glyph value="knNYAc2"/>
+            <Glyph value="knTTAc2"/>
+            <Glyph value="knTTHAc2"/>
+            <Glyph value="knDDAc2"/>
+            <Glyph value="knDDHAc2"/>
+            <Glyph value="knNNAc2"/>
+            <Glyph value="knTAc2"/>
+            <Glyph value="knTHAc2"/>
+            <Glyph value="knDAc2"/>
+            <Glyph value="knDHAc2"/>
+            <Glyph value="knNAc2"/>
+            <Glyph value="knPAc2"/>
+            <Glyph value="knPHAc2"/>
+            <Glyph value="knBAc2"/>
+            <Glyph value="knBHAc2"/>
+            <Glyph value="knMAc2"/>
+            <Glyph value="knYAc2"/>
+            <Glyph value="knRAc2"/>
+            <Glyph value="knLAc2"/>
+            <Glyph value="knVAc2"/>
+            <Glyph value="knSHAc2"/>
+            <Glyph value="knSSAc2"/>
+            <Glyph value="knSAc2"/>
+            <Glyph value="knHAc2"/>
+            <Glyph value="knRRAc2"/>
+            <Glyph value="knLLAc2"/>
+            <Glyph value="knLLLAc2"/>
+            <Glyph value="knKSSAc2"/>
+            <Glyph value="knTAc2_RAc2"/>
+          </InputCoverage>
+          <!-- LookAheadGlyphCount=0 -->
+          <!-- SubstCount=1 -->
+          <SubstLookupRecord index="0">
+            <SequenceIndex value="0"/>
+            <LookupListIndex value="9"/>
+          </SubstLookupRecord>
+        </ChainContextSubst>
+      </Lookup>
+      <Lookup index="7">
+        <!-- LookupType=4 -->
+        <LookupFlag value="8"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0">
+          <LigatureSet glyph="knBA">
+            <Ligature components="knVirama" glyph="knB"/>
+          </LigatureSet>
+          <LigatureSet glyph="knBHA">
+            <Ligature components="knVirama" glyph="knBH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCA">
+            <Ligature components="knVirama" glyph="knC"/>
+          </LigatureSet>
+          <LigatureSet glyph="knCHA">
+            <Ligature components="knVirama" glyph="knCH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDA">
+            <Ligature components="knVirama" glyph="knD"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDA">
+            <Ligature components="knVirama" glyph="knDD"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDDHA">
+            <Ligature components="knVirama" glyph="knDDH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knDHA">
+            <Ligature components="knVirama" glyph="knDH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGA">
+            <Ligature components="knVirama" glyph="knG"/>
+          </LigatureSet>
+          <LigatureSet glyph="knGHA">
+            <Ligature components="knVirama" glyph="knGH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knHA">
+            <Ligature components="knVirama" glyph="knH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJA">
+            <Ligature components="knVirama" glyph="knJ"/>
+          </LigatureSet>
+          <LigatureSet glyph="knJHA">
+            <Ligature components="knVirama" glyph="knJH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKA">
+            <Ligature components="knVirama" glyph="knK"/>
+          </LigatureSet>
+          <LigatureSet glyph="knKHA">
+            <Ligature components="knVirama" glyph="knKH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLA">
+            <Ligature components="knVirama" glyph="knL"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLA">
+            <Ligature components="knVirama" glyph="knLL"/>
+          </LigatureSet>
+          <LigatureSet glyph="knLLLA">
+            <Ligature components="knVirama" glyph="knLLL"/>
+          </LigatureSet>
+          <LigatureSet glyph="knMA">
+            <Ligature components="knVirama" glyph="knM"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNA">
+            <Ligature components="knVirama" glyph="knN"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNGA">
+            <Ligature components="knVirama" glyph="knNG"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNNA">
+            <Ligature components="knVirama" glyph="knNN"/>
+          </LigatureSet>
+          <LigatureSet glyph="knNYA">
+            <Ligature components="knVirama" glyph="knNY"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPA">
+            <Ligature components="knVirama" glyph="knP"/>
+          </LigatureSet>
+          <LigatureSet glyph="knPHA">
+            <Ligature components="knVirama" glyph="knPH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRA">
+            <Ligature components="knVirama" glyph="knR"/>
+          </LigatureSet>
+          <LigatureSet glyph="knRRA">
+            <Ligature components="knVirama" glyph="knRR"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSA">
+            <Ligature components="knVirama" glyph="knS"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSHA">
+            <Ligature components="knVirama" glyph="knSH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knSSA">
+            <Ligature components="knVirama" glyph="knSS"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTA">
+            <Ligature components="knVirama" glyph="knT"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTHA">
+            <Ligature components="knVirama" glyph="knTH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTA">
+            <Ligature components="knVirama" glyph="knTT"/>
+          </LigatureSet>
+          <LigatureSet glyph="knTTHA">
+            <Ligature components="knVirama" glyph="knTTH"/>
+          </LigatureSet>
+          <LigatureSet glyph="knVA">
+            <Ligature components="knVirama" glyph="knV"/>
+          </LigatureSet>
+          <LigatureSet glyph="knYA">
+            <Ligature components="knVirama" glyph="knY"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+      <Lookup index="8">
+        <!-- LookupType=1 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <SingleSubst index="0">
+          <Substitution in="knSSAc2" out="knSSAc2.kssa"/>
+        </SingleSubst>
+      </Lookup>
+      <Lookup index="9">
+        <!-- LookupType=1 -->
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <SingleSubst index="0">
+          <Substitution in="knAIlengthmark" out="knAIlengthmark.following"/>
+          <Substitution in="knBAc2" out="knBAc2.following"/>
+          <Substitution in="knBHAc2" out="knBHAc2.following"/>
+          <Substitution in="knCAc2" out="knCAc2.following"/>
+          <Substitution in="knCHAc2" out="knCHAc2.following"/>
+          <Substitution in="knDAc2" out="knDAc2.following"/>
+          <Substitution in="knDDAc2" out="knDDAc2.following"/>
+          <Substitution in="knDDHAc2" out="knDDHAc2.following"/>
+          <Substitution in="knDHAc2" out="knDHAc2.following"/>
+          <Substitution in="knGAc2" out="knGAc2.following"/>
+          <Substitution in="knGHAc2" out="knGHAc2.following"/>
+          <Substitution in="knHAc2" out="knHAc2.following"/>
+          <Substitution in="knJAc2" out="knJAc2.following"/>
+          <Substitution in="knJHAc2" out="knJHAc2.following"/>
+          <Substitution in="knKAc2" out="knKAc2.following"/>
+          <Substitution in="knKHAc2" out="knKHAc2.following"/>
+          <Substitution in="knKSSAc2" out="knKSSAc2.following"/>
+          <Substitution in="knLAc2" out="knLAc2.following"/>
+          <Substitution in="knLLAc2" out="knLLAc2.following"/>
+          <Substitution in="knLLLAc2" out="knLLLAc2.following"/>
+          <Substitution in="knMAc2" out="knMAc2.following"/>
+          <Substitution in="knNAc2" out="knNAc2.following"/>
+          <Substitution in="knNGAc2" out="knNGAc2.following"/>
+          <Substitution in="knNNAc2" out="knNNAc2.following"/>
+          <Substitution in="knNYAc2" out="knNYAc2.following"/>
+          <Substitution in="knPAc2" out="knPAc2.following"/>
+          <Substitution in="knPHAc2" out="knPHAc2.following"/>
+          <Substitution in="knRAc2" out="knRAc2.following"/>
+          <Substitution in="knRRAc2" out="knRRAc2.following"/>
+          <Substitution in="knSAc2" out="knSAc2.following"/>
+          <Substitution in="knSHAc2" out="knSHAc2.following"/>
+          <Substitution in="knSSAc2" out="knSSAc2.following"/>
+          <Substitution in="knTAc2" out="knTAc2.following"/>
+          <Substitution in="knTAc2_RAc2" out="knTAc2_RAc2.following"/>
+          <Substitution in="knTHAc2" out="knTHAc2.following"/>
+          <Substitution in="knTTAc2" out="knTTAc2.following"/>
+          <Substitution in="knTTHAc2" out="knTTHAc2.following"/>
+          <Substitution in="knVAc2" out="knVAc2.following"/>
+          <Substitution in="knYAc2" out="knYAc2.following"/>
+          <Substitution in="knsignvR" out="knsignvR.following"/>
+          <Substitution in="knsignvRR" out="knsignvRR.following"/>
+        </SingleSubst>
+      </Lookup>
+    </LookupList>
+  </GSUB>
+
+</ttFont>

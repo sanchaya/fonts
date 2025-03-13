@@ -127,6 +127,28 @@
 			}
 		]
 	},
+	"Ambarisha": {
+		"family": "Ambarisha",
+		"link": "Ambarisha",
+		"fonts": [
+			{
+				"font": "Ambarisha Regular",
+				"link": "Ambarisha-Regular"
+			},
+			{
+				"font": "Ambarisha2",
+				"link": "Ambarisha2"
+			},
+			{
+				"font": "Ambarisha Regular",
+				"link": "Ambarisha-Regular"
+			},
+			{
+				"font": "Ambarisha2",
+				"link": "Ambarisha2"
+			}
+		]
+	},
 	"Anchu-Kannada": {
 		"family": "Anchu Kannada",
 		"link": "Anchu-Kannada",
@@ -333,6 +355,16 @@
 			}
 		]
 	},
+	"BandipurOne": {
+		"family": "BandipurOne",
+		"link": "BandipurOne",
+		"fonts": [
+			{
+				"font": "BandipurOne",
+				"link": "BandipurOne"
+			}
+		]
+	},
 	"Baraha-Kannada": {
 		"family": "Baraha Kannada",
 		"link": "Baraha-Kannada",
@@ -436,6 +468,16 @@
 			{
 				"font": "Chalukya Vijayaditya",
 				"link": "Chalukya-Vijayaditya"
+			}
+		]
+	},
+	"Cheluvi": {
+		"family": "Cheluvi",
+		"link": "Cheluvi",
+		"fonts": [
+			{
+				"font": "Cheluvi",
+				"link": "Cheluvi"
 			}
 		]
 	},
@@ -5116,6 +5158,28 @@
 			{
 				"font": "tungab",
 				"link": "tungab"
+			}
+		]
+	},
+	"nlci-knda-badami": {
+		"family": "nlci knda badami",
+		"link": "nlci-knda-badami",
+		"fonts": [
+			{
+				"font": "Badami Bold",
+				"link": "Badami-Bold"
+			},
+			{
+				"font": "Badami BoldItalic",
+				"link": "Badami-BoldItalic"
+			},
+			{
+				"font": "Badami Italic",
+				"link": "Badami-Italic"
+			},
+			{
+				"font": "Badami Regular",
+				"link": "Badami-Regular"
 			}
 		]
 	}
