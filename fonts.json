@@ -127,6 +127,44 @@
 			}
 		]
 	},
+	"AkhandKannada": {
+		"family": "AkhandKannada",
+		"link": "AkhandKannada",
+		"fonts": [
+			{
+				"font": "AkhandKannada Black",
+				"link": "AkhandKannada-Black"
+			},
+			{
+				"font": "AkhandKannada Bold",
+				"link": "AkhandKannada-Bold"
+			},
+			{
+				"font": "AkhandKannada Extrabold",
+				"link": "AkhandKannada-Extrabold"
+			},
+			{
+				"font": "AkhandKannada Extralight",
+				"link": "AkhandKannada-Extralight"
+			},
+			{
+				"font": "AkhandKannada Light",
+				"link": "AkhandKannada-Light"
+			},
+			{
+				"font": "AkhandKannada Regular",
+				"link": "AkhandKannada-Regular"
+			},
+			{
+				"font": "AkhandKannada Semibold",
+				"link": "AkhandKannada-Semibold"
+			},
+			{
+				"font": "AkhandKannada Semilight",
+				"link": "AkhandKannada-Semilight"
+			}
+		]
+	},
 	"Ambarisha": {
 		"family": "Ambarisha",
 		"link": "Ambarisha",
@@ -451,6 +489,32 @@
 			}
 		]
 	},
+	"BelurKannada": {
+		"family": "BelurKannada",
+		"link": "BelurKannada",
+		"fonts": [
+			{
+				"font": "BelurKannada Bold",
+				"link": "BelurKannada-Bold"
+			},
+			{
+				"font": "BelurKannada Light",
+				"link": "BelurKannada-Light"
+			},
+			{
+				"font": "BelurKannada Medium",
+				"link": "BelurKannada-Medium"
+			},
+			{
+				"font": "BelurKannada Regular",
+				"link": "BelurKannada-Regular"
+			},
+			{
+				"font": "BelurKannada Semibold",
+				"link": "BelurKannada-Semibold"
+			}
+		]
+	},
 	"Benne": {
 		"family": "Benne",
 		"link": "Benne",
@@ -654,6 +718,32 @@
 			{
 				"font": "Kedage t",
 				"link": "Kedage-t"
+			}
+		]
+	},
+	"KohinoorKannada": {
+		"family": "KohinoorKannada",
+		"link": "KohinoorKannada",
+		"fonts": [
+			{
+				"font": "KohinoorKannada Bold",
+				"link": "KohinoorKannada-Bold"
+			},
+			{
+				"font": "KohinoorKannada Light",
+				"link": "KohinoorKannada-Light"
+			},
+			{
+				"font": "KohinoorKannada Medium",
+				"link": "KohinoorKannada-Medium"
+			},
+			{
+				"font": "KohinoorKannada Regular",
+				"link": "KohinoorKannada-Regular"
+			},
+			{
+				"font": "KohinoorKannada Semibold",
+				"link": "KohinoorKannada-Semibold"
 			}
 		]
 	},
@@ -1743,6 +1833,36 @@
 			}
 		]
 	},
+	"SamaKannada": {
+		"family": "SamaKannada",
+		"link": "SamaKannada",
+		"fonts": [
+			{
+				"font": "SamaKannada Bold",
+				"link": "SamaKannada-Bold"
+			},
+			{
+				"font": "SamaKannada Book",
+				"link": "SamaKannada-Book"
+			},
+			{
+				"font": "SamaKannada ExtraBold",
+				"link": "SamaKannada-ExtraBold"
+			},
+			{
+				"font": "SamaKannada Medium",
+				"link": "SamaKannada-Medium"
+			},
+			{
+				"font": "SamaKannada Regular",
+				"link": "SamaKannada-Regular"
+			},
+			{
+				"font": "SamaKannada SemiBold",
+				"link": "SamaKannada-SemiBold"
+			}
+		]
+	},
 	"Sampige": {
 		"family": "Sampige",
 		"link": "Sampige",
@@ -1750,6 +1870,32 @@
 			{
 				"font": "Sampige",
 				"link": "Sampige"
+			}
+		]
+	},
+	"SandurKannada": {
+		"family": "SandurKannada",
+		"link": "SandurKannada",
+		"fonts": [
+			{
+				"font": "SandurKannada Bold",
+				"link": "SandurKannada-Bold"
+			},
+			{
+				"font": "SandurKannada Light",
+				"link": "SandurKannada-Light"
+			},
+			{
+				"font": "SandurKannada Medium",
+				"link": "SandurKannada-Medium"
+			},
+			{
+				"font": "SandurKannada Regular",
+				"link": "SandurKannada-Regular"
+			},
+			{
+				"font": "SandurKannada Semibold",
+				"link": "SandurKannada-Semibold"
 			}
 		]
 	},
