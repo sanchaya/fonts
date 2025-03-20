@@ -491,6 +491,14 @@
 	src: url("../Fonts/Kadamba/Kadamba-Kakusthavarman.ttf");
 
 }@font-face {
+	font-family: "old .pfb KannadaPixel";
+	src: url("../Fonts/KannadaPixel/KannadaPixel.pfb");
+
+}@font-face {
+	font-family: "KannadaPixel";
+	src: url("../Fonts/KannadaPixel/KannadaPixel.ttf");
+
+}@font-face {
 	font-family: "Karnata F Kittel";
 	src: url("../Fonts/Karnata-F-Kittel-Font/Karnata F Kittel.ttf");
 
@@ -553,6 +561,14 @@
 }@font-face {
 	font-family: "Navilu";
 	src: url("../Fonts/Navilu/Navilu.ttf");
+
+}@font-face {
+	font-family: "38509324738";
+	src: url("../Fonts/Nirmala UI/38509324738.ttf");
+
+}@font-face {
+	font-family: "41723731216";
+	src: url("../Fonts/Nirmala UI/41723731216.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannada Bold";

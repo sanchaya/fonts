@@ -611,6 +611,20 @@
 			}
 		]
 	},
+	"KannadaPixel": {
+		"family": "KannadaPixel",
+		"link": "KannadaPixel",
+		"fonts": [
+			{
+				"font": "old .pfb KannadaPixel",
+				"link": "old-.pfb-KannadaPixel"
+			},
+			{
+				"font": "KannadaPixel",
+				"link": "KannadaPixel"
+			}
+		]
+	},
 	"Karnata-F-Kittel-Font": {
 		"family": "Karnata F Kittel Font",
 		"link": "Karnata-F-Kittel-Font",
@@ -714,6 +728,20 @@
 			{
 				"font": "Navilu",
 				"link": "Navilu"
+			}
+		]
+	},
+	"Nirmala-UI": {
+		"family": "Nirmala UI",
+		"link": "Nirmala-UI",
+		"fonts": [
+			{
+				"font": "38509324738",
+				"link": "38509324738"
+			},
+			{
+				"font": "41723731216",
+				"link": "41723731216"
 			}
 		]
 	},
