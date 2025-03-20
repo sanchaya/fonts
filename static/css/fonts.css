@@ -103,6 +103,38 @@
 	src: url("../Fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
 
 }@font-face {
+	font-family: "AkhandKannada Black";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Black.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Bold";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Extrabold";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Extrabold.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Extralight";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Extralight.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Light";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Light.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Regular";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Semibold";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Semibold.ttf");
+
+}@font-face {
+	font-family: "AkhandKannada Semilight";
+	src: url("../Fonts/AkhandKannada/AkhandKannada-Semilight.ttf");
+
+}@font-face {
 	font-family: "Ambarisha Regular";
 	src: url("../Fonts/Ambarisha/Ambarisha-Regular.ttf");
 
@@ -391,6 +423,26 @@
 	src: url("../Fonts/Baraha-Kannada/BRHVJY.TTF");
 
 }@font-face {
+	font-family: "BelurKannada Bold";
+	src: url("../Fonts/BelurKannada/BelurKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "BelurKannada Light";
+	src: url("../Fonts/BelurKannada/BelurKannada-Light.ttf");
+
+}@font-face {
+	font-family: "BelurKannada Medium";
+	src: url("../Fonts/BelurKannada/BelurKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "BelurKannada Regular";
+	src: url("../Fonts/BelurKannada/BelurKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "BelurKannada Semibold";
+	src: url("../Fonts/BelurKannada/BelurKannada-Semibold.ttf");
+
+}@font-face {
 	font-family: "Benne Regular";
 	src: url("../Fonts/Benne/Benne-Regular.ttf");
 
@@ -517,6 +569,26 @@
 }@font-face {
 	font-family: "Kedage t";
 	src: url("../Fonts/Kedage/Kedage-t.ttf");
+
+}@font-face {
+	font-family: "KohinoorKannada Bold";
+	src: url("../Fonts/KohinoorKannada/KohinoorKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "KohinoorKannada Light";
+	src: url("../Fonts/KohinoorKannada/KohinoorKannada-Light.ttf");
+
+}@font-face {
+	font-family: "KohinoorKannada Medium";
+	src: url("../Fonts/KohinoorKannada/KohinoorKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "KohinoorKannada Regular";
+	src: url("../Fonts/KohinoorKannada/KohinoorKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "KohinoorKannada Semibold";
+	src: url("../Fonts/KohinoorKannada/KohinoorKannada-Semibold.ttf");
 
 }@font-face {
 	font-family: "Kuvempu Praja1";
@@ -1527,8 +1599,52 @@
 	src: url("../Fonts/SakalBharati/Source file/SakalBharati_Normal.vfb");
 
 }@font-face {
+	font-family: "SamaKannada Bold";
+	src: url("../Fonts/SamaKannada/SamaKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "SamaKannada Book";
+	src: url("../Fonts/SamaKannada/SamaKannada-Book.ttf");
+
+}@font-face {
+	font-family: "SamaKannada ExtraBold";
+	src: url("../Fonts/SamaKannada/SamaKannada-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "SamaKannada Medium";
+	src: url("../Fonts/SamaKannada/SamaKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "SamaKannada Regular";
+	src: url("../Fonts/SamaKannada/SamaKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "SamaKannada SemiBold";
+	src: url("../Fonts/SamaKannada/SamaKannada-SemiBold.ttf");
+
+}@font-face {
 	font-family: "Sampige";
 	src: url("../Fonts/Sampige/Sampige.ttf");
+
+}@font-face {
+	font-family: "SandurKannada Bold";
+	src: url("../Fonts/SandurKannada/SandurKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "SandurKannada Light";
+	src: url("../Fonts/SandurKannada/SandurKannada-Light.ttf");
+
+}@font-face {
+	font-family: "SandurKannada Medium";
+	src: url("../Fonts/SandurKannada/SandurKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "SandurKannada Regular";
+	src: url("../Fonts/SandurKannada/SandurKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "SandurKannada Semibold";
+	src: url("../Fonts/SandurKannada/SandurKannada-Semibold.ttf");
 
 }@font-face {
 	font-family: "S0010890";
