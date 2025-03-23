@@ -1,0 +1,39 @@
+Read Me:
+
+This is my first attempt to create a font. I am not responsible for any damages occuring in any way arising out of using this font.
+
+This release contains a lighter (thin) version of the font. On receiving the feedback, i have plans to release other version of the fonts. Note the below points before using and giving feedback:
+
+1) These fonts does not have `talekattu'
+2) The ಅರ್ಕಾವತ್ತು is omitted by design. ಸರ್ಕಾರ will be rendered as ಸರ್‍ಕಾರ.
+3) The ಶಿ is designed differently.
+4) The font "Nishchaya Hosabaraha" is designed to omit ಹೆದ್ದುಲಿ (ಮಹಾಪ್ರಾಣ).  It will undergo further refinement with the feedback to simplify the language.
+5) Latin (English) characters are not yet included and will be added at a later stage.
+6) The fonts are free for commercial or personal use.
+
+
+Acknowledgements:
+
+I viewed these videos to create this font.
+Mohamud Abdullah - https://www.youtube.com/watch?v=S3HPpImq194
+Sudarshan/Sriharsha - https://www.youtube.com/watch?v=iwtrpEy7wu0
+
+Thanks to:
+Sudarshan
+Sriharsha
+Shankarsivarajan
+
+Softwares Used:
+Fontforge
+Inkscape
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.

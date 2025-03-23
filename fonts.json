@@ -545,6 +545,16 @@
 			}
 		]
 	},
+	"DevamaNew-master": {
+		"family": "DevamaNew master",
+		"link": "DevamaNew-master",
+		"fonts": [
+			{
+				"font": "Devama",
+				"link": "Devama"
+			}
+		]
+	},
 	"Ganga": {
 		"family": "Ganga",
 		"link": "Ganga",
@@ -626,6 +636,20 @@
 			{
 				"font": "Hoysala Regular",
 				"link": "Hoysala-Regular"
+			}
+		]
+	},
+	"Hubballi-master": {
+		"family": "Hubballi master",
+		"link": "Hubballi-master",
+		"fonts": [
+			{
+				"font": "Hubballi Regular",
+				"link": "Hubballi-Regular"
+			},
+			{
+				"font": "Hubballi Regular",
+				"link": "Hubballi-Regular"
 			}
 		]
 	},
@@ -832,6 +856,28 @@
 			{
 				"font": "41723731216",
 				"link": "41723731216"
+			}
+		]
+	},
+	"Nishchaya-main": {
+		"family": "Nishchaya main",
+		"link": "Nishchaya-main",
+		"fonts": [
+			{
+				"font": "Nishchaya",
+				"link": "Nishchaya"
+			},
+			{
+				"font": "Nishchaya Hosabaraha",
+				"link": "Nishchaya-Hosabaraha"
+			},
+			{
+				"font": "Nishchaya",
+				"link": "Nishchaya"
+			},
+			{
+				"font": "Nishchaya Hosabaraha",
+				"link": "Nishchaya-Hosabaraha"
 			}
 		]
 	},
@@ -1692,6 +1738,20 @@
 			{
 				"font": "VIDMN",
 				"link": "VIDMN"
+			}
+		]
+	},
+	"Padyakke-Libre-master": {
+		"family": "Padyakke Libre master",
+		"link": "Padyakke-Libre-master",
+		"fonts": [
+			{
+				"font": "PadyakkeExpandedOne Regular",
+				"link": "PadyakkeExpandedOne-Regular"
+			},
+			{
+				"font": "PadyakkeExpandedOne Regular",
+				"link": "PadyakkeExpandedOne-Regular"
 			}
 		]
 	},
