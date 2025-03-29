@@ -455,6 +455,10 @@
 	src: url("../Fonts/Cheluvi/Cheluvi.ttf");
 
 }@font-face {
+	font-family: "Devama";
+	src: url("../Fonts/DevamaNew/Devama.ttf");
+
+}@font-face {
 	font-family: "Gangga Marasimha";
 	src: url("../Fonts/Ganga/Gangga Marasimha.ttf");
 
@@ -513,6 +517,10 @@
 }@font-face {
 	font-family: "Hoysala Regular";
 	src: url("../Fonts/Hoysala/Hoysala-Regular.ttf");
+
+}@font-face {
+	font-family: "Hubballi Regular";
+	src: url("../Fonts/Hubballi/Hubballi-Regular.ttf");
 
 }@font-face {
 	font-family: "inchara";
@@ -641,6 +649,14 @@
 }@font-face {
 	font-family: "41723731216";
 	src: url("../Fonts/Nirmala UI/41723731216.ttf");
+
+}@font-face {
+	font-family: "Nishchaya";
+	src: url("../Fonts/Nishchaya/Nishchaya.ttf");
+
+}@font-face {
+	font-family: "Nishchaya Hosabaraha";
+	src: url("../Fonts/Nishchaya/Nishchaya_Hosabaraha.ttf");
 
 }@font-face {
 	font-family: "NotoSansKannada Bold";
@@ -1477,6 +1493,14 @@
 }@font-face {
 	font-family: "VIDMN";
 	src: url("../Fonts/PRAKASHAK/VIDMN.TTF");
+
+}@font-face {
+	font-family: "PadyakkeExpandedOne Regular";
+	src: url("../Fonts/Padyakke_Libre/PadyakkeExpandedOne-Regular.ttf");
+
+}@font-face {
+	font-family: "PadyakkeExpandedOne Regular";
+	src: url("../Fonts/Padyakke_Libre/fonts/ttf/PadyakkeExpandedOne-Regular.ttf");
 
 }@font-face {
 	font-family: "PRABI";
