@@ -545,6 +545,16 @@
 			}
 		]
 	},
+	"DevamaNew": {
+		"family": "DevamaNew",
+		"link": "DevamaNew",
+		"fonts": [
+			{
+				"font": "Devama",
+				"link": "Devama"
+			}
+		]
+	},
 	"Ganga": {
 		"family": "Ganga",
 		"link": "Ganga",
@@ -626,6 +636,16 @@
 			{
 				"font": "Hoysala Regular",
 				"link": "Hoysala-Regular"
+			}
+		]
+	},
+	"Hubballi": {
+		"family": "Hubballi",
+		"link": "Hubballi",
+		"fonts": [
+			{
+				"font": "Hubballi Regular",
+				"link": "Hubballi-Regular"
 			}
 		]
 	},
@@ -832,6 +852,20 @@
 			{
 				"font": "41723731216",
 				"link": "41723731216"
+			}
+		]
+	},
+	"Nishchaya": {
+		"family": "Nishchaya",
+		"link": "Nishchaya",
+		"fonts": [
+			{
+				"font": "Nishchaya",
+				"link": "Nishchaya"
+			},
+			{
+				"font": "Nishchaya Hosabaraha",
+				"link": "Nishchaya-Hosabaraha"
 			}
 		]
 	},
@@ -1692,6 +1726,20 @@
 			{
 				"font": "VIDMN",
 				"link": "VIDMN"
+			}
+		]
+	},
+	"Padyakke-Libre": {
+		"family": "Padyakke Libre",
+		"link": "Padyakke-Libre",
+		"fonts": [
+			{
+				"font": "PadyakkeExpandedOne Regular",
+				"link": "PadyakkeExpandedOne-Regular"
+			},
+			{
+				"font": "PadyakkeExpandedOne Regular",
+				"link": "PadyakkeExpandedOne-Regular"
 			}
 		]
 	},
