@@ -39,50 +39,48 @@
     <p>Type in the box below to try the fonts. Use the slider to adjust font size.</p>
   </div>
   
-  <div class="family-header">
-    <div class="input-type-toggle">
-      <button class="toggle-btn active" data-type="sentence">Sentence</button>
-      <button class="toggle-btn" data-type="paragraph">Paragraph</button>
+  <div class="input-type-toggle">
+    <button class="toggle-btn active" data-type="sentence">Sentence</button>
+    <button class="toggle-btn" data-type="paragraph">Paragraph</button>
+  </div>
+  
+  <div class="input-section sentence-input active">
+    <div class="field-wrapper">
+      <input type="text" maxlength="100" autocomplete="off" class="kan-ime" id="type-text">
+      <div class="field-placeholder"><span>Type Text</span></div>
     </div>
-    
-    <div class="input-section sentence-input active">
-      <div class="field-wrapper">
-        <input type="text" maxlength="100" autocomplete="off" class="kan-ime" id="type-text">
-        <div class="field-placeholder"><span>Type Text</span></div>
+    <div id="slider-align">
+      <div class="slidecontainer">
+        <input type="range" min="8" max="100" value="50" name="range" class="slider" id="myRange">
+        <output onforminput="value = range.valueAsNumber;"></output>
       </div>
+    </div>
+  </div>
+  
+  <div class="input-section paragraph-input">
+    <div class="font-selector">
+      <label>Select Font:</label>
+      <select id="paragraphFontSelect">
+        <% for(let font of data.fonts){ %>
+          <option value="<%= font.font %>"><%= font.font %></option>
+        <% } %>
+      </select>
+    </div>
+    <div class="paragraph-input-row">
+      <div class="field-wrapper paragraph-field">
+        <textarea maxlength="500" autocomplete="off" class="kan-ime" id="type-paragraph" rows="5"></textarea>
+        <div class="field-placeholder"><span>Type Paragraph</span></div>
+      </div>
+    </div>
+    <div class="paragraph-controls">
       <div id="slider-align">
         <div class="slidecontainer">
-          <input type="range" min="8" max="100" value="50" name="range" class="slider" id="myRange">
-          <output onforminput="value = range.valueAsNumber;"></output>
+          <input type="range" min="8" max="100" value="36" name="range" class="slider para-slider" id="paraRange">
+          <output onforminput="value = paraRange.valueAsNumber;"></output>
         </div>
       </div>
-    </div>
-    
-    <div class="input-section paragraph-input">
-      <div class="font-selector">
-        <label>Select Font:</label>
-        <select id="paragraphFontSelect">
-          <% for(let font of data.fonts){ %>
-            <option value="<%= font.font %>"><%= font.font %></option>
-          <% } %>
-        </select>
-      </div>
-      <div class="paragraph-input-row">
-        <div class="field-wrapper paragraph-field">
-          <textarea type="text" maxlength="500" autocomplete="off" class="kan-ime" id="type-paragraph" rows="5"></textarea>
-          <div class="field-placeholder"><span>Type Paragraph</span></div>
-        </div>
-      </div>
-      <div class="paragraph-controls">
-        <div id="slider-align">
-          <div class="slidecontainer">
-            <input type="range" min="8" max="100" value="36" name="range" class="slider para-slider" id="paraRange">
-            <output onforminput="value = paraRange.valueAsNumber;"></output>
-          </div>
-        </div>
-        <div class="preview-box" id="paragraphPreview">
-          <p></p>
-        </div>
+      <div class="preview-box" id="paragraphPreview">
+        <p></p>
       </div>
     </div>
   </div>
