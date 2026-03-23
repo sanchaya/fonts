@@ -198,8 +198,7 @@ nav {
 .right-nav {
   display: flex;
   flex-direction: row;
-  width: 36ch;
-  /* before width: 36ch */
+  flex-wrap: wrap;
 }
 
 .right-nav > * {
@@ -207,11 +206,9 @@ nav {
   position: relative;
   align-items: center;
   overflow: hidden;
-  padding: 0px 5px;
-  flex-basis: 50%;
+  padding: 0px 12px;
   justify-content: center;
   color: var(--text-color3);
-  /* font-size: 1.25rem; */
   font-size: 1.6rem;
 }
 
