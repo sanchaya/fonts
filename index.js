@@ -55,7 +55,7 @@ const saveMetadata = (data) => {
 
 const loadFontGlyphs = async (fontFamily) => {
     try {
-        const fontDir = fontFamily.replace(/ /g, '_')
+        const fontDir = fontFamily.replace(/ /g, '_').replace(/-/g, '_')
         const fontsDir = path.join(__dirname, 'static', 'Fonts', fontDir)
         
         if (!fs.existsSync(fontsDir)) {
