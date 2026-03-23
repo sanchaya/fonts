@@ -1,0 +1,17 @@
+[
+  {
+    "fontFamily": "Akaya-Kanadaka",
+    "fontName": "AkayaKanadaka Regular",
+    "email": "test@example.com",
+    "description": "Test glyph missing for unicode U+0C15",
+    "browser": "Chrome",
+    "os": "macOS",
+    "status": "open",
+    "id": 1774275636914,
+    "createdAt": "2026-03-23T14:20:36.914Z",
+    "acknowledgments": 1,
+    "acknowledgedBy": [
+      "::ffff:127.0.0.1"
+    ]
+  }
+]
