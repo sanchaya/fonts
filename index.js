@@ -37,6 +37,7 @@ app.use(session({
 const {get_all_data, get_all_conjuncts,getFonts,getFontFromParam, getFontsForFamilyPage} = require('./Main/fontSelectedPage/fontSelectedPage')
 
 const fs = require('fs')
+const opentype = require('opentype.js')
 
 const METADATA_FILE = path.join(__dirname, 'fontMetadata.json')
 
@@ -50,6 +51,100 @@ const loadMetadata = () => {
 
 const saveMetadata = (data) => {
     fs.writeFileSync(METADATA_FILE, JSON.stringify(data, null, 2))
+}
+
+const loadFontGlyphs = async (fontFamily) => {
+    try {
+        const fontDir = fontFamily.replace(/ /g, '_')
+        const fontsDir = path.join(__dirname, 'static', 'Fonts', fontDir)
+        
+        if (!fs.existsSync(fontsDir)) {
+            return null
+        }
+        
+        const findFontFiles = (dir) => {
+            const files = []
+            const items = fs.readdirSync(dir, { withFileTypes: true })
+            for (const item of items) {
+                const fullPath = path.join(dir, item.name)
+                if (item.isDirectory()) {
+                    files.push(...findFontFiles(fullPath))
+                } else if (item.name.endsWith('.ttf') || item.name.endsWith('.otf')) {
+                    files.push(fullPath)
+                }
+            }
+            return files
+        }
+        
+        const fontFiles = findFontFiles(fontsDir)
+        
+        if (fontFiles.length === 0) {
+            return null
+        }
+        
+        const fontPath = fontFiles[0]
+        const font = await opentype.load(fontPath)
+        
+        const glyphs = []
+        const seen = new Set()
+        
+        for (let i = 0; i < font.numGlyphs; i++) {
+            const glyph = font.glyphs.get(i)
+            if (glyph.unicode !== undefined && glyph.unicode > 0 && !seen.has(glyph.unicode)) {
+                seen.add(glyph.unicode)
+                glyphs.push({
+                    name: glyph.name,
+                    unicode: glyph.unicode,
+                    char: String.fromCodePoint(glyph.unicode),
+                    hex: 'U+' + glyph.unicode.toString(16).toUpperCase().padStart(4, '0')
+                })
+            }
+        }
+        
+        const tables = font.tables
+        const features = []
+        
+        if (tables.gsub) {
+            const gsub = tables.gsub
+            if (gsub.features) {
+                for (const feature of gsub.features) {
+                    if (!features.includes(feature.tag)) {
+                        features.push(feature.tag)
+                    }
+                }
+            }
+        }
+        
+        if (tables.gpos) {
+            const gpos = tables.gpos
+            if (gpos.features) {
+                for (const feature of gpos.features) {
+                    if (!features.includes(feature.tag)) {
+                        features.push(feature.tag)
+                    }
+                }
+            }
+        }
+        
+        return {
+            glyphs: glyphs.sort((a, b) => a.unicode - b.unicode),
+            features: features.sort(),
+            unitsPerEm: font.unitsPerEm,
+            ascender: font.ascender,
+            descender: font.descender,
+            glyphCount: font.numGlyphs,
+            familyName: font.names.fontFamily.en,
+            fullName: font.names.fullName.en,
+            version: font.names.version.en,
+            designer: font.names.designer ? font.names.designer.en : '',
+            manufacturer: font.names.manufacturer ? font.names.manufacturer.en : '',
+            copyright: font.names.copyright ? font.names.copyright.en : '',
+            license: font.names.license ? font.names.license.en : ''
+        }
+    } catch (err) {
+        console.error('Error loading font glyphs:', err.message)
+        return null
+    }
 }
 
 const requireAdmin = (req, res, next) => {
@@ -119,7 +214,7 @@ var throwErrorPage = (res,msg) =>{
 
 
 /*------------------app routing-------------- */
-router.get('/font/:family/:font',(req,res) => {
+router.get('/font/:family/:font', async (req,res) => {
     let page = {...pages}
     let param = req.params
     let fontData = getFontFromParam(param)
@@ -140,11 +235,14 @@ router.get('/font/:family/:font',(req,res) => {
     const metadata = loadMetadata()
     const fontMetadata = metadata[param.family] || { author: 'Not Available', license: 'Unknown', source: '', foundry: '', description: '' }
 
+    const fontGlyphs = await loadFontGlyphs(param.family)
+
     let parsingData = {
         page:page,
         font:font,
         fontFamily: param.family,
         fontMetadata: fontMetadata,
+        fontGlyphs: fontGlyphs,
         syllabary:syllabary,
         conjuncts:{
             all_conjuncts:all_conjuncts,

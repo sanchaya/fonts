@@ -25,6 +25,12 @@
                   CONJUNCTS
               </a>
           </li>
+          <li>
+              <a data-toggle="pill" href="#glyphs">
+                  <span class="glyphicon glyphicon glyphicon-font" aria-hidden="true"></span><br>
+                  GLYPHS
+              </a>
+          </li>
         </ul>
     </div>
     <div class="data-container">
@@ -40,6 +46,9 @@
           </div>
           <div id="conjuncts" class="tab-pane fade">
               <%- include('conjuncts/conjuncts',{conjuncts:conjuncts}) %> 
+          </div>
+          <div id="glyphs" class="tab-pane fade">
+              <%- include('glyphs/glyphs',{fontGlyphs:fontGlyphs}) %> 
           </div>
         </div>
     </div>
