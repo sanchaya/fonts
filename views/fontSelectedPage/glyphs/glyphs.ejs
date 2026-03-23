@@ -1,0 +1,238 @@
+<% if (fontGlyphs) { %>
+<div class="glyphs-container">
+    <div class="glyphs-header">
+        <h3>Font Information</h3>
+        <div class="font-info-grid">
+            <div class="font-info-item">
+                <strong>Family Name:</strong> <%= fontGlyphs.familyName || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Full Name:</strong> <%= fontGlyphs.fullName || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Version:</strong> <%= fontGlyphs.version || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Designer:</strong> <%= fontGlyphs.designer || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Manufacturer:</strong> <%= fontGlyphs.manufacturer || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Copyright:</strong> <%= fontGlyphs.copyright || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>License:</strong> <%= fontGlyphs.license || 'N/A' %>
+            </div>
+            <div class="font-info-item">
+                <strong>Total Glyphs:</strong> <%= fontGlyphs.glyphCount %>
+            </div>
+            <div class="font-info-item">
+                <strong>Units Per Em:</strong> <%= fontGlyphs.unitsPerEm %>
+            </div>
+            <div class="font-info-item">
+                <strong>Ascender:</strong> <%= fontGlyphs.ascender %>
+            </div>
+            <div class="font-info-item">
+                <strong>Descender:</strong> <%= fontGlyphs.descender %>
+            </div>
+        </div>
+    </div>
+
+    <% if (fontGlyphs.features && fontGlyphs.features.length > 0) { %>
+    <div class="glyphs-features">
+        <h4>OpenType Features</h4>
+        <div class="features-list">
+            <% fontGlyphs.features.forEach(function(feature) { %>
+                <span class="feature-tag"><%= feature %></span>
+            <% }); %>
+        </div>
+    </div>
+    <% } %>
+
+    <div class="glyphs-table-container">
+        <h4>Glyphs (<%= fontGlyphs.glyphs.length %>)</h4>
+        <div class="glyphs-filter">
+            <input type="text" id="glyphSearch" placeholder="Search glyphs (e.g., U+0C15)...">
+            <select id="glyphRange">
+                <option value="all">All Glyphs</option>
+                <option value="kannada">Kannada (U+0C00-U+0C7F)</option>
+                <option value="latin">Latin (U+0000-U+007F)</option>
+                <option value="digits">Digits (U+0030-U+0039)</option>
+            </select>
+        </div>
+        <table class="glyphs-table" id="glyphsTable">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Name</th>
+                    <th>Unicode</th>
+                    <th>Hex</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% fontGlyphs.glyphs.forEach(function(glyph) { %>
+                <tr data-unicode="<%= glyph.unicode %>">
+                    <td class="glyph-char" style="font-family: '<%= fontFamily %>', sans-serif;"><%= glyph.char %></td>
+                    <td class="glyph-name"><%= glyph.name %></td>
+                    <td class="glyph-code"><%= glyph.unicode %></td>
+                    <td class="glyph-hex"><%= glyph.hex %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+.glyphs-container {
+    padding: 20px;
+}
+.glyphs-header {
+    margin-bottom: 20px;
+}
+.glyphs-header h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.font-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+.font-info-item {
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.font-info-item strong {
+    color: #555;
+}
+.glyphs-features {
+    margin-bottom: 20px;
+}
+.glyphs-features h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.feature-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: monospace;
+}
+.glyphs-table-container h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.glyphs-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.glyphs-filter input,
+.glyphs-filter select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.glyphs-filter input {
+    flex: 1;
+}
+.glyphs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.glyphs-table th,
+.glyphs-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.glyphs-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+.glyphs-table tbody tr:hover {
+    background: #f9f9f9;
+}
+.glyph-char {
+    font-size: 24px;
+    width: 60px;
+    text-align: center;
+}
+.glyph-name {
+    font-family: monospace;
+    font-size: 12px;
+    color: #666;
+}
+.glyph-code,
+.glyph-hex {
+    font-family: monospace;
+    font-size: 13px;
+    color: #888;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var searchInput = document.getElementById('glyphSearch');
+    var rangeSelect = document.getElementById('glyphRange');
+    var table = document.getElementById('glyphsTable');
+    var rows = table.querySelectorAll('tbody tr');
+
+    function filterGlyphs() {
+        var searchTerm = searchInput.value.toLowerCase();
+        var range = rangeSelect.value;
+
+        rows.forEach(function(row) {
+            var char = row.querySelector('.glyph-char').textContent;
+            var name = row.querySelector('.glyph-name').textContent;
+            var code = row.querySelector('.glyph-code').textContent;
+            var hex = row.querySelector('.glyph-hex').textContent;
+            var unicode = parseInt(row.dataset.unicode);
+
+            var matchesSearch = searchTerm === '' || 
+                char.includes(searchTerm) || 
+                name.toLowerCase().includes(searchTerm) || 
+                code.includes(searchTerm) || 
+                hex.toLowerCase().includes(searchTerm);
+
+            var matchesRange = true;
+            if (range === 'kannada') {
+                matchesRange = unicode >= 0x0C00 && unicode <= 0x0C7F;
+            } else if (range === 'latin') {
+                matchesRange = unicode >= 0x0000 && unicode <= 0x007F;
+            } else if (range === 'digits') {
+                matchesRange = unicode >= 0x0030 && unicode <= 0x0039;
+            }
+
+            row.style.display = (matchesSearch && matchesRange) ? '' : 'none';
+        });
+    }
+
+    searchInput.addEventListener('input', filterGlyphs);
+    rangeSelect.addEventListener('change', filterGlyphs);
+});
+</script>
+
+<% } else { %>
+<div class="glyphs-container">
+    <div class="no-glyphs">
+        <p>Unable to load glyph information for this font.</p>
+        <p>Font file may not be available or could not be parsed.</p>
+    </div>
+</div>
+<% } %>
