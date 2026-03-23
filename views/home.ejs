@@ -27,7 +27,11 @@
 <body>
     <%- include('partials/navbar') %>
     
-    <%- include('home/home') %>
+    <% if (page.aboutPage) { %>
+        <%- include('aboutUs/aboutUs') %>
+    <% } else { %>
+        <%- include('home/home') %>
+    <% } %>
 
     <footer class="site-footer">
         <div class="footer-content">
