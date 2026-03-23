@@ -10,7 +10,7 @@ $(document).ready(function () {
     //toggle of dark-light mode
     $('#dark-light-toggle').change(toggleDarkLight)
 
-    $('.left-nav > :first-child').click(slideMenuClick)
+    $('.right-nav > :first-child').click(slideMenuClick)
     $('.slide-menu .header > :nth-child(2)').click(slideMenuClick)
     $('.slide-menu-baner .gap-filler').click(slideMenuClick)
 
