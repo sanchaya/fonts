@@ -1,6 +1,7 @@
+<div class="overview-section">
 <% for(const key in overview){ %>
-    <h2><%= key %></h2>
-    <div class="overview-char-cnt container">
+    <h3 class="overview-title"><%= key.charAt(0).toUpperCase() + key.slice(1) %></h3>
+    <div class="overview-char-cnt">
     <% for(let i=0; i<overview[key].length; i++){ %>
         <div class="overview-char">
             <span><%= overview[key][i] %></span>
@@ -8,3 +9,4 @@
     <% } %>  
     </div>
 <% } %>
+</div>
