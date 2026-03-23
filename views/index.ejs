@@ -109,7 +109,7 @@
             </div>
         </div>
     </nav>
-    <% if(page.fontPage){ %>
+        <% if(page.fontPage){ %>
         <% var fontDir = fontFamily.replace(/-/g, '_') %>
         <link rel="stylesheet" type="text/css" href="/Fonts/<%= fontDir %>/<%= font %>.ttf">
         <div class="font-info-bar">
@@ -133,6 +133,19 @@
                     <div class="meta-item">
                         <span class="meta-label">Source</span>
                         <a href="<%= fontMetadata.source %>" target="_blank" class="meta-link">View Source</a>
+                    </div>
+                    <% } %>
+                    <% 
+                    var isOpenSource = false;
+                    var license = (fontMetadata.license || '').toLowerCase();
+                    if (license.includes('ofl') || license.includes('sil') || license.includes('mit') || license.includes('apache') || license.includes('gnu') || license.includes('public domain') || license.includes('free')) {
+                        isOpenSource = true;
+                    }
+                    %>
+                    <% if(isOpenSource) { %>
+                    <div class="meta-item">
+                        <span class="meta-label">Download</span>
+                        <a href="/Fonts/<%= fontDir %>/<%= font %>.ttf" download class="meta-link download-btn">Download Font</a>
                     </div>
                     <% } %>
                 </div>

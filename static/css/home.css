@@ -1203,6 +1203,15 @@ nav {
   text-decoration: underline;
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--text-color3);
+  color: white !important;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
 .font-title {
   text-align: center;
   color: var(--text-color1);
