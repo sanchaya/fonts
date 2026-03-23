@@ -191,11 +191,11 @@
 
 .sentence-input {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   background: var(--third-color, #fff);
   padding: 24px 28px;
   border-radius: 20px;
-  box-shadow: var(--card-shadow, 0 4px 20px rgba(0, 0, 0, 0.08));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
@@ -207,11 +207,11 @@
 
 .paragraph-input {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   background: var(--third-color, #fff);
   padding: 28px 32px;
   border-radius: 20px;
-  box-shadow: var(--card-shadow, 0 4px 20px rgba(0, 0, 0, 0.08));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .font-selector {
