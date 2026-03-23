@@ -87,18 +87,14 @@ nav {
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: 1px solid var(--second-color);
   position: relative;
   overflow: hidden;
 }
 
 .left-nav {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
+  display: none;
 }
 
 .left-nav > a:nth-child(2) {
@@ -123,6 +119,27 @@ nav {
   cursor: pointer;
   color: var(--text-color1);
   font-size: 20px;
+}
+
+.right-nav {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.right-nav span {
+  cursor: pointer;
+  color: var(--text-color1);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.right-nav span:hover {
+  border-radius: 30px;
+  transform: scale(1.1);
 }
 
 .center-nav {
