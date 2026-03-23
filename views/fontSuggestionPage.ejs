@@ -1,156 +1,243 @@
+<% var whichPage = (cPage) => {
+    let pg = Object.keys(page)
+    let currPage = pg.find( ele => {
+        return page[ele]
+    })
+
+    if(currPage == cPage){
+        return "active"
+    }
+
+    return ""
+} %>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    
+    <title>Suggest a Font - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        body { background: var(--third-color); }
         .suggestion-form {
-            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--third-color);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
         }
-
         .suggestion-form h2 {
-            margin-bottom: 20px;
-            margin-top: 20px;
-            color: #1a73e8;
-            font-size: 60px;
+            text-align: center;
+            color: var(--text-color3);
+            margin-bottom: 30px;
         }
-
         .form-group {
-            margin-bottom: 25px;
-            text-align: left;
+            margin-bottom: 20px;
         }
-
         .form-group label {
             display: block;
-            font-weight: bold;
+            font-weight: 600;
+            color: var(--text-color1);
+            margin-bottom: 8px;
         }
-
         .form-group input[type="text"],
         .form-group input[type="email"],
-        .form-group textarea,
-        .form-group input[type="file"] {
+        .form-group textarea {
             width: 100%;
-            padding: 8px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: var(--third-color);
+            color: var(--text-color1);
+            font-size: 14px;
+            transition: border-color 0.3s ease;
         }
-
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--text-color3);
+        }
+        .form-group input[type="file"] {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px dashed var(--border-color);
+            background: var(--text-background);
+        }
         button[type="submit"] {
-            background-color: #1a73e8;
+            background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
             color: white;
-            padding: 10px 20px;
+            padding: 14px 30px;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+        }
+        .form-section {
+            background: var(--text-background);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .form-section h4 {
+            color: var(--text-color3);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/script.js"></script>
     <script>
         function isValidEmail(email) {
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
-
         function isValidFileExtension(fileName, validExtensions) {
             var fileExtension = fileName.split('.').pop().toLowerCase();
             return validExtensions.includes(fileExtension);
         }
-
-        // Function to validate the form
         function validateForm() {
             var email = document.getElementById('email').value;
             var fileName = document.getElementById('fontfile').value;
             var validExtensions = ['ttf', 'otf', 'woff', 'woff2'];
-
             if (!isValidEmail(email)) {
                 alert('Invalid email address. Please enter a valid email.');
                 return false;
             }
-
-            if (!isValidFileExtension(fileName, validExtensions)) {
+            if (fileName && !isValidFileExtension(fileName, validExtensions)) {
                 alert('Invalid file format. Please upload a file with valid extensions: ' + validExtensions.join(', '));
                 return false;
             }
-            var font_name = $('#font-name').val();
-            var font_style = $('#fontStyle').val();
-            var sample_paragraph = $('#sampleParagraph').val();
-            var designed_by = $('#designedBy').val();
-            var font_license = $('#fontLicense').val();
-            var font_url = $('#fontURL').val();
-            var submitter_name = $('#submitterName').val();
-            var email = $('#email').val();
-            var fontFile = $('#fontfile').val();
-           
-            // Check if any field is empty
-            // if (!font_name || !font_style || !sample_paragraph || !designed_by || !font_license || !font_url || !submitter_name || !email || !fontFile) {
-            //     alert('All fields are required. Please fill out all fields.');
-            //     return;
-            // }
-    
-                var formData = new FormData($('form')[0]);
-        
-                // Make an AJAX request to submit the form
-                $.ajax({
-                    url: '/submit-suggestion',
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function(response) {
-                        alert(response.message);
-                    },
-                    error: function(error) {
-                        console.error('Error:', error);
-                    }
-                });
-            }
-        </script>
+            var formData = new FormData($('form')[0]);
+            $.ajax({
+                url: '/submit-suggestion',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    alert(response.message || 'Font suggestion submitted successfully!');
+                    window.location.href = '/';
+                },
+                error: function(error) {
+                    console.error('Error:', error);
+                    alert('Failed to submit font suggestion.');
+                }
+            });
+            return false;
+        }
+    </script>
 </head>
 <body>
-<div class="suggestion-form" >
-    <h2 >SUGGEST A FONT</h2>
-    <form onsubmit="return validateForm();" action="/submit-suggestion" method="POST" enctype="multipart/form-data" style=" padding: 40px; width:50%; margin: 0 auto;font-size: large; border-radius: 5px;" >
-        <div class="form-group">
-            <label for="font-name">Font Name:</label><br>
-            <input type="text" id="font-name" name="font-name" required ">
+    <div class="slide-menu-baner">
+        <div class="slide-menu">
+            <div class="header">
+              <a href="/"><img src="img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="slide-menu-item">
+                <li class='<%= whichPage("fontShowPage")%>'><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li class='<%= whichPage("aboutPage")%>'><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+            </ul>
         </div>
-        <div class="form-group" >
-            <label for="fontStyle">Font Style:</label><br>
-            <input type="text" id="fontStyle" name="fontStyle" required ">
+        <div class="gap-filler"></div>
+    </div>
+    <nav>
+        <div class="left-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <a href="/"><img src="img/app-icon-light.png" alt="app-icon" class="app-icon"></a>
         </div>
-        <div class="form-group" >
-            <label for="sampleParagraph">Sample Paragraph:</label><br>
-            <textarea id="sampleParagraph" name="sampleParagraph" rows="4" cols="50" required ></textarea><br>
+        <div class="tot-right-nav">
+            <div class="right-nav">
+                <div class="browse-font-tab <%= whichPage("fontShowPage")%>">
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
+                </div>
+                <div class="about-us-tab <%= whichPage("aboutPage")%>">
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
+                </div>
+            </div>
+            <div class="static-right-nav">
+                <div class="dark-light">
+                    <input type="checkbox" id="dark-light-toggle" name="dark-light-toggle">
+                    <label for="dark-light-toggle" class="dark-light-toggle-icon">
+                        <i class="fas fa-sun fa-lg"></i>
+                        <i class="fas fa-moon fa-lg"></i>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="form-group" >
-            <label for="designedBy">Designed By:</label><br>
-            <input type="text" id="designedBy" name="designedBy" required>
-        </div>
-        <div class="form-group">
-            <label for="fontLicense">Font License:</label><br>
-            <input type="text" id="fontLicense" name="fontLicense" required >
-        </div>
-        <div class="form-group" >
-            <label for="fontURL">Font URL:</label><br>
-            <input type="text" id="fontURL" name="fontURL" required >
-        </div>
-        <div class="form-group" >
-            <label for="submitterName">Submitter Name:</label><br>
-            <input type="text" id="submitterName" name="submitterName" required >
-        </div>
-        <div class="form-group" >
-            <label for="email">Email ID:</label><br>
-            <input type="email" id="email" name="email" required >
-        </div>
-        <div class="form-group" >
-            <label for="fontfile">Font File (TTF, OTF, WOFF, etc.):</label><br>
-            <input type="file" id="fontfile" name="fontfile" accept=".ttf,.otf,.woff,.woff2" required >
-        </div>
-        <button type="submit" id="submitBtn">Submit</button>
-    </form>
-</div>
+    </nav>
+
+    <div class="suggestion-form">
+        <h2>Suggest a Font</h2>
+        <form onsubmit="return validateForm();" action="/submit-suggestion" method="POST" enctype="multipart/form-data">
+            <div class="form-section">
+                <h4>Font Information</h4>
+                <div class="form-group">
+                    <label for="font-name">Font Name</label>
+                    <input type="text" id="font-name" name="font-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="fontStyle">Font Style</label>
+                    <input type="text" id="fontStyle" name="fontStyle" placeholder="e.g., Regular, Bold, Italic" required>
+                </div>
+                <div class="form-group">
+                    <label for="designedBy">Designed By</label>
+                    <input type="text" id="designedBy" name="designedBy" required>
+                </div>
+                <div class="form-group">
+                    <label for="fontLicense">Font License</label>
+                    <input type="text" id="fontLicense" name="fontLicense" placeholder="e.g., SIL OFL, Proprietary" required>
+                </div>
+                <div class="form-group">
+                    <label for="fontURL">Source URL</label>
+                    <input type="text" id="fontURL" name="fontURL" placeholder="Link to font source or download" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Sample Text</h4>
+                <div class="form-group">
+                    <label for="sampleParagraph">Sample Paragraph (in Kannada)</label>
+                    <textarea id="sampleParagraph" name="sampleParagraph" rows="3" placeholder="Enter sample text in Kannada" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Submitter Information</h4>
+                <div class="form-group">
+                    <label for="submitterName">Your Name</label>
+                    <input type="text" id="submitterName" name="submitterName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Font File</h4>
+                <div class="form-group">
+                    <label for="fontfile">Upload Font File (TTF, OTF, WOFF, WOFF2)</label>
+                    <input type="file" id="fontfile" name="fontfile" accept=".ttf,.otf,.woff,.woff2">
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Font Suggestion</button>
+        </form>
+    </div>
 </body>
 </html>

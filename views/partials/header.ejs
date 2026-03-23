@@ -1,0 +1,57 @@
+<% var whichPage = (cPage) => {
+    let pg = Object.keys(page)
+    let currPage = pg.find( ele => {
+        return page[ele]
+    })
+
+    if(currPage == cPage){
+        return "active"
+    }
+
+    return ""
+} %>
+    <div class="slide-menu-baner">
+        <div class="slide-menu">
+            <div class="header">
+              <a href="/"><img src="img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="slide-menu-item">
+                <li class='<%= whichPage("fontShowPage")%>'><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li class='<%= whichPage("aboutPage")%>'><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+            </ul>
+        </div>
+        <div class="gap-filler">
+
+        </div>
+    </div>
+    <nav>
+        <div class="left-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <a href="/"><img src="img/app-icon-light.png" alt="app-icon" class="app-icon"></a>
+        </div>
+        <div class="tot-right-nav">
+            <div class="right-nav">
+                <div class="browse-font-tab <%= whichPage("fontShowPage")%>">
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
+                </div>
+                <div class="about-us-tab <%= whichPage("aboutPage")%>">
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
+                </div>
+            </div>
+            <div class="static-right-nav">
+                <div class="dark-light">
+                    <input type="checkbox" id="dark-light-toggle" name="dark-light-toggle">
+                    <label for="dark-light-toggle" class="dark-light-toggle-icon">
+                        <i class="fas fa-sun fa-lg"></i>
+                        <i class="fas fa-moon fa-lg"></i>
+                    </label>
+                </div>
+                <div class="selected-family <%= whichPage("fontSuggestionPage")%>">
+                    <span>
+                        <a href="/getSuggestionForm"><i class="fa fa-plus fa-lg"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>

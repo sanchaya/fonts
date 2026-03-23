@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= fontData.family %> - Font Metadata Admin</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body { background: var(--third-color); }
+        .admin-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--third-color);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        .admin-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .admin-header h1 {
+            color: var(--text-color1);
+            margin: 0 0 10px 0;
+        }
+        .font-preview {
+            background: var(--text-background);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+        }
+        .font-preview h3 {
+            color: var(--text-color3);
+            margin: 0 0 10px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--text-color1);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: var(--third-color);
+            color: var(--text-color1);
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--text-color3);
+        }
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .help-block {
+            display: block;
+            margin-top: 5px;
+            color: var(--span-color);
+            font-size: 13px;
+        }
+        .btn-primary {
+            background: #4361ee;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        .btn-primary:hover {
+            background: #3f37c9;
+        }
+        .btn-default {
+            background: var(--text-background);
+            border: 1px solid var(--border-color);
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            color: var(--text-color1);
+        }
+        .btn-default:hover {
+            background: var(--hover-color);
+        }
+        .btn-danger {
+            background: #dc3545;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-menu-baner">
+        <div class="slide-menu">
+            <div class="header">
+              <a href="/"><img src="img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="slide-menu-item">
+                <li><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+            </ul>
+        </div>
+        <div class="gap-filler"></div>
+    </div>
+    <nav>
+        <div class="left-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <a href="/"><img src="img/app-icon-light.png" alt="app-icon" class="app-icon"></a>
+        </div>
+        <div class="tot-right-nav">
+            <div class="right-nav">
+                <div class="browse-font-tab">
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
+                </div>
+                <div class="about-us-tab">
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
+                </div>
+            </div>
+            <div class="static-right-nav">
+                <div class="dark-light">
+                    <input type="checkbox" id="dark-light-toggle" name="dark-light-toggle">
+                    <label for="dark-light-toggle" class="dark-light-toggle-icon">
+                        <i class="fas fa-sun fa-lg"></i>
+                        <i class="fas fa-moon fa-lg"></i>
+                    </label>
+                </div>
+                <div class="selected-family">
+                    <span><a href="/getSuggestionForm"><i class="fa fa-plus fa-lg"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Edit Font Metadata</h1>
+            <p style="color: var(--span-color);">Update author, license, and source information</p>
+        </div>
+
+        <div class="font-preview">
+            <h3><%= fontData.family %></h3>
+            <p style="color: var(--span-color);">Styles: <%= fontData.fonts.length %>
+            <% fontData.fonts.forEach(f => { %>
+                <span class="label label-default" style="margin-left: 10px; background: var(--active-color); color: var(--text-color3);"><%= f.font %></span>
+            <% }) %>
+            </p>
+        </div>
+
+        <form method="POST">
+            <div class="form-group">
+                <label>Author / Designer</label>
+                <input type="text" name="author" value="<%= fontMeta.author || '' %>" placeholder="e.g., Vaishnavi Murthy, Juan Luis Blanco">
+                <span class="help-block">Name of the font designer or design team</span>
+            </div>
+
+            <div class="form-group">
+                <label>Foundry / Publisher</label>
+                <input type="text" name="foundry" value="<%= fontMeta.foundry || '' %>" placeholder="e.g., Google Fonts, Ek Type, Adobe">
+                <span class="help-block">Organization or foundry that published the font</span>
+            </div>
+
+            <div class="form-group">
+                <label>License</label>
+                <select name="license">
+                    <option value="">Select License</option>
+                    <option value="SIL Open Font License 1.1" <%= fontMeta.license === 'SIL Open Font License 1.1' ? 'selected' : '' %>>SIL Open Font License 1.1 (OFL)</option>
+                    <option value="Apache License 2.0" <%= fontMeta.license === 'Apache License 2.0' ? 'selected' : '' %>>Apache License 2.0</option>
+                    <option value="MIT License" <%= fontMeta.license === 'MIT License' ? 'selected' : '' %>>MIT License</option>
+                    <option value="Ubuntu Font License" <%= fontMeta.license === 'Ubuntu Font License' ? 'selected' : '' %>>Ubuntu Font License</option>
+                    <option value="Proprietary" <%= fontMeta.license === 'Proprietary' ? 'selected' : '' %>>Proprietary</option>
+                    <option value="Unknown" <%= fontMeta.license === 'Unknown' ? 'selected' : '' %>>Unknown</option>
+                </select>
+                <span class="help-block">License type determines usage rights</span>
+            </div>
+
+            <div class="form-group">
+                <label>Source URL</label>
+                <input type="text" name="source" value="<%= fontMeta.source || '' %>" placeholder="e.g., https://github.com/vaishnavimurthy/Akaya-Kanadaka">
+                <span class="help-block">Official source or download page for the font</span>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea name="description" placeholder="Brief description of the font, its design inspiration, and features"><%= fontMeta.description || '' %></textarea>
+            </div>
+
+            <div style="display: flex; gap: 15px; margin-top: 30px;">
+                <button type="submit" class="btn btn-primary">
+                    <i class="glyphicon glyphicon-floppy-disk"></i> Save Metadata
+                </button>
+                <a href="/admin" class="btn btn-default">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

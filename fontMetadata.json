@@ -1,0 +1,37 @@
+{
+  "ATS-Bandipura": {
+    "author": "Not Available",
+    "license": "Unknown",
+    "source": "Unknown",
+    "foundry": "ATS",
+    "description": ""
+  },
+  "ATS-Bengaluru": {
+    "author": "Not Available",
+    "license": "Unknown",
+    "source": "Unknown",
+    "foundry": "ATS",
+    "description": ""
+  },
+  "Akaya-Kanadaka": {
+    "author": "Vaishnavi Murthy, Juan Luis Blanco",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/vaishnavimurthy/Akaya-Kanadaka",
+    "foundry": "Google Fonts",
+    "description": "An experimental display typeface for Kannada and Latin scripts, inspired by hand-written calligraphy."
+  },
+  "Noto Sans Kannada": {
+    "author": "Jelle Bosma - Monotype Design Team",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/notofonts/kannada",
+    "foundry": "Google, Noto Fonts",
+    "description": "A sans-serif font designed for comprehensive language support across Kannada script."
+  },
+  "Anek Kannada": {
+    "author": "Vaishnavi Murthy, Maithili Shingre, Yesha Goshar",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/EkType/Anek",
+    "foundry": "Ek Type",
+    "description": "A geometric sans serif typeface with variable font technology for modern multiscript design."
+  }
+}

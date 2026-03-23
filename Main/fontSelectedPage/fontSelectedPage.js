@@ -1,13 +1,21 @@
 const fs = require('fs')
+const path = require('path')
 const {maxDataPerPage} = require('../../configuaration')
 
-var vowels_length
+let fontsCache = null
+let fontsCacheTime = 0
+const CACHE_TTL = 60000
 
-var consonent_length
-
-var fonts_json = "fonts.json"
-
-var extention = '.json'
+const getFontsJson = () => {
+    const now = Date.now()
+    if (fontsCache && (now - fontsCacheTime) < CACHE_TTL) {
+        return fontsCache
+    }
+    const bytes = fs.readFileSync(path.join(__dirname, '..', '..', 'fonts.json'))
+    fontsCache = JSON.parse(bytes)
+    fontsCacheTime = now
+    return fontsCache
+}
 
 
 
@@ -38,7 +46,7 @@ var get_compound_from_data = (json) =>{
 var get_all_conjuncts = (prefix_name, all_conjuncts) =>{
     let all_json_conjuncts = []
     for(let i=0; i<all_conjuncts.length; i++){
-        let json_raw = fs.readFileSync(prefix_name+all_conjuncts[i]+extention)
+        let json_raw = fs.readFileSync(prefix_name+all_conjuncts[i]+".json")
         all_json_conjuncts.push(JSON.parse(json_raw))
     }
     return all_json_conjuncts
@@ -69,14 +77,12 @@ var getMinimum = (val1, val2) =>{
 }
 
 var getFontsForFamilyPage = (family) => {
-    let bytes = fs.readFileSync(fonts_json)
-    let json = JSON.parse(bytes)
+    const json = getFontsJson()
     return json[family]
 }
 
 var getFonts = (val, page) =>{
-    let bytes = fs.readFileSync(fonts_json)
-    let json = JSON.parse(bytes)
+    const json = getFontsJson()
     let ar = Object.keys(json).map((key)=>{
         return json[key]
     })
@@ -116,8 +122,7 @@ var getFonts = (val, page) =>{
 }
 
 var getFontFromParam = (param) =>{
-    let bytes = fs.readFileSync(fonts_json)
-    let json = JSON.parse(bytes)
+    const json = getFontsJson()
     const family = param.family
     const font = param.font
     try{
