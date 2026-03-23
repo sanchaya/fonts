@@ -1227,3 +1227,12 @@ nav {
   color: var(--text-color1);
   text-decoration: none;
 }
+
+.suggest-font-tab {
+  padding: 10px 15px;
+}
+
+.suggest-font-tab a {
+  color: var(--text-color1);
+  text-decoration: none;
+}
