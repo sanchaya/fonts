@@ -86,9 +86,12 @@ var getFonts = (val, page) =>{
     let ar = Object.keys(json).map((key)=>{
         return json[key]
     })
+    
+    val = val || ''
+    page = parseInt(page) || 1
 
     let filter = ar.filter( data =>{
-        if(data.family.toLowerCase().includes(val.toLowerCase())){
+        if(data.family && data.family.toLowerCase().includes(val.toLowerCase())){
             return true
         }
     })
