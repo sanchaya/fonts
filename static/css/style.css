@@ -281,6 +281,96 @@
   color: var(--text-color1, #1a1a2e);
 }
 
+/* Family meta info */
+.family-meta-info {
+  max-width: 800px;
+  margin: 0 auto 24px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(67, 97, 238, 0.05) 0%, rgba(63, 55, 201, 0.05) 100%);
+  border-radius: 16px;
+  border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.family-title {
+  text-align: center;
+  color: var(--text-color1, #1a1a2e);
+  margin: 0 0 20px 0;
+  font-size: 28px;
+}
+
+.meta-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--span-color, #4a4a68);
+  font-weight: 600;
+}
+
+.meta-value {
+  font-size: 14px;
+  color: var(--text-color1, #1a1a2e);
+}
+
+.meta-description {
+  text-align: center;
+  color: var(--span-color, #4a4a68);
+  font-size: 14px;
+  margin: 16px 0 0 0;
+  font-style: italic;
+}
+
+.license-badge {
+  background: rgba(67, 97, 238, 0.1);
+  color: var(--text-color3, #4361ee);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.meta-link {
+  color: var(--text-color3, #4361ee);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.meta-link:hover {
+  text-decoration: underline;
+}
+
+/* Family instructions */
+.family-instructions {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--text-background, #f8f9fa);
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.family-instructions p {
+  margin: 0;
+  color: var(--span-color, #4a4a68);
+  font-size: 14px;
+}
+
 /* Export button */
 .export-btn {
   margin-top: 20px;
