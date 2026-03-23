@@ -1,65 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡದ ಫಾಂಟುಗಳಿಗೊಂದು ಸಂಚಯ</title>
+    <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡದ ಫಾಂಟ್ಗಳಿಗೊಂದು ಸಂಚಯ</title>
     <base href="/">
     <link rel="icon" type="image/png" href="/img/app-icon-light.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/home-api.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M373VNJ49"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-2M373VNJ49');
     </script>
-    
-    <link rel="stylesheet" href="/css/all.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <% if (page.fontShowPage) { %>
-
-        <link rel="stylesheet" href="/css/fonts.css">
-
-        <link rel="stylesheet" href="/css/home.css">
-
-        <script src="/js/home.js"></script>
-
-        <script src="/js/home-api.js"></script>
-
-    <% }
-    else if(page.aboutPage){ %>
-        <link rel="stylesheet" href="/css/about.css">
-        <link rel="stylesheet" href="/css/home.css">
-
-        <script src="/js/home.js"></script>
-        <script src="/js/about.js"></script>
-    <% } %>
-
 </head>
-
 <body>
     <%- include('partials/navbar') %>
-    <% if (page.fontShowPage) { %>
-        <%- include('home/home') %>
-    <% }
-    else if(page.aboutPage){ %>
-        <%- include('aboutUs/aboutUs') %>
-    <% } %>
+    
+    <%- include('home/home') %>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
                 <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
                 <a href="/bug-reports">Bug Reports</a>
                 <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
@@ -70,5 +43,4 @@
         </div>
     </footer>
 </body>
-
 </html>

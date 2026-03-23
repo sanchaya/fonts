@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡ ಫಾಂಟುಗಳಿಗೊಂದು ಸಂಚಯ</title>
+  <title>ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡ ಫಾಂಟ್ಗಳಿಗೊಂದು ಸಂಚಯ</title>
   <base href="/">
   <link rel="icon" type="image/png" href="/img/app-icon-light.png">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M373VNJ49"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2M373VNJ49');
-</script>
   <script src="/js/script.js"></script>
   <script src="/js/home.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M373VNJ49"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2M373VNJ49');
+  </script>
   <% if(page.fontShowPage){ %>
-    <script src="/js/fontShowPage.js"></script>
     <link rel="stylesheet" href="/css/inputStyle.css"/>
+    <link rel="stylesheet" href="/css/home-page.css">
+    <script src="/js/fontShowPage.js"></script>
     <script src="/js/inputStyle.js"></script>
     <script src="/js/language.js"></script>
-
-    <link rel="stylesheet" href="/css/home-page.css">
   <% } %>
   <% if(page.fontPage){ %>
     <style>
@@ -40,12 +36,11 @@
         font-family: "<%= font%>", cursive;
       }
     </style>
-
     <link rel="stylesheet" href="/css/inputStyle.css"/>
     <script src="/js/inputStyle.js"></script>
     <script src="/js/language.js"></script>
-
-  <% }if(page.fontFamilyPage){ %>
+  <% } %>
+  <% if(page.fontFamilyPage){ %>
     <link rel="stylesheet" href="/css/inputStyle.css"/>
     <link rel="stylesheet" href="/css/fontFamily.css">
     <script src="/js/inputStyle.js"></script>
@@ -53,10 +48,9 @@
   <% } %>
 </head>
 <body>
-
     <%- include('partials/navbar') %>
 
-        <% if(page.fontPage){ %>
+    <% if(page.fontPage){ %>
         <% var fontDir = fontFamily.replace(/-/g, '_') %>
         <link rel="stylesheet" type="text/css" href="/Fonts/<%= fontDir %>/<%= font %>.ttf">
         <div class="font-info-bar">
@@ -115,7 +109,7 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
                 <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
                 <a href="/bug-reports">Bug Reports</a>
                 <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
@@ -125,6 +119,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
