@@ -1,4 +1,44 @@
 <div class="internal-content">
+  
+  <% if (typeof familyMetadata !== 'undefined' && familyMetadata) { %>
+  <div class="family-meta-info">
+    <h2 class="family-title"><%= data.family %></h2>
+    <div class="meta-details">
+      <% if (familyMetadata.author) { %>
+      <div class="meta-item">
+        <span class="meta-label">Designed by</span>
+        <span class="meta-value"><%= familyMetadata.author %></span>
+      </div>
+      <% } %>
+      <% if (familyMetadata.foundry) { %>
+      <div class="meta-item">
+        <span class="meta-label">Foundry</span>
+        <span class="meta-value"><%= familyMetadata.foundry %></span>
+      </div>
+      <% } %>
+      <% if (familyMetadata.license) { %>
+      <div class="meta-item">
+        <span class="meta-label">License</span>
+        <span class="meta-value license-badge"><%= familyMetadata.license %></span>
+      </div>
+      <% } %>
+      <% if (familyMetadata.source) { %>
+      <div class="meta-item">
+        <span class="meta-label">Source</span>
+        <a href="<%= familyMetadata.source %>" target="_blank" class="meta-link">View Source</a>
+      </div>
+      <% } %>
+    </div>
+    <% if (familyMetadata.description) { %>
+    <p class="meta-description"><%= familyMetadata.description %></p>
+    <% } %>
+  </div>
+  <% } %>
+  
+  <div class="family-instructions">
+    <p>Type in the box below to try the fonts. Use the slider to adjust font size.</p>
+  </div>
+  
   <div class="family-header">
     <div class="input-type-toggle">
       <button class="toggle-btn active" data-type="sentence">Sentence</button>

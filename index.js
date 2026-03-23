@@ -167,16 +167,20 @@ router.get('/family/:family',(req,res) => {
 
     page.fontFamilyPage = true
 
-    let param = req.params.family
-    let fontData = getFontsForFamilyPage(param)
+    const family = req.params.family
+    let fontData = getFontsForFamilyPage(family)
     if(!fontData){
         throwErrorPage(res,"There is no Font matching your search")
         return 
     }    
+    
+    const metadata = loadMetadata()
+    const familyMetadata = metadata[family] || { author: 'Not Available', license: 'Unknown', source: '', foundry: '', description: '' }
 
     let parsingData = {
         page:page,
-        data:fontData
+        data:fontData,
+        familyMetadata: familyMetadata
     }
     res.render('index', parsingData)
 })
