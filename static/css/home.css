@@ -142,6 +142,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 5px 20px;
+  max-width: 400px;
 }
 
 .nav-logo {
@@ -227,16 +228,17 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .right-nav > * {
   display: flex;
   position: relative;
   align-items: center;
-  overflow: hidden;
-  padding: 0px 12px;
-  justify-content: center;
-  color: var(--text-color3);
+  padding: 0px 8px;
+  color: var(--text-color1);
+  font-size: 14px;
+}
   font-size: 1.6rem;
 }
 
