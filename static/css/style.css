@@ -385,15 +385,28 @@
 .export-btn {
   margin-top: 20px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 14px 24px;
   background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.35);
+}
+
+/* Font list */
+.font-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px 0 40px 0;
 }
 
 .export-btn:hover {
