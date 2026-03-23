@@ -40,6 +40,7 @@ const fs = require('fs')
 const opentype = require('opentype.js')
 
 const METADATA_FILE = path.join(__dirname, 'fontMetadata.json')
+const BUG_REPORTS_FILE = path.join(__dirname, 'bugReports.json')
 
 const loadMetadata = () => {
     try {
@@ -51,6 +52,23 @@ const loadMetadata = () => {
 
 const saveMetadata = (data) => {
     fs.writeFileSync(METADATA_FILE, JSON.stringify(data, null, 2))
+}
+
+const loadBugReports = () => {
+    try {
+        return JSON.parse(fs.readFileSync(BUG_REPORTS_FILE, 'utf8'))
+    } catch {
+        return []
+    }
+}
+
+const saveBugReport = (report) => {
+    const reports = loadBugReports()
+    report.id = Date.now()
+    report.createdAt = new Date().toISOString()
+    reports.push(report)
+    fs.writeFileSync(BUG_REPORTS_FILE, JSON.stringify(reports, null, 2))
+    return report.id
 }
 
 const loadFontGlyphs = async (fontFamily) => {
@@ -327,6 +345,27 @@ router.post('/submit-suggestion', upload.single('fontfile'), (req, res) => {
     
 });
 
+router.post('/submit-bug-report', (req, res) => {
+    const { fontFamily, fontName, email, description, browser, os } = req.body;
+    
+    if (!fontFamily || !description) {
+        return res.status(400).json({ error: 'Font and description are required.' });
+    }
+    
+    const report = {
+        fontFamily,
+        fontName: fontName || '',
+        email: email || '',
+        description,
+        browser: browser || '',
+        os: os || '',
+        status: 'open'
+    };
+    
+    saveBugReport(report);
+    res.json({ success: true, message: 'Bug report submitted successfully.' });
+});
+
 /*------------------admin routes-------------- */
 router.get('/login', requireLogin, (req, res) => {
     res.render('login')
@@ -350,7 +389,24 @@ router.get('/logout', (req, res) => {
 router.get('/admin', requireAdmin, (req, res) => {
     const fonts = require('./fonts.json')
     const metadata = loadMetadata()
-    res.render('admin', { fonts, metadata })
+    const bugReports = loadBugReports()
+    res.render('admin', { fonts, metadata, bugReports })
+})
+
+router.get('/admin/bug-reports', requireAdmin, (req, res) => {
+    const bugReports = loadBugReports()
+    res.json(bugReports)
+})
+
+router.post('/admin/bug-reports/:id', requireAdmin, (req, res) => {
+    const { status } = req.body
+    const reports = loadBugReports()
+    const index = reports.findIndex(r => r.id == req.params.id)
+    if (index !== -1) {
+        reports[index].status = status
+        fs.writeFileSync(BUG_REPORTS_FILE, JSON.stringify(reports, null, 2))
+    }
+    res.json({ success: true })
 })
 
 router.get('/admin/font/:family', requireAdmin, (req, res) => {
