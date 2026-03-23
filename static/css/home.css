@@ -146,6 +146,9 @@ nav {
 .dark-light {
   height: 100%;
   margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .dark-light.dark label {
@@ -177,6 +180,24 @@ nav {
 
 .dark-light input {
   display: none;
+}
+
+.suggest-font-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--text-color3);
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.suggest-font-btn:hover {
+  background: var(--text-color4);
+  text-decoration: none;
 }
 
 .right-nav {
