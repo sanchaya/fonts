@@ -59,33 +59,11 @@ body {
 }
 
 /*---- slide menu -------*/
-.slide-menu-baner {
-  height: 100%;
-  display: flex;
-  z-index: 2000;
-  position: absolute;
-}
-
-.slide-menu-baner.open {
-  width: 0px;
-}
-
-.slide-menu.open ~ .gap-filler {
-  background-color: var(--hover-color);
-  z-index: 2000;
-  flex-grow: 0;
-}
-
-.slide-menu {
-  background-color: var(--third-color);
-  position: relative;
-  z-index: 1000;
-  display: none;
-}
+/* Slide menu styles are inherited from home.css */
 
 nav {
   width: 100%;
-  height: 60px;
+  height: 64px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--second-color);
@@ -97,30 +75,6 @@ nav {
   display: none;
 }
 
-.left-nav > a:nth-child(2) {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.left-nav span,
-.left-nav img {
-  font-size: large;
-  margin-left: 10px;
-  color: var(--span-color);
-}
-
-.left-nav img {
-  height: 80%;
-}
-
-.left-nav span {
-  margin-left: 25px;
-  cursor: pointer;
-  color: var(--text-color1);
-  font-size: 20px;
-}
-
 .right-nav {
   position: absolute;
   right: 0;
@@ -130,16 +84,16 @@ nav {
   padding-right: 15px;
 }
 
-.right-nav span {
+.hamburger-icon {
   cursor: pointer;
   color: var(--text-color1);
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
+  transition: color 0.2s ease;
 }
 
-.right-nav span:hover {
-  border-radius: 30px;
-  transform: scale(1.1);
+.hamburger-icon:hover {
+  color: var(--text-color3);
 }
 
 .center-nav {
@@ -234,52 +188,6 @@ nav {
 .suggest-font-btn:hover {
   background: var(--text-color4);
   text-decoration: none;
-}
-
-.right-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.right-nav > * {
-  display: flex;
-  position: relative;
-  align-items: center;
-  padding: 0px 8px;
-  color: var(--text-color1);
-  font-size: 14px;
-}
-  font-size: 1.6rem;
-}
-
-.right-nav > *:hover {
-  background-color: var(--hover-color);
-}
-
-.right-nav > .active {
-  background-color: var(--active-color);
-  /* comment background if don need */
-  border-bottom: 3px solid var(--text-color3);
-}
-
-.right-nav > * > span {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.right-nav > * > span > a {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .selected-family {
