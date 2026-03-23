@@ -85,6 +85,10 @@ const storage = multer.diskStorage({
 const upload = multer({ 
     storage: storage,
 });
+
+app.use(express.json());
+app.use(fileUpload());
+
 /*----------app usage and set-------------- */
 
 app.use(router)
@@ -93,10 +97,6 @@ app.use(express.static(path.join(__dirname,'static')))
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-
-
-app.use(express.json());
-app.use(fileUpload());
 
 app.use(function(req,res,next){
     res.send('page does not exist')
