@@ -10,7 +10,7 @@ $(document).ready(function () {
     //toggle of dark-light mode
     $('#dark-light-toggle').change(toggleDarkLight)
 
-    $('.right-nav > :first-child').click(slideMenuClick)
+    $('.hamburger-icon').click(slideMenuClick)
     $('.slide-menu .close-btn').click(slideMenuClick)
     $('.slide-menu-baner .gap-filler').click(slideMenuClick)
 

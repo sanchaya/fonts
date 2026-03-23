@@ -68,10 +68,9 @@ body {
   z-index: 2000;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   pointer-events: none;
-  flex-direction: row-reverse;
 }
 
 .slide-menu-baner.open {
@@ -82,6 +81,7 @@ body {
   flex: 1;
   background-color: transparent;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .slide-menu.open ~ .gap-filler {
@@ -97,9 +97,9 @@ body {
   width: 300px;
   height: 100%;
   flex-shrink: 0;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform 0.3s ease;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .slide-menu.open {
@@ -122,35 +122,6 @@ nav {
   display: none;
 }
 
-.left-nav > a:nth-child(2) {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.left-nav span,
-.left-nav img {
-  font-size: large;
-  margin-left: 10px;
-  color: var(--span-color);
-}
-
-.left-nav img {
-  height: 80%;
-}
-
-.left-nav span {
-  margin-left: 25px;
-  cursor: pointer;
-  color: var(--text-color1);
-  font-size: 20px;
-}
-
-.left-nav span:hover {
-  border-radius: 30px;
-  transform: scale(1.1);
-}
-
 .right-nav {
   position: absolute;
   right: 0;
@@ -160,16 +131,16 @@ nav {
   padding-right: 15px;
 }
 
-.right-nav span {
+.hamburger-icon {
   cursor: pointer;
   color: var(--text-color1);
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
+  transition: color 0.2s ease;
 }
 
-.right-nav span:hover {
-  border-radius: 30px;
-  transform: scale(1.1);
+.hamburger-icon:hover {
+  color: var(--text-color3);
 }
 
 .center-nav {
@@ -1115,72 +1086,64 @@ nav {
   }
 }
 
+.slide-menu .header {
+  height: 64px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.slide-menu .header .menu-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color3);
+}
+
+.slide-menu .header .close-btn {
+  color: var(--span-color);
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s ease;
+}
+
+.slide-menu .header .close-btn:hover {
+  color: var(--text-color1);
+}
+
+.slide-menu .slide-menu-item {
+  list-style-type: none;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.slide-menu .slide-menu-item li {
+  position: relative;
+  margin: 0;
+}
+
+.slide-menu .slide-menu-item li a {
+  display: block;
+  padding: 14px 25px;
+  text-decoration: none;
+  color: var(--text-color1);
+  font-size: 16px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.slide-menu .slide-menu-item li:hover:not(.active) a {
+  background-color: var(--hover-color);
+  color: var(--text-color3);
+}
+
+.slide-menu .slide-menu-item .active a {
+  background-color: var(--active-color);
+  color: var(--text-color3);
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 768px) {
-  .slide-menu-baner.open {
-    width: 100%;
-  }
-  .slide-menu {
-    width: 280px;
-  }
-  .slide-menu .header {
-    height: 60px;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--second-color);
-  }
-
-  .slide-menu .header > :first-child {
-    color: var(--text-color3);
-  }
-
-  .slide-menu .header .close-btn {
-    color: var(--span-color);
-    cursor: pointer;
-    padding: 5px;
-  }
-
-  .slide-menu .header .close-btn:hover {
-    background-color: var(--hover-color);
-    border-radius: 50%;
-  }
-
-  .slide-menu .slide-menu-item {
-    color: var(--text-color3);
-    list-style-type: none;
-    padding: 10px 0px;
-  }
-
-  .slide-menu .slide-menu-item li {
-    position: relative;
-    font-size: larger;
-    overflow: hidden;
-    width: 95%;
-    margin-bottom: 5px;
-    border-end-end-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-
-  .slide-menu .slide-menu-item li a {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    padding: 5px;
-  }
-
-  .slide-menu .slide-menu-item li:hover:not(.active) {
-    background-color: var(--hover-color);
-  }
-
-  .slide-menu .slide-menu-item .active {
-    background-color: var(--active-color);
-    border-left: 2px solid var(--text-color3);
-  }
-
   .fonts-cnt {
     grid-template-columns: repeat(2, 1fr);
   }
