@@ -1124,26 +1124,26 @@ nav {
   }
   .slide-menu .header {
     height: 60px;
-    padding: 5px;
-    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid var(--second-color);
   }
 
-  .slide-menu .header img {
-    height: 100%;
-    width: auto;
+  .slide-menu .header > :first-child {
+    color: var(--text-color3);
   }
 
-  .slide-menu .header > :nth-child(2) {
+  .slide-menu .header .close-btn {
     color: var(--span-color);
-    position: absolute;
+    cursor: pointer;
     padding: 5px;
-    right: 0;
-    top: 0;
   }
 
-  .slide-menu .header > :nth-child(2):hover {
+  .slide-menu .header .close-btn:hover {
     background-color: var(--hover-color);
+    border-radius: 50%;
   }
 
   .slide-menu .slide-menu-item {
