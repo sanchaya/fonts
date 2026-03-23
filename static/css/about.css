@@ -120,8 +120,9 @@ nav {
 
 .left-nav span {
   margin-left: 25px;
-  visibility: hidden;
   cursor: pointer;
+  color: var(--text-color1);
+  font-size: 20px;
 }
 
 .center-nav {
