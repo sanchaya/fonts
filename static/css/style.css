@@ -92,8 +92,6 @@
   box-shadow: var(--card-shadow, 0 2px 12px rgba(0, 0, 0, 0.1));
   transition: all 0.3s ease;
   border: 1px solid var(--border-color, #e0e0e0);
-  position: relative;
-  padding-right: 120px;
 }
 
 .font-item:hover {
@@ -101,55 +99,46 @@
   border-color: var(--text-color3, #4361ee);
 }
 
-.font-item-header {
+.font-item-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-color, #e0e0e0);
+  gap: 20px;
 }
 
-.font-item .font-name {
+.font-info {
+  flex: 1;
+}
+
+.font-info .font-name {
   font-weight: 600;
   color: var(--text-color1, #1a1a2e);
   font-size: 16px;
+  margin-bottom: 12px;
 }
 
-.font-item .extra-btn {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  gap: 8px;
+.font-action {
+  flex-shrink: 0;
 }
 
-.font-item .extra-btn a {
+.font-action .btn-view {
   color: var(--text-color3, #4361ee);
   text-decoration: none;
   font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
   border: 1px solid var(--text-color3, #4361ee);
   transition: all 0.2s ease;
   background: var(--third-color, #fff);
   white-space: nowrap;
-}
-
-.font-item .extra-btn a:hover {
-  background: var(--text-color3, #4361ee);
-  color: white;
-}
-
-.font-item .btn-view {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
-.font-item .btn-view .glyphicon {
-  font-size: 12px;
+.font-action .btn-view:hover {
+  background: var(--text-color3, #4361ee);
+  color: white;
 }
 
 .font-sample {

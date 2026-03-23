@@ -15,20 +15,22 @@
   <div class="font-list">
       <% for(let font of data.fonts){ %> 
         <div class="font-item">
-            <div class="font-item-header">
-                <div class="font-name">
-                    <span><%= font.font %></span>
+            <div class="font-item-content">
+                <div class="font-info">
+                    <div class="font-name">
+                        <span><%= font.font %></span>
+                    </div>
+                    <div class="font-sample" style="font-family: '<%= font.font %>'">
+                        <p>ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ</p>
+                    </div>
                 </div>
-                <div class="extra-btn">
+                <div class="font-action">
                     <a href="/font/<%= data.link %>/<%= font.link %>" class="btn-view">
                         View Details
                     </a>
                 </div>
             </div>
-            <div class="font-sample" style="font-family: '<%= font.font %>'">
-                <p>ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ</p>
-            </div>
         </div>
       <% } %> 
   </div>
-</div>  
+</div>
