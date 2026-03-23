@@ -110,6 +110,8 @@
         </div>
     </nav>
     <% if(page.fontPage){ %>
+        <% var fontDir = fontFamily.replace(/-/g, '_') %>
+        <link rel="stylesheet" type="text/css" href="/Fonts/<%= fontDir %>/<%= font %>.ttf">
         <div class="font-info-bar">
             <div class="container">
                 <div class="font-meta">
