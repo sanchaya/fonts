@@ -363,6 +363,20 @@
   text-decoration: underline;
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--text-color3, #4361ee);
+  color: white !important;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.download-btn:hover {
+  background: var(--text-color4, #3451d6);
+  text-decoration: none;
+}
+
 /* Family instructions */
 .family-instructions {
   text-align: center;
