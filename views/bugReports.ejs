@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Reports - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: var(--third-color);
+        }
+        .reports-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--third-color);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        .reports-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .reports-header h1 {
+            color: var(--text-color1);
+            margin-bottom: 10px;
+        }
+        .reports-header p {
+            color: var(--span-color);
+        }
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-bar select,
+        .filter-bar input {
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--third-color);
+            color: var(--text-color1);
+        }
+        .filter-bar select {
+            min-width: 150px;
+        }
+        .filter-bar input {
+            flex: 1;
+            min-width: 200px;
+        }
+        .report-card {
+            background: var(--third-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .report-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .report-card.resolved {
+            opacity: 0.7;
+        }
+        .report-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .report-font {
+            font-weight: 600;
+            color: #4361ee;
+            font-size: 16px;
+        }
+        .report-font a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .report-font a:hover {
+            text-decoration: underline;
+        }
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-open {
+            background: rgba(220, 53, 69, 0.15);
+            color: #dc3545;
+        }
+        .status-resolved {
+            background: rgba(40, 167, 69, 0.15);
+            color: #28a745;
+        }
+        .report-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .report-description {
+            color: var(--text-color1);
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .report-stats {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #888;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .stat-item:hover {
+            color: #4361ee;
+        }
+        .stat-item.liked {
+            color: #dc3545;
+        }
+        .no-reports {
+            text-align: center;
+            padding: 40px;
+            color: var(--span-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-menu-baner">
+        <div class="slide-menu">
+            <div class="header">
+              <a href="/"><img src="img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="slide-menu-item">
+                <li><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+                <li><a href="/bug-reports">Bug Reports</a></li>
+            </ul>
+        </div>
+        <div class="gap-filler"></div>
+    </div>
+    <nav>
+        <div class="left-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <a href="/"><img src="img/app-icon-light.png" alt="app-icon" class="app-icon"></a>
+        </div>
+        <div class="tot-right-nav">
+            <div class="right-nav">
+                <div class="browse-font-tab">
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
+                </div>
+                <div class="about-us-tab">
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
+                </div>
+            </div>
+            <div class="static-right-nav">
+                <div class="dark-light">
+                    <input type="checkbox" id="dark-light-toggle" name="dark-light-toggle">
+                    <label for="dark-light-toggle" class="dark-light-toggle-icon">
+                        <i class="fas fa-sun fa-lg"></i>
+                        <i class="fas fa-moon fa-lg"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="reports-container">
+        <div class="reports-header">
+            <h1>Bug Reports</h1>
+            <p>View reported bugs for Kannada fonts. Help acknowledge existing issues to avoid duplicate reports.</p>
+        </div>
+
+        <div class="filter-bar">
+            <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="open">Open</option>
+                <option value="resolved">Resolved</option>
+            </select>
+            <select id="fontFilter">
+                <option value="all">All Fonts</option>
+                <% Object.keys(fonts).sort().forEach(family => { %>
+                    <option value="<%= family %>"><%= fonts[family].family %></option>
+                <% }) %>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search bug reports...">
+        </div>
+
+        <div id="reportsList">
+            <% if (bugReports.length === 0) { %>
+                <div class="no-reports">
+                    <p>No bug reports yet. Great news!</p>
+                </div>
+            <% } else { %>
+                <% const sortedReports = bugReports.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)); %>
+                <% sortedReports.forEach(function(report) { %>
+                    <div class="report-card <%= report.status === 'resolved' ? 'resolved' : '' %>" data-font="<%= report.fontFamily %>" data-status="<%= report.status %>">
+                        <div class="report-header">
+                            <div class="report-font">
+                                <a href="/font/<%= report.fontFamily %>/<%= report.fontName ? report.fontName.replace(/ /g, '-') : '' %>">
+                                    <%= report.fontFamily %>
+                                </a>
+                                <% if (report.fontName) { %>
+                                    <span style="color: #888; font-weight: normal;"> - <%= report.fontName %></span>
+                                <% } %>
+                            </div>
+                            <span class="status-badge status-<%= report.status || 'open' %>">
+                                <%= (report.status || 'open').toUpperCase() %>
+                            </span>
+                        </div>
+                        <div class="report-meta">
+                            <% if (report.browser) { %><%= report.browser %> | <% } %>
+                            <% if (report.os) { %><%= report.os %> | <% } %>
+                            <%= new Date(report.createdAt).toLocaleDateString() %>
+                        </div>
+                        <div class="report-description"><%= report.description %></div>
+                        <div class="report-stats">
+                            <div class="stat-item acknowledge-btn <%= report.acknowledged ? 'liked' : '' %>" data-id="<%= report.id %>">
+                                <i class="<%= report.acknowledged ? 'fas' : 'far' %> fa-thumbs-up"></i>
+                                <span class="ack-count"><%= report.acknowledgments || 0 %></span> Acknowledgments
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } %>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var statusFilter = document.getElementById('statusFilter');
+        var fontFilter = document.getElementById('fontFilter');
+        var searchInput = document.getElementById('searchInput');
+        var reportCards = document.querySelectorAll('.report-card');
+
+        function filterReports() {
+            var status = statusFilter.value;
+            var font = fontFilter.value;
+            var search = searchInput.value.toLowerCase();
+
+            reportCards.forEach(function(card) {
+                var cardStatus = card.dataset.status;
+                var cardFont = card.dataset.font;
+                var description = card.querySelector('.report-description').textContent.toLowerCase();
+
+                var show = true;
+                if (status !== 'all' && cardStatus !== status) show = false;
+                if (font !== 'all' && cardFont !== font) show = false;
+                if (search && !description.includes(search)) show = false;
+
+                card.style.display = show ? 'block' : 'none';
+            });
+        }
+
+        statusFilter.addEventListener('change', filterReports);
+        fontFilter.addEventListener('change', filterReports);
+        searchInput.addEventListener('input', filterReports);
+
+        document.querySelectorAll('.acknowledge-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var id = this.dataset.id;
+                fetch('/api/acknowledge-bug/' + id, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                .then(function(r) { return r.json(); })
+                .then(function(result) {
+                    if (result.success) {
+                        var icon = btn.querySelector('i');
+                        var count = btn.querySelector('.ack-count');
+                        if (result.acknowledged) {
+                            icon.classList.remove('far');
+                            icon.classList.add('fas');
+                            btn.classList.add('liked');
+                        } else {
+                            icon.classList.remove('fas');
+                            icon.classList.add('far');
+                            btn.classList.remove('liked');
+                        }
+                        count.textContent = result.count;
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>

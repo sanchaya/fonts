@@ -398,6 +398,56 @@ router.get('/admin/bug-reports', requireAdmin, (req, res) => {
     res.json(bugReports)
 })
 
+router.get('/bug-reports', (req, res) => {
+    const bugReports = loadBugReports()
+    const fonts = require('./fonts.json')
+    const metadata = loadMetadata()
+    let pag = {...pages}
+    pag.bugReportsPage = true
+    res.render('bugReports', { page: pag, bugReports, fonts, metadata })
+})
+
+router.get('/api/bug-reports', (req, res) => {
+    const bugReports = loadBugReports()
+    res.json(bugReports)
+})
+
+router.post('/api/acknowledge-bug/:id', (req, res) => {
+    const reports = loadBugReports()
+    const index = reports.findIndex(r => r.id == req.params.id)
+    
+    if (index === -1) {
+        return res.json({ success: false })
+    }
+    
+    if (!reports[index].acknowledgments) {
+        reports[index].acknowledgments = 0
+    }
+    
+    const clientIp = req.ip || req.connection.remoteAddress
+    if (!reports[index].acknowledgedBy) {
+        reports[index].acknowledgedBy = []
+    }
+    
+    const alreadyAcked = reports[index].acknowledgedBy.includes(clientIp)
+    
+    if (alreadyAcked) {
+        reports[index].acknowledgments = Math.max(0, reports[index].acknowledgments - 1)
+        reports[index].acknowledgedBy = reports[index].acknowledgedBy.filter(ip => ip !== clientIp)
+    } else {
+        reports[index].acknowledgments = (reports[index].acknowledgments || 0) + 1
+        reports[index].acknowledgedBy.push(clientIp)
+    }
+    
+    fs.writeFileSync(BUG_REPORTS_FILE, JSON.stringify(reports, null, 2))
+    
+    res.json({ 
+        success: true, 
+        acknowledged: !alreadyAcked,
+        count: reports[index].acknowledgments
+    })
+})
+
 router.post('/admin/bug-reports/:id', requireAdmin, (req, res) => {
     const { status } = req.body
     const reports = loadBugReports()

@@ -1218,3 +1218,12 @@ nav {
   margin: 20px 0;
   font-weight: 500;
 }
+
+.bug-reports-tab {
+  padding: 10px 15px;
+}
+
+.bug-reports-tab a {
+  color: var(--text-color1);
+  text-decoration: none;
+}
