@@ -1,4 +1,10 @@
 <% if (fontGlyphs) { %>
+<style>
+@font-face {
+    font-family: 'PreviewFont';
+    src: url('/Fonts/<%= fontFamily %>/<%= font %>.ttf') format('truetype');
+}
+</style>
 <div class="glyphs-container">
     <div class="glyphs-header">
         <h3>Font Information</h3>
@@ -73,7 +79,7 @@
             <tbody>
                 <% fontGlyphs.glyphs.forEach(function(glyph) { %>
                 <tr data-unicode="<%= glyph.unicode %>">
-                    <td class="glyph-char" style="font-family: '<%= fontFamily %>', sans-serif;"><%= glyph.char %></td>
+                    <td class="glyph-char" style="font-family: '<%= font %>', sans-serif;"><%= glyph.char %></td>
                     <td class="glyph-name"><%= glyph.name %></td>
                     <td class="glyph-code"><%= glyph.unicode %></td>
                     <td class="glyph-hex"><%= glyph.hex %></td>
