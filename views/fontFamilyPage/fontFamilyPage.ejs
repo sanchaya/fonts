@@ -19,14 +19,29 @@
     </div>
     
     <div class="input-section paragraph-input">
-      <div class="field-wrapper paragraph-field">
-        <textarea type="text" maxlength="500" autocomplete="off" class="kan-ime" id="type-paragraph" rows="4"></textarea>
-        <div class="field-placeholder"><span>Type Paragraph</span></div>
+      <div class="font-selector">
+        <label>Select Font:</label>
+        <select id="paragraphFontSelect">
+          <% for(let font of data.fonts){ %>
+            <option value="<%= font.font %>"><%= font.font %></option>
+          <% } %>
+        </select>
       </div>
-      <div id="slider-align">
-        <div class="slidecontainer">
-          <input type="range" min="8" max="100" value="50" name="range" class="slider para-slider" id="paraRange">
-          <output onforminput="value = paraRange.valueAsNumber;"></output>
+      <div class="paragraph-input-row">
+        <div class="field-wrapper paragraph-field">
+          <textarea type="text" maxlength="500" autocomplete="off" class="kan-ime" id="type-paragraph" rows="5"></textarea>
+          <div class="field-placeholder"><span>Type Paragraph</span></div>
+        </div>
+      </div>
+      <div class="paragraph-controls">
+        <div id="slider-align">
+          <div class="slidecontainer">
+            <input type="range" min="8" max="100" value="36" name="range" class="slider para-slider" id="paraRange">
+            <output onforminput="value = paraRange.valueAsNumber;"></output>
+          </div>
+        </div>
+        <div class="preview-box" id="paragraphPreview">
+          <p></p>
         </div>
       </div>
     </div>
@@ -40,7 +55,7 @@
                     <div class="font-name">
                         <span><%= font.font %></span>
                     </div>
-                    <div class="font-sample" style="font-family: '<%= font.font %>'" data-sample>
+                    <div class="font-sample" style="font-family: '<%= font.font %>'" data-sample data-font="<%= font.font %>">
                         <p>ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ</p>
                     </div>
                 </div>
@@ -81,7 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const typeParagraph = document.getElementById('type-paragraph');
   const myRange = document.getElementById('myRange');
   const paraRange = document.getElementById('paraRange');
+  const fontSelect = document.getElementById('paragraphFontSelect');
+  const paragraphPreview = document.getElementById('paragraphPreview');
   const fontSamples = document.querySelectorAll('.font-sample[data-sample]');
+  
+  // Set initial font from first font in the list
+  const firstFont = fontSamples[0].dataset.font;
+  typeParagraph.style.fontFamily = `'${firstFont}'`;
+  paragraphPreview.style.fontFamily = `'${firstFont}'`;
   
   // Toggle between sentence and paragraph input
   toggleBtns.forEach(btn => {
@@ -97,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sentenceInput.classList.remove('active');
         paragraphInput.classList.add('active');
         showExportButton();
+        updateParagraphPreview();
       }
     });
   });
@@ -117,21 +140,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Font selector change
+  fontSelect.addEventListener('change', function() {
+    const selectedFont = this.value;
+    typeParagraph.style.fontFamily = `'${selectedFont}'`;
+    paragraphPreview.style.fontFamily = `'${selectedFont}'`;
+    updateParagraphPreview();
+  });
+  
   // Paragraph input handler
   typeParagraph.addEventListener('input', function() {
-    const text = this.value || 'ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ';
-    fontSamples.forEach(sample => {
-      sample.querySelector('p').textContent = text;
-    });
+    updateParagraphPreview();
   });
   
   // Font size for paragraph
   paraRange.addEventListener('input', function() {
-    const size = this.value * 0.5;
-    fontSamples.forEach(sample => {
-      sample.style.fontSize = size + 'px';
-    });
+    paragraphPreview.style.fontSize = this.value + 'px';
   });
+  
+  function updateParagraphPreview() {
+    const text = typeParagraph.value || 'ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ';
+    paragraphPreview.querySelector('p').textContent = text;
+  }
+  
+  // Initialize preview
+  updateParagraphPreview();
   
   // Add export button for paragraph mode
   function showExportButton() {
@@ -140,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
       exportBtn.className = 'export-btn';
       exportBtn.innerHTML = '<i class="glyphicon glyphicon-download-alt"></i> Export as Image';
       exportBtn.addEventListener('click', openExportModal);
-      paragraphInput.appendChild(exportBtn);
+      paragraphInput.querySelector('.paragraph-controls').appendChild(exportBtn);
     }
   }
   
@@ -162,23 +195,24 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.style.display = 'flex';
     const preview = document.getElementById('imagePreview');
     
-    // Find first font sample to export
-    const sample = document.querySelector('.font-sample[data-sample]');
-    const fontFamily = sample.style.fontFamily;
-    const fontSize = sample.style.fontSize || '36px';
-    const text = sample.querySelector('p').textContent;
+    const fontFamily = paragraphPreview.style.fontFamily;
+    const fontSize = paragraphPreview.style.fontSize || '36px';
+    const text = paragraphPreview.querySelector('p').textContent;
+    const selectedFontName = fontSelect.options[fontSelect.selectedIndex].text;
     
-    preview.innerHTML = `<div class="export-content" style="font-family: ${fontFamily}; font-size: ${fontSize}; padding: 30px; background: white; border-radius: 8px; text-align: center;">
-      <p style="margin: 0; color: #1a1a2e;">${text}</p>
+    preview.innerHTML = `<div class="export-content" style="font-family: ${fontFamily}; font-size: ${fontSize}; padding: 40px 50px; background: white; border-radius: 12px; text-align: center; max-width: 800px;">
+      <p style="margin: 0; color: #1a1a2e; line-height: 1.6;">${text}</p>
+      <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #e0e0e0; font-size: 12px; color: #888; font-family: Arial, sans-serif;">${selectedFontName}</div>
     </div>`;
   }
   
   // Download image
   document.getElementById('downloadImage').addEventListener('click', function() {
     const content = document.querySelector('.export-content');
+    const selectedFontName = fontSelect.options[fontSelect.selectedIndex].text;
     html2canvas(content, { scale: 2, backgroundColor: '#ffffff' }).then(canvas => {
       const link = document.createElement('a');
-      link.download = 'kannada-font-text.png';
+      link.download = `${selectedFontName.replace(/\s+/g, '-')}-text.png`;
       link.href = canvas.toDataURL('image/png');
       link.click();
     });
