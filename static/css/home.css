@@ -70,10 +70,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  pointer-events: none;
 }
 
 .slide-menu-baner.open {
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .gap-filler {
@@ -181,8 +182,9 @@ nav {
 }
 
 .nav-logo {
-  height: 40px;
-  width: auto;
+  height: auto;
+  width: 350px;
+  max-width: 100%;
 }
 
 .nav-tagline {
@@ -1177,13 +1179,6 @@ nav {
   .slide-menu .slide-menu-item .active {
     background-color: var(--active-color);
     border-left: 2px solid var(--text-color3);
-  }
-
-  .left-nav span {
-    visibility: visible;
-  }
-  .right-nav {
-    display: none;
   }
 
   .fonts-cnt {
