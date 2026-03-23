@@ -149,9 +149,10 @@ nav {
 }
 
 .nav-tagline {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-color1);
   white-space: nowrap;
+  font-weight: 500;
 }
 
 .tot-right-nav {
