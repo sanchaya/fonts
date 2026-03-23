@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('#dark-light-toggle').change(toggleDarkLight)
 
     $('.right-nav > :first-child').click(slideMenuClick)
-    $('.slide-menu .header > :nth-child(2)').click(slideMenuClick)
+    $('.slide-menu .close-btn').click(slideMenuClick)
     $('.slide-menu-baner .gap-filler').click(slideMenuClick)
 
 
