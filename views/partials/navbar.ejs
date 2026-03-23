@@ -1,0 +1,38 @@
+<% var whichPage = (cPage) => {
+    let pg = Object.keys(page)
+    let currPage = pg.find( ele => {
+        return page[ele]
+    })
+    if(currPage == cPage){
+        return "active"
+    }
+    return ""
+} %>
+
+<div class="slide-menu-baner">
+    <div class="slide-menu">
+        <div class="header">
+          <a href="/"><img src="/img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+        <ul class="slide-menu-item">
+            <li class='<%= whichPage("fontShowPage")%>'><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+            <li class='<%= whichPage("aboutPage")%>'><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+            <li><a href="/bug-reports">Bug Reports</a></li>
+            <li class='<%= whichPage("fontSuggestionPage")%>'><a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a></li>
+        </ul>
+    </div>
+    <div class="gap-filler"></div>
+</div>
+<nav>
+    <div class="left-nav">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </div>
+    <div class="center-nav">
+        <a href="/"><img src="/img/app-icon-light.png" alt="ಫಾಂಟ್ಸ್ ಸಂಚಯ" class="nav-logo"></a>
+        <div class="nav-tagline">ಫಾಂಟ್ಸ್ ಸಂಚಯ - ಕನ್ನಡದ ಫಾಂಟುಗಳಿಗೊಂದು ಸಂಚಯ</div>
+    </div>
+    <div class="right-nav">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </div>
+</nav>
