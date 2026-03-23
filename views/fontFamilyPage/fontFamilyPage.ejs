@@ -1,14 +1,34 @@
 <div class="internal-content">
   <div class="family-header">
-    <div class="field-wrapper">
+    <div class="input-type-toggle">
+      <button class="toggle-btn active" data-type="sentence">Sentence</button>
+      <button class="toggle-btn" data-type="paragraph">Paragraph</button>
+    </div>
+    
+    <div class="input-section sentence-input active">
+      <div class="field-wrapper">
         <input type="text" maxlength="100" autocomplete="off" class="kan-ime" id="type-text">
         <div class="field-placeholder"><span>Type Text</span></div>
-    </div>
-    <div id="slider-align">
+      </div>
+      <div id="slider-align">
         <div class="slidecontainer">
-            <input type="range" min="8" max="100" value="50" name="range" class="slider" id="myRange">
-            <output onforminput="value = range.valueAsNumber;"></output>
+          <input type="range" min="8" max="100" value="50" name="range" class="slider" id="myRange">
+          <output onforminput="value = range.valueAsNumber;"></output>
         </div>
+      </div>
+    </div>
+    
+    <div class="input-section paragraph-input">
+      <div class="field-wrapper paragraph-field">
+        <textarea type="text" maxlength="500" autocomplete="off" class="kan-ime" id="type-paragraph" rows="4"></textarea>
+        <div class="field-placeholder"><span>Type Paragraph</span></div>
+      </div>
+      <div id="slider-align">
+        <div class="slidecontainer">
+          <input type="range" min="8" max="100" value="50" name="range" class="slider para-slider" id="paraRange">
+          <output onforminput="value = paraRange.valueAsNumber;"></output>
+        </div>
+      </div>
     </div>
   </div>
   
@@ -20,7 +40,7 @@
                     <div class="font-name">
                         <span><%= font.font %></span>
                     </div>
-                    <div class="font-sample" style="font-family: '<%= font.font %>'">
+                    <div class="font-sample" style="font-family: '<%= font.font %>'" data-sample>
                         <p>ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ</p>
                     </div>
                 </div>
@@ -34,3 +54,149 @@
       <% } %> 
   </div>
 </div>
+
+<div class="image-export-modal" id="imageModal" style="display:none;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Download as Image</h3>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="image-preview" id="imagePreview"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-download" id="downloadImage">Download PNG</button>
+      <button class="btn-copy" id="copyImage">Copy to Clipboard</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const sentenceInput = document.querySelector('.sentence-input');
+  const paragraphInput = document.querySelector('.paragraph-input');
+  const typeText = document.getElementById('type-text');
+  const typeParagraph = document.getElementById('type-paragraph');
+  const myRange = document.getElementById('myRange');
+  const paraRange = document.getElementById('paraRange');
+  const fontSamples = document.querySelectorAll('.font-sample[data-sample]');
+  
+  // Toggle between sentence and paragraph input
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const type = this.dataset.type;
+      
+      if (type === 'sentence') {
+        sentenceInput.classList.add('active');
+        paragraphInput.classList.remove('active');
+      } else {
+        sentenceInput.classList.remove('active');
+        paragraphInput.classList.add('active');
+        showExportButton();
+      }
+    });
+  });
+  
+  // Sentence input handler
+  typeText.addEventListener('input', function() {
+    const text = this.value || 'ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ';
+    fontSamples.forEach(sample => {
+      sample.querySelector('p').textContent = text;
+    });
+  });
+  
+  // Font size for sentence
+  myRange.addEventListener('input', function() {
+    const size = this.value * 0.7;
+    fontSamples.forEach(sample => {
+      sample.style.fontSize = size + 'px';
+    });
+  });
+  
+  // Paragraph input handler
+  typeParagraph.addEventListener('input', function() {
+    const text = this.value || 'ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ನೋಡಿ';
+    fontSamples.forEach(sample => {
+      sample.querySelector('p').textContent = text;
+    });
+  });
+  
+  // Font size for paragraph
+  paraRange.addEventListener('input', function() {
+    const size = this.value * 0.5;
+    fontSamples.forEach(sample => {
+      sample.style.fontSize = size + 'px';
+    });
+  });
+  
+  // Add export button for paragraph mode
+  function showExportButton() {
+    if (!document.querySelector('.export-btn')) {
+      const exportBtn = document.createElement('button');
+      exportBtn.className = 'export-btn';
+      exportBtn.innerHTML = '<i class="glyphicon glyphicon-download-alt"></i> Export as Image';
+      exportBtn.addEventListener('click', openExportModal);
+      paragraphInput.appendChild(exportBtn);
+    }
+  }
+  
+  // Export modal
+  const modal = document.getElementById('imageModal');
+  const closeBtn = document.querySelector('.close-modal');
+  
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+  
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+  
+  function openExportModal() {
+    modal.style.display = 'flex';
+    const preview = document.getElementById('imagePreview');
+    
+    // Find first font sample to export
+    const sample = document.querySelector('.font-sample[data-sample]');
+    const fontFamily = sample.style.fontFamily;
+    const fontSize = sample.style.fontSize || '36px';
+    const text = sample.querySelector('p').textContent;
+    
+    preview.innerHTML = `<div class="export-content" style="font-family: ${fontFamily}; font-size: ${fontSize}; padding: 30px; background: white; border-radius: 8px; text-align: center;">
+      <p style="margin: 0; color: #1a1a2e;">${text}</p>
+    </div>`;
+  }
+  
+  // Download image
+  document.getElementById('downloadImage').addEventListener('click', function() {
+    const content = document.querySelector('.export-content');
+    html2canvas(content, { scale: 2, backgroundColor: '#ffffff' }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'kannada-font-text.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    });
+  });
+  
+  // Copy to clipboard
+  document.getElementById('copyImage').addEventListener('click', function() {
+    const content = document.querySelector('.export-content');
+    html2canvas(content, { scale: 2, backgroundColor: '#ffffff' }).then(canvas => {
+      canvas.toBlob(function(blob) {
+        const item = new ClipboardItem({ 'image/png': blob });
+        navigator.clipboard.write([item]).then(() => {
+          alert('Image copied to clipboard!');
+        }).catch(err => {
+          console.error('Failed to copy:', err);
+        });
+      });
+    });
+  });
+});
+</script>
