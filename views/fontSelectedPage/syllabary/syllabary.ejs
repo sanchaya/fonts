@@ -1,5 +1,6 @@
-<h2>Vowels</h2>
-<div class="overview-char-cnt container">
+<div class="syllabary-section">
+<h3 class="section-title">Vowels</h3>
+<div class="overview-char-cnt">
 <% for(let i=0; i<syllabary.vowels.length; i++){ %> 
       <div class="overview-char">
           <span><%= syllabary.vowels[i] %> </span>
@@ -7,8 +8,8 @@
 <% } %> 
 </div>
 
-<h2>Consonants</h2>
-<div class="overview-char-cnt container">
+<h3 class="section-title">Consonants</h3>
+<div class="overview-char-cnt">
 <% for(let i=0; i<syllabary.consonants.length; i++){ %> 
       <div class="overview-char">
           <span><%= syllabary.consonants[i] %> </span>
@@ -16,10 +17,10 @@
 <% } %>
 </div>
 
-<h2>Compounds</h2>
+<h3 class="section-title">Compounds</h3>
 <% for(let i=0; i<syllabary.compounds.length; i++){ %>
-    <h3>Compound of <%= syllabary.consonants[i] %>: </h3>
-    <div class="overview-char-cnt container">
+    <h4 class="compound-title">Compound of <%= syllabary.consonants[i] %>: </h4>
+    <div class="overview-char-cnt">
     <% for(let j=0; j<syllabary.compounds[i].length; j++){ %>
             <div class="overview-char">
                 <span><%= syllabary.compounds[i][j] %> </span>
@@ -27,3 +28,4 @@
     <% } %>  
     </div>
 <% } %> 
+</div>
