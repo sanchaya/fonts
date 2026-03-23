@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Metadata Admin - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body { background: var(--third-color); }
+        .admin-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--third-color);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .admin-header h1 {
+            color: var(--text-color1);
+            margin: 0;
+        }
+        .btn-primary {
+            background: #4361ee;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #3f37c9;
+        }
+        .btn-success {
+            background: #28a745;
+            border: none;
+        }
+        table {
+            background: var(--third-color);
+        }
+        table thead {
+            background: var(--text-background);
+        }
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-complete {
+            background: rgba(40, 167, 69, 0.15);
+            color: #28a745;
+        }
+        .status-incomplete {
+            background: rgba(255, 193, 7, 0.15);
+            color: #ffc107;
+        }
+        .action-btns {
+            display: flex;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-menu-baner">
+        <div class="slide-menu">
+            <div class="header">
+              <a href="/"><img src="img/app-icon-light.png" class="app-icon" alt="app-icon"></a>
+              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="slide-menu-item">
+                <li><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></li>
+                <li><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></li>
+            </ul>
+        </div>
+        <div class="gap-filler"></div>
+    </div>
+    <nav>
+        <div class="left-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <a href="/"><img src="img/app-icon-light.png" alt="app-icon" class="app-icon"></a>
+        </div>
+        <div class="tot-right-nav">
+            <div class="right-nav">
+                <div class="browse-font-tab">
+                    <span><a href="/">ಫಾಂಟುಗಳನ್ನು ಜಾಲಾಡಿ</a></span>
+                </div>
+                <div class="about-us-tab">
+                    <span><a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a></span>
+                </div>
+            </div>
+            <div class="static-right-nav">
+                <div class="dark-light">
+                    <input type="checkbox" id="dark-light-toggle" name="dark-light-toggle">
+                    <label for="dark-light-toggle" class="dark-light-toggle-icon">
+                        <i class="fas fa-sun fa-lg"></i>
+                        <i class="fas fa-moon fa-lg"></i>
+                    </label>
+                </div>
+                <div class="selected-family">
+                    <span><a href="/getSuggestionForm"><i class="fa fa-plus fa-lg"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <div>
+                <h1>Font Metadata Admin</h1>
+                <p style="color: var(--span-color);">Manage author, license, and source information for fonts</p>
+            </div>
+            <div class="action-btns">
+                <a href="/export" class="btn btn-success">
+                    <i class="glyphicon glyphicon-export"></i> Export
+                </a>
+                <a href="/" class="btn btn-default">Back to Home</a>
+                <a href="/logout" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Font Family</th>
+                    <th>Author</th>
+                    <th>License</th>
+                    <th>Foundry</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% Object.keys(fonts).forEach(family => { %>
+                    <% const meta = metadata[family] || {} %>
+                    <% const isComplete = meta.author && meta.license && meta.license !== 'Unknown' && meta.author !== 'Not Available' %>
+                    <tr>
+                        <td><strong><%= fonts[family].family %></strong></td>
+                        <td><%= meta.author || 'Not Available' %></td>
+                        <td><%= meta.license || 'Unknown' %></td>
+                        <td><%= meta.foundry || '-' %></td>
+                        <td>
+                            <span class="status-badge <%= isComplete ? 'status-complete' : 'status-incomplete' %>">
+                                <%= isComplete ? 'Complete' : 'Incomplete' %>
+                            </span>
+                        </td>
+                        <td>
+                            <a href="/admin/font/<%= family %>" class="btn btn-sm btn-primary">
+                                <i class="glyphicon glyphicon-edit"></i> Edit
+                            </a>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
