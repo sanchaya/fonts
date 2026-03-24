@@ -91,11 +91,11 @@
     "description": "A Kannada text font developed for better digital reading experiences, especially on mobile devices."
   },
   "Chalukya": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Ki Basajan Ki",
+    "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Kannada font named after the Chalukya dynasty, an ancient Kannada dynasty."
+    "description": "Free Kannada font developed by Ki Basajan Ki"
   },
   "Cheluvi": {
     "author": "Tejaswi",
@@ -112,11 +112,11 @@
     "description": "Kannada font."
   },
   "Ganga": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Ki Basajan Ki",
+    "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Kannada font named after the Ganga dynasty, an ancient Kannada dynasty."
+    "description": "Free Kannada font developed by Ki Basajan Ki"
   },
   "Gok-Kannada-Fonts": {
     "author": "Government of Karnataka",
@@ -133,11 +133,11 @@
     "description": "Kannada Unicode font forked from Kedage with improvements. A handwriting-style font."
   },
   "Hoysala": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Ki Basajan Ki",
+    "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Kannada font named after the Hoysala dynasty, an ancient Kannada dynasty."
+    "description": "Free Kannada font developed by Ki Basajan Ki"
   },
   "Hubballi": {
     "author": "Erin McLaughlin",
@@ -161,11 +161,11 @@
     "description": "Kannada font."
   },
   "Kadamba": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Ki Basajan Ki",
+    "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Kannada font family named after the Kadamba dynasty, an ancient Kannada dynasty."
+    "description": "Free Kannada font developed by Ki Basajan Ki"
   },
   "KannadaPixel": {
     "author": "Unknown",
@@ -216,7 +216,7 @@
     "foundry": "NLCI",
     "description": "Kannada font developed at IISc. Fork of original Kannada fonts for improvements."
   },
-"Murty-Kannada": {
+  "Murty-Kannada": {
     "author": "Unknown",
     "license": "Unknown",
     "source": "",
@@ -243,13 +243,6 @@
     "source": "https://docs.microsoft.com/en-us/typography/font-list/nirmala-ui",
     "foundry": "Microsoft",
     "description": "Nirmala UI font by Microsoft with Kannada support."
-  },
-  "Nishchaya": {
-    "author": "Unknown",
-    "license": "Unknown",
-    "source": "",
-    "foundry": "",
-    "description": "Kannada font."
   },
   "NotoSansKannada-Unhinted": {
     "author": "Jelle Bosma - Monotype Design Team",
@@ -307,7 +300,7 @@
     "foundry": "C-DAC",
     "description": "A Unicode-based OpenType font supporting 13 Indic scripts including Kannada. A mono-thick font with equal horizontal and vertical stem thickness."
   },
-"SamaKannada": {
+  "SamaKannada": {
     "author": "Unknown",
     "license": "Unknown",
     "source": "",
@@ -322,10 +315,10 @@
     "description": "Shreelipi Kannada font developed by Modular Infotech."
   },
   "Sriraju": {
-    "author": "Unknown",
-    "license": "Unknown",
-    "source": "",
+    "author": "Sugata Srinivasaraju",
+    "license": "Free for personal and commercial use",
+    "source": "https://sugataraju.blogspot.com/2019/01/free-download-sriraju-type-family-with.html",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A unicode typeface family with six weights (Regular, Regular Italic, Bold, Bold Italic, Stencil/Outline, Stencil/Outline Italic). Released on 28 November 2017 to commemorate the 75th birth anniversary of C Srinivasaraju (28 November 1942 - 28 December 2007)."
   }
 }
