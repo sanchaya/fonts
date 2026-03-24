@@ -327,5 +327,12 @@
     "source": "https://github.com/itfoundry/hind-mysuru",
     "foundry": "iT Foundry",
     "description": "A Kannada font designed for screen reading. Part of the Hind font family adapted for Mysuru/Karnataka."
+  },
+  "HindMysuru": {
+    "author": "Liang Hai",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/itfoundry/hind-mysuru/",
+    "foundry": "Indian Type Foundry",
+    "description": "A clean and legible sans-serif typeface designed for Kannada script, with a modern and friendly appearance."
   }
 }
