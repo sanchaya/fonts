@@ -334,5 +334,12 @@
     "source": "https://github.com/itfoundry/hind-mysuru/",
     "foundry": "Indian Type Foundry",
     "description": "A clean and legible sans-serif typeface designed for Kannada script, with a modern and friendly appearance."
+  },
+  "nlci-knda-badami": {
+    "author": "NLCI",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/nlci/knda-font-badami",
+    "foundry": "NLCI (National Library Centre for India)",
+    "description": "A clean and legible Kannada font family designed for reading and display, with regular, italic, bold and bold italic weights."
   }
 }
