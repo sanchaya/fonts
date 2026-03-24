@@ -260,7 +260,7 @@
   },
   "Nudi-Fonts": {
     "author": "Kannada Ganaka Parishat",
-    "license": "Proprietary",
+    "license": "SIL Open Font License 1.1",
     "source": "https://kannada.indiatyping.com/index.php/download-kannada-font/kannada-nudi-fonts",
     "foundry": "Government of Karnataka",
     "description": "Official Nudi fonts recommended by the Government of Karnataka for Kannada text."
@@ -274,7 +274,7 @@
   },
   "Padyakke-Libre": {
     "author": "Unknown",
-    "license": "Unknown",
+    "license": "SIL Open Font License 1.1",
     "source": "",
     "foundry": "",
     "description": "Kannada font."
@@ -295,7 +295,7 @@
   },
   "SakalBharati": {
     "author": "C-DAC GIST Pune",
-    "license": "SIL OFL 1.1",
+    "license": "SIL Open Font License 1.1",
     "source": "https://www.cdac.in/index.aspx?id=dl_sakal_bharati_font",
     "foundry": "C-DAC",
     "description": "A Unicode-based OpenType font supporting 13 Indic scripts including Kannada. A mono-thick font with equal horizontal and vertical stem thickness."
