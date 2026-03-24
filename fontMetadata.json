@@ -273,11 +273,11 @@
     "description": "Kannada font."
   },
   "Padyakke-Libre": {
-    "author": "Unknown",
+    "author": "Mohan B所能",
     "license": "SIL Open Font License 1.1",
-    "source": "",
-    "foundry": "",
-    "description": "Kannada font."
+    "source": "https://github.com/DunwichType/Padyakke_Libre",
+    "foundry": "Dunwich Type",
+    "description": "A contemporary Kannada typeface designed for readability and versatility."
   },
   "Praja": {
     "author": "Unknown",
