@@ -743,6 +743,22 @@
 	src: url("../Fonts/Murty-Kannada/Murty-Kannada.ttf");
 
 }@font-face {
+	font-family: "Kaveri Bold";
+	src: url("../Fonts/NLCI-Kaveri/Kaveri-Bold.ttf");
+
+}@font-face {
+	font-family: "Kaveri BoldItalic";
+	src: url("../Fonts/NLCI-Kaveri/Kaveri-BoldItalic.ttf");
+
+}@font-face {
+	font-family: "Kaveri Italic";
+	src: url("../Fonts/NLCI-Kaveri/Kaveri-Italic.ttf");
+
+}@font-face {
+	font-family: "Kaveri Regular";
+	src: url("../Fonts/NLCI-Kaveri/Kaveri-Regular.ttf");
+
+}@font-face {
 	font-family: "Navilu";
 	src: url("../Fonts/Navilu/Navilu.ttf");
 
