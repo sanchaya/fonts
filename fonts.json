@@ -5404,5 +5404,31 @@
 				"link": "Badami-Regular"
 			}
 		]
+	},
+	"Hind Mysuru": {
+		"family": "Hind Mysuru",
+		"link": "Hind-Mysuru",
+		"fonts": [
+			{
+				"font": "Hind Mysuru",
+				"link": "Hind-Mysuru"
+			},
+			{
+				"font": "Hind Mysuru Light",
+				"link": "Hind-Mysuru-Light"
+			},
+			{
+				"font": "Hind Mysuru Medium",
+				"link": "Hind-Mysuru-Medium"
+			},
+			{
+				"font": "Hind Mysuru SemiBold",
+				"link": "Hind-Mysuru-SemiBold"
+			},
+			{
+				"font": "Hind Mysuru Bold",
+				"link": "Hind-Mysuru-Bold"
+			}
+		]
 	}
 }
