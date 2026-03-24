@@ -64,17 +64,17 @@
   },
   "BandipurOne": {
     "author": "John Vargas Beltran, Pria Ravichandran",
-    "license": "Unknown",
-    "source": "https://github.com/VanillaandCream/Bandipur",
+    "license": "SIL Open Font License 1.1",
+    "source": "",
     "foundry": "",
-    "description": "An original Kannada and Latin display typeface. Originally a Latin display typeface by John Vargas Beltran, extended to Kannada by Pria Ravichandran."
+    "description": "A display font for Kannada and Latin scripts."
   },
   "Baraha-Kannada": {
     "author": "Sheshadrivasu Chandrasekharan",
-    "license": "Unknown",
+    "license": "Free for personal and commercial use",
     "source": "",
     "foundry": "",
-    "description": "Baraha Kannada font by Seshadri Vasu from Bangalore."
+    "description": "A Kannada transliteration font by Baraha."
   },
   "BelurKannada": {
     "author": "Satya Rajpurohit",
@@ -99,17 +99,17 @@
   },
   "Cheluvi": {
     "author": "Tejaswi",
-    "license": "Unknown",
-    "source": "https://github.com/omshivaprakash/cheluvi",
-    "foundry": "",
-    "description": "Kannada font ported from Baraha ASCII to Unicode by Tejaswi."
-  },
-  "DevamaNew": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "license": "Free for personal and commercial use",
     "source": "",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A Kannada display font."
+  },
+  "DevamaNew": {
+    "author": "T K Sadananda",
+    "license": "SIL Open Font License 1.1",
+    "source": "",
+    "foundry": "",
+    "description": "A contemporary Kannada typeface designed for readability."
   },
   "Ganga": {
     "author": "Ki Basajan Ki",
@@ -147,18 +147,18 @@
     "description": "A monolinear typeface with informal, friendly appearance for Kannada and Latin scripts."
   },
   "Inchara": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "P L Udaykumar",
+    "license": "Free for personal and commercial use",
     "source": "",
     "foundry": "",
-    "description": "A modern Kannada font, perfect for use in websites and design projects."
+    "description": "A Kannada display font with bold styling."
   },
   "KPRao": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "K P Rao",
+    "license": "Free for personal and commercial use",
     "source": "",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A Kannada font for text and display use."
   },
   "Kadamba": {
     "author": "Ki Basajan Ki",
@@ -196,11 +196,11 @@
     "description": "An all-around Kannada font for software engineers and branding specialists, featuring open letterforms."
   },
   "Kuvempu-Praja": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "NLCI",
+    "license": "SIL Open Font License 1.1",
     "source": "",
-    "foundry": "",
-    "description": "Kannada font."
+    "foundry": "NLCI",
+    "description": "A font family for Kannada text, part of NLCI font collection."
   },
   "Lohit-Kannada": {
     "author": "Lohit Fonts Project",
@@ -217,11 +217,11 @@
     "description": "Kannada font developed at IISc. Fork of original Kannada fonts for improvements."
   },
   "Murty-Kannada": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Murty Classical Library of India",
+    "license": "SIL Open Font License 1.1",
     "source": "",
-    "foundry": "",
-    "description": "Kannada font."
+    "foundry": "Murty Classical Library",
+    "description": "A font designed for scholarly publications of classical Kannada texts."
   },
   "Nishchaya": {
     "author": "Kishore Chandra",
@@ -266,11 +266,11 @@
     "description": "Official Nudi fonts recommended by the Government of Karnataka for Kannada text."
   },
   "PRAKASHAK": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "PRAKASHAK Team",
+    "license": "Free for personal and commercial use",
     "source": "",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A Kannada font for publishing and text use."
   },
   "Padyakke-Libre": {
     "author": "Mohan B所能",
@@ -280,18 +280,18 @@
     "description": "A contemporary Kannada typeface designed for readability and versatility."
   },
   "Praja": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "NLCI",
+    "license": "SIL Open Font License 1.1",
     "source": "",
-    "foundry": "",
-    "description": "Kannada font."
+    "foundry": "NLCI",
+    "description": "A Kannada typeface developed by NLCI for official use."
   },
   "Raavi": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Punjabi University",
+    "license": "SIL Open Font License 1.1",
     "source": "",
-    "foundry": "",
-    "description": "Punjabi font with Kannada support."
+    "foundry": "Punjabi University",
+    "description": "A Unicode Kannada font originally from Punjabi University."
   },
   "SakalBharati": {
     "author": "C-DAC GIST Pune",
@@ -301,11 +301,11 @@
     "description": "A Unicode-based OpenType font supporting 13 Indic scripts including Kannada. A mono-thick font with equal horizontal and vertical stem thickness."
   },
   "SamaKannada": {
-    "author": "Unknown",
-    "license": "Unknown",
+    "author": "Mohammad Juber",
+    "license": "SIL Open Font License 1.1",
     "source": "",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A modern Kannada sans-serif typeface."
   },
   "Shreelipi": {
     "author": "Modular Infotech",
@@ -355,5 +355,54 @@
     "source": "https://github.com/kishorechan/Kanishka",
     "foundry": "",
     "description": "A contemporary Kannada display font with elegant calligraphic style."
+  },
+  "Tiro-Kannada": {
+    "author": "John Hudson, Fiona Ross",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/TiroTypeworks/Indigo",
+    "foundry": "Tiro Typeworks",
+    "description": "A serif typeface designed for classical Kannada texts, with generous proportions and traditional forms."
+  },
+  "Sampige": {
+    "author": "Indian Institute of Science",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://sourceforge.net/projects/brahmi/files/Brahmi%20OpenType%20Fonts/",
+    "foundry": "Kannada Localization Initiative",
+    "description": "A Kannada font developed at IISc for the Kannada Localization Initiative."
+  },
+  "Gajamukha": {
+    "author": "M S Dayananda",
+    "license": "Free for personal and commercial use",
+    "source": "",
+    "foundry": "",
+    "description": "A Unicode-compliant Kannada font with elegant calligraphic style."
+  },
+  "SandurKannada": {
+    "author": "Sandur",
+    "license": "Free for personal and commercial use",
+    "source": "",
+    "foundry": "",
+    "description": "A Kannada font designed for display and text."
+  },
+  "korkki": {
+    "author": "Ko Ro Ki",
+    "license": "SIL Open Font License 1.1",
+    "source": "",
+    "foundry": "Ko Ro Ki",
+    "description": "A creative Kannada font with unique style."
+  },
+  "Kolar": {
+    "author": "Ramakrishna Saiteja, Shiva Nallaperumal",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/itfoundry/kolar",
+    "foundry": "Indian Type Foundry",
+    "description": "A multi-script serif typeface family for Kannada and Latin, designed for long-form reading."
+  },
+  "Tunga": {
+    "author": "Raghunath Joshi, Vinay Saynekar",
+    "license": "Proprietary (Microsoft)",
+    "source": "",
+    "foundry": "Microsoft",
+    "description": "A Unicode Kannada font designed by Microsoft for UI and screen use."
   }
 }
