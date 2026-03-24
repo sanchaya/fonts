@@ -336,6 +336,10 @@ nav {
   padding: 40px 20px;
 }
 
+#content h1 {
+  text-align: center;
+}
+
 /* ========== REPORTS CONTAINER ========== */
 
 .reports-container {
