@@ -1052,6 +1052,36 @@ nav {
   right: 0;
   font-size: small;
 }
+
+.font .header .license-open,
+.font .header .license-proprietary {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.font .header .license-open {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.font .header .license-proprietary {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+body.dark .font .header .license-open {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: #75c975;
+}
+
+body.dark .font .header .license-proprietary {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffd43b;
+}
 .font .font-text {
   word-wrap: break-word;
   word-break: break-word;
