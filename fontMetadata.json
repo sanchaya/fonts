@@ -224,11 +224,11 @@
     "description": "Kannada font."
   },
   "Nishchaya": {
-    "author": "Unknown",
-    "license": "Unknown",
-    "source": "",
+    "author": "Kishore Chandra",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/kishorechan/Nishchaya",
     "foundry": "",
-    "description": "Kannada font."
+    "description": "A contemporary Kannada typeface with elegant curves, designed for readability and modern aesthetics."
   },
   "Navilu": {
     "author": "Aravinda VK",
