@@ -348,5 +348,12 @@
     "source": "https://github.com/nlci/knda-font-badami",
     "foundry": "NLCI (National Library Centre for India)",
     "description": "A contemporary Kannada typeface with elegant proportions, designed for readability. Features Regular, Italic, Bold, and Bold Italic weights."
+  },
+  "Kanishka": {
+    "author": "Kishore Chandra",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/kishorechan/Kanishka",
+    "foundry": "",
+    "description": "A contemporary Kannada display font with elegant calligraphic style."
   }
 }
