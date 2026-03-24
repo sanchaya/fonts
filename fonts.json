@@ -6,6 +6,10 @@
 			{
 				"font": "ATS Bandipura Bold",
 				"link": "ATS-Bandipura-Bold"
+			},
+			{
+				"font": "ATS Bandipura Bold",
+				"link": "ATS-Bandipura-Bold"
 			}
 		]
 	},
@@ -13,6 +17,46 @@
 		"family": "ATS Bengaluru",
 		"link": "ATS-Bengaluru",
 		"fonts": [
+			{
+				"font": "ATSBengaluru DotBold",
+				"link": "ATSBengaluru-DotBold"
+			},
+			{
+				"font": "ATSBengaluru DotRegular",
+				"link": "ATSBengaluru-DotRegular"
+			},
+			{
+				"font": "ATSBengaluru LEDBold",
+				"link": "ATSBengaluru-LEDBold"
+			},
+			{
+				"font": "ATSBengaluru LEDRegular",
+				"link": "ATSBengaluru-LEDRegular"
+			},
+			{
+				"font": "ATSBengaluru PixelBold",
+				"link": "ATSBengaluru-PixelBold"
+			},
+			{
+				"font": "ATSBengaluru PixelRegular",
+				"link": "ATSBengaluru-PixelRegular"
+			},
+			{
+				"font": "ATSBengaluru SmoothBold",
+				"link": "ATSBengaluru-SmoothBold"
+			},
+			{
+				"font": "ATSBengaluru SmoothRegular",
+				"link": "ATSBengaluru-SmoothRegular"
+			},
+			{
+				"font": "ATSBengaluru SquareBold",
+				"link": "ATSBengaluru-SquareBold"
+			},
+			{
+				"font": "ATSBengaluru SquareRegular",
+				"link": "ATSBengaluru-SquareRegular"
+			},
 			{
 				"font": "ATSBengaluru DotBold",
 				"link": "ATSBengaluru-DotBold"
@@ -114,6 +158,14 @@
 			{
 				"font": "ATSChikkamagaluru Regular",
 				"link": "ATSChikkamagaluru-Regular"
+			},
+			{
+				"font": "ATSChikkamagaluru ColorRegular",
+				"link": "ATSChikkamagaluru-ColorRegular"
+			},
+			{
+				"font": "ATSChikkamagaluru Regular",
+				"link": "ATSChikkamagaluru-Regular"
 			}
 		]
 	},
@@ -178,8 +230,16 @@
 				"link": "Ambarisha2"
 			},
 			{
+				"font": "Ambarisha2",
+				"link": "Ambarisha2"
+			},
+			{
 				"font": "Ambarisha Regular",
 				"link": "Ambarisha-Regular"
+			},
+			{
+				"font": "Ambarisha2",
+				"link": "Ambarisha2"
 			},
 			{
 				"font": "Ambarisha2",
@@ -191,6 +251,10 @@
 		"family": "Anchu Kannada",
 		"link": "Anchu-Kannada",
 		"fonts": [
+			{
+				"font": "ANCHU",
+				"link": "ANCHU"
+			},
 			{
 				"font": "ANCHU",
 				"link": "ANCHU"
@@ -552,6 +616,20 @@
 			{
 				"font": "Devama",
 				"link": "Devama"
+			},
+			{
+				"font": "Devama",
+				"link": "Devama"
+			}
+		]
+	},
+	"Gajamukha": {
+		"family": "Gajamukha",
+		"link": "Gajamukha",
+		"fonts": [
+			{
+				"font": "Gajamukha Full",
+				"link": "Gajamukha-Full"
 			}
 		]
 	},
@@ -629,6 +707,32 @@
 			}
 		]
 	},
+	"HindMysuru": {
+		"family": "HindMysuru",
+		"link": "HindMysuru",
+		"fonts": [
+			{
+				"font": "HindMysuru Bold",
+				"link": "HindMysuru-Bold"
+			},
+			{
+				"font": "HindMysuru Light",
+				"link": "HindMysuru-Light"
+			},
+			{
+				"font": "HindMysuru Medium",
+				"link": "HindMysuru-Medium"
+			},
+			{
+				"font": "HindMysuru Regular",
+				"link": "HindMysuru-Regular"
+			},
+			{
+				"font": "HindMysuru SemiBold",
+				"link": "HindMysuru-SemiBold"
+			}
+		]
+	},
 	"Hoysala": {
 		"family": "Hoysala",
 		"link": "Hoysala",
@@ -700,6 +804,10 @@
 		"link": "KannadaPixel",
 		"fonts": [
 			{
+				"font": "KannadaPixel",
+				"link": "KannadaPixel"
+			},
+			{
 				"font": "old .pfb KannadaPixel",
 				"link": "old-.pfb-KannadaPixel"
 			},
@@ -767,6 +875,16 @@
 			}
 		]
 	},
+	"Kolar": {
+		"family": "Kolar",
+		"link": "Kolar",
+		"fonts": [
+			{
+				"font": "Kolar Bold",
+				"link": "Kolar-Bold"
+			}
+		]
+	},
 	"Kuvempu-Praja": {
 		"family": "Kuvempu Praja",
 		"link": "Kuvempu-Praja",
@@ -825,6 +943,10 @@
 		"family": "Murty Kannada",
 		"link": "Murty-Kannada",
 		"fonts": [
+			{
+				"font": "Murty Kannada",
+				"link": "Murty-Kannada"
+			},
 			{
 				"font": "Murty Kannada",
 				"link": "Murty-Kannada"
@@ -5383,6 +5505,16 @@
 			}
 		]
 	},
+	"korkki": {
+		"family": "korkki",
+		"link": "korkki",
+		"fonts": [
+			{
+				"font": "korkki",
+				"link": "korkki"
+			}
+		]
+	},
 	"nlci-knda-badami": {
 		"family": "nlci knda badami",
 		"link": "nlci-knda-badami",
@@ -5402,32 +5534,6 @@
 			{
 				"font": "Badami Regular",
 				"link": "Badami-Regular"
-			}
-		]
-	},
-	"Hind Mysuru": {
-		"family": "Hind Mysuru",
-		"link": "Hind-Mysuru",
-		"fonts": [
-			{
-				"font": "Hind Mysuru",
-				"link": "Hind-Mysuru"
-			},
-			{
-				"font": "Hind Mysuru Light",
-				"link": "Hind-Mysuru-Light"
-			},
-			{
-				"font": "Hind Mysuru Medium",
-				"link": "Hind-Mysuru-Medium"
-			},
-			{
-				"font": "Hind Mysuru SemiBold",
-				"link": "Hind-Mysuru-SemiBold"
-			},
-			{
-				"font": "Hind Mysuru Bold",
-				"link": "Hind-Mysuru-Bold"
 			}
 		]
 	}
