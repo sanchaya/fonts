@@ -799,6 +799,16 @@
 			}
 		]
 	},
+	"Kanishka": {
+		"family": "Kanishka",
+		"link": "Kanishka",
+		"fonts": [
+			{
+				"font": "Kanishka",
+				"link": "Kanishka"
+			}
+		]
+	},
 	"KannadaPixel": {
 		"family": "KannadaPixel",
 		"link": "KannadaPixel",
