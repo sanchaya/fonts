@@ -18,6 +18,14 @@ const getMetadata = () => {
     return metadataCache
 }
 
+const getLicenseType = (license) => {
+    if (!license) return 'Unknown'
+    const lic = license.toLowerCase()
+    const openSourceIndicators = ['ofl', 'sil', 'mit license', 'apache', 'gnu', 'public domain', 'ubuntu']
+    const isOpenSource = openSourceIndicators.some(ind => lic.includes(ind))
+    return isOpenSource ? 'Open Source' : 'Proprietary'
+}
+
 const getFontsJson = () => {
     const now = Date.now()
     if (fontsCache && (now - fontsCacheTime) < CACHE_TTL) {
@@ -118,7 +126,8 @@ var getFonts = (val, page) =>{
             link: data.link,
             styles: data['fonts'].length,
             author: fontMeta.author || '',
-            foundry: fontMeta.foundry || ''
+            foundry: fontMeta.foundry || '',
+            licenseType: getLicenseType(fontMeta.license)
         }
         return obj
     })
