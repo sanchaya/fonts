@@ -168,11 +168,11 @@
     "description": "Free Kannada font developed by Ki Basajan Ki"
   },
   "KannadaPixel": {
-    "author": "Unknown",
-    "license": "Unknown",
-    "source": "",
+    "author": "Shankar Sivarajan",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/shankarsivarajan/KannadaPixel",
     "foundry": "",
-    "description": "A pixel-style Kannada font."
+    "description": "A pixel style Kannada font designed for digital displays and retro styling."
   },
   "Karnata-F-Kittel-Font": {
     "author": "Prashant Pandit (Project Head), Sachin Shetty (Graphics), Satish A.G. (Technical)",
