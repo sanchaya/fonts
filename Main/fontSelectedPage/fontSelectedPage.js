@@ -6,6 +6,18 @@ let fontsCache = null
 let fontsCacheTime = 0
 const CACHE_TTL = 60000
 
+let metadataCache = null
+const getMetadata = () => {
+    if (metadataCache) return metadataCache
+    try {
+        const bytes = fs.readFileSync(path.join(__dirname, '..', '..', 'fontMetadata.json'))
+        metadataCache = JSON.parse(bytes)
+    } catch {
+        metadataCache = {}
+    }
+    return metadataCache
+}
+
 const getFontsJson = () => {
     const now = Date.now()
     if (fontsCache && (now - fontsCacheTime) < CACHE_TTL) {
@@ -83,6 +95,7 @@ var getFontsForFamilyPage = (family) => {
 
 var getFonts = (val, page) =>{
     const json = getFontsJson()
+    const metadata = getMetadata()
     let ar = Object.keys(json).map((key)=>{
         return json[key]
     })
@@ -98,12 +111,14 @@ var getFonts = (val, page) =>{
     
     let result = filter.map( data => {
         const first_font = data['fonts'][0]['font']
+        const fontMeta = metadata[data.link] || {}
         const obj = {
-            // data that to be send
             font: first_font,
             family: data.family,
             link: data.link,
-            styles: data['fonts'].length
+            styles: data['fonts'].length,
+            author: fontMeta.author || '',
+            foundry: fontMeta.foundry || ''
         }
         return obj
     })

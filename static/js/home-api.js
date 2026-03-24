@@ -76,7 +76,19 @@ var appendCard = (res) => {
     $('#loading-gif').remove()
     for(let i=0;i<res.data.length;i++){
         // appender += "<div class='custom-card'><div class='hover-show'><a href='/family/"+res.data[i].link+"'>"+res.data[i].family+"</a></div><div class='custom-card-cnt'><h4><b>"+res.data[i].family+"</b></h4><hr><p style='font-family:"+res.data[i].font+",recursive;'>ಕನ್ನಡ ಒಂದು ಸುಂದರ ಭಾಷೆ. ನೀವು ಭಾಷೆಯ ಫಾಂಟ್ ಅನ್ನು ಬದಲಾಯಿಸಬಹುದು</p><hr><a role='button' class='btn btn-primary' href='/family/"+res.data[i].link+"'>Go</a></div></div>"
-        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4><span class="developer-name">Author Name</span><span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:'+res.data[i].font+', recursive;">Almost before we know it, we had left the ground</div></div></a>'
+        let authorInfo = ''
+const author = res.data[i].author
+const foundry = res.data[i].foundry
+if (author && author !== 'Unknown' && foundry && foundry !== 'Unknown') {
+    authorInfo = '<span class="developer-name">' + author + ' • ' + foundry + '</span>'
+} else if (author && author !== 'Unknown') {
+    authorInfo = '<span class="developer-name">' + author + '</span>'
+} else if (foundry && foundry !== 'Unknown') {
+    authorInfo = '<span class="developer-name">' + foundry + '</span>'
+} else {
+    authorInfo = '<span class="developer-name">Author Name</span>'
+}
+appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:'+res.data[i].font+', recursive;">Almost before we know it, we had left the ground</div></div></a>'
     }
     if(!res.isLastPage)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
