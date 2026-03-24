@@ -953,6 +953,28 @@
 			}
 		]
 	},
+	"NLCI-Kaveri": {
+		"family": "NLCI Kaveri",
+		"link": "NLCI-Kaveri",
+		"fonts": [
+			{
+				"font": "Kaveri Bold",
+				"link": "Kaveri-Bold"
+			},
+			{
+				"font": "Kaveri BoldItalic",
+				"link": "Kaveri-BoldItalic"
+			},
+			{
+				"font": "Kaveri Italic",
+				"link": "Kaveri-Italic"
+			},
+			{
+				"font": "Kaveri Regular",
+				"link": "Kaveri-Regular"
+			}
+		]
+	},
 	"Navilu": {
 		"family": "Navilu",
 		"link": "Navilu",

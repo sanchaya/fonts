@@ -341,5 +341,12 @@
     "source": "https://github.com/nlci/knda-font-badami",
     "foundry": "NLCI (National Library Centre for India)",
     "description": "A clean and legible Kannada font family designed for reading and display, with regular, italic, bold and bold italic weights."
+  },
+  "NLCI-Kaveri": {
+    "author": "NLCI",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/nlci/knda-font-badami",
+    "foundry": "NLCI (National Library Centre for India)",
+    "description": "A contemporary Kannada typeface with elegant proportions, designed for readability. Features Regular, Italic, Bold, and Bold Italic weights."
   }
 }
