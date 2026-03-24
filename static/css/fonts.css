@@ -515,6 +515,26 @@
 	src: url("../Fonts/Gubbi/Gubbi.ttf");
 
 }@font-face {
+	font-family: "Hind Mysuru";
+	src: url("../Fonts/HindMysuru/HindMysuru-Regular.otf");
+
+}@font-face {
+	font-family: "Hind Mysuru Light";
+	src: url("../Fonts/HindMysuru/HindMysuru-Light.otf");
+
+}@font-face {
+	font-family: "Hind Mysuru Medium";
+	src: url("../Fonts/HindMysuru/HindMysuru-Medium.otf");
+
+}@font-face {
+	font-family: "Hind Mysuru SemiBold";
+	src: url("../Fonts/HindMysuru/HindMysuru-SemiBold.otf");
+
+}@font-face {
+	font-family: "Hind Mysuru Bold";
+	src: url("../Fonts/HindMysuru/HindMysuru-Bold.otf");
+
+}@font-face {
 	font-family: "Hoysala Regular";
 	src: url("../Fonts/Hoysala/Hoysala-Regular.ttf");
 
