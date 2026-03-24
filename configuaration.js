@@ -12,7 +12,7 @@ const conjuncts_in_json = ['conjuncts1S1','conjuncts2S1','conjuncts3S1','conjunc
 
 const conjuncts_in_page = ['Final Consonants','2 Consonants', '3 Consonants', '4 Consonants', '5 Consonants']
 
-const font_extentions = ['.ttf','.TTF','.pfm','.pfb','.PFM','.PFB','.VFB','.VTB','.vfb','.vtb']
+const font_extentions = ['.ttf','.TTF','.otf','.OTF','.pfm','.pfb','.PFM','.PFB','.VFB','.VTB','.vfb','.vtb']
 
 const old_fonts = ['.pfm','.pfb','.PFM','.PFB','.VFB','.VTB','.vfb','.vtb']
 
