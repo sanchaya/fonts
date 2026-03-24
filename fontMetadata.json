@@ -315,11 +315,11 @@
     "description": "Kannada font."
   },
   "Shreelipi": {
-    "author": "Unknown",
-    "license": "Unknown",
-    "source": "",
-    "foundry": "",
-    "description": "Shreelipi font."
+    "author": "Modular Infotech",
+    "license": "Proprietary",
+    "source": "https://www.modular-infotech.com/html/shreelipi.html",
+    "foundry": "Modular Infotech",
+    "description": "Shreelipi Kannada font developed by Modular Infotech."
   },
   "Sriraju": {
     "author": "Unknown",
