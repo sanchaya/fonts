@@ -527,6 +527,34 @@
 	src: url("../Fonts/DevamaNew/Devama.ttf");
 
 }@font-face {
+	font-family: "EkKannada Bold";
+	src: url("../Fonts/Ek Kannada/EkKannada-Bold.ttf");
+
+}@font-face {
+	font-family: "EkKannada ExtraBold";
+	src: url("../Fonts/Ek Kannada/EkKannada-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "EkKannada ExtraLight";
+	src: url("../Fonts/Ek Kannada/EkKannada-ExtraLight.ttf");
+
+}@font-face {
+	font-family: "EkKannada Light";
+	src: url("../Fonts/Ek Kannada/EkKannada-Light.ttf");
+
+}@font-face {
+	font-family: "EkKannada Medium";
+	src: url("../Fonts/Ek Kannada/EkKannada-Medium.ttf");
+
+}@font-face {
+	font-family: "EkKannada Regular";
+	src: url("../Fonts/Ek Kannada/EkKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "EkKannada SemiBold";
+	src: url("../Fonts/Ek Kannada/EkKannada-SemiBold.ttf");
+
+}@font-face {
 	font-family: "Gajamukha Full";
 	src: url("../Fonts/Gajamukha/Gajamukha Full.otf");
 
@@ -719,6 +747,22 @@
 	src: url("../Fonts/Kuvempu Praja/Kuvempu_Praja4.ttf");
 
 }@font-face {
+	font-family: "LavaKannada Bold";
+	src: url("../Fonts/Lava Kannada/LavaKannada-Bold.otf");
+
+}@font-face {
+	font-family: "LavaKannada Heavy";
+	src: url("../Fonts/Lava Kannada/LavaKannada-Heavy.otf");
+
+}@font-face {
+	font-family: "LavaKannada Medium";
+	src: url("../Fonts/Lava Kannada/LavaKannada-Medium.otf");
+
+}@font-face {
+	font-family: "LavaKannada Regular";
+	src: url("../Fonts/Lava Kannada/LavaKannada-Regular.otf");
+
+}@font-face {
 	font-family: "Lohit Kannada";
 	src: url("../Fonts/Lohit-Kannada/Lohit-Kannada.ttf");
 
@@ -805,6 +849,150 @@
 }@font-face {
 	font-family: "NotoSerifKannada Regular";
 	src: url("../Fonts/NotoSerifKannada-Unhinted/NotoSerifKannada-Regular.ttf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Black";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Black.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Bold";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Bold.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CmExtrali";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CmExtrali.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CmHairlin";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CmHairlin.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CnExtrali";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CnExtrali.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CnHairlin";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CnHairlin.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompBlack";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompBlack.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompBold";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompBold.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompHeavy";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompHeavy.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompLight";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompLight.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompMed";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompMed.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompReg";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompReg.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CompThin";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CompThin.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondBlack";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondBlack.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondBold";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondBold.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondHeavy";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondHeavy.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondLight";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondLight.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondMed";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondMed.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondReg";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondReg.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable CondThin";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-CondThin.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Exralight";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Exralight.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Hairline";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Hairline.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Heavy";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Heavy.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Light";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Light.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Medium";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Medium.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Regular";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Regular.otf");
+
+}@font-face {
+	font-family: "NovemberKnLVariable Thin";
+	src: url("../Fonts/November Kannada/NovemberKnLVariable-Thin.otf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Bd";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Bd.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Bl";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Bl.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Ex";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Ex.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Ha";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Ha.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Hv";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Hv.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Lt";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Lt.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Md";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Md.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Rg";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Rg.ttf");
+
+}@font-face {
+	font-family: "NovemberStencilKnLVariable Th";
+	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Th.ttf");
 
 }@font-face {
 	font-family: "NUDI 19 E";
@@ -1369,6 +1557,114 @@
 }@font-face {
 	font-family: "nudi akshara b";
 	src: url("../Fonts/Nudi_Fonts/nudi akshara b.ttf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Black";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Black.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Bold";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Bold.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CmExtralig";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CmExtralig.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CmHairline";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CmHairline.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CnExtralig";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CnExtralig.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CnHairline";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CnHairline.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompBlack";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompBlack.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompBold";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompBold.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompHeavy";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompHeavy.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompLight";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompLight.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompMed";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompMed.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompReg";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompReg.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CompThin";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CompThin.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondBlack";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondBlack.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondBold";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondBold.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondHeavy";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondHeavy.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondLight";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondLight.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondMed";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondMed.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondReg";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondReg.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable CondThin";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-CondThin.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Extralight";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Extralight.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Hairline";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Hairline.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Heavy";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Heavy.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Light";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Light.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Medium";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Medium.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Regular";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Regular.otf");
+
+}@font-face {
+	font-family: "OctoberKnLVariable Thin";
+	src: url("../Fonts/October Kannada/OctoberKnLVariable-Thin.otf");
 
 }@font-face {
 	font-family: "CHABI";

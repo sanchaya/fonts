@@ -623,6 +623,40 @@
 			}
 		]
 	},
+	"Ek-Kannada": {
+		"family": "Ek Kannada",
+		"link": "Ek-Kannada",
+		"fonts": [
+			{
+				"font": "EkKannada Bold",
+				"link": "EkKannada-Bold"
+			},
+			{
+				"font": "EkKannada ExtraBold",
+				"link": "EkKannada-ExtraBold"
+			},
+			{
+				"font": "EkKannada ExtraLight",
+				"link": "EkKannada-ExtraLight"
+			},
+			{
+				"font": "EkKannada Light",
+				"link": "EkKannada-Light"
+			},
+			{
+				"font": "EkKannada Medium",
+				"link": "EkKannada-Medium"
+			},
+			{
+				"font": "EkKannada Regular",
+				"link": "EkKannada-Regular"
+			},
+			{
+				"font": "EkKannada SemiBold",
+				"link": "EkKannada-SemiBold"
+			}
+		]
+	},
 	"Gajamukha": {
 		"family": "Gajamukha",
 		"link": "Gajamukha",
@@ -917,6 +951,28 @@
 			}
 		]
 	},
+	"Lava-Kannada": {
+		"family": "Lava Kannada",
+		"link": "Lava-Kannada",
+		"fonts": [
+			{
+				"font": "LavaKannada Bold",
+				"link": "LavaKannada-Bold"
+			},
+			{
+				"font": "LavaKannada Heavy",
+				"link": "LavaKannada-Heavy"
+			},
+			{
+				"font": "LavaKannada Medium",
+				"link": "LavaKannada-Medium"
+			},
+			{
+				"font": "LavaKannada Regular",
+				"link": "LavaKannada-Regular"
+			}
+		]
+	},
 	"Lohit-Kannada": {
 		"family": "Lohit Kannada",
 		"link": "Lohit-Kannada",
@@ -1056,6 +1112,162 @@
 			{
 				"font": "NotoSerifKannada Regular",
 				"link": "NotoSerifKannada-Regular"
+			}
+		]
+	},
+	"November-Kannada": {
+		"family": "November Kannada",
+		"link": "November-Kannada",
+		"fonts": [
+			{
+				"font": "NovemberKnLVariable Black",
+				"link": "NovemberKnLVariable-Black"
+			},
+			{
+				"font": "NovemberKnLVariable Bold",
+				"link": "NovemberKnLVariable-Bold"
+			},
+			{
+				"font": "NovemberKnLVariable CmExtrali",
+				"link": "NovemberKnLVariable-CmExtrali"
+			},
+			{
+				"font": "NovemberKnLVariable CmHairlin",
+				"link": "NovemberKnLVariable-CmHairlin"
+			},
+			{
+				"font": "NovemberKnLVariable CnExtrali",
+				"link": "NovemberKnLVariable-CnExtrali"
+			},
+			{
+				"font": "NovemberKnLVariable CnHairlin",
+				"link": "NovemberKnLVariable-CnHairlin"
+			},
+			{
+				"font": "NovemberKnLVariable CompBlack",
+				"link": "NovemberKnLVariable-CompBlack"
+			},
+			{
+				"font": "NovemberKnLVariable CompBold",
+				"link": "NovemberKnLVariable-CompBold"
+			},
+			{
+				"font": "NovemberKnLVariable CompHeavy",
+				"link": "NovemberKnLVariable-CompHeavy"
+			},
+			{
+				"font": "NovemberKnLVariable CompLight",
+				"link": "NovemberKnLVariable-CompLight"
+			},
+			{
+				"font": "NovemberKnLVariable CompMed",
+				"link": "NovemberKnLVariable-CompMed"
+			},
+			{
+				"font": "NovemberKnLVariable CompReg",
+				"link": "NovemberKnLVariable-CompReg"
+			},
+			{
+				"font": "NovemberKnLVariable CompThin",
+				"link": "NovemberKnLVariable-CompThin"
+			},
+			{
+				"font": "NovemberKnLVariable CondBlack",
+				"link": "NovemberKnLVariable-CondBlack"
+			},
+			{
+				"font": "NovemberKnLVariable CondBold",
+				"link": "NovemberKnLVariable-CondBold"
+			},
+			{
+				"font": "NovemberKnLVariable CondHeavy",
+				"link": "NovemberKnLVariable-CondHeavy"
+			},
+			{
+				"font": "NovemberKnLVariable CondLight",
+				"link": "NovemberKnLVariable-CondLight"
+			},
+			{
+				"font": "NovemberKnLVariable CondMed",
+				"link": "NovemberKnLVariable-CondMed"
+			},
+			{
+				"font": "NovemberKnLVariable CondReg",
+				"link": "NovemberKnLVariable-CondReg"
+			},
+			{
+				"font": "NovemberKnLVariable CondThin",
+				"link": "NovemberKnLVariable-CondThin"
+			},
+			{
+				"font": "NovemberKnLVariable Exralight",
+				"link": "NovemberKnLVariable-Exralight"
+			},
+			{
+				"font": "NovemberKnLVariable Hairline",
+				"link": "NovemberKnLVariable-Hairline"
+			},
+			{
+				"font": "NovemberKnLVariable Heavy",
+				"link": "NovemberKnLVariable-Heavy"
+			},
+			{
+				"font": "NovemberKnLVariable Light",
+				"link": "NovemberKnLVariable-Light"
+			},
+			{
+				"font": "NovemberKnLVariable Medium",
+				"link": "NovemberKnLVariable-Medium"
+			},
+			{
+				"font": "NovemberKnLVariable Regular",
+				"link": "NovemberKnLVariable-Regular"
+			},
+			{
+				"font": "NovemberKnLVariable Thin",
+				"link": "NovemberKnLVariable-Thin"
+			}
+		]
+	},
+	"NovemberStencil-Kannada": {
+		"family": "NovemberStencil Kannada",
+		"link": "NovemberStencil-Kannada",
+		"fonts": [
+			{
+				"font": "NovemberStencilKnLVariable Bd",
+				"link": "NovemberStencilKnLVariable-Bd"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Bl",
+				"link": "NovemberStencilKnLVariable-Bl"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Ex",
+				"link": "NovemberStencilKnLVariable-Ex"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Ha",
+				"link": "NovemberStencilKnLVariable-Ha"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Hv",
+				"link": "NovemberStencilKnLVariable-Hv"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Lt",
+				"link": "NovemberStencilKnLVariable-Lt"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Md",
+				"link": "NovemberStencilKnLVariable-Md"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Rg",
+				"link": "NovemberStencilKnLVariable-Rg"
+			},
+			{
+				"font": "NovemberStencilKnLVariable Th",
+				"link": "NovemberStencilKnLVariable-Th"
 			}
 		]
 	},
@@ -1626,6 +1838,120 @@
 			{
 				"font": "nudi akshara b",
 				"link": "nudi-akshara-b"
+			}
+		]
+	},
+	"October-Kannada": {
+		"family": "October Kannada",
+		"link": "October-Kannada",
+		"fonts": [
+			{
+				"font": "OctoberKnLVariable Black",
+				"link": "OctoberKnLVariable-Black"
+			},
+			{
+				"font": "OctoberKnLVariable Bold",
+				"link": "OctoberKnLVariable-Bold"
+			},
+			{
+				"font": "OctoberKnLVariable CmExtralig",
+				"link": "OctoberKnLVariable-CmExtralig"
+			},
+			{
+				"font": "OctoberKnLVariable CmHairline",
+				"link": "OctoberKnLVariable-CmHairline"
+			},
+			{
+				"font": "OctoberKnLVariable CnExtralig",
+				"link": "OctoberKnLVariable-CnExtralig"
+			},
+			{
+				"font": "OctoberKnLVariable CnHairline",
+				"link": "OctoberKnLVariable-CnHairline"
+			},
+			{
+				"font": "OctoberKnLVariable CompBlack",
+				"link": "OctoberKnLVariable-CompBlack"
+			},
+			{
+				"font": "OctoberKnLVariable CompBold",
+				"link": "OctoberKnLVariable-CompBold"
+			},
+			{
+				"font": "OctoberKnLVariable CompHeavy",
+				"link": "OctoberKnLVariable-CompHeavy"
+			},
+			{
+				"font": "OctoberKnLVariable CompLight",
+				"link": "OctoberKnLVariable-CompLight"
+			},
+			{
+				"font": "OctoberKnLVariable CompMed",
+				"link": "OctoberKnLVariable-CompMed"
+			},
+			{
+				"font": "OctoberKnLVariable CompReg",
+				"link": "OctoberKnLVariable-CompReg"
+			},
+			{
+				"font": "OctoberKnLVariable CompThin",
+				"link": "OctoberKnLVariable-CompThin"
+			},
+			{
+				"font": "OctoberKnLVariable CondBlack",
+				"link": "OctoberKnLVariable-CondBlack"
+			},
+			{
+				"font": "OctoberKnLVariable CondBold",
+				"link": "OctoberKnLVariable-CondBold"
+			},
+			{
+				"font": "OctoberKnLVariable CondHeavy",
+				"link": "OctoberKnLVariable-CondHeavy"
+			},
+			{
+				"font": "OctoberKnLVariable CondLight",
+				"link": "OctoberKnLVariable-CondLight"
+			},
+			{
+				"font": "OctoberKnLVariable CondMed",
+				"link": "OctoberKnLVariable-CondMed"
+			},
+			{
+				"font": "OctoberKnLVariable CondReg",
+				"link": "OctoberKnLVariable-CondReg"
+			},
+			{
+				"font": "OctoberKnLVariable CondThin",
+				"link": "OctoberKnLVariable-CondThin"
+			},
+			{
+				"font": "OctoberKnLVariable Extralight",
+				"link": "OctoberKnLVariable-Extralight"
+			},
+			{
+				"font": "OctoberKnLVariable Hairline",
+				"link": "OctoberKnLVariable-Hairline"
+			},
+			{
+				"font": "OctoberKnLVariable Heavy",
+				"link": "OctoberKnLVariable-Heavy"
+			},
+			{
+				"font": "OctoberKnLVariable Light",
+				"link": "OctoberKnLVariable-Light"
+			},
+			{
+				"font": "OctoberKnLVariable Medium",
+				"link": "OctoberKnLVariable-Medium"
+			},
+			{
+				"font": "OctoberKnLVariable Regular",
+				"link": "OctoberKnLVariable-Regular"
+			},
+			{
+				"font": "OctoberKnLVariable Thin",
+				"link": "OctoberKnLVariable-Thin"
 			}
 		]
 	},
