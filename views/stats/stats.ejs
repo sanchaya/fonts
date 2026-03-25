@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಅಂಕಿಅಂಶಗಳು - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="/img/app-icon-light.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/home.js"></script>
+    <style>
+        .stats-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stats-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: var(--third-color);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card.open-source {
+            background: #4CAF50 !important;
+        }
+        
+        .stat-card.open-source .stat-number,
+        .stat-card.open-source .stat-label {
+            color: white !important;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-top: 10px;
+        }
+        
+        .stats-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .stats-section {
+            background: var(--third-color);
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .stats-section h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .stats-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .stats-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: var(--bg-color);
+            border-radius: 8px;
+        }
+        
+        .stats-item .rank {
+            width: 30px;
+            height: 30px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .stats-item .name {
+            flex: 1;
+            font-weight: 500;
+            word-break: break-word;
+        }
+        
+        .stats-item .count {
+            font-weight: bold;
+            color: var(--primary-color);
+            background: var(--bg-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+        
+        .license-breakdown {
+            background: var(--third-color);
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .license-breakdown h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .progress-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .progress-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .progress-label {
+            width: 120px;
+            font-weight: 500;
+        }
+        
+        .progress-bar {
+            flex: 1;
+            height: 25px;
+            background: var(--bg-color);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 12px;
+            transition: width 1s ease-in-out;
+        }
+        
+        .progress-fill.open {
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+        }
+        
+        .progress-fill.proprietary {
+            background: linear-gradient(90deg, #FF9800, #FF5722);
+        }
+        
+        .progress-percent {
+            width: 60px;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-sections {
+                grid-template-columns: 1fr;
+            }
+            
+            .progress-item {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .progress-label, .progress-percent {
+                width: auto;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <div class="stats-content">
+        <h1 class="stats-title">ಅಂಕಿಅಂಶಗಳು / Statistics</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number"><%= stats.fontFamilies %></div>
+                <div class="stat-label">Font Families</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><%= stats.totalFonts %></div>
+                <div class="stat-label">Total Fonts</div>
+            </div>
+            <div class="stat-card open-source">
+                <div class="stat-number"><%= stats.openSource %></div>
+                <div class="stat-label">Open Source</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><%= stats.proprietary %></div>
+                <div class="stat-label">Proprietary</div>
+            </div>
+        </div>
+        
+        <div class="stats-sections">
+            <div class="stats-section">
+                <h2>Foundries / Type Studios</h2>
+                <div class="stats-list">
+                    <% stats.allFoundries.forEach(([name, count], index) => { %>
+                        <div class="stats-item">
+                            <span class="rank"><%= index + 1 %></span>
+                            <span class="name"><%= name %></span>
+                            <span class="count"><%= count %></span>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Designers / Contributors</h2>
+                <div class="stats-list">
+                    <% stats.allDesigners.forEach(([name, count], index) => { %>
+                        <div class="stats-item">
+                            <span class="rank"><%= index + 1 %></span>
+                            <span class="name"><%= name %></span>
+                            <span class="count"><%= count %></span>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        
+        <div class="license-breakdown">
+            <h2>License Distribution</h2>
+            <div class="progress-bars">
+                <div class="progress-item">
+                    <span class="progress-label">Open Source</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill open" style="width: <%= (stats.openSource / stats.fontFamilies * 100).toFixed(1) %>%"></div>
+                    </div>
+                    <span class="progress-percent"><%= (stats.openSource / stats.fontFamilies * 100).toFixed(1) %>%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">Proprietary</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill proprietary" style="width: <%= (stats.proprietary / stats.fontFamilies * 100).toFixed(1) %>%"></div>
+                    </div>
+                    <span class="progress-percent"><%= (stats.proprietary / stats.fontFamilies * 100).toFixed(1) %>%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/stats">ಅಂಕಿಅಂಶಗಳು</a>
+                <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
+                <a href="/bug-reports">Bug Reports</a>
+                <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <%= new Date().getFullYear() %> ಸಂಚಯ ಮತ್ತು ಸಂಚಿ ಫೌಂಡೇಶನ್
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -310,6 +310,57 @@ router.get('/about', (req, res) => {
     res.render('home', parsingData)
 })
 
+router.get('/stats', (req, res) => {
+    const fonts = require('./fonts.json')
+    const metadata = require('./fontMetadata.json')
+    
+    const fontFamilies = Object.keys(fonts)
+    const totalFonts = fontFamilies.reduce((sum, key) => sum + fonts[key].fonts.length, 0)
+    
+    let openSource = 0
+    let proprietary = 0
+    let foundries = {}
+    let designers = {}
+    
+    fontFamilies.forEach(key => {
+        const meta = metadata[key] || {}
+        const lic = (meta.license || '').toLowerCase()
+        const isOFL = lic.includes('ofl') || lic.includes('sil') || lic.includes('mit') || lic.includes('apache')
+        
+        if (isOFL) {
+            openSource++
+        } else {
+            proprietary++
+        }
+        
+        if (meta.foundry && meta.foundry.trim()) {
+            foundries[meta.foundry] = (foundries[meta.foundry] || 0) + 1
+        }
+        
+        if (meta.author && meta.author.trim()) {
+            designers[meta.author] = (designers[meta.author] || 0) + 1
+        }
+    })
+    
+    const allFoundries = Object.entries(foundries).sort((a, b) => b[1] - a[1])
+    const allDesigners = Object.entries(designers).sort((a, b) => b[1] - a[1])
+    
+    let pag = {...pages}
+    pag.statsPage = true
+    
+    res.render('stats/stats', {
+        page: pag,
+        stats: {
+            fontFamilies: fontFamilies.length,
+            totalFonts,
+            openSource,
+            proprietary,
+            allFoundries,
+            allDesigners
+        }
+    })
+})
+
 router.get('/', (req,res) => {
     let pag = {...pages}
     pag.fontShowPage = true

@@ -62,6 +62,13 @@
     "foundry": "Ek Type",
     "description": "Part of Ek Multi-script project, a unified type family across Indic scripts. Designed in 2018 with 7 weights. A proprietary font from Ek Type."
   },
+  "Ek-Kannada": {
+    "author": "Taresh Vohra",
+    "license": "Proprietary",
+    "source": "https://ektype.in/ek-kannada.html",
+    "foundry": "Ek Type",
+    "description": "Part of Ek Multi-script project, a unified type family across Indic scripts. Designed in 2018 with 7 weights. A proprietary font from Ek Type."
+  },
   "Baloo-Tamma-2": {
     "author": "Divya Kowshik, Shuchita Grover, Ek Type",
     "license": "SIL Open Font License 1.1",
@@ -223,6 +230,34 @@
     "foundry": "Typotheque",
     "description": "A typeface designed for magazine use, handling large quantities of text with ease. Extremely legible at small sizes, sophisticated at large sizes. 4 weights. Designed in collaboration with Parimal Parmar."
   },
+  "Lava-Kannada": {
+    "author": "Ramakrishna Saiteja",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/lava/kannada",
+    "foundry": "Typotheque",
+    "description": "A typeface designed for magazine use, handling large quantities of text with ease. Extremely legible at small sizes, sophisticated at large sizes. 4 weights. Designed in collaboration with Parimal Parmar."
+  },
+  "November-Kannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/november/kannada",
+    "foundry": "Typotheque",
+    "description": "A highly accessible and legible typeface family for signage and information systems, handling long texts with ease. Features distinctive orthogonal end strokes. Available in 9 weights."
+  },
+  "NovemberStencil-Kannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/november-stencil/kannada",
+    "foundry": "Typotheque",
+    "description": "A heavy-duty stencil typeface with playful layering styles. Inspired by industrial signage, gives a unique flavour to short texts and provides possibilities for colour typography and motion graphics. Available in 9 weights."
+  },
+  "October-Kannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/october/kannada",
+    "foundry": "Typotheque",
+    "description": "A warm, geometric typeface with soft corner terminals. A rational, utilitarian font family with rounded stroke endings lending it a friendlier character. Useful for signage, branding, headlines and editorial purposes. Available in 9 weights."
+  },
   "Malige": {
     "author": "Indian Institute of Science",
     "license": "SIL Open Font License 1.1",
@@ -374,14 +409,14 @@
     "author": "NLCI",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/nlci/knda-font-badami",
-    "foundry": "NLCI (National Library Centre for India)",
+    "foundry": "NLCI",
     "description": "A clean and legible Kannada font family designed for reading and display, with regular, italic, bold and bold italic weights."
   },
   "NLCI-Kaveri": {
     "author": "NLCI",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/nlci/knda-font-badami",
-    "foundry": "NLCI (National Library Centre for India)",
+    "foundry": "NLCI",
     "description": "A contemporary Kannada typeface with elegant proportions, designed for readability. Features Regular, Italic, Bold, and Bold Italic weights."
   },
   "Kanishka": {
