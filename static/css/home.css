@@ -596,6 +596,7 @@ nav {
 
 #license-filter {
   display: inline-block !important;
+  position: relative;
 }
 
 #license-filter .dropdown-content {
@@ -609,10 +610,11 @@ nav {
   margin-top: 5px;
 }
 
-#license-filter.modified .dropbtn {
-  background: var(--primary-color);
-  color: white;
+#license-filter .dropbtn-span {
+  color: var(--text-color) !important;
 }
+
+
 
 .additional-toolbar .dropdown .dropbtn {
   border-radius: 20px;

@@ -112,7 +112,8 @@ var changeTextNFont = () => {
 }
 
 var XofNFamily = (res) => {
-    const text = res.showingFamily + " of " + res.totalFamily + " family"
+    const count = res.filteredCount !== undefined ? res.filteredCount : res.showingFamily
+    const text = count + " of " + res.totalFamily + " family"
     $('.customizer > :first-child').text(text)
 }
 
