@@ -323,7 +323,14 @@ router.get('/', (req,res) => {
 router.get('/getFonts',(req,res) =>{
     const val = req.query.val
     const page = req.query.page
-    let fonts = getFonts(val, page)
+    const filters = {
+        categories: req.query.categories ? req.query.categories.split(',').filter(c => c) : [],
+        variableFontsOnly: req.query.variableFontsOnly === 'true',
+        sortBy: req.query.sortBy || 'name',
+        random: parseInt(req.query.random) || 0,
+        licenseType: req.query.licenseType || 'all'
+    }
+    let fonts = getFonts(val, page, filters)
     res.send(fonts)
 })
 

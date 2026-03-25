@@ -49,6 +49,9 @@ $(document).ready(function () {
     // font properties
     additional_toolbar_font_properties()
 
+    // license
+    additional_toolbar_license()
+
 
     /*----- javascript fuctionality to cutomizing bar */
     // number of styles update
@@ -136,6 +139,18 @@ function customizing_sort(){
         })
 
         $(this).addClass('selected')
+        
+        const sortText = $(this).text().trim().toLowerCase()
+        if (sortText.includes('trending')) {
+            currentFilters.sortBy = 'trending'
+        } else if (sortText.includes('popular')) {
+            currentFilters.sortBy = 'popular'
+        } else if (sortText.includes('newest')) {
+            currentFilters.sortBy = 'newest'
+        } else if (sortText.includes('name')) {
+            currentFilters.sortBy = 'name'
+        }
+        applyFilters()
     })
 }
 
@@ -163,6 +178,38 @@ function additional_toolbar_language(){
     })
 }
 
+/* ADDITIONAL TOOLBAR LICENSE */
+
+function additional_toolbar_license(){
+    $('#license-filter > .dropdown-content > *').click(function(){
+        const text = $(this).text().trim()
+        if(text == "All Licenses"){
+            $('#license-filter').removeClass('modified')
+            $('#license-filter .dropbtn-span').text('License')
+            currentFilters.licenseType = 'all'
+        } else if(text.includes("Open Source")) {
+            $('#license-filter').addClass('modified')
+            $('#license-filter .dropbtn-span').text('Open Source')
+            currentFilters.licenseType = 'open-source'
+        } else if(text.includes("Free & End User")) {
+            $('#license-filter').addClass('modified')
+            $('#license-filter .dropbtn-span').text('Free & EULA')
+            currentFilters.licenseType = 'free-eula'
+        } else if(text.includes("Proprietary")) {
+            $('#license-filter').addClass('modified')
+            $('#license-filter .dropbtn-span').text('Proprietary')
+            currentFilters.licenseType = 'proprietary'
+        }
+        
+        $(this).siblings().map(function(){
+            $(this).removeClass('selected')
+        })
+
+        $(this).addClass('selected')
+        applyFilters()
+    })
+}
+
 /* ADDITIONAL TOOLBAR LANGUAGE END */
 
 
@@ -177,6 +224,9 @@ function additional_toolbar_category(){
             $(this).removeClass('active')
 
         add_modified_and_category_name()
+        
+        currentFilters.categories = getSelectedCategories()
+        applyFilters()
     })
 
     // when reset button clicked all box check box should be checked
@@ -192,6 +242,9 @@ function additional_toolbar_category(){
 
         // update on the name of the dropdown
         add_modified_and_category_name()
+        
+        currentFilters.categories = getSelectedCategories()
+        applyFilters()
     })
 }
 
@@ -399,6 +452,11 @@ function customizingBarWork() {
 function clickOnVariableFontCheck(){
     $('.additional-toolbar > :last-child input').prop('checked', false)
 }
+
+$('#variable-fonts-shower').change(function() {
+    currentFilters.variableFontsOnly = $(this).prop('checked')
+    applyFilters()
+})
 
 function intersectionObserverForSticky(){
     const sticky = document.querySelector("#sticky-toolbar")

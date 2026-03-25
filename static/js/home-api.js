@@ -2,6 +2,13 @@ var page = 1
 
 var timer
 
+var currentFilters = {
+    categories: [],
+    variableFontsOnly: false,
+    sortBy: 'name',
+    licenseType: 'all'
+}
+
 $(document).ready(function(){
 
     ajaxToJson('')
@@ -11,6 +18,12 @@ $(document).ready(function(){
         $('.fonts-cnt').html('').fadeIn()
         let val = $(this).val()
         ajaxToJson(val)
+    })
+    
+    $('#random-fonts-btn').click(function() {
+        page = 1
+        $('.fonts-cnt').html('').fadeIn()
+        loadRandomFonts()
     })
     
 })
@@ -28,7 +41,39 @@ var ajaxToJson = (val) =>{
         url:'/getFonts',  
         method:'get',  
         dataType:'json',  
-        data:{'val':val, 'page': page},  
+        data:{'val':val, 'page': page, ...currentFilters},  
+        success:function(response){  
+            appendCard(response)
+        },  
+        error:function(response){  
+            displayError()  
+        }  
+    }); 
+}
+
+var applyFilters = () => {
+    page = 1
+    $('.fonts-cnt').html('').fadeIn()
+    const search = $('.search').val()
+    ajaxToJson(search)
+}
+
+var getSelectedCategories = () => {
+    const categories = []
+    $('.additional-toolbar > :first-child .categories').each(function() {
+        if ($('input', this).prop('checked')) {
+            categories.push($(this).text().trim())
+        }
+    })
+    return categories
+}
+
+var loadRandomFonts = () => {
+    $.ajax({  
+        url:'/getFonts',  
+        method:'get',  
+        dataType:'json',  
+        data:{'val':'', 'page': 1, 'random': 12},  
         success:function(response){  
             appendCard(response)
         },  
