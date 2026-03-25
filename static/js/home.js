@@ -183,6 +183,7 @@ function additional_toolbar_language(){
 function additional_toolbar_license(){
     $('#license-filter > .dropdown-content > *').click(function(){
         const text = $(this).text().trim()
+        
         if(text == "All Licenses"){
             $('#license-filter').removeClass('modified')
             $('#license-filter .dropbtn-span').text('License')
