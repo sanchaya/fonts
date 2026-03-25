@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="/img/app-icon-light.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/home.js"></script>
+    <style>
+        body { background: var(--bg-color); }
+        .viz-container { max-width: 1400px; margin: 0 auto; padding: 30px 20px; }
+        .viz-title { text-align: center; color: var(--primary-color); font-size: 2.5rem; margin-bottom: 30px; }
+        .viz-section { background: var(--third-color); border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .viz-section h2 { color: var(--primary-color); margin-bottom: 20px; font-size: 1.5rem; border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
+        
+        /* Word Cloud */
+        .word-cloud { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+        .word-cloud span { padding: 8px 15px; cursor: default; transition: transform 0.3s; }
+        .word-cloud span:hover { transform: scale(1.2); }
+        
+        /* Font Spellery */
+        .spellery-input { width: 100%; padding: 15px; font-size: 1.2rem; border: 2px solid var(--primary-color); border-radius: 10px; margin-bottom: 20px; }
+        .spellery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; max-height: 500px; overflow-y: auto; }
+        .spellery-item { background: var(--bg-color); padding: 20px; border-radius: 10px; text-align: center; }
+        .spellery-item .font-name { font-size: 0.8rem; color: var(--text-color); margin-top: 10px; }
+        
+        /* Font Randomizer */
+        .randomizer-box { text-align: center; padding: 40px; }
+        .randomizer-text { font-size: 3rem; min-height: 100px; margin-bottom: 20px; transition: all 0.3s; }
+        .randomizer-btn { background: var(--primary-color); color: white; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 30px; cursor: pointer; transition: transform 0.2s; }
+        .randomizer-btn:hover { transform: scale(1.05); }
+        
+        /* Font Timeline */
+        .timeline { position: relative; padding-left: 30px; }
+        .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 3px; background: var(--primary-color); }
+        .timeline-item { position: relative; margin-bottom: 20px; padding: 15px; background: var(--bg-color); border-radius: 10px; }
+        .timeline-item::before { content: ''; position: absolute; left: -25px; top: 20px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; }
+        .timeline-item .year { font-weight: bold; color: var(--primary-color); }
+        
+        /* Proverb Gallery */
+        .proverb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .proverb-item { background: var(--bg-color); padding: 30px; border-radius: 10px; text-align: center; font-size: 1.5rem; min-height: 100px; display: flex; align-items: center; justify-content: center; }
+        
+        /* Font Comparison */
+        .comparison-controls { margin-bottom: 20px; }
+        .comparison-controls select { padding: 10px; margin: 5px; border-radius: 5px; border: 1px solid var(--primary-color); }
+        .comparison-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .comparison-item { background: var(--bg-color); padding: 30px; border-radius: 10px; text-align: center; }
+        .comparison-item .font-label { font-size: 0.9rem; color: var(--text-color); margin-top: 10px; }
+        
+        /* Glyph Gallery */
+        .glyph-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+        .glyph-item { background: var(--bg-color); padding: 20px; border-radius: 10px; text-align: center; }
+        .glyph-item .glyph { font-size: 3rem; margin-bottom: 10px; }
+        .glyph-item .glyph-name { font-size: 0.8rem; color: var(--text-color); }
+        
+        /* Font Bingo */
+        .bingo-container { text-align: center; }
+        .bingo-card { font-size: 4rem; padding: 50px; background: var(--bg-color); border-radius: 15px; margin: 20px auto; max-width: 400px; animation: pulse 2s infinite; }
+        .bingo-card.no-anim { animation: none; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        .bingo-btn { background: var(--primary-color); color: white; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 30px; cursor: pointer; margin: 10px; }
+        .bingo-guess { margin-top: 20px; }
+        .bingo-guess input { padding: 10px; font-size: 1rem; border-radius: 5px; border: 2px solid var(--primary-color); }
+        .bingo-result { margin-top: 15px; font-size: 1.2rem; font-weight: bold; }
+        
+        /* Tab Navigation */
+        .viz-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
+        .viz-tab { background: var(--bg-color); border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; border-radius: 25px; cursor: pointer; font-weight: 500; transition: all 0.3s; }
+        .viz-tab:hover, .viz-tab.active { background: var(--primary-color); color: white; }
+        .viz-content { display: none; }
+        .viz-content.active { display: block; }
+        
+        @media (max-width: 768px) {
+            .comparison-grid { grid-template-columns: 1fr; }
+            .spellery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <div class="viz-container">
+        <h1 class="viz-title">ಫಾಂಟ್ ವಿಜುಅಲೈಸೇಶನ್ / Font Visualizations</h1>
+        
+        <div class="viz-tabs">
+            <button class="viz-tab active" data-tab="wordcloud">Word Cloud</button>
+            <button class="viz-tab" data-tab="spellery">Font Spellery</button>
+            <button class="viz-tab" data-tab="randomizer">Randomizer</button>
+            <button class="viz-tab" data-tab="timeline">Timeline</button>
+            <button class="viz-tab" data-tab="proverbs">Proverbs</button>
+            <button class="viz-tab" data-tab="comparison">Compare</button>
+            <button class="viz-tab" data-tab="glyphs">Glyphs</button>
+            <button class="viz-tab" data-tab="bingo">Bingo</button>
+        </div>
+        
+        <!-- Word Cloud -->
+        <div class="viz-content active" id="wordcloud">
+            <div class="viz-section">
+                <h2><i class="fas fa-cloud"></i> Word Cloud - ಪದ ಮೋಡಂ</h2>
+                <p style="text-align:center;margin-bottom:20px;color:var(--text-color)">Hover over words to see them in different fonts!</p>
+                <div class="word-cloud" id="wordCloud"></div>
+            </div>
+        </div>
+        
+        <!-- Font Spellery -->
+        <div class="viz-content" id="spellery">
+            <div class="viz-section">
+                <h2><i class="fas fa-spell"></i> Font Spellery - ಎಲ್ಲಾ ಫಾಂಟ್‌ಗಳಲ್ಲಿ</h2>
+                <input type="text" class="spellery-input" id="spelleryInput" placeholder="Type in Kannada or English..." value="ನಮಸ್ಕಾರ">
+                <div class="spellery-grid" id="spelleryGrid"></div>
+            </div>
+        </div>
+        
+        <!-- Font Randomizer -->
+        <div class="viz-content" id="randomizer">
+            <div class="viz-section">
+                <h2><i class="fas fa-dice"></i> Font Randomizer - ಯಾದೃಚ್ಛಿಕ</h2>
+                <div class="randomizer-box">
+                    <div class="randomizer-text" id="randomizerText">Almost before we know it, we had left the ground</div>
+                    <button class="randomizer-btn" id="randomizerBtn">
+                        <i class="fas fa-random"></i> ಹೊಸ ಫಾಂಟ್
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Font Timeline -->
+        <div class="viz-content" id="timeline">
+            <div class="viz-section">
+                <h2><i class="fas fa-history"></i> Font Timeline - ಸಮಯ ರೇಖೆ</h2>
+                <div class="timeline" id="timelineList"></div>
+            </div>
+        </div>
+        
+        <!-- Proverb Gallery -->
+        <div class="viz-content" id="proverbs">
+            <div class="viz-section">
+                <h2><i class="fas fa-quote-left"></i> Kannada Proverbs - ಸಾಮಾನ್ಯ ವಾಕ್ಯಗಳು</h2>
+                <div class="proverb-grid" id="proverbGrid"></div>
+            </div>
+        </div>
+        
+        <!-- Font Comparison -->
+        <div class="viz-content" id="comparison">
+            <div class="viz-section">
+                <h2><i class="fas fa-columns"></i> Font Comparison - ಹೋಲಿಕೆ</h2>
+                <div class="comparison-controls">
+                    <select id="compareSelect1"><option value="">Select Font 1</option></select>
+                    <select id="compareSelect2"><option value="">Select Font 2</option></select>
+                    <select id="compareSelect3"><option value="">Select Font 3</option></select>
+                    <select id="compareSelect4"><option value="">Select Font 4</option></select>
+                </div>
+                <div class="comparison-grid" id="comparisonGrid">
+                    <div class="comparison-item">
+                        <div class="comparison-text">Select fonts to compare</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Glyph Gallery -->
+        <div class="viz-content" id="glyphs">
+            <div class="viz-section">
+                <h2><i class="fas fa-font"></i> Glyph Gallery - ಅಕ್ಷರ ಗ್ಯಾಲರಿ</h2>
+                <div class="glyph-grid" id="glyphGrid"></div>
+            </div>
+        </div>
+        
+        <!-- Font Bingo -->
+        <div class="viz-content" id="bingo">
+            <div class="viz-section">
+                <h2><i class="fas fa-question"></i> Font Bingo - ಫಾಂಟ್ ಬಿಂಗೋ</h2>
+                <div class="bingo-container">
+                    <p>Guess the font name!</p>
+                    <div class="bingo-card" id="bingoCard">?</div>
+                    <button class="bingo-btn" id="bingoNewBtn">ಹೊಸ ಫಾಂಟ್</button>
+                    <div class="bingo-guess">
+                        <input type="text" id="bingoGuess" placeholder="Type font name...">
+                        <button class="bingo-btn" id="bingoCheckBtn">Check</button>
+                    </div>
+                    <div class="bingo-result" id="bingoResult"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/stats">ಅಂಕಿಅಂಶಗಳು</a>
+                <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
+                <a href="/bug-reports">Bug Reports</a>
+                <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <%= new Date().getFullYear() %> ಸಂಚಯ ಮತ್ತು ಸಂಚಿ ಫೌಂಡೇಶನ್
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const fonts = <%- JSON.stringify(data.fonts) %>;
+        const kannadaWords = <%- JSON.stringify(data.kannadaWords) %>;
+        const proverbs = <%- JSON.stringify(data.proverbs) %>;
+        const kannadaGlyphs = <%- JSON.stringify(data.kannadaGlyphs) %>;
+        
+        // Tab Navigation
+        $('.viz-tab').click(function() {
+            $('.viz-tab').removeClass('active');
+            $(this).addClass('active');
+            $('.viz-content').removeClass('active');
+            $('#' + $(this).data('tab')).addClass('active');
+        });
+        
+        // Word Cloud
+        function initWordCloud() {
+            const container = $('#wordCloud');
+            container.empty();
+            kannadaWords.forEach((word, i) => {
+                const size = Math.floor(Math.random() * 3) + 1;
+                const fontIdx = Math.floor(Math.random() * fonts.length);
+                const font = fonts[fontIdx];
+                const colors = ['#e74c3c', '#3498db', '#2ecc71', '#9b59b6', '#f39c12', '#1abc9c', '#e91e63'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const rotate = Math.floor(Math.random() * 30) - 15;
+                container.append('<span style="font-family:' + font.link + ';font-size:' + (1 + size * 0.5) + 'rem;color:' + color + ';transform:rotate(' + rotate + 'deg)">' + word + '</span>');
+            });
+        }
+        
+        // Font Spellery
+        function initSpellery() {
+            const input = $('#spelleryInput');
+            const grid = $('#spelleryGrid');
+            
+            function renderSpellery() {
+                const text = input.val() || 'ನಮಸ್ಕಾರ';
+                grid.empty();
+                fonts.forEach(font => {
+                    grid.append('<div class="spellery-item"><div style="font-family:' + font.link + ';font-size:1.5rem;">' + text + '</div><div class="font-name">' + font.name + '</div></div>');
+                });
+            }
+            
+            input.on('input', renderSpellery);
+            renderSpellery();
+        }
+        
+        // Font Randomizer
+        let currentRandomFont = 0;
+        function initRandomizer() {
+            const btn = $('#randomizerBtn');
+            const text = $('#randomizerText');
+            
+            btn.click(function() {
+                currentRandomFont = (currentRandomFont + 1) % fonts.length;
+                const font = fonts[currentRandomFont];
+                text.css('opacity', '0');
+                setTimeout(() => {
+                    text.css('font-family', font.link);
+                    text.css('opacity', '1');
+                }, 300);
+            });
+        }
+        
+        // Timeline
+        function initTimeline() {
+            const container = $('#timelineList');
+            const sortedFonts = [...fonts].sort((a, b) => b.styles - a.styles);
+            sortedFonts.slice(0, 20).forEach((font, i) => {
+                container.append('<div class="timeline-item"><div class="year">Font #' + (i + 1) + '</div><div style="font-family:' + font.link + ';font-size:1.5rem;">' + font.name + '</div><div>' + font.styles + ' styles</div></div>');
+            });
+        }
+        
+        // Proverbs
+        function initProverbs() {
+            const container = $('#proverbGrid');
+            proverbs.forEach((proverb, i) => {
+                const fontIdx = Math.floor(Math.random() * fonts.length);
+                const font = fonts[fontIdx];
+                container.append('<div class="proverb-item" style="font-family:' + font.link + '">' + proverb + '</div>');
+            });
+        }
+        
+        // Comparison
+        function initComparison() {
+            const selects = [$('#compareSelect1'), $('#compareSelect2'), $('#compareSelect3'), $('#compareSelect4')];
+            const grid = $('#comparisonGrid');
+            
+            fonts.forEach((font, i) => {
+                selects.forEach(sel => {
+                    sel.append('<option value="' + font.link + '">' + font.name + '</option>');
+                });
+            });
+            
+            function updateComparison() {
+                grid.empty();
+                const selected = selects.map(s => s.val()).filter(v => v);
+                if (selected.length === 0) {
+                    grid.append('<div class="comparison-item"><div class="comparison-text">Select fonts to compare</div></div>');
+                    return;
+                }
+                selected.forEach(link => {
+                    const font = fonts.find(f => f.link === link);
+                    grid.append('<div class="comparison-item"><div style="font-family:' + link + ';font-size:2rem;">ಕನ್ನಡ ಅಕ್ಷರಗಳು</div><div class="comparison-text">' + font.name + '</div></div>');
+                });
+            }
+            
+            selects.forEach(s => s.change(updateComparison));
+        }
+        
+        // Glyphs
+        function initGlyphs() {
+            const container = $('#glyphGrid');
+            const shuffledFonts = [...fonts].sort(() => 0.5 - Math.random());
+            kannadaGlyphs.forEach((glyph, i) => {
+                const font = shuffledFonts[i % shuffledFonts.length];
+                container.append('<div class="glyph-item"><div class="glyph" style="font-family:' + font.link + '">' + glyph + '</div><div class="glyph-name">' + font.name + '</div></div>');
+            });
+        }
+        
+        // Bingo
+        let bingoFont = null;
+        function initBingo() {
+            const newBtn = $('#bingoNewBtn');
+            const checkBtn = $('#bingoCheckBtn');
+            const card = $('#bingoCard');
+            const result = $('#bingoResult');
+            
+            newBtn.click(function() {
+                bingoFont = fonts[Math.floor(Math.random() * fonts.length)];
+                card.removeClass('no-anim');
+                card.text('?');
+                result.text('');
+                setTimeout(() => {
+                    card.addClass('no-anim');
+                }, 100);
+            });
+            
+            checkBtn.click(function() {
+                if (!bingoFont) return;
+                const guess = $('#bingoGuess').val().toLowerCase();
+                const name = bingoFont.name.toLowerCase();
+                if (guess.includes(name.split(' ')[0].toLowerCase()) || name.includes(guess)) {
+                    result.html('<span style="color:green">Correct! It was ' + bingoFont.name + '</span>');
+                } else {
+                    result.html('<span style="color:red">Wrong! It was ' + bingoFont.name + '</span>');
+                }
+            });
+        }
+        
+        // Initialize all
+        $(document).ready(function() {
+            initWordCloud();
+            initSpellery();
+            initRandomizer();
+            initTimeline();
+            initProverbs();
+            initComparison();
+            initGlyphs();
+            initBingo();
+        });
+    </script>
+</body>
+</html>

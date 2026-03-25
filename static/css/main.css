@@ -266,7 +266,7 @@ nav {
 
 .menu-items a.active {
   background-color: var(--active-color);
-  color: var(--text-color3);
+  color: #4361ee !important;
 }
 
 /* ========== FOOTER ========== */

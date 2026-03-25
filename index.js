@@ -310,6 +310,64 @@ router.get('/about', (req, res) => {
     res.render('home', parsingData)
 })
 
+router.get('/visualizations', (req, res) => {
+    const fonts = require('./fonts.json')
+    const metadata = require('./fontMetadata.json')
+    
+    const fontFamilies = Object.keys(fonts)
+    const fontList = fontFamilies.map(key => ({
+        name: fonts[key].family,
+        link: fonts[key].link,
+        styles: fonts[key].fonts.length,
+        meta: metadata[key] || {}
+    }))
+    
+    const kannadaWords = [
+        'ಕನ್ನಡ', 'ಬೆಂಗಳೂರು', 'ಮೈಸೂರು', 'ಮಂಗಳೂರು', 'ದಕ್ಷಿಣ',
+        'ಕರ್ನಾಟಕ', '�ಾರತ', 'ವಿಶ್ವ', 'ಸಂಸ್ಕೃತಿ', 'ಪರಂಪರೆ',
+        'ಸಾಹಿತ್ಯ', 'ಕಲೆ', 'ಸಂಗೀತ', 'ನೃತ್ಯ', 'ಚಿತ್ರ',
+        'ನಾವು', 'ನಮ್ಮ', 'ಭಾರತ', 'ದೇಶ', 'ಜನ',
+        'ಶಾಂತಿ', 'ಸಮಾಧಾನ', 'ಸಂತೋಷ', 'ಆನಂದ', 'ಪ್ರೇಮ',
+        'ಪ್ರಕೃತಿ', 'ಮಳೆ', 'ಬಿಸಿಲು', 'ಗಾಳಿ', 'ನದಿ',
+        'ಬೆಟ್ಟ', 'ಕಾಡು', 'ಹೂ', 'ಹಣ್ಣು', 'ಮರ',
+        'ಕಾಯಿ', 'ದವಸ', 'ಅಕ್ಕಿ', 'ಬತ್ತ', 'ರಾಗ',
+        'ಕುಣಿತ', 'ಹಾಡು', 'ಕಥೆ', 'ಪಾತೆರ', 'ಹೇಳು'
+    ]
+    
+    const proverbs = [
+        'ಕರ್ಮವೇ ಶ್ರೇಷ್ಠ',
+        'ಉತ್ತಮರು ಬಾಳುವ ದಾರಿ',
+        'ಸಾಧನೆಯ ಫಲ',
+        'ಏಕತಾನಲ್ಲಿ ಬಲ',
+        'ವಿದ್ಯಾ ಮಂಗಳ',
+        'ಶಿಕ್ಷಣ ಮೇಲೆ',
+        'ಕನಸು ನುಡಿಸು',
+        'ಮಣೆ ಹಾಕಿ ನಿಲ್ಲು',
+        'ಹೊಸ ಹೊಸ ದಿನ',
+        'ಬದುಕು ಹರಿಸು'
+    ]
+    
+    const kannadaGlyphs = [
+        'ಅ', 'ಆ', 'ಇ', 'ಈ', 'ಉ', 'ಊ', 'ಋ', 'ಎ', 'ಏ', 'ಐ', 'ಒ', 'ಓ', 'ಔ',
+        'ಕ', 'ಖ', 'ಗ', 'ಘ', 'ಙ', 'ಚ', 'ಛ', 'ಜ', 'ಝ', 'ಞ', 'ಟ', 'ಠ', 'ಡ', 'ಢ', 'ಣ',
+        'ತ', 'ಥ', 'ದ', 'ಧ', 'ನ', 'ಪ', 'ಫ', 'ಬ', 'ಭ', 'ಮ', 'ಯ', 'ರ', 'ಲ', 'ವ', 'ಶ', 'ಷ', 'ಸ', 'ಹ',
+        'ಕ್ಕ', 'ಕ್ತ', 'ಕ್ಷ', 'ತ್ತ', 'ದ್ಧ', 'ಸ್ತ'
+    ]
+    
+    let pag = {...pages}
+    pag.visualizationsPage = true
+    
+    res.render('visualizations/visualizations', {
+        page: pag,
+        data: {
+            fonts: fontList,
+            kannadaWords,
+            proverbs,
+            kannadaGlyphs
+        }
+    })
+})
+
 router.get('/stats', (req, res) => {
     const fonts = require('./fonts.json')
     const metadata = require('./fontMetadata.json')
