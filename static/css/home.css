@@ -611,7 +611,24 @@ nav {
 .additional-toolbar > :last-child {
   position: relative;
   margin-left: 12px;
-  display: flex;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+#random-fonts-btn {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.additional-toolbar > :nth-child(4),
+.additional-toolbar > :nth-child(5),
+.additional-toolbar > :nth-child(6) {
+  position: relative;
+  margin-left: 12px;
+  display: inline-flex !important;
   justify-content: center;
   align-items: center;
   column-gap: 5px;
@@ -656,6 +673,27 @@ nav {
 
 .additional-toolbar > :last-child i {
   cursor: pointer;
+}
+
+.random-fonts-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+  transition: background 0.3s;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.random-fonts-btn:hover {
+  background: var(--secondary-color);
 }
 
 /*------- style for category checkbox --------*/

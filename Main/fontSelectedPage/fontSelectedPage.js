@@ -26,6 +26,38 @@ const getLicenseType = (license) => {
     return isOpenSource ? 'Open Source' : 'Proprietary'
 }
 
+const getFontCategory = (familyName, metadata) => {
+    const name = familyName.toLowerCase()
+    const meta = metadata[familyName.replace(/ /g, '_').replace(/-/g, '_')] || {}
+    const desc = (meta.description || '').toLowerCase()
+    
+    if (desc.includes('handwriting') || desc.includes('cursive') || name.includes('hand') || name.includes('brush') || name.includes('script')) {
+        return 'Handwriting'
+    }
+    if (desc.includes('mono') || desc.includes('code') || name.includes('mono') || name.includes('code')) {
+        return 'Monospace'
+    }
+    if (desc.includes('display') || desc.includes('headline') || name.includes('display') || name.includes('poster')) {
+        return 'Display'
+    }
+    if (desc.includes('serif') || name.includes('serif') || name.includes('times') || name.includes('garamond')) {
+        return 'Serif'
+    }
+    if (desc.includes('sans') || name.includes('sans') || name.includes('gothic') || name.includes('grotesk')) {
+        return 'Sans Serif'
+    }
+    return 'Sans Serif'
+}
+
+const determineFontProperties = (fontMeta, stylesCount) => {
+    return {
+        numberOfStyles: stylesCount,
+        thickness: 5,
+        slant: 0,
+        width: 5
+    }
+}
+
 const getFontsJson = () => {
     const now = Date.now()
     if (fontsCache && (now - fontsCacheTime) < CACHE_TTL) {
@@ -101,7 +133,7 @@ var getFontsForFamilyPage = (family) => {
     return json[family]
 }
 
-var getFonts = (val, page) =>{
+var getFonts = (val, page, filters = {}) =>{
     const json = getFontsJson()
     const metadata = getMetadata()
     let ar = Object.keys(json).map((key)=>{
@@ -127,10 +159,64 @@ var getFonts = (val, page) =>{
             styles: data['fonts'].length,
             author: fontMeta.author || '',
             foundry: fontMeta.foundry || '',
-            licenseType: getLicenseType(fontMeta.license)
+            licenseType: getLicenseType(fontMeta.license),
+            license: fontMeta.license || '',
+            category: getFontCategory(data.family, metadata),
+            isVariable: data.fonts.some(f => f.font.toLowerCase().includes('variable') || f.font.toLowerCase().includes('var'))
         }
         return obj
     })
+
+    if (filters.random && filters.random > 0) {
+        const shuffled = [...result].sort(() => 0.5 - Math.random())
+        result = shuffled.slice(0, filters.random)
+        return {
+            data: result,
+            totalFamily: Object.keys(json).length,
+            showingFamily: result.length,
+            isLastPage: true,
+            filteredCount: result.length
+        }
+    }
+
+    if (filters.categories && filters.categories.length > 0) {
+        result = result.filter(f => filters.categories.includes(f.category))
+    }
+
+    if (filters.licenseType && filters.licenseType !== 'all') {
+        result = result.filter(f => {
+            const lic = (f.license || '').toLowerCase()
+            switch(filters.licenseType) {
+                case 'open-source':
+                    return f.licenseType === 'Open Source'
+                case 'proprietary':
+                    return f.licenseType === 'Proprietary'
+                case 'free-eula':
+                    return lic.includes('free') || lic.includes('eula') || lic.includes('end user')
+                default:
+                    return true
+            }
+        })
+    }
+
+    if (filters.variableFontsOnly) {
+        result = result.filter(f => f.isVariable)
+    }
+
+    const sortBy = filters.sortBy || 'name'
+    switch(sortBy) {
+        case 'name':
+            result.sort((a, b) => a.family.localeCompare(b.family))
+            break
+        case 'newest':
+            result.sort((a, b) => b.styles - a.styles)
+            break
+        case 'popular':
+        case 'trending':
+        default:
+            break
+    }
+
     const min = getMinimum(result.length, page*maxDataPerPage)
     const min_for_starting = getMinimum(result.length, (page-1)*maxDataPerPage)
     const sendingData = result.slice(min_for_starting, min)
@@ -142,7 +228,8 @@ var getFonts = (val, page) =>{
         data:sendingData,
         totalFamily: Object.keys(json).length,
         showingFamily: filter.length,
-        isLastPage: isLastPage
+        isLastPage: isLastPage,
+        filteredCount: result.length
     }
     
     return parsingData

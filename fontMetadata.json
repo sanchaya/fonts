@@ -55,6 +55,13 @@
     "foundry": "Ek Type",
     "description": "A geometric sans serif typeface with variable font technology for modern multiscript design."
   },
+  "EkKannada": {
+    "author": "Taresh Vohra",
+    "license": "Proprietary",
+    "source": "https://ektype.in/ek-kannada.html",
+    "foundry": "Ek Type",
+    "description": "Part of Ek Multi-script project, a unified type family across Indic scripts. Designed in 2018 with 7 weights. A proprietary font from Ek Type."
+  },
   "Baloo-Tamma-2": {
     "author": "Divya Kowshik, Shuchita Grover, Ek Type",
     "license": "SIL Open Font License 1.1",
@@ -209,6 +216,13 @@
     "foundry": "Red Hat",
     "description": "Lohit Kannada font designed to cover Kannada script, commissioned by Red Hat."
   },
+  "LavaKannada": {
+    "author": "Ramakrishna Saiteja",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/lava/kannada",
+    "foundry": "Typotheque",
+    "description": "A typeface designed for magazine use, handling large quantities of text with ease. Extremely legible at small sizes, sophisticated at large sizes. 4 weights. Designed in collaboration with Parimal Parmar."
+  },
   "Malige": {
     "author": "Indian Institute of Science",
     "license": "SIL Open Font License 1.1",
@@ -265,6 +279,27 @@
     "foundry": "Government of Karnataka",
     "description": "Official Nudi fonts recommended by the Government of Karnataka for Kannada text."
   },
+  "NovemberKannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://typotheque.com/fonts/november/kannada",
+    "foundry": "Typotheque",
+    "description": "A highly accessible and legible typeface family for signage and information systems, handling long texts with ease. Features distinctive orthogonal end strokes. Available in 9 weights."
+  },
+  "NovemberStencilKannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://www.typotheque.com/fonts/november-stencil/kannada",
+    "foundry": "Typotheque",
+    "description": "A heavy-duty stencil typeface with playful layering styles. Inspired by industrial signage, gives a unique flavour to short texts and provides possibilities for colour typography and motion graphics. Available in 9 weights."
+  },
+  "OctoberKannada": {
+    "author": "Peter Biľak, Veronika Burian, Joost Krikhaar",
+    "license": "Proprietary",
+    "source": "https://www.typotheque.com/fonts/october/kannada",
+    "foundry": "Typotheque",
+    "description": "A warm, geometric typeface with soft corner terminals. A rational, utilitarian font family with rounded stroke endings lending it a friendlier character. Useful for signage, branding, headlines and editorial purposes. Available in 9 weights."
+  },
   "PRAKASHAK": {
     "author": "PRAKASHAK Team",
     "license": "Free for personal and commercial use",
@@ -301,11 +336,11 @@
     "description": "A Unicode-based OpenType font supporting 13 Indic scripts including Kannada. A mono-thick font with equal horizontal and vertical stem thickness."
   },
   "SamaKannada": {
-    "author": "Mohammad Juber",
-    "license": "SIL Open Font License 1.1",
-    "source": "",
-    "foundry": "",
-    "description": "A modern Kannada sans-serif typeface."
+    "author": "Maithili Shingre, Vaijayanti Ajinkya",
+    "license": "Proprietary",
+    "source": "https://ektype.in/sama-kannada.html",
+    "foundry": "Ek Type",
+    "description": "Sama is a mono linear typeface with rounded terminals, featuring genial curves that gently billow its forms. Released in 2018 with 6 weights. A proprietary font from Ek Type."
   },
   "Shreelipi": {
     "author": "Modular Infotech",
