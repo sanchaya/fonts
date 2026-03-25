@@ -265,8 +265,10 @@ nav {
 }
 
 .menu-items a.active {
-  background-color: var(--active-color);
+  background-color: transparent !important;
   color: #4361ee !important;
+  font-weight: bold;
+  border-bottom: 3px solid #4361ee;
 }
 
 /* ========== FOOTER ========== */
