@@ -76,7 +76,7 @@
         /* Tab Navigation */
         .viz-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
         .viz-tab { background: var(--bg-color); border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; border-radius: 25px; cursor: pointer; font-weight: 500; transition: all 0.3s; }
-        .viz-tab:hover, .viz-tab.active { background: var(--primary-color); color: white; }
+        .viz-tab:hover, .viz-tab.active { background: transparent; color: #4361ee; border-bottom: 3px solid #4361ee; }
         .viz-content { display: none; }
         .viz-content.active { display: block; }
         
@@ -93,20 +93,20 @@
         <h1 class="viz-title">ಫಾಂಟ್ ವಿಜುಅಲೈಸೇಶನ್ / Font Visualizations</h1>
         
         <div class="viz-tabs">
-            <button class="viz-tab active" data-tab="wordcloud">Word Cloud</button>
-            <button class="viz-tab" data-tab="spellery">Font Spellery</button>
-            <button class="viz-tab" data-tab="randomizer">Randomizer</button>
-            <button class="viz-tab" data-tab="timeline">Timeline</button>
-            <button class="viz-tab" data-tab="proverbs">Proverbs</button>
-            <button class="viz-tab" data-tab="comparison">Compare</button>
-            <button class="viz-tab" data-tab="glyphs">Glyphs</button>
-            <button class="viz-tab" data-tab="bingo">Bingo</button>
+            <button class="viz-tab active" data-tab="wordcloud">ಪದ ಮೋಡ</button>
+            <button class="viz-tab" data-tab="spellery">ಫಾಂಟ್ ಸ್ಪೆಲ್</button>
+            <button class="viz-tab" data-tab="randomizer">ಯಾದೃಚ್ಛಿಕ</button>
+            <button class="viz-tab" data-tab="timeline">By Styles</button>
+            <button class="viz-tab" data-tab="proverbs">ಗಾದೆಗಳು</button>
+            <button class="viz-tab" data-tab="comparison">ಹೋಲಿಕೆ</button>
+            <button class="viz-tab" data-tab="glyphs">ಅಕ್ಷರಗಳು</button>
+            <button class="viz-tab" data-tab="bingo">ಬಿಂಗೋ</button>
         </div>
         
         <!-- Word Cloud -->
         <div class="viz-content active" id="wordcloud">
             <div class="viz-section">
-                <h2><i class="fas fa-cloud"></i> Word Cloud - ಪದ ಮೋಡಂ</h2>
+                <h2><i class="fas fa-cloud"></i> ಪದ ಮೋಡ</h2>
                 <p style="text-align:center;margin-bottom:20px;color:var(--text-color)">Hover over words to see them in different fonts!</p>
                 <div class="word-cloud" id="wordCloud"></div>
             </div>
@@ -115,7 +115,7 @@
         <!-- Font Spellery -->
         <div class="viz-content" id="spellery">
             <div class="viz-section">
-                <h2><i class="fas fa-spell"></i> Font Spellery - ಎಲ್ಲಾ ಫಾಂಟ್‌ಗಳಲ್ಲಿ</h2>
+                <h2><i class="fas fa-spell"></i> ಎಲ್ಲಾ ಫಾಂಟ್‌ಗಳಲ್ಲಿ</h2>
                 <input type="text" class="spellery-input" id="spelleryInput" placeholder="Type in Kannada or English..." value="ನಮಸ್ಕಾರ">
                 <div class="spellery-grid" id="spelleryGrid"></div>
             </div>
@@ -124,7 +124,7 @@
         <!-- Font Randomizer -->
         <div class="viz-content" id="randomizer">
             <div class="viz-section">
-                <h2><i class="fas fa-dice"></i> Font Randomizer - ಯಾದೃಚ್ಛಿಕ</h2>
+                <h2><i class="fas fa-dice"></i> ಯಾದೃಚ್ಛಿಕ ಫಾಂಟ್</h2>
                 <div class="randomizer-box">
                     <div class="randomizer-text" id="randomizerText">Almost before we know it, we had left the ground</div>
                     <button class="randomizer-btn" id="randomizerBtn">
@@ -137,7 +137,7 @@
         <!-- Font Timeline -->
         <div class="viz-content" id="timeline">
             <div class="viz-section">
-                <h2><i class="fas fa-history"></i> Font Timeline - ಸಮಯ ರೇಖೆ</h2>
+                <h2><i class="fas fa-list"></i> Fonts by Style Count - ಸ್ಟೈಲ್ ಸಂಖ್ಯೆ</h2>
                 <div class="timeline" id="timelineList"></div>
             </div>
         </div>
@@ -145,7 +145,7 @@
         <!-- Proverb Gallery -->
         <div class="viz-content" id="proverbs">
             <div class="viz-section">
-                <h2><i class="fas fa-quote-left"></i> Kannada Proverbs - ಸಾಮಾನ್ಯ ವಾಕ್ಯಗಳು</h2>
+                <h2><i class="fas fa-quote-left"></i> ಗಾದೆಗಳು</h2>
                 <div class="proverb-grid" id="proverbGrid"></div>
             </div>
         </div>
@@ -153,7 +153,7 @@
         <!-- Font Comparison -->
         <div class="viz-content" id="comparison">
             <div class="viz-section">
-                <h2><i class="fas fa-columns"></i> Font Comparison - ಹೋಲಿಕೆ</h2>
+                <h2><i class="fas fa-columns"></i> ಹೋಲಿಕೆ</h2>
                 <div class="comparison-controls">
                     <select id="compareSelect1"><option value="">Select Font 1</option></select>
                     <select id="compareSelect2"><option value="">Select Font 2</option></select>
@@ -171,7 +171,7 @@
         <!-- Glyph Gallery -->
         <div class="viz-content" id="glyphs">
             <div class="viz-section">
-                <h2><i class="fas fa-font"></i> Glyph Gallery - ಅಕ್ಷರ ಗ್ಯಾಲರಿ</h2>
+                <h2><i class="fas fa-font"></i> ಅಕ್ಷರ ಗ್ಯಾಲರಿ</h2>
                 <div class="glyph-grid" id="glyphGrid"></div>
             </div>
         </div>
@@ -179,7 +179,7 @@
         <!-- Font Bingo -->
         <div class="viz-content" id="bingo">
             <div class="viz-section">
-                <h2><i class="fas fa-question"></i> Font Bingo - ಫಾಂಟ್ ಬಿಂಗೋ</h2>
+                <h2><i class="fas fa-question"></i> ಬಿಂಗೋ</h2>
                 <div class="bingo-container">
                     <p>Guess the font name!</p>
                     <div class="bingo-card" id="bingoCard">?</div>
