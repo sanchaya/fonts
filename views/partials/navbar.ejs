@@ -35,11 +35,23 @@
     </div>
     <div class="menu-items">
         <a href="/" class='<%= whichPage("fontShowPage")%>'>ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
-        <a href="/stats" class='<%= whichPage("statsPage")%>'>ಅಂಕಿಅಂಶಗಳು</a>
-        <a href="/visualizations" class='<%= whichPage("visualizationsPage")%>'>ವಿಜುಅಲೈಸೇಶನ್</a>
-        <a href="/about" class='<%= whichPage("aboutPage")%>'>ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
-        <a href="/bug-reports">Bug Reports</a>
-        <a href="/getSuggestionForm" class='<%= whichPage("fontSuggestionPage")%>'>ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+        <div class="dropdown">
+            <a class="dropbtn">Tools <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/stats" class='<%= whichPage("statsPage")%>'>ಅಂಕಿಅಂಶಗಳು</a>
+                <a href="/visualizations" class='<%= whichPage("visualizationsPage")%>'>ವಿಜುಅಲೈಸೇಶನ್</a>
+                <a href="/bug-reports">Bug Reports</a>
+                <a href="/getSuggestionForm" class='<%= whichPage("fontSuggestionPage")%>'>ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropbtn">ನಮ್ಮ ಬಗ್ಗೆ <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/about" class='<%= whichPage("aboutPage")%>'>ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
+                <a href="https://sanchaya.org" target="_blank">ಸಂಚಯ</a>
+                <a href="https://sanchifoundation.org" target="_blank">ಸಂಚಿ ಫೌಂಡೇಶನ್</a>
+            </div>
+        </div>
     </div>
     <div class="right-nav">
         <i class="fa fa-bars fa-lg hamburger-icon" aria-hidden="true"></i>

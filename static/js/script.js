@@ -8,11 +8,10 @@ $(document).ready(function(){
 
     $('#collapse-button').click(function(){
         $('#myNavbar').collapse('toggle')
-   })
-
+    })
 
    // hover on font
-   $('.rd-familypage').hover(onHover, onLeave)
+    $('.rd-familypage').hover(onHover, onLeave)
 })
 
 function dropdownOverHidden(){
