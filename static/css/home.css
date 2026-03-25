@@ -594,6 +594,26 @@ nav {
   margin: 3px;
 }
 
+#license-filter {
+  display: inline-block !important;
+}
+
+#license-filter .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+#license-filter.modified .dropbtn {
+  background: var(--primary-color);
+  color: white;
+}
+
 .additional-toolbar .dropdown .dropbtn {
   border-radius: 20px;
   padding: 8px 16px;
@@ -676,9 +696,9 @@ nav {
 }
 
 .random-fonts-btn {
-  background: var(--primary-color);
-  color: white;
-  border: none;
+  background: #2196F3 !important;
+  color: white !important;
+  border: 1px solid #2196F3 !important;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -690,6 +710,8 @@ nav {
   transition: background 0.3s;
   visibility: visible !important;
   opacity: 1 !important;
+  z-index: 9999 !important;
+  position: relative !important;
 }
 
 .random-fonts-btn:hover {
