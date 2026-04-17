@@ -476,7 +476,7 @@
     "description": "A Unicode Kannada font designed by Microsoft for UI and screen use."
   },
   "KarnataGTN": {
-    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha, GTN family",
+    "author": "Arun C Kallappanavar",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-gtn-typeface",
     "foundry": "Sanchaya",
