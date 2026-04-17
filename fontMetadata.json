@@ -483,14 +483,14 @@
     "description": "A variable Kannada typeface based on the handwriting style of G. T. Narayan Rao. Bridges handwritten expression and formal typography, creating a balance between natural writing and readable text."
   },
   "Karnata-German-Mission-Press": {
-    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha",
+    "author": "Arun C Kallappanavar",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-german-mission-press-typeface",
     "foundry": "Sanchaya",
     "description": "Digital revival of a historical Kannada typeface from German Mission Press prints. A revival font project for Kannada from German Mission Press prints in Mangaluru."
   },
   "Karnata-Wesleyan-Mission-Press": {
-    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha",
+    "author": "Arun C Kallappanavar",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-wesleyan-mission-press-typeface",
     "foundry": "Sanchaya",
