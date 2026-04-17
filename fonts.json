@@ -910,6 +910,10 @@
 		"link": "KarnataGTN",
 		"fonts": [
 			{
+				"font": "KarnataGTN Variable",
+				"link": "KarnataGTN-Variable"
+			},
+			{
 				"font": "KarnataGTN Black",
 				"link": "KarnataGTN-Black"
 			},

@@ -1,5 +1,11 @@
 <div class="internal-content">
   
+  <% 
+    // Check if this is a variable font family
+    const hasVariableFont = data.fonts.some(f => f.font.toLowerCase().includes('variable'));
+    const variableFont = data.fonts.find(f => f.font.toLowerCase().includes('variable'));
+  %>
+  
   <% if (typeof familyMetadata !== 'undefined' && familyMetadata) { %>
   <div class="family-meta-info">
     <h2 class="family-title"><%= data.family %></h2>
@@ -38,6 +44,24 @@
   <div class="family-instructions">
     <p>Type in the box below to try the fonts. Use the slider to adjust font size.</p>
   </div>
+  
+  <% if (hasVariableFont) { %>
+  <div class="variable-font-controls">
+    <div class="weight-presets">
+      <button class="weight-preset-btn" data-weight="400">Regular (400)</button>
+      <button class="weight-preset-btn" data-weight="500">Medium (500)</button>
+      <button class="weight-preset-btn" data-weight="600">SemiBold (600)</button>
+      <button class="weight-preset-btn active" data-weight="700">Bold (700)</button>
+      <button class="weight-preset-btn" data-weight="800">ExtraBold (800)</button>
+      <button class="weight-preset-btn" data-weight="900">Black (900)</button>
+    </div>
+    <div class="weight-slider-container">
+      <span class="weight-label">Weight</span>
+      <input type="range" min="400" max="900" value="700" class="weight-slider" id="weightSlider">
+      <span class="weight-value" id="weightValue">700</span>
+    </div>
+  </div>
+  <% } %>
   
   <div class="input-type-toggle">
     <button class="toggle-btn active" data-type="sentence">Sentence</button>
@@ -138,10 +162,68 @@ document.addEventListener('DOMContentLoaded', function() {
   const paragraphPreview = document.getElementById('paragraphPreview');
   const fontSamples = document.querySelectorAll('.font-sample[data-sample]');
   
+  // Variable font controls
+  const weightSlider = document.getElementById('weightSlider');
+  const weightValue = document.getElementById('weightValue');
+  const weightPresetBtns = document.querySelectorAll('.weight-preset-btn');
+  const variableFontName = '<%= variableFont ? variableFont.font : "" %>';
+  const isVariableFont = '<%= hasVariableFont %>' === 'true';
+  
   // Set initial font from first font in the list
   const firstFont = fontSamples[0].dataset.font;
   typeParagraph.style.fontFamily = `'${firstFont}'`;
   paragraphPreview.style.fontFamily = `'${firstFont}'`;
+  
+  // Apply variable font weight
+  function applyVariableWeight(weight) {
+    if (!isVariableFont || !variableFontName) return;
+    
+    // Update font samples in sentence view
+    fontSamples.forEach(sample => {
+      sample.style.fontFamily = `'${variableFontName}'`;
+      sample.style.fontVariationSettings = `'wght' ${weight}`;
+    });
+    
+    // Update paragraph preview
+    paragraphPreview.style.fontFamily = `'${variableFontName}'`;
+    paragraphPreview.style.fontVariationSettings = `'wght' ${weight}`;
+    
+    // Update font select for paragraph view
+    typeParagraph.style.fontFamily = `'${variableFontName}'`;
+    typeParagraph.style.fontVariationSettings = `'wght' ${weight}`;
+  }
+  
+  // Initialize variable font
+  if (isVariableFont) {
+    applyVariableWeight(700);
+  }
+  
+  // Weight slider event
+  if (weightSlider) {
+    weightSlider.addEventListener('input', function() {
+      const weight = this.value;
+      weightValue.textContent = weight;
+      
+      // Remove active from all presets
+      weightPresetBtns.forEach(btn => btn.classList.remove('active'));
+      
+      applyVariableWeight(weight);
+    });
+  }
+  
+  // Weight preset buttons
+  weightPresetBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      weightPresetBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      const weight = this.dataset.weight;
+      weightSlider.value = weight;
+      weightValue.textContent = weight;
+      
+      applyVariableWeight(weight);
+    });
+  });
   
   // Toggle between sentence and paragraph input
   toggleBtns.forEach(btn => {

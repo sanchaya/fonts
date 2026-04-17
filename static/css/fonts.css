@@ -5562,4 +5562,8 @@
 	font-family: "Badami Regular";
 	src: url("../Fonts/nlci-knda-badami/Badami-Regular.ttf");
 
+}@font-face {
+	font-family: "KarnataGTN Variable";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-VariableFont.ttf");
+
 }
