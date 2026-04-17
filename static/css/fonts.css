@@ -519,6 +519,14 @@
 	src: url("../Fonts/Cheluvi/Cheluvi.ttf");
 
 }@font-face {
+	font-family: "DesignigaHandwritting Regular.260226 1755 SVG";
+	src: url("../Fonts/Designiga-Handwriting/DesignigaHandwritting-Regular.260226-1755-SVG.ttf");
+
+}@font-face {
+	font-family: "DesignigaHandwritting Regular.260226 1755";
+	src: url("../Fonts/Designiga-Handwriting/DesignigaHandwritting-Regular.260226-1755.ttf");
+
+}@font-face {
 	font-family: "Devama";
 	src: url("../Fonts/DevamaNew/Devama.otf");
 
@@ -689,6 +697,38 @@
 }@font-face {
 	font-family: "Karnata F Kittel";
 	src: url("../Fonts/Karnata-F-Kittel-Font/Karnata F Kittel.ttf");
+
+}@font-face {
+	font-family: "KarnataGermanMissionPressTypeface";
+	src: url("../Fonts/Karnata-German-Mission-Press/KarnataGermanMissionPressTypeface.ttf");
+
+}@font-face {
+	font-family: "KarnataWesleyanMissionPress";
+	src: url("../Fonts/Karnata-Wesleyan-Mission-Press/KarnataWesleyanMissionPress.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN Black";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-Black.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN Bold";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-Bold.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN ExtraBold";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-ExtraBold.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN Medium";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-Medium.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN Regular";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-Regular.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN SemiBold";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-SemiBold.ttf");
 
 }@font-face {
 	font-family: "Kedage b";

@@ -1388,3 +1388,75 @@ body.dark .font .header .license-proprietary {
   color: var(--span-color);
   font-size: 13px;
 }
+
+/* Sanchaya Project Section */
+.sanchaya-project-section {
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.sanchaya-project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.sanchaya-project-header h2 {
+  margin: 0;
+  color: var(--text-color1);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sanchaya-logo {
+  height: 40px;
+  width: auto;
+}
+
+.sanchaya-fonts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.sanchaya-fonts-grid a {
+  text-decoration: none;
+}
+
+.sanchaya-fonts-grid .font {
+  min-height: 200px;
+}
+
+.sanchaya-fonts-grid .font:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 992px) {
+  .sanchaya-fonts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sanchaya-fonts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sanchaya-fonts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sanchaya-project-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .sanchaya-logo {
+    height: 30px;
+  }
+}

@@ -609,6 +609,20 @@
 			}
 		]
 	},
+	"Designiga-Handwriting": {
+		"family": "Designiga Handwriting",
+		"link": "Designiga-Handwriting",
+		"fonts": [
+			{
+				"font": "DesignigaHandwritting Regular.260226 1755 SVG",
+				"link": "DesignigaHandwritting-Regular.260226-1755-SVG"
+			},
+			{
+				"font": "DesignigaHandwritting Regular.260226 1755",
+				"link": "DesignigaHandwritting-Regular.260226-1755"
+			}
+		]
+	},
 	"DevamaNew": {
 		"family": "DevamaNew",
 		"link": "DevamaNew",
@@ -868,6 +882,56 @@
 			{
 				"font": "Karnata F Kittel",
 				"link": "Karnata-F-Kittel"
+			}
+		]
+	},
+	"Karnata-German-Mission-Press": {
+		"family": "Karnata German Mission Press",
+		"link": "Karnata-German-Mission-Press",
+		"fonts": [
+			{
+				"font": "KarnataGermanMissionPressTypeface",
+				"link": "KarnataGermanMissionPressTypeface"
+			}
+		]
+	},
+	"Karnata-Wesleyan-Mission-Press": {
+		"family": "Karnata Wesleyan Mission Press",
+		"link": "Karnata-Wesleyan-Mission-Press",
+		"fonts": [
+			{
+				"font": "KarnataWesleyanMissionPress",
+				"link": "KarnataWesleyanMissionPress"
+			}
+		]
+	},
+	"KarnataGTN": {
+		"family": "KarnataGTN",
+		"link": "KarnataGTN",
+		"fonts": [
+			{
+				"font": "KarnataGTN Black",
+				"link": "KarnataGTN-Black"
+			},
+			{
+				"font": "KarnataGTN Bold",
+				"link": "KarnataGTN-Bold"
+			},
+			{
+				"font": "KarnataGTN ExtraBold",
+				"link": "KarnataGTN-ExtraBold"
+			},
+			{
+				"font": "KarnataGTN Medium",
+				"link": "KarnataGTN-Medium"
+			},
+			{
+				"font": "KarnataGTN Regular",
+				"link": "KarnataGTN-Regular"
+			},
+			{
+				"font": "KarnataGTN SemiBold",
+				"link": "KarnataGTN-SemiBold"
 			}
 		]
 	},
