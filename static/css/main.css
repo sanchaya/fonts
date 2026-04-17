@@ -207,7 +207,7 @@ nav {
   position: absolute;
   right: 15px;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
 }
 
