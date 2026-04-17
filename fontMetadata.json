@@ -474,5 +474,33 @@
     "source": "",
     "foundry": "Microsoft",
     "description": "A Unicode Kannada font designed by Microsoft for UI and screen use."
+  },
+  "KarnataGTN": {
+    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha, GTN family",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/sanchaya/karnata-gtn-typeface",
+    "foundry": "Sanchaya",
+    "description": "A variable Kannada typeface based on the handwriting style of G. T. Narayan Rao. Bridges handwritten expression and formal typography, creating a balance between natural writing and readable text."
+  },
+  "Karnata-German-Mission-Press": {
+    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/sanchaya/karnata-german-mission-press-typeface",
+    "foundry": "Sanchaya",
+    "description": "Digital revival of a historical Kannada typeface from German Mission Press prints. A revival font project for Kannada from German Mission Press prints in Mangaluru."
+  },
+  "Karnata-Wesleyan-Mission-Press": {
+    "author": "Arun C Kallappanavar, Vaishnavi Murthy, Omshivaprakash H L, Abhaya Simha",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/sanchaya/karnata-wesleyan-mission-press-typeface",
+    "foundry": "Sanchaya",
+    "description": "Digital revival of a historical Kannada typeface from Wesleyan Mission Press prints. A revival font project for Kannada from Wesleyan Mission Press prints in Bengaluru and Mangaluru."
+  },
+  "Designiga-Handwriting": {
+    "author": "Shashwat Hegde Tyagi (@designiga_kannada)",
+    "license": "Unknown",
+    "source": "",
+    "foundry": "",
+    "description": "A handwriting style Kannada font by Shashwat Hegde Tyagi."
   }
 }
