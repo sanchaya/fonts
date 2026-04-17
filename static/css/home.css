@@ -126,7 +126,7 @@ nav {
   position: absolute;
   right: 0;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   padding-right: 15px;
 }
