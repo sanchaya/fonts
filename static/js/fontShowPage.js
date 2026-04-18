@@ -39,7 +39,7 @@ var ajaxToJson = (val) =>{
 }
 
 var displayError = () =>{
-    $('div.container.showPage').html("<h2 style='text-align:center;'> An error occured</h2>")
+    $('div.container.showPage').html("<h2 style='text-align:center;'> An error occurred</h2>")
     $('#type-search').val("")
 }
 

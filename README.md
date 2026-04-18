@@ -16,17 +16,20 @@ Fonts stored here in this project are exclusively for educational and research p
 ### Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd fonts
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the server**
+
    ```bash
    node index.js
    ```
@@ -78,6 +81,7 @@ node fontAdded.js
 ## Contributing
 
 Feel free to contribute to the project by:
+
 - Adding new fonts
 - Improving font metadata
 - Fixing bugs
@@ -90,7 +94,7 @@ fonts/
 ├── index.js              # Main Express server
 ├── fonts.json            # Font data (auto-generated)
 ├── fontMetadata.json     # Font metadata (admin-managed)
-├── configuaration.js     # Configuration settings
+├── configuration.js      # Configuration settings
 ├── Main/                 # Core application logic
 │   └── fontSelectedPage/
 ├── static/               # Static assets

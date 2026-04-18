@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const {maxDataPerPage} = require('../../configuaration')
+const {maxDataPerPage} = require('../../configuration')
 
 let fontsCache = null
 let fontsCacheTime = 0
