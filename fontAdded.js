@@ -10,7 +10,7 @@ const fonts_json = "fonts.json"
 const {
     font_extentions,
     old_fonts
-} = require('./configuaration')
+} = require('./configuration')
 
 const getFiles = path => {
     const files = []

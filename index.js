@@ -14,7 +14,7 @@ const {
     conjuncts_in_json,
     conjuncts_in_page,
     numerals
-    } = require('./configuaration')
+    } = require('./configuration')
 
 const router = express.Router()
 
