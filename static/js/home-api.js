@@ -84,7 +84,7 @@ var loadRandomFonts = () => {
 }
 
 var displayError = () =>{
-    $('.fonts-cnt').html("<h2 style='text-align:center;'> An error occured</h2>")
+    $('.fonts-cnt').html("<h2 style='text-align:center;'> An error occurred</h2>")
     $('.search').val("")
 }
 
