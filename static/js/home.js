@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //main funtion
+    //main function
     $(".right-nav > *").click(clickedForRipple);
     $('.slide-menu .slide-menu-item li').click(clickedForRipple);
     $('.dropbtn').click(clickedForDropdown)
