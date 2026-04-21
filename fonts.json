@@ -5931,16 +5931,6 @@
 			}
 		]
 	},
-	"korkki": {
-		"family": "korkki",
-		"link": "korkki",
-		"fonts": [
-			{
-				"font": "korkki",
-				"link": "korkki"
-			}
-		]
-	},
 	"nlci-knda-badami": {
 		"family": "nlci knda badami",
 		"link": "nlci-knda-badami",
