@@ -11,7 +11,40 @@
     "createdAt": "2026-03-23T14:20:36.914Z",
     "acknowledgments": 1,
     "acknowledgedBy": [
-      "::ffff:127.0.0.1"
+      "::1"
     ]
+  },
+  {
+    "fontFamily": "Hoysala",
+    "fontName": "Hoysala Regular",
+    "email": "dyavanoormanjunath@gmail.com",
+    "description": "ttf file not open\npage does not exist",
+    "browser": "Chrome",
+    "os": "",
+    "status": "open",
+    "id": 1776935354476,
+    "createdAt": "2026-04-23T09:09:14.476Z"
+  },
+  {
+    "fontFamily": "Padyakke-Libre",
+    "fontName": "PadyakkeExpandedOne Regular",
+    "email": "madhancp380@gmail.com",
+    "description": "while installing error pops up \"xxxxxxx.ttf is not a valid file\"",
+    "browser": "Other",
+    "os": "Windows",
+    "status": "open",
+    "id": 1777216959985,
+    "createdAt": "2026-04-26T15:22:39.985Z"
+  },
+  {
+    "fontFamily": "Designiga-Handwriting",
+    "fontName": "DesignigaHandwritting Regular.260226 1755",
+    "email": "",
+    "description": "Is not valid font error, please clear madi sir",
+    "browser": "Chrome",
+    "os": "Windows",
+    "status": "open",
+    "id": 1777301257096,
+    "createdAt": "2026-04-27T14:47:37.096Z"
   }
 ]
