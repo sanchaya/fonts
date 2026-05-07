@@ -1,0 +1,102 @@
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
+Error: listen EADDRINUSE: address already in use :::4040
+    at Server.setupListenHandle [as _listen2] (node:net:1774:16)
+    at listenInCluster (node:net:1822:12)
+    at Server.listen (node:net:1910:7)
+    at Function.listen (/home/fonts/public_html/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/fonts/public_html/index.js:193:5)
+    at Module._compile (node:internal/modules/cjs/loader:1275:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+    at Module.load (node:internal/modules/cjs/loader:1133:32)
+    at Module._load (node:internal/modules/cjs/loader:972:12)
+    at Object.<anonymous> (/root/.nvm/versions/node/v19.9.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4040
+}
