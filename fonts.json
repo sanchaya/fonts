@@ -875,6 +875,16 @@
 			}
 		]
 	},
+	"Karnata-Bandipur": {
+		"family": "Karnata Bandipur",
+		"link": "Karnata-Bandipur",
+		"fonts": [
+			{
+				"font": "Karnata Bandipur",
+				"link": "Karnata-Bandipur"
+			}
+		]
+	},
 	"Karnata-F-Kittel-Font": {
 		"family": "Karnata F Kittel Font",
 		"link": "Karnata-F-Kittel-Font",
