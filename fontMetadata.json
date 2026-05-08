@@ -188,6 +188,13 @@
     "foundry": "",
     "description": "A pixel style Kannada font designed for digital displays and retro styling."
   },
+  "Karnata-Bandipur": {
+    "author": "Arun C Kallappanavar",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/sanchaya/karnata-bandipur",
+    "foundry": "Sanchaya",
+    "description": "A Kannada + Latin display typeface derived from the original Bandipur project with improved OpenType shaping and production-ready font engineering."
+  },
   "Karnata-F-Kittel-Font": {
     "author": "Prashant Pandit (Project Head), Sachin Shetty (Graphics), Satish A.G. (Technical)",
     "license": "SIL Open Font License 1.1",
