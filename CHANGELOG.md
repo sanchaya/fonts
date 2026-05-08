@@ -34,3 +34,13 @@
 
 ### Changed
 - Server route `/font/:family/:font` now computes `fontDirectory` via `getFontDir()` and passes it to the template instead of relying on template-side conversion.
+
+## [2026-05-08] Download link fixes and metadata updates
+
+### Fixed
+- **Download links for open source fonts**: Download button hardcoded `.ttf` extension, causing 404 for fonts with only `.otf` (Gajamukha, HindMysuru, Kolar). Added `findDownloadFont()` server-side function that detects actual font file (TTF or OTF) on disk.
+- **License detection**: `index.ejs` open source check didn't match `"SIL Open Font License 1.1"` (missing "ofl" substring). Added `'open font'` to the detection list.
+- **Download button condition**: Added `downloadUrl` guard so button only shows when a downloadable file exists.
+
+### Added
+- **Ellara-Kannada metadata**: Added author (Pisumathu), source, and description to `fontMetadata.json`.

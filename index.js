@@ -78,6 +78,18 @@ const getFontDir = (family) => {
     return family
 }
 
+const findDownloadFont = (familyKey) => {
+    const fontDir = getFontDir(familyKey)
+    const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir)
+    if (!fs.existsSync(dirPath)) return null
+    const files = fs.readdirSync(dirPath)
+    const ttf = files.find(f => f.endsWith('.ttf'))
+    const otf = files.find(f => f.endsWith('.otf'))
+    if (ttf) return '/Fonts/' + fontDir + '/' + ttf
+    if (otf) return '/Fonts/' + fontDir + '/' + otf
+    return null
+}
+
 const loadFontGlyphs = async (fontFamily) => {
     try {
         const fontDir = getFontDir(fontFamily)
@@ -263,12 +275,14 @@ router.get('/font/:family/:font', async (req,res) => {
     const fontGlyphs = await loadFontGlyphs(param.family)
 
     const fontDirectory = getFontDir(param.family)
+    const downloadUrl = findDownloadFont(param.family)
 
     let parsingData = {
         page:page,
         font:font,
         fontFamily: param.family,
         fontDirectory: fontDirectory,
+        downloadUrl: downloadUrl,
         fontMetadata: fontMetadata,
         fontGlyphs: fontGlyphs,
         syllabary:syllabary,
