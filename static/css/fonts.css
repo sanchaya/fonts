@@ -563,6 +563,10 @@
 	src: url("../Fonts/Ek Kannada/EkKannada-SemiBold.ttf");
 
 }@font-face {
+	font-family: "Ellara Kannada";
+	src: url("../Fonts/Ellara-Kannada/Ellara-Kannada.ttf");
+
+}@font-face {
 	font-family: "Gajamukha Full";
 	src: url("../Fonts/Gajamukha/Gajamukha Full.otf");
 
@@ -695,6 +699,14 @@
 	src: url("../Fonts/KannadaPixel/KannadaPixel.ttf");
 
 }@font-face {
+	font-family: "Karnata Bandipur";
+	src: url("../Fonts/Karnata-Bandipur/KarnataBandipur.otf");
+
+}@font-face {
+	font-family: "Karnata Bandipur";
+	src: url("../Fonts/Karnata-Bandipur/KarnataBandipur.ttf");
+
+}@font-face {
 	font-family: "Karnata F Kittel";
 	src: url("../Fonts/Karnata-F-Kittel-Font/Karnata F Kittel.ttf");
 
@@ -729,6 +741,10 @@
 }@font-face {
 	font-family: "KarnataGTN SemiBold";
 	src: url("../Fonts/KarnataGTN/KarnataGTN-SemiBold.ttf");
+
+}@font-face {
+	font-family: "KarnataGTN Variable";
+	src: url("../Fonts/KarnataGTN/KarnataGTN-VariableFont.ttf");
 
 }@font-face {
 	font-family: "Kedage b";
@@ -1033,6 +1049,10 @@
 }@font-face {
 	font-family: "NovemberStencilKnLVariable Th";
 	src: url("../Fonts/NovemberStencil Kannada/OpenType-TT/NovemberStencilKnLVariable-Th.ttf");
+
+}@font-face {
+	font-family: "Nudi Akshara 03";
+	src: url("../Fonts/Nudi-Akshara-03/Nudi-Akshara-03.ttf");
 
 }@font-face {
 	font-family: "NUDI 19 E";
@@ -5557,13 +5577,5 @@
 }@font-face {
 	font-family: "Badami Regular";
 	src: url("../Fonts/nlci-knda-badami/Badami-Regular.ttf");
-
-}@font-face {
-	font-family: "KarnataGTN Variable";
-	src: url("../Fonts/KarnataGTN/KarnataGTN-VariableFont.ttf");
-
-}@font-face {
-	font-family: "Karnata Bandipur";
-	src: url("../Fonts/Karnata-Bandipur/KarnataBandipur.ttf");
 
 }
