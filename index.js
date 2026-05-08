@@ -205,12 +205,6 @@ app.use(fileUpload());
 
 /*----------app usage and set-------------- */
 
-app.use('/Fonts', express.static(path.join(__dirname, 'static', 'Fonts'), {
-  setHeaders: (res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-  }
-}));
-
 app.use(router)
 
 app.use(express.static(path.join(__dirname,'static')))
