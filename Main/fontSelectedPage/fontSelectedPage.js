@@ -28,7 +28,8 @@ const getLicenseType = (license) => {
 
 const getFontCategory = (familyName, metadata) => {
     const name = familyName.toLowerCase()
-    const meta = metadata[familyName.replace(/ /g, '_').replace(/-/g, '_')] || {}
+    const hyphenKey = familyName.replace(/ /g, '-')
+    const meta = metadata[hyphenKey] || metadata[familyName.replace(/ /g, '_')] || {}
     const desc = (meta.description || '').toLowerCase()
     
     if (desc.includes('handwriting') || desc.includes('cursive') || name.includes('hand') || name.includes('brush') || name.includes('script')) {

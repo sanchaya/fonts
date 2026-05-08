@@ -71,9 +71,16 @@ const saveBugReport = (report) => {
     return report.id
 }
 
+const getFontDir = (family) => {
+    const underscoreDir = family.replace(/-/g, '_')
+    const underscorePath = path.join(__dirname, 'static', 'Fonts', underscoreDir)
+    if (fs.existsSync(underscorePath)) return underscoreDir
+    return family
+}
+
 const loadFontGlyphs = async (fontFamily) => {
     try {
-        const fontDir = fontFamily.replace(/ /g, '_').replace(/-/g, '_')
+        const fontDir = getFontDir(fontFamily)
         const fontsDir = path.join(__dirname, 'static', 'Fonts', fontDir)
         
         if (!fs.existsSync(fontsDir)) {
@@ -255,10 +262,13 @@ router.get('/font/:family/:font', async (req,res) => {
 
     const fontGlyphs = await loadFontGlyphs(param.family)
 
+    const fontDirectory = getFontDir(param.family)
+
     let parsingData = {
         page:page,
         font:font,
         fontFamily: param.family,
+        fontDirectory: fontDirectory,
         fontMetadata: fontMetadata,
         fontGlyphs: fontGlyphs,
         syllabary:syllabary,
