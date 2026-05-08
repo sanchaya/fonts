@@ -671,6 +671,16 @@
 			}
 		]
 	},
+	"Ellara-Kannada": {
+		"family": "Ellara Kannada",
+		"link": "Ellara-Kannada",
+		"fonts": [
+			{
+				"font": "Ellara Kannada",
+				"link": "Ellara-Kannada"
+			}
+		]
+	},
 	"Gajamukha": {
 		"family": "Gajamukha",
 		"link": "Gajamukha",
@@ -1353,6 +1363,10 @@
 		"family": "Nudi Fonts",
 		"link": "Nudi-Fonts",
 		"fonts": [
+			{
+				"font": "Nudi Akshara 03",
+				"link": "Nudi-Akshara-03"
+			},
 			{
 				"font": "NUDI 19 E",
 				"link": "NUDI-19-E"
