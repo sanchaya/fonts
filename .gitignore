@@ -9,3 +9,6 @@ index.html
 fontAdded.js
 
 fonts.json
+
+.DS_Store
+server.log
