@@ -502,5 +502,12 @@
     "source": "",
     "foundry": "",
     "description": "A handwriting style Kannada font by Shashwat Hegde Tyagi."
+  },
+  "Ellara-Kannada": {
+    "author": "Pisumathu",
+    "license": "All Rights Reserved",
+    "source": "https://github.com/pisumathu/ellara-kannada",
+    "foundry": "",
+    "description": "A Kannada font that eliminates aspirated consonants (ಹೆದ್ದುಲಿಗಳು/ಮಹಾಪ್ರಾಣ), based on Dr. Shankar Bhat's concept of 'Ellara Kannada' — writing Kannada without aspirated characters. When applied to text with aspirated consonants, this font automatically renders them as non-aspirated forms."
   }
 }
