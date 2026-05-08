@@ -461,6 +461,7 @@ $('#variable-fonts-shower').change(function() {
 
 function intersectionObserverForSticky(){
     const sticky = document.querySelector("#sticky-toolbar")
+    if (!sticky) return
     const observer = new IntersectionObserver( 
         ([e]) => e.target.classList.toggle('isSticky', e.intersectionRatio < 1),
         {threshold: [1]}

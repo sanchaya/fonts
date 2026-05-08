@@ -57,7 +57,7 @@
     <%- include('partials/navbar') %>
 
     <% if(page.fontPage){ %>
-        <% var fontDir = fontFamily.replace(/-/g, '_') %>
+        <% var fontDir = fontDirectory %>
         <link rel="stylesheet" type="text/css" href="/Fonts/<%= fontDir %>/<%= font %>.ttf">
         <div class="font-info-bar">
             <div class="container">
