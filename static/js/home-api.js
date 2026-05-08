@@ -139,7 +139,7 @@ var appendCard = (res) => {
         const licenseClass = licenseType === 'Open Source' ? 'license-open' : 'license-proprietary'
         const licenseLabel = licenseType === 'Open Source' ? 'Open Source' : 'Proprietary'
         
-        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span><span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:&quot;'+res.data[i].font+'&quot;, recursive;">Almost before we know it, we had left the ground</div></div></a>'
+        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span><span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:&quot;'+res.data[i].font+'&quot;, serif;">Almost before we know it, we had left the ground</div></div></a>'
     }
     if(!res.isLastPage)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
