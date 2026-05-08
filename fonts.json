@@ -930,10 +930,6 @@
 		"link": "KarnataGTN",
 		"fonts": [
 			{
-				"font": "KarnataGTN Variable",
-				"link": "KarnataGTN-Variable"
-			},
-			{
 				"font": "KarnataGTN Black",
 				"link": "KarnataGTN-Black"
 			},
@@ -956,6 +952,10 @@
 			{
 				"font": "KarnataGTN SemiBold",
 				"link": "KarnataGTN-SemiBold"
+			},
+			{
+				"font": "KarnataGTN Variable",
+				"link": "KarnataGTN-Variable"
 			}
 		]
 	},
