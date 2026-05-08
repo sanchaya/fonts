@@ -87,17 +87,17 @@
                     var isAksharaStudio = false;
                     var license = (fontMetadata.license || '').toLowerCase();
                     var foundry = (fontMetadata.foundry || '').toLowerCase();
-                    if (license.includes('ofl') || license.includes('sil') || license.includes('mit') || license.includes('apache') || license.includes('gnu') || license.includes('public domain') || license.includes('free')) {
+                    if (license.includes('ofl') || license.includes('open font') || license.includes('sil') || license.includes('mit') || license.includes('apache') || license.includes('gnu') || license.includes('public domain') || license.includes('free')) {
                         isOpenSource = true;
                     }
                     if (foundry.includes('akshara') || (fontMetadata.author || '').toLowerCase().includes('akshara')) {
                         isAksharaStudio = true;
                     }
                     %>
-                    <% if(isOpenSource && !isAksharaStudio) { %>
+                    <% if(isOpenSource && !isAksharaStudio && downloadUrl) { %>
                     <div class="meta-item">
                         <span class="meta-label">Download</span>
-                        <a href="/Fonts/<%= fontDir %>/<%= font %>.ttf" download class="meta-link download-btn">Download Font</a>
+                        <a href="<%= downloadUrl %>" download class="meta-link download-btn">Download Font</a>
                     </div>
                     <% } %>
                 </div>
