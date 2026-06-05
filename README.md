@@ -1,16 +1,20 @@
 # ಫಾಂಟ್ಸ್ ಸಂಚಯ - Kannada Fonts Showcase
 
-Sanchaya is working on building an Index for Kannada fonts to locate the usable fonts for identifying, previewing and possibly fixing the fonts for the best of its abilities. This project would be crowdsourced from the community.
+Sanchaya is building an index for Kannada fonts to locate, preview, and identify fonts. This project is crowdsourced from the community.
 
 ## Font License Notes
 
-Fonts stored here in this project are exclusively for educational and research purposes only. We have retained the license information for each font in respective folders.
+Fonts stored in this project are for educational and research purposes only. Each font retains its own license (SIL OFL, Proprietary, Free, etc.) as noted in its metadata and folder.
+
+## Project License
+
+The project code (Express server, views, scripts) is licensed under the **MIT License**. See [LICENSE](./LICENSE).
 
 ## Installation
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - npm (comes with Node.js)
 
 ### Setup
@@ -62,15 +66,16 @@ The application includes an admin panel for managing font metadata.
 - Export font data for GitHub Pages deployment
 - Manage font suggestions
 
-**Note:** Change the default admin credentials in `index.js` before deploying to production.
+**Note:** Change the default admin credentials before deploying to production.
 
-## After Adding New Fonts
+## Adding New Fonts
 
-After adding a new font to the `static/Fonts` folder, run:
-
-```bash
-node fontAdded.js
-```
+1. Place the font file(s) in `static/Fonts/<Font-Name>/`
+2. Run the indexer:
+   ```bash
+   node fontAdded.js
+   ```
+3. Update `fontMetadata.json` with author, license, source, and foundry info
 
 ## Deployment to GitHub Pages
 
@@ -80,9 +85,9 @@ node fontAdded.js
 
 ## Contributing
 
-Feel free to contribute to the project by:
+Feel free to contribute by:
 
-- Adding new fonts
+- Adding new Kannada fonts
 - Improving font metadata
 - Fixing bugs
 - Enhancing the UI/UX
@@ -92,18 +97,20 @@ Feel free to contribute to the project by:
 ```
 fonts/
 ├── index.js              # Main Express server
-├── fonts.json            # Font data (auto-generated)
+├── fonts.json            # Font index (auto-generated)
 ├── fontMetadata.json     # Font metadata (admin-managed)
+├── fontAdded.js          # Font indexer script
 ├── configuration.js      # Configuration settings
+├── LICENSE               # MIT License
 ├── Main/                 # Core application logic
-│   └── fontSelectedPage/
+│   └── fontSelectedPage/ # Font listing and filtering
 ├── static/               # Static assets
-│   ├── css/             # Stylesheets
-│   ├── Fonts/           # Font files
-│   ├── img/             # Images
-│   └── js/              # JavaScript files
-└── views/               # EJS templates
+│   ├── css/              # Stylesheets
+│   ├── Fonts/            # Font files (70+ families)
+│   ├── img/              # Images
+│   └── js/               # JavaScript files
+└── views/                # EJS templates
     ├── admin.ejs         # Admin panel
     ├── fontSelectedPage/ # Font detail views
-    └── family/           # Family page views
+    └── home/             # Home page with filters
 ```
