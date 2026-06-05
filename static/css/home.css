@@ -630,15 +630,6 @@ nav {
   border-color: var(--text-color3);
 }
 
-.additional-toolbar > :last-child {
-  position: relative;
-  margin-left: 12px;
-  display: inline-flex !important;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;
-}
-
 #random-fonts-btn {
   display: inline-flex !important;
   visibility: visible !important;
@@ -654,94 +645,6 @@ nav {
   justify-content: center;
   align-items: center;
   column-gap: 5px;
-}
-
-.additional-toolbar > :last-child label {
-  font-size: small;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0;
-}
-
-.additional-toolbar > :last-child input {
-  cursor: pointer;
-  appearance: none;
-  --webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--text-color3);
-  background-color: transparent;
-  margin: 0;
-  outline: none;
-}
-
-.additional-toolbar > :last-child input:checked {
-  background-color: var(--text-color3);
-}
-
-.additional-toolbar > :last-child input:checked ~ i {
-  display: block;
-}
-
-.additional-toolbar > :last-child i {
-  display: none;
-  position: absolute;
-  left: 0;
-  color: var(--third-color);
-  font-size: 10px;
-  margin-left: 2px;
-  background: transparent;
-}
-
-.additional-toolbar > :last-child i {
-  cursor: pointer;
-}
-
-.variable-fonts-toggle {
-  position: relative;
-  display: inline-flex !important;
-  align-items: center;
-  column-gap: 5px;
-  margin-left: 12px;
-}
-
-.variable-fonts-toggle label {
-  font-size: small;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0;
-}
-
-.variable-fonts-toggle input {
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--text-color3);
-  background-color: transparent;
-  margin: 0;
-  outline: none;
-}
-
-.variable-fonts-toggle input:checked {
-  background-color: var(--text-color3);
-}
-
-.variable-fonts-toggle i {
-  display: none;
-  position: absolute;
-  left: 0;
-  color: var(--third-color);
-  font-size: 10px;
-  margin-left: 2px;
-  background: transparent;
-  cursor: pointer;
-  pointer-events: none;
-}
-
-.variable-fonts-toggle input:checked ~ i {
-  display: block;
 }
 
 .random-fonts-btn {
