@@ -509,5 +509,12 @@
     "source": "https://github.com/pisumathu/ellara-kannada",
     "foundry": "",
     "description": "A Kannada font that eliminates aspirated consonants (ಹೆದ್ದುಲಿಗಳು/ಮಹಾಪ್ರಾಣ), based on Dr. Shankar Bhat's concept of 'Ellara Kannada' — writing Kannada without aspirated characters. When applied to text with aspirated consonants, this font automatically renders them as non-aspirated forms."
+  },
+  "Nanni-Indic": {
+    "author": "Sunil Jayaprakash",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://suniljayaprakash.github.io/nanni-indic-font/",
+    "foundry": "",
+    "description": "A Kannada indic font designed for clarity and readability."
   }
 }
