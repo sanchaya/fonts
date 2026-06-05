@@ -5976,5 +5976,19 @@
 				"link": "Badami-Regular"
 			}
 		]
+	},
+	"Nanni-Indic": {
+		"family": "Nanni Indic",
+		"link": "Nanni-Indic",
+		"fonts": [
+			{
+				"font": "Nanni Regular",
+				"link": "Nanni-Regular"
+			},
+			{
+				"font": "Nanni Regular",
+				"link": "Nanni-Regular"
+			}
+		]
 	}
 }

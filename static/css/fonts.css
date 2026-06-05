@@ -5578,4 +5578,12 @@
 	font-family: "Badami Regular";
 	src: url("../Fonts/nlci-knda-badami/Badami-Regular.ttf");
 
+}@font-face {
+	font-family: "Nanni Regular";
+	src: url("../Fonts/Nanni-Indic/Nanni-Regular.otf");
+
+}@font-face {
+	font-family: "Nanni Regular";
+	src: url("../Fonts/Nanni-Indic/Nanni-Regular.ttf");
+
 }
