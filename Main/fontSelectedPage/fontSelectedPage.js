@@ -181,7 +181,14 @@ var getFonts = (val, page, filters = {}) =>{
     }
 
     if (filters.categories && filters.categories.length > 0) {
-        result = result.filter(f => filters.categories.includes(f.category))
+        const regularCategories = filters.categories.filter(c => c !== 'Variable')
+        const variableSelected = filters.categories.includes('Variable')
+        if (regularCategories.length > 0) {
+            result = result.filter(f => regularCategories.includes(f.category))
+        }
+        if (variableSelected) {
+            result = result.filter(f => f.isVariable)
+        }
     }
 
     if (filters.licenseType && filters.licenseType !== 'all') {
@@ -198,10 +205,6 @@ var getFonts = (val, page, filters = {}) =>{
                     return true
             }
         })
-    }
-
-    if (filters.variableFontsOnly) {
-        result = result.filter(f => f.isVariable)
     }
 
     const sortBy = filters.sortBy || 'name'

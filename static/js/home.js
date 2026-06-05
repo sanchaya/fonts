@@ -15,9 +15,6 @@ $(document).ready(function () {
     $('.slide-menu-baner .gap-filler').click(slideMenuClick)
 
 
-    //checkbox click on icon for variable fonts
-    $('.variable-fonts-toggle i').click(clickOnVariableFontCheck)
-
     intersectionObserverForSticky()
 
     customizingBarWork()
@@ -449,16 +446,6 @@ function customizingBarWork() {
         $('.fonts-cnt').addClass('list')
     })
 }
-
-function clickOnVariableFontCheck(){
-    const input = $('#variable-fonts-shower')
-    input.prop('checked', !input.prop('checked')).trigger('change')
-}
-
-$('#variable-fonts-shower').change(function() {
-    currentFilters.variableFontsOnly = $(this).prop('checked')
-    applyFilters()
-})
 
 function intersectionObserverForSticky(){
     const sticky = document.querySelector("#sticky-toolbar")
