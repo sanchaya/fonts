@@ -516,5 +516,12 @@
     "source": "https://suniljayaprakash.github.io/nanni-indic-font/",
     "foundry": "",
     "description": "A Kannada indic font designed for clarity and readability."
+  },
+  "Fit-Kannada": {
+    "author": "Taresh Vohra",
+    "license": "Proprietary",
+    "source": "https://store.typenetwork.com/foundry/djr/fonts/fit-kannada-variable/variable-normal",
+    "foundry": "DJR",
+    "description": "A variable Kannada display typeface with an expansive range of widths, designed to fill space with maximum impact. Part of the Fit superfamily by David Jonathan Ross, adapted to Kannada by Taresh Vohra."
   }
 }
