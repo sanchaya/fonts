@@ -21,7 +21,7 @@ const getMetadata = () => {
 const getLicenseType = (license) => {
     if (!license) return 'Unknown'
     const lic = license.toLowerCase()
-    const openSourceIndicators = ['ofl', 'sil', 'mit license', 'apache', 'gnu', 'public domain', 'ubuntu']
+    const openSourceIndicators = ['ofl', 'sil', 'mit license', 'apache', 'gnu', 'public domain', 'ubuntu', 'free']
     const isOpenSource = openSourceIndicators.some(ind => lic.includes(ind))
     return isOpenSource ? 'Open Source' : 'Proprietary'
 }
@@ -163,7 +163,7 @@ var getFonts = (val, page, filters = {}) =>{
             licenseType: getLicenseType(fontMeta.license),
             license: fontMeta.license || '',
             category: getFontCategory(data.family, metadata),
-            isVariable: data.fonts.some(f => f.font.toLowerCase().includes('variable') || f.font.toLowerCase().includes('var'))
+            isVariable: data.fonts.some(f => /\b(variable|var)\b/i.test(f.font))
         }
         return obj
     })
