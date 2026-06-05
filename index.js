@@ -457,7 +457,7 @@ router.get('/getFonts',(req,res) =>{
     const val = req.query.val
     const page = req.query.page
     const filters = {
-        categories: req.query.categories ? req.query.categories.split(',').filter(c => c) : [],
+        categories: req.query.categories ? [].concat(req.query.categories).filter(c => c) : [],
         variableFontsOnly: req.query.variableFontsOnly === 'true',
         sortBy: req.query.sortBy || 'name',
         random: parseInt(req.query.random) || 0,

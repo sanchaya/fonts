@@ -249,18 +249,19 @@ function additional_toolbar_category(){
 function add_modified_and_category_name(){
     // category item
 
-    const ele = $('.additional-toolbar > :first-child .categories.active')
-    if(ele.length == 0){
+    const all = $('.additional-toolbar > :first-child .categories')
+    const active = $('.additional-toolbar > :first-child .categories.active')
+    if(active.length == 0){
         $('.additional-toolbar > :first-child').addClass('modified')
         $('.additional-toolbar > :first-child .dropbtn-span').text('No categories selected')
     }
-    else if(ele.length < 5){
+    else if(active.length < all.length){
         $('.additional-toolbar > :first-child').addClass('modified')
-        let first_ele = ele.first().text().trim()
-        let display = first_ele + " + " + (ele.length - 1)
+        let first_ele = active.first().text().trim()
+        let display = first_ele + " + " + (active.length - 1)
         $('.additional-toolbar > :first-child .dropbtn-span').text(display.replace(' + 0', ''))
     }
-    else if(ele.length == 5){
+    else if(active.length == all.length){
         $('.additional-toolbar > :first-child').removeClass('modified')
         $('.additional-toolbar > :first-child .dropbtn-span').text('Categories')
     }
