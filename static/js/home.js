@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
     //checkbox click on icon for variable fonts
-    $('.additional-toolbar > :last-child i').click(clickOnVariableFontCheck)
+    $('.variable-fonts-toggle i').click(clickOnVariableFontCheck)
 
     intersectionObserverForSticky()
 
@@ -451,7 +451,8 @@ function customizingBarWork() {
 }
 
 function clickOnVariableFontCheck(){
-    $('.additional-toolbar > :last-child input').prop('checked', false)
+    const input = $('#variable-fonts-shower')
+    input.prop('checked', !input.prop('checked')).trigger('change')
 }
 
 $('#variable-fonts-shower').change(function() {
