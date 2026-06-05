@@ -214,12 +214,13 @@ function additional_toolbar_license(){
 /* ADDITIONAL TOOLBAR CATEGORY */
 
 function additional_toolbar_category(){
-    // category click event for make them active
-    $('.additional-toolbar > :first-child .categories').click(function(){
-        if($('input', this).prop('checked'))
-            $(this).addClass('active')
+    // category change event on checkbox inputs
+    $('.additional-toolbar > :first-child .categories input').change(function(){
+        const label = $(this).closest('.categories')
+        if($(this).prop('checked'))
+            label.addClass('active')
         else
-            $(this).removeClass('active')
+            label.removeClass('active')
 
         add_modified_and_category_name()
         
