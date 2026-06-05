@@ -5990,5 +5990,15 @@
 				"link": "Nanni-Regular"
 			}
 		]
+	},
+	"Fit-Kannada": {
+		"family": "Fit Kannada",
+		"link": "Fit-Kannada",
+		"fonts": [
+			{
+				"font": "Fit Kannada",
+				"link": "Fit-Kannada"
+			}
+		]
 	}
 }
