@@ -697,6 +697,53 @@ nav {
   cursor: pointer;
 }
 
+.variable-fonts-toggle {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  column-gap: 5px;
+  margin-left: 12px;
+}
+
+.variable-fonts-toggle label {
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+}
+
+.variable-fonts-toggle input {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--text-color3);
+  background-color: transparent;
+  margin: 0;
+  outline: none;
+}
+
+.variable-fonts-toggle input:checked {
+  background-color: var(--text-color3);
+}
+
+.variable-fonts-toggle i {
+  display: none;
+  position: absolute;
+  left: 0;
+  color: var(--third-color);
+  font-size: 10px;
+  margin-left: 2px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.variable-fonts-toggle input:checked ~ i {
+  display: block;
+}
+
 .random-fonts-btn {
   background: #2196F3 !important;
   color: white !important;
