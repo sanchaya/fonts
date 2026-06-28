@@ -350,11 +350,14 @@ router.get('/unicode-blocks', (req, res) => {
 
     const sortedCats = Object.keys(categories).sort()
 
+    const kannadaBlock = unicodeBlocks.find(b => b.name === 'Kannada')
+
     res.render('unicodeBlocks/unicodeBlocks', {
         page: pag,
         blocks: unicodeBlocks,
         categories: categories,
-        sortedCategories: sortedCats
+        sortedCategories: sortedCats,
+        kannadaBlock: kannadaBlock
     })
 })
 

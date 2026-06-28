@@ -254,6 +254,17 @@
             font-size: 1.1rem;
             display: none;
         }
+        .featured-block {
+            border-width: 2px;
+            margin-bottom: 8px;
+        }
+        .featured-block .block-header {
+            background: var(--hover-color);
+            cursor: default;
+        }
+        .featured-block .block-header:hover {
+            background: var(--hover-color);
+        }
         @media (max-width: 768px) {
             .block-index { display: none; }
             .block-count { display: none; }
@@ -280,6 +291,34 @@
 
         <div id="charMatchHint" class="char-match-hint"></div>
 
+        <% if (kannadaBlock) { 
+            var kStart = kannadaBlock.start;
+            var kEnd = kannadaBlock.end;
+            var kCount = kEnd - kStart + 1;
+        %>
+        <div class="block-section featured-block" style="border-color:var(--primary-color);border-width:2px;margin-bottom:8px">
+            <div class="block-header" style="background:var(--hover-color)">
+                <span style="font-weight:700;color:var(--primary-color);flex:1;">&#2352; Kannada (ಕನ್ನಡ) &mdash; featured block</span>
+                <span class="block-count" style="width:auto;"><%= kCount.toLocaleString() %> code points</span>
+            </div>
+            <div class="block-char-grid open" style="display:block">
+                <div class="char-grid">
+                    <% for (var cp = kStart; cp <= kEnd; cp++) {
+                        if (!isDisplayable(cp)) continue;
+                        try {
+                            var ch = String.fromCodePoint(cp);
+                            var hex = 'U+' + cp.toString(16).toUpperCase().padStart(4, '0');
+                    %>
+                        <div class="char-cell">
+                            <span class="char"><%= ch %></span>
+                            <span class="char-hex"><%= hex %></span>
+                        </div>
+                    <% } catch(e) {} } %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
         <div class="blocks-summary">
             <strong><%= blocks.length %></strong> blocks &middot; <strong><%= sortedCategories.length %></strong> categories
         </div>
@@ -294,6 +333,15 @@
 
         <div class="blocks-list" id="blocksList">
             <% 
+            function isDisplayable(cp) {
+                if (cp < 0x20 || (cp >= 0x7F && cp <= 0x9F)) return false;
+                if (cp >= 0xD800 && cp <= 0xDFFF) return false;
+                if (cp >= 0xFDD0 && cp <= 0xFDEF) return false;
+                if ((cp & 0xFFFE) === 0xFFFE) return false;
+                if (cp > 0x10FFFF) return false;
+                return true;
+            }
+
             var idx = 0;
             sortedCategories.forEach(cat => { 
                 var catBlocks = categories[cat];
@@ -317,15 +365,6 @@
                             var ch = String.fromCodePoint(cp);
                             previewChars.push(ch);
                         } catch(e) {}
-                    }
-
-                    function isDisplayable(cp) {
-                        if (cp < 0x20 || (cp >= 0x7F && cp <= 0x9F)) return false;
-                        if (cp >= 0xD800 && cp <= 0xDFFF) return false;
-                        if (cp >= 0xFDD0 && cp <= 0xFDEF) return false;
-                        if ((cp & 0xFFFE) === 0xFFFE) return false;
-                        if (cp > 0x10FFFF) return false;
-                        return true;
                     }
                 %>
                     <div class="block-section block-section-<%= idx %>" data-start="<%= block.start %>" data-end="<%= block.end %>" data-idx="<%= idx %>">
@@ -556,16 +595,7 @@
             updateSearch(this.value);
         });
 
-        var kannadaBlock = document.querySelector('div.block-section[data-start="3200"]');
-        if (kannadaBlock) {
-            var start = parseInt(kannadaBlock.dataset.start);
-            var end = parseInt(kannadaBlock.dataset.end);
-            var idx = parseInt(kannadaBlock.dataset.idx);
-            toggleBlock(idx, start, end);
-            setTimeout(function() {
-                kannadaBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 300);
-        }
+
     </script>
 </body>
 </html>
