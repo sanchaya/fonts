@@ -10,6 +10,16 @@ Fonts stored in this project are for educational and research purposes only. Eac
 
 The project code (Express server, views, scripts) is licensed under the **MIT License**. See [LICENSE](./LICENSE).
 
+## Features
+
+- **Font Browser** — Browse, search, and filter 70+ Kannada font families
+- **Font Detail** — View glyphs, OpenType features, and font metadata per font
+- **Statistics** — Dashboard showing font counts, foundries, and license distribution
+- **Visualizations** — Word cloud, font comparison, glyph gallery, and font bingo
+- **Unicode Character Blocks** — Reference table of all 346 Unicode blocks (Unicode 17.0). Click any block to expand its character grid; paste a character into the search to find which block it belongs to.
+- **Bug Reports** — Submit and acknowledge font rendering issues
+- **Font Suggestions** — Community-driven font submission
+
 ## Installation
 
 ### Prerequisites
@@ -101,6 +111,7 @@ fonts/
 ├── fontMetadata.json     # Font metadata (admin-managed)
 ├── fontAdded.js          # Font indexer script
 ├── configuration.js      # Configuration settings
+├── unicodeBlocksData.js  # Unicode block definitions (Unicode 17.0)
 ├── LICENSE               # MIT License
 ├── Main/                 # Core application logic
 │   └── fontSelectedPage/ # Font listing and filtering
@@ -112,5 +123,7 @@ fonts/
 └── views/                # EJS templates
     ├── admin.ejs         # Admin panel
     ├── fontSelectedPage/ # Font detail views
-    └── home/             # Home page with filters
+    ├── home/             # Home page with filters
+    ├── unicodeBlocks/    # Unicode Character Blocks table
+    └── visualizations/   # Font visualization tools
 ```
