@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode Blocks - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/android-chrome-512x512.png">
+    <meta name="msapplication-TileImage" content="/img/mstile-310x310.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .blocks-content {
+            padding: 40px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .blocks-title {
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+        .blocks-subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+        .blocks-subtitle a {
+            color: var(--primary-color);
+        }
+        .blocks-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .blocks-search {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--third-color);
+            color: var(--text-color1);
+        }
+        .blocks-search:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .blocks-summary {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+        .blocks-summary strong {
+            color: var(--primary-color);
+        }
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .category-nav button {
+            display: inline-block;
+            padding: 4px 10px;
+            background: var(--third-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            color: var(--text-color1);
+            font-size: 0.85rem;
+            font-weight: 600;
+            font-family: inherit;
+        }
+        .category-nav button:hover {
+            background: var(--hover-color);
+            border-color: var(--primary-color);
+        }
+        .char-match-hint {
+            text-align: center;
+            padding: 8px 16px;
+            margin-bottom: 15px;
+            background: var(--hover-color);
+            border-radius: 8px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            display: none;
+        }
+        .char-match-hint strong {
+            font-weight: 700;
+        }
+        .blocks-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .block-section {
+            background: var(--third-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: box-shadow 0.2s;
+        }
+        .block-section:hover {
+            box-shadow: var(--card-shadow-hover);
+        }
+        .block-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 18px;
+            cursor: pointer;
+            gap: 12px;
+            user-select: none;
+            transition: background 0.2s;
+        }
+        .block-header:hover {
+            background: var(--hover-color);
+        }
+        .block-expand-icon {
+            width: 20px;
+            text-align: center;
+            color: var(--text-color);
+            font-size: 0.8rem;
+            transition: transform 0.2s;
+        }
+        .block-expand-icon.open {
+            transform: rotate(90deg);
+        }
+        .block-index {
+            color: var(--text-color);
+            font-size: 0.8rem;
+            width: 36px;
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .block-range {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            white-space: nowrap;
+            width: 180px;
+            flex-shrink: 0;
+        }
+        .block-name {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-color1);
+        }
+        .block-count {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            text-align: right;
+            width: 70px;
+            flex-shrink: 0;
+        }
+        .block-preview {
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+            max-width: 200px;
+            overflow: hidden;
+            height: 1.4em;
+        }
+        .block-preview span {
+            font-size: 1.1rem;
+            line-height: 1.2;
+        }
+        .block-char-grid {
+            display: none;
+            padding: 12px 18px 18px;
+            border-top: 1px solid var(--border-color);
+            background: var(--text-background);
+        }
+        .block-char-grid.open {
+            display: block;
+        }
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+            gap: 4px;
+        }
+        .char-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 2px;
+            border-radius: 6px;
+            background: var(--third-color);
+            border: 1px solid var(--border-color);
+            transition: background 0.15s;
+            cursor: default;
+        }
+        .char-cell:hover {
+            background: var(--hover-color);
+            border-color: var(--primary-color);
+        }
+        .char-cell .char {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            min-height: 1.4em;
+        }
+        .char-cell .char-hex {
+            font-size: 0.6rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--text-color);
+            margin-top: 2px;
+        }
+        .char-cell.highlight {
+            background: #fff3cd;
+            border-color: #ffc107;
+            box-shadow: 0 0 0 2px #ffc107;
+        }
+        body.dark .char-cell.highlight {
+            background: #3a3100;
+            border-color: #ffc107;
+        }
+        .block-section.category-header-block {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+        .block-section.category-header-block .block-header {
+            cursor: default;
+            padding: 18px 18px 8px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+        }
+        .block-section.category-header-block .block-header:hover {
+            background: none;
+        }
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .block-index { display: none; }
+            .block-count { display: none; }
+            .block-preview { display: none; }
+            .block-range { width: 130px; font-size: 0.78rem; }
+            .char-grid { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <div class="blocks-content">
+        <h1 class="blocks-title">Unicode Character Blocks</h1>
+        <p class="blocks-subtitle">
+            Data from <a href="https://www.unicode.org/" target="_blank">Unicode Consortium</a>
+            &mdash; Unicode <%= blocks.length %> blocks covering U+0000 to U+10FFFF.
+            Click a block to view its characters. Type a character in the search box to find its block.
+        </p>
+
+        <div class="blocks-controls">
+            <input type="text" class="blocks-search" id="blocksSearch" placeholder="Search by block name, range (e.g. 0C80), or paste a character (e.g. ಕ)...">
+        </div>
+
+        <div id="charMatchHint" class="char-match-hint"></div>
+
+        <div class="blocks-summary">
+            <strong><%= blocks.length %></strong> blocks &middot; <strong><%= sortedCategories.length %></strong> categories
+        </div>
+
+        <div class="category-nav" id="categoryNav">
+            <% sortedCategories.forEach(cat => { %>
+                <button onclick="document.getElementById('cat-<%= cat.charCodeAt(0) %>').scrollIntoView({behavior:'smooth'})"><%= cat %></button>
+            <% }) %>
+        </div>
+
+        <div id="noResults" class="no-results">No blocks match your search.</div>
+
+        <div class="blocks-list" id="blocksList">
+            <% 
+            var idx = 0;
+            sortedCategories.forEach(cat => { 
+                var catBlocks = categories[cat];
+            %>
+                <div class="block-section category-header-block">
+                    <div class="block-header" id="cat-<%= cat.charCodeAt(0) %>">
+                        <span style="color:var(--primary-color);font-size:1.2rem;"><%= cat %></span>
+                    </div>
+                </div>
+                <% catBlocks.forEach(block => { 
+                    idx++;
+                    var count = block.end - block.start + 1;
+                    var startHex = 'U+' + block.start.toString(16).toUpperCase().padStart(4, '0');
+                    var endHex = 'U+' + block.end.toString(16).toUpperCase().padStart(4, '0');
+
+                    var previewChars = [];
+                    var maxPreview = 12;
+                    for (var cp = block.start; cp <= block.end && previewChars.length < maxPreview; cp++) {
+                        if (!isDisplayable(cp)) continue;
+                        try {
+                            var ch = String.fromCodePoint(cp);
+                            previewChars.push(ch);
+                        } catch(e) {}
+                    }
+
+                    function isDisplayable(cp) {
+                        if (cp < 0x20 || (cp >= 0x7F && cp <= 0x9F)) return false;
+                        if (cp >= 0xD800 && cp <= 0xDFFF) return false;
+                        if (cp >= 0xFDD0 && cp <= 0xFDEF) return false;
+                        if ((cp & 0xFFFE) === 0xFFFE) return false;
+                        if (cp > 0x10FFFF) return false;
+                        return true;
+                    }
+                %>
+                    <div class="block-section block-section-<%= idx %>" data-start="<%= block.start %>" data-end="<%= block.end %>" data-idx="<%= idx %>">
+                        <div class="block-header" onclick="toggleBlock(<%= idx %>, <%= block.start %>, <%= block.end %>)">
+                            <span class="block-expand-icon" id="icon-<%= idx %>">&#9654;</span>
+                            <span class="block-index"><%= idx %></span>
+                            <span class="block-range"><%= startHex %> &ndash; <%= endHex %></span>
+                            <span class="block-name" id="name-<%= idx %>"><%= block.name %></span>
+                            <span class="block-preview"><% previewChars.forEach(function(ch){ %><span><%= ch %></span><% }) %></span>
+                            <span class="block-count"><%= count.toLocaleString() %></span>
+                        </div>
+                        <div class="block-char-grid" id="grid-<%= idx %>"></div>
+                    </div>
+                <% }) %>
+            <% }) %>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/stats">ಅಂಕಿಅಂಶಗಳು</a>
+                <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
+                <a href="/bug-reports">Bug Reports</a>
+                <a href="/unicode-blocks">Unicode Blocks</a>
+                <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <%= new Date().getFullYear() %> ಸಂಚಯ ಮತ್ತು ಸಂಚಿ ಫೌಂಡೇಶನ್
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var expanded = {};
+        var gridCache = {};
+        var BLOCKS = <%- JSON.stringify(blocks) %>;
+        var blockLookup = buildLookup();
+
+        function isDisplayable(cp) {
+            if (cp < 0x20 || (cp >= 0x7F && cp <= 0x9F)) return false;
+            if (cp >= 0xD800 && cp <= 0xDFFF) return false;
+            if (cp >= 0xFDD0 && cp <= 0xFDEF) return false;
+            if ((cp & 0xFFFE) === 0xFFFE) return false;
+            if (cp > 0x10FFFF) return false;
+            return true;
+        }
+
+        function buildLookup() {
+            var lookup = [];
+            for (var i = 0; i < BLOCKS.length; i++) {
+                lookup.push({
+                    start: BLOCKS[i].start,
+                    end: BLOCKS[i].end,
+                    name: BLOCKS[i].name,
+                    idx: i + 1
+                });
+            }
+            return lookup;
+        }
+
+        function findBlockForChar(cp) {
+            for (var i = 0; i < blockLookup.length; i++) {
+                if (cp >= blockLookup[i].start && cp <= blockLookup[i].end) {
+                    return blockLookup[i];
+                }
+            }
+            return null;
+        }
+
+        function toggleBlock(idx, start, end) {
+            var grid = document.getElementById('grid-' + idx);
+            var icon = document.getElementById('icon-' + idx);
+
+            if (expanded[idx]) {
+                grid.classList.remove('open');
+                icon.classList.remove('open');
+                expanded[idx] = false;
+                return;
+            }
+
+            expanded[idx] = true;
+            icon.classList.add('open');
+
+            if (gridCache[idx]) {
+                grid.innerHTML = gridCache[idx];
+                grid.classList.add('open');
+                return;
+            }
+
+            grid.innerHTML = '<div style="text-align:center;padding:20px;color:var(--text-color)">Loading <i class="fas fa-spinner fa-pulse"></i></div>';
+            grid.classList.add('open');
+
+            var total = end - start + 1;
+            var limited = total > 2000;
+            var max = limited ? 2000 : total;
+
+            setTimeout(function() {
+                var html = '<div style="margin-bottom:8px;font-size:0.85rem;color:var(--text-color)">';
+                html += '<strong>' + total.toLocaleString() + '</strong> code points in this block';
+                if (limited) html += ' &mdash; showing first 2,000 (<button onclick="expandFullBlock(' + idx + ',' + start + ',' + end + ')" style="background:none;border:none;color:var(--primary-color);cursor:pointer;text-decoration:underline;padding:0;font:inherit">show all</button>)';
+                html += '</div>';
+                html += '<div class="char-grid">';
+                var shown = 0;
+                for (var cp = start; cp <= end && shown < max; cp++) {
+                    if (!isDisplayable(cp)) continue;
+                    try {
+                        var ch = String.fromCodePoint(cp);
+                        var hex = 'U+' + cp.toString(16).toUpperCase().padStart(4, '0');
+                        html += '<div class="char-cell" data-cp="' + cp + '"><span class="char">' + ch + '</span><span class="char-hex">' + hex + '</span></div>';
+                        shown++;
+                    } catch(e) {}
+                }
+                html += '</div>';
+                grid.innerHTML = html;
+                gridCache[idx] = html;
+            }, 10);
+        }
+
+        function expandFullBlock(idx, start, end) {
+            expanded[idx] = false;
+            gridCache[idx] = null;
+            toggleBlock(idx, start, end);
+        }
+
+        function findAndScrollToBlock(cp, ch) {
+            var block = findBlockForChar(cp);
+            if (!block) return false;
+
+            var section = document.querySelector('div.block-section[data-start="' + block.start + '"]');
+            if (!section) return false;
+
+            var idx = parseInt(section.dataset.idx);
+            var nameEl = document.getElementById('name-' + idx);
+            if (nameEl) {
+                allBlocks.forEach(function(s) { s.style.display = ''; });
+                var catHeaders = document.querySelectorAll('.category-header-block');
+                catHeaders.forEach(function(h) { h.style.display = ''; });
+                section.style.display = '';
+                document.getElementById('noResults').style.display = 'none';
+
+                section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                if (!expanded[idx]) {
+                    toggleBlock(idx, block.start, block.end);
+                }
+
+                var charMatchHint = document.getElementById('charMatchHint');
+                charMatchHint.style.display = 'block';
+                charMatchHint.innerHTML = 'Character <strong>' + ch + '</strong> (U+' + cp.toString(16).toUpperCase().padStart(4, '0') + ') found in block <strong>' + block.name + '</strong>';
+
+                setTimeout(function() {
+                    var grid = document.getElementById('grid-' + idx);
+                    if (grid) {
+                        var cells = grid.querySelectorAll('.char-cell');
+                        cells.forEach(function(cell) {
+                            if (parseInt(cell.dataset.cp) === cp) {
+                                cell.classList.add('highlight');
+                                cell.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                        });
+                    }
+                }, 100);
+            }
+            return true;
+        }
+
+        var searchInput = document.getElementById('blocksSearch');
+        var allBlocks = document.querySelectorAll('.blocks-list > .block-section');
+
+        function updateSearch(q) {
+            var anyVisible = false;
+            var charMatchHint = document.getElementById('charMatchHint');
+
+            var chars = [];
+            for (var i = 0; i < q.length; i++) {
+                var cp = q.charCodeAt(i);
+                if (cp > 127 || (cp >= 0x30 && cp <= 0x39)) {
+                    if (i + 1 < q.length && q.charCodeAt(i) >= 0xD800 && q.charCodeAt(i) <= 0xDBFF) {
+                        var cp2 = q.charCodeAt(i + 1);
+                        if (cp2 >= 0xDC00 && cp2 <= 0xDFFF) {
+                            cp = (cp - 0xD800) * 0x400 + (cp2 - 0xDC00) + 0x10000;
+                            i++;
+                        }
+                    }
+                    chars.push(cp);
+                }
+            }
+
+            if (chars.length > 0) {
+                for (var c = 0; c < chars.length; c++) {
+                    var found = findAndScrollToBlock(chars[c], String.fromCodePoint(chars[c]));
+                    if (found) return;
+                }
+            }
+
+            charMatchHint.style.display = 'none';
+
+            allBlocks.forEach(function(sec) {
+                if (sec.classList.contains('category-header-block')) {
+                    var next = sec.nextElementSibling;
+                    var hasVisible = false;
+                    while (next && !next.classList.contains('category-header-block')) {
+                        if (next.style.display !== 'none') {
+                            hasVisible = true;
+                            break;
+                        }
+                        next = next.nextElementSibling;
+                    }
+                    sec.style.display = hasVisible ? '' : 'none';
+                    return;
+                }
+
+                var nameEl = sec.querySelector('.block-name');
+                var rangeEl = sec.querySelector('.block-range');
+                var name = nameEl ? nameEl.textContent : '';
+                var range = rangeEl ? rangeEl.textContent : '';
+                var match = !q || (name + ' ' + range).toLowerCase().indexOf(q) !== -1;
+                sec.style.display = match ? '' : 'none';
+                if (match) anyVisible = true;
+            });
+
+            document.getElementById('noResults').style.display = (q && !anyVisible) ? 'block' : 'none';
+        }
+
+        searchInput.addEventListener('input', function() {
+            updateSearch(this.value);
+        });
+
+        var kannadaBlock = document.querySelector('div.block-section[data-start="3200"]');
+        if (kannadaBlock) {
+            var start = parseInt(kannadaBlock.dataset.start);
+            var end = parseInt(kannadaBlock.dataset.end);
+            var idx = parseInt(kannadaBlock.dataset.idx);
+            toggleBlock(idx, start, end);
+        }
+    </script>
+</body>
+</html>
