@@ -16,6 +16,8 @@ const {
     numerals
     } = require('./configuration')
 
+const unicodeBlocks = require('./unicodeBlocksData')
+
 const router = express.Router()
 
 const app = express()
@@ -332,6 +334,28 @@ router.get('/about', (req, res) => {
         page: pag
     }
     res.render('home', parsingData)
+})
+
+router.get('/unicode-blocks', (req, res) => {
+    let pag = {...pages}
+    pag.unicodeBlocksPage = true
+
+    const categories = {}
+    unicodeBlocks.forEach(block => {
+        const firstChar = block.name.charAt(0)
+        const cat = /[A-Z]/.test(firstChar) ? firstChar : '#'
+        if (!categories[cat]) categories[cat] = []
+        categories[cat].push(block)
+    })
+
+    const sortedCats = Object.keys(categories).sort()
+
+    res.render('unicodeBlocks/unicodeBlocks', {
+        page: pag,
+        blocks: unicodeBlocks,
+        categories: categories,
+        sortedCategories: sortedCats
+    })
 })
 
 router.get('/visualizations', (req, res) => {
