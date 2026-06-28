@@ -562,6 +562,9 @@
             var end = parseInt(kannadaBlock.dataset.end);
             var idx = parseInt(kannadaBlock.dataset.idx);
             toggleBlock(idx, start, end);
+            setTimeout(function() {
+                kannadaBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300);
         }
     </script>
 </body>
