@@ -244,12 +244,15 @@ const inspectFont = (fontPath, familyMetadata, stylesCount) => {
     const report = analyzeFont(fontPath)
     const errors = report.issues.filter(i => i.severity === 'error').length
     const warnings = report.issues.filter(i => i.severity === 'warning').length
-    const grade = getGrade(report.score.total, errors)
+    // Use the same grade as the live analyzer for consistency
+    const gradeMap = { A: 'Excellent', B: 'Good', C: 'Average', D: 'Poor', F: 'Critical' }
+    const colorMap = { A: '#2e7d32', B: '#388e3c', C: '#f57f17', D: '#e64a19', F: '#d32f2f' }
+    const liveGrade = report.score.grade || 'F'
     return {
       totalScore: report.score.total,
-      grade: grade.grade,
-      gradeLabel: grade.label,
-      gradeColor: grade.color,
+      grade: liveGrade,
+      gradeLabel: gradeMap[liveGrade] || 'Unknown',
+      gradeColor: colorMap[liveGrade] || '#999',
       errors,
       warnings,
       issues: report.issues,

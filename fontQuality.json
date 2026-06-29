@@ -12,9 +12,9 @@
   },
   "ATS-Bengaluru": {
     "totalScore": 84,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 2,
     "issues": [
@@ -101,9 +101,9 @@
   },
   "ATS-Chikkamagaluru": {
     "totalScore": 92,
-    "grade": "D",
-    "gradeLabel": "Poor",
-    "gradeColor": "#e64a19",
+    "grade": "A",
+    "gradeLabel": "Excellent",
+    "gradeColor": "#2e7d32",
     "errors": 5,
     "warnings": 3,
     "issues": [
@@ -180,9 +180,9 @@
   },
   "Akaya-Kanadaka": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -274,9 +274,9 @@
   },
   "AkhandKannada": {
     "totalScore": 78,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 2,
     "issues": [
@@ -379,9 +379,9 @@
   },
   "Anchu-Kannada": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -473,9 +473,9 @@
   },
   "Anek-Kannada": {
     "totalScore": 89,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -557,9 +557,9 @@
   },
   "Baloo-Tamma-2": {
     "totalScore": 84,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -646,9 +646,9 @@
   },
   "BandipurOne": {
     "totalScore": 86,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -741,9 +741,9 @@
   },
   "BelurKannada": {
     "totalScore": 71,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -850,9 +850,9 @@
   },
   "Benne": {
     "totalScore": 78,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -954,9 +954,9 @@
   },
   "Chalukya": {
     "totalScore": 52,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "D",
+    "gradeLabel": "Poor",
+    "gradeColor": "#e64a19",
     "errors": 17,
     "warnings": 3,
     "issues": [
@@ -1098,9 +1098,9 @@
   },
   "Cheluvi": {
     "totalScore": 76,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -1202,9 +1202,9 @@
   },
   "Designiga-Handwriting": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -1781,9 +1781,9 @@
   },
   "Ellara-Kannada": {
     "totalScore": 92,
-    "grade": "D",
-    "gradeLabel": "Poor",
-    "gradeColor": "#e64a19",
+    "grade": "A",
+    "gradeLabel": "Excellent",
+    "gradeColor": "#2e7d32",
     "errors": 4,
     "warnings": 3,
     "issues": [
@@ -1855,9 +1855,9 @@
   },
   "Gajamukha": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -1959,9 +1959,9 @@
   },
   "Ganga": {
     "totalScore": 69,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 14,
     "warnings": 3,
     "issues": [
@@ -2099,9 +2099,9 @@
   },
   "Gubbi": {
     "totalScore": 83,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -2188,9 +2188,9 @@
   },
   "HindMysuru": {
     "totalScore": 76,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -2292,9 +2292,9 @@
   },
   "Hoysala": {
     "totalScore": 69,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 11,
     "warnings": 3,
     "issues": [
@@ -2406,9 +2406,9 @@
   },
   "Hubballi": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -2500,9 +2500,9 @@
   },
   "Inchara": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -2589,9 +2589,9 @@
   },
   "KPRao": {
     "totalScore": 63,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 12,
     "warnings": 3,
     "issues": [
@@ -2708,9 +2708,9 @@
   },
   "Kadamba": {
     "totalScore": 50,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "D",
+    "gradeLabel": "Poor",
+    "gradeColor": "#e64a19",
     "errors": 19,
     "warnings": 3,
     "issues": [
@@ -2862,9 +2862,9 @@
   },
   "Kanishka": {
     "totalScore": 68,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 11,
     "warnings": 3,
     "issues": [
@@ -2971,9 +2971,9 @@
   },
   "KannadaPixel": {
     "totalScore": 52,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "D",
+    "gradeLabel": "Poor",
+    "gradeColor": "#e64a19",
     "errors": 16,
     "warnings": 3,
     "issues": [
@@ -3110,9 +3110,9 @@
   },
   "Karnata-Bandipur": {
     "totalScore": 76,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -3214,9 +3214,9 @@
   },
   "Karnata-F-Kittel-Font": {
     "totalScore": 75,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 11,
     "warnings": 3,
     "issues": [
@@ -3328,9 +3328,9 @@
   },
   "Karnata-German-Mission-Press": {
     "totalScore": 76,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -3432,9 +3432,9 @@
   },
   "Karnata-Wesleyan-Mission-Press": {
     "totalScore": 84,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -3526,9 +3526,9 @@
   },
   "KarnataGTN": {
     "totalScore": 82,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -3620,9 +3620,9 @@
   },
   "Kedage": {
     "totalScore": 74,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -3729,9 +3729,9 @@
   },
   "KohinoorKannada": {
     "totalScore": 77,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -3866,9 +3866,9 @@
   },
   "Lohit-Kannada": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -3955,9 +3955,9 @@
   },
   "Malige": {
     "totalScore": 74,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -4064,9 +4064,9 @@
   },
   "Murty-Kannada": {
     "totalScore": 84,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -4169,9 +4169,9 @@
   },
   "Navilu": {
     "totalScore": 78,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -4289,9 +4289,9 @@
   },
   "Nishchaya": {
     "totalScore": 66,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 11,
     "warnings": 3,
     "issues": [
@@ -4398,9 +4398,9 @@
   },
   "NotoSansKannada-Unhinted": {
     "totalScore": 88,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -4482,9 +4482,9 @@
   },
   "NotoSerifKannada-Unhinted": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 8,
     "warnings": 3,
     "issues": [
@@ -4598,9 +4598,9 @@
   },
   "Nudi-Fonts": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 7,
     "warnings": 3,
     "issues": [
@@ -4709,9 +4709,9 @@
   },
   "Padyakke-Libre": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -5830,9 +5830,9 @@
   },
   "SamaKannada": {
     "totalScore": 89,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -5914,9 +5914,9 @@
   },
   "Sampige": {
     "totalScore": 73,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -6023,9 +6023,9 @@
   },
   "SandurKannada": {
     "totalScore": 71,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#f57f17",
     "errors": 10,
     "warnings": 3,
     "issues": [
@@ -6143,9 +6143,9 @@
   },
   "Sriraju": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -6247,9 +6247,9 @@
   },
   "Tiro-Kannada": {
     "totalScore": 76,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -6346,9 +6346,9 @@
   },
   "Tunga": {
     "totalScore": 80,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 9,
     "warnings": 3,
     "issues": [
@@ -6450,9 +6450,9 @@
   },
   "nlci-knda-badami": {
     "totalScore": 81,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -6534,9 +6534,9 @@
   },
   "Nanni-Indic": {
     "totalScore": 84,
-    "grade": "F",
-    "gradeLabel": "Critical",
-    "gradeColor": "#d32f2f",
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#388e3c",
     "errors": 6,
     "warnings": 3,
     "issues": [
@@ -6618,9 +6618,9 @@
   },
   "Fit-Kannada": {
     "totalScore": 90,
-    "grade": "D",
-    "gradeLabel": "Poor",
-    "gradeColor": "#e64a19",
+    "grade": "A",
+    "gradeLabel": "Excellent",
+    "gradeColor": "#2e7d32",
     "errors": 4,
     "warnings": 2,
     "issues": [
