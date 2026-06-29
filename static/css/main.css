@@ -22,6 +22,9 @@
   --primary-gradient: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 8px 30px rgba(67, 97, 238, 0.15);
+  --primary-color: #4361ee;
+  --bg-color: #f8f9fa;
+  --text-color: #4a4a68;
 }
 
 body.dark {
@@ -45,6 +48,9 @@ body.dark {
   --grid-list: #7b8cff;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   --card-shadow-hover: 0 8px 30px rgba(123, 140, 255, 0.2);
+  --primary-color: #7b8cff;
+  --bg-color: #1e1e2e;
+  --text-color: rgba(255, 255, 255, 0.7);
 }
 
 * {
