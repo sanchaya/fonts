@@ -1057,12 +1057,12 @@ nav {
   color: var(--border-color);
 }
 
-.font .header :last-child {
-  color: var(--border-color);
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: small;
+.font .header .n-styles {
+    color: var(--border-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
 }
 
 .font .header .license-open,
@@ -1281,6 +1281,184 @@ body.dark .font .header .license-proprietary {
   color: var(--text-color1);
   margin: 20px 0;
   font-weight: 500;
+}
+
+/* Font Quality Badges */
+.quality-badge-card {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.quality-badge-inline {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+}
+
+.quality-score-text {
+    font-size: 13px;
+    color: var(--span-color);
+    margin-left: 4px;
+}
+
+.quality-badge-sm {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: default;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+
+.quality-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 100;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.quality-tooltip strong {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.quality-badge-sm:hover .quality-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+body.dark .quality-tooltip {
+    background: #333;
+}
+
+/* Detail page quality section */
+.quality-section {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+body.dark .quality-section {
+    background: #1e1e2e;
+}
+
+.quality-section h4 {
+    margin-bottom: 15px;
+    color: var(--text-color1);
+}
+
+.quality-overview {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.quality-badge-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 12px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.quality-grade {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.quality-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.quality-score {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.quality-breakdown {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quality-metric-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.quality-metric-label {
+    color: var(--text-color1);
+    font-weight: 500;
+}
+
+.quality-metric-value {
+    color: var(--span-color);
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.quality-bar-track {
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.quality-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4361ee, #7b8cff);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+body.dark .quality-bar-track {
+    background: #3a3a4a;
+}
+
+.quality-metric {
+    margin-bottom: 4px;
 }
 
 .bug-reports-tab {

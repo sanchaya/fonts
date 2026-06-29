@@ -94,6 +94,15 @@
                         isAksharaStudio = true;
                     }
                     %>
+                    <% if (typeof fontQuality !== 'undefined' && fontQuality && fontQuality.totalScore !== undefined) { %>
+                    <div class="meta-item">
+                        <span class="meta-label">Quality</span>
+                        <span class="meta-value">
+                            <span class="quality-badge-inline" style="background: <%= fontQuality.gradeColor %>; color: #fff;"><%= fontQuality.grade %></span>
+                            <span class="quality-score-text"><%= fontQuality.totalScore %>% - <%= fontQuality.gradeLabel %></span>
+                        </span>
+                    </div>
+                    <% } %>
                     <% if(isOpenSource && !isAksharaStudio && downloadUrl) { %>
                     <div class="meta-item">
                         <span class="meta-label">Download</span>
@@ -107,14 +116,15 @@
         <%- include('fontSelectedPage/fontSelectedPage',{
             syllabary:syllabary,
             conjuncts:conjuncts,
-            overview:overview
+            overview:overview,
+            fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null
         }) %>
     <% }else if(page.fontShowPage){%>
         <%- include('fontShowPage/fontShowPage') %>
     <% }else if(page.errorPage){ %>
         <h2 class="text-danger" style="text-align: center;"><%= msg %></h2>
     <% }else if(page.fontFamilyPage){ %>
-        <%- include('fontFamilyPage/fontFamilyPage', {data: data}) %>
+        <%- include('fontFamilyPage/fontFamilyPage', {data: data, fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null}) %>
     <% } %>
 
     <footer class="site-footer">

@@ -7,6 +7,7 @@ let fontsCacheTime = 0
 const CACHE_TTL = 60000
 
 let metadataCache = null
+let qualityCache = null
 const getMetadata = () => {
     if (metadataCache) return metadataCache
     try {
@@ -16,6 +17,16 @@ const getMetadata = () => {
         metadataCache = {}
     }
     return metadataCache
+}
+
+const getQualityCache = () => {
+    if (qualityCache) return qualityCache
+    try {
+        qualityCache = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'fontQuality.json')))
+    } catch {
+        qualityCache = {}
+    }
+    return qualityCache
 }
 
 const getLicenseType = (license) => {
@@ -153,6 +164,8 @@ var getFonts = (val, page, filters = {}) =>{
     let result = filter.map( data => {
         const first_font = data['fonts'][0]['font']
         const fontMeta = metadata[data.link] || {}
+        const qData = getQualityCache()
+        const quality = qData[data.link] || null
         const obj = {
             font: first_font,
             family: data.family,
@@ -163,7 +176,13 @@ var getFonts = (val, page, filters = {}) =>{
             licenseType: getLicenseType(fontMeta.license),
             license: fontMeta.license || '',
             category: getFontCategory(data.family, metadata),
-            isVariable: data.fonts.some(f => /\b(variable|var)\b/i.test(f.font))
+            isVariable: data.fonts.some(f => /\b(variable|var)\b/i.test(f.font)),
+            quality: quality ? {
+                totalScore: quality.totalScore,
+                grade: quality.grade,
+                gradeLabel: quality.gradeLabel,
+                gradeColor: quality.gradeColor
+            } : null
         }
         return obj
     })

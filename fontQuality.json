@@ -1,0 +1,4704 @@
+{
+  "ATS-Bandipura": {
+    "error": "No font files found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "ATS-Bengaluru": {
+    "totalScore": 84.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 14,
+        "total": 14,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "dlig",
+          "fwid",
+          "haln",
+          "psts",
+          "rphf",
+          "abvm",
+          "blwm",
+          "dist",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1024,
+        "ascender": 704,
+        "descender": -512,
+        "glyphCount": 727
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "ATSBengaluru-DotBold.ttf",
+    "familyName": "ATS Bengaluru"
+  },
+  "ATS-Chikkamagaluru": {
+    "totalScore": 87.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 10,
+        "max": 15,
+        "covered": 24,
+        "total": 24,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "frac",
+          "haln",
+          "locl",
+          "nukt",
+          "ordn",
+          "pres",
+          "psts",
+          "rphf",
+          "sinf",
+          "ss01",
+          "ss02",
+          "subs",
+          "sups",
+          "tnum",
+          "abvm",
+          "blwm",
+          "dist",
+          "kern",
+          "mark"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 1800,
+        "descender": -1204,
+        "glyphCount": 3745
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "ATSChikkamagaluru-ColorRegular.ttf",
+    "familyName": "ATS Chikkamagaluru Color"
+  },
+  "Akaya-Kanadaka": {
+    "totalScore": 78.6,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.875,
+        "max": 35,
+        "covered": 80,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 23,
+        "total": 23,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "blwf",
+          "blws",
+          "case",
+          "ccmp",
+          "frac",
+          "haln",
+          "liga",
+          "lnum",
+          "locl",
+          "nukt",
+          "onum",
+          "ordn",
+          "psts",
+          "rphf",
+          "salt",
+          "ss01",
+          "sups",
+          "blwm",
+          "dist",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 920,
+        "descender": -276,
+        "glyphCount": 836
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "AkayaKanadaka-Regular.ttf",
+    "familyName": "Akaya Kanadaka"
+  },
+  "AkhandKannada": {
+    "totalScore": 78.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.1578947368421053,
+        "max": 5,
+        "covered": 41,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 4.5,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "haln",
+          "pres",
+          "rphf",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1050,
+        "descender": -450,
+        "glyphCount": 577
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "AkhandKannada-Black.ttf",
+    "familyName": "Akhand Kannada Black"
+  },
+  "Ambarisha": {
+    "error": "Failed to inspect font",
+    "totalScore": 0,
+    "grade": "F",
+    "gradeLabel": "Error",
+    "gradeColor": "#999"
+  },
+  "Anchu-Kannada": {
+    "totalScore": 78.1,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 800,
+        "descender": -450,
+        "glyphCount": 627
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "ANCHU.otf",
+    "familyName": "ANCHU"
+  },
+  "Anek-Kannada": {
+    "totalScore": 87.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 10.5,
+        "max": 15,
+        "covered": 29,
+        "total": 29,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "case",
+          "ccmp",
+          "dlig",
+          "dnom",
+          "frac",
+          "haln",
+          "liga",
+          "numr",
+          "ordn",
+          "pres",
+          "psts",
+          "rphf",
+          "rvrn",
+          "salt",
+          "sinf",
+          "ss01",
+          "subs",
+          "sups",
+          "tnum",
+          "zero",
+          "blwm",
+          "dist",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2000,
+        "ascender": 2030,
+        "descender": -1310,
+        "glyphCount": 820
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "AnekKannada-VariableFont_wdth,wght.ttf",
+    "familyName": "Anek Kannada Medium"
+  },
+  "Baloo-Tamma-2": {
+    "totalScore": 84.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 8,
+        "max": 15,
+        "covered": 22,
+        "total": 22,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "blwf",
+          "blws",
+          "dnom",
+          "frac",
+          "haln",
+          "liga",
+          "locl",
+          "numr",
+          "ordn",
+          "pres",
+          "psts",
+          "rphf",
+          "salt",
+          "sinf",
+          "ss01",
+          "subs",
+          "sups",
+          "tnum",
+          "blwm",
+          "dist",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1050,
+        "descender": -673,
+        "glyphCount": 1194
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "BalooTamma2-Bold.ttf",
+    "familyName": "Baloo Tamma 2"
+  },
+  "BandipurOne": {
+    "totalScore": 85.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 10,
+        "max": 15,
+        "covered": 12,
+        "total": 12,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "dlig",
+          "half",
+          "haln",
+          "liga",
+          "psts",
+          "rphf",
+          "blwm",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -500,
+        "glyphCount": 620
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "BandipurOne.ttf",
+    "familyName": "BandipurOne"
+  },
+  "Baraha-Kannada": {
+    "error": "No font files found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "BelurKannada": {
+    "totalScore": 75.9,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.263157894736842,
+        "max": 5,
+        "covered": 43,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 4.5,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "haln",
+          "pres",
+          "rphf",
+          "blwm",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -600,
+        "glyphCount": 526
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "BelurKannada-Bold.ttf",
+    "familyName": "Belur Kannada Bold"
+  },
+  "Benne": {
+    "totalScore": 81.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 5.5,
+        "max": 15,
+        "covered": 16,
+        "total": 16,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "blwf",
+          "c2sc",
+          "dlig",
+          "frac",
+          "haln",
+          "locl",
+          "ordn",
+          "pres",
+          "rphf",
+          "sinf",
+          "smcp",
+          "subs",
+          "sups",
+          "dist",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 630,
+        "descender": -370,
+        "glyphCount": 948
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Benne-Regular.ttf",
+    "familyName": "Benne"
+  },
+  "Chalukya": {
+    "totalScore": 53.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 22.96875,
+        "max": 35,
+        "covered": 84,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.285714285714285,
+        "max": 15,
+        "covered": 60,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0.05263157894736842,
+        "max": 5,
+        "covered": 1,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 1.5,
+        "max": 15,
+        "covered": 4,
+        "total": 4,
+        "label": "OpenType Features",
+        "features": [
+          "ccmp",
+          "liga",
+          "kern",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 4,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2691,
+        "descender": -2250,
+        "glyphCount": 444
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#e65100",
+    "fontFile": "Chalukya-Vijayaditya.ttf",
+    "familyName": "Chalukya vijaydity"
+  },
+  "Cheluvi": {
+    "totalScore": 68.9,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7.5,
+        "max": 15,
+        "covered": 8,
+        "total": 8,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 1727,
+        "descender": -1865,
+        "glyphCount": 327
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C+",
+    "gradeLabel": "Satisfactory",
+    "gradeColor": "#f57f17",
+    "fontFile": "Cheluvi.ttf",
+    "familyName": "Cheluvi"
+  },
+  "Designiga-Handwriting": {
+    "totalScore": 78.6,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.875,
+        "max": 35,
+        "covered": 80,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 23,
+        "total": 23,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "blwf",
+          "blws",
+          "case",
+          "ccmp",
+          "frac",
+          "haln",
+          "liga",
+          "lnum",
+          "locl",
+          "nukt",
+          "onum",
+          "ordn",
+          "psts",
+          "rphf",
+          "salt",
+          "ss01",
+          "sups",
+          "blwm",
+          "dist",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 920,
+        "descender": -276,
+        "glyphCount": 838
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "DesignigaHandwritting-Regular.260226-1755-SVG.ttf",
+    "familyName": "Designiga Handwritting"
+  },
+  "DevamaNew": {
+    "totalScore": 36.9,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 0,
+        "max": 35,
+        "covered": 0,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 0,
+        "max": 15,
+        "covered": 0,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.1578947368421053,
+        "max": 5,
+        "covered": 41,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blwf",
+          "blws",
+          "half",
+          "haln",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2542,
+        "descender": -898,
+        "glyphCount": 619
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "D",
+    "gradeLabel": "Poor",
+    "gradeColor": "#c62828",
+    "fontFile": "Devama.otf",
+    "familyName": "Devama"
+  },
+  "Ek-Kannada": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Ellara-Kannada": {
+    "totalScore": 89.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.8828125,
+        "max": 35,
+        "covered": 91,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 11.5,
+        "max": 15,
+        "covered": 18,
+        "total": 18,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "half",
+          "haln",
+          "locl",
+          "nukt",
+          "psts",
+          "rphf",
+          "abvm",
+          "curs",
+          "dist",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 809,
+        "descender": -540,
+        "glyphCount": 770
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Ellara-Kannada.ttf",
+    "familyName": "Ellara Kannada"
+  },
+  "Gajamukha": {
+    "totalScore": 83.5,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.2421875,
+        "max": 35,
+        "covered": 85,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.947368421052632,
+        "max": 5,
+        "covered": 94,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7.5,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "psts",
+          "rphf",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 593
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Gajamukha Full.otf",
+    "familyName": "Gajamukha Full"
+  },
+  "Ganga": {
+    "totalScore": 55.6,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 22.96875,
+        "max": 35,
+        "covered": 84,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.047619047619047,
+        "max": 15,
+        "covered": 59,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0.05263157894736842,
+        "max": 5,
+        "covered": 1,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 3.5,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blws",
+          "ccmp",
+          "dist",
+          "kern",
+          "mark"
+        ]
+      },
+      "metadata": {
+        "score": 6,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 6,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2500,
+        "ascender": 2896,
+        "descender": -2756,
+        "glyphCount": 1128
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#e65100",
+    "fontFile": "Gangga Marasimha.ttf",
+    "familyName": "GANGGA"
+  },
+  "Gok-Kannada-Fonts": {
+    "error": "Failed to inspect font",
+    "totalScore": 0,
+    "grade": "F",
+    "gradeLabel": "Error",
+    "gradeColor": "#999"
+  },
+  "Gubbi": {
+    "totalScore": 74.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.515625,
+        "max": 35,
+        "covered": 86,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 8,
+        "max": 15,
+        "covered": 11,
+        "total": 11,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf",
+          "    ",
+          "blwm",
+          "dist",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 1991,
+        "descender": -1736,
+        "glyphCount": 468
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Gubbi.ttf",
+    "familyName": "Gubbi"
+  },
+  "HindMysuru": {
+    "totalScore": 82,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 22.96875,
+        "max": 35,
+        "covered": 84,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 4,
+        "max": 15,
+        "covered": 5,
+        "total": 5,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "haln",
+          "pres",
+          "rphf",
+          "blwm"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1200,
+        "descender": -800,
+        "glyphCount": 824
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "HindMysuru-Bold.otf",
+    "familyName": "Hind Mysuru"
+  },
+  "Hoysala": {
+    "totalScore": 60.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0.05263157894736842,
+        "max": 5,
+        "covered": 1,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 1,
+        "max": 15,
+        "covered": 3,
+        "total": 3,
+        "label": "OpenType Features",
+        "features": [
+          "ccmp",
+          "kern",
+          "mark"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2950,
+        "descender": -2227,
+        "glyphCount": 711
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C+",
+    "gradeLabel": "Satisfactory",
+    "gradeColor": "#f57f17",
+    "fontFile": "Hoysala-Regular.ttf",
+    "familyName": "Hoysala"
+  },
+  "Hubballi": {
+    "totalScore": 79.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 12,
+        "total": 12,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "frac",
+          "haln",
+          "liga",
+          "pres",
+          "rphf",
+          "sups",
+          "abvm",
+          "blwm",
+          "dist",
+          "kern",
+          "mark"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 765,
+        "descender": -191,
+        "glyphCount": 859
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Hubballi-Regular.ttf",
+    "familyName": "Hubballi"
+  },
+  "Inchara": {
+    "totalScore": 77.7,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.2105263157894735,
+        "max": 5,
+        "covered": 42,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.75,
+        "max": 5,
+        "covered": 15,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 8,
+        "max": 15,
+        "covered": 11,
+        "total": 11,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "liga",
+          "psts",
+          "rphf",
+          "abvm",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -800,
+        "glyphCount": 425
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "inchara.ttf",
+    "familyName": "INCHARA"
+  },
+  "KPRao": {
+    "totalScore": 66.5,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.2421875,
+        "max": 35,
+        "covered": 85,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 1,
+        "max": 15,
+        "covered": 1,
+        "total": 1,
+        "label": "OpenType Features",
+        "features": [
+          "abvs"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1024,
+        "ascender": 850,
+        "descender": -702,
+        "glyphCount": 449
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C+",
+    "gradeLabel": "Satisfactory",
+    "gradeColor": "#f57f17",
+    "fontFile": "AK-Kannada.ttf",
+    "familyName": "AK-Kannada"
+  },
+  "Kadamba": {
+    "totalScore": 52.5,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.875,
+        "max": 35,
+        "covered": 80,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.047619047619047,
+        "max": 15,
+        "covered": 59,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0.05263157894736842,
+        "max": 5,
+        "covered": 1,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 1.5,
+        "max": 15,
+        "covered": 4,
+        "total": 4,
+        "label": "OpenType Features",
+        "features": [
+          "ccmp",
+          "liga",
+          "kern",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 4,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 3377,
+        "descender": -3184,
+        "glyphCount": 1268
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#e65100",
+    "fontFile": "Kadamba-Kakusthavarman.ttf",
+    "familyName": "Kakusthavarman"
+  },
+  "Kanishka": {
+    "totalScore": 87.5,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 34.7265625,
+        "max": 35,
+        "covered": 127,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 5,
+        "max": 15,
+        "covered": 5,
+        "total": 5,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blwf",
+          "psts",
+          "kern",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1050,
+        "ascender": 799,
+        "descender": -490,
+        "glyphCount": 356
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Kanishka.ttf",
+    "familyName": "Kanishka"
+  },
+  "KannadaPixel": {
+    "totalScore": 54.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.6015625,
+        "max": 35,
+        "covered": 79,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0.05263157894736842,
+        "max": 5,
+        "covered": 1,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 0,
+        "max": 15,
+        "covered": 0,
+        "total": 0,
+        "label": "OpenType Features",
+        "features": []
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 6,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1024,
+        "ascender": 922,
+        "descender": -102,
+        "glyphCount": 83
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "C",
+    "gradeLabel": "Average",
+    "gradeColor": "#e65100",
+    "fontFile": "KannadaPixel.otf",
+    "familyName": "Kannada Pixel"
+  },
+  "Karnata-Bandipur": {
+    "totalScore": 79.2,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.0546875,
+        "max": 35,
+        "covered": 77,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.523809523809524,
+        "max": 15,
+        "covered": 61,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.631578947368421,
+        "max": 5,
+        "covered": 88,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.5,
+        "max": 5,
+        "covered": 14,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6.5,
+        "max": 15,
+        "covered": 8,
+        "total": 8,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -600,
+        "glyphCount": 810
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "KarnataBandipur.otf",
+    "familyName": "Karnata Bandipur\n"
+  },
+  "Karnata-F-Kittel-Font": {
+    "totalScore": 76.7,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.6015625,
+        "max": 35,
+        "covered": 79,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.631578947368421,
+        "max": 5,
+        "covered": 88,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.25,
+        "max": 5,
+        "covered": 13,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 4.5,
+        "max": 15,
+        "covered": 5,
+        "total": 5,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1024,
+        "ascender": 671,
+        "descender": -389,
+        "glyphCount": 592
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Karnata F Kittel.ttf",
+    "familyName": "Karnata F Kittel"
+  },
+  "Karnata-German-Mission-Press": {
+    "totalScore": 74.2,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.0546875,
+        "max": 35,
+        "covered": 77,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.523809523809524,
+        "max": 15,
+        "covered": 61,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 3.894736842105263,
+        "max": 5,
+        "covered": 74,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 700,
+        "descender": -800,
+        "glyphCount": 587
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "KarnataGermanMissionPressTypeface.ttf",
+    "familyName": "Karnata German Mission Press"
+  },
+  "Karnata-Wesleyan-Mission-Press": {
+    "totalScore": 82.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.8828125,
+        "max": 35,
+        "covered": 91,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.684210526315789,
+        "max": 5,
+        "covered": 89,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.75,
+        "max": 5,
+        "covered": 15,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6.5,
+        "max": 15,
+        "covered": 8,
+        "total": 8,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1080,
+        "descender": -500,
+        "glyphCount": 602
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "KarnataWesleyanMissionPress.ttf",
+    "familyName": "Karnata Wesleyan Mission Press"
+  },
+  "KarnataGTN": {
+    "totalScore": 80.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.8828125,
+        "max": 35,
+        "covered": 91,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.684210526315789,
+        "max": 5,
+        "covered": 89,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.75,
+        "max": 5,
+        "covered": 15,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 980,
+        "descender": -500,
+        "glyphCount": 551
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "KarnataGTN-Black.ttf",
+    "familyName": "Karnata GTN"
+  },
+  "Kedage": {
+    "totalScore": 71.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 6,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 548
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Kedage-b.ttf",
+    "familyName": "Kedage"
+  },
+  "KohinoorKannada": {
+    "totalScore": 79.5,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.515625,
+        "max": 35,
+        "covered": 86,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 5,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "haln",
+          "liga",
+          "pres",
+          "rphf",
+          "blwm",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1050,
+        "descender": -350,
+        "glyphCount": 538
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "KohinoorKannada-Bold.ttf",
+    "familyName": "Kohinoor Kannada"
+  },
+  "Kolar": {
+    "error": "Failed to inspect font",
+    "totalScore": 0,
+    "grade": "F",
+    "gradeLabel": "Error",
+    "gradeColor": "#999"
+  },
+  "Kuvempu-Praja": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Lava-Kannada": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Lohit-Kannada": {
+    "totalScore": 76,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.515625,
+        "max": 35,
+        "covered": 86,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.263157894736842,
+        "max": 5,
+        "covered": 43,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 9.5,
+        "max": 15,
+        "covered": 10,
+        "total": 10,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "pstf",
+          "psts",
+          "rphf",
+          "blwm",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1024,
+        "ascender": 900,
+        "descender": -700,
+        "glyphCount": 651
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Lohit-Kannada.ttf",
+    "familyName": "Lohit Kannada"
+  },
+  "Malige": {
+    "totalScore": 71.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 6,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 548
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Malige-b.ttf",
+    "familyName": "Mallige"
+  },
+  "Murty-Kannada": {
+    "totalScore": 84.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7.5,
+        "max": 15,
+        "covered": 13,
+        "total": 13,
+        "label": "OpenType Features",
+        "features": [
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "dist",
+          "haln",
+          "liga",
+          "psts",
+          "rphf",
+          "sups",
+          "abvm",
+          "blwm",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 755,
+        "descender": -245,
+        "glyphCount": 916
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Murty-Kannada.otf",
+    "familyName": "Murty Kannada"
+  },
+  "NLCI-Kaveri": {
+    "error": "Failed to inspect font",
+    "totalScore": 0,
+    "grade": "F",
+    "gradeLabel": "Error",
+    "gradeColor": "#999"
+  },
+  "Navilu": {
+    "totalScore": 74.2,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.875,
+        "max": 35,
+        "covered": 80,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 549
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Navilu.ttf",
+    "familyName": "Navilu"
+  },
+  "Nirmala-UI": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Nishchaya": {
+    "totalScore": 72.7,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 34.7265625,
+        "max": 35,
+        "covered": 127,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 0,
+        "max": 5,
+        "covered": 0,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 5,
+        "max": 15,
+        "covered": 5,
+        "total": 5,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blwf",
+          "psts",
+          "kern",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1050,
+        "ascender": 748,
+        "descender": -516,
+        "glyphCount": 217
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Nishchaya.ttf",
+    "familyName": "Nishchaya"
+  },
+  "NotoSansKannada-Unhinted": {
+    "totalScore": 82.6,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.515625,
+        "max": 35,
+        "covered": 86,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.0526315789473686,
+        "max": 5,
+        "covered": 39,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 4.5,
+        "max": 5,
+        "covered": 18,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 9.5,
+        "max": 15,
+        "covered": 11,
+        "total": 11,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "half",
+          "haln",
+          "nukt",
+          "psts",
+          "rphf",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 1656,
+        "descender": -1105,
+        "glyphCount": 451
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "NotoSansKannada-Bold.ttf",
+    "familyName": "Noto Sans Kannada"
+  },
+  "NotoSerifKannada-Unhinted": {
+    "totalScore": 79.8,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.0526315789473686,
+        "max": 5,
+        "covered": 39,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 4.5,
+        "max": 5,
+        "covered": 18,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6.5,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "akhn",
+          "blwf",
+          "haln",
+          "pres",
+          "rphf",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 1953,
+        "descender": -1468,
+        "glyphCount": 439
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "NotoSerifKannada-Bold.ttf",
+    "familyName": "Noto Serif Kannada"
+  },
+  "November-Kannada": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "NovemberStencil-Kannada": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Nudi-Fonts": {
+    "totalScore": 75.7,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.2105263157894735,
+        "max": 5,
+        "covered": 42,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.75,
+        "max": 5,
+        "covered": 15,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 8,
+        "max": 15,
+        "covered": 11,
+        "total": 11,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "liga",
+          "psts",
+          "rphf",
+          "abvm",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 700,
+        "descender": -525,
+        "glyphCount": 425
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "NUDI UNI 01E BOLD.ttf",
+    "familyName": "NudiUni01e"
+  },
+  "October-Kannada": {
+    "error": "Font directory not found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "PRAKASHAK": {
+    "error": "No font files found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Padyakke-Libre": {
+    "totalScore": 83.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6.5,
+        "max": 15,
+        "covered": 27,
+        "total": 27,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "blwf",
+          "ccmp",
+          "dnom",
+          "frac",
+          "haln",
+          "liga",
+          "locl",
+          "mgrk",
+          "numr",
+          "ordn",
+          "pres",
+          "rphf",
+          "ss01",
+          "ss02",
+          "ss03",
+          "ss04",
+          "ss05",
+          "ss06",
+          "ss07",
+          "ss08",
+          "sups",
+          "swsh",
+          "zero",
+          "dist",
+          "kern",
+          "mark"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 813,
+        "descender": -628,
+        "glyphCount": 996
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "PadyakkeExpandedOne-Regular.ttf",
+    "familyName": "Padyakke Expanded One"
+  },
+  "Praja": {
+    "totalScore": 33,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 0,
+        "max": 35,
+        "covered": 0,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 0,
+        "max": 15,
+        "covered": 0,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 0,
+        "max": 15,
+        "covered": 0,
+        "total": 0,
+        "label": "OpenType Features",
+        "features": []
+      },
+      "metadata": {
+        "score": 5,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 627,
+        "descender": -377,
+        "glyphCount": 247
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "F",
+    "gradeLabel": "Very Poor",
+    "gradeColor": "#b71c1c",
+    "fontFile": "ufonts.com_praja.ttf",
+    "familyName": "Praja"
+  },
+  "Raavi": {
+    "totalScore": 43,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 0,
+        "max": 35,
+        "covered": 0,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 0,
+        "max": 15,
+        "covered": 0,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 6,
+        "max": 15,
+        "covered": 8,
+        "total": 8,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blwf",
+          "blws",
+          "haln",
+          "nukt",
+          "pstf",
+          "abvm",
+          "blwm"
+        ]
+      },
+      "metadata": {
+        "score": 9,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 459
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "D",
+    "gradeLabel": "Poor",
+    "gradeColor": "#c62828",
+    "fontFile": "raavi-bold-unicode-kannada-font.ttf",
+    "familyName": "Raavi"
+  },
+  "SakalBharati": {
+    "totalScore": 93,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 23.7890625,
+        "max": 35,
+        "covered": 87,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 4.25,
+        "max": 5,
+        "covered": 17,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 17,
+        "max": 15,
+        "covered": 26,
+        "total": 26,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blwm",
+          "blws",
+          "calt",
+          "ccmp",
+          "cjct",
+          "fina",
+          "half",
+          "haln",
+          "init",
+          "isol",
+          "liga",
+          "medi",
+          "nukt",
+          "pres",
+          "pstf",
+          "psts",
+          "rkrf",
+          "rlig",
+          "rphf",
+          "vatu",
+          "abvm",
+          "dist",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2600,
+        "descender": -1870,
+        "glyphCount": 4426
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "A",
+    "gradeLabel": "Excellent",
+    "gradeColor": "#2e7d32",
+    "fontFile": "SakalBharati.ttf",
+    "familyName": "SakalBharati"
+  },
+  "SamaKannada": {
+    "totalScore": 88.3,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.3359375,
+        "max": 35,
+        "covered": 89,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 11,
+        "max": 15,
+        "covered": 29,
+        "total": 29,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "c2sc",
+          "case",
+          "ccmp",
+          "dlig",
+          "dnom",
+          "frac",
+          "haln",
+          "liga",
+          "locl",
+          "numr",
+          "ordn",
+          "pres",
+          "psts",
+          "rphf",
+          "salt",
+          "sinf",
+          "smcp",
+          "subs",
+          "sups",
+          "tnum",
+          "blwm",
+          "dist",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1130,
+        "descender": -532,
+        "glyphCount": 1538
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "SamaKannada-Bold.ttf",
+    "familyName": "Sama Kannada"
+  },
+  "Sampige": {
+    "totalScore": 70.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 1.5263157894736843,
+        "max": 5,
+        "covered": 29,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 2.75,
+        "max": 5,
+        "covered": 11,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 5,
+        "max": 15,
+        "covered": 6,
+        "total": 6,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "blwf",
+          "blws",
+          "psts",
+          "rphf",
+          "blwm"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 620,
+        "descender": -380,
+        "glyphCount": 388
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Sampige.ttf",
+    "familyName": "Sampige"
+  },
+  "SandurKannada": {
+    "totalScore": 75.1,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.328125,
+        "max": 35,
+        "covered": 78,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 14.761904761904761,
+        "max": 15,
+        "covered": 62,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2,
+        "max": 5,
+        "covered": 38,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 4,
+        "max": 15,
+        "covered": 5,
+        "total": 5,
+        "label": "OpenType Features",
+        "features": [
+          "blwf",
+          "haln",
+          "pres",
+          "rphf",
+          "blwm"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -600,
+        "glyphCount": 510
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "SandurKannada-Bold.ttf",
+    "familyName": "Sandur Kannada Bold"
+  },
+  "Shreelipi": {
+    "error": "No font files found",
+    "totalScore": 0,
+    "grade": "N/A",
+    "gradeLabel": "Not Available",
+    "gradeColor": "#999"
+  },
+  "Sriraju": {
+    "totalScore": 79.1,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 22.1484375,
+        "max": 35,
+        "covered": 81,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 4,
+        "max": 5,
+        "covered": 16,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7,
+        "max": 15,
+        "covered": 7,
+        "total": 7,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf"
+        ]
+      },
+      "metadata": {
+        "score": 8,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 750,
+        "descender": -500,
+        "glyphCount": 978
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "SRIRAJBI.ttf",
+    "familyName": "SriRajuBoldItalicUnicode"
+  },
+  "Tiro-Kannada": {
+    "totalScore": 83.6,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.609375,
+        "max": 35,
+        "covered": 90,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 8,
+        "max": 15,
+        "covered": 24,
+        "total": 24,
+        "label": "OpenType Features",
+        "features": [
+          "akhn",
+          "blwf",
+          "blwm",
+          "blws",
+          "c2sc",
+          "case",
+          "ccmp",
+          "dlig",
+          "dnom",
+          "frac",
+          "haln",
+          "liga",
+          "lnum",
+          "locl",
+          "numr",
+          "psts",
+          "rphf",
+          "smcp",
+          "ss02",
+          "ss05",
+          "sups",
+          "abvm",
+          "dist",
+          "kern"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 755,
+        "descender": -245,
+        "glyphCount": 1240
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "TiroKannada-Italic.ttf",
+    "familyName": "Tiro Kannada"
+  },
+  "Tunga": {
+    "totalScore": 75,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 21.875,
+        "max": 35,
+        "covered": 80,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 2.1578947368421053,
+        "max": 5,
+        "covered": 41,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.5,
+        "max": 5,
+        "covered": 14,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7.5,
+        "max": 15,
+        "covered": 9,
+        "total": 9,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "haln",
+          "psts",
+          "rphf",
+          "abvm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2048,
+        "ascender": 2048,
+        "descender": -1352,
+        "glyphCount": 401
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B",
+    "gradeLabel": "Good",
+    "gradeColor": "#689f38",
+    "fontFile": "Tunga Regular.ttf",
+    "familyName": "Tunga"
+  },
+  "nlci-knda-badami": {
+    "totalScore": 85.4,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.8828125,
+        "max": 35,
+        "covered": 91,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 9.5,
+        "max": 15,
+        "covered": 12,
+        "total": 12,
+        "label": "OpenType Features",
+        "features": [
+          "abvs",
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "haln",
+          "pres",
+          "psts",
+          "rphf",
+          "abvm",
+          "blwm",
+          "dist"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 8,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 604,
+        "descender": -526,
+        "glyphCount": 772
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Badami-Bold.ttf",
+    "familyName": "Badami"
+  },
+  "Nanni-Indic": {
+    "totalScore": 82.7,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 25.15625,
+        "max": 35,
+        "covered": 92,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 4.578947368421052,
+        "max": 5,
+        "covered": 87,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 3.5,
+        "max": 5,
+        "covered": 14,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 7.5,
+        "max": 15,
+        "covered": 13,
+        "total": 13,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "ccmp",
+          "haln",
+          "psts",
+          "rphf",
+          "abvm",
+          "blwm",
+          "dist",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 7,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 1000,
+        "ascender": 1000,
+        "descender": -600,
+        "glyphCount": 699
+      },
+      "format": {
+        "score": 5,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".otf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Nanni-Regular.otf",
+    "familyName": "Nanni"
+  },
+  "Fit-Kannada": {
+    "totalScore": 87.1,
+    "breakdown": {
+      "kannadaCoverage": {
+        "score": 24.0625,
+        "max": 35,
+        "covered": 88,
+        "total": 128,
+        "label": "Kannada Coverage"
+      },
+      "essentialChars": {
+        "score": 15,
+        "max": 15,
+        "covered": 63,
+        "total": 63,
+        "label": "Essential Kannada Chars"
+      },
+      "latinCoverage": {
+        "score": 5,
+        "max": 5,
+        "covered": 95,
+        "total": 95,
+        "label": "Basic Latin"
+      },
+      "digits": {
+        "score": 5,
+        "max": 5,
+        "covered": 10,
+        "total": 10,
+        "label": "Digits"
+      },
+      "punctuation": {
+        "score": 5,
+        "max": 5,
+        "covered": 20,
+        "total": 20,
+        "label": "Punctuation"
+      },
+      "openType": {
+        "score": 10,
+        "max": 15,
+        "covered": 37,
+        "total": 37,
+        "label": "OpenType Features",
+        "features": [
+          "aalt",
+          "akhn",
+          "blwf",
+          "blws",
+          "c2sc",
+          "case",
+          "ccmp",
+          "haln",
+          "locl",
+          "nukt",
+          "ordn",
+          "pres",
+          "psts",
+          "rphf",
+          "salt",
+          "smcp",
+          "ss01",
+          "ss02",
+          "ss03",
+          "ss04",
+          "ss05",
+          "ss06",
+          "ss07",
+          "ss08",
+          "ss09",
+          "ss10",
+          "ss11",
+          "ss12",
+          "ss13",
+          "ss14",
+          "ss20",
+          "unic",
+          "abvm",
+          "blwm",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "metadata": {
+        "score": 10,
+        "max": 10,
+        "label": "Metadata"
+      },
+      "metrics": {
+        "score": 10,
+        "max": 10,
+        "label": "Font Metrics",
+        "unitsPerEm": 2000,
+        "ascender": 1900,
+        "descender": -768,
+        "glyphCount": 2182
+      },
+      "format": {
+        "score": 3,
+        "max": 5,
+        "label": "Font Format",
+        "format": ".ttf"
+      }
+    },
+    "grade": "B+",
+    "gradeLabel": "Very Good",
+    "gradeColor": "#388e3c",
+    "fontFile": "Fit Kannada.ttf",
+    "familyName": "Fit Kannada Variable"
+  }
+}
