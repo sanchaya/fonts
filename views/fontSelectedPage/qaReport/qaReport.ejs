@@ -1,0 +1,610 @@
+<% if (typeof fontQuality !== 'undefined' && fontQuality && fontQuality.totalScore !== undefined) { %>
+<div class="qa-report">
+  <div class="qa-header">
+    <div class="qa-score-circle" style="background: conic-gradient(<%= fontQuality.gradeColor %> 0% <%= fontQuality.totalScore %>% , #e0e0e0 <%= fontQuality.totalScore %>% 100%);">
+      <div class="qa-score-inner">
+        <span class="qa-grade" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.grade %></span>
+        <span class="qa-score-num" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.totalScore %>%</span>
+      </div>
+    </div>
+    <div class="qa-summary">
+      <h3><%= fontQuality.gradeLabel %></h3>
+      <p>Overall font quality assessment based on <%= Object.keys(fontQuality.breakdown).length %> criteria</p>
+      <div class="qa-summary-stats">
+        <div class="qa-stat">
+          <span class="qa-stat-value" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.totalScore %></span>
+          <span class="qa-stat-label">Score</span>
+        </div>
+        <div class="qa-stat">
+          <span class="qa-stat-value"><%= fontQuality.breakdown.kannadaCoverage ? Math.round(fontQuality.breakdown.kannadaCoverage.covered) : 0 %></span>
+          <span class="qa-stat-label">Kannada Glyphs</span>
+        </div>
+        <div class="qa-stat">
+          <span class="qa-stat-value"><%= fontGlyphs && fontGlyphs.features ? fontGlyphs.features.length : 0 %></span>
+          <span class="qa-stat-label">OT Features</span>
+        </div>
+        <div class="qa-stat">
+          <span class="qa-stat-value"><%= fontGlyphs ? fontGlyphs.glyphCount : 0 %></span>
+          <span class="qa-stat-label">Total Glyphs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-criteria">
+    <h4>Quality Criteria Breakdown</h4>
+    <div class="qa-criteria-list">
+      <% 
+      var breakdownItems = Object.values(fontQuality.breakdown)
+      var labels = {
+        kannadaCoverage: 'Kannada Character Coverage',
+        essentialChars: 'Essential Kannada Characters',
+        latinCoverage: 'Basic Latin Coverage',
+        digits: 'Digits',
+        punctuation: 'Punctuation',
+        openType: 'OpenType Features',
+        metadata: 'Font Metadata',
+        metrics: 'Font Metrics',
+        format: 'Font Format'
+      }
+      var descriptions = {
+        kannadaCoverage: 'Percentage of the Kannada Unicode block (U+0C80-U+0CFF) covered by this font.',
+        essentialChars: 'Presence of essential Kannada characters including all vowels, consonants, vowel signs, and the virama.',
+        latinCoverage: 'Coverage of basic ASCII characters (space through tilde).',
+        digits: 'Presence of standard Arabic numerals 0-9.',
+        punctuation: 'Coverage of common punctuation marks.',
+        openType: 'OpenType layout features for proper Kannada rendering (akhn, blwf, half, pres, pstf, etc.).',
+        metadata: 'Completeness of font metadata including designer, license, version, and copyright.',
+        metrics: 'Font metrics quality including unitsPerEm, ascender/descender ratio, and glyph count.',
+        format: 'Font file format preference (OTF preferred over TTF).'
+      }
+      breakdownItems.forEach(function(item) {
+      %>
+      <div class="qa-criterion">
+        <div class="qa-criterion-header">
+          <div class="qa-criterion-title">
+            <span class="qa-criterion-icon <%= item.score >= item.max ? 'qa-pass' : item.score >= item.max * 0.5 ? 'qa-warn' : 'qa-fail' %>">
+              <%= item.score >= item.max ? '&#10003;' : item.score >= item.max * 0.5 ? '&#9888;' : '&#10007;' %>
+            </span>
+            <div>
+              <span class="qa-criterion-name"><%= labels[Object.keys(fontQuality.breakdown).find(k => fontQuality.breakdown[k] === item)] || item.label %></span>
+              <span class="qa-criterion-desc"><%= descriptions[Object.keys(fontQuality.breakdown).find(k => fontQuality.breakdown[k] === item)] || '' %></span>
+            </div>
+          </div>
+          <div class="qa-criterion-score">
+            <span class="qa-criterion-value"><%= Math.round(item.score * 10) / 10 %></span>
+            <span class="qa-criterion-max">/ <%= item.max %></span>
+          </div>
+        </div>
+        <div class="qa-bar-track">
+          <div class="qa-bar-fill <%= item.score >= item.max ? 'qa-bar-pass' : item.score >= item.max * 0.5 ? 'qa-bar-warn' : 'qa-bar-fail' %>" style="width: <%= (item.score / item.max) * 100 %>%"></div>
+        </div>
+        <% if (item.covered !== undefined && item.total !== undefined) { %>
+        <div class="qa-criterion-detail">
+          <span><%= item.covered %> of <%= item.total %> characters present</span>
+          <% if (item.total - item.covered > 0) { %>
+          <span class="qa-missing"><%= item.total - item.covered %> missing</span>
+          <% } %>
+        </div>
+        <% } %>
+        <% if (item.unitsPerEm !== undefined) { %>
+        <div class="qa-criterion-detail">
+          <span>unitsPerEm: <%= item.unitsPerEm %>, ascender: <%= item.ascender %>, descender: <%= item.descender %>, glyphs: <%= item.glyphCount %></span>
+        </div>
+        <% } %>
+        <% if (item.features !== undefined && item.features.length > 0) { %>
+        <div class="qa-feature-tags">
+          <% item.features.forEach(function(f) { %>
+          <span class="feature-tag"><%= f %></span>
+          <% }); %>
+        </div>
+        <% } %>
+        <% if (item.format !== undefined) { %>
+        <div class="qa-criterion-detail">Format: <strong><%= item.format.toUpperCase() %></strong></div>
+        <% } %>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+
+  <div class="qa-recommendations">
+    <h4>Recommendations</h4>
+    <ul class="qa-recs-list">
+      <% if (fontQuality.breakdown.kannadaCoverage && fontQuality.breakdown.kannadaCoverage.score < fontQuality.breakdown.kannadaCoverage.max) { %>
+      <li class="qa-rec qa-rec-important">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>Improve Kannada coverage</strong> &mdash; <%= fontQuality.breakdown.kannadaCoverage.total - fontQuality.breakdown.kannadaCoverage.covered %> Kannada characters are missing. Full coverage of the Kannada block (U+0C80-U+0CFF) is recommended for proper text rendering.</div>
+      </li>
+      <% } %>
+      <% if (fontQuality.breakdown.essentialChars && fontQuality.breakdown.essentialChars.score < fontQuality.breakdown.essentialChars.max) { %>
+      <li class="qa-rec qa-rec-critical">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>Missing essential Kannada characters</strong> &mdash; Some fundamental Kannada letters or vowel signs are absent. This will cause rendering issues in Kannada text.</div>
+      </li>
+      <% } %>
+      <% if (fontQuality.breakdown.openType && fontQuality.breakdown.openType.score < 10) { %>
+      <li class="qa-rec qa-rec-important">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>Add essential OpenType features</strong> &mdash; Features like <code>akhn</code>, <code>blwf</code>, <code>half</code>, <code>pres</code>, and <code>pstf</code> are critical for correct Kannada conjunct rendering.</div>
+      </li>
+      <% } %>
+      <% if (fontQuality.breakdown.metadata && fontQuality.breakdown.metadata.score < fontQuality.breakdown.metadata.max) { %>
+      <li class="qa-rec qa-rec-info">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>Complete font metadata</strong> &mdash; Add designer name, license information, and description to improve font discoverability and compliance.</div>
+      </li>
+      <% } %>
+      <% if (fontQuality.breakdown.metrics && fontQuality.breakdown.metrics.score < fontQuality.breakdown.metrics.max) { %>
+      <li class="qa-rec qa-rec-info">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>Review font metrics</strong> &mdash; Ensure unitsPerEm is within 1000&ndash;2048 range and ascender/descender ratios are appropriate.</div>
+      </li>
+      <% } %>
+      <% if (!fontQuality.breakdown.openType || fontQuality.breakdown.openType.score === 0) { %>
+      <li class="qa-rec qa-rec-critical">
+        <span class="qa-rec-icon">&#9650;</span>
+        <div><strong>No OpenType features detected</strong> &mdash; This font lacks OpenType layout features, which are essential for proper Kannada text rendering. Consider adding GSUB and GPOS tables.</div>
+      </li>
+      <% } %>
+      <% if (fontQuality.totalScore >= 90) { %>
+      <li class="qa-rec qa-rec-success">
+        <span class="qa-rec-icon">&#9660;</span>
+        <div><strong>Excellent quality font</strong> &mdash; This font meets high quality standards for Kannada typography.</div>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="qa-metrics-table">
+    <h4>Technical Details</h4>
+    <table class="qa-table">
+      <tr>
+        <td>Font Family</td>
+        <td><%= fontGlyphs ? fontGlyphs.familyName : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Version</td>
+        <td><%= fontGlyphs ? fontGlyphs.version : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Designer</td>
+        <td><%= fontGlyphs ? fontGlyphs.designer : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Manufacturer</td>
+        <td><%= fontGlyphs ? fontGlyphs.manufacturer : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Total Glyphs</td>
+        <td><%= fontGlyphs ? fontGlyphs.glyphCount : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Kannada Glyphs</td>
+        <td><%= fontQuality.breakdown.kannadaCoverage ? fontQuality.breakdown.kannadaCoverage.covered : 'N/A' %> / 128</td>
+      </tr>
+      <tr>
+        <td>Essential Kannada</td>
+        <td><%= fontQuality.breakdown.essentialChars ? fontQuality.breakdown.essentialChars.covered : 'N/A' %> / <%= fontQuality.breakdown.essentialChars ? fontQuality.breakdown.essentialChars.total : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Latin Coverage</td>
+        <td><%= fontQuality.breakdown.latinCoverage ? fontQuality.breakdown.latinCoverage.covered : 'N/A' %> / 95</td>
+      </tr>
+      <tr>
+        <td>OpenType Features</td>
+        <td><%= fontGlyphs && fontGlyphs.features ? fontGlyphs.features.length : 0 %></td>
+      </tr>
+      <tr>
+        <td>unitsPerEm</td>
+        <td><%= fontGlyphs ? fontGlyphs.unitsPerEm : 'N/A' %></td>
+      </tr>
+      <tr>
+        <td>Ascender / Descender</td>
+        <td><%= fontGlyphs ? fontGlyphs.ascender + ' / ' + fontGlyphs.descender : 'N/A' %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<% } else { %>
+<div class="qa-report">
+  <div class="qa-empty">
+    <div class="qa-empty-icon">&#128196;</div>
+    <h3>Quality Report Not Available</h3>
+    <p>Unable to generate a quality assessment for this font. The font file may not be accessible or could not be parsed.</p>
+  </div>
+</div>
+<% } %>
+
+<style>
+.qa-report {
+  padding: 24px;
+  color: var(--text-color1);
+}
+
+/* Header */
+.qa-header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--third-color);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+}
+
+.qa-score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.qa-score-inner {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qa-grade {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.qa-score-num {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.qa-summary h3 {
+  margin: 0 0 4px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.qa-summary p {
+  margin: 0 0 16px 0;
+  color: var(--span-color);
+  font-size: 13px;
+}
+
+.qa-summary-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.qa-stat {
+  text-align: center;
+}
+
+.qa-stat-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+
+.qa-stat-label {
+  display: block;
+  font-size: 11px;
+  color: var(--span-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+}
+
+/* Criteria */
+.qa-criteria {
+  margin-bottom: 24px;
+}
+
+.qa-criteria h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.qa-criteria-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qa-criterion {
+  padding: 16px;
+  background: var(--third-color);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.qa-criterion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.qa-criterion-title {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.qa-criterion-icon {
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.qa-pass {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.qa-warn {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.qa-fail {
+  background: #ffebee;
+  color: #c62828;
+}
+
+body.dark .qa-pass {
+  background: rgba(46, 125, 50, 0.2);
+}
+
+body.dark .qa-warn {
+  background: rgba(230, 81, 0, 0.2);
+}
+
+body.dark .qa-fail {
+  background: rgba(198, 40, 40, 0.2);
+}
+
+.qa-criterion-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.qa-criterion-desc {
+  display: block;
+  font-size: 11px;
+  color: var(--span-color);
+  margin-top: 2px;
+}
+
+.qa-criterion-score {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.qa-criterion-value {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.qa-criterion-max {
+  font-size: 12px;
+  color: var(--span-color);
+}
+
+.qa-bar-track {
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.qa-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.qa-bar-pass {
+  background: linear-gradient(90deg, #43a047, #66bb6a);
+}
+
+.qa-bar-warn {
+  background: linear-gradient(90deg, #ef6c00, #ffa726);
+}
+
+.qa-bar-fail {
+  background: linear-gradient(90deg, #d32f2f, #ef5350);
+}
+
+body.dark .qa-bar-track {
+  background: #3a3a4a;
+}
+
+.qa-criterion-detail {
+  font-size: 11px;
+  color: var(--span-color);
+  display: flex;
+  gap: 8px;
+}
+
+.qa-missing {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.qa-feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.qa-feature-tags .feature-tag {
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+/* Recommendations */
+.qa-recommendations {
+  margin-bottom: 24px;
+}
+
+.qa-recommendations h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.qa-recs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qa-rec {
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.qa-rec-icon {
+  font-size: 10px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.qa-rec-critical {
+  background: #ffebee;
+  color: #b71c1c;
+}
+
+.qa-rec-important {
+  background: #fff3e0;
+  color: #bf360c;
+}
+
+.qa-rec-info {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.qa-rec-success {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+body.dark .qa-rec-critical {
+  background: rgba(183, 28, 28, 0.2);
+}
+
+body.dark .qa-rec-important {
+  background: rgba(191, 54, 12, 0.2);
+}
+
+body.dark .qa-rec-info {
+  background: rgba(13, 71, 161, 0.2);
+}
+
+body.dark .qa-rec-success {
+  background: rgba(27, 94, 32, 0.2);
+}
+
+.qa-rec code {
+  background: rgba(0,0,0,0.1);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+body.dark .qa-rec code {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Technical details table */
+.qa-metrics-table {
+  margin-bottom: 24px;
+}
+
+.qa-metrics-table h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.qa-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--third-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.qa-table tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.qa-table tr:last-child {
+  border-bottom: none;
+}
+
+.qa-table td {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.qa-table td:first-child {
+  font-weight: 600;
+  color: var(--span-color);
+  width: 180px;
+  background: var(--text-background);
+}
+
+.qa-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--span-color);
+}
+
+.qa-empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.qa-empty h3 {
+  margin: 0 0 8px 0;
+}
+
+.qa-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+</style>

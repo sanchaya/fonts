@@ -117,7 +117,8 @@
             syllabary:syllabary,
             conjuncts:conjuncts,
             overview:overview,
-            fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null
+            fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null,
+            fontGlyphs: typeof fontGlyphs !== 'undefined' ? fontGlyphs : null
         }) %>
     <% }else if(page.fontShowPage){%>
         <%- include('fontShowPage/fontShowPage') %>
