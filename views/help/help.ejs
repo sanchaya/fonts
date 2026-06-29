@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/android-chrome-512x512.png">
+    <meta name="msapplication-TileImage" content="/img/mstile-310x310.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .help-content {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .help-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+        .help-section {
+            background: var(--third-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+        }
+        .help-section h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--hover-color);
+        }
+        .help-section h3 {
+            color: var(--text-color1);
+            font-size: 1.1rem;
+            margin: 16px 0 8px;
+        }
+        .help-section p, .help-section li {
+            color: var(--text-color1);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        .help-section ul {
+            padding-left: 20px;
+        }
+        .help-section li {
+            margin-bottom: 6px;
+        }
+        .help-section a {
+            color: var(--primary-color);
+        }
+        .help-section code {
+            background: var(--text-background);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.9rem;
+        }
+        .score-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .score-table td {
+            padding: 8px 14px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-color1);
+        }
+        .score-table tr:hover td {
+            background: var(--hover-color);
+        }
+
+        .grade-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .grade-card {
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+        }
+        .grade-card .grade-range {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        .grade-a { background: #2e7d32; }
+        .grade-b { background: #388e3c; }
+        .grade-c { background: #f9a825; color: #1a1a2e; }
+        .grade-d { background: #e65100; }
+        .grade-f { background: #c62828; }
+
+        .help-section kbd {
+            background: var(--text-background);
+            border: 1px solid var(--border-color);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .help-section { padding: 20px; }
+            .grade-table { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    
+    <div class="help-content">
+        <h1 class="help-title">Help &amp; Guide</h1>
+
+        <div class="help-section">
+            <h2>About ಫಾಂಟ್ಸ್ ಸಂಚಯ</h2>
+            <p>
+                ಫಾಂಟ್ಸ್ ಸಂಚಯ (Fonts Sanchaya) is an open catalog of Kannada fonts. 
+                It lets you browse, preview, compare, and download fonts — all in one place. 
+                The project is community-driven and crowdsourced via the 
+                <a href="https://sanchaya.org" target="_blank">Sanchaya</a> platform and 
+                <a href="https://sanchifoundation.org" target="_blank">Sanchi Foundation</a>.
+            </p>
+        </div>
+
+        <div class="help-section">
+            <h2>Browsing Fonts</h2>
+            <ul>
+                <li><strong>Home page</strong> — All fonts are listed on the home page. Scroll down to load more.</li>
+                <li><strong>Search</strong> — Type a font name in the search bar to filter by name.</li>
+                <li><strong>Filter by category</strong> — Use the Categories dropdown to show only fonts in specific styles (Serif, Sans-serif, Display, etc.).</li>
+                <li><strong>Variable fonts</strong> — Toggle "Variable Fonts Only" to show only variable font families.</li>
+                <li><strong>License filter</strong> — Filter by Open Source or Proprietary licenses.</li>
+                <li><strong>Sort</strong> — Sort by name or by date added.</li>
+            </ul>
+            <p>Click any font card to go to its detail page, where you can view glyphs, OpenType features, and metadata.</p>
+        </div>
+
+        <div class="help-section">
+            <h2>Font Detail Page</h2>
+            <p>Each font has a detail page with the following sections:</p>
+            <ul>
+                <li><strong>Font Info</strong> — Author, license, foundry, and download link.</li>
+                <li><strong>Overview</strong> — Vowels, consonants, and numerals rendered in the font.</li>
+                <li><strong>Syllabary</strong> — All Kannada syllable combinations using the font.</li>
+                <li><strong>Conjuncts</strong> — Conjunct consonant combinations.</li>
+                <li><strong>Glyphs</strong> — Full character set with hex code points.</li>
+                <li><strong>OpenType Features</strong> — List of supported GSUB/GPOS features.</li>
+                <li><strong>QA Report</strong> — Quality assessment score and detailed breakdown (see below).</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Font Quality (QA) Rating</h2>
+            <p>
+                Each font is analyzed for Kannada script quality. The QA system inspects the font binary and assigns a score out of <strong>100</strong> across five categories:
+            </p>
+
+            <table class="score-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Max Points</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unicode Coverage</strong></td>
+                        <td>40</td>
+                        <td>Percentage of required Kannada Unicode characters present in the font</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenType Features</strong></td>
+                        <td>30</td>
+                        <td>Presence of required OpenType features for proper Kannada shaping (e.g. <code>akhn</code>, <code>blwf</code>, <code>half</code>, <code>pstf</code>, <code>pres</code>, <code>abvs</code>, <code>blws</code>, <code>psts</code>, <code>abvf</code>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Script Tables</strong></td>
+                        <td>10</td>
+                        <td>Kannada script record (<code>knda</code>) in GSUB/GPOS tables (8 pts) and GPOS table presence (2 pts)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metadata</strong></td>
+                        <td>10</td>
+                        <td>Completeness of font metadata: font family, designer, license, version, copyright fields</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revival / Archaic</strong></td>
+                        <td>10</td>
+                        <td>Bonus points for including revival or archaic Kannada glyphs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Grade Scale</h3>
+            <div class="grade-table">
+                <div class="grade-card grade-a">A <span class="grade-range">90–100</span></div>
+                <div class="grade-card grade-b">B <span class="grade-range">75–89</span></div>
+                <div class="grade-card grade-c">C <span class="grade-range">60–74</span></div>
+                <div class="grade-card grade-d">D <span class="grade-range">40–59</span></div>
+                <div class="grade-card grade-f">F <span class="grade-range">0–39</span></div>
+            </div>
+
+            <p>
+                The QA report is available on each font's detail page. Click <strong>"View Full QA Report"</strong> to see a detailed breakdown with issues, warnings, and per-category scores.
+            </p>
+        </div>
+
+        <div class="help-section">
+            <h2>Bug Reports</h2>
+            <p>
+                Found a rendering issue or a missing glyph? Use the <strong>Bug Report</strong> feature on any font's detail page or via the <a href="/bug-reports">Bug Reports</a> page.
+            </p>
+            <ul>
+                <li>Select the font family and font style.</li>
+                <li>Describe the issue — include the character(s) affected and expected behavior.</li>
+                <li>Optionally provide your email for follow-up.</li>
+                <li>Your browser and OS are auto-detected and included.</li>
+                <li>Other users can acknowledge (upvote) existing reports.</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Suggesting a Font</h2>
+            <p>
+                Missing a font? Use the <a href="/getSuggestionForm">Font Suggestion</a> form to submit a new font for inclusion.
+                Provide the font name, foundry, and optionally upload the font file.
+            </p>
+        </div>
+
+        <div class="help-section">
+            <h2>Unicode Character Blocks</h2>
+            <p>
+                The <a href="/unicode-blocks">Unicode Blocks</a> page is a reference table of all 346 Unicode blocks defined in Unicode 17.0.
+            </p>
+            <ul>
+                <li><strong>Browse blocks</strong> — All blocks are listed alphabetically by category (A–Z).</li>
+                <li><strong>Click to expand</strong> — Click any block to view all its characters in a grid, with hex code points.</li>
+                <li><strong>Search by character</strong> — Paste or type any Unicode character into the search box to find which block it belongs to. The block will be highlighted and scrolled into view.</li>
+                <li><strong>Search by name / range</strong> — You can also search by block name (e.g. "Kannada") or hex range (e.g. "0C80").</li>
+                <li><strong>Featured Kannada block</strong> — The Kannada block is always expanded at the top of the page for quick reference.</li>
+            </ul>
+            <p>Data sourced from the <a href="https://www.unicode.org/" target="_blank">Unicode Consortium</a>.</p>
+        </div>
+
+        <div class="help-section">
+            <h2>Visualizations</h2>
+            <p>
+                The <a href="/visualizations">Visualizations</a> page provides interactive tools to explore fonts:
+            </p>
+            <ul>
+                <li><strong>Word Cloud</strong> — See Kannada words rendered in random fonts.</li>
+                <li><strong>Font Spell</strong> — Type any text and preview it across all fonts.</li>
+                <li><strong>Randomizer</strong> — Cycle through fonts with random text.</li>
+                <li><strong>Style Timeline</strong> — Fonts ranked by number of styles available.</li>
+                <li><strong>Proverb Gallery</strong> — Kannada proverbs rendered in different fonts.</li>
+                <li><strong>Font Comparison</strong> — Select 2–4 fonts side by side.</li>
+                <li><strong>Glyph Gallery</strong> — Kannada glyphs shown in random fonts.</li>
+                <li><strong>Font Bingo</strong> — Guess the font name from a sample.</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Administrator Guide</h2>
+            <p>
+                The admin panel at <a href="/login">/login</a> allows font metadata management.
+            </p>
+            <ul>
+                <li>Edit font metadata: author, license, source URL, foundry, description.</li>
+                <li>Export font data as JSON for GitHub Pages deployment.</li>
+                <li>View and manage bug reports with status tracking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">ಫಾಂಟ್ಗಳನ್ನು ಜಾಲಾಡಿ</a>
+                <a href="/stats">ಅಂಕಿಅಂಶಗಳು</a>
+                <a href="/about">ಯೋಜನೆಯ ಬಗ್ಗೆ</a>
+                <a href="/help">Help</a>
+                <a href="/bug-reports">Bug Reports</a>
+                <a href="/unicode-blocks">Unicode Blocks</a>
+                <a href="/getSuggestionForm">ಫಾಂಟನ್ನು ಸೂಚಿಸಿ</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <%= new Date().getFullYear() %> ಸಂಚಯ ಮತ್ತು ಸಂಚಿ ಫೌಂಡೇಶನ್
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

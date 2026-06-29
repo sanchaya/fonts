@@ -364,6 +364,12 @@ router.get('/about', (req, res) => {
     res.render('home', parsingData)
 })
 
+router.get('/help', (req, res) => {
+    let pag = {...pages}
+    pag.helpPage = true
+    res.render('help/help', { page: pag })
+})
+
 router.get('/unicode-blocks', (req, res) => {
     let pag = {...pages}
     pag.unicodeBlocksPage = true
