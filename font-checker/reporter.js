@@ -5,8 +5,8 @@
  * Takes the structured analysis object and renders a self-contained HTML report.
  */
 
-function renderHtmlReport(report, diff = null, fontUrl = null, storedErrors = null, storedWarnings = null) {
-  const body = buildBody(report, diff, fontUrl, false, false, storedErrors, storedWarnings);
+function renderHtmlReport(report, diff = null, fontUrl = null) {
+  const body = buildBody(report, diff, fontUrl, false);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,24 +26,21 @@ ${body.html}
 </html>`;
 }
 
-function renderHtmlInline(report, fontUrl = null, storedErrors = null, storedWarnings = null) {
-  const body = buildBody(report, null, fontUrl, true, true, storedErrors, storedWarnings);
+function renderHtmlInline(report, fontUrl = null) {
+  const body = buildBody(report, null, fontUrl, true, true);
   return `<style>${body.css}</style>\n${body.html}`;
 }
 
-function buildBody(report, diff = null, fontUrl = null, inline = false, noHeader = false, storedErrors = null, storedWarnings = null) {
+function buildBody(report, diff = null, fontUrl = null, inline = false, noHeader = false) {
   const { score, issues, metadata, coverage, scripts, features, gsub, gpos, glyphs, meta } = report;
 
   const gradeColor = {
     A: '#16a34a', B: '#2563eb', C: '#d97706', D: '#ea580c', F: '#dc2626'
   }[score.grade] || '#64748b';
 
-  const liveErrCount  = issues.filter(i => i.severity === 'error').length;
-  const liveWarnCount = issues.filter(i => i.severity === 'warning').length;
-  const liveInfoCount = issues.filter(i => i.severity === 'info').length;
-  const errCount  = storedErrors !== null && storedErrors !== undefined ? storedErrors : liveErrCount;
-  const warnCount = storedWarnings !== null && storedWarnings !== undefined ? storedWarnings : liveWarnCount;
-  const infoCount = liveInfoCount;
+  const errCount  = issues.filter(i => i.severity === 'error').length;
+  const warnCount = issues.filter(i => i.severity === 'warning').length;
+  const infoCount = issues.filter(i => i.severity === 'info').length;
 
   const fontName = metadata.fields.fullName?.value
     || metadata.fields.fontFamily?.value
