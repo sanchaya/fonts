@@ -302,14 +302,16 @@ nav {
 
 .menu-items .dropdown-content {
   display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
+  position: fixed;
+  top: 85px;
+  right: 20px;
   background-color: var(--third-color);
   min-width: 180px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   border-radius: 8px;
   z-index: 99999;
+  padding-top: 25px;
+  margin-top: -25px;
 }
 
 .menu-items .dropdown:hover > .dropdown-content {
