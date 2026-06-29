@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const opentype = require('opentype.js')
+const { analyzeFont } = require('./font-checker/analyzer')
 
 const KANNADA_START = 0x0C80
 const KANNADA_END = 0x0CFF
@@ -237,19 +238,30 @@ const getGrade = (score, errors) => {
   return { grade: 'F', label: 'Critical', color: '#d32f2f' }
 }
 
-const inspectFont = async (fontPath, familyMetadata, stylesCount) => {
+const inspectFont = (fontPath, familyMetadata, stylesCount) => {
   try {
     if (!fs.existsSync(fontPath)) return null
-    const font = await opentype.load(fontPath)
-    const result = computeQualityScore(font, fontPath, familyMetadata, stylesCount)
-    const grade = getGrade(result.totalScore, result.errors)
+    const report = analyzeFont(fontPath)
+    const errors = report.issues.filter(i => i.severity === 'error').length
+    const warnings = report.issues.filter(i => i.severity === 'warning').length
+    const grade = getGrade(report.score.total, errors)
     return {
-      ...result,
+      totalScore: report.score.total,
       grade: grade.grade,
       gradeLabel: grade.label,
       gradeColor: grade.color,
+      errors,
+      warnings,
+      issues: report.issues,
+      breakdown: {
+        coverage: { score: report.score.breakdown.coverage, max: 40, label: 'Coverage' },
+        features: { score: report.score.breakdown.features, max: 30, label: 'Features' },
+        scripts:  { score: report.score.breakdown.scripts,  max: 10, label: 'Scripts' },
+        metadata: { score: report.score.breakdown.metadata, max: 10, label: 'Metadata' },
+        revival:  { score: report.score.breakdown.revival,  max: 10, label: 'Revival' }
+      },
       fontFile: path.basename(fontPath),
-      familyName: font.names.fontFamily ? font.names.fontFamily.en : ''
+      familyName: report.metadata.fields.fontFamily?.value || ''
     }
   } catch (err) {
     console.error(`Error inspecting font ${fontPath}:`, err.message)
@@ -264,7 +276,7 @@ const getFontDir = (family) => {
   return family
 }
 
-const inspectAllFonts = async () => {
+const inspectAllFonts = () => {
   const fonts = JSON.parse(fs.readFileSync(path.join(__dirname, 'fonts.json'), 'utf8'))
   const metadata = JSON.parse(fs.readFileSync(path.join(__dirname, 'fontMetadata.json'), 'utf8'))
   const results = {}
@@ -294,7 +306,7 @@ const inspectAllFonts = async () => {
     }
 
     const fontPath = path.join(dirPath, fontFiles[0])
-    const result = await inspectFont(fontPath, familyMeta, stylesCount)
+    const result = inspectFont(fontPath, familyMeta, stylesCount)
 
     if (result) {
       results[family] = result
@@ -308,10 +320,10 @@ const inspectAllFonts = async () => {
   return results
 }
 
-const saveQualityData = async () => {
+const saveQualityData = () => {
   console.log('Starting font quality inspection...')
   console.time('Quality inspection')
-  const results = await inspectAllFonts()
+  const results = inspectAllFonts()
   console.timeEnd('Quality inspection')
   fs.writeFileSync(path.join(__dirname, 'fontQuality.json'), JSON.stringify(results, null, 2))
   console.log(`Quality data saved for ${Object.keys(results).length} families`)
@@ -319,13 +331,14 @@ const saveQualityData = async () => {
 }
 
 if (require.main === module) {
-  saveQualityData().then(() => {
+  try {
+    saveQualityData()
     console.log('Done!')
     process.exit(0)
-  }).catch(err => {
+  } catch (err) {
     console.error('Error:', err)
     process.exit(1)
-  })
+  }
 }
 
 module.exports = { inspectFont, inspectAllFonts, saveQualityData, computeQualityScore, getGrade, getFontDir }
