@@ -43,6 +43,26 @@ const opentype = require('opentype.js')
 
 const METADATA_FILE = path.join(__dirname, 'fontMetadata.json')
 const BUG_REPORTS_FILE = path.join(__dirname, 'bugReports.json')
+const QUALITY_FILE = path.join(__dirname, 'fontQuality.json')
+
+let qualityCache = null
+let qualityCacheTime = 0
+const QUALITY_CACHE_TTL = 60000
+
+const loadQualityData = () => {
+    const now = Date.now()
+    if (qualityCache && (now - qualityCacheTime) < QUALITY_CACHE_TTL) {
+        return qualityCache
+    }
+    try {
+        const bytes = fs.readFileSync(QUALITY_FILE)
+        qualityCache = JSON.parse(bytes)
+        qualityCacheTime = now
+        return qualityCache
+    } catch {
+        return {}
+    }
+}
 
 const loadMetadata = () => {
     try {
@@ -279,6 +299,9 @@ router.get('/font/:family/:font', async (req,res) => {
     const fontDirectory = getFontDir(param.family)
     const downloadUrl = findDownloadFont(param.family)
 
+    const qualityData = loadQualityData()
+    const fontQuality = qualityData[param.family] || null
+
     let parsingData = {
         page:page,
         font:font,
@@ -287,6 +310,7 @@ router.get('/font/:family/:font', async (req,res) => {
         downloadUrl: downloadUrl,
         fontMetadata: fontMetadata,
         fontGlyphs: fontGlyphs,
+        fontQuality: fontQuality,
         syllabary:syllabary,
         conjuncts:{
             all_conjuncts:all_conjuncts,
@@ -319,10 +343,14 @@ router.get('/family/:family',(req,res) => {
     const metadata = loadMetadata()
     const familyMetadata = metadata[family] || { author: 'Not Available', license: 'Unknown', source: '', foundry: '', description: '' }
 
+    const qualityData = loadQualityData()
+    const fontQuality = qualityData[family] || null
+
     let parsingData = {
         page:page,
         data:fontData,
-        familyMetadata: familyMetadata
+        familyMetadata: familyMetadata,
+        fontQuality: fontQuality
     }
     res.render('index', parsingData)
 })

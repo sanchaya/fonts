@@ -54,7 +54,7 @@
               <%- include('conjuncts/conjuncts',{conjuncts:conjuncts}) %> 
           </div>
           <div id="glyphs" class="tab-pane fade">
-              <%- include('glyphs/glyphs',{fontGlyphs:fontGlyphs}) %> 
+              <%- include('glyphs/glyphs',{fontGlyphs:fontGlyphs, fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null}) %> 
           </div>
           <div id="bugreport" class="tab-pane fade">
               <%- include('bugreport/bugreport') %> 

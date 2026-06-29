@@ -8,7 +8,21 @@
   
   <% if (typeof familyMetadata !== 'undefined' && familyMetadata) { %>
   <div class="family-meta-info">
-    <h2 class="family-title"><%= data.family %></h2>
+    <h2 class="family-title"><%= data.family %>
+      <% if (typeof fontQuality !== 'undefined' && fontQuality && fontQuality.totalScore !== undefined) { %>
+      <span class="quality-badge-sm" style="background: <%= fontQuality.gradeColor %>; color: #fff;"><%= fontQuality.grade %> - <%= fontQuality.gradeLabel %> (<%= fontQuality.totalScore %>%)
+        <span class="quality-tooltip">
+          <strong>Font Quality: <%= fontQuality.totalScore %>%</strong>
+          <% if (fontQuality.breakdown) { %>
+            <% var bItems = Object.values(fontQuality.breakdown) %>
+            <% bItems.forEach(function(item) { %>
+            <span><%= item.label %>: <%= Math.round(item.score * 10) / 10 %>/<%= item.max %></span>
+            <% }); %>
+          <% } %>
+        </span>
+      </span>
+      <% } %>
+    </h2>
     <div class="meta-details">
       <% if (familyMetadata.author) { %>
       <div class="meta-item">
