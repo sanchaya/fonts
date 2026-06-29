@@ -748,10 +748,11 @@ router.get('/qa-report/:family', (req, res) => {
     }
 
     const fontPath = path.join(dirPath, fontFile);
+    const fontUrl = '/Fonts/' + fontDir + '/' + fontFile;
 
     try {
         const report = analyzeFont(fontPath);
-        const html = renderHtmlReport(report);
+        const html = renderHtmlReport(report, null, fontUrl);
         res.type('html').send(html);
     } catch (err) {
         console.error('Error generating QA report for', family, ':', err.message);
