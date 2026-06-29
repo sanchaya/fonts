@@ -302,6 +302,36 @@ router.get('/font/:family/:font', async (req,res) => {
     const qualityData = loadQualityData()
     const fontQuality = qualityData[param.family] || null
 
+    let qaReportHtml = ''
+    try {
+        const fontDir = getFontDir(param.family)
+        const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir)
+        if (fs.existsSync(dirPath)) {
+            const files = fs.readdirSync(dirPath)
+            const fontFile = files.find(f => f.endsWith('.ttf')) || files.find(f => f.endsWith('.otf')) || files.find(f => f.endsWith('.woff'))
+            if (fontFile) {
+                const fontPath = path.join(dirPath, fontFile)
+                const fontUrl = '/Fonts/' + fontDir + '/' + fontFile
+                const report = analyzeFont(fontPath)
+
+                // Patch report score with fontQuality.json if available for consistency
+                // with family listing badges (which use precomputed fontQuality data)
+                if (fontQuality && fontQuality.totalScore != null && fontQuality.totalScore > 0) {
+                    const liveTotal = report.score.total
+                    const storedTotal = fontQuality.totalScore
+                    if (liveTotal > 0 && storedTotal !== liveTotal) {
+                        report.score.total = storedTotal
+                        report.score.grade = fontQuality.grade
+                    }
+                }
+
+                qaReportHtml = renderHtmlInline(report, fontUrl)
+            }
+        }
+    } catch (err) {
+        console.error('Error generating inline QA report for', param.family, ':', err.message)
+    }
+
     let parsingData = {
         page:page,
         font:font,
@@ -311,6 +341,7 @@ router.get('/font/:family/:font', async (req,res) => {
         fontMetadata: fontMetadata,
         fontGlyphs: fontGlyphs,
         fontQuality: fontQuality,
+        qaReportHtml: qaReportHtml,
         syllabary:syllabary,
         conjuncts:{
             all_conjuncts:all_conjuncts,
@@ -729,7 +760,7 @@ router.get('/export', (req, res) => {
 /*--------------font-checker QA report route-------------- */
 
 const { analyzeFont } = require('./font-checker/analyzer');
-const { renderHtmlReport } = require('./font-checker/reporter');
+const { renderHtmlReport, renderHtmlInline } = require('./font-checker/reporter');
 
 router.get('/qa-report/:family', (req, res) => {
     const family = req.params.family;
@@ -752,6 +783,19 @@ router.get('/qa-report/:family', (req, res) => {
 
     try {
         const report = analyzeFont(fontPath);
+
+        // Patch score with fontQuality.json for consistency with family badges
+        const qualityData = loadQualityData()
+        const fontQuality = qualityData[family] || null
+        if (fontQuality && fontQuality.totalScore != null && fontQuality.totalScore > 0) {
+            const liveTotal = report.score.total
+            const storedTotal = fontQuality.totalScore
+            if (liveTotal > 0 && storedTotal !== liveTotal) {
+                report.score.total = storedTotal
+                report.score.grade = fontQuality.grade
+            }
+        }
+
         const html = renderHtmlReport(report, null, fontUrl);
         res.type('html').send(html);
     } catch (err) {
