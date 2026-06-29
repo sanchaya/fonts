@@ -181,7 +181,9 @@ var getFonts = (val, page, filters = {}) =>{
                 totalScore: quality.totalScore,
                 grade: quality.grade,
                 gradeLabel: quality.gradeLabel,
-                gradeColor: quality.gradeColor
+                gradeColor: quality.gradeColor,
+                errors: quality.errors || 0,
+                warnings: quality.warnings || 0
             } : null
         }
         return obj

@@ -10,16 +10,10 @@
   <div class="family-meta-info">
     <h2 class="family-title"><%= data.family %>
       <% if (typeof fontQuality !== 'undefined' && fontQuality && fontQuality.totalScore !== undefined) { %>
-      <span class="quality-badge-sm" style="background: <%= fontQuality.gradeColor %>; color: #fff;"><%= fontQuality.grade %> - <%= fontQuality.gradeLabel %> (<%= fontQuality.totalScore %>%)
-        <span class="quality-tooltip">
-          <strong>Font Quality: <%= fontQuality.totalScore %>%</strong>
-          <% if (fontQuality.breakdown) { %>
-            <% var bItems = Object.values(fontQuality.breakdown) %>
-            <% bItems.forEach(function(item) { %>
-            <span><%= item.label %>: <%= Math.round(item.score * 10) / 10 %>/<%= item.max %></span>
-            <% }); %>
-          <% } %>
-        </span>
+      <span class="quality-badge-sm" style="background: <%= fontQuality.gradeColor %>; color: #fff;">
+        <%= fontQuality.grade %> <%= fontQuality.totalScore %>%
+        <% if (fontQuality.errors > 0) { %><span class="qa-fam-err"><%= fontQuality.errors %>E</span><% } %>
+        <% if (fontQuality.warnings > 0) { %><span class="qa-fam-wrn"><%= fontQuality.warnings %>W</span><% } %>
       </span>
       <% } %>
     </h2>

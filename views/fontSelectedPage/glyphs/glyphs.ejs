@@ -47,26 +47,34 @@
 
     <% if (typeof fontQuality !== 'undefined' && fontQuality && fontQuality.totalScore !== undefined) { %>
     <div class="quality-section">
-        <h4>Font Quality Score</h4>
+        <h4>Font Quality Score <span class="qa-badge-strip">
+          <span class="qa-badge-err"><%= fontQuality.errors %>E</span>
+          <span class="qa-badge-wrn"><%= fontQuality.warnings %>W</span>
+          <span class="qa-badge-grade" style="color:<%= fontQuality.gradeColor %>"><%= fontQuality.grade %> <%= fontQuality.totalScore %>%</span>
+        </span></h4>
         <div class="quality-overview">
-            <div class="quality-badge-lg" style="background: <%= fontQuality.gradeColor %>20; border: 2px solid <%= fontQuality.gradeColor %>;">
-                <span class="quality-grade" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.grade %></span>
-                <span class="quality-label" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.gradeLabel %></span>
-                <span class="quality-score" style="color: <%= fontQuality.gradeColor %>;"><%= fontQuality.totalScore %>%</span>
-            </div>
             <div class="quality-breakdown">
                 <% if (fontQuality.breakdown) { %>
-                    <% var breakdownItems = Object.values(fontQuality.breakdown) %>
-                    <% breakdownItems.forEach(function(item) { %>
-                    <div class="quality-metric">
+                    <% var catItems = [
+                      { key:'coverage', label:'Coverage', max:40 },
+                      { key:'metadata', label:'Metadata', max:10 },
+                      { key:'features', label:'Features', max:30 },
+                      { key:'scripts', label:'Scripts', max:10 },
+                      { key:'revival', label:'Revival', max:10 }
+                    ] %>
+                    <% catItems.forEach(function(c) { %>
+                      <% var item = fontQuality.breakdown[c.key] %>
+                      <% if (item) { %>
+                      <div class="quality-metric">
                         <div class="quality-metric-header">
-                            <span class="quality-metric-label"><%= item.label %></span>
-                            <span class="quality-metric-value"><%= Math.round(item.score * 10) / 10 %>/<%= item.max %></span>
+                          <span class="quality-metric-label"><%= c.label %></span>
+                          <span class="quality-metric-value"><%= Math.round(item.score * 10) / 10 %>/<%= c.max %></span>
                         </div>
                         <div class="quality-bar-track">
-                            <div class="quality-bar-fill" style="width: <%= (item.score / item.max) * 100 %>%"></div>
+                          <div class="quality-bar-fill" style="width: <%= (item.score / c.max) * 100 %>%"></div>
                         </div>
-                    </div>
+                      </div>
+                      <% } %>
                     <% }); %>
                 <% } %>
             </div>
