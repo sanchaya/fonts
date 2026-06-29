@@ -18,152 +18,9 @@
     </div>
   </div>
 
-  <div class="qa-categories">
-    <% var cats = [
-      { key: 'coverage', label: 'Coverage', max: 40, icon: '&#9783;' },
-      { key: 'features', label: 'Features', max: 30, icon: '&#9881;' },
-      { key: 'scripts', label: 'Scripts', max: 10, icon: '&#9998;' },
-      { key: 'metadata', label: 'Metadata', max: 10, icon: '&#128196;' },
-      { key: 'revival', label: 'Revival', max: 10, icon: '&#128337;' }
-    ]; %>
-    <% cats.forEach(function(cat) { %>
-      <% var item = fontQuality.breakdown[cat.key] %>
-      <% if (item) { %>
-      <div class="qa-cat-card">
-        <div class="qa-cat-icon"><%- cat.icon %></div>
-        <div class="qa-cat-body">
-          <div class="qa-cat-header">
-            <span class="qa-cat-name"><%= cat.label %></span>
-            <span class="qa-cat-score"><%= Math.round(item.score * 10) / 10 %>/<%= cat.max %></span>
-          </div>
-          <div class="qa-cat-bar">
-            <div class="qa-cat-fill" style="width:<%= (item.score / cat.max) * 100 %>%"></div>
-          </div>
-          <% if (item.sub) { %>
-            <% Object.values(item.sub).forEach(function(sub) { %>
-            <div class="qa-sub-row">
-              <span class="qa-sub-label"><%= sub.label %></span>
-              <span class="qa-sub-bar">
-                <span class="qa-sub-fill" style="width:<%= (sub.score / sub.max) * 100 %>%"></span>
-              </span>
-              <span class="qa-sub-val"><%= Math.round(sub.score * 10) / 10 %>/<%= sub.max %></span>
-            </div>
-            <% }); %>
-          <% } %>
-          <% if (item.stylesCount !== undefined) { %>
-          <div class="qa-sub-row">
-            <span class="qa-sub-label">Styles</span>
-            <span class="qa-sub-val"><%= item.stylesCount %></span>
-          </div>
-          <% } %>
-          <% if (item.fileSizeKB !== undefined) { %>
-          <div class="qa-sub-row">
-            <span class="qa-sub-label">File Size</span>
-            <span class="qa-sub-val"><%= Math.round(item.fileSizeKB) %> KB</span>
-          </div>
-          <% } %>
-        </div>
-      </div>
-    <% } }); %>
+  <div class="qa-report-iframe-container">
+    <iframe class="qa-report-iframe" src="/qa-report/<%= encodeURIComponent(fontFamily) %>" frameborder="0" loading="lazy"></iframe>
   </div>
-
-  <% if (fontQuality.issues && fontQuality.issues.length > 0) { %>
-  <div class="qa-issues-panel">
-    <div class="qa-issues-header">
-      <h4>Issues</h4>
-      <span class="qa-issues-count"><%= fontQuality.issues.length %></span>
-    </div>
-    <div class="qa-issues-list">
-      <% fontQuality.issues.forEach(function(issue) { %>
-      <div class="qa-issue <%= issue.severity === 'error' ? 'qa-issue-error' : 'qa-issue-warn' %>">
-        <span class="qa-issue-icon"><%= issue.severity === 'error' ? '&#9940;' : '&#9888;&#65039;' %></span>
-        <div class="qa-issue-body">
-          <span class="qa-issue-cat"><%= issue.category %></span>
-          <span class="qa-issue-msg"><%= issue.message %></span>
-        </div>
-      </div>
-      <% }); %>
-    </div>
-  </div>
-  <% } %>
-
-  <% if (fontQuality.overview) { %>
-  <div class="qa-overview-panels">
-    <div class="qa-ov-panel">
-      <h5>Unicode Coverage</h5>
-      <div class="qa-ov-stats">
-        <div class="qa-ov-stat">
-          <span class="qa-ov-val"><%= fontQuality.overview.unicodeCoverage.kannada.covered %></span>
-          <span class="qa-ov-lbl">Kannada / <%= fontQuality.overview.unicodeCoverage.kannada.total %></span>
-        </div>
-        <div class="qa-ov-stat">
-          <span class="qa-ov-val"><%= fontQuality.overview.unicodeCoverage.latin.covered %></span>
-          <span class="qa-ov-lbl">Latin / <%= fontQuality.overview.unicodeCoverage.latin.total %></span>
-        </div>
-        <div class="qa-ov-stat">
-          <span class="qa-ov-val"><%= fontQuality.overview.unicodeCoverage.digits.covered %></span>
-          <span class="qa-ov-lbl">Digits / 10</span>
-        </div>
-      </div>
-    </div>
-    <div class="qa-ov-panel">
-      <h5>OpenType Features <span class="qa-ov-count"><%= fontQuality.overview.openTypeFeatures.length %></span></h5>
-      <div class="qa-ov-tags">
-        <% if (fontQuality.overview.openTypeFeatures.length > 0) { %>
-          <% fontQuality.overview.openTypeFeatures.slice(0, 12).forEach(function(f) { %>
-          <span class="feature-tag"><%= f %></span>
-          <% }); %>
-          <% if (fontQuality.overview.openTypeFeatures.length > 12) { %>
-          <span class="feature-tag">+<%= fontQuality.overview.openTypeFeatures.length - 12 %> more</span>
-          <% } %>
-        <% } else { %>
-        <span class="qa-none">None</span>
-        <% } %>
-      </div>
-    </div>
-    <div class="qa-ov-panel">
-      <h5>GSUB Rules <span class="qa-ov-count"><%= fontQuality.overview.gsubRules.length %></span></h5>
-      <div class="qa-ov-tags">
-        <% if (fontQuality.overview.gsubRules.length > 0) { %>
-          <% fontQuality.overview.gsubRules.forEach(function(f) { %>
-          <span class="feature-tag"><%= f %></span>
-          <% }); %>
-        <% } else { %>
-        <span class="qa-none">None</span>
-        <% } %>
-      </div>
-    </div>
-    <div class="qa-ov-panel">
-      <h5>GPOS Rules <span class="qa-ov-count"><%= fontQuality.overview.gposRules.length %></span></h5>
-      <div class="qa-ov-tags">
-        <% if (fontQuality.overview.gposRules.length > 0) { %>
-          <% fontQuality.overview.gposRules.forEach(function(f) { %>
-          <span class="feature-tag"><%= f %></span>
-          <% }); %>
-        <% } else { %>
-        <span class="qa-none">None</span>
-        <% } %>
-      </div>
-    </div>
-    <div class="qa-ov-panel">
-      <h5>Glyph Inventory</h5>
-      <div class="qa-ov-stats">
-        <div class="qa-ov-stat">
-          <span class="qa-ov-val"><%= fontQuality.overview.glyphInventory %></span>
-          <span class="qa-ov-lbl">Total Glyphs</span>
-        </div>
-      </div>
-    </div>
-    <div class="qa-ov-panel">
-      <h5>Metadata</h5>
-      <table class="qa-ov-table">
-        <tr><td>Designer</td><td><%= fontQuality.overview.metadata.designer || 'N/A' %></td></tr>
-        <tr><td>Version</td><td><%= fontQuality.overview.metadata.version || 'N/A' %></td></tr>
-        <tr><td>License</td><td><%= fontQuality.overview.metadata.license || 'N/A' %></td></tr>
-      </table>
-    </div>
-  </div>
-  <% } %>
 </div>
 <% } else { %>
 <div class="qa-report">
@@ -247,273 +104,24 @@
 body.dark .qa-strip-errors { background: rgba(198,40,40,0.2); }
 body.dark .qa-strip-warnings { background: rgba(230,81,0,0.2); }
 
-/* Category Cards */
-.qa-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-
-.qa-cat-card {
-  display: flex;
-  gap: 14px;
-  padding: 14px 16px;
-  background: var(--third-color);
-  border-radius: 12px;
-  box-shadow: var(--card-shadow);
-}
-
-.qa-cat-icon {
-  font-size: 28px;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: var(--text-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.qa-cat-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.qa-cat-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-
-.qa-cat-name {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.qa-cat-score {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-color3);
-  font-family: monospace;
-}
-
-.qa-cat-bar {
-  height: 8px;
-  background: var(--border-color);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 8px;
-}
-
-.qa-cat-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #4361ee, #7b8cff);
-  border-radius: 4px;
-  transition: width 0.4s ease;
-}
-
-body.dark .qa-cat-bar { background: #3a3a4a; }
-
-/* Sub-rows */
-.qa-sub-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 4px;
-  font-size: 11px;
-}
-
-.qa-sub-label {
-  width: 90px;
-  flex-shrink: 0;
-  color: var(--span-color);
-  font-weight: 500;
-}
-
-.qa-sub-bar {
-  flex: 1;
-  height: 4px;
-  background: var(--border-color);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.qa-sub-fill {
-  display: block;
-  height: 100%;
-  background: #a5d6a7;
-  border-radius: 2px;
-}
-
-.qa-sub-val {
-  width: 50px;
-  text-align: right;
-  font-family: monospace;
-  color: var(--span-color);
-}
-
-/* Issues Panel */
-.qa-issues-panel {
-  margin-bottom: 24px;
-}
-
-.qa-issues-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.qa-issues-header h4 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.qa-issues-count {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 10px;
-  background: #ffebee;
-  color: #c62828;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.qa-issues-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.qa-issue {
-  display: flex;
-  gap: 10px;
-  padding: 10px 14px;
-  border-radius: 8px;
-  align-items: flex-start;
-  font-size: 13px;
-}
-
-.qa-issue-error {
-  background: #ffebee;
-  color: #b71c1c;
-}
-
-.qa-issue-warn {
-  background: #fff3e0;
-  color: #bf360c;
-}
-
-body.dark .qa-issue-error { background: rgba(183,28,28,0.15); }
-body.dark .qa-issue-warn { background: rgba(191,54,12,0.15); }
-
-.qa-issue-icon {
-  font-size: 14px;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.qa-issue-body {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.qa-issue-cat {
-  font-weight: 600;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-/* Overview Panels */
-.qa-overview-panels {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 12px;
-}
-
-.qa-ov-panel {
-  padding: 14px;
-  background: var(--third-color);
-  border-radius: 12px;
-  box-shadow: var(--card-shadow);
-}
-
-.qa-ov-panel h5 {
-  margin: 0 0 10px 0;
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.qa-ov-count {
-  font-size: 11px;
-  color: var(--text-color3);
-  font-weight: 700;
-}
-
-.qa-ov-stats {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.qa-ov-stat {
-  text-align: center;
-}
-
-.qa-ov-val {
-  display: block;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.qa-ov-lbl {
-  display: block;
-  font-size: 10px;
-  color: var(--span-color);
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  margin-top: 2px;
-}
-
-.qa-ov-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.qa-ov-tags .feature-tag {
-  font-size: 10px;
-  padding: 2px 6px;
-}
-
-.qa-none {
-  font-size: 12px;
-  color: var(--span-color);
-  font-style: italic;
-}
-
-.qa-ov-table {
+/* Iframe */
+.qa-report-iframe-container {
   width: 100%;
-  font-size: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
 }
 
-.qa-ov-table td {
-  padding: 4px 0;
+.qa-report-iframe {
+  width: 100%;
+  height: 800px;
+  display: block;
 }
 
-.qa-ov-table td:first-child {
-  font-weight: 600;
-  color: var(--span-color);
-  width: 70px;
+body.dark .qa-report-iframe-container {
+  background: #0f172a;
+  border-color: #1e293b;
 }
 
 .qa-empty {
@@ -525,3 +133,31 @@ body.dark .qa-issue-warn { background: rgba(191,54,12,0.15); }
 .qa-empty p { margin: 0; font-size: 14px; color: var(--span-color); }
 .qa-empty-icon { font-size: 48px; margin-bottom: 12px; }
 </style>
+
+<script>
+(function() {
+  const iframe = document.querySelector('.qa-report-iframe');
+  if (!iframe) return;
+  iframe.addEventListener('load', function() {
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      const body = doc.body;
+      const height = body.scrollHeight;
+      if (height > 100) {
+        iframe.style.height = height + 'px';
+      }
+    } catch(e) {}
+  });
+  // Retry height adjustment after fonts/images load
+  setTimeout(function() {
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      const body = doc.body;
+      const height = body.scrollHeight;
+      if (height > 100) {
+        iframe.style.height = height + 'px';
+      }
+    } catch(e) {}
+  }, 1000);
+})();
+</script>
