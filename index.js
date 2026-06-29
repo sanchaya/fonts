@@ -325,7 +325,9 @@ router.get('/font/:family/:font', async (req,res) => {
                     }
                 }
 
-                qaReportHtml = renderHtmlInline(report, fontUrl)
+                const storedErr = fontQuality ? fontQuality.errors : null
+                const storedWarn = fontQuality ? fontQuality.warnings : null
+                qaReportHtml = renderHtmlInline(report, fontUrl, storedErr, storedWarn)
             }
         }
     } catch (err) {
@@ -796,7 +798,9 @@ router.get('/qa-report/:family', (req, res) => {
             }
         }
 
-        const html = renderHtmlReport(report, null, fontUrl);
+        const storedErr = fontQuality ? fontQuality.errors : null
+        const storedWarn = fontQuality ? fontQuality.warnings : null
+        const html = renderHtmlReport(report, null, fontUrl, storedErr, storedWarn);
         res.type('html').send(html);
     } catch (err) {
         console.error('Error generating QA report for', family, ':', err.message);
