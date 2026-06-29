@@ -688,6 +688,39 @@ router.get('/export', (req, res) => {
     res.send(JSON.stringify(exportData, null, 2))
 })
 
+/*--------------font-checker QA report route-------------- */
+
+const { analyzeFont } = require('./font-checker/analyzer');
+const { renderHtmlReport } = require('./font-checker/reporter');
+
+router.get('/qa-report/:family', (req, res) => {
+    const family = req.params.family;
+    const fontDir = getFontDir(family);
+    const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir);
+
+    if (!fs.existsSync(dirPath)) {
+        return res.status(404).type('html').send('<h1>Font directory not found</h1>');
+    }
+
+    const files = fs.readdirSync(dirPath);
+    const fontFile = files.find(f => f.endsWith('.ttf')) || files.find(f => f.endsWith('.otf')) || files.find(f => f.endsWith('.woff'));
+
+    if (!fontFile) {
+        return res.status(404).type('html').send('<h1>No font file found</h1>');
+    }
+
+    const fontPath = path.join(dirPath, fontFile);
+
+    try {
+        const report = analyzeFont(fontPath);
+        const html = renderHtmlReport(report);
+        res.type('html').send(html);
+    } catch (err) {
+        console.error('Error generating QA report for', family, ':', err.message);
+        res.status(500).type('html').send(`<h1>Error generating QA report</h1><p>${err.message}</p>`);
+    }
+});
+
 /*--------------app running--------------- */
 
 
