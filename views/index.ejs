@@ -99,7 +99,9 @@
                         <span class="meta-label">Quality</span>
                         <span class="meta-value">
                             <span class="quality-badge-inline" style="background: <%= fontQuality.gradeColor %>; color: #fff;"><%= fontQuality.grade %></span>
-                            <span class="quality-score-text"><%= fontQuality.totalScore %>% - <%= fontQuality.gradeLabel %></span>
+                            <span class="quality-score-text"><%= fontQuality.totalScore %>%</span>
+                            <% if (fontQuality.errors > 0) { %><span class="qa-info-err"><%= fontQuality.errors %>E</span><% } %>
+                            <% if (fontQuality.warnings > 0) { %><span class="qa-info-wrn"><%= fontQuality.warnings %>W</span><% } %>
                         </span>
                     </div>
                     <% } %>

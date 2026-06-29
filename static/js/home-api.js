@@ -141,7 +141,11 @@ var appendCard = (res) => {
         
         var qualityBadge = ''
         if (res.data[i].quality) {
-            qualityBadge = '<span class="quality-badge-card" style="background:'+res.data[i].quality.gradeColor+';">'+res.data[i].quality.grade+'</span>'
+            var err = res.data[i].quality.errors || 0
+            var wrn = res.data[i].quality.warnings || 0
+            var errBadge = err > 0 ? '<span class="qa-card-err">'+err+'E</span>' : ''
+            var wrnBadge = wrn > 0 ? '<span class="qa-card-wrn">'+wrn+'W</span>' : ''
+            qualityBadge = '<span class="quality-badge-card" style="background:'+res.data[i].quality.gradeColor+';">'+res.data[i].quality.grade+'</span>'+errBadge+wrnBadge
         }
         
         appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span>'+qualityBadge+'<span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:&quot;'+res.data[i].font+'&quot;, recursive;">Almost before we know it, we had left the ground</div></div></a>'

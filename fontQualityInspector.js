@@ -31,6 +31,9 @@ const ESSENTIAL_OT_FEATURES = ['akhn', 'blwf', 'half', 'pstf', 'pres']
 const IMPORTANT_OT_FEATURES = ['abvs', 'blws', 'psts', 'abvf', 'cjct', 'init', 'medi', 'fina']
 const GENERAL_OT_FEATURES = ['liga', 'kern', 'mark', 'mkmk', 'dist', 'rlig', 'clig', 'locl']
 
+const GSUB_FEATURES = ['akhn', 'blwf', 'half', 'pstf', 'pres', 'abvs', 'blws', 'psts', 'abvf', 'cjct', 'init', 'medi', 'fina', 'rlig', 'clig', 'liga', 'dlig', 'ccmp', 'isol', 'fina', 'medi', 'init']
+const GPOS_FEATURES = ['kern', 'mark', 'mkmk', 'dist', 'abvm', 'blwm']
+
 const hasGlyph = (font, unicode) => {
   try {
     const glyph = font.charToGlyph(String.fromCodePoint(unicode))
@@ -48,68 +51,53 @@ const countCoverage = (font, chars) => {
   return covered
 }
 
-const computeQualityScore = (font, fontPath, familyMetadata) => {
-  let totalScore = 0
-  let breakdown = {}
-  let details = {}
-
+const computeQualityScore = (font, fontPath, familyMetadata, stylesCount) => {
   const allKannada = Array.from({length: 128}, (_, i) => KANNADA_START + i)
   const kannadaCovered = countCoverage(font, allKannada)
-  const kannadaScore = (kannadaCovered / 128) * 35
-  totalScore += kannadaScore
-  breakdown.kannadaCoverage = { score: kannadaScore, max: 35, covered: kannadaCovered, total: 128, label: 'Kannada Coverage' }
-
-  const essentialCovered = countCoverage(font, KANNADA_ESSENTIAL)
-  const essentialScore = (essentialCovered / KANNADA_ESSENTIAL.length) * 15
-  totalScore += essentialScore
-  breakdown.essentialChars = { score: essentialScore, max: 15, covered: essentialCovered, total: KANNADA_ESSENTIAL.length, label: 'Essential Kannada Chars' }
-
   const latinChars = Array.from({length: 95}, (_, i) => LATIN_START + i)
   const latinCovered = countCoverage(font, latinChars)
-  const latinScore = (latinCovered / 95) * 5
-  totalScore += latinScore
-  breakdown.latinCoverage = { score: latinScore, max: 5, covered: latinCovered, total: 95, label: 'Basic Latin' }
-
   const digitCovered = countCoverage(font, DIGITS)
-  const digitScore = (digitCovered / 10) * 5
-  totalScore += digitScore
-  breakdown.digits = { score: digitScore, max: 5, covered: digitCovered, total: 10, label: 'Digits' }
-
   const punctCovered = countCoverage(font, PUNCTUATION)
-  const punctScore = (punctCovered / PUNCTUATION.length) * 5
-  totalScore += punctScore
-  breakdown.punctuation = { score: punctScore, max: 5, covered: punctCovered, total: PUNCTUATION.length, label: 'Punctuation' }
+  const essentialCovered = countCoverage(font, KANNADA_ESSENTIAL)
 
-  let features = []
+  let features = { all: [], gsub: [], gpos: [] }
   if (font.tables.gsub && font.tables.gsub.features) {
-    features.push(...font.tables.gsub.features.map(f => f.tag))
+    features.gsub.push(...font.tables.gsub.features.map(f => f.tag))
   }
   if (font.tables.gpos && font.tables.gpos.features) {
-    features.push(...font.tables.gpos.features.map(f => f.tag))
+    features.gpos.push(...font.tables.gpos.features.map(f => f.tag))
   }
-  features = [...new Set(features)]
+  features.all = [...new Set([...features.gsub, ...features.gpos])]
 
-  let otScore = 0
-  const essentialOt = features.filter(f => ESSENTIAL_OT_FEATURES.includes(f))
-  otScore += Math.min(essentialOt.length * 2, 10)
-  const importantOt = features.filter(f => IMPORTANT_OT_FEATURES.includes(f))
-  otScore += Math.min(importantOt.length * 1, 5)
-  const generalOt = features.filter(f => GENERAL_OT_FEATURES.includes(f))
-  otScore += Math.min(generalOt.length * 0.5, 5)
-  totalScore += otScore
-  breakdown.openType = { score: otScore, max: 15, covered: features.length, total: features.length, label: 'OpenType Features', features }
-
-  let metaScore = 0
   const names = font.names
-  if (names.fontFamily && names.fontFamily.en) metaScore += 1
+  const ext = path.extname(fontPath).toLowerCase()
+
+  /* ===== Categories ===== */
+
+  // Coverage (40): Kannada 30 + Latin 5 + Digits 3 + Punctuation 2
+  const kannadaScore = Math.min((kannadaCovered / 128) * 30, 30)
+  const latinScore = Math.min((latinCovered / 95) * 5, 5)
+  const digitScore = Math.min((digitCovered / 10) * 3, 3)
+  const punctScore = Math.min((punctCovered / PUNCTUATION.length) * 2, 2)
+  const coverageScore = Math.round((kannadaScore + latinScore + digitScore + punctScore) * 10) / 10
+
+  // Metadata (10)
+  let metaScore = 0
   if (names.designer && names.designer.en) metaScore += 2
   if (names.manufacturer && names.manufacturer.en) metaScore += 1
   if (names.version && names.version.en) metaScore += 1
   if (names.copyright && names.copyright.en) metaScore += 1
-  if (names.license && names.license.en) metaScore += 2
+  if (names.license && names.license.en) metaScore += 3
   if (familyMetadata && familyMetadata.description) metaScore += 2
-  totalScore += metaScore
-  breakdown.metadata = { score: metaScore, max: 10, label: 'Metadata' }
+
+  // Features (30): OpenType 15 + Metrics 10 + Format 5
+  let otScore = 0
+  const essentialOt = features.all.filter(f => ESSENTIAL_OT_FEATURES.includes(f))
+  otScore += Math.min(essentialOt.length * 2, 10)
+  const importantOt = features.all.filter(f => IMPORTANT_OT_FEATURES.includes(f))
+  otScore += Math.min(importantOt.length * 1, 5)
+  const generalOt = features.all.filter(f => GENERAL_OT_FEATURES.includes(f))
+  otScore += Math.min(generalOt.length * 0.5, 5)
 
   let metricsScore = 0
   const upm = font.unitsPerEm
@@ -121,38 +109,140 @@ const computeQualityScore = (font, fontPath, familyMetadata) => {
   if (ratio >= 1.2 && ratio <= 2.5) metricsScore += 2
   if (font.numGlyphs > 200) metricsScore += 2
   else if (font.numGlyphs > 100) metricsScore += 1
-  totalScore += metricsScore
-  breakdown.metrics = { score: metricsScore, max: 10, label: 'Font Metrics', unitsPerEm: upm, ascender: font.ascender, descender: font.descender, glyphCount: font.numGlyphs }
 
   let formatScore = 0
-  const ext = path.extname(fontPath).toLowerCase()
   if (ext === '.otf') formatScore += 5
   else if (ext === '.ttf') formatScore += 3
-  totalScore += formatScore
-  breakdown.format = { score: formatScore, max: 5, label: 'Font Format', format: ext }
 
-  totalScore = Math.round(totalScore * 10) / 10
-  totalScore = Math.min(Math.max(totalScore, 0), 100)
+  const featuresScore = Math.round((otScore + metricsScore + formatScore) * 10) / 10
 
-  return { totalScore, breakdown }
+  // Scripts (10): Essential Kannada characters
+  const scriptsScore = Math.round((essentialCovered / KANNADA_ESSENTIAL.length) * 10 * 10) / 10
+
+  // Revival (10): Family completeness + font quality indicators
+  let revivalScore = 0
+  // Has multiple styles
+  if (stylesCount >= 4) revivalScore += 3
+  else if (stylesCount >= 2) revivalScore += 2
+  else revivalScore += 1
+  // Font file size indicates comprehensiveness
+  const stat = fs.statSync(fontPath)
+  const fileSizeKB = stat.size / 1024
+  if (fileSizeKB > 200) revivalScore += 3
+  else if (fileSizeKB > 100) revivalScore += 2
+  else if (fileSizeKB > 50) revivalScore += 1
+  // Glyph count for comprehensive coverage
+  if (font.numGlyphs > 400) revivalScore += 2
+  else if (font.numGlyphs > 200) revivalScore += 1
+  // Has both GSUB and GPOS
+  if (features.gsub.length > 0 && features.gpos.length > 0) revivalScore += 2
+  else if (features.gsub.length > 0 || features.gpos.length > 0) revivalScore += 1
+
+  const totalScore = Math.min(Math.max(Math.round((coverageScore + metaScore + featuresScore + scriptsScore + revivalScore) * 10) / 10, 0), 100)
+
+  /* ===== Issues & Error/Warning Counts ===== */
+  const issues = []
+  let errors = 0
+  let warnings = 0
+
+  if (essentialCovered < KANNADA_ESSENTIAL.length) {
+    errors++
+    issues.push({ severity: 'error', category: 'Scripts', message: `${KANNADA_ESSENTIAL.length - essentialCovered} essential Kannada characters missing` })
+  }
+  if (kannadaCovered < 64) {
+    errors++
+    issues.push({ severity: 'error', category: 'Coverage', message: `Kannada coverage below 50% (${kannadaCovered}/128)` })
+  } else if (kannadaCovered < 115) {
+    warnings++
+    issues.push({ severity: 'warning', category: 'Coverage', message: `Kannada coverage ${kannadaCovered}/128 (${Math.round(kannadaCovered/128*100)}%)` })
+  }
+  if (features.all.length === 0) {
+    errors++
+    issues.push({ severity: 'error', category: 'Features', message: 'No OpenType features detected' })
+  } else if (!essentialOt.includes('akhn')) {
+    warnings++
+    issues.push({ severity: 'warning', category: 'Features', message: 'Missing essential akhn (Akhand) feature for conjuncts' })
+  }
+  if (!features.gsub.some(f => GSUB_FEATURES.includes(f))) {
+    errors++
+    issues.push({ severity: 'error', category: 'Features', message: 'No GSUB rules for glyph substitution' })
+  }
+  if (!features.gpos.some(f => GPOS_FEATURES.includes(f))) {
+    warnings++
+    issues.push({ severity: 'warning', category: 'Features', message: 'No GPOS rules for glyph positioning' })
+  }
+  if (latinCovered < 52) {
+    errors++
+    issues.push({ severity: 'error', category: 'Coverage', message: 'Insufficient Latin character coverage' })
+  }
+  if (metaScore < 5) {
+    warnings++
+    issues.push({ severity: 'warning', category: 'Metadata', message: 'Font metadata is incomplete' })
+  }
+  if (font.numGlyphs < 100) {
+    errors++
+    issues.push({ severity: 'error', category: 'Metrics', message: `Very low glyph count (${font.numGlyphs})` })
+  }
+
+  const breakdown = {
+    coverage: { score: coverageScore, max: 40, covered: kannadaCovered, total: 128, label: 'Coverage', sub: {
+      kannada: { score: Math.round(kannadaScore*10)/10, max: 30, covered: kannadaCovered, total: 128, label: 'Kannada Unicode' },
+      latin: { score: Math.round(latinScore*10)/10, max: 5, covered: latinCovered, total: 95, label: 'Basic Latin' },
+      digits: { score: Math.round(digitScore*10)/10, max: 3, covered: digitCovered, total: 10, label: 'Digits' },
+      punctuation: { score: Math.round(punctScore*10)/10, max: 2, covered: punctCovered, total: PUNCTUATION.length, label: 'Punctuation' }
+    }},
+    metadata: { score: metaScore, max: 10, label: 'Metadata' },
+    features: { score: featuresScore, max: 30, label: 'Features', sub: {
+      openType: { score: Math.round(otScore*10)/10, max: 15, covered: features.all.length, total: features.all.length, label: 'OpenType Features', features: features.all },
+      metrics: { score: Math.round(metricsScore*10)/10, max: 10, label: 'Font Metrics', unitsPerEm: upm, ascender: font.ascender, descender: font.descender, glyphCount: font.numGlyphs },
+      format: { score: formatScore, max: 5, label: 'Font Format', format: ext }
+    }},
+    scripts: { score: scriptsScore, max: 10, covered: essentialCovered, total: KANNADA_ESSENTIAL.length, label: 'Scripts' },
+    revival: { score: Math.round(revivalScore*10)/10, max: 10, label: 'Revival', stylesCount, fileSizeKB: Math.round(fileSizeKB*10)/10 }
+  }
+
+  return {
+    totalScore,
+    breakdown,
+    issues,
+    errors,
+    warnings,
+    overview: {
+      unicodeCoverage: { kannada: { covered: kannadaCovered, total: 128 }, latin: { covered: latinCovered, total: 95 }, digits: { covered: digitCovered, total: 10 } },
+      openTypeFeatures: features.all,
+      gsubRules: features.gsub,
+      gposRules: features.gpos,
+      glyphInventory: font.numGlyphs,
+      metadata: {
+        familyName: names.fontFamily ? names.fontFamily.en : '',
+        designer: names.designer ? names.designer.en : '',
+        manufacturer: names.manufacturer ? names.manufacturer.en : '',
+        version: names.version ? names.version.en : '',
+        license: names.license ? names.license.en : '',
+        copyright: names.copyright ? names.copyright.en : ''
+      }
+    }
+  }
 }
 
-const getGrade = (score) => {
+const getGrade = (score, errors) => {
+  if (errors > 5) return { grade: 'F', label: 'Critical', color: '#d32f2f' }
+  if (errors > 2) return { grade: 'D', label: 'Poor', color: '#e64a19' }
   if (score >= 90) return { grade: 'A', label: 'Excellent', color: '#2e7d32' }
   if (score >= 80) return { grade: 'B+', label: 'Very Good', color: '#388e3c' }
   if (score >= 70) return { grade: 'B', label: 'Good', color: '#689f38' }
   if (score >= 60) return { grade: 'C+', label: 'Satisfactory', color: '#f57f17' }
   if (score >= 50) return { grade: 'C', label: 'Average', color: '#e65100' }
-  if (score >= 35) return { grade: 'D', label: 'Poor', color: '#c62828' }
-  return { grade: 'F', label: 'Very Poor', color: '#b71c1c' }
+  if (score >= 35) return { grade: 'D', label: 'Poor', color: '#e64a19' }
+  return { grade: 'F', label: 'Critical', color: '#d32f2f' }
 }
 
-const inspectFont = async (fontPath, familyMetadata) => {
+const inspectFont = async (fontPath, familyMetadata, stylesCount) => {
   try {
     if (!fs.existsSync(fontPath)) return null
     const font = await opentype.load(fontPath)
-    const result = computeQualityScore(font, fontPath, familyMetadata)
-    const grade = getGrade(result.totalScore)
+    const result = computeQualityScore(font, fontPath, familyMetadata, stylesCount)
+    const grade = getGrade(result.totalScore, result.errors)
     return {
       ...result,
       grade: grade.grade,
@@ -183,12 +273,13 @@ const inspectAllFonts = async () => {
   for (const family of families) {
     const familyData = fonts[family]
     const familyMeta = metadata[family] || {}
+    const stylesCount = familyData.fonts ? familyData.fonts.length : 0
 
     const fontDir = getFontDir(family)
     const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir)
 
     if (!fs.existsSync(dirPath)) {
-      results[family] = { error: 'Font directory not found', totalScore: 0, grade: 'N/A', gradeLabel: 'Not Available', gradeColor: '#999' }
+      results[family] = { error: 'Font directory not found', totalScore: 0, grade: 'N/A', gradeLabel: 'Not Available', gradeColor: '#999', errors: 0, warnings: 0, issues: [], breakdown: {} }
       console.log(`Skipped ${family}: directory not found`)
       continue
     }
@@ -197,19 +288,20 @@ const inspectAllFonts = async () => {
     const fontFiles = files.filter(f => f.endsWith('.ttf') || f.endsWith('.otf'))
 
     if (fontFiles.length === 0) {
-      results[family] = { error: 'No font files found', totalScore: 0, grade: 'N/A', gradeLabel: 'Not Available', gradeColor: '#999' }
+      results[family] = { error: 'No font files found', totalScore: 0, grade: 'N/A', gradeLabel: 'Not Available', gradeColor: '#999', errors: 0, warnings: 0, issues: [], breakdown: {} }
       console.log(`Skipped ${family}: no font files`)
       continue
     }
 
     const fontPath = path.join(dirPath, fontFiles[0])
-    const result = await inspectFont(fontPath, familyMeta)
+    const result = await inspectFont(fontPath, familyMeta, stylesCount)
 
     if (result) {
       results[family] = result
-      console.log(`Inspected ${family}: ${result.totalScore} (${result.gradeLabel})`)
+      const emoji = result.errors > 0 ? '!' : result.warnings > 0 ? 'i' : '✓'
+      console.log(`${emoji} ${family}: ${result.totalScore} (${result.gradeLabel}) [${result.errors}E/${result.warnings}W]`)
     } else {
-      results[family] = { error: 'Failed to inspect font', totalScore: 0, grade: 'F', gradeLabel: 'Error', gradeColor: '#999' }
+      results[family] = { error: 'Failed to inspect font', totalScore: 0, grade: 'F', gradeLabel: 'Error', gradeColor: '#999', errors: 0, warnings: 0, issues: [], breakdown: {} }
     }
   }
 

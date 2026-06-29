@@ -1284,6 +1284,75 @@ body.dark .font .header .license-proprietary {
 }
 
 /* Font Quality Badges */
+.qa-badge-strip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.qa-badge-err {
+  padding: 1px 8px;
+  border-radius: 8px;
+  background: #ffebee;
+  color: #c62828;
+  font-size: 11px;
+}
+
+.qa-badge-wrn {
+  padding: 1px 8px;
+  border-radius: 8px;
+  background: #fff3e0;
+  color: #e65100;
+  font-size: 11px;
+}
+
+.qa-badge-grade {
+  font-size: 13px;
+}
+
+.qa-fam-err, .qa-fam-wrn {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 6px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.qa-fam-err {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.qa-fam-wrn {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.qa-info-err, .qa-info-wrn {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 6px;
+  margin-left: 3px;
+}
+
+.qa-info-err {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.qa-info-wrn {
+  background: #fff3e0;
+  color: #e65100;
+}
+
 .quality-badge-card {
     display: inline-block;
     font-size: 10px;
@@ -1294,6 +1363,27 @@ body.dark .font .header .license-proprietary {
     vertical-align: middle;
     letter-spacing: 0.3px;
     line-height: 1.4;
+}
+
+.qa-card-err, .qa-card-wrn {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 6px;
+    margin-left: 3px;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.qa-card-err {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.qa-card-wrn {
+    background: #fff3e0;
+    color: #e65100;
 }
 
 .quality-badge-inline {
