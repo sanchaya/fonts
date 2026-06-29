@@ -26,6 +26,12 @@
               </a>
           </li>
           <li>
+              <a data-toggle="pill" href="#qareport">
+                  <span class="glyphicon glyphicon glyphicon-check" aria-hidden="true"></span><br>
+                  QA REPORT
+              </a>
+          </li>
+          <li>
               <a data-toggle="pill" href="#glyphs">
                   <span class="glyphicon glyphicon glyphicon-font" aria-hidden="true"></span><br>
                   GLYPHS
@@ -52,6 +58,9 @@
           </div>
           <div id="conjuncts" class="tab-pane fade">
               <%- include('conjuncts/conjuncts',{conjuncts:conjuncts}) %> 
+          </div>
+          <div id="qareport" class="tab-pane fade">
+              <%- include('qaReport/qaReport',{fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null, fontGlyphs: typeof fontGlyphs !== 'undefined' ? fontGlyphs : null}) %> 
           </div>
           <div id="glyphs" class="tab-pane fade">
               <%- include('glyphs/glyphs',{fontGlyphs:fontGlyphs, fontQuality: typeof fontQuality !== 'undefined' ? fontQuality : null}) %> 
