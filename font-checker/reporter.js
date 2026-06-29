@@ -5,7 +5,7 @@
  * Takes the structured analysis object and renders a self-contained HTML report.
  */
 
-function renderHtmlReport(report, diff = null) {
+function renderHtmlReport(report, diff = null, fontUrl = null) {
   const { score, issues, metadata, coverage, scripts, features, gsub, gpos, glyphs, meta } = report;
 
   const gradeColor = {
@@ -27,6 +27,7 @@ function renderHtmlReport(report, diff = null) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Font QA Report — ${esc(fontName)}</title>
 <style>
+  ${fontUrl ? `@font-face { font-family: 'QA-Font'; src: url('${esc(fontUrl)}'); }` : ''}
   :root {
     --bg: #ffffff; --surface: #f8fafc; --border: #e2e8f0;
     --text: #0f172a; --muted: #64748b;
@@ -94,7 +95,7 @@ function renderHtmlReport(report, diff = null) {
   .glyph-cell.present { background: var(--pass-bg); border-color: #86efac; }
   .glyph-cell.missing { background: var(--fail-bg); border-color: #fca5a5; }
   .glyph-cell.revival { border-style: dashed; }
-  .glyph-char { font-size: 22px; line-height: 1; }
+  .glyph-char { font-size: 22px; line-height: 1; ${fontUrl ? "font-family: 'QA-Font', sans-serif;" : ''} }
   .glyph-cp { font-size: 9px; color: var(--muted); }
   .glyph-cell .tooltip { display: none; position: absolute; bottom: calc(100% + 4px); left: 50%;
     transform: translateX(-50%); background: #1e293b; color: #fff; font-size: 11px;
