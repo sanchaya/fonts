@@ -456,6 +456,7 @@ router.get('/visualizations', (req, res) => {
 router.get('/stats', (req, res) => {
     const fonts = require('./fonts.json')
     const metadata = require('./fontMetadata.json')
+    const qualityData = loadQualityData()
     
     const fontFamilies = Object.keys(fonts)
     const totalFonts = fontFamilies.reduce((sum, key) => sum + fonts[key].fonts.length, 0)
@@ -487,6 +488,32 @@ router.get('/stats', (req, res) => {
     
     const allFoundries = Object.entries(foundries).sort((a, b) => b[1] - a[1])
     const allDesigners = Object.entries(designers).sort((a, b) => b[1] - a[1])
+
+    const qualityKeys = Object.keys(qualityData)
+    const trackedFamilies = fontFamilies.filter(f => qualityData[f])
+    const scores = trackedFamilies.map(f => qualityData[f].totalScore).filter(s => s !== undefined && s !== null)
+    const avgScore = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0
+    const gradeCounts = { A: 0, B: 0, C: 0, D: 0, F: 0 }
+    trackedFamilies.forEach(f => {
+        const q = qualityData[f]
+        const s = q.totalScore
+        let g = 'F'
+        if (s >= 90) g = 'A'
+        else if (s >= 75) g = 'B'
+        else if (s >= 60) g = 'C'
+        else if (s >= 40) g = 'D'
+        gradeCounts[g] = (gradeCounts[g] || 0) + 1
+    })
+    const topScorers = trackedFamilies
+        .filter(f => qualityData[f].totalScore !== undefined)
+        .sort((a, b) => qualityData[b].totalScore - qualityData[a].totalScore)
+        .slice(0, 10)
+        .map(f => ({ family: f, score: qualityData[f].totalScore, grade: qualityData[f].grade }))
+    const bottomScorers = trackedFamilies
+        .filter(f => qualityData[f].totalScore !== undefined)
+        .sort((a, b) => qualityData[a].totalScore - qualityData[b].totalScore)
+        .slice(0, 10)
+        .map(f => ({ family: f, score: qualityData[f].totalScore, grade: qualityData[f].grade }))
     
     let pag = {...pages}
     pag.statsPage = true
@@ -499,7 +526,12 @@ router.get('/stats', (req, res) => {
             openSource,
             proprietary,
             allFoundries,
-            allDesigners
+            allDesigners,
+            qaTracked: trackedFamilies.length,
+            qaAvgScore: avgScore,
+            qaGradeCounts: gradeCounts,
+            qaTopScorers: topScorers,
+            qaBottomScorers: bottomScorers
         }
     })
 })

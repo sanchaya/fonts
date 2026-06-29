@@ -234,8 +234,70 @@
                 <div class="stat-number"><%= stats.proprietary %></div>
                 <div class="stat-label">Proprietary</div>
             </div>
+            <div class="stat-card" style="background:var(--primary-color) !important;">
+                <div class="stat-number" style="color:white !important;"><%= stats.qaAvgScore %>%</div>
+                <div class="stat-label" style="color:white !important;">Avg QA Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><%= stats.qaTracked %></div>
+                <div class="stat-label">QA Tracked</div>
+            </div>
         </div>
-        
+
+        <div class="stats-sections">
+            <div class="stats-section">
+                <h2>QA Grade Distribution</h2>
+                <% 
+                var grades = stats.qaGradeCounts;
+                var gradeColors = {A:'#2e7d32', B:'#388e3c', C:'#f9a825', D:'#e65100', F:'#c62828'};
+                var gradeMax = Math.max(grades.A, grades.B, grades.C, grades.D, grades.F, 1);
+                %>
+                <div class="progress-bars">
+                    <% ['A','B','C','D','F'].forEach(function(g) { if(grades[g] > 0) { %>
+                    <div class="progress-item">
+                        <span class="progress-label" style="width:30px;font-weight:700;color:<%= gradeColors[g] %>"><%= g %></span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:<%= (grades[g] / gradeMax * 100).toFixed(1) %>%;background:<%= gradeColors[g] %>"></div>
+                        </div>
+                        <span class="progress-percent"><%= grades[g] %></span>
+                    </div>
+                    <% } }) %>
+                </div>
+            </div>
+            <div class="stats-section">
+                <h2>Top QA Scorers</h2>
+                <div class="stats-list">
+                    <% if(stats.qaTopScorers.length) { %>
+                        <% stats.qaTopScorers.forEach(function(item, index) { %>
+                        <div class="stats-item">
+                            <span class="rank"><%= index + 1 %></span>
+                            <span class="name"><%= item.family %></span>
+                            <span class="count"><%= item.score %>%</span>
+                        </div>
+                        <% }) %>
+                    <% } else { %>
+                        <p style="color:var(--text-color);padding:12px;">No QA data available.</p>
+                    <% } %>
+                </div>
+            </div>
+            <div class="stats-section">
+                <h2>Needs Improvement</h2>
+                <div class="stats-list">
+                    <% if(stats.qaBottomScorers.length) { %>
+                        <% stats.qaBottomScorers.forEach(function(item, index) { %>
+                        <div class="stats-item">
+                            <span class="rank"><%= index + 1 %></span>
+                            <span class="name"><%= item.family %></span>
+                            <span class="count"><%= item.score %>%</span>
+                        </div>
+                        <% }) %>
+                    <% } else { %>
+                        <p style="color:var(--text-color);padding:12px;">No QA data available.</p>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+
         <div class="stats-sections">
             <div class="stats-section">
                 <h2>Foundries / Type Studios</h2>
