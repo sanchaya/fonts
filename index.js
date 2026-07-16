@@ -870,13 +870,13 @@ router.post('/api/engine-inspector/render', async (req, res) => {
             const pngBuffer = fs.readFileSync(tmpOut);
             result.image = `data:image/png;base64,${pngBuffer.toString('base64')}`;
         } else {
-            return res.status(500).json({ ok: false, error: 'render produced no output' });
+            return res.status(500).json({ ok: false, error: 'Rendering failed. Please contact the administrator for support.' });
         }
 
         res.json({ ok: true, ...result });
     } catch (err) {
         console.error('Engine inspector render error:', err);
-        res.status(500).json({ ok: false, error: err.message });
+        res.status(500).json({ ok: false, error: 'Rendering failed. Please contact the administrator for support.' });
     } finally {
         if (tmpOut && fs.existsSync(tmpOut)) {
             try { fs.unlinkSync(tmpOut); } catch (e) {}
