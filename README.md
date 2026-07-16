@@ -59,6 +59,12 @@ The project code (Express server, views, scripts) is licensed under the **MIT Li
   ```bash
   PORT=3000 node index.js
   ```
+- Admin credentials (set both before starting the server):
+  ```bash
+  export ADMIN_USERNAME=admin
+  export ADMIN_PASSWORD="your-secure-password"
+  node index.js
+  ```
 
 ## Admin Panel
 
@@ -66,18 +72,13 @@ The application includes an admin panel for managing font metadata.
 
 ### Access Admin Panel
 
-1. Go to `/login`
-2. Default credentials:
-   - Username: `admin`
-   - Password: `CHANGE_ME`
+Go to `/login` and sign in with the admin credentials configured on the server (set via `ADMIN_USERNAME` and `ADMIN_PASSWORD` environment variables).
 
 ### Admin Features
 
 - View and edit font metadata (author, license, source, foundry, description)
 - Export font data for GitHub Pages deployment
 - Manage font suggestions
-
-**Note:** Change the default admin credentials before deploying to production.
 
 ## Adding New Fonts
 

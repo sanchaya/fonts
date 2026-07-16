@@ -29,11 +29,15 @@ const path = require('path')
 
 const session = require('express-session')
 
-const ADMIN_USERNAME = 'admin'
-const ADMIN_PASSWORD = 'CHANGE_ME'
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin'
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
+if (!ADMIN_PASSWORD) {
+    console.error('WARNING: ADMIN_PASSWORD environment variable not set. Admin login will fail until you set it.')
+    console.error('  Set it with: export ADMIN_PASSWORD="your-secure-password"')
+}
 
 app.use(session({
-    secret: 'CHANGE_ME',
+    secret: process.env.SESSION_SECRET || 'CHANGE_ME',
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 24 * 60 * 60 * 1000 }
