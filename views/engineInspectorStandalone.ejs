@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendering QA · <%= fontName %> — Sanchaya</title>
+<link rel="stylesheet" href="/engine-inspector/css/sanchaya-theme.css">
+<style>
+body { background: #faf5f0; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.header { display: none; }
+.footer { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+    <%- include('fontSelectedPage/engineInspector/engineInspector', {
+        fontFamily: fontFamily,
+        fontName: fontName,
+        downloadUrl: downloadUrl
+    }) %>
+</div>
+</body>
+</html>

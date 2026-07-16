@@ -1,5 +1,29 @@
 # Changelog
 
+## [2026-07-16] RENDERING QA tab, HarfBuzz segfault fix, portal theme integration
+
+### Added
+- **RENDERING QA tab** on font detail page — inline dual-engine comparison between browser-native and HarfBuzz rendering
+- **Engine Inspector integration**: `POST /api/engine-inspector/render`, `GET /api/engine-inspector/test-strings`, `GET /engine-inspector/:family` routes
+- **`engine-inspector/`** directory with Python HarfBuzz+FreeType render CLI (`bin/render-harfbuzz.py`) and theme CSS
+- `views/engineInspectorStandalone.ejs` standalone page for direct inspector access
+- `views/fontSelectedPage/engineInspector/engineInspector.ejs` inline partial
+
+### Fixed
+- **HarfBuzz SIGSEGV crash**: `uharfbuzz` 0.51.7 corrupts memory when `hb.Blob()` is created in the same process as `freetype-py`, causing `SIGSEGV` in `face.load_glyph()`. Fixed by isolating HarfBuzz shaping in a subprocess — `shape_text_subprocess()` spawns a separate Python interpreter for HB, keeping FreeType rendering in the main process. All font files now render correctly (previously any glyph load after an `hb.Blob()` call would segfault).
+- **HarfBuzz glyph-to-pixel conversion**: Render script was using `font_units / 64` (FreeType 26.6 convention) but HarfBuzz returns positions in em-units. Corrected to `font_units * font_size / upem`. Same fix applied client-side in glyph table display.
+- **Portal color scheme integration**: Nav pills now use `--primary-gradient` for active state (instead of flat blue), `--span-color`/`--text-color3`/`--border-color`/`--card-shadow` portal CSS variables throughout. The `secondary` class selector was fixed to match the actual HTML (which lacks `nav-justified`) — active/hover states now apply correctly to all 9 tabs.
+- **RENDERING QA theme**: Font badge uses `--customizing-icon-background` (blue portal tone, was green), button uses `--primary-gradient` + `--card-shadow`, loading/table/input styles now reference portal CSS variables instead of hardcoded colors.
+- **API protocol**: Switched from FormData to JSON (`Content-Type: application/json`), removed multer middleware.
+- **Error resilience**: Added global Express error handler and process-level `uncaughtException`/`unhandledRejection` handlers.
+- **Nav pills overflow**: Added `flex-wrap` + `min-width: 90px` so all 9 tabs stay visible without overflow.
+- **URL consistency**: Updated `fonts.sanchaya.org` → `fonts.sanchaya.net` across cloned engine-inspector files.
+
+### Changed
+- Renamed tab label from "ENGINE INSPECTOR" to "RENDERING QA"
+- Tab pill now directly includes inspector partial via `<%- include(...) %>` (no iframe)
+- `.nav-container .nav-pills` and `.nav.nav-pills.secondary` now use portal CSS variables for all colors, shadows, and borders
+
 ## [2026-05-08] Karnata Bandipur font addition, Nudi reorg, and font rendering fixes
 
 ### Added

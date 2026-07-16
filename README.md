@@ -17,6 +17,7 @@ The project code (Express server, views, scripts) is licensed under the **MIT Li
 - **Statistics** — Dashboard showing font counts, foundries, and license distribution
 - **Visualizations** — Word cloud, font comparison, glyph gallery, and font bingo
 - **Unicode Character Blocks** — Reference table of all 346 Unicode blocks (Unicode 17.0). Click any block to expand its character grid; paste a character into the search to find which block it belongs to.
+- **RENDERING QA** — Dual-engine font rendering comparison (browser native vs HarfBuzz) on each font detail page
 - **Bug Reports** — Submit and acknowledge font rendering issues
 - **Font Suggestions** — Community-driven font submission
 
@@ -113,6 +114,9 @@ fonts/
 ├── configuration.js      # Configuration settings
 ├── unicodeBlocksData.js  # Unicode block definitions (Unicode 17.0)
 ├── LICENSE               # MIT License
+├── engine-inspector/     # Dual-engine font rendering comparison tool
+│   ├── bin/              # Python HarfBuzz+FreeType render CLI
+│   └── public/           # Theme assets
 ├── Main/                 # Core application logic
 │   └── fontSelectedPage/ # Font listing and filtering
 ├── static/               # Static assets

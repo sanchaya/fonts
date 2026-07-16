@@ -2,6 +2,9 @@ const express = require('express')
 const multer = require('multer');
 const fileUpload = require('express-fileupload');
 const contributedFolder = require('./contributedFolder');
+const { exec } = require('child_process');
+const { promisify } = require('util');
+const os = require('os');
 
 
 
@@ -240,6 +243,9 @@ const upload = multer({
     storage: storage,
 });
 
+const execAsync = promisify(exec);
+const RENDER_SCRIPT = path.join(__dirname, 'engine-inspector', 'bin', 'render-harfbuzz.py');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload());
@@ -249,6 +255,8 @@ app.use(fileUpload());
 app.use(router)
 
 app.use(express.static(path.join(__dirname,'static')))
+
+app.use('/engine-inspector', express.static(path.join(__dirname, 'engine-inspector', 'public')))
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -802,6 +810,183 @@ router.get('/qa-report/:family', (req, res) => {
         console.error('Error generating QA report for', family, ':', err.message);
         res.status(500).type('html').send(`<h1>Error generating QA report</h1><p>${err.message}</p>`);
     }
+});
+
+/*--------------Engine Inspector API routes-------------- */
+
+router.post('/api/engine-inspector/render', async (req, res) => {
+    let tmpOut = null;
+
+    try {
+        const { fontFamily, text, fontSize = 64, script, language, features: featuresStr } = req.body;
+
+        if (!fontFamily) {
+            return res.status(400).json({ ok: false, error: 'fontFamily is required' });
+        }
+        if (!text) {
+            return res.status(400).json({ ok: false, error: 'text is required' });
+        }
+
+        const fontDir = getFontDir(fontFamily);
+        const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir);
+        if (!fs.existsSync(dirPath)) {
+            return res.status(404).json({ ok: false, error: `Font directory not found for ${fontFamily}` });
+        }
+
+        const findFontFiles = (dir) => {
+            const files = [];
+            const items = fs.readdirSync(dir, { withFileTypes: true });
+            for (const item of items) {
+                if (item.isDirectory()) {
+                    files.push(...findFontFiles(path.join(dir, item.name)));
+                } else if (item.name.endsWith('.ttf') || item.name.endsWith('.otf')) {
+                    files.push(path.join(dir, item.name));
+                }
+            }
+            return files;
+        };
+        const fontFiles = findFontFiles(dirPath);
+        if (fontFiles.length === 0) {
+            return res.status(404).json({ ok: false, error: `No font file found for ${fontFamily}` });
+        }
+
+        let features = {};
+        if (featuresStr) {
+            try { features = typeof featuresStr === 'string' ? JSON.parse(featuresStr) : featuresStr; } catch (e) {}
+        }
+
+        tmpOut = path.join(os.tmpdir(), `render-${Date.now()}-${Math.random().toString(36).slice(2)}.png`);
+        const featureStr = Object.keys(features).length > 0 ? JSON.stringify(features) : '{}';
+        const cmd = `python3 ${RENDER_SCRIPT} ${JSON.stringify(fontFiles[0])} ${JSON.stringify(text)} ${JSON.stringify(tmpOut)} ${fontSize} ${JSON.stringify(script || '')} ${JSON.stringify(language || '')} ${JSON.stringify(featureStr)}`;
+
+        const { stdout } = await execAsync(cmd, { timeout: 15000, maxBuffer: 10 * 1024 * 1024 });
+        const result = JSON.parse(stdout);
+
+        if (fs.existsSync(tmpOut)) {
+            const pngBuffer = fs.readFileSync(tmpOut);
+            result.image = `data:image/png;base64,${pngBuffer.toString('base64')}`;
+        } else {
+            return res.status(500).json({ ok: false, error: 'render produced no output' });
+        }
+
+        res.json({ ok: true, ...result });
+    } catch (err) {
+        console.error('Engine inspector render error:', err);
+        res.status(500).json({ ok: false, error: err.message });
+    } finally {
+        if (tmpOut && fs.existsSync(tmpOut)) {
+            try { fs.unlinkSync(tmpOut); } catch (e) {}
+        }
+    }
+});
+
+router.get('/api/engine-inspector/test-strings', (req, res) => {
+    res.json({
+        sets: [
+            {
+                id: 'conjuncts',
+                label: 'Conjuncts (Ottakshara)',
+                note: 'Full ligature conjuncts — check side-bearing/kerning between conjunct and following vowel.',
+                strings: ['ಕ್ಷ', 'ಜ್ಞ', 'ತ್ರ', 'ಪ್ರ', 'ಕ್ರ', 'ಶ್ರ', 'ದ್ರ', 'ಕ್ತ', 'ನ್ಯ', 'ದ್ಧ', 'ತ್ತ', 'ನ್ನ'],
+            },
+            {
+                id: 'reph-cluster',
+                label: 'Reph + consonant cluster',
+                note: 'Ra + virama forming reph (superscript) before a base consonant — common collision point.',
+                strings: ['ಕರ್ನಾಟಕ', 'ಧರ್ಮ', 'ಸ್ವರ್ಗ', 'ಅರ್ಥ'],
+            },
+            {
+                id: 'vattu',
+                label: 'Vattu (below-base Ra)',
+                note: 'Below-base joining Ra — check vertical/horizontal clearance.',
+                strings: ['ಕ್ರಮ', 'ಗ್ರಹ', 'ಚ್ರಮ್ಮ', 'ಕ್ರಿಯೆ'],
+            },
+            {
+                id: 'matra-stacking',
+                label: 'Matra + consonant clusters',
+                note: 'Vowel signs attached to conjuncts — check mark-to-base positioning.',
+                strings: ['ಕ್ಷೀಣ', 'ಸ್ಕೃತಿ', 'ಸ್ಥಾಮನ್ನ', 'ಕ್ಷೇತ್ರ', 'ದ್ವೀಪ'],
+            },
+            {
+                id: 'punctuation-numerals',
+                label: 'Punctuation & Kannada numerals',
+                note: 'Digit and punctuation spacing, mixed with Kannada script.',
+                strings: ['ರೂ. ೧೪,೦೦೦/-', 'ಅ೧೦೦೧೦', '೦೧೨೩೪೫೬೭೮೯'],
+            },
+            {
+                id: 'kannada-latin-mixed',
+                label: 'Kannada + Latin mixed text',
+                note: 'Bilingual runs — check inter-script spacing.',
+                strings: ['Kannada ಕನ್ನಡ Unicode ಯುನಿಕೋಡ್', 'Sanchaya ಸಂಚಯ 2026'],
+            },
+            {
+                id: 'long-passage',
+                label: 'Long passage (running text)',
+                note: 'Full-line paragraph text — check overall rhythm/word-spacing.',
+                strings: ['ಕನ್ನಡ ನಾಡಿನ ಸಾಹಿತ್ಯ ಅತ್ಯಂತ ಸಮ್ಪನ್ನ, ವೈವಿಧ್ಯಮಯ ಮತ್ತು ಊರು'],
+            },
+        ],
+    });
+});
+
+/*--------------Engine Inspector viewer route-------------- */
+
+router.get('/engine-inspector/:family', async (req, res) => {
+    const { family } = req.params;
+    const fontDir = getFontDir(family);
+    const dirPath = path.join(__dirname, 'static', 'Fonts', fontDir);
+    let downloadUrl = null;
+    let fontFile = null;
+    let fontName = family;
+
+    if (fs.existsSync(dirPath)) {
+        const findFontFiles = (dir, baseDir) => {
+            const files = [];
+            const items = fs.readdirSync(dir, { withFileTypes: true });
+            for (const item of items) {
+                const fullPath = path.join(dir, item.name);
+                if (item.isDirectory()) {
+                    files.push(...findFontFiles(fullPath, baseDir));
+                } else if (item.name.endsWith('.ttf') || item.name.endsWith('.otf')) {
+                    const relPath = path.relative(baseDir, fullPath);
+                    files.push({ name: item.name, rel: relPath, path: fullPath });
+                }
+            }
+            return files;
+        };
+        const fontFiles = findFontFiles(dirPath, dirPath);
+        if (fontFiles.length > 0) {
+            const found = fontFiles[0];
+            fontFile = found.name;
+            downloadUrl = '/Fonts/' + fontDir + '/' + found.rel;
+            fontName = found.name.replace(/\.(ttf|otf)$/i, '');
+        }
+    }
+
+    res.render('engineInspectorStandalone', {
+        fontFamily: family,
+        fontName: fontName,
+        downloadUrl: downloadUrl,
+        fontFile: fontFile
+    });
+});
+
+/*--------------global error handler-------------- */
+
+app.use((err, req, res, next) => {
+    console.error('Unhandled error:', err.message);
+    if (req.xhr || req.headers.accept?.includes('json')) {
+        return res.status(500).json({ ok: false, error: err.message });
+    }
+    next();
+});
+
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught exception:', err.message);
+});
+
+process.on('unhandledRejection', (reason) => {
+    console.error('Unhandled rejection:', reason);
 });
 
 /*--------------app running--------------- */

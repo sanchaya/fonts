@@ -1,0 +1,210 @@
+<div class="engine-inspector-inline">
+    <div class="ei-card">
+        <span class="ei-card-title">Rendering QA</span>
+        <p class="ei-description">
+            Compare <strong><%= fontName %></strong> across your browser and the HarfBuzz reference engine.
+            See kerning/shaping differences instantly and inspect glyph metrics.
+        </p>
+
+        <div class="ei-controls">
+            <div class="ei-control-group">
+                <label class="ei-label">Font</label>
+                <span class="ei-font-badge">&#x2713; <%= fontName %> loaded from Sanchaya</span>
+            </div>
+
+            <div class="ei-control-group">
+                <label class="ei-label">Text to render</label>
+                <textarea class="ei-textarea" id="ei-test-text" placeholder="Type Kannada text here…">ಕರ್ನಾಟಕ</textarea>
+            </div>
+
+            <div class="ei-control-group">
+                <label class="ei-label">Font size (px)</label>
+                <input type="number" class="ei-input" id="ei-font-size" value="72" min="12" max="200">
+            </div>
+        </div>
+
+        <div class="ei-actions">
+            <button class="ei-btn ei-btn-primary" onclick="eiRender()" id="ei-render-btn">&#9654; Render</button>
+            <span class="ei-label">View mode:</span>
+            <div class="ei-mode-tabs">
+                <button class="ei-mode-tab active" data-mode="side-by-side" onclick="eiSetMode('side-by-side')">Side-by-side</button>
+                <button class="ei-mode-tab" data-mode="overlay" onclick="eiSetMode('overlay')">Overlay</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 12px;">
+            <label class="ei-label">OpenType features</label>
+            <textarea class="ei-textarea" id="ei-features" placeholder='e.g. {"kern": 1, "liga": 0}' style="font-family: monospace; min-height: 40px;"></textarea>
+        </div>
+    </div>
+
+    <div id="ei-error"></div>
+
+    <div id="ei-placeholder" class="ei-card" style="text-align: center; padding: 48px 16px;">
+        <p style="font-size: 16px; margin-bottom: 8px;">&#9881; Rendering QA</p>
+        <p>Type some text above and click <strong>Render</strong> to compare browser vs HarfBuzz rendering.</p>
+    </div>
+
+    <div id="ei-renders" style="display: none;"></div>
+
+    <div id="ei-glyph-info" style="display: none;">
+        <div class="ei-card">
+            <span class="ei-card-title">HarfBuzz Shaping Data</span>
+            <table class="ei-glyph-table">
+                <thead>
+                    <tr>
+                        <th>Glyph ID</th>
+                        <th>Cluster</th>
+                        <th>X Adv</th>
+                        <th>Y Adv</th>
+                        <th>X Off</th>
+                        <th>Y Off</th>
+                    </tr>
+                </thead>
+                <tbody id="ei-glyph-body"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+var eiFontFamily = '<%= fontFamily %>';
+var eiFontName = '<%= fontName %>';
+var eiDownloadUrl = '<%= downloadUrl %>';
+var eiFontFace = null;
+var eiMode = 'side-by-side';
+
+function eiSetMode(m) {
+    eiMode = m;
+    document.querySelectorAll('.ei-mode-tab').forEach(function(t) {
+        t.classList.toggle('active', t.dataset.mode === m);
+    });
+}
+
+function eiShowError(msg) {
+    var box = document.getElementById('ei-error');
+    box.innerHTML = '<div class="ei-error-box">&#10060; ' + eiEscapeHtml(msg) + '</div>';
+}
+
+function eiClearError() {
+    document.getElementById('ei-error').innerHTML = '';
+}
+
+function eiEscapeHtml(s) {
+    return (s || '').replace(/[&<>"']/g, function(c) {
+        var m = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+        return m[c];
+    });
+}
+
+function eiLoadFont() {
+    return fetch(eiDownloadUrl)
+        .then(function(r) { if (!r.ok) throw new Error('Failed to load font'); return r.arrayBuffer(); })
+        .then(function(buf) {
+            var ff = new FontFace(eiFontName, buf);
+            return ff.load();
+        })
+        .then(function(ff) {
+            eiFontFace = ff;
+            document.fonts.add(ff);
+        });
+}
+
+async function eiRender() {
+    eiClearError();
+    var btn = document.getElementById('ei-render-btn');
+    var container = document.getElementById('ei-renders');
+    var placeholder = document.getElementById('ei-placeholder');
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="ei-spinner"></span> Rendering...';
+    placeholder.style.display = 'none';
+    container.style.display = 'block';
+    container.innerHTML = '<div class="ei-loading">Rendering with HarfBuzz...</div>';
+
+    try {
+        var text = document.getElementById('ei-test-text').value;
+        var fontSize = parseInt(document.getElementById('ei-font-size').value) || 72;
+        var featuresStr = document.getElementById('ei-features').value;
+        var features = {};
+
+        if (featuresStr.trim()) {
+            try { features = JSON.parse(featuresStr); }
+            catch (e) { eiShowError('Invalid JSON in features: ' + e.message); btn.disabled = false; btn.innerHTML = '&#9654; Render'; return; }
+        }
+
+        var hb = await eiRenderHarfbuzz(text, fontSize, features);
+        if (!hb.ok) { eiShowError('HarfBuzz render failed: ' + hb.error); btn.disabled = false; btn.innerHTML = '&#9654; Render'; return; }
+
+        var bc = eiRenderBrowser(text, fontSize);
+
+        if (eiMode === 'side-by-side') eiDisplaySideBySide(bc, hb);
+        else eiDisplayOverlay(bc, hb);
+
+        eiDisplayGlyphs(hb.glyphs, fontSize, hb.upem);
+    } catch (err) { eiShowError(err.message); }
+    finally { btn.disabled = false; btn.innerHTML = '&#9654; Render'; }
+}
+
+function eiRenderBrowser(text, fontSize) {
+    var c = document.createElement('canvas');
+    c.width = 700; c.height = 180;
+    var ctx = c.getContext('2d');
+    ctx.fillStyle = '#faf5f0'; ctx.fillRect(0, 0, c.width, c.height);
+    ctx.fillStyle = '#0f172a';
+    ctx.font = (eiFontFace ? fontSize + 'px "' + eiFontName + '", ' : '') + fontSize + 'px "Noto Sans Kannada", sans-serif';
+    ctx.textBaseline = 'middle';
+    var lines = text.split('\n');
+    var lh = fontSize * 1.4;
+    var sy = (c.height - (lines.length * lh)) / 2 + lh / 2;
+    lines.forEach(function(l, i) { ctx.fillText(l, 20, sy + i * lh); });
+    return c;
+}
+
+async function eiRenderHarfbuzz(text, fontSize, features) {
+    var body = { fontFamily: eiFontFamily, text: text, fontSize: fontSize };
+    if (Object.keys(features).length > 0) body.features = JSON.stringify(features);
+    var r = await fetch('/api/engine-inspector/render', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+    });
+    if (!r.ok) { var e = await r.json().catch(function() { return { error: r.statusText }; }); throw new Error(e.error || r.statusText); }
+    return r.json();
+}
+
+function eiDisplaySideBySide(bc, hb) {
+    var container = document.getElementById('ei-renders');
+    container.innerHTML =
+        '<div class="ei-render-grid">' +
+            '<div class="ei-render-card"><span class="ei-render-label">&#127760; Your browser native</span><div class="ei-render-image"><canvas id="ei-browser-canvas" width="' + bc.width + '" height="' + bc.height + '"></canvas></div></div>' +
+            '<div class="ei-render-card"><span class="ei-render-label">&#128209; HarfBuzz reference</span><div class="ei-render-image"><img src="' + hb.image + '" alt="HarfBuzz render" /></div></div>' +
+        '</div>';
+    document.getElementById('ei-browser-canvas').getContext('2d').drawImage(bc, 0, 0);
+}
+
+function eiDisplayOverlay(bc, hb) {
+    var c = document.createElement('canvas');
+    c.width = Math.max(bc.width, hb.width || 700); c.height = Math.max(bc.height, hb.height || 180);
+    var ctx = c.getContext('2d');
+    ctx.globalAlpha = 0.6; ctx.globalCompositeOperation = 'lighten'; ctx.drawImage(bc, 0, 0);
+    var img = new Image();
+    img.onload = function() {
+        ctx.globalCompositeOperation = 'darken'; ctx.drawImage(img, 0, 0);
+        document.getElementById('ei-renders').innerHTML =
+            '<div class="ei-render-grid"><div class="ei-render-card"><span class="ei-render-label">&#127912; Overlay: <span style="color:#ef4444;">&#9632;</span> Browser vs <span style="color:#2563eb;">&#9632;</span> HarfBuzz</span><div class="ei-render-image"><canvas id="ei-overlay-canvas" width="' + c.width + '" height="' + c.height + '"></canvas></div></div></div>';
+        document.getElementById('ei-overlay-canvas').getContext('2d').drawImage(c, 0, 0);
+    };
+    img.src = hb.image;
+}
+
+function eiDisplayGlyphs(glyphs, fontSize, upem) {
+    var scale = fontSize / upem;
+    document.getElementById('ei-glyph-body').innerHTML = glyphs.map(function(g) {
+        return '<tr><td>' + g.glyph_id + '</td><td>' + g.cluster + '</td><td>' + (g.x_advance * scale).toFixed(1) + '</td><td>' + (g.y_advance * scale).toFixed(1) + '</td><td>' + (g.x_offset * scale).toFixed(1) + '</td><td>' + (g.y_offset * scale).toFixed(1) + '</td></tr>';
+    }).join('');
+    document.getElementById('ei-glyph-info').style.display = 'block';
+}
+
+eiLoadFont().catch(function(err) { console.warn('Font preload:', err); });
+</script>
