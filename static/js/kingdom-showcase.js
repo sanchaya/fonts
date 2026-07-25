@@ -41,6 +41,8 @@
       textPlaceholder: 'ನಿಮ್ಮ ಪಠ್ಯವನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ...',
       fontSize: 'ಅಕ್ಷರ ಗಾತ್ರ',
       theme: 'ಥೀಮ್',
+      lineHeight: 'ಲೈನ್ ಸ್ಪೇಸಿಂಗ್',
+      charSpacing: 'ಅಕ್ಷರ ಅಂತರ',
       themeLight: 'ಲೈಟ್',
       themeDark: 'ಡಾರ್ಕ್',
       themeWarm: 'ವಾರ್ಮ್',
@@ -89,6 +91,8 @@
       textPlaceholder: 'Type your text here...',
       fontSize: 'Font Size',
       theme: 'Theme',
+      lineHeight: 'Line Spacing',
+      charSpacing: 'Char Spacing',
       themeLight: 'Light',
       themeDark: 'Dark',
       themeWarm: 'Warm',
@@ -146,6 +150,10 @@
   var textInput = document.getElementById('ksTextInput');
   var fontSizeInput = document.getElementById('ksFontSize');
   var fontSizeLabel = document.getElementById('ksFontSizeLabel');
+  var lineHeightInput = document.getElementById('ksLineHeight');
+  var lineHeightLabel = document.getElementById('ksLineHeightLabel');
+  var charSpacingInput = document.getElementById('ksCharSpacing');
+  var charSpacingLabel = document.getElementById('ksCharSpacingLabel');
   var modalFontName = document.getElementById('ksModalFontName');
   var modalFontFamily = document.getElementById('ksModalFontFamily');
   var downloadBtn = document.getElementById('ksDownloadBtn');
@@ -206,13 +214,21 @@
   function updatePreview() {
     var text = textInput.value || (currentLang === 'kn' ? 'ಕನ್ನಡ ಲಿಪಿಯ ಸೊಬಗು' : 'Beauty of Kannada script');
     var size = fontSizeInput.value;
+    var lh = lineHeightInput.value;
+    var cs = charSpacingInput.value;
     fontSizeLabel.textContent = size + 'px';
+    lineHeightLabel.textContent = lh;
+    charSpacingLabel.textContent = cs + 'px';
     previewText.textContent = text;
     previewText.style.fontSize = size + 'px';
+    previewText.style.lineHeight = lh;
+    previewText.style.letterSpacing = cs + 'px';
   }
 
   textInput.addEventListener('input', updatePreview);
   fontSizeInput.addEventListener('input', updatePreview);
+  lineHeightInput.addEventListener('input', updatePreview);
+  charSpacingInput.addEventListener('input', updatePreview);
 
   var themeBtns = document.querySelectorAll('.ks-theme-btn');
   themeBtns.forEach(function(btn) {
