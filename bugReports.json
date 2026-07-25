@@ -46,5 +46,42 @@
     "status": "open",
     "id": 1777301257096,
     "createdAt": "2026-04-27T14:47:37.096Z"
+  },
+  {
+    "fontFamily": "ATS-Chikkamagaluru",
+    "fontName": "ATSChikkamagaluru ColorRegular",
+    "email": "pujarchetan900@gmail.com",
+    "description": "H",
+    "browser": "Chrome",
+    "os": "Other",
+    "status": "open",
+    "id": 1784261848497,
+    "createdAt": "2026-07-17T04:17:28.497Z"
+  },
+  {
+    "fontFamily": "ATS-Chikkamagaluru",
+    "fontName": "ATSChikkamagaluru ColorRegular",
+    "email": "",
+    "description": "Editing ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1784261859244,
+    "createdAt": "2026-07-17T04:17:39.244Z",
+    "acknowledgments": 1,
+    "acknowledgedBy": [
+      "::ffff:127.0.0.1"
+    ]
+  },
+  {
+    "fontFamily": "KarnataGTN",
+    "fontName": "KarnataGTN ExtraBold",
+    "email": "",
+    "description": "ಯಾರೂ ಶಾಶ್ವತವಾಗಿ ಉಳಿಯುವುದಿಲ್ಲವಾದ್ದರಿಂದ ಒಂಟಿಯಾಗಿರಲು ಕಲಿಯಿರಿ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1784744200399,
+    "createdAt": "2026-07-22T18:16:40.399Z"
   }
 ]
