@@ -975,6 +975,18 @@ router.get('/engine-inspector/:family', async (req, res) => {
     });
 });
 
+/*--------------Timeline page (standalone, embeddable)-------------- */
+
+router.get('/timeline', (req, res) => {
+    res.render('timeline/timeline')
+})
+
+/*--------------Kingdom Showcase page (standalone, embeddable)-------------- */
+
+router.get('/kingdom-showcase', (req, res) => {
+    res.render('kingdom-showcase/kingdomShowcase')
+})
+
 /*--------------global error handler-------------- */
 
 app.use((err, req, res, next) => {

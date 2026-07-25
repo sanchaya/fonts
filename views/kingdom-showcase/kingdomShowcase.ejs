@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ಕನ್ನಡ ಲಿಪಿಗಳು: ರಾಜವಂಶಗಳ ಮೂಲಕ — ಫಾಂಟ್ಸ್ ಸಂಚಯ</title>
+<base href="/">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/kingdom-showcase.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="ks-brand">
+  <a href="https://fonts.sanchaya.net">
+    <img src="/img/app-icon-light.png" alt="ಫಾಂಟ್ಸ್ ಸಂಚಯ" class="ks-brand-logo">
+    <span class="ks-brand-text">Fonts Sanchaya</span>
+  </a>
+  <div class="ks-lang-toggle">
+    <button class="ks-lang-btn ks-lang-active" data-lang="kn">ಕನ್ನಡ</button>
+    <button class="ks-lang-btn" data-lang="en">English</button>
+  </div>
+</div>
+
+<div class="ks-container">
+
+  <div class="ks-hero">
+    <div class="ks-hero-bg"></div>
+    <div class="ks-hero-content">
+      <p class="ks-hero-suptitle" data-i18n="heroSuptitle">Fonts Sanchaya</p>
+      <h1 class="ks-hero-title" data-i18n="heroTitle">ಕನ್ನಡ ಲಿಪಿಗಳು:<br>ರಾಜವಂಶಗಳ ಮೂಲಕ</h1>
+      <p class="ks-hero-subtitle" data-i18n="heroSubtitle">ಕರ್ನಾಟಕದ ಮಹಾನ್ ರಾಜವಂಶಗಳಿಂದ ಪ್ರೇರಿತವಾದ ಫಾಂಟ್‌ಗಳು — ಕಾರ್ಡ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಅಕ್ಷರ ಚಿತ್ರ ರಚಿಸಿ</p>
+    </div>
+  </div>
+
+  <div class="ks-section-label">
+    <span class="ks-section-icon"><i class="fas fa-crown"></i></span>
+    <span data-i18n="sectionKingdoms">ರಾಜವಂಶಗಳು</span>
+  </div>
+
+  <div class="ks-eras ks-eras-kingdoms">
+
+    <% var kingdoms = [
+      {
+        id: 'kadamba',
+        color: '#8B4513',
+        icon: 'fa-crown',
+        i18nPrefix: 'kadamba',
+        fonts: [
+          { family: 'Kadamba', font: 'Kadamba Kakusthavarman', preview: 'ಕಡಂಬ', i18nPrefix: 'kadamba', styleEn: 'Kakusthavarman · Regular', author: 'Ki Basajan Ki' }
+        ]
+      },
+      {
+        id: 'ganga',
+        color: '#B8860B',
+        icon: 'fa-landmark',
+        i18nPrefix: 'ganga',
+        fonts: [
+          { family: 'Ganga', font: 'Gangga Marasimha', preview: 'ಗಂಗ', i18nPrefix: 'ganga', styleEn: 'Marasimha · Regular', author: 'Ki Basajan Ki' }
+        ]
+      },
+      {
+        id: 'chalukya',
+        color: '#CD5C5C',
+        icon: 'fa-monument',
+        i18nPrefix: 'chalukya',
+        fonts: [
+          { family: 'Chalukya', font: 'Chalukya Vijayaditya', preview: 'ಚಾಲುಕ್ಯ', i18nPrefix: 'chalukya', styleEn: 'Vijayaditya · Regular', author: 'Ki Basajan Ki' }
+        ]
+      },
+      {
+        id: 'hoysala',
+        color: '#D2691E',
+        icon: 'fa-archway',
+        i18nPrefix: 'hoysala',
+        fonts: [
+          { family: 'Hoysala', font: 'Hoysala Regular', preview: 'ಹೊಯ್ಸಳ', i18nPrefix: 'hoysala', styleEn: 'Regular', author: 'Ki Basajan Ki' }
+        ]
+      }
+    ]; %>
+
+    <% kingdoms.forEach(function(era) { %>
+    <div class="ks-era">
+      <div class="ks-era-header">
+        <div class="ks-era-icon" style="background: <%= era.color %>;">
+          <i class="fas <%= era.icon %>"></i>
+        </div>
+        <div class="ks-era-header-text">
+          <span class="ks-era-badge" style="background: <%= era.color %>16; color: <%= era.color %>; border: 1px solid <%= era.color %>26;">345 – 540 CE</span>
+          <h2 class="ks-era-name" data-i18n="<%= era.i18nPrefix %>Name"><%= era.id === 'kadamba' ? 'ಕಡಂಬ ರಾಜವಂಶ' : era.id === 'ganga' ? 'ಪಶ್ಚಿಮ ಗಂಗ ರಾಜವಂಶ' : era.id === 'chalukya' ? 'ಬಾದಾಮಿ ಚಾಲುಕ್ಯ ರಾಜವಂಶ' : 'ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯ' %></h2>
+        </div>
+      </div>
+      <p class="ks-era-desc" data-i18n="<%= era.i18nPrefix %>Desc"><%= era.id === 'kadamba' ? 'ಕರ್ನಾಟಕದ ಮೊದಲ ಸ್ಥಳೀಯ ರಾಜವಂಶ. ಕಡಂಬರು ಬನವಾಸಿಯಿಂದ ಆಳಿದರು ಮತ್ತು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಾಹಿತ್ಯವನ್ನು ಪೋಷಿಸಿದರು.' : era.id === 'ganga' ? 'ಗಂಗರು ಕೋಲಾರ ಮತ್ತು ತಲಕಾಡಿನಿಂದ ದಕ್ಷಿಣ ಕರ್ನಾಟಕವನ್ನು ಆಳಿದರು. ಜೈನಧರ್ಮ ಮತ್ತು ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಮಹಾನ್ ಪೋಷಕರು.' : era.id === 'chalukya' ? 'ಬಾದಾಮಿ ಚಾಲುಕ್ಯರು ಕನ್ನಡ ಸಾಹಿತ್ಯ ಮತ್ತು ದೇವಾಲಯ ವಾಸ್ತುಶಿಲ್ಪದ ಸುವರ್ಣಯುಗವನ್ನು ಆರಂಭಿಸಿದರು.' : 'ಹೊಯ್ಸಳರು ಬೇಲೂರು, ಹಳೇಬೀಡು ಮತ್ತು ಸೋಮನಾಥಪುರದಲ್ಲಿ ಅದ್ಭುತ ದೇವಾಲಯಗಳನ್ನು ನಿರ್ಮಿಸಿದರು. ಸಾಂಸ್ಕೃತಿಕ ಮತ್ತು ಸಾಹಿತ್ಯಿಕ ಸಂಪನ್ನತೆಯ ಕಾಲ.' %></p>
+      <div class="ks-fonts-grid">
+        <% era.fonts.forEach(function(f) { %>
+        <div class="ks-font-card">
+          <div class="ks-font-preview" style="font-family: '<%= f.font %>', serif;">
+            <span><%= f.preview %></span>
+          </div>
+          <div class="ks-font-card-body">
+            <span class="ks-font-name" data-i18n="<%= f.i18nPrefix %>FontLabel"><%= f.preview %> ಫಾಂಟ್</span>
+            <span class="ks-font-style" data-i18n="<%= f.i18nPrefix %>FontStyle"><%= f.styleEn %></span>
+            <span class="ks-font-author"><%= f.author %></span>
+          </div>
+          <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
+            <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    <% }); %>
+
+  </div>
+
+  <div class="ks-section-label ks-section-label-print">
+    <span class="ks-section-icon"><i class="fas fa-book-open"></i></span>
+    <span data-i18n="sectionPrint">ಮುದ್ರಣ ಯುಗ</span>
+  </div>
+
+  <div class="ks-eras ks-eras-print">
+
+    <% var printFonts = [
+      {
+        color: '#2E4057',
+        i18nPrefix: 'printEra',
+        fonts: [
+          { family: 'Karnata-F-Kittel-Font', font: 'Karnata F Kittel', preview: 'ಕಿತ್ತೆಲ್', i18nPrefix: 'kittel', styleEn: 'Basel Mission Press (1830–1900)', author: 'Prashant Pandit, Sachin Shetty, Satish A.G.' },
+          { family: 'Karnata-German-Mission-Press', font: 'KarnataGermanMissionPressTypeface', preview: 'ಜರ್ಮನ್ ಮಿಷನ್', i18nPrefix: 'german', styleEn: 'German Mission Press · Mangaluru', author: 'Arun C Kallappanavar' },
+          { family: 'Karnata-Wesleyan-Mission-Press', font: 'KarnataWesleyanMissionPress', preview: 'ವೆಸ್ಲಿಯನ್', i18nPrefix: 'wesleyan', styleEn: 'Wesleyan Mission Press · Bengaluru', author: 'Arun C Kallappanavar' },
+        ]
+      }
+    ]; %>
+
+    <% printFonts.forEach(function(era) { %>
+    <div class="ks-era ks-era-print">
+      <div class="ks-era-header">
+        <div class="ks-era-icon" style="background: <%= era.color %>;">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <div class="ks-era-header-text">
+          <span class="ks-era-badge" style="background: <%= era.color %>16; color: <%= era.color %>; border: 1px solid <%= era.color %>26;">1830 – 1950 CE</span>
+          <h2 class="ks-era-name" data-i18n="<%= era.i18nPrefix %>Name">ಮುದ್ರಣ ಯುಗ</h2>
+        </div>
+      </div>
+      <p class="ks-era-desc" data-i18n="<%= era.i18nPrefix %>Desc">ಮಿಷನ್ ಮುದ್ರಣಾಲಯಗಳ ಯುಗ ಮತ್ತು ಕನ್ನಡ ಮುದ್ರಣಕಲೆಯ ಜನನ. ಬಾಸೆಲ್ ಮಿಷನ್ (ಮಂಗಳೂರು), ವೆಸ್ಲಿಯನ್ ಮಿಷನ್ (ಬೆಂಗಳೂರು) ಮತ್ತು ಜರ್ಮನ್ ಮಿಷನ್ ಮುದ್ರಣಾಲಯಗಳು ಮೊದಲ ಕನ್ನಡ ಅಕ್ಷರಮುದ್ರಣಗಳನ್ನು ಸೃಷ್ಟಿಸಿದವು.</p>
+      <div class="ks-fonts-grid">
+        <% era.fonts.forEach(function(f) { %>
+        <div class="ks-font-card">
+          <div class="ks-font-preview" style="font-family: '<%= f.font %>', serif;">
+            <span><%= f.preview %></span>
+          </div>
+          <div class="ks-font-card-body">
+            <span class="ks-font-name" data-i18n="<%= f.i18nPrefix %>FontLabel"><%= f.preview %> ಫಾಂಟ್</span>
+            <span class="ks-font-style" data-i18n="<%= f.i18nPrefix %>FontStyle"><%= f.styleEn %></span>
+            <span class="ks-font-author"><%= f.author %></span>
+          </div>
+          <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
+            <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    <% }); %>
+
+  </div>
+
+  <div class="ks-footer">
+    <p><span data-i18n="footer">ಫಾಂಟ್ಸ್ ಸಂಚಯದ ಭಾಗ</span> — <span data-i18n="footerSub">ಸಂಚಯ ಅವರಿಂದ ಕನ್ನಡ ಅಕ್ಷರಮುದ್ರಣಗಳ ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್</span></p>
+  </div>
+
+</div>
+
+<div class="ks-modal" id="ksModal">
+  <div class="ks-modal-backdrop"></div>
+  <div class="ks-modal-content">
+    <button class="ks-modal-close"><i class="fas fa-times"></i></button>
+    <div class="ks-modal-header">
+      <h2 class="ks-modal-title"><span data-i18n="modalTitle">ಇದರೊಂದಿಗೆ ರಚಿಸಿ</span> <span id="ksModalFontName"></span></h2>
+      <p class="ks-modal-subtitle" data-i18n="modalSubtitle">ನಿಮ್ಮ ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ಚಿತ್ರವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</p>
+    </div>
+    <div class="ks-modal-body">
+      <div class="ks-modal-inputs">
+        <div class="ks-input-group">
+          <label data-i18n="yourText">ನಿಮ್ಮ ಪಠ್ಯ</label>
+          <textarea id="ksTextInput" maxlength="300" rows="3" data-i18n-placeholder="textPlaceholder" placeholder="ನಿಮ್ಮ ಪಠ್ಯವನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ..."></textarea>
+        </div>
+        <div class="ks-input-row">
+          <div class="ks-input-group ks-input-half">
+            <label data-i18n="fontSize">ಅಕ್ಷರ ಗಾತ್ರ</label>
+            <div class="ks-range-group">
+              <input type="range" id="ksFontSize" min="16" max="120" value="48">
+              <span id="ksFontSizeLabel">48px</span>
+            </div>
+          </div>
+          <div class="ks-input-group ks-input-half">
+            <label data-i18n="theme">ಥೀಮ್</label>
+            <div class="ks-theme-toggle">
+              <button class="ks-theme-btn active" data-bg="#ffffff" data-text="#1a1a2e" data-i18n="themeLight">ಲೈಟ್</button>
+              <button class="ks-theme-btn" data-bg="#1a1a2e" data-text="#ffffff" data-i18n="themeDark">ಡಾರ್ಕ್</button>
+              <button class="ks-theme-btn" data-bg="#faf5f0" data-text="#5c3d2e" data-i18n="themeWarm">ವಾರ್ಮ್</button>
+            </div>
+          </div>
+        </div>
+        <div class="ks-input-group">
+          <label data-i18n="preview">ಪೂರ್ವವೀಕ್ಷಣೆ</label>
+          <div class="ks-preview-box" id="ksPreviewBox" style="background: #ffffff;">
+            <div class="ks-preview-text" id="ksPreviewText" style="font-family: 'Kadamba Kakusthavarman', serif; font-size: 48px; color: #1a1a2e;">
+              ಕನ್ನಡ ಲಿಪಿಯ ಸೊಬಗು
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ks-modal-footer">
+      <div class="ks-modal-footer-info">
+        <span id="ksModalFontFamily"></span>
+        <span>fonts.sanchaya.net</span>
+      </div>
+      <div class="ks-modal-actions">
+        <button class="ks-btn ks-btn-secondary" id="ksCopyBtn"><i class="fas fa-copy"></i> <span data-i18n="copyImage">ಚಿತ್ರ ನಕಲಿಸಿ</span></button>
+        <button class="ks-btn ks-btn-primary" id="ksDownloadBtn"><i class="fas fa-download"></i> <span data-i18n="downloadPng">PNG ಡೌನ್‌ಲೋಡ್</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/kingdom-showcase.js"></script>
+</body>
+</html>

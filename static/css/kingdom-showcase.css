@@ -1,0 +1,720 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #faf8f4;
+  color: #1a1a2e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ks-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.ks-brand a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.ks-brand-logo {
+  height: 36px;
+  width: auto;
+}
+
+.ks-brand-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 0.3px;
+}
+
+.ks-lang-toggle {
+  display: flex;
+  gap: 2px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.ks-lang-btn {
+  padding: 5px 12px;
+  border: none;
+  background: transparent;
+  color: #5a5a7a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.ks-lang-btn.ks-lang-active {
+  background: #ffffff;
+  color: #1a1a2e;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.ks-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+.ks-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eae6e0;
+}
+
+.ks-section-label-print {
+  margin-top: 48px;
+}
+
+.ks-section-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f0ece6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #5a5a7a;
+}
+
+.ks-eras-print {
+  grid-template-columns: 1fr !important;
+}
+
+.ks-era-print .ks-fonts-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+}
+
+.ks-hero {
+  position: relative;
+  padding: 64px 0 48px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ks-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(139, 69, 19, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(67, 97, 238, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.ks-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.ks-hero-suptitle {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8B4513;
+  margin-bottom: 12px;
+}
+
+.ks-hero-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+}
+
+.ks-hero-subtitle {
+  font-size: 1rem;
+  color: #5a5a7a;
+  max-width: 560px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.ks-eras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.ks-era {
+  background: #ffffff;
+  border: 1px solid #eae6e0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+.ks-era:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.ks-era-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #f0ece6;
+}
+
+.ks-era-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.ks-era-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.ks-era-badge {
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 12px;
+  border-radius: 12px;
+  margin-bottom: 4px;
+}
+
+.ks-era-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.3;
+}
+
+.ks-era-desc {
+  font-size: 0.82rem;
+  color: #7a7a9a;
+  line-height: 1.5;
+  padding: 0 16px 12px;
+  border-bottom: 1px solid #f0ece6;
+}
+
+.ks-fonts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 12px 16px 16px;
+}
+
+.ks-font-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eae6e0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #fcfbf9;
+  overflow: hidden;
+}
+
+.ks-font-card:hover {
+  border-color: #4361ee;
+  box-shadow: 0 4px 16px rgba(67, 97, 238, 0.1);
+  transform: translateY(-2px);
+}
+
+.ks-font-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  min-height: 80px;
+  background: #f8f6f2;
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  line-height: 1.2;
+  word-break: break-word;
+  text-align: center;
+}
+
+.ks-font-card-body {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.ks-font-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ks-font-style {
+  font-size: 0.78rem;
+  color: #7a7a9a;
+  font-weight: 400;
+}
+
+.ks-font-author {
+  font-size: 0.75rem;
+  color: #9a9aba;
+  font-weight: 400;
+}
+
+.ks-card-action {
+  margin: 0 16px 14px;
+  padding: 8px 14px;
+  border: 1px solid #4361ee;
+  background: transparent;
+  color: #4361ee;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: inherit;
+}
+
+.ks-card-action:hover {
+  background: #4361ee;
+  color: #fff;
+}
+
+.ks-card-action i {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.ks-card-action:hover i {
+  transform: translateX(3px);
+}
+
+.ks-footer {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-size: 0.85rem;
+  color: #7a7a9a;
+  border-top: 1px solid #eae6e0;
+  margin-top: 40px;
+}
+
+.ks-footer a {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.ks-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Modal */
+.ks-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.ks-modal.ks-modal-open {
+  display: flex;
+}
+
+.ks-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+}
+
+.ks-modal-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: ksModalIn 0.3s ease;
+}
+
+@keyframes ksModalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.ks-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  color: #5a5a7a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.ks-modal-close:hover {
+  background: #e0e0e0;
+  color: #1a1a2e;
+}
+
+.ks-modal-header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.ks-modal-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.ks-modal-title span {
+  color: #4361ee;
+}
+
+.ks-modal-subtitle {
+  font-size: 0.85rem;
+  color: #7a7a9a;
+  margin-top: 4px;
+}
+
+.ks-modal-body {
+  padding: 20px 32px;
+}
+
+.ks-modal-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ks-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ks-input-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a5a7a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ks-input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.ks-input-group textarea:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+.ks-input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ks-input-half {
+  min-width: 0;
+}
+
+.ks-range-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ks-range-group input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #ddd;
+  outline: none;
+  cursor: pointer;
+}
+
+.ks-range-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4361ee;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(67, 97, 238, 0.3);
+}
+
+.ks-range-group input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4361ee;
+  cursor: pointer;
+  border: none;
+}
+
+.ks-range-group span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  min-width: 40px;
+  text-align: right;
+}
+
+.ks-theme-toggle {
+  display: flex;
+  gap: 4px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.ks-theme-btn {
+  flex: 1;
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+  color: #5a5a7a;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.ks-theme-btn.active {
+  background: #ffffff;
+  color: #1a1a2e;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.ks-preview-box {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  overflow: hidden;
+}
+
+.ks-preview-text {
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.4;
+  max-width: 100%;
+  transition: font-size 0.1s;
+}
+
+.ks-modal-footer {
+  padding: 16px 32px 24px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ks-modal-footer-info {
+  font-size: 0.78rem;
+  color: #9a9aba;
+}
+
+.ks-modal-footer-info span + span {
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid #ddd;
+}
+
+.ks-modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ks-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: inherit;
+}
+
+.ks-btn-primary {
+  background: #4361ee;
+  color: #fff;
+}
+
+.ks-btn-primary:hover {
+  background: #3651d4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+.ks-btn-secondary {
+  background: #f0f0f0;
+  color: #1a1a2e;
+}
+
+.ks-btn-secondary:hover {
+  background: #e4e4e4;
+}
+
+/* Toast */
+.ks-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  z-index: 200000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  animation: ksFadeIn 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes ksFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .ks-container {
+    padding: 0 16px 40px;
+  }
+
+  .ks-hero {
+    padding: 32px 0 24px;
+  }
+
+  .ks-brand {
+    padding: 10px 16px;
+  }
+
+  .ks-brand-logo {
+    height: 28px;
+  }
+
+  .ks-brand-text {
+    font-size: 13px;
+  }
+
+  .ks-eras {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-era-header {
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+
+  .ks-input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-modal {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .ks-modal-content {
+    max-height: 95vh;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .ks-modal-header,
+  .ks-modal-body,
+  .ks-modal-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ks-modal-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ks-modal-actions {
+    flex-direction: column;
+  }
+
+  .ks-btn {
+    justify-content: center;
+  }
+}
