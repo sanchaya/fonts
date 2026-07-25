@@ -59,8 +59,7 @@
       'Hoysala': 'ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯದ ಶ್ರೀ',
       'Karnata-F-Kittel-Font': 'ಬಾಸೆಲ್ ಮಿಷನ್ ಮುದ್ರಣಾಲಯ 1836',
       'Karnata-German-Mission-Press': 'ಜರ್ಮನ್ ಮಿಷನ್ ಮುದ್ರಣಾಲಯ',
-      'Karnata-Wesleyan-Mission-Press': 'ವೆಸ್ಲಿಯನ್ ಮಿಷನ್ ಮುದ್ರಣಾಲಯ',
-      'KarnataGTN': 'ಜಿ.ಟಿ.ನಾರಾಯಣ ರಾವ್ ಅವರ ಹಸ್ತಾಕ್ಷರ'
+      'Karnata-Wesleyan-Mission-Press': 'ವೆಸ್ಲಿಯನ್ ಮಿಷನ್ ಮುದ್ರಣಾಲಯ'
     };
     return texts[family] || 'ಕನ್ನಡ ಲಿಪಿಯ ಸೊಬಗು';
   }
