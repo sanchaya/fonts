@@ -345,6 +345,23 @@ body {
   text-decoration: underline;
 }
 
+.ks-footnote {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: #9a9aba;
+}
+
+.ks-footnote i {
+  margin: 0 2px;
+}
+
+.ks-favicon {
+  height: 14px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
 /* Modal */
 .ks-modal {
   display: none;
