@@ -48,6 +48,7 @@
     <% var kingdoms = [
       {
         id: 'kadamba',
+        badge: '345 – 540 CE',
         color: '#8B4513',
         icon: 'fa-crown',
         i18nPrefix: 'kadamba',
@@ -57,6 +58,7 @@
       },
       {
         id: 'ganga',
+        badge: '350 – 1000 CE',
         color: '#B8860B',
         icon: 'fa-landmark',
         i18nPrefix: 'ganga',
@@ -66,6 +68,7 @@
       },
       {
         id: 'chalukya',
+        badge: '543 – 753 CE',
         color: '#CD5C5C',
         icon: 'fa-monument',
         i18nPrefix: 'chalukya',
@@ -75,6 +78,7 @@
       },
       {
         id: 'hoysala',
+        badge: '1000 – 1343 CE',
         color: '#D2691E',
         icon: 'fa-archway',
         i18nPrefix: 'hoysala',
@@ -91,7 +95,7 @@
           <i class="fas <%= era.icon %>"></i>
         </div>
         <div class="ks-era-header-text">
-          <span class="ks-era-badge" style="background: <%= era.color %>16; color: <%= era.color %>; border: 1px solid <%= era.color %>26;">345 – 540 CE</span>
+          <span class="ks-era-badge" style="background: <%= era.color %>16; color: <%= era.color %>; border: 1px solid <%= era.color %>26;"><%= era.badge %></span>
           <h2 class="ks-era-name" data-i18n="<%= era.i18nPrefix %>Name"><%= era.id === 'kadamba' ? 'ಕದಂಬ ರಾಜವಂಶ' : era.id === 'ganga' ? 'ಪಶ್ಚಿಮ ಗಂಗ ರಾಜವಂಶ' : era.id === 'chalukya' ? 'ಬಾದಾಮಿ ಚಾಲುಕ್ಯ ರಾಜವಂಶ' : 'ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯ' %></h2>
         </div>
       </div>
