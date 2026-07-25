@@ -48,7 +48,7 @@
       copyImage: 'ಚಿತ್ರ ನಕಲಿಸಿ',
       downloadPng: 'PNG ಡೌನ್‌ಲೋಡ್',
       footer: 'ಫಾಂಟ್ಸ್ ಸಂಚಯದ ಭಾಗ',
-      footerSub: 'ಸಂಚಯ ಅವರಿಂದ ಕನ್ನಡ ಅಕ್ಷರ ಶೈಲಿಗಳ ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್',
+      footerSub: '<a href="https://sanchaya.org" target="_blank">ಸಂಚಯ</a>ದ ಕನ್ನಡ ಅಕ್ಷರ ಶೈಲಿಗಳ ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್',
       toastCopied: 'ಚಿತ್ರ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!',
       toastDownloaded: 'ಬದಲಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ'
     },

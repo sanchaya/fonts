@@ -572,13 +572,21 @@ body {
 .ks-preview-box {
   border: 1px solid #eee;
   border-radius: 12px;
-  padding: 24px;
+  padding: 0;
   min-height: 120px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background 0.2s;
   overflow: hidden;
+}
+
+.ks-preview-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 32px 24px 20px;
+  flex: 1;
 }
 
 .ks-preview-text {
@@ -587,6 +595,23 @@ body {
   line-height: 1.4;
   max-width: 100%;
   transition: font-size 0.1s;
+}
+
+.ks-preview-branding {
+  margin-top: 20px;
+  font-size: 11px;
+  color: #aaa;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.7;
+}
+
+.ks-preview-favicon {
+  height: 12px;
+  width: auto;
+  vertical-align: middle;
 }
 
 .ks-modal-footer {
