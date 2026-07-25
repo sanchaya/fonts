@@ -10,9 +10,9 @@
       heroSubtitle: 'ಕರ್ನಾಟಕದ ರಾಜವಂಶಗಳ ಕಾಲದ ಲಿಪಿಗಳಿಂದ ಪ್ರೇರಿತವಾದ ಫಾಂಟ್‌ಗಳು — ಕಾರ್ಡ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಅಕ್ಷರ ಚಿತ್ರ ರಚಿಸಿ',
       sectionKingdoms: 'ರಾಜವಂಶಗಳು',
       sectionPrint: 'ಮುದ್ರಣ ಯುಗ',
-      kadambaName: 'ಕಡಂಬ ರಾಜವಂಶ',
-      kadambaDesc: 'ಕರ್ನಾಟಕದ ಮೊದಲ ಸ್ಥಳೀಯ ರಾಜವಂಶ. ಕಡಂಬರು ಬನವಾಸಿಯಿಂದ ಆಳಿದರು ಮತ್ತು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಾಹಿತ್ಯವನ್ನು ಪೋಷಿಸಿದರು.',
-      kadambaFontLabel: 'ಕಡಂಬ',
+      kadambaName: 'ಕದಂಬ ರಾಜವಂಶ',
+      kadambaDesc: 'ಕರ್ನಾಟಕದ ಮೊದಲ ಸ್ಥಳೀಯ ರಾಜವಂಶ. ಕದಂಬರು ಬನವಾಸಿಯಿಂದ ಆಳಿದರು ಮತ್ತು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಾಹಿತ್ಯವನ್ನು ಪೋಷಿಸಿದರು.',
+      kadambaFontLabel: 'ಕದಂಬ',
       kadambaFontStyle: 'ಕಾಕುಸ್ಥವರ್ಮ · ನಿಯಮಿತ',
       gangaName: 'ಪಶ್ಚಿಮ ಗಂಗ ರಾಜವಂಶ',
       gangaDesc: 'ಗಂಗರು ಕೋಲಾರ ಮತ್ತು ತಲಕಾಡಿನಿಂದ ದಕ್ಷಿಣ ಕರ್ನಾಟಕವನ್ನು ಆಳಿದರು. ಜೈನಧರ್ಮ ಮತ್ತು ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಮಹಾನ್ ಪೋಷಕರು.',
@@ -192,7 +192,7 @@
 
   function getDefaultText(family) {
     var texts = {
-      'Kadamba': currentLang === 'kn' ? 'ಕಡಂಬ ರಾಜವಂಶದ ಕೀರ್ತಿ' : 'Glory of the Kadamba dynasty',
+      'Kadamba': currentLang === 'kn' ? 'ಕದಂಬ ರಾಜವಂಶದ ಕೀರ್ತಿ' : 'Glory of the Kadamba dynasty',
       'Ganga': currentLang === 'kn' ? 'ಗಂಗ ರಾಜವಂಶದ ವೈಭವ' : 'Splendor of the Ganga dynasty',
       'Chalukya': currentLang === 'kn' ? 'ಚಾಲುಕ್ಯ ರಾಜವಂಶದ ವೈಭವ' : 'Splendor of the Chalukya dynasty',
       'Hoysala': currentLang === 'kn' ? 'ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯದ ಶ್ರೀ' : 'Glory of the Hoysala empire',
