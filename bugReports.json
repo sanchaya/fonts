@@ -82,6 +82,22 @@
     "os": "",
     "status": "open",
     "id": 1784744200399,
-    "createdAt": "2026-07-22T18:16:40.399Z"
+    "createdAt": "2026-07-22T18:16:40.399Z",
+    "acknowledgments": 2,
+    "acknowledgedBy": [
+      "::ffff:127.0.0.1",
+      "::1"
+    ]
+  },
+  {
+    "fontFamily": "Navilu",
+    "fontName": "Navilu",
+    "email": "",
+    "description": "Font not downloading",
+    "browser": "Chrome",
+    "os": "Android",
+    "status": "open",
+    "id": 1785515016251,
+    "createdAt": "2026-07-31T16:23:36.251Z"
   }
 ]
