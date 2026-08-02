@@ -884,6 +884,61 @@ router.post('/api/engine-inspector/render', async (req, res) => {
     }
 });
 
+router.post('/api/engine-inspector/upload-render', async (req, res) => {
+    let tmpFontPath = null;
+    let tmpOut = null;
+
+    try {
+        const fontFile = req.files && req.files.fontFile;
+        const { text, fontSize = 72, script, language, features: featuresStr } = req.body;
+        const textParam = text || req.body.text;
+
+        if (!fontFile) {
+            return res.status(400).json({ ok: false, error: 'fontFile is required' });
+        }
+        if (!/\.(ttf|otf)$/i.test(fontFile.name || '')) {
+            return res.status(400).json({ ok: false, error: 'Only .ttf and .otf font files are allowed' });
+        }
+        if (!textParam) {
+            return res.status(400).json({ ok: false, error: 'text is required' });
+        }
+
+        tmpFontPath = path.join(os.tmpdir(), `ei-font-${Date.now()}-${Math.random().toString(36).slice(2)}.ttf`);
+        fs.writeFileSync(tmpFontPath, fontFile.data);
+
+        let features = {};
+        if (featuresStr) {
+            try { features = typeof featuresStr === 'string' ? JSON.parse(featuresStr) : featuresStr; } catch (e) {}
+        }
+
+        tmpOut = path.join(os.tmpdir(), `render-${Date.now()}-${Math.random().toString(36).slice(2)}.png`);
+        const featureStr = Object.keys(features).length > 0 ? JSON.stringify(features) : '{}';
+        const cmd = `python3 ${RENDER_SCRIPT} ${JSON.stringify(tmpFontPath)} ${JSON.stringify(textParam)} ${JSON.stringify(tmpOut)} ${fontSize} ${JSON.stringify(script || '')} ${JSON.stringify(language || '')} ${JSON.stringify(featureStr)}`;
+
+        const { stdout } = await execAsync(cmd, { timeout: 15000, maxBuffer: 10 * 1024 * 1024 });
+        const result = JSON.parse(stdout);
+
+        if (fs.existsSync(tmpOut)) {
+            const pngBuffer = fs.readFileSync(tmpOut);
+            result.image = `data:image/png;base64,${pngBuffer.toString('base64')}`;
+        } else {
+            return res.status(500).json({ ok: false, error: 'Rendering failed. Please contact the administrator for support.' });
+        }
+
+        res.json({ ok: true, fontName: fontFile.name.replace(/\.(ttf|otf)$/i, ''), ...result });
+    } catch (err) {
+        console.error('Engine inspector upload render error:', err);
+        res.status(500).json({ ok: false, error: 'Rendering failed. Please contact the administrator for support.' });
+    } finally {
+        if (tmpFontPath && fs.existsSync(tmpFontPath)) {
+            try { fs.unlinkSync(tmpFontPath); } catch (e) {}
+        }
+        if (tmpOut && fs.existsSync(tmpOut)) {
+            try { fs.unlinkSync(tmpOut); } catch (e) {}
+        }
+    }
+});
+
 router.get('/api/engine-inspector/test-strings', (req, res) => {
     res.json({
         sets: [
@@ -973,6 +1028,14 @@ router.get('/engine-inspector/:family', async (req, res) => {
         downloadUrl: downloadUrl,
         fontFile: fontFile
     });
+});
+
+/*--------------Engine Inspector tool page-------------- */
+
+router.get('/tools/engine-inspector', (req, res) => {
+    let pag = {...pages}
+    pag.engineInspectorPage = true
+    res.render('engineInspectorTool', { page: pag })
 });
 
 /*--------------Timeline page (standalone, embeddable)-------------- */

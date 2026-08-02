@@ -26,7 +26,8 @@ const pages = {
     aboutPage: false,
     fontSuggestionPage: false,
     unicodeBlocksPage: false,
-    helpPage: false
+    helpPage: false,
+    engineInspectorPage: false
 }
 
 module.exports = {
