@@ -52,7 +52,13 @@
       footer: 'ಫಾಂಟ್ಸ್ ಸಂಚಯದ ಭಾಗ',
       footerSub: '<a href="https://sanchaya.org" target="_blank">ಸಂಚಯ</a>ದ ಕನ್ನಡ ಅಕ್ಷರ ಶೈಲಿಗಳ ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್',
       toastCopied: 'ಚಿತ್ರ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!',
-      toastDownloaded: 'ಬದಲಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ'
+      toastDownloaded: 'ಬದಲಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ',
+      selectFont: 'ಫಾಂಟ್ ಆಯ್ಕೆಮಾಡಿ',
+      paraSectionLabel: 'ಪ್ಯಾರಾಗ್ರಾಫ್ ರಚಿಸಿ',
+      paraPlaceholder: 'ನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ...',
+      paraExport: 'ಪ್ಯಾರಾಗ್ರಾಫ್ ಚಿತ್ರವಾಗಿ ರಚಿಸಿ',
+      paraModalTitle: 'ಪ್ಯಾರಾಗ್ರಾಫ್ ಡೌನ್‌ಲೋಡ್',
+      paraFallback: 'ಕನ್ನಡ ಲಿಪಿಯ ಇತಿಹಾಸ ಆರಂಭದಿಂದ ಮುದ್ರಣ ಯುಗದವರೆಗೆ — ಪ್ರತಿ ಯುಗದ ಲಿಪಿ ತನ್ನದೇ ಆದ ಸೊಗಸನ್ನು ಹೊಂದಿದೆ.\nನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ.'
     },
     en: {
       heroSuptitle: 'Fonts Sanchaya',
@@ -102,7 +108,13 @@
       footer: 'Part of Fonts Sanchaya',
       footerSub: 'A digital archive of Kannada Typefaces by Sanchaya',
       toastCopied: 'Image copied to clipboard!',
-      toastDownloaded: 'Downloaded instead'
+      toastDownloaded: 'Downloaded instead',
+      selectFont: 'Select Font',
+      paraSectionLabel: 'Create a Paragraph',
+      paraPlaceholder: 'Type your paragraph here...',
+      paraExport: 'Export Paragraph as Image',
+      paraModalTitle: 'Download Paragraph Image',
+      paraFallback: 'From the dawn of the Kannada script to the print era — every age has its own beauty.\nType your paragraph here.'
     }
   };
 
@@ -158,6 +170,19 @@
   var modalFontFamily = document.getElementById('ksModalFontFamily');
   var downloadBtn = document.getElementById('ksDownloadBtn');
   var copyBtn = document.getElementById('ksCopyBtn');
+  var modalFontSelect = document.getElementById('ksFontSelect');
+
+  var paraTextInput = document.getElementById('ksParaTextInput');
+  var paraFontSelect = document.getElementById('ksParaFontSelect');
+  var paraFontSizeInput = document.getElementById('ksParaFontSize');
+  var paraFontSizeLabel = document.getElementById('ksParaFontSizeLabel');
+  var paraPreview = document.getElementById('ksParaPreview');
+  var paraExportBtn = document.getElementById('ksParaExportBtn');
+  var paraModal = document.getElementById('ksParaModal');
+  var paraExportPreview = document.getElementById('ksParaExportPreview');
+  var paraExportFamily = document.getElementById('ksParaExportFamily');
+  var paraCopyBtn = document.getElementById('ksParaCopyBtn');
+  var paraDownloadBtn = document.getElementById('ksParaDownloadBtn');
 
   var currentFontFamily = '';
   var currentFontName = '';
@@ -190,6 +215,9 @@
     modalFontName.textContent = font;
     modalFontFamily.textContent = family.replace(/-/g, ' ');
     previewText.style.fontFamily = "'" + font + "', serif";
+    if (modalFontSelect) {
+      modalFontSelect.value = font;
+    }
     if (!textInput.value) {
       textInput.value = getDefaultText(family);
     }
@@ -197,6 +225,17 @@
     modal.classList.add('ks-modal-open');
     document.body.style.overflow = 'hidden';
   }
+
+  modalFontSelect.addEventListener('change', function() {
+    var family = this.options[this.selectedIndex].dataset.family;
+    var font = this.value;
+    currentFontFamily = family;
+    currentFontName = font;
+    modalFontName.textContent = font;
+    modalFontFamily.textContent = family.replace(/-/g, ' ');
+    previewText.style.fontFamily = "'" + font + "', serif";
+    updatePreview();
+  });
 
   function getDefaultText(family) {
     var texts = {
@@ -211,6 +250,16 @@
     return texts[family] || (currentLang === 'kn' ? 'ಕನ್ನಡ ಲಿಪಿಯ ಸೊಬಗು' : 'Beauty of Kannada script');
   }
 
+  function escapeHtml(text) {
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function formatParagraphText(text) {
+    return escapeHtml(text).replace(/\n/g, '<br>');
+  }
+
   function updatePreview() {
     var text = textInput.value || (currentLang === 'kn' ? 'ಕನ್ನಡ ಲಿಪಿಯ ಸೊಬಗು' : 'Beauty of Kannada script');
     var size = fontSizeInput.value;
@@ -219,7 +268,7 @@
     fontSizeLabel.textContent = size + 'px';
     lineHeightLabel.textContent = lh;
     charSpacingLabel.textContent = cs + 'px';
-    previewText.textContent = text;
+    previewText.innerHTML = formatParagraphText(text);
     previewText.style.fontSize = size + 'px';
     previewText.style.lineHeight = lh;
     previewText.style.letterSpacing = cs + 'px';
@@ -312,9 +361,117 @@
     }, 2000);
   }
 
+  function updateParaPreview() {
+    var text = paraTextInput.value || translations[currentLang].paraFallback;
+    var size = paraFontSizeInput.value;
+    var font = paraFontSelect.value;
+    paraFontSizeLabel.textContent = size + 'px';
+    var p = paraPreview.querySelector('p');
+    p.style.fontFamily = "'" + font + "', serif";
+    p.style.fontSize = size + 'px';
+    p.innerHTML = formatParagraphText(text);
+  }
+
+  paraTextInput.addEventListener('input', updateParaPreview);
+  paraFontSizeInput.addEventListener('input', updateParaPreview);
+  paraFontSelect.addEventListener('change', updateParaPreview);
+  updateParaPreview();
+
+  function getParaOptionData(select) {
+    var option = select.options[select.selectedIndex];
+    return {
+      font: select.value,
+      family: option.dataset.family || select.value,
+      label: option.dataset.label || select.value
+    };
+  }
+
+  function openParaModal() {
+    paraModal.classList.add('ks-modal-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeParaModal() {
+    paraModal.classList.remove('ks-modal-open');
+    document.body.style.overflow = '';
+  }
+
+  paraExportBtn.addEventListener('click', function() {
+    var data = getParaOptionData(paraFontSelect);
+    var size = paraFontSizeInput.value;
+    var text = paraTextInput.value || translations[currentLang].paraFallback;
+
+    paraExportFamily.textContent = data.label;
+    paraExportPreview.innerHTML =
+      '<div class="ks-pg-export-content" style="font-family:\'' + data.font + '\', serif; font-size:' + size + 'px; padding:40px 50px; background:#ffffff; border-radius:12px; text-align:center; max-width:700px; line-height:1.6; color:#1a1a2e;">' +
+        '<p style="margin:0; word-break:break-word;">' + formatParagraphText(text) + '</p>' +
+        '<div style="margin-top:20px; padding-top:15px; border-top:1px solid #e0e0e0; font-size:12px; color:#888; font-family:Arial, sans-serif;">' +
+          data.label + ' | fonts.sanchaya.net' +
+        '</div>' +
+      '</div>';
+    openParaModal();
+  });
+
+  paraDownloadBtn.addEventListener('click', function() {
+    var content = paraExportPreview.querySelector('.ks-pg-export-content');
+    var data = getParaOptionData(paraFontSelect);
+    document.fonts.ready.then(function() {
+      html2canvas(content, {
+        scale: 2,
+        backgroundColor: '#ffffff',
+        useCORS: true,
+        allowTaint: true
+      }).then(function(canvas) {
+        var link = document.createElement('a');
+        link.download = (data.family || 'paragraph').replace(/[^a-zA-Z0-9]/g, '-') + '-paragraph.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    });
+  });
+
+  paraCopyBtn.addEventListener('click', function() {
+    var content = paraExportPreview.querySelector('.ks-pg-export-content');
+    var data = getParaOptionData(paraFontSelect);
+    document.fonts.ready.then(function() {
+      html2canvas(content, {
+        scale: 2,
+        backgroundColor: '#ffffff',
+        useCORS: true,
+        allowTaint: true
+      }).then(function(canvas) {
+        canvas.toBlob(function(blob) {
+          try {
+            var item = new ClipboardItem({ 'image/png': blob });
+            navigator.clipboard.write([item]).then(function() {
+              showToast(translations[currentLang].toastCopied);
+            }).catch(function() {
+              fallbackParaDownload(canvas, data);
+            });
+          } catch (e) {
+            fallbackParaDownload(canvas, data);
+          }
+        });
+      });
+    });
+  });
+
+  function fallbackParaDownload(canvas, data) {
+    var link = document.createElement('a');
+    link.download = (data.family || 'paragraph').replace(/[^a-zA-Z0-9]/g, '-') + '-paragraph.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+    showToast(translations[currentLang].toastDownloaded);
+  }
+
+  document.getElementById('ksParaModalClose').addEventListener('click', closeParaModal);
+  document.getElementById('ksParaModalBackdrop').addEventListener('click', closeParaModal);
+
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && modal.classList.contains('ks-modal-open')) {
       closeModal();
+    } else if (e.key === 'Escape' && paraModal.classList.contains('ks-modal-open')) {
+      closeParaModal();
     }
   });
 

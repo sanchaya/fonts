@@ -11,4 +11,5 @@ fontAdded.js
 fonts.json
 
 .DS_Store
+bugReports.json
 server.log
