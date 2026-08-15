@@ -39,6 +39,9 @@ $(document).ready(function () {
 
     // category
     additional_toolbar_category()
+
+    // collection tabs
+    collection_tabs()
     
     // language
     additional_toolbar_language()
@@ -275,6 +278,22 @@ function add_modified_and_category_name(){
 }
 
 /* ADDITIONAL TOOLBAR CATEGORY END */
+
+
+/* COLLECTION TABS */
+
+function collection_tabs(){
+    $('.collection-tab').click(function(){
+        $('.collection-tab').removeClass('active')
+        $(this).addClass('active')
+
+        const collection = $(this).data('collection')
+        currentFilters.collections = collection === 'all' ? [] : [collection]
+        applyFilters()
+    })
+}
+
+/* COLLECTION TABS END */
 
 
 

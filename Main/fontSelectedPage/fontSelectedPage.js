@@ -176,6 +176,7 @@ var getFonts = (val, page, filters = {}) =>{
             licenseType: getLicenseType(fontMeta.license),
             license: fontMeta.license || '',
             category: getFontCategory(data.family, metadata),
+            collections: fontMeta.collections || [],
             isVariable: data.fonts.some(f => /\b(variable|var)\b/i.test(f.font)),
             quality: quality ? {
                 totalScore: quality.totalScore,
@@ -225,6 +226,13 @@ var getFonts = (val, page, filters = {}) =>{
                 default:
                     return true
             }
+        })
+    }
+
+    if (filters.collections && filters.collections.length > 0) {
+        result = result.filter(f => {
+            const cols = f.collections || []
+            return filters.collections.some(c => cols.includes(c))
         })
     }
 

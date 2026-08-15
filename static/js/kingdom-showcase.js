@@ -58,7 +58,11 @@
       paraPlaceholder: 'ನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ...',
       paraExport: 'ಪ್ಯಾರಾಗ್ರಾಫ್ ಚಿತ್ರವಾಗಿ ರಚಿಸಿ',
       paraModalTitle: 'ಪ್ಯಾರಾಗ್ರಾಫ್ ಡೌನ್‌ಲೋಡ್',
-      paraFallback: 'ಕನ್ನಡ ಲಿಪಿಯ ಇತಿಹಾಸ ಆರಂಭದಿಂದ ಮುದ್ರಣ ಯುಗದವರೆಗೆ — ಪ್ರತಿ ಯುಗದ ಲಿಪಿ ತನ್ನದೇ ಆದ ಸೊಗಸನ್ನು ಹೊಂದಿದೆ.\nನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ.'
+      paraFallback: 'ಕನ್ನಡ ಲಿಪಿಯ ಇತಿಹಾಸ ಆರಂಭದಿಂದ ಮುದ್ರಣ ಯುಗದವರೆಗೆ — ಪ್ರತಿ ಯುಗದ ಲಿಪಿ ತನ್ನದೇ ಆದ ಸೊಗಸನ್ನು ಹೊಂದಿದೆ.\nನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ.',
+      createMode: 'ರಚನೆ ವಿಧಾನ',
+      modeSentence: 'ವಾಕ್ಯ',
+      modeParagraph: 'ಪ್ಯಾರಾಗ್ರಾಫ್',
+      paraShort: 'ಪ್ಯಾರಾಗ್ರಾಫ್'
     },
     en: {
       heroSuptitle: 'Fonts Sanchaya',
@@ -114,7 +118,11 @@
       paraPlaceholder: 'Type your paragraph here...',
       paraExport: 'Export Paragraph as Image',
       paraModalTitle: 'Download Paragraph Image',
-      paraFallback: 'From the dawn of the Kannada script to the print era — every age has its own beauty.\nType your paragraph here.'
+      paraFallback: 'From the dawn of the Kannada script to the print era — every age has its own beauty.\nType your paragraph here.',
+      createMode: 'Create Mode',
+      modeSentence: 'Sentence',
+      modeParagraph: 'Paragraph',
+      paraShort: 'Paragraph'
     }
   };
 
@@ -144,6 +152,10 @@
     langBtns.forEach(function(btn) {
       btn.classList.toggle('ks-lang-active', btn.dataset.lang === lang);
     });
+
+    if (modal && modal.classList.contains('ks-modal-open') && textInput) {
+      setModalMode(currentMode);
+    }
   }
 
   var langBtns = document.querySelectorAll('.ks-lang-btn');
@@ -186,6 +198,7 @@
 
   var currentFontFamily = '';
   var currentFontName = '';
+  var currentMode = 'sentence';
 
   var actionBtns = document.querySelectorAll('.ks-card-action');
   actionBtns.forEach(function(btn) {
@@ -193,7 +206,7 @@
       e.stopPropagation();
       var family = this.dataset.family;
       var font = this.dataset.font;
-      openModal(family, font);
+      openModal(family, font, this.dataset.mode || 'sentence');
     });
   });
 
@@ -209,7 +222,7 @@
     });
   });
 
-  function openModal(family, font) {
+  function openModal(family, font, mode) {
     currentFontFamily = family;
     currentFontName = font;
     modalFontName.textContent = font;
@@ -218,13 +231,33 @@
     if (modalFontSelect) {
       modalFontSelect.value = font;
     }
-    if (!textInput.value) {
-      textInput.value = getDefaultText(family);
-    }
-    updatePreview();
+    setModalMode(mode || 'sentence');
     modal.classList.add('ks-modal-open');
     document.body.style.overflow = 'hidden';
   }
+
+  function setModalMode(mode) {
+    currentMode = mode === 'paragraph' ? 'paragraph' : 'sentence';
+    document.querySelectorAll('.ks-mode-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.mode === currentMode);
+    });
+    textInput.maxLength = currentMode === 'paragraph' ? 500 : 300;
+    textInput.placeholder = currentMode === 'paragraph'
+      ? translations[currentLang].paraPlaceholder
+      : translations[currentLang].textPlaceholder;
+    if (!textInput.value) {
+      textInput.value = currentMode === 'paragraph'
+        ? translations[currentLang].paraFallback
+        : getDefaultText(currentFontFamily);
+    }
+    updatePreview();
+  }
+
+  document.querySelectorAll('.ks-mode-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      setModalMode(this.dataset.mode);
+    });
+  });
 
   modalFontSelect.addEventListener('change', function() {
     var family = this.options[this.selectedIndex].dataset.family;
@@ -299,9 +332,39 @@
     document.body.style.overflow = '';
   }
 
+  function getExportContent() {
+    return currentMode === 'paragraph' ? captureParagraphExport() : previewBox;
+  }
+
+  function captureParagraphExport() {
+    var label = modalFontSelect.options[modalFontSelect.selectedIndex].dataset.label || currentFontName;
+    var size = fontSizeInput.value;
+    var lh = lineHeightInput.value;
+    var cs = charSpacingInput.value;
+    var bg = previewBox.style.background || '#ffffff';
+    var textColor = previewText.style.color || '#1a1a2e';
+    var text = textInput.value || translations[currentLang].paraFallback;
+
+    var holder = document.getElementById('ksParaExportHolder');
+    if (!holder) {
+      holder = document.createElement('div');
+      holder.id = 'ksParaExportHolder';
+      holder.style.cssText = 'position:absolute;left:-9999px;top:0;';
+      document.body.appendChild(holder);
+    }
+    holder.innerHTML =
+      '<div class="ks-pg-export-content" style="font-family:\'' + currentFontName + '\', serif; font-size:' + size + 'px; padding:40px 50px; background:' + bg + '; border-radius:12px; text-align:center; max-width:700px; line-height:' + lh + '; letter-spacing:' + cs + 'px; color:' + textColor + ';">' +
+        '<p style="margin:0; word-break:break-word;">' + formatParagraphText(text) + '</p>' +
+        '<div style="margin-top:20px; padding-top:15px; border-top:1px solid #e0e0e0; font-size:12px; color:#888; font-family:Arial, sans-serif;">' +
+          label + ' | fonts.sanchaya.net' +
+        '</div>' +
+      '</div>';
+    return holder.querySelector('.ks-pg-export-content');
+  }
+
   downloadBtn.addEventListener('click', function() {
     document.fonts.ready.then(function() {
-      html2canvas(previewBox, {
+      html2canvas(getExportContent(), {
         scale: 2,
         backgroundColor: previewBox.style.background || '#ffffff',
         useCORS: true,
@@ -317,7 +380,7 @@
 
   copyBtn.addEventListener('click', function() {
     document.fonts.ready.then(function() {
-      html2canvas(previewBox, {
+      html2canvas(getExportContent(), {
         scale: 2,
         backgroundColor: previewBox.style.background || '#ffffff',
         useCORS: true,

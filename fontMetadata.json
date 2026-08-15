@@ -109,7 +109,8 @@
     "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Free Kannada font developed by Ki Basajan Ki"
+    "description": "Free Kannada font developed by Ki Basajan Ki",
+    "collections": ["kingdom"]
   },
   "Cheluvi": {
     "author": "Tejaswi",
@@ -130,7 +131,8 @@
     "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Free Kannada font developed by Ki Basajan Ki"
+    "description": "Free Kannada font developed by Ki Basajan Ki",
+    "collections": ["kingdom"]
   },
   "Gok-Kannada-Fonts": {
     "author": "Government of Karnataka",
@@ -151,7 +153,8 @@
     "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Free Kannada font developed by Ki Basajan Ki"
+    "description": "Free Kannada font developed by Ki Basajan Ki",
+    "collections": ["kingdom"]
   },
   "Hubballi": {
     "author": "Erin McLaughlin",
@@ -179,7 +182,8 @@
     "license": "Free",
     "source": "",
     "foundry": "",
-    "description": "Free Kannada font developed by Ki Basajan Ki"
+    "description": "Free Kannada font developed by Ki Basajan Ki",
+    "collections": ["kingdom"]
   },
   "KannadaPixel": {
     "author": "Shankar Sivarajan",
@@ -193,14 +197,16 @@
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-bandipur",
     "foundry": "Sanchaya",
-    "description": "A Kannada + Latin display typeface derived from the original Bandipur project with improved OpenType shaping and production-ready font engineering."
+    "description": "A Kannada + Latin display typeface derived from the original Bandipur project with improved OpenType shaping and production-ready font engineering.",
+    "collections": ["sanchaya"]
   },
   "Karnata-F-Kittel-Font": {
     "author": "Prashant Pandit (Project Head), Sachin Shetty (Graphics), Satish A.G. (Technical)",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-f-kittel-font",
     "foundry": "Sanchaya",
-    "description": "Digital revival of Basel Mission Press Mangalore typeface (1830-1900), named after lexicographer Ferdinand Kittel. Designed for OCR training and Kannada revival fonts research."
+    "description": "Digital revival of Basel Mission Press Mangalore typeface (1830-1900), named after lexicographer Ferdinand Kittel. Designed for OCR training and Kannada revival fonts research.",
+    "collections": ["sanchaya", "print-era"]
   },
   "Kedage": {
     "author": "Indian Institute of Science",
@@ -480,21 +486,24 @@
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-gtn-typeface",
     "foundry": "Sanchaya",
-    "description": "A variable Kannada typeface based on the handwriting style of G. T. Narayan Rao. Bridges handwritten expression and formal typography, creating a balance between natural writing and readable text."
+    "description": "A variable Kannada typeface based on the handwriting style of G. T. Narayan Rao. Bridges handwritten expression and formal typography, creating a balance between natural writing and readable text.",
+    "collections": ["sanchaya"]
   },
   "Karnata-German-Mission-Press": {
     "author": "Arun C Kallappanavar",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-german-mission-press-typeface",
     "foundry": "Sanchaya",
-    "description": "Digital revival of a historical Kannada typeface from German Mission Press prints. A revival font project for Kannada from German Mission Press prints in Mangaluru."
+    "description": "Digital revival of a historical Kannada typeface from German Mission Press prints. A revival font project for Kannada from German Mission Press prints in Mangaluru.",
+    "collections": ["sanchaya", "print-era"]
   },
   "Karnata-Wesleyan-Mission-Press": {
     "author": "Arun C Kallappanavar",
     "license": "SIL Open Font License 1.1",
     "source": "https://github.com/sanchaya/karnata-wesleyan-mission-press-typeface",
     "foundry": "Sanchaya",
-    "description": "Digital revival of a historical Kannada typeface from Wesleyan Mission Press prints. A revival font project for Kannada from Wesleyan Mission Press prints in Bengaluru and Mangaluru."
+    "description": "Digital revival of a historical Kannada typeface from Wesleyan Mission Press prints. A revival font project for Kannada from Wesleyan Mission Press prints in Bengaluru and Mangaluru.",
+    "collections": ["sanchaya", "print-era"]
   },
   "Designiga-Handwriting": {
     "author": "Shashwat Hegde Tyagi (@designiga_kannada)",

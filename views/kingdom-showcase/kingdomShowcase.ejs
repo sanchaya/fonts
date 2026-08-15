@@ -111,9 +111,14 @@
             <span class="ks-font-style" data-i18n="<%= f.i18nPrefix %>FontStyle"><%= f.styleEn %></span>
             <span class="ks-font-author"><%= f.author %></span>
           </div>
-          <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
-            <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
-          </button>
+          <div class="ks-card-actions">
+            <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
+              <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="ks-card-action ks-card-action-para" data-family="<%= f.family %>" data-font="<%= f.font %>" data-mode="paragraph">
+              <i class="fas fa-align-left"></i> <span data-i18n="paraShort">ಪ್ಯಾರಾಗ್ರಾಫ್</span>
+            </button>
+          </div>
         </div>
         <% }); %>
       </div>
@@ -164,9 +169,14 @@
             <span class="ks-font-style" data-i18n="<%= f.i18nPrefix %>FontStyle"><%= f.styleEn %></span>
             <span class="ks-font-author"><%= f.author %></span>
           </div>
-          <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
-            <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
-          </button>
+          <div class="ks-card-actions">
+            <button class="ks-card-action" data-family="<%= f.family %>" data-font="<%= f.font %>">
+              <span data-i18n="createImage">ಚಿತ್ರ ರಚಿಸಿ</span> <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="ks-card-action ks-card-action-para" data-family="<%= f.family %>" data-font="<%= f.font %>" data-mode="paragraph">
+              <i class="fas fa-align-left"></i> <span data-i18n="paraShort">ಪ್ಯಾರಾಗ್ರಾಫ್</span>
+            </button>
+          </div>
         </div>
         <% }); %>
       </div>
@@ -230,6 +240,13 @@
     </div>
     <div class="ks-modal-body">
       <div class="ks-modal-inputs">
+        <div class="ks-input-group">
+          <label data-i18n="createMode">ರಚನೆ ವಿಧಾನ</label>
+          <div class="ks-theme-toggle">
+            <button type="button" class="ks-mode-btn active" data-mode="sentence" data-i18n="modeSentence">ವಾಕ್ಯ</button>
+            <button type="button" class="ks-mode-btn" data-mode="paragraph" data-i18n="modeParagraph">ಪ್ಯಾರಾಗ್ರಾಫ್</button>
+          </div>
+        </div>
         <div class="ks-input-group">
           <label data-i18n="selectFont">ಫಾಂಟ್ ಆಯ್ಕೆಮಾಡಿ</label>
           <select id="ksFontSelect" class="ks-select">

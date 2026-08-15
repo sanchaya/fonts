@@ -4,6 +4,7 @@ var timer
 
 var currentFilters = {
     categories: [],
+    collections: [],
     variableFontsOnly: false,
     sortBy: 'name',
     licenseType: 'all'

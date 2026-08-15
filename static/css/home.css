@@ -614,6 +614,40 @@ nav {
   color: var(--text-color) !important;
 }
 
+/* Collection tabs */
+.collection-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 28px 0 0;
+}
+
+.collection-tab {
+  padding: 10px 22px;
+  border: 1px solid var(--border-dropdown);
+  background: var(--third-color);
+  color: var(--span-color);
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.collection-tab:hover {
+  border-color: var(--text-color3);
+  color: var(--text-color3);
+}
+
+.collection-tab.active {
+  background: var(--text-color3);
+  color: #ffffff;
+  border-color: var(--text-color3);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
 
 
 .additional-toolbar .dropdown .dropbtn {
