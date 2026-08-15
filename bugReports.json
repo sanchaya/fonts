@@ -99,5 +99,71 @@
     "status": "open",
     "id": 1785515016251,
     "createdAt": "2026-07-31T16:23:36.251Z"
+  },
+  {
+    "fontFamily": "Anchu-Kannada",
+    "fontName": "ANCHU",
+    "email": "",
+    "description": "ಸಾಯ್ಸ್ತಾನ ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1785825151819,
+    "createdAt": "2026-08-04T06:32:31.820Z"
+  },
+  {
+    "fontFamily": "Navilu",
+    "fontName": "Navilu",
+    "email": "arjunarjunmh2007@gmail.com",
+    "description": "M Arjun from sanduru ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1786008503398,
+    "createdAt": "2026-08-06T09:28:23.398Z"
+  },
+  {
+    "fontFamily": "Akaya-Kanadaka",
+    "fontName": "AkayaKanadaka Regular",
+    "email": "hh8111782@gmail.com",
+    "description": "Ok",
+    "browser": "Chrome",
+    "os": "Android",
+    "status": "open",
+    "id": 1786128266698,
+    "createdAt": "2026-08-07T18:44:26.698Z"
+  },
+  {
+    "fontFamily": "ATS-Chikkamagaluru",
+    "fontName": "ATSChikkamagaluru ColorRegular",
+    "email": "nirumallapur147@gmail.com",
+    "description": "Download ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1786158904020,
+    "createdAt": "2026-08-08T03:15:04.020Z"
+  },
+  {
+    "fontFamily": "Akaya-Kanadaka",
+    "fontName": "AkayaKanadaka Regular",
+    "email": "vittalnagappakudnurvittal@gmail.com",
+    "description": "ಸೂಪರ್ ಸರ್ 😍💞",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1786353923913,
+    "createdAt": "2026-08-10T09:25:23.913Z"
+  },
+  {
+    "fontFamily": "Karnata-Bandipur",
+    "fontName": "Karnata Bandipur",
+    "email": "",
+    "description": "ವಿಠ್ಠಲ",
+    "browser": "",
+    "os": "",
+    "status": "open",
+    "id": 1786693820427,
+    "createdAt": "2026-08-14T07:50:20.427Z"
   }
 ]
