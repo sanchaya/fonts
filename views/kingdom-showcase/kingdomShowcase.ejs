@@ -185,44 +185,6 @@
 
   </div>
 
-  <div class="ks-section-label ks-section-label-para">
-    <span class="ks-section-icon"><i class="fas fa-align-left"></i></span>
-    <span data-i18n="paraSectionLabel">ಪ್ಯಾರಾಗ್ರಾಫ್ ರಚಿಸಿ</span>
-  </div>
-
-  <% var paraFonts = []; %>
-  <% kingdoms.forEach(function(e){ paraFonts = paraFonts.concat(e.fonts); }); %>
-  <% printFonts.forEach(function(e){ paraFonts = paraFonts.concat(e.fonts); }); %>
-
-  <div class="ks-paragraph-section">
-    <div class="ks-paragraph-card">
-      <div class="ks-pg-row">
-        <div class="ks-pg-select-wrap">
-          <label data-i18n="selectFont">ಫಾಂಟ್ ಆಯ್ಕೆಮಾಡಿ</label>
-          <select id="ksParaFontSelect" class="ks-select">
-            <% paraFonts.forEach(function(f){ %>
-              <option value="<%= f.font %>" data-family="<%= f.family %>" data-label="<%= f.preview %>"><%= f.preview %> — <%= f.styleEn %></option>
-            <% }); %>
-          </select>
-        </div>
-        <div class="ks-pg-select-wrap">
-          <label data-i18n="fontSize">ಅಕ್ಷರ ಗಾತ್ರ</label>
-          <div class="ks-range-group">
-            <input type="range" id="ksParaFontSize" min="16" max="120" value="36">
-            <span id="ksParaFontSizeLabel">36px</span>
-          </div>
-        </div>
-      </div>
-      <textarea id="ksParaTextInput" maxlength="500" rows="5" class="ks-pg-textarea" data-i18n-placeholder="paraPlaceholder" placeholder="ನಿಮ್ಮ ಪ್ಯಾರಾಗ್ರಾಫ್ ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ..."></textarea>
-      <div class="ks-pg-preview" id="ksParaPreview">
-        <p></p>
-      </div>
-      <button class="ks-pg-export" id="ksParaExportBtn">
-        <i class="fas fa-image"></i> <span data-i18n="paraExport">ಪ್ಯಾರಾಗ್ರಾಫ್ ಚಿತ್ರವಾಗಿ ರಚಿಸಿ</span>
-      </button>
-    </div>
-  </div>
-
   <div class="ks-footer">
     <p><span data-i18n="footer">ಫಾಂಟ್ಸ್ ಸಂಚಯದ ಭಾಗ</span> — <span data-i18n="footerSub"><a href="https://sanchaya.org" target="_blank">ಸಂಚಯ</a>ದ ಕನ್ನಡ ಅಕ್ಷರ ಶೈಲಿಗಳ ಡಿಜಿಟಲ್ ಆರ್ಕೈವ್</span></p>
     <p class="ks-footnote">Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> <img src="/img/favicon-32x32.png" alt="" class="ks-favicon"> <a href="https://fonts.sanchaya.net" target="_blank">fonts.sanchaya.net</a></p>
@@ -318,30 +280,6 @@
       <div class="ks-modal-actions">
         <button class="ks-btn ks-btn-secondary" id="ksCopyBtn"><i class="fas fa-copy"></i> <span data-i18n="copyImage">ಚಿತ್ರ ನಕಲಿಸಿ</span></button>
         <button class="ks-btn ks-btn-primary" id="ksDownloadBtn"><i class="fas fa-download"></i> <span data-i18n="downloadPng">PNG ಡೌನ್‌ಲೋಡ್</span></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="ks-modal" id="ksParaModal">
-  <div class="ks-modal-backdrop" id="ksParaModalBackdrop"></div>
-  <div class="ks-modal-content">
-    <button class="ks-modal-close" id="ksParaModalClose"><i class="fas fa-times"></i></button>
-    <div class="ks-modal-header">
-      <h2 class="ks-modal-title"><span data-i18n="paraModalTitle">ಪ್ಯಾರಾಗ್ರಾಫ್ ಡೌನ್‌ಲೋಡ್</span></h2>
-      <p class="ks-modal-subtitle" data-i18n="modalSubtitle">ನಿಮ್ಮ ಪಠ್ಯವನ್ನು ಟೈಪ್ ಮಾಡಿ ಮತ್ತು ಚಿತ್ರವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</p>
-    </div>
-    <div class="ks-modal-body">
-      <div class="ks-pg-export-preview" id="ksParaExportPreview"></div>
-    </div>
-    <div class="ks-modal-footer">
-      <div class="ks-modal-footer-info">
-        <span id="ksParaExportFamily"></span>
-        <span>fonts.sanchaya.net</span>
-      </div>
-      <div class="ks-modal-actions">
-        <button class="ks-btn ks-btn-secondary" id="ksParaCopyBtn"><i class="fas fa-copy"></i> <span data-i18n="copyImage">ಚಿತ್ರ ನಕಲಿಸಿ</span></button>
-        <button class="ks-btn ks-btn-primary" id="ksParaDownloadBtn"><i class="fas fa-download"></i> <span data-i18n="downloadPng">PNG ಡೌನ್‌ಲೋಡ್</span></button>
       </div>
     </div>
   </div>

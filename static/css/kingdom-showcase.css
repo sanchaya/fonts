@@ -702,41 +702,7 @@ body {
   background: #e4e4e4;
 }
 
-/* Paragraph creation section */
-.ks-section-label-para {
-  margin-top: 48px;
-}
-
-.ks-paragraph-card {
-  background: #ffffff;
-  border: 1px solid #eae6e0;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-}
-
-.ks-pg-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.ks-pg-select-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-}
-
-.ks-pg-select-wrap label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #5a5a7a;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
+/* Select + export content (shared with modal and per-card paragraph export) */
 .ks-select {
   width: 100%;
   padding: 10px 14px;
@@ -754,74 +720,6 @@ body {
 .ks-select:focus {
   border-color: #4361ee;
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
-}
-
-.ks-pg-textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: inherit;
-  resize: vertical;
-  min-height: 100px;
-  margin-bottom: 16px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.ks-pg-textarea:focus {
-  border-color: #4361ee;
-  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
-}
-
-.ks-pg-preview {
-  border: 1px solid #eee;
-  border-radius: 12px;
-  background: #ffffff;
-  padding: 28px 24px;
-  min-height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.ks-pg-preview p {
-  margin: 0;
-  text-align: center;
-  color: #1a1a2e;
-  line-height: 1.6;
-  max-width: 100%;
-  word-break: break-word;
-}
-
-.ks-pg-export {
-  width: 100%;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-family: inherit;
-  transition: all 0.2s;
-}
-
-.ks-pg-export:hover {
-  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.35);
-  transform: translateY(-1px);
-}
-
-.ks-pg-export-preview {
-  display: flex;
-  justify-content: center;
 }
 
 .ks-pg-export-content {
@@ -882,10 +780,6 @@ body {
   }
 
   .ks-input-row {
-    grid-template-columns: 1fr;
-  }
-
-  .ks-pg-row {
     grid-template-columns: 1fr;
   }
 
