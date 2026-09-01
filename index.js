@@ -227,6 +227,28 @@ const requireLogin = (req, res, next) => {
     next()
 }
 
+let contributionStats = { contributed: 0, remind: 0, closed: 0 };
+
+try {
+    const data = fs.readFileSync(path.join(__dirname, 'contributionStats.json'), 'utf8');
+    contributionStats = JSON.parse(data);
+} catch {}
+
+router.post('/api/contribution-stats', (req, res) => {
+    const { response } = req.body;
+    if (response && contributionStats[response] !== undefined) {
+        contributionStats[response]++;
+        try {
+            fs.writeFileSync(path.join(__dirname, 'contributionStats.json'), JSON.stringify(contributionStats, null, 2));
+        } catch {}
+    }
+    res.json({ success: true, stats: contributionStats });
+});
+
+router.get('/api/contribution-stats', (req, res) => {
+    res.json(contributionStats);
+});
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         const filename = file.originalname;
