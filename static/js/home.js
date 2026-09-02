@@ -721,6 +721,9 @@ async function initContributionPopup() {
         stats = await res.json()
     } catch {}
 
+    const wasPopupShown = localStorage.getItem(POPUP_SHOWN_KEY)
+    const userResponse = localStorage.getItem(RESPONSE_KEY)
+
     const supportBar = document.getElementById('support-bar')
 
     function attachSupportBarClick() {
