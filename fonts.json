@@ -1007,16 +1007,6 @@
 			}
 		]
 	},
-	"Kolar": {
-		"family": "Kolar",
-		"link": "Kolar",
-		"fonts": [
-			{
-				"font": "Kolar Bold",
-				"link": "Kolar-Bold"
-			}
-		]
-	},
 	"Kuvempu-Praja": {
 		"family": "Kuvempu Praja",
 		"link": "Kuvempu-Praja",
