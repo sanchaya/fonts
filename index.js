@@ -229,8 +229,10 @@ const requireLogin = (req, res, next) => {
 
 let contributionStats = { contributed: 0, remind: 0, closed: 0 };
 
+const STATS_FILE = '/tmp/contributionStats.json';
+
 try {
-    const data = fs.readFileSync(path.join(__dirname, 'contributionStats.json'), 'utf8');
+    const data = fs.readFileSync(STATS_FILE, 'utf8');
     contributionStats = JSON.parse(data);
 } catch {}
 
@@ -239,7 +241,7 @@ router.post('/api/contribution-stats', (req, res) => {
     if (response && contributionStats[response] !== undefined) {
         contributionStats[response]++;
         try {
-            fs.writeFileSync(path.join(__dirname, 'contributionStats.json'), JSON.stringify(contributionStats, null, 2));
+            fs.writeFileSync(STATS_FILE, JSON.stringify(contributionStats, null, 2));
         } catch {}
     }
     res.json({ success: true, stats: contributionStats });
