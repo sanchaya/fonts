@@ -726,54 +726,6 @@ async function initContributionPopup() {
 
     const supportBar = document.getElementById('support-bar')
 
-    function attachSupportBarClick() {
-        if (!supportBar) return
-        supportBar.addEventListener('click', () => {
-            supportBar.classList.remove('show')
-            setTimeout(() => {
-                supportBar.style.display = 'none'
-            }, 300)
-            localStorage.removeItem(POPUP_SHOWN_KEY)
-            localStorage.removeItem(RESPONSE_KEY)
-            const popupEl = document.getElementById('contribution-popup')
-            if (popupEl) {
-                popupEl.classList.add('active')
-            }
-        })
-    }
-
-    const popupContent = document.querySelector('.popup-content')
-    if (popupContent) {
-        popupContent.addEventListener('click', (e) => {
-            e.stopPropagation()
-        })
-    }
-
-    if (userResponse) {
-        try {
-            await fetch('/api/contribution-stats', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ response: userResponse })
-            })
-        } catch {}
-        showSupportBarWithStats(userResponse, stats)
-        attachSupportBarClick()
-        return
-    }
-
-    if (wasPopupShown) return
-
-    let popupTimeout = null
-
-    function showPopup() {
-        const popup = document.getElementById('contribution-popup')
-        if (popup) {
-            popup.classList.add('active')
-        }
-        localStorage.setItem(POPUP_SHOWN_KEY, 'true')
-    }
-
     function hidePopup() {
         const popup = document.getElementById('contribution-popup')
         if (popup) {
@@ -798,7 +750,26 @@ async function initContributionPopup() {
         }
     }
 
-    popupTimeout = setTimeout(showPopup, SHOW_AFTER_MS)
+    function attachSupportBarClick() {
+        if (!supportBar) return
+        supportBar.addEventListener('click', () => {
+            supportBar.classList.remove('show')
+            setTimeout(() => {
+                supportBar.style.display = 'none'
+            }, 300)
+            const popupEl = document.getElementById('contribution-popup')
+            if (popupEl) {
+                popupEl.classList.add('active')
+            }
+        })
+    }
+
+    const popupContent = document.querySelector('.popup-content')
+    if (popupContent) {
+        popupContent.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+    }
 
     const closeBtn = document.querySelector('.close-popup')
     if (closeBtn) {
@@ -854,6 +825,30 @@ async function initContributionPopup() {
     }
 
     attachSupportBarClick()
+
+    if (userResponse) {
+        try {
+            await fetch('/api/contribution-stats', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ response: userResponse })
+            })
+        } catch {}
+        showSupportBarWithStats(userResponse, stats)
+        return
+    }
+
+    if (wasPopupShown) return
+
+    function showPopup() {
+        const popup = document.getElementById('contribution-popup')
+        if (popup) {
+            popup.classList.add('active')
+        }
+        localStorage.setItem(POPUP_SHOWN_KEY, 'true')
+    }
+
+    setTimeout(showPopup, SHOW_AFTER_MS)
 }
 
 // Initialize when DOM is ready
