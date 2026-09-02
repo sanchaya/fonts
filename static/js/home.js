@@ -783,6 +783,7 @@ async function initContributionPopup() {
 
     function showSupportBarWithStats(response, stats) {
         if (supportBar) {
+            supportBar.style.display = ''
             supportBar.classList.add('show')
             const content = supportBar.querySelector('.support-bar-content')
             if (response === 'remind') {
