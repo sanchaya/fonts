@@ -710,33 +710,146 @@ function reloadAllDropdown(){
 }
 
 // Contribution popup functionality
-function initContributionPopup() {
+async function initContributionPopup() {
     const POPUP_SHOWN_KEY = 'contributionPopupShown'
     const RESPONSE_KEY = 'contributionResponse'
     const SHOW_AFTER_MS = 30000 // 30 seconds
 
-    // Load statistics from server or initialize
     let stats = { contributed: 0, remind: 0, closed: 0 }
+    try {
+        const res = await fetch('/api/contribution-stats')
+        stats = await res.json()
+    } catch {}
 
-    fetch('/api/contribution-stats')
-        .then(r => r.json())
-        .then(data => { stats = data })
-        .catch(() => {})
-
-    // Check if popup was already shown this session
     const wasPopupShown = localStorage.getItem(POPUP_SHOWN_KEY)
     const userResponse = localStorage.getItem(RESPONSE_KEY)
 
-    // If user already responded this session, update stats on server and show bottom bar
     if (userResponse) {
-        fetch('/api/contribution-stats', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ response: userResponse })
-        }).catch(() => {})
+        try {
+            await fetch('/api/contribution-stats', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ response: userResponse })
+            })
+        } catch {}
         showSupportBarWithStats(userResponse, stats)
         return
     }
+
+    if (wasPopupShown) return
+
+    let popupTimeout = null
+
+    function showPopup() {
+        const popup = document.getElementById('contribution-popup')
+        if (popup) {
+            popup.classList.add('active')
+        }
+        localStorage.setItem(POPUP_SHOWN_KEY, 'true')
+    }
+
+    function hidePopup() {
+        const popup = document.getElementById('contribution-popup')
+        if (popup) {
+            popup.classList.remove('active')
+        }
+    }
+
+    function showSupportBarWithStats(response, stats) {
+        const supportBar = document.getElementById('support-bar')
+        if (supportBar) {
+            supportBar.classList.add('show')
+            const content = supportBar.querySelector('.support-bar-content')
+            if (response === 'remind') {
+                content.innerHTML = `
+                    <span>🙏 We'll remind you later to support Sanchaya Projects. Your support helps keep it free and open-source forever. (${stats.remind} users marked for reminder)</span>
+                `
+            } else if (response === 'closed') {
+                content.innerHTML = `
+                    <span>❤️ Thanks for checking out Sanchaya Projects! ${stats.closed} users closed without responding.</span>
+                `
+            }
+        }
+    }
+
+    popupTimeout = setTimeout(showPopup, SHOW_AFTER_MS)
+
+    const closeBtn = document.querySelector('.close-popup')
+    if (closeBtn) {
+        closeBtn.addEventListener('click', async () => {
+            hidePopup()
+            localStorage.setItem(RESPONSE_KEY, 'closed')
+            stats.closed = (stats.closed || 0) + 1
+            try {
+                await fetch('/api/contribution-stats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ response: 'closed' })
+                })
+            } catch {}
+            showSupportBarWithStats('closed', stats)
+        })
+    }
+
+    const btnRemindLater = document.querySelector('.btn-remind-later')
+    if (btnRemindLater) {
+        btnRemindLater.addEventListener('click', async () => {
+            hidePopup()
+            localStorage.setItem(RESPONSE_KEY, 'remind')
+            stats.remind = (stats.remind || 0) + 1
+            try {
+                await fetch('/api/contribution-stats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ response: 'remind' })
+                })
+            } catch {}
+            showSupportBarWithStats('remind', stats)
+        })
+    }
+
+    const popup = document.getElementById('contribution-popup')
+    if (popup) {
+        popup.addEventListener('click', async (e) => {
+            if (e.target === popup) {
+                hidePopup()
+                localStorage.setItem(RESPONSE_KEY, 'closed')
+                stats.closed = (stats.closed || 0) + 1
+                try {
+                    await fetch('/api/contribution-stats', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ response: 'closed' })
+                    })
+                } catch {}
+                showSupportBarWithStats('closed', stats)
+            }
+        })
+    }
+
+    const supportBar = document.getElementById('support-bar')
+    if (supportBar) {
+        supportBar.addEventListener('click', () => {
+            supportBar.classList.remove('show')
+            setTimeout(() => {
+                supportBar.style.display = 'none'
+            }, 300)
+            localStorage.removeItem(POPUP_SHOWN_KEY)
+            localStorage.removeItem(RESPONSE_KEY)
+            const popupEl = document.getElementById('contribution-popup')
+            if (popupEl) {
+                popupEl.classList.add('active')
+            }
+        })
+    }
+
+    const popupContent = document.querySelector('.popup-content')
+    if (popupContent) {
+        popupContent.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+    }
+}
 
     // If popup already shown this visit, skip
     if (wasPopupShown) return
@@ -857,4 +970,4 @@ function initContributionPopup() {
 }
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initContributionPopup)
+document.addEventListener('DOMContentLoaded', () => initContributionPopup())
