@@ -1007,6 +1007,36 @@
 			}
 		]
 	},
+	"Kolar": {
+		"family": "Kolar",
+		"link": "Kolar",
+		"fonts": [
+			{
+				"font": "Kolar Light",
+				"link": "Kolar-Light"
+			},
+			{
+				"font": "Kolar Regular",
+				"link": "Kolar-Regular"
+			},
+			{
+				"font": "Kolar Medium",
+				"link": "Kolar-Medium"
+			},
+			{
+				"font": "Kolar SemiBold",
+				"link": "Kolar-SemiBold"
+			},
+			{
+				"font": "Kolar Bold",
+				"link": "Kolar-Bold"
+			},
+			{
+				"font": "Kolar ExtraBold",
+				"link": "Kolar-ExtraBold"
+			}
+		]
+	},
 	"Kuvempu-Praja": {
 		"family": "Kuvempu Praja",
 		"link": "Kuvempu-Praja",
