@@ -721,8 +721,30 @@ async function initContributionPopup() {
         stats = await res.json()
     } catch {}
 
-    const wasPopupShown = localStorage.getItem(POPUP_SHOWN_KEY)
-    const userResponse = localStorage.getItem(RESPONSE_KEY)
+    const supportBar = document.getElementById('support-bar')
+
+    function attachSupportBarClick() {
+        if (!supportBar) return
+        supportBar.addEventListener('click', () => {
+            supportBar.classList.remove('show')
+            setTimeout(() => {
+                supportBar.style.display = 'none'
+            }, 300)
+            localStorage.removeItem(POPUP_SHOWN_KEY)
+            localStorage.removeItem(RESPONSE_KEY)
+            const popupEl = document.getElementById('contribution-popup')
+            if (popupEl) {
+                popupEl.classList.add('active')
+            }
+        })
+    }
+
+    const popupContent = document.querySelector('.popup-content')
+    if (popupContent) {
+        popupContent.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+    }
 
     if (userResponse) {
         try {
@@ -733,6 +755,7 @@ async function initContributionPopup() {
             })
         } catch {}
         showSupportBarWithStats(userResponse, stats)
+        attachSupportBarClick()
         return
     }
 
@@ -756,7 +779,6 @@ async function initContributionPopup() {
     }
 
     function showSupportBarWithStats(response, stats) {
-        const supportBar = document.getElementById('support-bar')
         if (supportBar) {
             supportBar.classList.add('show')
             const content = supportBar.querySelector('.support-bar-content')
@@ -827,28 +849,7 @@ async function initContributionPopup() {
         })
     }
 
-    const supportBar = document.getElementById('support-bar')
-    if (supportBar) {
-        supportBar.addEventListener('click', () => {
-            supportBar.classList.remove('show')
-            setTimeout(() => {
-                supportBar.style.display = 'none'
-            }, 300)
-            localStorage.removeItem(POPUP_SHOWN_KEY)
-            localStorage.removeItem(RESPONSE_KEY)
-            const popupEl = document.getElementById('contribution-popup')
-            if (popupEl) {
-                popupEl.classList.add('active')
-            }
-        })
-    }
-
-    const popupContent = document.querySelector('.popup-content')
-    if (popupContent) {
-        popupContent.addEventListener('click', (e) => {
-            e.stopPropagation()
-        })
-    }
+    attachSupportBarClick()
 }
 
 // Initialize when DOM is ready
