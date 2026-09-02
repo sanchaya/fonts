@@ -709,146 +709,69 @@ function reloadAllDropdown(){
     $('.dropbtn i').attr('class','fas fa-caret-down')
 }
 
-// Contribution popup functionality
-async function initContributionPopup() {
-    const POPUP_SHOWN_KEY = 'contributionPopupShown'
-    const RESPONSE_KEY = 'contributionResponse'
-    const SHOW_AFTER_MS = 30000 // 30 seconds
+// Contribution popup functionality (vachana.sanchaya.net style)
+function initContributionPopup() {
+    var donationPopupShown = localStorage.getItem('donationPopupShown');
 
-    let stats = { contributed: 0, remind: 0, closed: 0 }
-    try {
-        const res = await fetch('/api/contribution-stats')
-        stats = await res.json()
-    } catch {}
-
-    const wasPopupShown = localStorage.getItem(POPUP_SHOWN_KEY)
-    const userResponse = localStorage.getItem(RESPONSE_KEY)
-
-    const supportBar = document.getElementById('support-bar')
-
-    function hidePopup() {
-        const popup = document.getElementById('contribution-popup')
-        if (popup) {
-            popup.classList.remove('active')
+    function toggleDonationPopup() {
+        var popup = document.querySelector('.donation-popup');
+        if (popup.style.display === 'block') {
+            closeDonationPopup();
+        } else {
+            popup.style.display = 'block';
         }
     }
 
-    function showSupportBarWithStats(response, stats) {
-        if (supportBar) {
-            supportBar.style.display = ''
-            supportBar.classList.add('show')
-            const content = supportBar.querySelector('.support-bar-content')
-            if (response === 'remind') {
-                content.innerHTML = `
-                    <span>🙏 We'll remind you later to support Sanchaya Projects. Your support helps keep it free and open-source forever. (${stats.remind} users marked for reminder)</span>
-                `
-            } else if (response === 'closed') {
-                content.innerHTML = `
-                    <span>❤️ Thanks for checking out Sanchaya Projects! ${stats.closed} users closed without responding.</span>
-                `
-            }
-        }
+    function closeDonationPopup() {
+        var popup = document.querySelector('.donation-popup');
+        popup.style.display = 'none';
+        localStorage.setItem('donationPopupShown', 'true');
     }
 
-    function attachSupportBarClick() {
-        if (!supportBar) return
-        supportBar.addEventListener('click', () => {
-            supportBar.classList.remove('show')
-            setTimeout(() => {
-                supportBar.style.display = 'none'
-            }, 300)
-            const popupEl = document.getElementById('contribution-popup')
-            if (popupEl) {
-                popupEl.classList.add('active')
-            }
-        })
+    function remindMeLaterDonation() {
+        closeDonationPopup();
     }
 
-    const popupContent = document.querySelector('.popup-content')
-    if (popupContent) {
-        popupContent.addEventListener('click', (e) => {
-            e.stopPropagation()
-        })
+    // Support bar click to toggle popup
+    var supportBar = document.getElementById('support-bar')
+    if (supportBar) {
+        supportBar.addEventListener('click', function() {
+            toggleDonationPopup();
+        });
     }
 
-    const closeBtn = document.querySelector('.close-popup')
+    // Close button
+    var closeBtn = document.querySelector('.close-popup')
     if (closeBtn) {
-        closeBtn.addEventListener('click', async () => {
-            hidePopup()
-            localStorage.setItem(RESPONSE_KEY, 'closed')
-            stats.closed = (stats.closed || 0) + 1
-            try {
-                await fetch('/api/contribution-stats', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ response: 'closed' })
-                })
-            } catch {}
-            showSupportBarWithStats('closed', stats)
-        })
+        closeBtn.addEventListener('click', function() {
+            closeDonationPopup();
+        });
     }
 
-    const btnRemindLater = document.querySelector('.btn-remind-later')
+    // Remind me later button
+    var btnRemindLater = document.querySelector('.btn-remind-later')
     if (btnRemindLater) {
-        btnRemindLater.addEventListener('click', async () => {
-            hidePopup()
-            localStorage.setItem(RESPONSE_KEY, 'remind')
-            stats.remind = (stats.remind || 0) + 1
-            try {
-                await fetch('/api/contribution-stats', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ response: 'remind' })
-                })
-            } catch {}
-            showSupportBarWithStats('remind', stats)
-        })
+        btnRemindLater.addEventListener('click', function() {
+            remindMeLaterDonation();
+        });
     }
 
-    const popup = document.getElementById('contribution-popup')
+    // Overlay click to close
+    var popup = document.getElementById('contribution-popup')
     if (popup) {
-        popup.addEventListener('click', async (e) => {
+        popup.addEventListener('click', function(e) {
             if (e.target === popup) {
-                hidePopup()
-                localStorage.setItem(RESPONSE_KEY, 'closed')
-                stats.closed = (stats.closed || 0) + 1
-                try {
-                    await fetch('/api/contribution-stats', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ response: 'closed' })
-                    })
-                } catch {}
-                showSupportBarWithStats('closed', stats)
+                closeDonationPopup();
             }
-        })
+        });
     }
 
-    attachSupportBarClick()
-
-    if (userResponse) {
-        try {
-            await fetch('/api/contribution-stats', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ response: userResponse })
-            })
-        } catch {}
-        showSupportBarWithStats(userResponse, stats)
-        return
+    // Auto-show after 5 seconds if not previously shown
+    if (!donationPopupShown) {
+        setTimeout(function() {
+            toggleDonationPopup();
+        }, 5000);
     }
-
-    if (wasPopupShown) return
-
-    function showPopup() {
-        const popup = document.getElementById('contribution-popup')
-        if (popup) {
-            popup.classList.add('active')
-        }
-        localStorage.setItem(POPUP_SHOWN_KEY, 'true')
-    }
-
-    setTimeout(showPopup, SHOW_AFTER_MS)
 }
 
 // Initialize when DOM is ready
