@@ -1,8 +1,8 @@
 $(document).ready(function(){
     
     function modifyOffset() {
-        var el, newPoint, newPlace, offset, siblings, k;
-        width    = this.offsetWidth;
+        var el, newPoint, newPlace, offset, siblings, k, sibling, outputTag;
+        var width = this.offsetWidth;
         newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
         offset   = -1;
         if (newPoint < 0) { newPlace = 0;  }
@@ -16,9 +16,11 @@ $(document).ready(function(){
                 outputTag = sibling;
             }
         }
-        outputTag.style.left       = newPlace + "px";
-        outputTag.style.marginLeft = offset + "%";
-        outputTag.innerHTML        = this.value+'px';
+        if (outputTag) {
+            outputTag.style.left       = newPlace + "px";
+            outputTag.style.marginLeft = offset + "%";
+            outputTag.innerHTML        = this.value+'px';
+        }
     
         $('.font-para p').css({fontSize:this.value+'px'});
         $('#in-para-txt p').css({fontSize:this.value+'px'});
