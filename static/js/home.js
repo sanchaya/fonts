@@ -14,6 +14,11 @@ $(document).ready(function () {
     $('.slide-menu .close-btn').click(slideMenuClick)
     $('.slide-menu-baner .gap-filler').click(slideMenuClick)
 
+    // Ensure center-nav logo click navigates to home on mobile
+    $('.center-nav a').on('click touchend', function(e) {
+        window.location.href = '/';
+    })
+
 
     intersectionObserverForSticky()
 

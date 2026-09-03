@@ -159,11 +159,20 @@ nav {
   justify-content: center;
   padding: 5px 20px;
   max-width: 400px;
+  position: relative;
+  z-index: 10001;
 }
 
 .nav-logo {
   height: 32px;
   width: auto;
+  cursor: pointer;
+}
+
+.center-nav a {
+  pointer-events: auto;
+  position: relative;
+  z-index: 10001;
 }
 
 .nav-tagline {
