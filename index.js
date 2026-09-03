@@ -251,6 +251,36 @@ router.get('/api/contribution-stats', (req, res) => {
     res.json(contributionStats);
 });
 
+// User contacts for follow-up
+const CONTACTS_FILE = '/tmp/userContacts.json';
+
+let userContacts = [];
+try {
+    const data = fs.readFileSync(CONTACTS_FILE, 'utf8');
+    userContacts = JSON.parse(data);
+} catch {}
+
+router.post('/api/user-contacts', (req, res) => {
+    const { name, email, phone } = req.body;
+    if (name || email || phone) {
+        const contact = {
+            name: name || '',
+            email: email || '',
+            phone: phone || '',
+            timestamp: new Date().toISOString()
+        };
+        userContacts.push(contact);
+        try {
+            fs.writeFileSync(CONTACTS_FILE, JSON.stringify(userContacts, null, 2));
+        } catch {}
+    }
+    res.json({ success: true });
+});
+
+router.get('/api/user-contacts', (req, res) => {
+    res.json(userContacts);
+});
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         const filename = file.originalname;

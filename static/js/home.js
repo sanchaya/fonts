@@ -729,6 +729,18 @@ function initContributionPopup() {
     }
 
     function remindMeLaterDonation() {
+        var name = document.getElementById('contact-name').value;
+        var email = document.getElementById('contact-email').value;
+        var phone = document.getElementById('contact-phone').value;
+
+        if (name || email || phone) {
+            fetch('/api/user-contacts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, email: email, phone: phone })
+            });
+        }
+
         closeDonationPopup();
     }
 
