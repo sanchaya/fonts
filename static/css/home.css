@@ -77,6 +77,10 @@ body {
   pointer-events: none;
 }
 
+nav, nav * {
+  pointer-events: auto;
+}
+
 .slide-menu-baner.open {
   pointer-events: auto;
 }
