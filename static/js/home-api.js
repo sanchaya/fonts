@@ -121,6 +121,7 @@ var XofNFamily = (res) => {
 var appendCard = (res) => {
     let appender = ''
     $('#loading-gif').remove()
+    const isLastPage = res.isLastPage || res.data.length < 8
     for(let i=0;i<res.data.length;i++){
         const author = res.data[i].author
         const foundry = res.data[i].foundry
@@ -136,6 +137,32 @@ var appendCard = (res) => {
         } else {
             authorInfo = '<span class="developer-name">Author Name</span>'
         }
+        
+        const licenseClass = licenseType === 'Open Source' ? 'license-open' : 'license-proprietary'
+        const licenseLabel = licenseType === 'Open Source' ? 'Open Source' : 'Proprietary'
+        
+        var qualityBadge = ''
+        if (res.data[i].quality) {
+            var err = res.data[i].quality.errors || 0
+            var wrn = res.data[i].quality.warnings || 0
+            var errBadge = err > 0 ? '<span class="qa-card-err">'+err+'E</span>' : ''
+            var wrnBadge = wrn > 0 ? '<span class="qa-card-wrn">'+wrn+'W</span>' : ''
+            qualityBadge = '<span class="quality-badge-card" style="background:'+res.data[i].quality.gradeColor+';">'+res.data[i].quality.grade+'</span>'+errBadge+wrnBadge
+        }
+        
+        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span>'+qualityBadge+'<span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:"'+res.data[i].font+'", recursive;">Almost before we know it, we had left the ground</div></div></a>'
+    }
+    if(!isLastPage && page < 10)
+        appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
+    $('.fonts-cnt').append(appender)
+    
+    // font container ripple effect
+    $('.fonts-cnt .font').click(clickedForRipple)
+
+    changeTextNFont()
+    XofNFamily(res)
+    page += 1
+}
         
         const licenseClass = licenseType === 'Open Source' ? 'license-open' : 'license-proprietary'
         const licenseLabel = licenseType === 'Open Source' ? 'Open Source' : 'Proprietary'
