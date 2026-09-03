@@ -150,7 +150,7 @@ var appendCard = (res) => {
             qualityBadge = '<span class="quality-badge-card" style="background:'+res.data[i].quality.gradeColor+';">'+res.data[i].quality.grade+'</span>'+errBadge+wrnBadge
         }
         
-        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span>'+qualityBadge+'<span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:"'+res.data[i].font+'", recursive;">Almost before we know it, we had left the ground</div></div></a>'
+        appender += '<a href="/family/'+res.data[i].link+'"><div class="font"><div class="header"><h4 class="family-name">'+res.data[i].family+'</h4>'+authorInfo+'<span class="'+licenseClass+'">'+licenseLabel+'</span>'+qualityBadge+'<span class="n-styles">'+res.data[i].styles+' styles</span></div><div class="font-text" style="font-family:\''+res.data[i].font+'\', recursive;">Almost before we know it, we had left the ground</div></div></a>'
     }
     if(!isLastPage)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
