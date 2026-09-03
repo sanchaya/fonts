@@ -729,6 +729,11 @@ function initContributionPopup() {
     }
 
     function remindMeLaterDonation() {
+        document.getElementById('contact-form').style.display = 'flex';
+        document.querySelector('.btn-remind-later').style.display = 'none';
+    }
+
+    function submitContact() {
         var name = document.getElementById('contact-name').value;
         var email = document.getElementById('contact-email').value;
         var phone = document.getElementById('contact-phone').value;
@@ -765,6 +770,14 @@ function initContributionPopup() {
     if (btnRemindLater) {
         btnRemindLater.addEventListener('click', function() {
             remindMeLaterDonation();
+        });
+    }
+
+    // Submit contact button
+    var btnSubmitContact = document.querySelector('.btn-submit-contact')
+    if (btnSubmitContact) {
+        btnSubmitContact.addEventListener('click', function() {
+            submitContact();
         });
     }
 

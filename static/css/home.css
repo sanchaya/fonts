@@ -1777,6 +1777,7 @@ body.dark .quality-bar-track {
 
 .donation-popup-body {
   padding: 30px;
+  text-align: center;
 }
 
 .donation-popup-text {
@@ -1800,10 +1801,10 @@ body.dark .quality-bar-track {
 
 .contact-form {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
 }
 
 .contact-input {
@@ -1811,12 +1812,18 @@ body.dark .quality-bar-track {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 13px;
-  width: 180px;
+  width: 250px;
   outline: none;
 }
 
 .contact-input:focus {
   border-color: #667eea;
+}
+
+.contact-note {
+  font-size: 11px;
+  color: #999;
+  margin-top: 5px;
 }
 
 .donation-popup-btn {
@@ -1954,7 +1961,9 @@ body.dark .donation-popup-btn:hover {
 }
 
 .razorpay-container {
-  margin: 20px 0;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-footer {
