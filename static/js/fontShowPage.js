@@ -53,10 +53,11 @@ var changeTextNFont = () => {
 var appendCard = (res) => {
     let appender = ''
     $('#loading-gif').remove()
+    const isLastPage = res.isLastPage || res.data.length < 8
     for(let i=0;i<res.data.length;i++){
-        appender += "<div class='custom-card'><div class='hover-show'><a href='/family/"+res.data[i].link+"'>"+res.data[i].family+"</a></div><div class='custom-card-cnt'><h4><b>"+res.data[i].family+"</b></h4><hr><p style='font-family:&quot;"+res.data[i].font+"&quot;,recursive;'>ಕನ್ನಡ ಒಂದು ಸುಂದರ ಭಾಷೆ. ನೀವು ಭಾಷೆಯ ಫಾಂಟ್ ಅನ್ನು ಬದಲಾಯಿಸಬಹುದು</p><hr><a role='button' class='btn btn-primary' href='/family/"+res.data[i].link+"'>Go</a></div></div>"
+        appender += "<div class='custom-card'><div class='hover-show'><a href='/family/"+res.data[i].link+"'>"+res.data[i].family+"</a></div><div class='custom-card-cnt'><h4><b>"+res.data[i].family+"</b></h4><hr><p style='font-family:"+String.fromCharCode(34)+res.data[i].font+String.fromCharCode(34)+",recursive;'>ಕನ್ನಡ ಒಂದು ಸುಂದರಭাষೆ. ನೀವುಭಾಷೆಯ_fonts ಅನ್ನು ಬದಲಾಯಿಸpute</p><hr><a role='button' class='btn btn-primary' href='/family/"+res.data[i].link+"'>Go</a></div></div>"
     }
-    if(!res.isLastPage)
+    if(!isLastPage && page < 10)
         appender += "<div id='loading-gif'><img src='/img/loading.gif'/></div>"
     $('div.container.showPage').append(appender)
     changeTextNFont()
