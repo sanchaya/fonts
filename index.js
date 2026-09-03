@@ -229,7 +229,7 @@ const requireLogin = (req, res, next) => {
 
 let contributionStats = { contributed: 0, remind: 0, closed: 0 };
 
-const STATS_FILE = '/tmp/contributionStats.json';
+const STATS_FILE = path.join(__dirname, '..', 'contributionStats.json');
 
 try {
     const data = fs.readFileSync(STATS_FILE, 'utf8');
@@ -252,7 +252,7 @@ router.get('/api/contribution-stats', (req, res) => {
 });
 
 // User contacts for follow-up
-const CONTACTS_FILE = '/tmp/userContacts.json';
+const CONTACTS_FILE = path.join(__dirname, '..', 'userContacts.json');
 
 let userContacts = [];
 try {
